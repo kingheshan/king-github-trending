@@ -1,0 +1,1649 @@
+{
+  "meta": {
+    "generatedAt": "2026-05-26T03:01:53.929Z",
+    "source": "github-trending-and-search",
+    "timezone": "Asia/Shanghai",
+    "refreshPolicy": "GitHub Actions schedule: 12:00 Asia/Shanghai"
+  },
+  "periods": {
+    "daily": {
+      "label": "今日",
+      "sourceUrl": "https://github.com/trending?since=daily",
+      "repos": [
+        {
+          "rank": 1,
+          "owner": "Lum1104",
+          "repo": "Understand-Anything",
+          "url": "https://github.com/Lum1104/Understand-Anything",
+          "desc": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 31686,
+          "forks": 2603,
+          "today": "5,604 stars today",
+          "summaryZh": "Lum1104/Understand-Anything 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/Lum1104/Understand-Anything 克隆到 ~/Code/Understand-Anything。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 2,
+          "owner": "anthropics",
+          "repo": "knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins",
+          "desc": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 15633,
+          "forks": 1881,
+          "today": "1,441 stars today",
+          "summaryZh": "anthropics/knowledge-work-plugins 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/anthropics/knowledge-work-plugins 克隆到 ~/Code/knowledge-work-plugins。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 3,
+          "owner": "rohitg00",
+          "repo": "ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+          "desc": "Learn it. Build it. Ship it for others.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 18870,
+          "forks": 3188,
+          "today": "3,154 stars today",
+          "summaryZh": "rohitg00/ai-engineering-from-scratch 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Learn it. Build it. Ship it for others.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/rohitg00/ai-engineering-from-scratch 克隆到 ~/Code/ai-engineering-from-scratch。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 4,
+          "owner": "affaan-m",
+          "repo": "ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "lang": "JavaScript",
+          "langColor": "#f1e05a",
+          "stars": 192572,
+          "forks": 29795,
+          "today": "2,025 stars today",
+          "summaryZh": "affaan-m/ECC 是一个近期热度较高的开源项目，主要语言是 JavaScript。它的公开描述是：“The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/affaan-m/ECC 克隆到 ~/Code/ECC。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 5,
+          "owner": "mukul975",
+          "repo": "Anthropic-Cybersecurity-Skills",
+          "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+          "desc": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 9343,
+          "forks": 1141,
+          "today": "1,004 stars today",
+          "summaryZh": "mukul975/Anthropic-Cybersecurity-Skills 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/mukul975/Anthropic-Cybersecurity-Skills 克隆到 ~/Code/Anthropic-Cybersecurity-Skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 6,
+          "owner": "colbymchenry",
+          "repo": "codegraph",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "desc": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 25503,
+          "forks": 1412,
+          "today": "3,161 stars today",
+          "summaryZh": "colbymchenry/codegraph 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/colbymchenry/codegraph 克隆到 ~/Code/codegraph。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 7,
+          "owner": "manaflow-ai",
+          "repo": "cmux",
+          "url": "https://github.com/manaflow-ai/cmux",
+          "desc": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents",
+          "lang": "Swift",
+          "langColor": "#F05138",
+          "stars": 19547,
+          "forks": 1474,
+          "today": "603 stars today",
+          "summaryZh": "manaflow-ai/cmux 是一个近期热度较高的开源项目，主要语言是 Swift。它的公开描述是：“Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/manaflow-ai/cmux 克隆到 ~/Code/cmux。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 8,
+          "owner": "multica-ai",
+          "repo": "andrej-karpathy-skills",
+          "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+          "desc": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+          "lang": "",
+          "langColor": "#8b949e",
+          "stars": 155243,
+          "forks": 15918,
+          "today": "2,749 stars today",
+          "summaryZh": "multica-ai/andrej-karpathy-skills 是一个近期热度较高的开源项目。它的公开描述是：“A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/multica-ai/andrej-karpathy-skills 克隆到 ~/Code/andrej-karpathy-skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 9,
+          "owner": "Fincept-Corporation",
+          "repo": "FinceptTerminal",
+          "url": "https://github.com/Fincept-Corporation/FinceptTerminal",
+          "desc": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 23927,
+          "forks": 3288,
+          "today": "317 stars today",
+          "summaryZh": "Fincept-Corporation/FinceptTerminal 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/Fincept-Corporation/FinceptTerminal 克隆到 ~/Code/FinceptTerminal。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 10,
+          "owner": "paperless-ngx",
+          "repo": "paperless-ngx",
+          "url": "https://github.com/paperless-ngx/paperless-ngx",
+          "desc": "A community-supported supercharged document management system: scan, index and archive all your documents",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 41379,
+          "forks": 2748,
+          "today": "176 stars today",
+          "summaryZh": "paperless-ngx/paperless-ngx 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“A community-supported supercharged document management system: scan, index and archive all your documents”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/paperless-ngx/paperless-ngx 克隆到 ~/Code/paperless-ngx。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 11,
+          "owner": "anthropics",
+          "repo": "claude-cookbooks",
+          "url": "https://github.com/anthropics/claude-cookbooks",
+          "desc": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+          "lang": "Jupyter Notebook",
+          "langColor": "#DA5B0B",
+          "stars": 44069,
+          "forks": 5053,
+          "today": "141 stars today",
+          "summaryZh": "anthropics/claude-cookbooks 是一个近期热度较高的开源项目，主要语言是 Jupyter Notebook。它的公开描述是：“A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/anthropics/claude-cookbooks 克隆到 ~/Code/claude-cookbooks。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 12,
+          "owner": "Leonxlnx",
+          "repo": "taste-skill",
+          "url": "https://github.com/Leonxlnx/taste-skill",
+          "desc": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
+          "lang": "Shell",
+          "langColor": "#89e051",
+          "stars": 19877,
+          "forks": 1660,
+          "today": "264 stars today",
+          "summaryZh": "Leonxlnx/taste-skill 是一个近期热度较高的开源项目，主要语言是 Shell。它的公开描述是：“Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/Leonxlnx/taste-skill 克隆到 ~/Code/taste-skill。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 13,
+          "owner": "moeru-ai",
+          "repo": "airi",
+          "url": "https://github.com/moeru-ai/airi",
+          "desc": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 39778,
+          "forks": 4023,
+          "today": "62 stars today",
+          "summaryZh": "moeru-ai/airi 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/moeru-ai/airi 克隆到 ~/Code/airi。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 14,
+          "owner": "shiyu-coder",
+          "repo": "Kronos",
+          "url": "https://github.com/shiyu-coder/Kronos",
+          "desc": "Kronos: A Foundation Model for the Language of Financial Markets",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 26051,
+          "forks": 4523,
+          "today": "245 stars today",
+          "summaryZh": "shiyu-coder/Kronos 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Kronos: A Foundation Model for the Language of Financial Markets”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/shiyu-coder/Kronos 克隆到 ~/Code/Kronos。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 15,
+          "owner": "Axorax",
+          "repo": "awesome-free-apps",
+          "url": "https://github.com/Axorax/awesome-free-apps",
+          "desc": "Curated list of the best free apps for PC and mobile",
+          "lang": "JavaScript",
+          "langColor": "#f1e05a",
+          "stars": 4614,
+          "forks": 234,
+          "today": "192 stars today",
+          "summaryZh": "Axorax/awesome-free-apps 是一个近期热度较高的开源项目，主要语言是 JavaScript。它的公开描述是：“Curated list of the best free apps for PC and mobile”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/Axorax/awesome-free-apps 克隆到 ~/Code/awesome-free-apps。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 16,
+          "owner": "hardikpandya",
+          "repo": "stop-slop",
+          "url": "https://github.com/hardikpandya/stop-slop",
+          "desc": "A skill file for removing AI tells from prose",
+          "lang": "",
+          "langColor": "#8b949e",
+          "stars": 4475,
+          "forks": 386,
+          "today": "345 stars today",
+          "summaryZh": "hardikpandya/stop-slop 是一个近期热度较高的开源项目。它的公开描述是：“A skill file for removing AI tells from prose”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/hardikpandya/stop-slop 克隆到 ~/Code/stop-slop。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 17,
+          "owner": "garrytan",
+          "repo": "gstack",
+          "url": "https://github.com/garrytan/gstack",
+          "desc": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 102585,
+          "forks": 15301,
+          "today": "640 stars today",
+          "summaryZh": "garrytan/gstack 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/garrytan/gstack 克隆到 ~/Code/gstack。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        }
+      ]
+    },
+    "weekly": {
+      "label": "本周",
+      "sourceUrl": "https://github.com/trending?since=weekly",
+      "repos": [
+        {
+          "rank": 1,
+          "owner": "colbymchenry",
+          "repo": "codegraph",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "desc": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 25503,
+          "forks": 1412,
+          "today": "20,208 stars this week",
+          "summaryZh": "colbymchenry/codegraph 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/colbymchenry/codegraph 克隆到 ~/Code/codegraph。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 2,
+          "owner": "tinyhumansai",
+          "repo": "openhuman",
+          "url": "https://github.com/tinyhumansai/openhuman",
+          "desc": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
+          "lang": "Rust",
+          "langColor": "#dea584",
+          "stars": 27847,
+          "forks": 2574,
+          "today": "11,906 stars this week",
+          "summaryZh": "tinyhumansai/openhuman 是一个近期热度较高的开源项目，主要语言是 Rust。它的公开描述是：“Your Personal AI super intelligence. Private, Simple and extremely powerful.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/tinyhumansai/openhuman 克隆到 ~/Code/openhuman。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 3,
+          "owner": "Lum1104",
+          "repo": "Understand-Anything",
+          "url": "https://github.com/Lum1104/Understand-Anything",
+          "desc": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 31686,
+          "forks": 2603,
+          "today": "14,750 stars this week",
+          "summaryZh": "Lum1104/Understand-Anything 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/Lum1104/Understand-Anything 克隆到 ~/Code/Understand-Anything。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 4,
+          "owner": "Imbad0202",
+          "repo": "academic-research-skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills",
+          "desc": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 21542,
+          "forks": 1835,
+          "today": "10,678 stars this week",
+          "summaryZh": "Imbad0202/academic-research-skills 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Academic Research Skills for Claude Code: research → write → review → revise → finalize”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/Imbad0202/academic-research-skills 克隆到 ~/Code/academic-research-skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 5,
+          "owner": "rohitg00",
+          "repo": "ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+          "desc": "Learn it. Build it. Ship it for others.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 18870,
+          "forks": 3188,
+          "today": "10,035 stars this week",
+          "summaryZh": "rohitg00/ai-engineering-from-scratch 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Learn it. Build it. Ship it for others.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/rohitg00/ai-engineering-from-scratch 克隆到 ~/Code/ai-engineering-from-scratch。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 6,
+          "owner": "ruvnet",
+          "repo": "RuView",
+          "url": "https://github.com/ruvnet/RuView",
+          "desc": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+          "lang": "Rust",
+          "langColor": "#dea584",
+          "stars": 65957,
+          "forks": 8723,
+          "today": "6,396 stars this week",
+          "summaryZh": "ruvnet/RuView 是一个近期热度较高的开源项目，主要语言是 Rust。它的公开描述是：“π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/ruvnet/RuView 克隆到 ~/Code/RuView。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 7,
+          "owner": "rohitg00",
+          "repo": "agentmemory",
+          "url": "https://github.com/rohitg00/agentmemory",
+          "desc": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 17883,
+          "forks": 1463,
+          "today": "5,687 stars this week",
+          "summaryZh": "rohitg00/agentmemory 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“#1 Persistent memory for AI coding agents based on real-world benchmarks”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/rohitg00/agentmemory 克隆到 ~/Code/agentmemory。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 8,
+          "owner": "CloakHQ",
+          "repo": "CloakBrowser",
+          "url": "https://github.com/CloakHQ/CloakBrowser",
+          "desc": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 21043,
+          "forks": 1660,
+          "today": "6,167 stars this week",
+          "summaryZh": "CloakHQ/CloakBrowser 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/CloakHQ/CloakBrowser 克隆到 ~/Code/CloakBrowser。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 9,
+          "owner": "supertone-inc",
+          "repo": "supertonic",
+          "url": "https://github.com/supertone-inc/supertonic",
+          "desc": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
+          "lang": "Swift",
+          "langColor": "#F05138",
+          "stars": 10482,
+          "forks": 1076,
+          "today": "2,329 stars this week",
+          "summaryZh": "supertone-inc/supertonic 是一个近期热度较高的开源项目，主要语言是 Swift。它的公开描述是：“Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/supertone-inc/supertonic 克隆到 ~/Code/supertonic。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 10,
+          "owner": "can1357",
+          "repo": "oh-my-pi",
+          "url": "https://github.com/can1357/oh-my-pi",
+          "desc": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 7326,
+          "forks": 591,
+          "today": "2,584 stars this week",
+          "summaryZh": "can1357/oh-my-pi 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/can1357/oh-my-pi 克隆到 ~/Code/oh-my-pi。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 11,
+          "owner": "dograh-hq",
+          "repo": "dograh",
+          "url": "https://github.com/dograh-hq/dograh",
+          "desc": "Open Source Voice Agent Platform",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 2960,
+          "forks": 657,
+          "today": "693 stars this week",
+          "summaryZh": "dograh-hq/dograh 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Open Source Voice Agent Platform”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/dograh-hq/dograh 克隆到 ~/Code/dograh。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 12,
+          "owner": "presenton",
+          "repo": "presenton",
+          "url": "https://github.com/presenton/presenton",
+          "desc": "Open-Source AI Presentation Generator and API (Gamma, Beautiful AI, Decktopus Alternative)",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 6905,
+          "forks": 1161,
+          "today": "1,787 stars this week",
+          "summaryZh": "presenton/presenton 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Open-Source AI Presentation Generator and API (Gamma, Beautiful AI, Decktopus Alternative)”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/presenton/presenton 克隆到 ~/Code/presenton。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 13,
+          "owner": "HKUDS",
+          "repo": "CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "desc": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 40401,
+          "forks": 3822,
+          "today": "4,010 stars this week",
+          "summaryZh": "HKUDS/CLI-Anything 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/HKUDS/CLI-Anything 克隆到 ~/Code/CLI-Anything。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 14,
+          "owner": "obra",
+          "repo": "superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "desc": "An agentic skills framework & software development methodology that works.",
+          "lang": "Shell",
+          "langColor": "#89e051",
+          "stars": 206539,
+          "forks": 18409,
+          "today": "9,950 stars this week",
+          "summaryZh": "obra/superpowers 是一个近期热度较高的开源项目，主要语言是 Shell。它的公开描述是：“An agentic skills framework & software development methodology that works.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/obra/superpowers 克隆到 ~/Code/superpowers。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 15,
+          "owner": "wechat-article",
+          "repo": "wechat-article-exporter",
+          "url": "https://github.com/wechat-article/wechat-article-exporter",
+          "desc": "一款在线的 微信公众号文章批量下载 工具，支持导出阅读量与评论数据，无需搭建任何环境，可通过 在线网站 使用，支持 docker 私有化部署和 Cloudflare 部署。 支持下载各种文件格式，其中 HTML 格式可100%还原文章排版与样式。",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 10843,
+          "forks": 1890,
+          "today": "809 stars this week",
+          "summaryZh": "wechat-article/wechat-article-exporter 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“一款在线的 微信公众号文章批量下载 工具，支持导出阅读量与评论数据，无需搭建任何环境，可通过 在线网站 使用，支持 docker 私有化部署和 Cloudflare 部署。 支持下载各种文件格式，其中 HTML 格式可100%还原文章排版与样式。”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/wechat-article/wechat-article-exporter 克隆到 ~/Code/wechat-article-exporter。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 16,
+          "owner": "cursor",
+          "repo": "plugins",
+          "url": "https://github.com/cursor/plugins",
+          "desc": "Cursor plugin specification and official plugins",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 831,
+          "forks": 89,
+          "today": "366 stars this week",
+          "summaryZh": "cursor/plugins 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Cursor plugin specification and official plugins”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/cursor/plugins 克隆到 ~/Code/plugins。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 17,
+          "owner": "phodal",
+          "repo": "routa",
+          "url": "https://github.com/phodal/routa",
+          "desc": "Workspace-first multi-agent coordination platform for AI development, with shared Specs, Kanban orchestration, and MCP/ACP/ A2A support across web and desktop.",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 1451,
+          "forks": 204,
+          "today": "470 stars this week",
+          "summaryZh": "phodal/routa 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Workspace-first multi-agent coordination platform for AI development, with shared Specs, Kanban orchestration, and MCP/ACP/ A2A support across web and desktop.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/phodal/routa 克隆到 ~/Code/routa。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 18,
+          "owner": "ChromeDevTools",
+          "repo": "chrome-devtools-mcp",
+          "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+          "desc": "Chrome DevTools for coding agents",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 41740,
+          "forks": 2654,
+          "today": "1,818 stars this week",
+          "summaryZh": "ChromeDevTools/chrome-devtools-mcp 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Chrome DevTools for coding agents”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/ChromeDevTools/chrome-devtools-mcp 克隆到 ~/Code/chrome-devtools-mcp。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        }
+      ]
+    },
+    "monthly": {
+      "label": "本月",
+      "sourceUrl": "https://github.com/trending?since=monthly",
+      "repos": [
+        {
+          "rank": 1,
+          "owner": "mattpocock",
+          "repo": "skills",
+          "url": "https://github.com/mattpocock/skills",
+          "desc": "Skills for Real Engineers. Straight from my .claude directory.",
+          "lang": "Shell",
+          "langColor": "#89e051",
+          "stars": 105389,
+          "forks": 9315,
+          "today": "86,188 stars this month",
+          "summaryZh": "mattpocock/skills 是一个近期热度较高的开源项目，主要语言是 Shell。它的公开描述是：“Skills for Real Engineers. Straight from my .claude directory.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/mattpocock/skills 克隆到 ~/Code/skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 2,
+          "owner": "colbymchenry",
+          "repo": "codegraph",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "desc": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 25503,
+          "forks": 1412,
+          "today": "23,688 stars this month",
+          "summaryZh": "colbymchenry/codegraph 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/colbymchenry/codegraph 克隆到 ~/Code/codegraph。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 3,
+          "owner": "anthropics",
+          "repo": "financial-services",
+          "url": "https://github.com/anthropics/financial-services",
+          "desc": "",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 27578,
+          "forks": 3868,
+          "today": "19,853 stars this month",
+          "summaryZh": "anthropics/financial-services 是一个近期热度较高的开源项目，主要语言是 Python。它近期在 GitHub 上获得较高关注。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/anthropics/financial-services 克隆到 ~/Code/financial-services。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 4,
+          "owner": "CloakHQ",
+          "repo": "CloakBrowser",
+          "url": "https://github.com/CloakHQ/CloakBrowser",
+          "desc": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 21043,
+          "forks": 1660,
+          "today": "19,438 stars this month",
+          "summaryZh": "CloakHQ/CloakBrowser 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/CloakHQ/CloakBrowser 克隆到 ~/Code/CloakBrowser。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 5,
+          "owner": "rohitg00",
+          "repo": "agentmemory",
+          "url": "https://github.com/rohitg00/agentmemory",
+          "desc": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 17883,
+          "forks": 1463,
+          "today": "15,782 stars this month",
+          "summaryZh": "rohitg00/agentmemory 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“#1 Persistent memory for AI coding agents based on real-world benchmarks”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/rohitg00/agentmemory 克隆到 ~/Code/agentmemory。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 6,
+          "owner": "Imbad0202",
+          "repo": "academic-research-skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills",
+          "desc": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 21542,
+          "forks": 1835,
+          "today": "17,780 stars this month",
+          "summaryZh": "Imbad0202/academic-research-skills 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Academic Research Skills for Claude Code: research → write → review → revise → finalize”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/Imbad0202/academic-research-skills 克隆到 ~/Code/academic-research-skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 7,
+          "owner": "soxoj",
+          "repo": "maigret",
+          "url": "https://github.com/soxoj/maigret",
+          "desc": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 30401,
+          "forks": 2169,
+          "today": "10,826 stars this month",
+          "summaryZh": "soxoj/maigret 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/soxoj/maigret 克隆到 ~/Code/maigret。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 8,
+          "owner": "TauricResearch",
+          "repo": "TradingAgents",
+          "url": "https://github.com/TauricResearch/TradingAgents",
+          "desc": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 79563,
+          "forks": 15512,
+          "today": "27,064 stars this month",
+          "summaryZh": "TauricResearch/TradingAgents 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“TradingAgents: Multi-Agents LLM Financial Trading Framework”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/TauricResearch/TradingAgents 克隆到 ~/Code/TradingAgents。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 9,
+          "owner": "multica-ai",
+          "repo": "andrej-karpathy-skills",
+          "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+          "desc": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+          "lang": "",
+          "langColor": "#8b949e",
+          "stars": 155243,
+          "forks": 15918,
+          "today": "68,832 stars this month",
+          "summaryZh": "multica-ai/andrej-karpathy-skills 是一个近期热度较高的开源项目。它的公开描述是：“A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/multica-ai/andrej-karpathy-skills 克隆到 ~/Code/andrej-karpathy-skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 10,
+          "owner": "AIDC-AI",
+          "repo": "Pixelle-Video",
+          "url": "https://github.com/AIDC-AI/Pixelle-Video",
+          "desc": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 19796,
+          "forks": 2792,
+          "today": "13,152 stars this month",
+          "summaryZh": "AIDC-AI/Pixelle-Video 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/AIDC-AI/Pixelle-Video 克隆到 ~/Code/Pixelle-Video。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 11,
+          "owner": "ComposioHQ",
+          "repo": "awesome-codex-skills",
+          "url": "https://github.com/ComposioHQ/awesome-codex-skills",
+          "desc": "A curated list of practical Codex skills for automating workflows across the Codex CLI and API.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 11686,
+          "forks": 1115,
+          "today": "10,408 stars this month",
+          "summaryZh": "ComposioHQ/awesome-codex-skills 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“A curated list of practical Codex skills for automating workflows across the Codex CLI and API.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/ComposioHQ/awesome-codex-skills 克隆到 ~/Code/awesome-codex-skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 12,
+          "owner": "decolua",
+          "repo": "9router",
+          "url": "https://github.com/decolua/9router",
+          "desc": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
+          "lang": "JavaScript",
+          "langColor": "#f1e05a",
+          "stars": 14280,
+          "forks": 2142,
+          "today": "11,172 stars this month",
+          "summaryZh": "decolua/9router 是一个近期热度较高的开源项目，主要语言是 JavaScript。它的公开描述是：“Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/decolua/9router 克隆到 ~/Code/9router。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 13,
+          "owner": "Lum1104",
+          "repo": "Understand-Anything",
+          "url": "https://github.com/Lum1104/Understand-Anything",
+          "desc": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 31686,
+          "forks": 2603,
+          "today": "20,742 stars this month",
+          "summaryZh": "Lum1104/Understand-Anything 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/Lum1104/Understand-Anything 克隆到 ~/Code/Understand-Anything。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 14,
+          "owner": "Alishahryar1",
+          "repo": "free-claude-code",
+          "url": "https://github.com/Alishahryar1/free-claude-code",
+          "desc": "Use claude-code for free in the terminal, VSCode extension or discord like OpenClaw (voice supported)",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 29707,
+          "forks": 4468,
+          "today": "19,114 stars this month",
+          "summaryZh": "Alishahryar1/free-claude-code 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Use claude-code for free in the terminal, VSCode extension or discord like OpenClaw (voice supported)”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/Alishahryar1/free-claude-code 克隆到 ~/Code/free-claude-code。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 15,
+          "owner": "ruvnet",
+          "repo": "ruflo",
+          "url": "https://github.com/ruvnet/ruflo",
+          "desc": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 55125,
+          "forks": 6271,
+          "today": "22,151 stars this month",
+          "summaryZh": "ruvnet/ruflo 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/ruvnet/ruflo 克隆到 ~/Code/ruflo。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 16,
+          "owner": "yikart",
+          "repo": "AiToEarn",
+          "url": "https://github.com/yikart/AiToEarn",
+          "desc": "Let's use AI to Earn!",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 16505,
+          "forks": 2657,
+          "today": "7,524 stars this month",
+          "summaryZh": "yikart/AiToEarn 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Let's use AI to Earn!”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/yikart/AiToEarn 克隆到 ~/Code/AiToEarn。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 17,
+          "owner": "bytedance",
+          "repo": "UI-TARS-desktop",
+          "url": "https://github.com/bytedance/UI-TARS-desktop",
+          "desc": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 35249,
+          "forks": 3544,
+          "today": "5,825 stars this month",
+          "summaryZh": "bytedance/UI-TARS-desktop 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/bytedance/UI-TARS-desktop 克隆到 ~/Code/UI-TARS-desktop。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 18,
+          "owner": "rohitg00",
+          "repo": "ai-engineering-from-scratch",
+          "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+          "desc": "Learn it. Build it. Ship it for others.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 18870,
+          "forks": 3188,
+          "today": "12,957 stars this month",
+          "summaryZh": "rohitg00/ai-engineering-from-scratch 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Learn it. Build it. Ship it for others.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/rohitg00/ai-engineering-from-scratch 克隆到 ~/Code/ai-engineering-from-scratch。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 19,
+          "owner": "addyosmani",
+          "repo": "agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "desc": "Production-grade engineering skills for AI coding agents.",
+          "lang": "Shell",
+          "langColor": "#89e051",
+          "stars": 45731,
+          "forks": 5065,
+          "today": "22,920 stars this month",
+          "summaryZh": "addyosmani/agent-skills 是一个近期热度较高的开源项目，主要语言是 Shell。它的公开描述是：“Production-grade engineering skills for AI coding agents.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/addyosmani/agent-skills 克隆到 ~/Code/agent-skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 20,
+          "owner": "mattpocock",
+          "repo": "sandcastle",
+          "url": "https://github.com/mattpocock/sandcastle",
+          "desc": "Orchestrate sandboxed coding agents in TypeScript with sandcastle.run()",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 5082,
+          "forks": 529,
+          "today": "4,110 stars this month",
+          "summaryZh": "mattpocock/sandcastle 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Orchestrate sandboxed coding agents in TypeScript with sandcastle.run()”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/mattpocock/sandcastle 克隆到 ~/Code/sandcastle。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        }
+      ]
+    },
+    "yearly": {
+      "label": "本年",
+      "sourceUrl": "https://github.com/search?q=created%3A%3E%3D2026-01-01%20stars%3A%3E100&type=repositories&s=stars&o=desc",
+      "repos": [
+        {
+          "rank": 1,
+          "owner": "affaan-m",
+          "repo": "ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "lang": "JavaScript",
+          "langColor": "#f1e05a",
+          "stars": 192573,
+          "forks": 29795,
+          "today": "",
+          "summaryZh": "affaan-m/ECC 是一个近期热度较高的开源项目，主要语言是 JavaScript。它的公开描述是：“The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/affaan-m/ECC 克隆到 ~/Code/ECC。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 2,
+          "owner": "ultraworkers",
+          "repo": "claw-code",
+          "url": "https://github.com/ultraworkers/claw-code",
+          "desc": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
+          "lang": "Rust",
+          "langColor": "#dea584",
+          "stars": 192509,
+          "forks": 109953,
+          "today": "",
+          "summaryZh": "ultraworkers/claw-code 是一个近期热度较高的开源项目，主要语言是 Rust。它的公开描述是：“The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/ultraworkers/claw-code 克隆到 ~/Code/claw-code。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 3,
+          "owner": "multica-ai",
+          "repo": "andrej-karpathy-skills",
+          "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+          "desc": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+          "lang": "",
+          "langColor": "#8b949e",
+          "stars": 155243,
+          "forks": 15918,
+          "today": "",
+          "summaryZh": "multica-ai/andrej-karpathy-skills 是一个近期热度较高的开源项目。它的公开描述是：“A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/multica-ai/andrej-karpathy-skills 克隆到 ~/Code/andrej-karpathy-skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 4,
+          "owner": "mattpocock",
+          "repo": "skills",
+          "url": "https://github.com/mattpocock/skills",
+          "desc": "Skills for Real Engineers. Straight from my .claude directory.",
+          "lang": "Shell",
+          "langColor": "#89e051",
+          "stars": 105389,
+          "forks": 9315,
+          "today": "",
+          "summaryZh": "mattpocock/skills 是一个近期热度较高的开源项目，主要语言是 Shell。它的公开描述是：“Skills for Real Engineers. Straight from my .claude directory.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/mattpocock/skills 克隆到 ~/Code/skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 5,
+          "owner": "garrytan",
+          "repo": "gstack",
+          "url": "https://github.com/garrytan/gstack",
+          "desc": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 102585,
+          "forks": 15301,
+          "today": "",
+          "summaryZh": "garrytan/gstack 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/garrytan/gstack 克隆到 ~/Code/gstack。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 6,
+          "owner": "VoltAgent",
+          "repo": "awesome-design-md",
+          "url": "https://github.com/VoltAgent/awesome-design-md",
+          "desc": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+          "lang": "",
+          "langColor": "#8b949e",
+          "stars": 84079,
+          "forks": 10102,
+          "today": "",
+          "summaryZh": "VoltAgent/awesome-design-md 是一个近期热度较高的开源项目。它的公开描述是：“A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/VoltAgent/awesome-design-md 克隆到 ~/Code/awesome-design-md。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 7,
+          "owner": "karpathy",
+          "repo": "autoresearch",
+          "url": "https://github.com/karpathy/autoresearch",
+          "desc": "AI agents running research on single-GPU nanochat training automatically",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 83350,
+          "forks": 12109,
+          "today": "",
+          "summaryZh": "karpathy/autoresearch 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“AI agents running research on single-GPU nanochat training automatically”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/karpathy/autoresearch 克隆到 ~/Code/autoresearch。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 8,
+          "owner": "paperclipai",
+          "repo": "paperclip",
+          "url": "https://github.com/paperclipai/paperclip",
+          "desc": "The open-source app everyone uses to manage agents at work",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 67644,
+          "forks": 12442,
+          "today": "",
+          "summaryZh": "paperclipai/paperclip 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“The open-source app everyone uses to manage agents at work”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/paperclipai/paperclip 克隆到 ~/Code/paperclip。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 9,
+          "owner": "JuliusBrussee",
+          "repo": "caveman",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "desc": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+          "lang": "JavaScript",
+          "langColor": "#f1e05a",
+          "stars": 64744,
+          "forks": 3656,
+          "today": "",
+          "summaryZh": "JuliusBrussee/caveman 是一个近期热度较高的开源项目，主要语言是 JavaScript。它的公开描述是：“🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/JuliusBrussee/caveman 克隆到 ~/Code/caveman。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 10,
+          "owner": "koala73",
+          "repo": "worldmonitor",
+          "url": "https://github.com/koala73/worldmonitor",
+          "desc": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 54915,
+          "forks": 8836,
+          "today": "",
+          "summaryZh": "koala73/worldmonitor 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/koala73/worldmonitor 克隆到 ~/Code/worldmonitor。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 11,
+          "owner": "rtk-ai",
+          "repo": "rtk",
+          "url": "https://github.com/rtk-ai/rtk",
+          "desc": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+          "lang": "Rust",
+          "langColor": "#dea584",
+          "stars": 54111,
+          "forks": 3326,
+          "today": "",
+          "summaryZh": "rtk-ai/rtk 是一个近期热度较高的开源项目，主要语言是 Rust。它的公开描述是：“CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/rtk-ai/rtk 克隆到 ~/Code/rtk。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 12,
+          "owner": "safishamsi",
+          "repo": "graphify",
+          "url": "https://github.com/safishamsi/graphify",
+          "desc": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 53769,
+          "forks": 5691,
+          "today": "",
+          "summaryZh": "safishamsi/graphify 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/safishamsi/graphify 克隆到 ~/Code/graphify。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 13,
+          "owner": "MemPalace",
+          "repo": "mempalace",
+          "url": "https://github.com/MemPalace/mempalace",
+          "desc": "The best-benchmarked open-source AI memory system. And it's free.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 52834,
+          "forks": 6969,
+          "today": "",
+          "summaryZh": "MemPalace/mempalace 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“The best-benchmarked open-source AI memory system. And it's free.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/MemPalace/mempalace 克隆到 ~/Code/mempalace。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 14,
+          "owner": "nexu-io",
+          "repo": "open-design",
+          "url": "https://github.com/nexu-io/open-design",
+          "desc": "🎨 Local-first, open-source  Claude Design alternative. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 52203,
+          "forks": 5952,
+          "today": "",
+          "summaryZh": "nexu-io/open-design 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“🎨 Local-first, open-source  Claude Design alternative. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/nexu-io/open-design 克隆到 ~/Code/open-design。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 15,
+          "owner": "VoltAgent",
+          "repo": "awesome-openclaw-skills",
+          "url": "https://github.com/VoltAgent/awesome-openclaw-skills",
+          "desc": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞",
+          "lang": "",
+          "langColor": "#8b949e",
+          "stars": 49306,
+          "forks": 4831,
+          "today": "",
+          "summaryZh": "VoltAgent/awesome-openclaw-skills 是一个近期热度较高的开源项目。它的公开描述是：“The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/VoltAgent/awesome-openclaw-skills 克隆到 ~/Code/awesome-openclaw-skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 16,
+          "owner": "chenglou",
+          "repo": "pretext",
+          "url": "https://github.com/chenglou/pretext",
+          "desc": "Fast, accurate & comprehensive text measurement & layout",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 47717,
+          "forks": 2660,
+          "today": "",
+          "summaryZh": "chenglou/pretext 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Fast, accurate & comprehensive text measurement & layout”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/chenglou/pretext 克隆到 ~/Code/pretext。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 17,
+          "owner": "santifer",
+          "repo": "career-ops",
+          "url": "https://github.com/santifer/career-ops",
+          "desc": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+          "lang": "JavaScript",
+          "langColor": "#f1e05a",
+          "stars": 47231,
+          "forks": 9846,
+          "today": "",
+          "summaryZh": "santifer/career-ops 是一个近期热度较高的开源项目，主要语言是 JavaScript。它的公开描述是：“AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/santifer/career-ops 克隆到 ~/Code/career-ops。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 18,
+          "owner": "addyosmani",
+          "repo": "agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "desc": "Production-grade engineering skills for AI coding agents.",
+          "lang": "Shell",
+          "langColor": "#89e051",
+          "stars": 45731,
+          "forks": 5065,
+          "today": "",
+          "summaryZh": "addyosmani/agent-skills 是一个近期热度较高的开源项目，主要语言是 Shell。它的公开描述是：“Production-grade engineering skills for AI coding agents.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/addyosmani/agent-skills 克隆到 ~/Code/agent-skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 19,
+          "owner": "HKUDS",
+          "repo": "nanobot",
+          "url": "https://github.com/HKUDS/nanobot",
+          "desc": "Lightweight, open-source AI agent for your tools, chats, and workflows.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 43143,
+          "forks": 7603,
+          "today": "",
+          "summaryZh": "HKUDS/nanobot 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Lightweight, open-source AI agent for your tools, chats, and workflows.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/HKUDS/nanobot 克隆到 ~/Code/nanobot。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 20,
+          "owner": "HKUDS",
+          "repo": "CLI-Anything",
+          "url": "https://github.com/HKUDS/CLI-Anything",
+          "desc": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 40401,
+          "forks": 3822,
+          "today": "",
+          "summaryZh": "HKUDS/CLI-Anything 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/HKUDS/CLI-Anything 克隆到 ~/Code/CLI-Anything。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 21,
+          "owner": "ZhuLinsen",
+          "repo": "daily_stock_analysis",
+          "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+          "desc": "LLM驱动的 A/H/美股智能分析：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered stock analysis system for A/H/US markets.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 38853,
+          "forks": 37528,
+          "today": "",
+          "summaryZh": "ZhuLinsen/daily_stock_analysis 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“LLM驱动的 A/H/美股智能分析：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered stock analysis system for A/H/US markets.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/ZhuLinsen/daily_stock_analysis 克隆到 ~/Code/daily_stock_analysis。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 22,
+          "owner": "sickn33",
+          "repo": "antigravity-awesome-skills",
+          "url": "https://github.com/sickn33/antigravity-awesome-skills",
+          "desc": "Installable GitHub library of 1,400+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes installer CLI, bundles, workflows, and official/community skill collections.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 38701,
+          "forks": 6295,
+          "today": "",
+          "summaryZh": "sickn33/antigravity-awesome-skills 是一个近期热度较高的开源项目，主要语言是 Python。它的公开描述是：“Installable GitHub library of 1,400+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes installer CLI, bundles, workflows, and official/community skill collections.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/sickn33/antigravity-awesome-skills 克隆到 ~/Code/antigravity-awesome-skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 23,
+          "owner": "Yeachan-Heo",
+          "repo": "oh-my-claudecode",
+          "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+          "desc": "Teams-first Multi-agent orchestration for Claude Code",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 34838,
+          "forks": 3186,
+          "today": "",
+          "summaryZh": "Yeachan-Heo/oh-my-claudecode 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Teams-first Multi-agent orchestration for Claude Code”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/Yeachan-Heo/oh-my-claudecode 克隆到 ~/Code/oh-my-claudecode。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 24,
+          "owner": "Hmbown",
+          "repo": "CodeWhale",
+          "url": "https://github.com/Hmbown/CodeWhale",
+          "desc": "Agentic coding terminal. DeepSeek-first, multi-provider, cache-maximal, whale-themed. Five-locale UI + CN-region endpoints + CNB mirror.",
+          "lang": "Rust",
+          "langColor": "#dea584",
+          "stars": 34748,
+          "forks": 2967,
+          "today": "",
+          "summaryZh": "Hmbown/CodeWhale 是一个近期热度较高的开源项目，主要语言是 Rust。它的公开描述是：“Agentic coding terminal. DeepSeek-first, multi-provider, cache-maximal, whale-themed. Five-locale UI + CN-region endpoints + CNB mirror.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/Hmbown/CodeWhale 克隆到 ~/Code/CodeWhale。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 25,
+          "owner": "vercel-labs",
+          "repo": "agent-browser",
+          "url": "https://github.com/vercel-labs/agent-browser",
+          "desc": "Browser automation CLI for AI agents",
+          "lang": "Rust",
+          "langColor": "#dea584",
+          "stars": 34300,
+          "forks": 2155,
+          "today": "",
+          "summaryZh": "vercel-labs/agent-browser 是一个近期热度较高的开源项目，主要语言是 Rust。它的公开描述是：“Browser automation CLI for AI agents”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/vercel-labs/agent-browser 克隆到 ~/Code/agent-browser。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 26,
+          "owner": "multica-ai",
+          "repo": "multica",
+          "url": "https://github.com/multica-ai/multica",
+          "desc": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 33073,
+          "forks": 3965,
+          "today": "",
+          "summaryZh": "multica-ai/multica 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/multica-ai/multica 克隆到 ~/Code/multica。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 27,
+          "owner": "kepano",
+          "repo": "obsidian-skills",
+          "url": "https://github.com/kepano/obsidian-skills",
+          "desc": "Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and use the CLI.",
+          "lang": "",
+          "langColor": "#8b949e",
+          "stars": 33038,
+          "forks": 2302,
+          "today": "",
+          "summaryZh": "kepano/obsidian-skills 是一个近期热度较高的开源项目。它的公开描述是：“Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and use the CLI.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/kepano/obsidian-skills 克隆到 ~/Code/obsidian-skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 28,
+          "owner": "Lum1104",
+          "repo": "Understand-Anything",
+          "url": "https://github.com/Lum1104/Understand-Anything",
+          "desc": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 31687,
+          "forks": 2603,
+          "today": "",
+          "summaryZh": "Lum1104/Understand-Anything 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/Lum1104/Understand-Anything 克隆到 ~/Code/Understand-Anything。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 29,
+          "owner": "zeroclaw-labs",
+          "repo": "zeroclaw",
+          "url": "https://github.com/zeroclaw-labs/zeroclaw",
+          "desc": "Fast, small, and fully autonomous AI personal assistant infrastructure, any OS, any platform — deploy anywhere, swap anything 🦀",
+          "lang": "Rust",
+          "langColor": "#dea584",
+          "stars": 31582,
+          "forks": 4655,
+          "today": "",
+          "summaryZh": "zeroclaw-labs/zeroclaw 是一个近期热度较高的开源项目，主要语言是 Rust。它的公开描述是：“Fast, small, and fully autonomous AI personal assistant infrastructure, any OS, any platform — deploy anywhere, swap anything 🦀”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/zeroclaw-labs/zeroclaw 克隆到 ~/Code/zeroclaw。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 30,
+          "owner": "hesamsheikh",
+          "repo": "awesome-openclaw-usecases",
+          "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases",
+          "desc": "A community collection of OpenClaw use cases for making life easier.",
+          "lang": "",
+          "langColor": "#8b949e",
+          "stars": 31193,
+          "forks": 2683,
+          "today": "",
+          "summaryZh": "hesamsheikh/awesome-openclaw-usecases 是一个近期热度较高的开源项目。它的公开描述是：“A community collection of OpenClaw use cases for making life easier.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/hesamsheikh/awesome-openclaw-usecases 克隆到 ~/Code/awesome-openclaw-usecases。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        }
+      ]
+    }
+  }
+}
