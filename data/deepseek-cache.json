@@ -1,0 +1,1025 @@
+{
+  "version": 1,
+  "entries": {
+    "repo:Lum1104/Understand-Anything": {
+      "type": "repo-insight",
+      "hash": "9670db6c45979b9f5b238a0f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:46:15.706Z",
+      "value": {
+        "summaryZh": "Understand-Anything 是一个将代码仓库自动转换为交互式知识图谱的开源工具。它能够解析任意代码库，生成可探索、可搜索的可视化图谱，并支持自然语言提问。项目亮点在于“图谱用于教学而非炫技”，强调实用性，并原生集成了 Claude Code、Codex、Cursor 等主流 AI coding agent。适合希望快速理解陌生代码库、进行代码审查与重构、或者为团队项目建立索引的开发者。",
+        "scenarios": [
+          "快速理解大型开源项目或遗留代码库的模块依赖关系与调用链路",
+          "在代码审查时，用图谱可视化定位冗余、循环依赖或潜在风险",
+          "新成员加入项目时，通过图谱提问快速掌握代码架构与关键逻辑"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Node.js 18+ 和 pnpm。然后执行： git clone https://github.com/Lum1104/Understand-Anything.git cd Understand-Anything pnpm install pnpm run build 安装完成后，在项目根目录创建 .env 文件，写入你的 LLM API Key（如 OPENAI_API_KEY=sk-xxx）。 运行命令：pnpm run start --path /目标代码目录路径 等待分析完成，打开终端输出的本地地址（如 http://localhost:3000）即可查看交互式知识图谱并提问。"
+      }
+    },
+    "repo:anthropics/knowledge-work-plugins": {
+      "type": "repo-insight",
+      "hash": "8d716825f171f8bf33187e05",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:46:25.338Z",
+      "value": {
+        "summaryZh": "该仓库是Anthropic发布的开源插件集合，专为知识工作者在Claude Cowork环境中使用而设计。它提供一系列可扩展的插件，用于增强Claude的信息检索、文档处理、数据分析等能力，帮助用户更高效地完成研究、写作和日常任务。亮点包括完全开源、易于定制、与Claude深度集成，可显著提升工作效率。适合需要频繁处理信息、撰写报告、进行研究的专业人士，以及希望自定义AI助手功能的开发者。",
+        "scenarios": [
+          "从内部知识库自动检索资料并生成结构化摘要，辅助深度研究。",
+          "在Claude对话中直接调用插件分析CSV或Excel数据，快速提取洞察。",
+          "集成项目管理插件，自动规划日程、整理待办事项并同步协作工具。"
+        ],
+        "agentInstallPrompt": "请执行以下步骤安装并测试该项目：1. 克隆仓库：git clone https://github.com/anthropics/knowledge-work-plugins.git；2. 进入目录：cd knowledge-work-plugins；3. 安装依赖：pip install -r requirements.txt；4. 设置环境变量（如需要Claude API密钥）：export ANTHROPIC_API_KEY='你的密钥'；5. 运行演示插件：python -m plugins.example_plugin（或查看README中具体命令）。"
+      }
+    },
+    "repo:rohitg00/ai-engineering-from-scratch": {
+      "type": "repo-insight",
+      "hash": "8f832b96822ec7d93755156f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:46:30.630Z",
+      "value": {
+        "summaryZh": "该项目是一个从零开始学习AI工程的全流程指南，涵盖理论、实战与交付。通过循序渐进的项目式学习，用户可掌握数据预处理、模型训练、API开发、部署上线等关键技能。亮点在于强调“学习-构建-交付”闭环，提供完整可运行的Python代码与最佳实践。适合AI初学者、软件工程师转型者、希望系统化构建AI作品集的开发者。",
+        "scenarios": [
+          "零基础入门AI工程，从环境搭建到模型部署的完整学习路径。",
+          "作为内部培训材料，帮助团队快速掌握AI项目开发流程。",
+          "构建个人AI作品集，参考项目模板进行二次开发与优化。"
+        ],
+        "agentInstallPrompt": "请执行以下步骤：1. 打开终端，执行 `git clone https://github.com/rohitg00/ai-engineering-from-scratch.git` 克隆项目。2. 进入项目目录：`cd ai-engineering-from-scratch`。3. 创建并激活Python虚拟环境（可选但推荐）：`python -m venv venv && source venv/bin/activate`（Windows使用`venv\\Scripts\\activate`）。4. 安装依赖：`pip install -r requirements.txt`。5. 运行第一个示例：`python notebook/01_intro.py` 或根据项目README中的指令执行。"
+      }
+    },
+    "repo:affaan-m/ECC": {
+      "type": "repo-insight",
+      "hash": "0b55252d7bee44561432b3a8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:46:36.262Z",
+      "value": {
+        "summaryZh": "ECC 是一个为 AI 编码代理设计的性能优化系统，支持 Claude Code、Codex、Opencode、Cursor 等主流工具。它通过技能库、直觉模拟、记忆管理、安全策略与研究优先的开发方式，提升代理的响应速度、代码质量与自主决策能力。核心亮点是跨代理兼容、可插拔架构以及内存-安全双保障，适合使用 AI 编程助手进行复杂项目开发的开发者或团队。",
+        "scenarios": [
+          "在使用 Claude Code 进行大型代码库重构时，通过 ECC 优化代理的上下文记忆与直觉判断，减少重复提问次数。",
+          "在多代理协作的 Cursor 工作流中，利用 ECC 的安全策略模块控制代码写入权限，防止意外修改关键文件。",
+          "针对研究型项目，结合 Codex 和 Opencode 进行实验性开发时，借助 ECC 的记忆系统保留历史决策与失败模式，加速迭代。"
+        ],
+        "agentInstallPrompt": "请先克隆 ECC 仓库：git clone https://github.com/affaan-m/ECC.git；然后进入目录 cd ECC，执行 npm install 安装依赖。之后运行 node index.js 启动核心服务。若需集成至特定代理（如 Claude Code），请查看 docs/INTEGRATION.md 配置文件示例，并按说明设置环境变量。"
+      }
+    },
+    "repo:mukul975/Anthropic-Cybersecurity-Skills": {
+      "type": "repo-insight",
+      "hash": "c1f32f79ec3cc68041f41538",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:46:42.131Z",
+      "value": {
+        "summaryZh": "Anthropic-Cybersecurity-Skills 是一个面向 AI 代理的结构化网络安全技能库，包含 754 项技能，覆盖 26 个安全领域。它映射到 MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND 和 NIST AI RMF 五大安全框架，并遵循 agentskills.io 标准。该项目兼容 Claude Code、GitHub Copilot、Cursor、Gemini CLI 等 20 多个 AI 平台，使 AI 代理能够直接调用标准化的安全操作，如攻击检测、防御配置、合规评估等。适合安全工程师、AI 开发者及希望以程序化方式集成网络安全能力的团队，可显著减少重复工作并提升响应一致性。",
+        "scenarios": [
+          "安全运营团队使用 AI 代理自动执行 MITRE ATT&CK 框架下的攻击模拟与检测规则生成",
+          "DevSecOps 流水线集成技能库，自动检查容器配置是否符合 NIST CSF 2.0 要求",
+          "AI 安全研究员利用该库训练代理识别并防御对抗性攻击（映射到 MITRE ATLAS）"
+        ],
+        "agentInstallPrompt": "首先，克隆仓库并安装依赖：git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git && cd Anthropic-Cybersecurity-Skills && pip install -r requirements.txt。然后，根据你使用的 AI 平台（如 Claude Code、GitHub Copilot），按 agentskills.io 标准加载技能集。例如，若使用 Claude Code，可在配置中引用 skills/ 目录下的 JSON 文件，并调用相应技能函数。要快速验证，运行 python examples/quick_start.py 查看示例输出。确保所有 API Key 已设置（如 Anthropic API 等），并根据需要修改 config.yaml 中的框架选择。"
+      }
+    },
+    "repo:colbymchenry/codegraph": {
+      "type": "repo-insight",
+      "hash": "ae9274b632c690848d16440e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:46:53.106Z",
+      "value": {
+        "summaryZh": "Codegraph 是一个预索引代码知识图谱工具，专为 Claude Code、Codex、Cursor、OpenCode 和 Hermes Agent 等 AI 编程助手设计。它通过提前分析代码库结构、符号依赖和类型信息，生成紧凑的索引文件，从而显著减少 AI 对话中的 token 消耗和工具调用次数，同时 100% 在本地运行，保障数据隐私。核心亮点：轻量、离线、高效，适合任何需要为 AI 编写助手提供精准代码上下文的中大型项目。目标用户是使用 AI 辅助编程的开发者，尤其是那些希望降低 API 成本、提升响应速度并避免代码泄露的团队。",
+        "scenarios": [
+          "在大型代码库中，为 AI 助手提供即时、精准的符号定义和引用关系，避免反复搜索和上下文截断",
+          "本地开发时，让 AI 完全离线理解项目结构，无需上传代码至云端，满足安全合规要求",
+          "配合 Cursor 或 Codex 在 IDE 内使用，减少长对话中的 token 消耗，保持上下文一致"
+        ],
+        "agentInstallPrompt": "请执行以下步骤安装并试跑 codegraph： 1. 克隆仓库：git clone https://github.com/colbymchenry/codegraph.git && cd codegraph 2. 安装依赖：npm install 3. 构建项目：npm run build 4. 在目标代码仓库根目录运行索引生成命令：npx codegraph init （若提示命令不存在，请查看 README 中的 CLI 用法，通常为 npx @codegraph/cli generate） 5. 生成的索引文件将自动被支持的 AI 工具（如 Claude Code、Cursor）识别，后续对话即可使用压缩后的知识图谱。"
+      }
+    },
+    "repo:manaflow-ai/cmux": {
+      "type": "repo-insight",
+      "hash": "36dcccc45a94852dc5754762",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:47:04.348Z",
+      "value": {
+        "summaryZh": "Cmux 是一款基于 Ghostty 的 macOS 终端模拟器，专为 AI 编码代理优化。其最大亮点是垂直标签布局，允许用户同时高效管理多个终端会话，并通过通知机制在后台任务完成时即时提醒。此外，它利用 Metal 进行高性能渲染，界面简洁流畅。适合 AI 开发人员、自动化工作流使用者及需要多终端管理的 macOS 用户。",
+        "scenarios": [
+          "AI 编码代理同时执行编译、测试和部署，每个任务在不同垂直标签中运行，通过通知获知完成状态。",
+          "开发者监控多个日志流（如服务器、数据库），垂直排列便于横向对比和快速查看。",
+          "需要长命令输出的场景（如深度学习训练），垂直标签减少滚动，提升可读性。"
+        ],
+        "agentInstallPrompt": "请按以下步骤安装并试跑 cmux：1. 克隆仓库：git clone https://github.com/manaflow-ai/cmux.git；2. 进入目录：cd cmux；3. 确保已安装 Xcode Command Line Tools：xcode-select --install；4. 构建项目：swift build -c release；5. 运行生成的二进制：./build/release/cmux。如果构建失败，尝试用 Xcode 打开 Package.swift 并执行 Product > Build。"
+      }
+    },
+    "repo:multica-ai/andrej-karpathy-skills": {
+      "type": "repo-insight",
+      "hash": "6f97e8a61156462f8d66f2c2",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:47:12.208Z",
+      "value": {
+        "summaryZh": "该项目提供一份名为 CLAUDE.md 的单一配置文件，源自 AI 先驱 Andrej Karpathy 对大型语言模型编程陷阱的观察与实践总结。通过将此文件置于项目根目录，Claude Code（或其他兼容的 AI 编码助手）可直接读取其中的系统级指令，从而显著改善代码生成质量、减少幻觉、规范输出格式。亮点在于它凝练了 Karpathy 在训练与使用 LLM 编码时的核心教训，无需额外安装或依赖，即插即用。适合所有使用 AI 辅助编程的开发者，尤其是希望避免常见错误、提升代码一致性与可靠性的 Claude Code 用户。",
+        "scenarios": [
+          "在全新或现有项目中引入 CLAUDE.md，使 Claude Code 自动遵循最佳实践（如避免生成未测试代码、优先使用标准库等）。",
+          "团队统一 AI 编码规范，将本文件作为模板，结合实际项目需求微调后纳入版本控制，确保每位成员获得一致的 AI 辅助体验。",
+          "快速试错与调优：修改 CLAUDE.md 后重启对话，可即时改变 AI 行为，无需修改工具链或插件，适合探索不同编码风格。"
+        ],
+        "agentInstallPrompt": "首先，在终端中执行以下命令下载 CLAUDE.md 文件：curl -O https://raw.githubusercontent.com/multica-ai/andrej-karpathy-skills/main/CLAUDE.md。然后，将该文件移动或复制到你的项目根目录，确保与 .gitignore 等文件同级。之后启动 Claude Code 会话，它会自动读取该配置并应用规则。若需验证，可输入 'What rules are active?' 确认配置已生效。"
+      }
+    },
+    "repo:Fincept-Corporation/FinceptTerminal": {
+      "type": "repo-insight",
+      "hash": "e8c727b79288335f0f7b844f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:47:15.464Z",
+      "value": {
+        "summaryZh": "FinceptTerminal 是一款基于Python构建的现代金融终端应用，集成了高级市场分析、投资研究与经济数据工具。它提供交互式数据探索界面，支持实时市场数据、技术指标计算、基本面分析以及宏观经济数据可视化。亮点在于模块化设计和丰富的金融数据源整合，适合量化分析师、个人投资者及金融研究人员快速获取深度洞察并辅助决策。",
+        "scenarios": [
+          "量化交易策略回测与数据可视化",
+          "实时股票行情监控与技术指标分析",
+          "宏观经济数据检索与趋势分析"
+        ],
+        "agentInstallPrompt": "请先确保系统已安装Python 3.8+和Git。克隆仓库：git clone https://github.com/Fincept-Corporation/FinceptTerminal.git；进入目录：cd FinceptTerminal；创建虚拟环境：python -m venv venv && source venv/bin/activate（Windows用venv\\Scripts\\activate）；安装依赖：pip install -r requirements.txt；配置API密钥（如Alpha Vantage等）到.env文件（参照.env.example）；运行主程序：python main.py 或根据文档启动终端界面。"
+      }
+    },
+    "repo:paperless-ngx/paperless-ngx": {
+      "type": "repo-insight",
+      "hash": "423b0ef0b5883b170b56e0f2",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:47:21.220Z",
+      "value": {
+        "summaryZh": "Paperless-ngx 是一款社区驱动的增强型文档管理系统，支持扫描、索引和归档纸质文件。它自动执行 OCR（光学字符识别）以提取文本，并提供强大的搜索、标签和分类功能。亮点包括 Docker 一键部署、多用户协作、邮件导入及规则自动处理。适合个人或团队高效管理收据、发票、合同、笔记等各类文档，彻底告别纸质杂乱。项目基于 Python 开发，开源免费，社区活跃，持续迭代。",
+        "scenarios": [
+          "家庭文档归档：自动扫描并归类家庭成员的重要文件（如医疗记录、报税单），通过 OCR 实现全文搜索。",
+          "企业发票管理：批量导入电子或纸质发票，自动提取金额、日期并生成报表，便于财务对账。",
+          "法律合同整理：对合同进行标签与元数据标注，支持多用户权限控制，确保文件安全与可追溯。"
+        ],
+        "agentInstallPrompt": "请按以下步骤在 Docker 环境中安装并试跑 paperless-ngx：1. 确保已安装 Docker 和 Docker Compose (v2)；2. 克隆仓库：git clone https://github.com/paperless-ngx/paperless-ngx.git；3. 进入目录：cd paperless-ngx；4. 复制配置模板：cp docker/compose/docker-compose.yml docker-compose.yml；5. 复制环境变量模板：cp docker/compose/.env.example .env；6. 编辑 .env 文件，设置 PAPERLESS_SECRET_KEY（随机字符串）、PAPERLESS_URL（http://localhost）、时区等；7. 执行 docker compose pull && docker compose up -d；8. 等待容器启动，访问 http://localhost:8010，默认用户名 admin 密码 admin。首次登录后通过管理界面添加文档分类器规则即可导入测试文件。"
+      }
+    },
+    "repo:anthropics/claude-cookbooks": {
+      "type": "repo-insight",
+      "hash": "6d01c5ae2cfe1b6667ea7db4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:47:27.552Z",
+      "value": {
+        "summaryZh": "这是一个由Anthropic官方维护的Claude Cookbook集合，包含多个Jupyter Notebook示例，展示了Claude在各种场景下的高效用法，如系统提示定制、图像理解、工具调用、长文本处理、多轮对话、代码生成等。亮点在于每个Notebook都配有详细文档和可复现代码，最佳实践直接来自Claude核心团队。适合希望深入了解Claude能力边界、快速集成到AI应用中的开发者、数据科学家和AI研究者。通过交互式Notebook，用户能边学边试，快速掌握Claude的高级特性和优化技巧。",
+        "scenarios": [
+          "学习和测试Claude的系统提示、角色设定与行为控制技巧，用于构建定制化AI助手",
+          "探索Claude的图像分析、多模态输入与工具使用能力，应用于自动化文档处理或视觉问答",
+          "研究Claude的长上下文处理与RAG（检索增强生成）技术，用于搭建知识库问答系统或对话式搜索"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/anthropics/claude-cookbooks.git；进入目录：cd claude-cookbooks；创建虚拟环境（可选）：python -m venv venv && source venv/bin/activate；安装依赖：pip install jupyter anthropic ipykernel；启动Jupyter Notebook：jupyter notebook；在浏览器中打开任意.ipynb文件，按照notebook内提示设置API密钥（推荐通过环境变量ANTHROPIC_API_KEY设置），然后依次运行代码单元格即可体验Claude功能。"
+      }
+    },
+    "repo:Leonxlnx/taste-skill": {
+      "type": "repo-insight",
+      "hash": "9d431a2f456c01b8714eccca",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:47:32.993Z",
+      "value": {
+        "summaryZh": "Taste-Skill 是一个轻量级 Shell 工具，旨在通过注入“品味”来提升 AI 输出质量。它能自动注入高质量、有深度的系统提示，有效避免 AI 生成千篇一律的泛泛之谈。适合需要 AI 产出创意文案、深度分析、个性化建议或专业内容的人员，如内容创作者、产品经理和开发者。该工具通过简单命令行即可集成到现有工作流，无需复杂配置。亮点在于将人类审美标准模块化，让 AI 输出更鲜活、独特。",
+        "scenarios": [
+          "内容创作者使用 Taste-Skill 辅助写博客、营销文案，让 AI 生成的文字更有个性和洞见。",
+          "产品经理在需求分析或竞品调研时，借助该工具让 AI 提供更深刻、非模板化的洞察。",
+          "开发者在调用大语言模型 API 前，通过 Taste-Skill 预处理提示词，提升回复的趣味性和专业深度。"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/Leonxlnx/taste-skill.git && cd taste-skill。确认已安装 Shell（如 bash），然后运行 chmod +x taste-skill.sh 赋予执行权限。在终端执行 ./taste-skill.sh，根据提示输入你的原始提示词，工具会自动生成带有“品味”的增强版提示词。你也可以将脚本放入 PATH 以便全局调用：sudo cp taste-skill.sh /usr/local/bin/taste-skill。之后运行 taste-skill 即可。"
+      }
+    },
+    "repo:moeru-ai/airi": {
+      "type": "repo-insight",
+      "hash": "d40d2e57c0ae43186e7575bc",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:47:39.580Z",
+      "value": {
+        "summaryZh": "Airi 是一款自托管的、你完全拥有的 AI 伴侣，类似 Grok Companion，旨在将虚拟角色（“waifu”）带入现实世界，目标是达到 Neuro-sama 的高度。它支持实时语音对话，并能操控 Minecraft 和 Factorio 等游戏。项目基于 TypeScript 实现，提供 Web、macOS 和 Windows 客户端，适合想要完全掌控 AI 交互体验、追求低延迟与高度定制化的开发者或二次元爱好者。亮点包括开源、自托管、多平台、实时语音、游戏集成，以及可扩展的“灵魂容器”架构。",
+        "scenarios": [
+          "部署为一个私有的智能助手，在个人电脑或服务器上运行，通过语音与用户进行日常对话、查询天气或控制智能家居。",
+          "与 Minecraft 或 Factorio 游戏配合，让 Airi 以 AI 角色身份在游戏中与玩家实时交互，协助建造或提供策略建议。",
+          "作为二次元虚拟主播的底层 AI 引擎，接入 OBS 或直播平台，实现实时语音互动和角色扮演直播。"
+        ],
+        "agentInstallPrompt": "请按照以下步骤在本地安装并运行 Airi： 1. 克隆仓库：`git clone https://github.com/moeru-ai/airi.git` 2. 进入目录：`cd airi` 3. 安装依赖：`npm install` 4. 复制并配置环境变量：`cp .env.example .env`，然后编辑 .env 文件设置 OpenAI API Key 或其他 LLM 端点（如本地 ollama）。 5. 启动开发服务器：`npm run dev` 或 `npm run build && npm start` 6. 根据需要启用语音识别/合成模块（参考 docs/voice-setup.md）。 注意：确保已安装 Node.js 20+ 和对应的 TTS 服务（如 edge-tts 或 azure）。"
+      }
+    },
+    "repo:shiyu-coder/Kronos": {
+      "type": "repo-insight",
+      "hash": "ea6b488276d3f79b474c5063",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:47:43.940Z",
+      "value": {
+        "summaryZh": "Kronos 是一个专为金融市场语言设计的基座模型，基于大规模金融语料训练，可理解财报、新闻、行情等非结构化数据。亮点在于其领域适应性强，能捕捉金融文本中的细微语义，支持情感分析、事件驱动预测、风险识别等任务。适合量化研究员、金融科技开发者、数据科学家用于构建智能化金融分析工具。",
+        "scenarios": [
+          "从企业财报中自动提取关键财务指标并生成摘要，辅助投资决策。",
+          "对金融新闻进行情感和事件分析，预测短期市场波动趋势。",
+          "构建智能客服系统，回答用户关于股票、基金、宏观经济等专业问题。"
+        ],
+        "agentInstallPrompt": "请先安装 Python 3.8+ 和 Git。克隆仓库：git clone https://github.com/shiyu-coder/Kronos.git && cd Kronos。创建虚拟环境：python -m venv venv && source venv/bin/activate（Windows使用 venv\\Scripts\\activate）。安装依赖：pip install -r requirements.txt。下载预训练模型权重（参考 release 页面），将权重文件夹放在项目根目录。运行示例脚本：python examples/financial_sentiment.py，观察输出结果。如需微调，准备自有金融文本数据并按 data 目录下格式准备，然后运行 python train.py --config configs/finetune.yaml。"
+      }
+    },
+    "repo:Axorax/awesome-free-apps": {
+      "type": "repo-insight",
+      "hash": "2c696f9e2c229d2c719de41e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:47:55.720Z",
+      "value": {
+        "summaryZh": "这是一个精心整理的免费应用列表，涵盖PC和移动设备上的最佳免费软件。项目亮点在于分类详尽、持续更新，覆盖多平台（Windows、macOS、Linux、Android、iOS）的实用工具、媒体、安全、开发等类别。适合寻找商业软件免费替代品的个人用户，以及热衷于探索优质免费应用的技术爱好者，帮助节省开支并提升效率。",
+        "scenarios": [
+          "需要为Windows电脑寻找免费杀毒软件或文件管理工具，替代付费版本。",
+          "在Android或iOS设备上发现免费的高效办公、媒体播放或安全类应用。",
+          "开发者寻找开源替代品或免费开发工具（如文本编辑器、图像处理软件）时参考。"
+        ],
+        "agentInstallPrompt": "首先克隆仓库：git clone https://github.com/Axorax/awesome-free-apps.git，然后进入目录 awesome-free-apps。若存在 index.html 文件，使用浏览器直接打开；若没有，则使用 Markdown 预览工具（如 VS Code 打开 README.md 并切换到预览模式）查看完整列表。如需本地服务器，可执行 python3 -m http.server 8000 后访问 http://localhost:8000。"
+      }
+    },
+    "repo:hardikpandya/stop-slop": {
+      "type": "repo-insight",
+      "hash": "81a2d33d405a8907cd261a85",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:48:07.885Z",
+      "value": {
+        "summaryZh": "stop-slop 是一个轻量级的技能文件，用于从AI生成的散文中去除常见的AI写作痕迹（如生硬措辞、重复模式、过度正式等）。它提供了一套规则或脚本，帮助用户快速后处理文本，使其更加自然流畅、接近人类写作风格。亮点在于专注单一任务、无需复杂配置，适合内容创作者、编辑、学生以及任何使用AI辅助写作后希望提升文本真实感和可读性的人。",
+        "scenarios": [
+          "在AI生成博客文章初稿后，使用stop-slop去除“首先、其次”等机械结构，让段落更口语化。",
+          "编辑AI辅助生成的邮件或商务沟通文本，消除“根据您的请求”等模板化表达，提升亲和力。",
+          "学生用AI辅助完成论文草稿后，运行stop-slop调整句式，避免被识别为机器生成内容。"
+        ],
+        "agentInstallPrompt": "请克隆仓库：git clone https://github.com/hardikpandya/stop-slop.git，然后 cd stop-slop，运行 python stop-slop.py --help 查看用法。如需处理文本，将待去AI味的英文或中文文本保存为输入文件，执行 python stop-slop.py input.txt -o output.txt。"
+      }
+    },
+    "repo:garrytan/gstack": {
+      "type": "repo-insight",
+      "hash": "a23717744bdfd102f2c27d81",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:48:14.013Z",
+      "value": {
+        "summaryZh": "gstack 是知名投资人 Garry Tan 为 Claude Code 定制的 23 个意见性工具集合，模拟 CEO、设计师、工程经理、发布经理、文档工程师和 QA 等角色。每个工具都封装了特定角色视角下的 prompt，能直接与 Claude Code 交互，帮助开发者快速完成从项目规划、设计评审、任务分解到发布管理和质量检查的全流程。亮点在于将 AI 代理的隐性知识显性化为可复用的提示模板，适合希望利用 Claude Code 进行结构化、角色化协作开发的前端、全栈或 AI 应用开发者。",
+        "scenarios": [
+          "使用 CEO 工具进行产品方向与优先级决策，快速获得高层视角的 roadmap 建议。",
+          "通过工程经理工具将大型功能拆解为可执行的任务列表，并分配预估工时。",
+          "调用 QA 工具生成测试用例并执行端到端回归测试，减少人工审查负担。"
+        ],
+        "agentInstallPrompt": "首先确保已安装 Node.js 18+ 和 Git。然后安装 Claude Code CLI：npm install -g @anthropic-ai/claude-code。接着克隆本仓库：git clone https://github.com/garrytan/gstack.git && cd gstack。运行 claude-code 进入交互模式，输入 /load 加载感兴趣的 tool 文件（路径在 tools/ 文件夹下），例如 /load tools/ceo.md。也可以批量加载后与 Claude 对话，按 Ctrl+C 退出。如果需要测试，直接输入你的问题，Claude 会根据已加载的工具角色进行回答。"
+      }
+    },
+    "repo:tinyhumansai/openhuman": {
+      "type": "repo-insight",
+      "hash": "2cf82b97da7e5ddd21e119da",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:48:19.633Z",
+      "value": {
+        "summaryZh": "OpenHuman 是一款用 Rust 构建的个人 AI 超级智能系统，主打私有、简单和强大。它允许用户在本地运行高性能 AI 模型，无需依赖云端，彻底保护数据隐私。亮点包括极低的资源占用、一键部署的自托管方案以及丰富的插件扩展能力。适合注重隐私的开发者、极客用户以及希望将 AI 能力集成到本地工作流的个人或小团队。",
+        "scenarios": [
+          "在本地部署一个完全离线的智能助手，进行日常对话、问答和任务编排。",
+          "作为个人知识管理中枢，自动整理笔记、文件并生成摘要。",
+          "集成到家庭自动化或开发环境中，通过 API 调用执行脚本、代码生成等操作。"
+        ],
+        "agentInstallPrompt": "请先在系统上安装 Rust 工具链（rustup 和 cargo）。然后执行以下步骤： 1. 克隆仓库：git clone https://github.com/tinyhumansai/openhuman.git 2. 进入目录：cd openhuman 3. 运行：cargo build --release 4. 根据 README 配置模型文件（如支持 GGUF 格式），并运行：./target/release/openhuman --model <模型路径> 如需体验 Web UI 或 API，请参考文档启动相应服务。"
+      }
+    },
+    "repo:Imbad0202/academic-research-skills": {
+      "type": "repo-insight",
+      "hash": "5473d415d69450460792942e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:48:27.665Z",
+      "value": {
+        "summaryZh": "这是一个面向学术研究的 AI 辅助工具链，专为 Claude Code 设计，覆盖从文献调研、初稿撰写、同行评审、修改润色到最终定稿的完整流程。亮点在于将繁琐的研究写作步骤自动化，提供清晰的阶段化工作流（research → write → review → revise → finalize），并可直接在 Claude 命令行环境中运行。适合需要高效产出论文、综述或报告的学生、科研人员及学术写作者。",
+        "scenarios": [
+          "针对特定课题进行文献综述和背景研究，自动生成结构化笔记。",
+          "基于已有提纲或数据，快速生成论文初稿并符合学术格式。",
+          "对已完成稿件进行逻辑校验、语言润色和格式修正，辅助投稿前准备。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/Imbad0202/academic-research-skills.git，然后进入目录：cd academic-research-skills。查看 README.md 了解完整使用方法。通常执行 python main.py（或对应入口脚本）可启动研究工作流；若需安装依赖，运行 pip install -r requirements.txt（如有）。确保已安装 Claude Code 并配置 API 密钥，按提示选择阶段即可运行。"
+      }
+    },
+    "repo:ruvnet/RuView": {
+      "type": "repo-insight",
+      "hash": "53f8b6a7ece39f5a2782cbd8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:48:34.738Z",
+      "value": {
+        "summaryZh": "RuView 是一个基于 Rust 的开源项目，利用普通商用 WiFi 信号实现实时空间智能感知、生命体征监测和人员存在检测，全程无需任何摄像头或穿戴设备。其亮点在于完全依赖无线信号处理，保护隐私且成本极低，适用于对隐私敏感的室内环境。适合智能家居开发者、物联网工程师、医疗健康领域研究者以及建筑自动化从业者。",
+        "scenarios": [
+          "智能家居中，利用 WiFi 信号感知房间内的人员活动，自动调节灯光、空调或安防系统。",
+          "养老院或医疗病房中，非接触式监测老人的呼吸频率、心率及跌倒事件，保障安全。",
+          "办公或商业空间中，根据人员存在状态动态管理能源消耗（如无人时关闭照明和空调）。"
+        ],
+        "agentInstallPrompt": "首先确保已安装 Rust 工具链（rustup 与 cargo）。然后执行以下命令： git clone https://github.com/ruvnet/RuView.git cd RuView cargo build --release 构建成功后，运行示例程序（假设项目包含示例）： cargo run --example basic_detection 若需捕获真实 WiFi 信号，请确保系统支持 libpcap 或类似库（Linux: sudo apt install libpcap-dev; macOS: brew install libpcap）。运行前可能需要设置网络接口权限。"
+      }
+    },
+    "repo:rohitg00/agentmemory": {
+      "type": "repo-insight",
+      "hash": "310baf48b42c13a892eecb0d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:48:40.190Z",
+      "value": {
+        "summaryZh": "agentmemory 是一个专为 AI 编码代理设计的持久化记忆库，基于真实世界基准测试优化。它用 TypeScript 实现，轻量且易于集成，帮助代理在多次会话中保持上下文、偏好和项目状态，显著提升连续交互的准确性与效率。适合开发长期记忆能力的聊天机器人、自动化工作流、编程助手等场景的开发者。",
+        "scenarios": [
+          "构建具有长期记忆的编程助手，自动记住用户代码风格和项目依赖。",
+          "多轮客户服务对话中保持用户意图与历史记录，避免重复提问。",
+          "自动化 CI/CD 或数据处理任务中记录进度与中间状态，支持断点恢复。"
+        ],
+        "agentInstallPrompt": "首先克隆仓库：git clone https://github.com/rohitg00/agentmemory.git。进入目录：cd agentmemory。安装依赖：npm install。运行示例测试：npm test。如要快速体验，可执行 npx ts-node examples/basic.ts（如果 examples 目录存在），或参照 README 中的用法文档直接引入项目。"
+      }
+    },
+    "repo:CloakHQ/CloakBrowser": {
+      "type": "repo-insight",
+      "hash": "f84d1a2c9fd85db5e1e7784f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:48:47.086Z",
+      "value": {
+        "summaryZh": "CloakBrowser 是一个基于 Chromium 的隐身浏览器，通过源代码级别的指纹补丁，能够规避几乎所有机器人检测系统。它可作为 Playwright 的即插即用替代品，已通过 30/30 项测试。适合需要高匿名性自动化浏览器操作的用户，如爬虫开发者、自动化测试者、账号管理工具使用者。亮点在于无需额外配置即可绕过主流反爬机制，保持与 Playwright 相同的 API 体验。",
+        "scenarios": [
+          "自动化数据采集：批量抓取需要验证用户行为或环境指纹的动态网页，避免被识别为机器人。",
+          "安全测试：模拟真实用户登录、操作流程，验证网站对自动化工具的检测与防御能力。",
+          "账号管理：批量注册、登录或执行日常操作时，保持每个会话的环境指纹独立，降低封号风险。"
+        ],
+        "agentInstallPrompt": "首先克隆仓库：git clone https://github.com/CloakHQ/CloakBrowser && cd CloakBrowser。然后安装依赖：pip install -r requirements.txt。试用示例：进入 examples/ 目录，运行 python quick_start_playwright.py（需先确保系统已安装 Chrome/Chromium）。该脚本会启动隐身浏览器并访问 test 页面，验证指纹伪装效果。如需集成到现有 Playwright 项目，只需将 import playwright 替换为 from cloak import playwright_as_playwright 即可。"
+      }
+    },
+    "repo:supertone-inc/supertonic": {
+      "type": "repo-insight",
+      "hash": "52fde300b4dd42227fc4ab02",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:48:54.414Z",
+      "value": {
+        "summaryZh": "Supertonic 是一个基于ONNX 的本地多语言 TTS 引擎，专为 Swift 开发者设计。它利用 ONNX Runtime 在设备端实现毫秒级语音合成，支持英语、韩语、中文等语言，无需网络连接。亮点包括极低延迟、高效内存占用、原生 Swift 并发安全性，以及可定制语音参数（语速、音调）。适合需要离线、高速、多语言语音能力的 iOS/macOS 应用，如语音助手、有声读物、无障碍功能等。项目已开源，提供了 MIT 许可。",
+        "scenarios": [
+          "将 Supertonic 集成到 iOS 应用中，实现离线语音助手，无需依赖云端API即可响应用户指令。",
+          "在 macOS 开发环境中使用 Supertonic 构建多语言有声内容创作工具，如自动生成语音播客或视频配音。",
+          "基于 Supertonic 的快速推理能力，为视障用户开发实时语音反馈的无障碍功能，支持多种语言输出。"
+        ],
+        "agentInstallPrompt": "使用 Swift Package Manager 安装 Supertonic。在 Xcode 项目中选择 File > Add Package Dependencies，输入 https://github.com/supertone-inc/supertonic 并选择版本。然后在代码中导入 `import Supertonic`。快速试跑示例： 1. 初始化引擎：`let engine = try await Supertonic() // 会自动下载默认模型` 2. 合成语音：`let audioData = try await engine.synthesize(text: \"Hello, 你好, 안녕하세요\", speaker: .default) // 支持多语言混写` 3. 播放：`engine.play(audioData) // 使用内置播放器` 确保目标设备为 iOS 15+ 或 macOS 12+，且运行时有网络以下载模型（仅首次需要）。更多细节见项目 README。"
+      }
+    },
+    "repo:can1357/oh-my-pi": {
+      "type": "repo-insight",
+      "hash": "5c8c7e4acabddaa1d2977cb4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:48:58.747Z",
+      "value": {
+        "summaryZh": "oh-my-pi 是一个为终端打造的 AI 编码代理，采用哈希锚定编辑保证操作原子性，集成 LSP、Python、浏览器、子代理等功能，优化工具链以提升开发效率。亮点包括轻量级架构、支持多种语言和运行时环境，适合追求自动化编码与智能辅助的开发者。适用人群：希望用 AI 增强 CLI 工作流的全栈工程师、数据科学家及DevOps从业者。",
+        "scenarios": [
+          "在终端中通过自然语言指令自动修复代码错误或重构函数，无需手动打开编辑器。",
+          "利用 LSP 集成实时代码补全、诊断和跳转，作为智能 IDE 替代方案。",
+          "编写 Python 脚本或自动化任务时，让子代理并行处理文件搜索、浏览器操作等繁琐步骤。"
+        ],
+        "agentInstallPrompt": "在终端中运行以下命令安装 oh-my-pi： ```bash # 确保已安装 Node.js >= 16 和 npm npm install -g oh-my-pi # 启动代理，之后按照交互提示配置 API Key（需要 OpenAI 兼容 API） oh-my-pi ``` 首次运行会创建配置文件 ~/.oh-my-pi/config.yml，可手动编辑设置模型、LSP等。测试运行：输入 /help 查看命令列表。"
+      }
+    },
+    "repo:dograh-hq/dograh": {
+      "type": "repo-insight",
+      "hash": "32da88919313dca51062757c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:49:03.458Z",
+      "value": {
+        "summaryZh": "Dograh 是一个开源的语音代理平台，旨在帮助开发者快速构建和部署可定制的语音交互系统。它集成了语音识别（ASR）、自然语言理解（NLU）、对话管理及语音合成（TTS）等核心能力，提供模块化设计，支持自定义技能和集成第三方服务。亮点在于其轻量级、易于扩展且完全开源，适合需要构建语音客服、虚拟助手、语音控制应用的企业和AI开发者。",
+        "scenarios": [
+          "构建企业级语音客服系统，实现自动应答和转人工服务",
+          "开发车载或智能家居场景下的语音控制助手",
+          "搭建多语言语音交互的虚拟角色或教育工具"
+        ],
+        "agentInstallPrompt": "首先，克隆仓库：git clone https://github.com/dograh-hq/dograh.git。然后进入目录并创建虚拟环境：cd dograh && python3 -m venv venv && source venv/bin/activate。安装依赖：pip install -r requirements.txt。接着，配置环境变量（例如语音服务API密钥）。最后，运行示例：python examples/simple_voice_assistant.py。确保麦克风权限开启，即可通过语音与代理交互。"
+      }
+    },
+    "repo:presenton/presenton": {
+      "type": "repo-insight",
+      "hash": "057d9ca19c8e96ceb8e88a6a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:49:07.846Z",
+      "value": {
+        "summaryZh": "Presenton 是一个开源的 AI 演示文稿生成器，可作为 Gamma、Beautiful AI、Decktopus 的替代方案。它提供 Web 界面和 API，用户输入主题或大纲，AI 自动生成结构完整、设计精美的幻灯片。亮点包括支持 Markdown 编辑、多种主题模板、导出为 PPTX/PDF，以及可自托管的 API 接口。适合需要快速制作专业演示文稿的内容创作者、教育工作者、销售团队和开发者。开源、免费、数据可控，是闭源工具的理想平替。",
+        "scenarios": [
+          "营销团队快速生成产品推介 PPT，只需提供产品亮点和关键数据。",
+          "教育者根据课程大纲自动生成教学课件，节省排版时间。",
+          "开发者集成 API 到自动化工作流，批量生成项目汇报或周报演示。"
+        ],
+        "agentInstallPrompt": "请执行以下步骤完成 Presenton 的本地安装和试跑：1. `git clone https://github.com/presenton/presenton.git` 并进入目录。2. 确保已安装 Node.js 18+ 和 pnpm（若无则 `npm i -g pnpm`）。3. 运行 `cp .env.example .env` 并按需编辑，尤其注意填写 OPENAI_API_KEY 等 LLM 相关变量。4. 运行 `pnpm install` 安装依赖。5. 运行 `pnpm dev` 启动开发服务器，访问 http://localhost:3000 即可使用 Web UI。若需使用 API，参考文档中 API 路由。"
+      }
+    },
+    "repo:HKUDS/CLI-Anything": {
+      "type": "repo-insight",
+      "hash": "b1908d082212acaf993c9d9d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:49:13.558Z",
+      "value": {
+        "summaryZh": "CLI-Anything 是香港大学团队推出的开源工具，旨在为任意软件生成命令行接口（CLI），使其原生兼容AI代理调用。核心亮点是无需修改软件源码，通过描述文件自动生成CLI，支持集成LLM代理、自动化脚本和智能工作流。适合AI开发者、DevOps工程师、以及需要将传统GUI或复杂工具接入AI系统的用户。项目提供在线CLI Hub仓库，共享社区预制的软件接口。",
+        "scenarios": [
+          "为没有命令行的设计软件（如Figma）生成CLI，让AI代理直接操作图层和导出",
+          "在CI/CD流水线中，将多个闭源工具通过CLI统一编排，实现自动化测试与部署",
+          "构建可被大模型调用的本地工具库，类似MCP协议，但更轻量且无需修改软件代码"
+        ],
+        "agentInstallPrompt": "安装并试跑 CLI-Anything：1. 克隆仓库：git clone https://github.com/HKUDS/CLI-Anything.git && cd CLI-Anything；2. 安装依赖：pip install -r requirements.txt；3. 查看示例配置：cat examples/find.json（或使用官方CLI Hub下载配置）；4. 启动代理界面：python run.py --config configs/default.yaml；5. 输入自然语言指令如'列出当前目录下所有Python文件'测试效果。详细文档见 https://clianything.cc/。"
+      }
+    },
+    "repo:obra/superpowers": {
+      "type": "repo-insight",
+      "hash": "d59a043b1864880787098952",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:49:19.522Z",
+      "value": {
+        "summaryZh": "本项目提供了一个基于代理技能框架的软件开发方法论，旨在提升开发效率和协作能力。其核心亮点是定义了一套可组合的技能模块，让AI代理能够自主执行复杂任务，如代码生成、测试、部署等。通过声明式配置和工作流编排，降低人工干预成本。适合希望探索AI辅助编程、自动化工作流的开发团队和个人，特别是对敏捷开发和质量保障有较高要求的场景。",
+        "scenarios": [
+          "自动化代码审查与重构：利用代理技能自动识别代码问题并生成修复建议。",
+          "持续集成中的智能任务分配：根据任务类型动态调度不同代理执行构建、测试、部署。",
+          "快速原型开发与迭代：通过自然语言描述需求，代理自动生成可运行的基础代码。"
+        ],
+        "agentInstallPrompt": "请先确保系统已安装Git和Shell环境。执行以下命令：git clone https://github.com/obra/superpowers.git && cd superpowers。然后运行cat README.md查看安装依赖说明（如需要Python或Node.js根据文档安装）。最后执行bash scripts/demo.sh启动示例工作流。"
+      }
+    },
+    "repo:wechat-article/wechat-article-exporter": {
+      "type": "repo-insight",
+      "hash": "f7ff1d3b9b4566bae952f666",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:49:24.494Z",
+      "value": {
+        "summaryZh": "wechat-article-exporter 是一款基于 TypeScript 开发的微信公众号文章批量下载工具，支持在线使用或 Docker 私有化部署。它可一键导出文章阅读量与评论数据，并支持保存为 HTML、PDF、Markdown 等多种格式，其中 HTML 格式能 100% 还原原文排版样式。无需搭建复杂环境，内置在线网站可直接使用，也支持通过 Cloudflare 部署。适合自媒体运营、内容存档、数据分析等场景。亮点在于其便捷性与高还原度，尤其适合需要长期保存公众号内容或进行批量分析的开发者与运营人员。",
+        "scenarios": [
+          "批量下载关注的公众号历史文章，备份个人知识库或研究素材",
+          "导出文章阅读量和评论数据，用于内容运营效果分析",
+          "离线保存文章为高保真 HTML，便于长期存档或二次编辑"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Node.js（>= 18）和 Docker。克隆仓库：git clone https://github.com/wechat-article/wechat-article-exporter && cd wechat-article-exporter。如需本地开发运行，执行 npm install 然后 npm run dev 启动开发服务器。如需 Docker 部署，执行 docker compose up -d 启动服务，访问 http://localhost:3000。若使用 Cloudflare，请参照项目 README 中的 Deploy on Cloudflare 部分进行一键部署。部署成功后，在浏览器打开页面，输入文章链接即可开始下载。"
+      }
+    },
+    "repo:cursor/plugins": {
+      "type": "repo-insight",
+      "hash": "663bb3d4d2e5181e55a6a92b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:49:34.263Z",
+      "value": {
+        "summaryZh": "Cursor 插件规范与官方插件仓库，为开发者提供插件开发指南和参考实现。亮点包括完整的插件规范文档、多种官方插件示例（如代码检查、自定义 AI 命令等），帮助快速理解插件架构并上手开发。适合希望定制 Cursor 编辑器功能、集成外部服务或贡献插件生态的开发者。",
+        "scenarios": [
+          "企业开发团队统一代码规范，通过 Cursor 插件集成自定义 lint 规则或代码格式化工具。",
+          "开发者将常用 AI 提示词或工作流封装为插件，实现一键调用，提升编码效率。",
+          "学习 Cursor 插件架构，参考官方插件源码开发第三方插件，拓展编辑器能力。"
+        ],
+        "agentInstallPrompt": "请执行以下步骤：1. 克隆仓库：git clone https://github.com/cursor/plugins.git；2. 进入目录：cd plugins；3. 安装依赖：npm install；4. 阅读 README.md 了解插件规范；5. 参考 docs/ 目录和官方插件示例进行开发。如需运行测试，请使用 npm test。"
+      }
+    },
+    "repo:phodal/routa": {
+      "type": "repo-insight",
+      "hash": "93bb9609eac3b0dc161496c9",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:49:39.329Z",
+      "value": {
+        "summaryZh": "Routa 是一个工作区优先的多智能体协作平台，专为 AI 开发设计。其核心亮点包括共享规范（Specs）以统一智能体行为、看板编排来管理任务流程，并原生支持 MCP、ACP、A2A 等协议，实现跨 Web 与桌面的无缝集成。适合构建复杂多智能体系统的开发团队，尤其是需要可视化协调与协议兼容的场景。通过工作区隔离与版本控制，可有效提升多 Agent 开发效率与可维护性。",
+        "scenarios": [
+          "团队使用共享规范定义多个 AI 智能体的交互接口，实现行为一致性",
+          "通过看板视图编排智能体工作流，监控任务状态与依赖关系",
+          "集成 MCP/ACP/A2A 协议，让不同平台（Web/桌面）的智能体相互通信协作"
+        ],
+        "agentInstallPrompt": "首先确保 Node.js 和 pnpm 已安装。依次运行以下命令：git clone https://github.com/phodal/routa.git；cd routa；pnpm install；然后根据文档配置环境变量（如需要 MCP 服务），最后执行 pnpm dev 启动开发服务器，或 pnpm build 构建生产版本。对于桌面端，参考 electron/ 目录下的说明运行。"
+      }
+    },
+    "repo:ChromeDevTools/chrome-devtools-mcp": {
+      "type": "repo-insight",
+      "hash": "a4e03be0db2eb57ff28cc6f6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:49:45.404Z",
+      "value": {
+        "summaryZh": "该项目为编码代理提供直接操控 Chrome DevTools 的能力，通过 MCP 协议实现双向通信。代理可以读取控制台日志、网络请求、页面元素、性能数据等，并执行如截屏、模拟点击、修改 DOM 等操作。亮点在于无需人工干预，AI 即可实时诊断和修复 Web 应用问题。适合需要自动化浏览器调试的 AI 代理开发者、前端自动化测试工程师以及 LLM 工具链集成者。",
+        "scenarios": [
+          "AI 代理自动捕获页面 JavaScript 错误并分析堆栈信息以定位修复方案。",
+          "自动化测试过程中，代理实时监听网络请求，验证 API 响应是否符合预期。",
+          "智能代理在网页表单填写后自动截屏并检查 UI 布局是否正常。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/ChromeDevTools/chrome-devtools-mcp，执行 npm install 和 npm run build。然后在 MCP 客户端（如 Claude Desktop）的配置文件中添加 server：{ \"command\": \"node\", \"args\": [\"path/to/chrome-devtools-mcp/build/index.js\"] }。确保本地已打开 Chrome 并启用远程调试端口（默认 9222）。启动后，你即可用自然语言命令让代理操控 DevTools。"
+      }
+    },
+    "repo:mattpocock/skills": {
+      "type": "repo-insight",
+      "hash": "8e4648fc332bfe57317b428c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:49:52.279Z",
+      "value": {
+        "summaryZh": "mattpocock/skills 是知名 TypeScript 工程师 Matt Pocock 分享的 .claude 技能配置库，包含可直接加载到 AI 助手（如 Claude）中的预设工程师技能。仓库以 Shell 脚本和配置文件形式提供代码审查、测试生成、重构建议、性能分析等实用能力，旨在让开发者快速为 AI 赋予专业工程直觉。亮点在于技能来自资深工程师的实际工作流，开箱即用且可自由组合。适合所有使用 Claude 或兼容 AI 助手的软件工程师，尤其是前端、TypeScript 和全栈开发者。",
+        "scenarios": [
+          "在代码审查场景中，加载 review 技能让 AI 自动检查 Pull Request 的代码质量、安全性和最佳实践，生成专业评审意见。",
+          "在测试编写场景中，使用 test 技能让 AI 自动为现有代码生成单元测试、集成测试或端到端测试用例，提高测试覆盖率。",
+          "在项目初始化或快速原型场景中，利用 skills 中的技术栈配置（如 Next.js、Tailwind 等）让 AI 给出最佳实践向导和代码片段。"
+        ],
+        "agentInstallPrompt": "首先克隆仓库到本地：git clone https://github.com/mattpocock/skills.git。然后进入项目目录：cd skills。查看 .claude 文件夹内容，里面包含了多个子目录（如 code-review、test-writer 等）。若你使用 Claude Code（或兼容工具），可以将整个 .claude 目录复制到你的项目根目录（确保不覆盖已有配置），或按需将特定技能子目录复制到项目根目录的 .claude 目录中。之后启动 AI 助手，它会自动加载这些技能。你也可以在 Claude 中手动加载某个技能文件（例如 .claude/code-review/skill.json）。确保已安装 Claude CLI 并登录。若不希望复制，也可以使用软链接：ln -s /path/to/skills/.claude .claude。"
+      }
+    },
+    "repo:anthropics/financial-services": {
+      "type": "repo-insight",
+      "hash": "dbd2ed69f47b143441455a46",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:49:57.462Z",
+      "value": {
+        "summaryZh": "Anthropic 推出的金融助手项目，基于 Claude 大模型提供智能金融咨询、报告生成与数据分析能力。亮点是发挥 Claude 在长文本理解与逻辑推理上的优势，可解析复杂金融术语、政策及市场数据，输出结构化建议。适合金融分析师、投资顾问和开发者快速搭建合规的金融问答或文档分析工具。项目代码简洁，提供 API 调用示例与常见金融场景模板，降低 AI 在金融领域落地的门槛。",
+        "scenarios": [
+          "金融机构的智能客服系统，回答客户关于产品、利率或政策的专业问题",
+          "投资研究团队快速生成研报摘要，从财报或新闻中提取关键指标并解读",
+          "个人投资者使用自然语言查询股票、基金走势，并获取风险评估提示"
+        ],
+        "agentInstallPrompt": "首先 clone 仓库：git clone https://github.com/anthropics/financial-services.git；进入目录后创建虚拟环境：python -m venv venv && source venv/bin/activate；安装依赖：pip install -r requirements.txt；然后配置环境变量，在项目根目录创建 .env 文件，写入你的 Anthropic API Key：ANTHROPIC_API_KEY=你的密钥；运行示例脚本：python examples/financial_advisor.py，即可启动命令行交互式金融顾问。如需修改模型或提示词，直接编辑 config.py 中的相关参数。"
+      }
+    },
+    "repo:soxoj/maigret": {
+      "type": "repo-insight",
+      "hash": "b77af75c7740008be9b5ee41",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:50:04.147Z",
+      "value": {
+        "summaryZh": "Maigret 是一个基于用户名的开源情报收集工具，能自动从3000多个网站（包括社交媒体、论坛、博客等）搜索与指定用户名关联的个人资料，并汇总生成详细档案。它支持批量检查、自定义站点列表、导出报告（HTML/JSON）以及多线程加速。亮点在于覆盖站点数量庞大、可配置性强，且提供交互式结果展示。适合安全研究人员、OSINT分析师、隐私保护者及调查记者，用于快速评估用户的在线足迹、识别潜在隐私泄露或进行社交工程分析。",
+        "scenarios": [
+          "企业安全团队对员工或客户进行在线身份暴露评估，检查是否有敏感信息泄露至外部平台。",
+          "个人用户自查自己在不同网站注册的账户，了解自身在网络上的公开信息范围，防范隐私风险。",
+          "调查人员追踪网络犯罪嫌疑人的多平台身份，通过用户名关联不同平台活动，构建行为画像。"
+        ],
+        "agentInstallPrompt": "在终端中执行以下命令：git clone https://github.com/soxoj/maigret.git && cd maigret && pip install -r requirements.txt。然后运行测试：python maigret.py --help。要查询单个用户，执行：python maigret.py <用户名>。若需输出报告，使用 --html 或 --json 参数。如需检查多个用户名，准备文本文件每行一个用户名，运行：python maigret.py -f users.txt。注意确保已安装 Python 3.6+ 和 pip。"
+      }
+    },
+    "repo:TauricResearch/TradingAgents": {
+      "type": "repo-insight",
+      "hash": "f0640e9f2b9594afb133bf74",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:50:08.536Z",
+      "value": {
+        "summaryZh": "TradingAgents 是一个基于多智能体 LLM 的金融交易框架，利用大语言模型驱动多个智能体协同完成市场分析、策略生成、风险管理和交易执行。亮点在于其模块化设计，可模拟不同角色（如分析师、交易员、风控员）的决策过程，支持自定义数据源和回测。适合量化交易开发者、金融 AI 研究者以及希望探索 LLM 在交易决策中应用的爱好者。项目提供清晰 API 和示例脚本，便于快速上手实验。",
+        "scenarios": [
+          "量化研究人员使用多智能体框架模拟不同策略在历史数据上的表现，评估模型协同效果。",
+          "金融科技开发者将其集成到交易系统中，让 LLM 自动生成交易信号并执行。",
+          "教学演示场景：展示 LLM 智能体在模拟市场中的分工与协作流程。"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/TauricResearch/TradingAgents.git；进入目录：cd TradingAgents；创建 Python 3.10+ 虚拟环境并激活；安装依赖：pip install -r requirements.txt；设置 OpenAI API 密钥（如 export OPENAI_API_KEY='your-key'）；运行示例：python examples/basic_simulation.py 或查看文档快速开始部分。"
+      }
+    },
+    "repo:AIDC-AI/Pixelle-Video": {
+      "type": "repo-insight",
+      "hash": "64ad0f9a5a7dcc1a7b1b3a6d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:50:14.003Z",
+      "value": {
+        "summaryZh": "Pixelle-Video 是一款 AI 全自动短视频引擎，基于 Python 开发，能够通过脚本或模板自动完成素材采集、画面剪辑、语音合成、字幕添加等流程，一键生成高质量短视频。其亮点在于端到端自动化：用户仅需输入文本或简单配置，即可输出带有背景音乐、旁白和动态画面的成品视频。适合内容创作者、社交媒体运营人员以及需要批量生产营销短视频的团队，显著降低制作成本与时间。",
+        "scenarios": [
+          "批量生成短视频用于抖音、TikTok、快手等平台日常更新，保持账号活跃度。",
+          "根据产品描述自动制作宣传短片，快速应对促销或新品发布需求。",
+          "将长文报告或博客内容自动转化为视频摘要，提升内容传播效率。"
+        ],
+        "agentInstallPrompt": "请运行以下命令完成安装与试跑： 1. git clone https://github.com/AIDC-AI/Pixelle-Video.git 2. cd Pixelle-Video 3. 创建虚拟环境：python -m venv venv && source venv/bin/activate（Windows 下用 venv\\Scripts\\activate） 4. 安装依赖：pip install -r requirements.txt 5. 根据项目 README 配置必需的 API Key（如 TTS、视频素材等） 6. 运行示例：python main.py --config config/example.yaml 或按照文档使用默认参数直接生成视频。"
+      }
+    },
+    "repo:ComposioHQ/awesome-codex-skills": {
+      "type": "repo-insight",
+      "hash": "28bf9cb3c276e12253892a73",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:50:20.018Z",
+      "value": {
+        "summaryZh": "「awesome-codex-skills」是一个精选的 Codex 技能集合，旨在通过 Codex CLI 和 API 自动化工作流。项目收录了多种实用技能（如代码生成、重构、测试、文档编写等），每个技能以结构化格式定义，便于直接集成到开发流程中。亮点在于社区维护、即插即用，适合希望快速利用 AI 提升开发效率的工程师、AI agent 开发者以及探索 Codex 能力边界的爱好者。",
+        "scenarios": [
+          "在 CI/CD 流水线中集成 Codex 技能，自动生成单元测试或修复代码缺陷",
+          "开发 IDE 插件时，调用这些技能实现智能补全、代码解释或重构建议",
+          "搭建自动化文档生成系统，利用技能从源码生成 API 文档或 README"
+        ],
+        "agentInstallPrompt": "先克隆仓库：`git clone https://github.com/ComposioHQ/awesome-codex-skills.git && cd awesome-codex-skills`。然后查看 skills 文件夹下的技能定义（如 YAML 或 Python 文件）。选择一个技能（例如 `skills/code-review.yaml`），根据其说明准备环境（通常需要安装 composio 库 `pip install composio-core` 并配置 OpenAI API Key）。最后运行示例：`python examples/code_review.py` 或直接调用 `composio execute-skill --skill skills/code-review.yaml`。确保已设置 `OPENAI_API_KEY` 环境变量。"
+      }
+    },
+    "repo:decolua/9router": {
+      "type": "repo-insight",
+      "hash": "c6ba4f72c3bbcd96da864c1a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:50:25.397Z",
+      "value": {
+        "summaryZh": "9router 是一个开源 AI 编码路由代理，旨在为 Claude Code、Codex、Cursor、Cline、Copilot 等主流编码助手提供免费且无限的 API 接入。它聚合超过 40 个免费 AI 提供商（如 Claude、GPT、Gemini），自动故障转移，并采用 RTK 技术减少 40% 的 token 消耗，彻底打破编码工具的使用限制。适合需要低成本、高频次调用 AI 编程能力的个人开发者和小型团队，无需付费订阅即可获得稳定生成体验。",
+        "scenarios": [
+          "在 Claide Code 中配置 9router 作为代理，实现每天数百次代码生成请求的免费调用，自动切换失败节点。",
+          "团队使用 Cursor 进行协作开发时，通过 9router 统一管理多个免费 API 密钥，避免单个账户的速率限制影响项目进度。",
+          "集成到 CI/CD 流水线中，让自动化代码审查、测试生成等任务使用免费 AI 服务，降低云端运行成本。"
+        ],
+        "agentInstallPrompt": "执行以下步骤安装并试跑 9router：1. 确保安装了 Node.js（v18+）和 Git。2. 克隆仓库：git clone https://github.com/decolua/9router.git && cd 9router。3. 安装依赖：npm install。4. 复制环境变量模板：cp .env.example .env，并按需编辑 API 密钥（不配置则使用默认免费源）。5. 启动代理服务：npm start（默认端口 3000）。6. 将你的 AI 编码工具（如 Claude Code）的代理设置指向 http://localhost:3000。7. 执行一条简单代码请求验证：curl -X POST http://localhost:3000/v1/chat/completions -H 'Content-Type: application/json' -d '{\"model\":\"claude-3-5-haiku\",\"messages\":[{\"role\":\"user\",\"content\":\"Say hello\"}]}' 应返回正常响应。"
+      }
+    },
+    "repo:Alishahryar1/free-claude-code": {
+      "type": "repo-insight",
+      "hash": "1e00ffa441c93f174d32862a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:50:32.337Z",
+      "value": {
+        "summaryZh": "Free Claude Code 是一个开源工具，让开发者可以在终端、VSCode 扩展或 Discord 中免费使用 Claude Code 的能力（支持语音）。它通过模拟或绕过官方付费限制，提供类似 OpenClaw 的体验，适合希望免费获取 AI 代码助手的开发者。亮点在于多平台集成（终端、编辑器、聊天工具）和语音交互，但需注意合规风险。",
+        "scenarios": [
+          "在终端中直接调用 Claude Code 进行代码生成、修改或调试，无需付费 API 密钥",
+          "在 VSCode 中安装扩展后，通过侧边栏对话实现智能代码补全与问题解答",
+          "在 Discord 服务器中使用语音或文字与 Claude 交互，辅助团队协作编程"
+        ],
+        "agentInstallPrompt": "请依次执行以下命令安装并运行 Free Claude Code： 1. 克隆仓库：git clone https://github.com/Alishahryar1/free-claude-code.git 2. 进入目录：cd free-claude-code 3. 创建虚拟环境（可选但推荐）：python -m venv venv && source venv/bin/activate（Windows 下使用 venv\\Scripts\\activate） 4. 安装依赖：pip install -r requirements.txt 5. 编辑配置文件（如 config.json）填入必要的 Claude Cookie 或 Token（请自行获取合法凭证） 6. 启动终端交互模式：python main.py 7. 如需 VSCode 扩展，执行 code --install-extension ./vscode-extension（若项目包含对应目录）或手动安装 .vsix。"
+      }
+    },
+    "repo:ruvnet/ruflo": {
+      "type": "repo-insight",
+      "hash": "195c4842e8c99c0a8898a866",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:50:39.818Z",
+      "value": {
+        "summaryZh": "Ruflo 是基于 TypeScript 的领先代理编排平台，专为 Claude 设计，用于部署智能多智能体群、协调自主工作流和构建对话式 AI 系统。其核心亮点包括企业级架构、自学习群体智能、RAG（检索增强生成）集成以及对 Claude Code / Codex 的原生支持。适合开发者和 AI 工程师需要快速搭建复杂多代理协同场景，例如智能客服、自动化流程与知识问答，降低集成门槛并提升系统扩展性。",
+        "scenarios": [
+          "构建多智能体协作的智能客服系统，通过自学习群体智能优化对话分配与响应质量。",
+          "自动化企业工作流编排，如将 RAG 集成到审批流程中，实现智能文档检索与决策支持。",
+          "利用 Claude Code 原生集成，快速搭建基于多代理的代码审查与自动补全工具。"
+        ],
+        "agentInstallPrompt": "首先确保已安装 Node.js 18+ 和 pnpm（或 npm）。使用命令 `git clone https://github.com/ruvnet/ruflo.git` 克隆仓库。进入目录 `cd ruflo`，然后运行 `pnpm install` 安装所有依赖。复制 `.env.example` 为 `.env`，在其中填入你的 Claude API 密钥（ANTHROPIC_API_KEY）以及其他可选配置（如 OpenAI 或本地模型）。若需启动开发模式，运行 `pnpm dev`；要运行内置示例，执行 `pnpm run example` 即可观察多智能体工作流的运行效果。"
+      }
+    },
+    "repo:yikart/AiToEarn": {
+      "type": "repo-insight",
+      "hash": "d8696ce832b0746b5cd86f92",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:50:47.501Z",
+      "value": {
+        "summaryZh": "AiToEarn 是一个基于 TypeScript 的开源项目，旨在帮助开发者利用 AI 技术快速构建能够产生收益的应用或工具。它整合了多种 AI 模型和 API（如图像生成、文本处理、自动对话等），提供简洁的接口和示例代码，降低 AI 应用开发门槛。亮点包括模块化设计、即插即用集成、以及完善的文档与示例。适合希望将 AI 能力转化为实际收入的开发者、自由职业者以及创业团队，尤其适合那些想快速验证 AI 赚钱点子、搭建自动化内容创作或智能客服系统的人群。",
+        "scenarios": [
+          "利用 AI 批量生成文案、图片、视频脚本，并通过内容平台变现",
+          "搭建智能客服或销售线索生成系统，为企业提供订阅服务",
+          "开发数据标注或模型微调平台，向第三方提供 AI 训练服务"
+        ],
+        "agentInstallPrompt": "克隆仓库后，先执行 npm install 安装依赖。然后在项目根目录复制 .env.example 为 .env，填入所需的 API 密钥（如 OpenAI、Stability AI 等）。运行 npm run dev 启动开发服务器，访问 http://localhost:3000 查看示例页面。若需修改配置，编辑 src/config.ts。若要添加新 AI 工作流，在 src/workflows 下创建新文件并注册。详细说明见 README 中的“快速开始”部分。"
+      }
+    },
+    "repo:bytedance/UI-TARS-desktop": {
+      "type": "repo-insight",
+      "hash": "ed429dea534f120039f2f21b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:50:55.455Z",
+      "value": {
+        "summaryZh": "UI-TARS-desktop 是字节跳动开源的多模态 AI 代理栈，旨在连接前沿 AI 模型与代理基础设施。它提供统一的接口调用多种多模态大模型（如文本、图像、音频），并支持构建自主代理执行复杂任务。亮点包括完全开源、模块化架构、灵活的插件机制，以及针对桌面端优化的低延迟交互。适合 AI 开发者、研究人员及需要快速搭建智能代理应用（如自动化助手、多模态分析工具）的团队。项目采用 TypeScript 编写，易于集成现有前端生态。",
+        "scenarios": [
+          "构建桌面多模态智能助手，理解屏幕截图与用户自然语言指令，自动执行文件操作或信息检索。",
+          "自动化 UI 测试与回归，通过视觉识别模拟点击和输入，验证应用界面状态与预期一致。",
+          "集成多种 AI 模型（如 GPT-4V、CLIP 等）到企业级桌面应用，提供实时的图像/文本联合分析能力。"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/bytedance/UI-TARS-desktop.git 并进入目录。使用 npm install 或 yarn 安装依赖。根据 README 配置环境变量（如模型 API Key）。运行 npm run dev 启动开发服务器，默认监听 localhost:3000。可通过浏览器或桌面客户端访问，按照文档示例创建第一个代理任务。注意：需 Node.js >=18 及对应操作系统支持。"
+      }
+    },
+    "repo:addyosmani/agent-skills": {
+      "type": "repo-insight",
+      "hash": "d83752f4da40e81d066e72b3",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:51:01.984Z",
+      "value": {
+        "summaryZh": "这是一套为AI编码代理打造的“生产级工程技能”集合。项目以Shell脚本和配置文件形式，封装了代码审查、单元测试生成、重构、文档编写等常见工程任务的精确指令。亮点在于将资深工程师的经验转化为可复用的代理技能，显著提升AI生成代码的质量与可靠性。适合在代码辅助工具（如GitHub Copilot、Cursor）中嵌入使用，也适合希望让AI代理遵循严格工程规范的开发团队。",
+        "scenarios": [
+          "在代码审查流程中，代理自动执行类型检查、风格建议和潜在缺陷扫描。",
+          "开发新功能时，代理根据接口定义自动生成覆盖边界条件的单元测试。",
+          "重构遗留代码时，代理按照团队约定的模式抽取函数、优化结构并保持行为不变。"
+        ],
+        "agentInstallPrompt": "首先克隆仓库：git clone https://github.com/addyosmani/agent-skills.git。然后根据README中的说明，将skills目录下的脚本或指令复制到你的AI编码代理的配置中（例如对于Cursor，可添加到`.cursorrules`或通过`@`引用；对于GitHub Copilot，可使用`/.github/copilot-instructions.md`）。具体步骤：1. 进入agent-skills目录，阅读README.md；2. 将你需要的技能文件（如`code-review.skill.md`）内容添加到代理的自定义指令中；3. 重启代理后即可使用。"
+      }
+    },
+    "repo:mattpocock/sandcastle": {
+      "type": "repo-insight",
+      "hash": "33ad5ec40653f3a593e0464d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:51:10.158Z",
+      "value": {
+        "summaryZh": "Sandcastle 是一个 TypeScript 库，通过 `sandcastle.run()` 提供沙箱化的代码执行环境。它专为安全编排 AI 编码代理设计，允许在隔离的上下文中运行由大模型生成的代码，防止恶意操作。核心亮点是简洁的 API 与强类型支持，适合需要动态执行不可信代码的 AI 应用、在线代码编辑器或 CI/CD 安全检查。开发者可快速集成到 TypeScript 项目，实现代理输出的可控运行。该项目由 TypeScript 专家 Matt Pocock 维护，社区活跃。",
+        "scenarios": [
+          "在 AI 编程助手中，安全执行 LLM 生成的代码片段，避免系统调用风险。",
+          "构建在线代码竞技场或 Playground，让用户运行代码时保持沙箱隔离。",
+          "在 CI/CD 流水线中，动态测试用户提交的代码片段，防止潜在恶意行为。"
+        ],
+        "agentInstallPrompt": "```bash # 新建目录并初始化 Node 项目 mkdir sandcastle-demo && cd sandcastle-demo npm init -y # 安装 Sandcastle npm install sandcastle # 创建入口文件 index.ts cat > index.ts << 'EOF' import { Sandcastle } from 'sandcastle'; const sand = new Sandcastle(); const result = await sand.run('console.log(\"Hello, sandbox!\"); return 1 + 1;'); console.log(result); EOF # 运行（需要 ts-node 或 tsx） npx tsx index.ts ``` 注意：确保 Node.js >= 18。Sandcastle 默认使用 `vm` 沙箱，支持传递 context 和 timeout。"
+      }
+    },
+    "repo:ultraworkers/claw-code": {
+      "type": "repo-insight",
+      "hash": "18825a330f5d990d59756bfb",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:51:16.136Z",
+      "value": {
+        "summaryZh": "claw-code 是一个基于 Rust 语言构建的、革命性的代码生成与优化工具。它利用自研的 oh-my-codex 库实现了极致的性能，在 GitHub 上以史上最快速度突破了 100K 星标。该项目专为追求极致效率的开发者设计，提供了自动化的代码生成、重构与优化能力，适用于大型项目、微服务及算法竞赛等场景。其轻量级架构和原生编译特性使得运行速度远超同类 Python/JavaScript 工具。",
+        "scenarios": [
+          "开发者需要快速生成高性能的 Rust 代码骨架或模块，并自动应用最佳实践。",
+          "大型项目中自动化重构与优化，例如批量替换设计模式或调用链消除。",
+          "教学与学习场景：通过阅读 claw-code 源码及 oh-my-codex 库，深入理解 Rust 元编程与编译器技术。"
+        ],
+        "agentInstallPrompt": "1. 确保已安装 Rust 工具链 (rustup)。2. 执行：git clone https://github.com/ultraworkers/claw-code.git && cd claw-code。3. 编译：cargo build --release。4. 运行：./target/release/claw-code --help 查看帮助。5. 如有 OpenAI API key，可设置环境变量 OPENAI_API_KEY 后使用 --generate 命令生成代码。"
+      }
+    },
+    "repo:VoltAgent/awesome-design-md": {
+      "type": "repo-insight",
+      "hash": "1b8894a4ba092042d4e1569b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:51:22.590Z",
+      "value": {
+        "summaryZh": "awesome-design-md 项目汇集了来自流行品牌设计系统的 DESIGN.md 文件（如 Material Design、Apple HIG 等），每个文件详细描述了设计规范、组件库和样式指南。开发者只需将对应品牌的 DESIGN.md 文件放入项目根目录，即可让 AI 编码代理（如 Copilot、Cursor 等）自动理解并生成与品牌一致的 UI 代码。亮点是零配置集成、实时同步设计系统更新、降低跨团队设计沟通成本。适合需要快速搭建品牌化界面、依赖 AI 辅助编码的前端工程师和设计团队。",
+        "scenarios": [
+          "前端开发者使用 AI 编码助手（如 GitHub Copilot）时，通过放置 DESIGN.md 文件让 AI 自动生成与 Material Design 风格一致的 React 组件。",
+          "设计系统团队维护多个品牌规范，利用此仓库快速切换不同品牌的 UI 生成规则，减少重复编写设计指导的工作量。",
+          "在原型开发阶段，产品经理可直接引用某个品牌的 DESIGN.md 文件，指导 AI 生成符合该品牌视觉语言的页面原型，加速 MVP 验证。"
+        ],
+        "agentInstallPrompt": "请执行以下操作：1. 克隆仓库：`git clone https://github.com/VoltAgent/awesome-design-md.git`。2. 进入项目，选择所需的品牌设计系统文件（如 `material-design.md`），将其复制到你的项目根目录并重命名为 `DESIGN.md`。3. 在你的项目中使用支持读取 `DESIGN.md` 的 AI 编码代理（如 Copilot Chat 或 Cursor），在对话中明确要求“请根据项目根目录下的 DESIGN.md 文件生成对应的 UI 组件代码”。AI 将自动解析文件中的设计规范并生成匹配的 HTML/CSS/React 代码。"
+      }
+    },
+    "repo:karpathy/autoresearch": {
+      "type": "repo-insight",
+      "hash": "daeb13545a7578568d5c33dd",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:51:27.669Z",
+      "value": {
+        "summaryZh": "autoresearch 是 Andrej Karpathy 开发的一个 AI 研究自动化工具，旨在让 AI Agent 在单 GPU 上自动运行 nanochat 微调实验。项目通过定义实验脚本、配置和评估标准，实现从数据准备到训练、结果分析的完整闭环。亮点在于模拟人类研究者的迭代过程：Agent 可动态调整超参数、监控损失、保存检查点，并自主决定何时停止或继续训练。适合对语言模型训练流程探索、自动化机器学习实验管理以及开源研究复现感兴趣的开发者与研究人员。",
+        "scenarios": [
+          "在单 GPU 环境下自动搜索 nanochat 模型的最佳学习率与批量大小组合",
+          "研究者希望用 AI Agent 自动运行多轮实验，减少人工干预并记录完整日志",
+          "作为教学案例，演示如何构建一个轻量级的研究自动化 pipeline"
+        ],
+        "agentInstallPrompt": "请在终端中依次执行以下命令：git clone https://github.com/karpathy/autoresearch.git && cd autoresearch && pip install -r requirements.txt。之后，运行 python run_experiment.py 启动默认实验；你也可以修改 config.yaml 中的超参数或数据集路径来自定义实验。整个过程无需额外手动操作，Agent 将自动完成训练、监控和日志输出。"
+      }
+    },
+    "repo:paperclipai/paperclip": {
+      "type": "repo-insight",
+      "hash": "8cf93237074aa99647390a49",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:51:32.493Z",
+      "value": {
+        "summaryZh": "Paperclip 是一款开源的 AI 代理管理平台，专为团队协作场景设计。它提供可视化接口来创建、部署和监控 AI 工作助手（Agent），支持自定义工具集成、多模型切换与权限控制。亮点在于低代码编排、实时日志追踪和可扩展的插件体系。适合需要将 AI 融入日常工作流程的开发者与运维团队，尤其适合企业内部多个 Agent 的集中管理。",
+        "scenarios": [
+          "企业内构建智能客服 Agent，统一管理对话流程与知识库更新",
+          "团队使用多个大模型 API，通过 Paperclip 统一配置与限流策略",
+          "部署自动化数据分析 Agent，定时执行并推送报告至指定群聊"
+        ],
+        "agentInstallPrompt": "请按照以下步骤在本地快速体验 Paperclip： 1. 确保已安装 Node.js（v18+）和 npm。 2. 克隆仓库：git clone https://github.com/paperclipai/paperclip.git 3. 进入目录：cd paperclip 4. 安装依赖：npm install 5. 复制环境配置：cp .env.example .env 并填入必要的 API Key（如 OpenAI） 6. 启动开发服务器：npm run dev 7. 打开浏览器访问 http://localhost:3000 即可看到管理面板。如需生产部署，参考项目 README 中的 Docker 部署说明。"
+      }
+    },
+    "repo:JuliusBrussee/caveman": {
+      "type": "repo-insight",
+      "hash": "c9d6464041578a7073a90127",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:51:42.365Z",
+      "value": {
+        "summaryZh": "Caveman 是一个专为 Claude Code 设计的技能，通过模拟穴居人极简说话方式，将复杂提示压缩成少数词汇，从而减少约65%的Token消耗。亮点在于大幅降低AI交互成本，同时保留核心意图。适合高频调用Claude Code以节省费用的开发者、追求高效沟通的团队，以及对Token优化感兴趣的AI爱好者。",
+        "scenarios": [
+          "在Claude Code中执行代码审查或日志分析时，使用Caveman模式压缩提问，降低Token开销。",
+          "当API预算有限或希望延长免费额度时，通过该技能将长问题转换为简短关键词。",
+          "团队协作中统一采用极简表达，减少AI输入输出成本并提升响应速度。"
+        ],
+        "agentInstallPrompt": "git clone https://github.com/JuliusBrussee/caveman.git && cd caveman && npm install && node caveman.js 或根据README将caveman.js放入Claude Code技能目录（通常为~/.claude/skills/），然后在Claude Code中输入/caveman 你的问题以测试。"
+      }
+    },
+    "repo:koala73/worldmonitor": {
+      "type": "repo-insight",
+      "hash": "305bd82b0909630c30d876dc",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:51:47.844Z",
+      "value": {
+        "summaryZh": "WorldMonitor是一个基于TypeScript构建的实时全球情报仪表盘，利用AI技术聚合新闻、监控地缘政治动态并跟踪关键基础设施，为用户提供统一态势感知界面。其亮点在于实时数据流处理与智能分析能力，适合研究人员、分析师、企业战略团队及对全球事件保持关注的个人使用。",
+        "scenarios": [
+          "政治与安全分析师实时监控全球冲突、选举及政策变动，快速获取关键情报。",
+          "企业风险管理团队通过地缘政治事件追踪供应链中断、制裁影响。",
+          "个人用户定制新闻源与监控区域，获取即时更新的全球热点摘要。"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/koala73/worldmonitor.git && cd worldmonitor。安装依赖：npm install。启动开发服务器：npm run dev（若自定义端口，添加-- --port参数）。如需生产构建：npm run build；预览构建输出：npm run preview。确保已安装Node.js >= 16。"
+      }
+    },
+    "repo:rtk-ai/rtk": {
+      "type": "repo-insight",
+      "hash": "319d22c9e0014370c82cf05a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:51:53.173Z",
+      "value": {
+        "summaryZh": "rtk 是一个基于 Rust 的 CLI 代理工具，通过智能缓存与合并机制，可将常见开发命令的 LLM token 消耗降低 60–90%。它作为本地代理运行，对开发者透明，自动去重和分组 LLM 请求，适合高频率使用 GPT/Claude 等 API 的编程辅助场景。单 Rust 二进制文件，零外部依赖，安装后即开即用，大幅削减 API 费用。",
+        "scenarios": [
+          "在 IDE 中频繁请求代码补全、解释或重构时，通过 rtk 代理减少 LLM token 开销",
+          "CI/CD 流水线中批量对源代码进行 LLM 分析（如生成文档、发现漏洞），降低每轮费用",
+          "个人开发者使用按量计费的 LLM API 进行日常编码辅助，有效控制月度成本"
+        ],
+        "agentInstallPrompt": "请为当前环境安装 rtk： 1. 打开终端，执行 `cargo install rtk`（需 Rust 工具链）；或从 https://github.com/rtk-ai/rtk/releases 下载对应平台二进制并赋予执行权限。 2. 运行 `rtk --help` 验证安装。 3. 设置环境变量 `OPENAI_API_KEY` 或配置其他 LLM 提供商的 API key。 4. 启动代理：`rtk proxy`，然后在你的 LLM 客户端中将基础 URL 改为 `http://localhost:8080/v1` 即可。"
+      }
+    },
+    "repo:safishamsi/graphify": {
+      "type": "repo-insight",
+      "hash": "cb6b253519c3e7298df42ce8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:52:00.471Z",
+      "value": {
+        "summaryZh": "Graphify 是一个 AI 编程助手技能，可将任意代码文件夹、SQL 模式、R 脚本、Shell 脚本、文档、论文、图像或视频转换为可查询的知识图谱。它支持 Claude Code、Codex、OpenCode、Cursor、Gemini CLI 等多种 AI 编码助手，并创新性地将应用代码、数据库模式、基础设施整合在同一张图中。亮点在于一键构建跨类型文件的关系网络，帮助开发者快速理解项目全局结构、追踪数据流和依赖链。适合需要深度理解复杂代码库、进行跨组件影响分析、或希望利用知识图谱提升 AI 编程辅助效率的开发者和数据工程师。",
+        "scenarios": [
+          "将遗留项目或大型代码仓库自动转化为知识图谱，快速查询函数调用关系、模块依赖和数据流向。",
+          "将 SQL 数据库表结构、存储过程与后端代码关联，构建端到端的数据血缘图，辅助数据管道调试。",
+          "将技术文档、论文、图片与源代码整合成统一知识库，支持自然语言提问（如“哪些函数涉及用户认证？”）。"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/safishamsi/graphify.git && cd graphify。创建虚拟环境：python -m venv venv && source venv/bin/activate。安装依赖：pip install -r requirements.txt（若没有则 pip install networkx pyvis pillow pypdf2 python-dotenv）。运行示例：python graphify.py --input_dir ./my_project --output ./knowledge_graph.html。若使用 Claude Code 等 AI 助手，将 graphify 作为 MCP 工具注册；或在代码中 import graphify 后调用相应函数。注意需安装 graphviz 以支持图形渲染（apt install graphviz）。"
+      }
+    },
+    "repo:MemPalace/mempalace": {
+      "type": "repo-insight",
+      "hash": "79ed0826af57c40867645444",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:52:04.204Z",
+      "value": {
+        "summaryZh": "MemPalace 是一个开源、性能标杆级的 AI 记忆系统。它通过结构化的长期记忆管理，帮助大语言模型（LLM）突破上下文窗口限制，实现持久化、可检索的对话历史和知识。项目在基准测试中表现出色，完全免费。适合需要构建具备记忆能力的 AI 助手、知识库、个人助理或长期对话系统的开发者。核心亮点包括高效的记忆检索、低延迟存储和友好的 Python API。",
+        "scenarios": [
+          "构建具备长期记忆的聊天机器人，自动记录用户偏好和对话上下文，实现跨会话的个性化交互。",
+          "作为 RAG（检索增强生成）系统的记忆层，存储和检索频繁使用的知识与示例，提升问答准确性。",
+          "开发个人 AI 助手，实时记录日程、笔记和任务，并通过自然语言查询历史信息。"
+        ],
+        "agentInstallPrompt": "首先确保 Python 版本 ≥3.8，安装依赖：pip install mempalace。然后克隆仓库：git clone https://github.com/MemPalace/mempalace.git。进入目录后运行示例：python example/simple_memory.py，该脚本会演示如何初始化记忆系统、添加记录、检索相似记忆。如需集成到自己的项目，参考 quickstart.md 中的最小代码片段。"
+      }
+    },
+    "repo:nexu-io/open-design": {
+      "type": "repo-insight",
+      "hash": "af86f2f39b5da10ec1eb201d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:52:09.607Z",
+      "value": {
+        "summaryZh": "Open Design 是一个本地优先、开源的设计工具，可作为 Claude Design 的替代品。它内置 19 种技能和 71 套品牌级设计系统，支持生成网页、桌面、移动端原型、幻灯片、图像、视频及 HyperFrames。提供沙盒预览，并可将成果导出为 HTML、PDF、PPTX 和 MP4 格式。该项目兼容多种 AI CLI 工具（如 Claude Code、Cursor、Gemini 等），适合希望实现设计自动化、快速搭建原型或构建设计系统管理的团队和个人。",
+        "scenarios": [
+          "快速生成符合品牌规范的多平台产品原型图，用于客户演示或内部评审",
+          "利用 AI 技能与设计系统自动制作营销幻灯片、社交媒体图像或短视频",
+          "在代码编辑器或 AI CLI 中集成设计能力，实现设计与开发的实时协同"
+        ],
+        "agentInstallPrompt": "请先确保 Node.js 18+ 已安装。克隆仓库：git clone https://github.com/nexu-io/open-design.git && cd open-design。安装依赖：npm install。启动开发服务器：npm run dev。浏览器访问 http://localhost:5173 即可开始使用界面。如需在 CLI 中测试技能，可参考项目 README 中的 CLI 集成示例，例如 npx open-design generate --template hero --output hero.html"
+      }
+    },
+    "repo:VoltAgent/awesome-openclaw-skills": {
+      "type": "repo-insight",
+      "hash": "d315bdafd5dfafac506a055f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:52:13.801Z",
+      "value": {
+        "summaryZh": "该项目收录了超过5400个从OpenClaw官方技能注册表筛选分类的优质技能，为AI助手（如Claw）提供技能库。亮点在于结构化整理与大量技能覆盖，适合开发者快速集成智能技能到自身应用或系统，提升AI应答能力。适合AI应用开发者、RPA工程师、智能对话系统搭建者。",
+        "scenarios": [
+          "将技能部署到OpenClaw实例，丰富AI助手的任务处理能力，如日程管理、代码生成等。",
+          "开发者通过技能API调用，快速为现有应用添加智能问答或自动化操作功能。",
+          "学习与研究OpenClaw技能架构，作为自定义开发新技能的参考示例库。"
+        ],
+        "agentInstallPrompt": "请先确保已安装git、node.js（v16+）和OpenClaw CLI。运行：git clone https://github.com/VoltAgent/awesome-openclaw-skills.git && cd awesome-openclaw-skills && npm install（若有package.json），然后参考/docs/quickstart.md 完成配置。使用OpenClaw CLI导入技能：oc skill import ./skills/skill-name --registry your-registry-url。若只需预览，直接查看skills目录下的子文件夹，每个包含skill.json和prompt模板。"
+      }
+    },
+    "repo:chenglou/pretext": {
+      "type": "repo-insight",
+      "hash": "4a30460734e04c591fc79fc8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:52:20.193Z",
+      "value": {
+        "summaryZh": "Pretext 是一个基于 TypeScript 构建的高性能文本测量与布局库，专注于为前端应用提供快速、准确且全面的文本尺寸计算与排版能力。其核心亮点在于算法优化后相比传统 canvas 测量或浏览器原生 API 速度提升显著，同时支持多种字体、换行策略和复杂文本属性。适用于需要密集或动态文本渲染的场景，如富文本编辑器、游戏 UI、排版引擎及前端图形化工具。主要面向 Web 开发者和需要精确控制文本布局的工程师，可作为替代或增强浏览器文本测量能力的底层工具。",
+        "scenarios": [
+          "在富文本编辑器中实时预计算每个段落的精确宽度和高度，以便优化滚动与分页性能",
+          "游戏或动画界面中动态生成多语言文本时，快速获取字符边界以实现自适应排版",
+          "在前端数据可视化图表中，计算标签文本的占用空间以避免重叠或溢出"
+        ],
+        "agentInstallPrompt": "使用 npm 安装 pretext 库：npm install pretext。然后创建一个测试文件（如 test.mjs），写入以下代码：import { measureText } from 'pretext'; console.log(measureText('Hello World', { fontSize: 16, fontFamily: 'Arial' })); 最后运行 node test.mjs 查看输出。如需更完整示例，可参考项目 README 中的 API 文档。"
+      }
+    },
+    "repo:santifer/career-ops": {
+      "type": "repo-insight",
+      "hash": "6ba12ecee0d2f21a68dd1665",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:52:25.653Z",
+      "value": {
+        "summaryZh": "CareerOps 是一个基于 Claude Code 构建的 AI 驱动求职系统，提供 14 种技能模式、Go 语言编写的仪表盘、PDF 简历生成及批量处理功能。亮点在于深度集成 Claude 的对话能力，可自动化分析职位描述、优化简历关键词、生成个性化的求职信和面试准备材料。适合求职者、招聘顾问以及希望用 AI 提升求职效率的开发者，用户可通过简单命令快速上手。",
+        "scenarios": [
+          "批量导入职位描述，自动生成多份定制化求职信或简历摘要",
+          "基于岗位要求分析自身技能差距，并获取针对性学习建议",
+          "使用 Go 仪表盘实时查看求职进度、批量导出 PDF 格式的求职文档"
+        ],
+        "agentInstallPrompt": "请按以下步骤安装并运行 CareerOps： 1. 克隆仓库：git clone https://github.com/santifer/career-ops.git && cd career-ops 2. 安装 JavaScript 依赖：npm install 3. 配置 Claude API 密钥：将环境变量 ANTHROPIC_API_KEY 设置为您有效的密钥（或创建 .env 文件并写入 ANTHROPIC_API_KEY=您的密钥） 4. 安装 Go 环境（如需仪表盘），进入 go/ 目录并运行：go build -o dashboard . && ./dashboard 5. 启动主程序：npm start 如需仅使用 CLI 模式，可跳过 Go 仪表盘步骤。"
+      }
+    },
+    "repo:ZhuLinsen/daily_stock_analysis": {
+      "type": "repo-insight",
+      "hash": "bb5282a8891d2031e57b4886",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:52:35.147Z",
+      "value": {
+        "summaryZh": "daily_stock_analysis 是一个基于LLM的智能股票分析系统，支持A股、港股、美股多市场。项目亮点：整合多数据源行情与实时新闻，通过LLM生成决策仪表盘，并提供多渠道推送（如钉钉、微信等）。零成本定时运行，利用GitHub Actions等免费资源实现“纯白嫖”。适合个人投资者、量化爱好者以及希望利用AI辅助决策的用户。",
+        "scenarios": [
+          "个人投资者每日自动获取持仓股票的LLM分析报告，辅助买卖决策。",
+          "量化爱好者研究LLM在金融舆情分析中的应用，搭建实验环境。",
+          "零成本部署定时股票预警系统，通过推送服务实时接收市场异动提醒。"
+        ],
+        "agentInstallPrompt": "请先安装Python 3.8+和Git。然后克隆仓库：git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis。创建虚拟环境（可选）：python -m venv venv && source venv/bin/activate（Windows使用venv\\Scripts\\activate）。安装依赖：pip install -r requirements.txt。配置API密钥：复制.env.example为.env，填入你的LLM API key（如OpenAI）、数据源API Key（如Tushare、新浪财经等）以及推送服务令牌（如钉钉机器人Webhook）。运行主程序：python main.py。若要定时自动运行，可设置GitHub Actions的schedule（参考.github/workflows目录下的示例）。"
+      }
+    },
+    "repo:sickn33/antigravity-awesome-skills": {
+      "type": "repo-insight",
+      "hash": "a64d10175ca3afb347ae24e7",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:52:40.209Z",
+      "value": {
+        "summaryZh": "Antigravity Awesome Skills 是一个可安装的 GitHub 技能库，内含 1400+ 个 agentic skills，专为 Claude Code、Cursor、Codex CLI、Gemini CLI、Antigravity 等 AI 编程工具设计。项目提供统一的 CLI 安装器、技能包、工作流以及官方/社区集合。亮点在于跨工具兼容、海量覆盖、即插即用。适合 AI 辅助编程的开发者、Prompt 工程师及希望扩展 AI Agent 能力的团队。",
+        "scenarios": [
+          "在 Claude Code 中一键安装并调用自定义技能，如代码审查、单元测试生成。",
+          "通过 Cursor 加载社区贡献的工作流，自动完成特定框架（如 React、Django）的代码脚手架。",
+          "使用 CLI 安装器批量部署技能包到 Gemini CLI 或 Codex CLI，实现多环境复用。"
+        ],
+        "agentInstallPrompt": "运行以下命令克隆仓库：git clone https://github.com/sickn33/antigravity-awesome-skills.git && cd antigravity-awesome-skills。安装依赖：pip install -r requirements.txt。使用 CLI 安装技能：python -m awesome_skills install <skill_name>（例如：python -m awesome_skills install review）。试跑一个示例技能：python -m awesome_skills run review --input '你的代码片段'。更多用法见 README。"
+      }
+    },
+    "repo:Yeachan-Heo/oh-my-claudecode": {
+      "type": "repo-insight",
+      "hash": "c6ed2ee3462f148c137ff0ed",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:52:45.914Z",
+      "value": {
+        "summaryZh": "oh-my-claudecode 是一个面向团队的、多智能体编排工具，专为 Claude Code 设计。它允许开发者将多个 Claude Code 实例组织成团队，协同完成复杂任务，如并行代码审查、大规模重构、多模块开发等。该工具以简洁的配置和 API 驱动，支持动态分配任务、结果聚合、角色定义，显著提升 AI 编程协作效率。适合使用 Claude Code 的团队或需要深度多智能体工作流的开发者。亮点包括开箱即用的团队定义、事件驱动的任务分发、以及灵活的插件扩展机制。",
+        "scenarios": [
+          "团队并行代码重构：将大型代码库拆分为模块，多个 Claude Code 实例同时进行重构，最后自动合并结果。",
+          "多角色代码审查：配置不同的 Claude 实例扮演架构师、安全专家、性能调优师等角色，协同完成全面的代码审查。",
+          "分布式自动化测试生成：将测试任务分配给多个 Claude 实例，每个实例负责不同模块的测试用例编写与执行。"
+        ],
+        "agentInstallPrompt": "先确保已安装 Node.js v18+ 和 Claude Code CLI。然后运行： git clone https://github.com/Yeachan-Heo/oh-my-claudecode.git cd oh-my-claudecode npm install # 创建团队配置文件 team.json（见项目文档） # 用以下命令启动编排： npx oh-my-claudecode --team team.json --task \"重构 src/utils 目录下的日期处理函数\" # 观察多个 Claude 实例协作输出结果。"
+      }
+    },
+    "repo:Hmbown/CodeWhale": {
+      "type": "repo-insight",
+      "hash": "0f345c3d42d7c343513e88e2",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:52:52.425Z",
+      "value": {
+        "summaryZh": "CodeWhale 是一个基于 Rust 开发的智能编码终端，专为追求高效 AI 辅助编程的开发者设计。项目以 DeepSeek 作为默认 AI 提供商，同时支持切换多家主流 AI 服务（如 OpenAI、Anthropic 等），并采用激进缓存策略减少重复请求，大幅提升响应速度。其特色包括五语言界面（中英日韩法）、内置中国区域优化端点（适配国内网络）以及 CNB 镜像支持，对国内用户极为友好。鲸鱼主题的 UI 风格独特，终端体验流畅。适合需要快速迭代代码、习惯使用 AI 助手、且关注网络性能和本地化体验的开发者。",
+        "scenarios": [
+          "在 DeepSeek 环境下快速生成、调试或重构代码片段，利用其高性能模型提升编码效率。",
+          "作为多 AI 提供商统一入口，在开发过程中灵活切换 OpenAI、Claude 等模型，比较不同模型的输出质量。",
+          "在国内网络环境下，利用内置 CN 端点与 CNB 镜像加速 AI 请求，同时借助本地缓存减少重复 API 调用，节省成本。"
+        ],
+        "agentInstallPrompt": "首先确保系统已安装 Rust 工具链（rustc、cargo）。然后执行： git clone https://github.com/Hmbown/CodeWhale cd CodeWhale cargo build --release 在项目根目录创建 .env 文件，写入你的 DeepSeek API Key（或其他 AI 提供商 key），例如： DEEPSEEK_API_KEY=your_key_here # 可选：OPENAI_API_KEY、ANTHROPIC_API_KEY 等 # 国内用户可设置 USE_CN_ENDPOINT=true 以启用中国区域加速 最后运行：./target/release/codewhale 即可启动交互式终端。首次启动会提示选择语言（支持 zh/en/ja/ko/fr），之后可使用 /help 查看命令。"
+      }
+    },
+    "repo:vercel-labs/agent-browser": {
+      "type": "repo-insight",
+      "hash": "e86c2bf8e96ba46400b40fa8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:52:58.472Z",
+      "value": {
+        "summaryZh": "Agent Browser 是 Vercel 实验室开源的浏览器自动化 CLI 工具，专为 AI 代理设计。它基于 Rust 开发，性能高效且跨平台，支持通过自然语言或指令控制浏览器执行点击、输入、导航等操作。亮点在于简洁的命令行接口和与 LLM 的深度集成，让 AI 能像人类一样操作网页。适合需要浏览器交互的 AI 应用开发者、自动化测试工程师以及 RPA 场景从业者。项目高度模块化，可扩展性强，是构建自主网页代理的理想基石。",
+        "scenarios": [
+          "AI 助手自动填写表单、提交数据，实现网页端流程自动化",
+          "自动化测试中模拟用户行为，验证 UI 交互逻辑",
+          "基于浏览器数据采集，辅助大语言模型进行实时信息检索"
+        ],
+        "agentInstallPrompt": "首先确保系统已安装 Rust 编译环境（若未安装，执行 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`）。然后克隆仓库并进入目录：`git clone https://github.com/vercel-labs/agent-browser.git && cd agent-browser`。使用 cargo 编译：`cargo build --release`。安装到系统路径：`cargo install --path .`。运行示例：`agent-browser --help` 查看可用命令。要启动浏览器自动化，例如：`agent-browser goto 'https://example.com'`。若需要 headless 模式，添加 `--headless` 参数。"
+      }
+    },
+    "repo:multica-ai/multica": {
+      "type": "repo-insight",
+      "hash": "697a8c2c7f0694fd12e759f5",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:53:03.426Z",
+      "value": {
+        "summaryZh": "Multica 是一个开源托管代理平台，专为管理多个 AI 编码代理而设计。它将编码代理转化为真正的协作队友，支持任务分配、进度追踪与技能复合。基于 TypeScript 开发，提供简洁的 API 和可视化界面，适合需要多代理协同完成复杂开发工作的团队。亮点在于可动态组合不同代理的能力，实现流水线式智能开发流程。适用于希望提升开发效率、降低人工协调成本的技术团队。",
+        "scenarios": [
+          "多代理并行开发：为不同模块分别配置编码代理，并行实现功能并自动整合进度。",
+          "自动化代码审查与修复：分配专门的审查代理和修复代理，自动检测代码问题并生成补丁。",
+          "智能任务分配与追踪：根据代理的历史表现和技能，自动分配子任务并实时监控完成状态。"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/multica-ai/multica.git && cd multica。安装依赖：npm install。构建项目：npm run build。启动服务：npm run dev。访问本地仪表盘（默认端口 3000）创建代理并分配任务。如需单代理试跑，可运行示例：npx tsx examples/single-agent.ts"
+      }
+    },
+    "repo:kepano/obsidian-skills": {
+      "type": "repo-insight",
+      "hash": "f03f9731ae8c3fe422628849",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:53:09.273Z",
+      "value": {
+        "summaryZh": "Obsidian Skills 是一个为 AI 代理设计的技能集合，专注于增强 Obsidian 笔记应用的自动化能力。项目包含 Markdown 操作、Bases 数据库交互、JSON Canvas 处理以及命令行工具使用等模块化的技能定义。亮点在于将 Obsidian 的常用功能转化为可由 AI 代理直接调用的原子化指令，显著提升笔记管理、内容生成和复杂工作流的自动化效率。适合 Obsidian 重度用户、知识管理爱好者、使用 AI 辅助写作或自动化脚本的人员。通过简单配置即可让代理理解并操作 Obsidian 的 Markdown 语法、Base 视图、画布和 CLI 命令，降低手动重复操作。",
+        "scenarios": [
+          "基于 Obsidian Skills，让 AI 代理自动将网页内容转换为指定格式的 Markdown 笔记并保存到库中。",
+          "利用代理调用 Bases 技能，从 Obsidian 数据库中查询并汇总多个笔记的标签和链接关系。",
+          "通过 JSON Canvas 技能，让代理根据笔记大纲自动生成画布并添加节点连线，可视化知识结构。"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Obsidian 并启用 CLI 或相关 API 支持（如 obsidian-local-rest-api 插件）。克隆仓库：git clone https://github.com/kepano/obsidian-skills.git。将 skills 文件夹内的 Markdown 文件作为系统提示词输入给 AI 代理（如 OpenAI 的 assistants API 或本地 agent 框架）。对于 CLI 技能，需配置 Obsidian 的 vault 路径并测试基本命令，例如：`obsidian help`。随后可让代理尝试执行“创建新笔记”或“搜索标签”等任务以验证安装。"
+      }
+    },
+    "repo:zeroclaw-labs/zeroclaw": {
+      "type": "repo-insight",
+      "hash": "efef82570a8b3c0efc9e36dd",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:53:15.146Z",
+      "value": {
+        "summaryZh": "ZeroClaw 是一个用 Rust 编写的、快速且轻量的全自主 AI 个人助理基础设施。它跨平台支持任何操作系统与设备，核心优势在于完全自主、可任意替换组件，且体积小、性能高。适合寻求自托管智能助手、需要低延迟 AI 服务的开发者，以及希望在边缘设备或服务器上运行私有 AI 助理的高级用户。",
+        "scenarios": [
+          "在本地或自有服务器上部署完全可控的 AI 个人助理，无需依赖云端服务。",
+          "在嵌入式设备（如树莓派）上运行轻量级 AI 服务，实现离线语音/文本交互。",
+          "作为基础设施集成到您的应用中，提供可热插拔的 AI 决策与响应能力。"
+        ],
+        "agentInstallPrompt": "首先确保已安装 Rust 工具链（rustc + cargo）。打开终端执行：git clone https://github.com/zeroclaw-labs/zeroclaw.git && cd zeroclaw && cargo build --release。构建完成后，运行 ./target/release/zeroclaw 即可启动。如需安装到系统，可用 cargo install --path .。详细配置请参考 README 中的示例。"
+      }
+    },
+    "repo:hesamsheikh/awesome-openclaw-usecases": {
+      "type": "repo-insight",
+      "hash": "f2cfa6ef7ad124743a27b755",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:53:21.992Z",
+      "value": {
+        "summaryZh": "OpenClaw 是一个开源自动化工具，专注于简化日常重复任务。该仓库汇集了社区贡献的 OpenClaw 使用案例，覆盖文件处理、网页抓取、系统监控等场景。亮点在于提供可直接运行的示例配置，降低学习曲线，让用户快速上手自动化。适合希望用代码自动提升效率的开发者、运维人员及技术爱好者。",
+        "scenarios": [
+          "定时抓取目标网站数据并生成报表",
+          "监控本地文件夹变化自动触发备份脚本",
+          "整合邮件、日历 API 实现个性化日程管理"
+        ],
+        "agentInstallPrompt": "首先确保系统已安装 OpenClaw（若未安装，请访问 https://github.com/openclaw/openclaw 根据官方指南安装）。然后克隆本仓库：git clone https://github.com/hesamsheikh/awesome-openclaw-usecases.git。进入仓库目录后，选择一个感兴趣用例（如 web_scraper），阅读其 README 了解依赖。在终端执行：openclaw run web_scraper/workflow.yaml。若需修改配置，可直接编辑 YAML 文件。所有用例均包含注释，可参考调整参数后重新运行。"
+      }
+    },
+    "repo:HKUDS/nanobot": {
+      "type": "repo-insight",
+      "hash": "20525099649636f5f109f0ec",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-26T04:54:17.718Z",
+      "value": {
+        "summaryZh": "Nanobot是一个轻量级、开源的人工智能代理框架，专为简化工具集成、对话管理和工作流自动化而设计。其亮点在于极简的架构、模块化插件系统和低学习成本，适合开发者快速构建自定义AI助手。通过统一接口连接各类API、数据库和大模型，支持多轮对话与任务编排，尤其擅长处理需要调用外部工具的复杂场景。适合个人开发者、小团队及有快速原型需求的AI应用构建者。",
+        "scenarios": [
+          "在客服系统中集成多个第三方API（如天气查询、订单查询），通过自然语言指令自动调用相关工具完成用户请求。",
+          "构建自动化工作流，例如自动抓取网页数据、调用大模型进行分析并生成报告，全程通过对话式配置。",
+          "为内部工具开发AI助手，统一调度数据库查询、文件操作和通知服务，降低多系统切换成本。"
+        ],
+        "agentInstallPrompt": "首先确保Python版本>=3.9，然后执行以下命令安装Nanobot： pip install nanobot-ai 安装完成后，创建配置文件config.yaml，示例如下： model: gpt-4 # 或其他兼容模型 plugins: - tool_search - tool_calculator 运行交互模式： nanobot run --config config.yaml 或通过Python代码调用： from nanobot import Agent agent = Agent(config='config.yaml') response = agent.run('查询今天的天气') print(response)"
+      }
+    }
+  }
+}

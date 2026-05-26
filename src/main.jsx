@@ -6,29 +6,33 @@ import {
   Check,
   ChevronDown,
   Circle,
+  Clipboard,
   Copy,
   ExternalLink,
-  Filter,
+  Flame,
   GitFork,
   Github,
+  Layers3,
   RefreshCw,
   Search,
   Sparkles,
   Star,
-  TrendingUp
+  TrendingUp,
+  Zap
 } from 'lucide-react';
 import './styles.css';
 
 const DATA_URL = `${import.meta.env.BASE_URL}data/trending.json`;
 const PERIOD_ORDER = ['daily', 'weekly', 'monthly', 'yearly'];
 const DEFAULT_DATA = {
-  meta: { generatedAt: '', source: 'loading' },
+  meta: { generatedAt: '', source: 'loading', deepseek: null },
   periods: {
     daily: { label: '今日', repos: [] },
     weekly: { label: '本周', repos: [] },
     monthly: { label: '本月', repos: [] },
     yearly: { label: '本年', repos: [] }
-  }
+  },
+  radar: { total: 0, sourceCount: 0, picks: [], categories: [] }
 };
 
 function formatNumber(value) {
@@ -43,8 +47,10 @@ function formatDate(value) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return value;
   return new Intl.DateTimeFormat('zh-CN', {
-    dateStyle: 'medium',
-    timeStyle: 'short',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
     hour12: false
   }).format(date);
 }
@@ -62,7 +68,7 @@ function useTrendingData() {
       })
       .then((json) => {
         if (!cancelled) {
-          setData(json);
+          setData({ ...DEFAULT_DATA, ...json });
           setStatus('ready');
         }
       })
@@ -87,82 +93,177 @@ function getAllRepos(periods) {
   return Object.values(periods || {}).flatMap((period) => period.repos || []);
 }
 
-function rankTone(index) {
-  if (index === 0) return 'rank-first';
-  if (index === 1) return 'rank-second';
-  if (index === 2) return 'rank-third';
-  return '';
+function labelHeat(value) {
+  if (value >= 90) return '极热';
+  if (value >= 75) return '很热';
+  if (value >= 60) return '热门';
+  return '观察';
 }
 
-function RepoCard({ repo, index, expanded, copied, onToggle, onCopy }) {
-  const heat = Math.min(100, Math.round(((repo.stars || 0) / 100000) * 100) + (index < 5 ? 18 : 6));
+function repoHeat(repo, index) {
+  const starScore = Math.min(58, Math.round(Math.log10(Math.max(10, repo.stars || 0)) * 12));
+  const trendScore = repo.today ? 22 : 8;
+  const rankScore = Math.max(0, 20 - index * 2);
+  return Math.min(100, starScore + trendScore + rankScore);
+}
+
+function periodDelta(repo, periodLabel) {
+  if (repo.today) return repo.today.replace(' stars today', '').replace(' stars this week', '');
+  return periodLabel === '本年' ? 'new' : '-';
+}
+
+function ShellNav({ activeView, setActiveView, periodKeys, periods, period, setPeriod, radar }) {
+  return (
+    <aside className="side-shell">
+      <div className="brand">
+        <div className="brand-mark">
+          <Zap size={18} />
+        </div>
+        <strong>RepoPulse</strong>
+      </div>
+
+      <nav className="view-nav" aria-label="主导航">
+        <button className={activeView === 'trending' ? 'active' : ''} type="button" onClick={() => setActiveView('trending')}>
+          <TrendingUp size={16} />
+          趋势榜
+        </button>
+        <button className={activeView === 'radar' ? 'active' : ''} type="button" onClick={() => setActiveView('radar')}>
+          <Flame size={16} />
+          AI 雷达
+          <em>{formatNumber(radar.total)}</em>
+        </button>
+      </nav>
+
+      <div className="nav-section">
+        <h2>周期</h2>
+        {periodKeys.map((key) => (
+          <button key={key} className={period === key ? 'active' : ''} type="button" onClick={() => setPeriod(key)}>
+            <span>{periods[key]?.label || key}</span>
+            <em>{periods[key]?.repos?.length || 0}</em>
+          </button>
+        ))}
+      </div>
+
+      <div className="nav-section muted-links">
+        <h2>分类</h2>
+        <span>AI / 大模型</span>
+        <span>开发工具</span>
+        <span>后端</span>
+        <span>前端</span>
+        <span>数据科学</span>
+      </div>
+    </aside>
+  );
+}
+
+function HeaderControls({ activeView, periodKeys, periods, period, setPeriod, language, setLanguage, languages, query, setQuery }) {
+  return (
+    <header className="app-header">
+      <div className="header-title">
+        <span className="pulse-mark" />
+        <strong>RepoPulse</strong>
+        <span>每日 07:00 更新</span>
+      </div>
+
+      <div className="top-controls">
+        {activeView === 'trending' && (
+          <>
+            <label>Period</label>
+            <div className="segment">
+              {periodKeys.map((key) => (
+                <button key={key} className={period === key ? 'active' : ''} type="button" onClick={() => setPeriod(key)}>
+                  {periods[key]?.label || key}
+                </button>
+              ))}
+            </div>
+
+            <label>Language</label>
+            <select value={language} onChange={(event) => setLanguage(event.target.value)} aria-label="Language">
+              <option value="">All</option>
+              {languages.map((item) => (
+                <option key={item.lang} value={item.lang}>
+                  {item.lang}
+                </option>
+              ))}
+            </select>
+          </>
+        )}
+
+        <label className="search-box">
+          <Search size={15} />
+          <input
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            type="search"
+            placeholder={activeView === 'radar' ? '搜索 AI 信号 / 来源' : '搜索仓库、关键词...'}
+          />
+        </label>
+      </div>
+    </header>
+  );
+}
+
+function RepoRow({ repo, index, periodLabel, expanded, copied, onToggle, onCopy }) {
+  const heat = repoHeat(repo, index);
   const insightId = `${repo.owner}-${repo.repo}-${index}`;
 
   return (
-    <article className={`repo-card ${expanded ? 'is-open' : ''}`}>
-      <div className="repo-grid">
-        <div className={`rank ${rankTone(index)}`}>{String(index + 1).padStart(2, '0')}</div>
+    <article className={`repo-row ${expanded ? 'open' : ''}`}>
+      <div className="repo-line">
+        <div className="rank-cell">
+          <strong>{index + 1}</strong>
+          {index < 3 && <span>▲ {3 - index}</span>}
+        </div>
 
-        <div className="repo-main">
-          <div className="repo-title-row">
-            <a className="repo-title" href={repo.url} target="_blank" rel="noreferrer">
-              <span>{repo.owner}</span>
-              <span className="slash">/</span>
-              <strong>{repo.repo}</strong>
-              <ExternalLink aria-hidden="true" size={15} />
-            </a>
-            <button className="icon-button" type="button" aria-label="展开 AI 洞察" aria-expanded={expanded} aria-controls={insightId} onClick={onToggle}>
-              <ChevronDown size={16} />
-            </button>
-          </div>
-
-          {repo.desc && <p className="repo-desc">{repo.desc}</p>}
-
-          <div className="repo-meta">
-            {repo.lang && (
-              <span className="meta-item">
-                <Circle size={9} fill={repo.langColor || '#8b949e'} color={repo.langColor || '#8b949e'} />
-                {repo.lang}
-              </span>
-            )}
-            <span className="meta-item">
-              <Star size={14} />
-              {formatNumber(repo.stars)}
-            </span>
-            <span className="meta-item">
-              <GitFork size={14} />
-              {formatNumber(repo.forks)}
-            </span>
-            {repo.today && (
-              <span className="meta-item today">
-                <TrendingUp size={14} />
-                {repo.today}
-              </span>
-            )}
+        <div className="repo-cell">
+          <a href={repo.url} target="_blank" rel="noreferrer">
+            <span>{repo.owner}</span> / <strong>{repo.repo}</strong>
+            <ExternalLink size={13} />
+          </a>
+          <p>{repo.desc || 'No description.'}</p>
+          <div className="tags">
+            {(repo.lang || '').split(',').filter(Boolean).slice(0, 1).map((tag) => (
+              <span key={tag}>{tag}</span>
+            ))}
+            {repo.summaryZh && <span>AI摘要</span>}
           </div>
         </div>
 
-        <div className="heat-cell" aria-label={`热度 ${heat}`}>
-          <span>{heat}</span>
-          <div className="heat-track">
-            <i style={{ height: `${heat}%` }} />
-          </div>
+        <div className="lang-cell">
+          {repo.lang && <i style={{ background: repo.langColor || '#8b949e' }} />}
+          <span>{repo.lang || '-'}</span>
         </div>
+        <div className="metric-cell">
+          <Star size={14} />
+          {formatNumber(repo.stars)}
+        </div>
+        <div className="metric-cell">
+          <GitFork size={14} />
+          {formatNumber(repo.forks)}
+        </div>
+        <div className="delta-cell">{periodDelta(repo, periodLabel)}</div>
+        <div className="heat-cell">
+          <div className="bars" style={{ '--heat': `${heat}%` }} />
+          <strong>{heat}</strong>
+          <span>{labelHeat(heat)}</span>
+        </div>
+        <button className="row-toggle" type="button" aria-expanded={expanded} aria-controls={insightId} onClick={onToggle}>
+          <ChevronDown size={15} />
+        </button>
       </div>
 
       {expanded && (
-        <div className="ai-panel" id={insightId}>
+        <div className="repo-insight" id={insightId}>
           <section>
             <h3>
-              <Sparkles size={14} />
+              <Clipboard size={15} />
               AI 摘要
             </h3>
             <p>{repo.summaryZh || '暂无摘要。'}</p>
           </section>
-
           <section>
             <h3>
-              <Filter size={14} />
+              <Sparkles size={15} />
               适用场景
             </h3>
             <ul>
@@ -171,14 +272,13 @@ function RepoCard({ repo, index, expanded, copied, onToggle, onCopy }) {
               ))}
             </ul>
           </section>
-
-          <section className="prompt-section">
-            <div className="panel-heading">
+          <section>
+            <div className="insight-title">
               <h3>
-                <Bot size={14} />
+                <Bot size={15} />
                 Agent 安装提示词
               </h3>
-              <button className="copy-button" type="button" onClick={onCopy}>
+              <button type="button" onClick={onCopy}>
                 {copied ? <Check size={14} /> : <Copy size={14} />}
                 {copied ? '已复制' : '复制'}
               </button>
@@ -191,47 +291,175 @@ function RepoCard({ repo, index, expanded, copied, onToggle, onCopy }) {
   );
 }
 
-function LeftRail({ periodKeys, periods, period, setPeriod, languageStats, setLanguage }) {
+function TrendingView({ repos, filteredRepos, periodLabel, expanded, copiedKey, toggleExpanded, copyPrompt }) {
   return (
-    <aside className="rail left-rail">
-      <div className="brand">
-        <div className="brand-mark">
-          <Github size={18} />
-        </div>
-        <div>
-          <strong>RepoPulse</strong>
-          <span>GitHub 热榜洞察</span>
-        </div>
+    <section className="board">
+      <div className="table-head">
+        <span>#</span>
+        <span>仓库</span>
+        <span>语言</span>
+        <span>Stars</span>
+        <span>Forks</span>
+        <span>{periodLabel === '本周' ? '本周新增' : '今日新增'}</span>
+        <span>热度</span>
       </div>
 
-      <nav className="period-nav" aria-label="周期">
-        {periodKeys.map((key) => (
-          <button key={key} type="button" className={period === key ? 'active' : ''} onClick={() => setPeriod(key)}>
-            <span>{periods[key]?.label || key}</span>
-            <em>{periods[key]?.repos?.length || 0}</em>
-          </button>
-        ))}
-      </nav>
-
-      <div className="rail-block">
-        <h2>热门语言</h2>
-        <div className="language-stack">
-          {languageStats.slice(0, 6).map((item) => (
-            <button key={item.lang} type="button" onClick={() => setLanguage(item.lang)}>
-              <span style={{ background: item.color }} />
-              {item.lang}
-              <em>{item.count}</em>
-            </button>
-          ))}
-        </div>
+      <div className="repo-list">
+        {filteredRepos.length ? (
+          filteredRepos.map((repo, index) => {
+            const key = `${repo.owner}/${repo.repo}`;
+            const expandedKey = `${index}`;
+            return (
+              <RepoRow
+                key={key}
+                repo={repo}
+                index={index}
+                periodLabel={periodLabel}
+                expanded={expanded.has(expandedKey)}
+                copied={copiedKey === key}
+                onToggle={() => toggleExpanded(expandedKey)}
+                onCopy={() => copyPrompt(repo, key)}
+              />
+            );
+          })
+        ) : (
+          <div className="empty-state">
+            <Search size={28} />
+            <strong>没有匹配的项目</strong>
+            <span>调整普通搜索或语言筛选后再试。</span>
+          </div>
+        )}
       </div>
-    </aside>
+
+      <div className="board-foot">{filteredRepos.length} / {repos.length} repos</div>
+    </section>
   );
 }
 
-function RightRail({ meta, repos, allRepos, periodLabel, status }) {
-  const totalStars = repos.reduce((sum, repo) => sum + Number(repo.stars || 0), 0);
-  const totalForks = repos.reduce((sum, repo) => sum + Number(repo.forks || 0), 0);
+function RadarItem({ item, rank }) {
+  return (
+    <a className="radar-item" href={item.url} target="_blank" rel="noreferrer">
+      <div className="radar-time">
+        <span>#{rank}</span>
+        <time>{formatDate(item.publishedAt)}</time>
+      </div>
+      <div>
+        <div className="radar-meta">
+          <span>{item.siteName}</span>
+          <strong>{item.score || 60}分</strong>
+          {item.signals.slice(0, 2).map((signal) => (
+            <span key={signal}>{signal}</span>
+          ))}
+        </div>
+        <h3>{item.title}</h3>
+        <p>{item.source}</p>
+      </div>
+    </a>
+  );
+}
+
+function RadarView({ radar, query }) {
+  const [open, setOpen] = useState(() => new Set(['model_release', 'ai_general']));
+  const q = query.trim().toLowerCase();
+  const categories = (radar.categories || [])
+    .map((category) => ({
+      ...category,
+      items: (category.items || []).filter((item) => {
+        if (!q) return true;
+        return `${item.title} ${item.siteName} ${item.source} ${item.signals?.join(' ')}`.toLowerCase().includes(q);
+      })
+    }))
+    .filter((category) => category.items.length);
+
+  function toggle(id) {
+    setOpen((current) => {
+      const next = new Set(current);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
+
+  return (
+    <section className="radar-board">
+      <div className="radar-hero">
+        <div>
+          <span>AI RADAR</span>
+          <h2>AI 雷达</h2>
+          <p>整合过去 {radar.windowHours || 24} 小时 AI/科技方向高热内容，按信号强度与主题分类展示重点更新。</p>
+        </div>
+        <a href={radar.sourceUrl || 'https://learnprompt.github.io/ai-news-radar/'} target="_blank" rel="noreferrer">
+          原始雷达
+          <ArrowUpRight size={14} />
+        </a>
+      </div>
+
+      <div className="radar-metrics">
+        <div>
+          <span>AI 信号</span>
+          <strong>{formatNumber(radar.total)}</strong>
+        </div>
+        <div>
+          <span>来源分组</span>
+          <strong>{formatNumber(radar.sourceCount)}</strong>
+        </div>
+        <div>
+          <span>最高评分</span>
+          <strong>{radar.topScore || 0}</strong>
+        </div>
+      </div>
+
+      <section className="bole-panel">
+        <div className="section-head">
+          <div>
+            <span>BOLE PICKS</span>
+            <h2>伯乐精选</h2>
+          </div>
+          <em>Top 8 · 按评分排序</em>
+        </div>
+        <div className="bole-list">
+          {(radar.picks || []).slice(0, 8).map((item, index) => (
+            <RadarItem key={item.id} item={item} rank={index + 1} />
+          ))}
+        </div>
+      </section>
+
+      <section className="signal-panel">
+        <div className="section-head">
+          <div>
+            <span>SIGNAL FLOW</span>
+            <h2>AI 信号流</h2>
+          </div>
+          <em>按分类展开 · 每类 Top 10</em>
+        </div>
+
+        <div className="category-list">
+          {categories.map((category) => {
+            const isOpen = open.has(category.id);
+            return (
+              <section className="category-group" key={category.id}>
+                <button type="button" onClick={() => toggle(category.id)} aria-expanded={isOpen}>
+                  <strong>{category.label}</strong>
+                  <span>{formatNumber(category.count)} 条</span>
+                  <ChevronDown size={16} />
+                </button>
+                {isOpen && (
+                  <div className="category-items">
+                    {category.items.slice(0, 10).map((item, index) => (
+                      <RadarItem key={item.id} item={item} rank={index + 1} />
+                    ))}
+                  </div>
+                )}
+              </section>
+            );
+          })}
+        </div>
+      </section>
+    </section>
+  );
+}
+
+function InsightRail({ activeView, meta, repos, allRepos, radar, periodLabel, status }) {
   const topLangs = Object.entries(
     repos.reduce((acc, repo) => {
       if (!repo.lang) return acc;
@@ -243,45 +471,44 @@ function RightRail({ meta, repos, allRepos, periodLabel, status }) {
     .slice(0, 5);
 
   return (
-    <aside className="rail right-rail">
-      <div className="rail-block status-block">
-        <div className="status-head">
-          <RefreshCw size={16} />
-          <span>{status === 'ready' ? '数据已加载' : status === 'error' ? '使用本地数据' : '加载中'}</span>
-        </div>
-        <strong>{formatDate(meta.generatedAt)}</strong>
-        <p>{periodLabel}收录 {repos.length} 个项目，全站样本 {allRepos.length} 条。</p>
+    <aside className="insight-rail">
+      <div className="rail-card">
+        <h2>洞察</h2>
+        <strong>{status === 'ready' ? '数据已加载' : status === 'error' ? '加载失败' : '加载中'}</strong>
+        <p>{formatDate(meta.generatedAt)} · {activeView === 'radar' ? `${formatNumber(radar.total)} 条 AI 信号` : `${periodLabel} ${repos.length} 个项目`}</p>
       </div>
 
-      <div className="metric-grid">
+      <div className="rail-card metric-pair">
         <div>
-          <span>Stars</span>
-          <strong>{formatNumber(totalStars)}</strong>
+          <span>样本</span>
+          <strong>{activeView === 'radar' ? formatNumber(radar.sourceCount) : formatNumber(allRepos.length)}</strong>
         </div>
         <div>
-          <span>Forks</span>
-          <strong>{formatNumber(totalForks)}</strong>
+          <span>缓存</span>
+          <strong>{formatNumber(meta.deepseek?.cacheEntries || 0)}</strong>
         </div>
       </div>
 
-      <div className="rail-block">
-        <h2>语言分布</h2>
-        <div className="distribution">
-          {topLangs.map(([lang, count]) => (
-            <div key={lang} className="dist-row">
-              <span>{lang}</span>
-              <div>
-                <i style={{ width: `${Math.max(12, (count / Math.max(1, repos.length)) * 100)}%` }} />
+      {activeView === 'trending' && (
+        <div className="rail-card">
+          <h2>语言分布</h2>
+          <div className="distribution">
+            {topLangs.map(([lang, count]) => (
+              <div key={lang} className="dist-row">
+                <span>{lang}</span>
+                <div>
+                  <i style={{ width: `${Math.max(12, (count / Math.max(1, repos.length)) * 100)}%` }} />
+                </div>
+                <em>{count}</em>
               </div>
-              <em>{count}</em>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
-      <div className="rail-block source-block">
-        <h2>数据源</h2>
-        <p>Trending 数据抓取自 github.com/trending，本年榜单使用 GitHub Search API。</p>
+      <div className="rail-card">
+        <h2>刷新信息</h2>
+        <p>本地 06:00 抓取数据，07:00 自动提交并触发 GitHub Pages 部署。</p>
       </div>
     </aside>
   );
@@ -290,7 +517,9 @@ function RightRail({ meta, repos, allRepos, periodLabel, status }) {
 function App() {
   const { data, status } = useTrendingData();
   const periods = data.periods || DEFAULT_DATA.periods;
+  const radar = data.radar || DEFAULT_DATA.radar;
   const periodKeys = getPeriodKeys(periods);
+  const [activeView, setActiveView] = useState(() => localStorage.getItem('repopulse:view') || 'trending');
   const [period, setPeriod] = useState(() => localStorage.getItem('repopulse:period') || periodKeys[0] || 'daily');
   const [language, setLanguage] = useState(() => localStorage.getItem('repopulse:language') || '');
   const [query, setQuery] = useState(() => localStorage.getItem('repopulse:query') || '');
@@ -301,17 +530,10 @@ function App() {
     if (!periods[period] && periodKeys[0]) setPeriod(periodKeys[0]);
   }, [period, periodKeys, periods]);
 
-  useEffect(() => {
-    localStorage.setItem('repopulse:period', period);
-  }, [period]);
-
-  useEffect(() => {
-    localStorage.setItem('repopulse:language', language);
-  }, [language]);
-
-  useEffect(() => {
-    localStorage.setItem('repopulse:query', query);
-  }, [query]);
+  useEffect(() => localStorage.setItem('repopulse:view', activeView), [activeView]);
+  useEffect(() => localStorage.setItem('repopulse:period', period), [period]);
+  useEffect(() => localStorage.setItem('repopulse:language', language), [language]);
+  useEffect(() => localStorage.setItem('repopulse:query', query), [query]);
 
   const allRepos = useMemo(() => getAllRepos(periods), [periods]);
   const languages = useMemo(() => {
@@ -365,104 +587,47 @@ function App() {
   }
 
   return (
-    <main className="app-shell">
-      <LeftRail
+    <main className="app-frame">
+      <ShellNav
+        activeView={activeView}
+        setActiveView={setActiveView}
         periodKeys={periodKeys}
         periods={periods}
         period={period}
         setPeriod={setPeriod}
-        languageStats={languages}
-        setLanguage={setLanguage}
+        radar={radar}
       />
 
-      <section className="content">
-        <header className="topbar">
-          <div>
-            <h1>GitHub Trending</h1>
-            <p>中文摘要、场景判断和可直接交给 Agent 的安装提示词。</p>
-          </div>
-          <a className="github-link" href="https://github.com/trending" target="_blank" rel="noreferrer">
-            <Github size={16} />
-            GitHub Trending
-            <ArrowUpRight size={14} />
-          </a>
-        </header>
+      <section className="main-stage">
+        <HeaderControls
+          activeView={activeView}
+          periodKeys={periodKeys}
+          periods={periods}
+          period={period}
+          setPeriod={setPeriod}
+          language={language}
+          setLanguage={setLanguage}
+          languages={languages}
+          query={query}
+          setQuery={setQuery}
+        />
 
-        <section className="control-strip" aria-label="筛选条件">
-          <label className="field">
-            <span>Period</span>
-            <select value={period} onChange={(event) => setPeriod(event.target.value)}>
-              {periodKeys.map((key) => (
-                <option key={key} value={key}>
-                  {periods[key]?.label || key}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <label className="field">
-            <span>Language</span>
-            <select value={language} onChange={(event) => setLanguage(event.target.value)}>
-              <option value="">All languages</option>
-              {languages.map((item) => (
-                <option key={item.lang} value={item.lang}>
-                  {item.lang}
-                </option>
-              ))}
-            </select>
-          </label>
-
-          <label className="search-field">
-            <Search size={16} />
-            <input value={query} onChange={(event) => setQuery(event.target.value)} type="search" placeholder="Search repo, owner, language or summary" />
-          </label>
-        </section>
-
-        <div className="list-head">
-          <div>
-            <strong>{periodLabel}</strong>
-            <span>{filteredRepos.length} / {repos.length} repos</span>
-          </div>
-          <button
-            className="ghost-button"
-            type="button"
-            onClick={() => {
-              setLanguage('');
-              setQuery('');
-            }}
-          >
-            清除筛选
-          </button>
-        </div>
-
-        <section className="repo-list" aria-label="仓库列表">
-          {filteredRepos.length ? (
-            filteredRepos.map((repo, index) => {
-              const key = `${repo.owner}/${repo.repo}`;
-              const expandedKey = `${index}`;
-              return (
-                <RepoCard
-                  key={key}
-                  repo={repo}
-                  index={index}
-                  expanded={expanded.has(expandedKey)}
-                  copied={copiedKey === key}
-                  onToggle={() => toggleExpanded(expandedKey)}
-                  onCopy={() => copyPrompt(repo, key)}
-                />
-              );
-            })
-          ) : (
-            <div className="empty-state">
-              <Search size={28} />
-              <strong>没有匹配的项目</strong>
-              <span>调整语言或关键词后再试。</span>
-            </div>
-          )}
-        </section>
+        {activeView === 'trending' ? (
+          <TrendingView
+            repos={repos}
+            filteredRepos={filteredRepos}
+            periodLabel={periodLabel}
+            expanded={expanded}
+            copiedKey={copiedKey}
+            toggleExpanded={toggleExpanded}
+            copyPrompt={copyPrompt}
+          />
+        ) : (
+          <RadarView radar={radar} query={query} />
+        )}
       </section>
 
-      <RightRail meta={data.meta || {}} repos={repos} allRepos={allRepos} periodLabel={periodLabel} status={status} />
+      <InsightRail activeView={activeView} meta={data.meta || {}} repos={repos} allRepos={allRepos} radar={radar} periodLabel={periodLabel} status={status} />
     </main>
   );
 }
