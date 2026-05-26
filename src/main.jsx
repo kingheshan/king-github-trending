@@ -207,16 +207,30 @@ function RepoRow({ repo, index, periodLabel, expanded, copied, onToggle, onCopy 
   const heat = repoHeat(repo, index);
   const insightId = `${repo.owner}-${repo.repo}-${index}`;
 
+  function handleRowKeyDown(event) {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    event.preventDefault();
+    onToggle();
+  }
+
   return (
     <article className={`repo-row ${expanded ? 'open' : ''}`}>
-      <div className="repo-line">
+      <div
+        className="repo-line"
+        role="button"
+        tabIndex={0}
+        aria-expanded={expanded}
+        aria-controls={insightId}
+        onClick={onToggle}
+        onKeyDown={handleRowKeyDown}
+      >
         <div className="rank-cell">
           <strong>{index + 1}</strong>
           {index < 3 && <span>▲ {3 - index}</span>}
         </div>
 
         <div className="repo-cell">
-          <a href={repo.url} target="_blank" rel="noreferrer">
+          <a href={repo.url} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>
             <span>{repo.owner}</span> / <strong>{repo.repo}</strong>
             <ExternalLink size={13} />
           </a>
@@ -247,7 +261,17 @@ function RepoRow({ repo, index, periodLabel, expanded, copied, onToggle, onCopy 
           <strong>{heat}</strong>
           <span>{labelHeat(heat)}</span>
         </div>
-        <button className="row-toggle" type="button" aria-expanded={expanded} aria-controls={insightId} onClick={onToggle}>
+        <button
+          className="row-toggle"
+          type="button"
+          aria-label={expanded ? '收起 AI 摘要' : '展开 AI 摘要'}
+          aria-expanded={expanded}
+          aria-controls={insightId}
+          onClick={(event) => {
+            event.stopPropagation();
+            onToggle();
+          }}
+        >
           <ChevronDown size={15} />
         </button>
       </div>
