@@ -10,6 +10,7 @@
     "update-data": "node scripts/update-data.mjs",
     "local:fetch": "zsh scripts/local-fetch.sh",
     "local:publish": "zsh scripts/local-publish.sh",
+    "local:digest": "node scripts/send-feishu-digest.mjs",
     "install:local-automation": "node scripts/install-local-automation.mjs"
   },
   "dependencies": {

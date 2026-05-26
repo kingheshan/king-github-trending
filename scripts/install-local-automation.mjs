@@ -67,6 +67,8 @@ function install(label, content) {
 
 const fetchFile = install('com.repopulse.fetch', plist('com.repopulse.fetch', 6, 0, 'local:fetch'));
 const publishFile = install('com.repopulse.publish', plist('com.repopulse.publish', 7, 0, 'local:publish'));
+const digestFile = install('com.repopulse.digest', plist('com.repopulse.digest', 8, 0, 'local:digest'));
 
 console.log(`Installed ${fetchFile}`);
 console.log(`Installed ${publishFile}`);
+console.log(`Installed ${digestFile}`);

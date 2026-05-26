@@ -10,8 +10,9 @@ RepoPulse 是一个 GitHub Trending 中文洞察站点，复刻 `github-trending
 - 中文摘要、适用场景、Agent 安装提示词
 - DeepSeek API 生成摘要，并用 `data/deepseek-cache.json` 缓存，避免重复消耗 token
 - AI 雷达：整合 `AI News Radar` 过去 24 小时热门 AI/科技信号，按分类展开每类 Top 10
+- 飞书日报：每天 08:00 用 AI 提炼全站最有价值的 Top 10 热门内容并发送到飞书群
 - 一键复制提示词
-- 本地 launchd 每天 06:00 抓取、07:00 提交并发布
+- 本地 launchd 每天 06:00 抓取、07:00 提交并发布、08:00 发送飞书日报
 - GitHub Pages 静态部署
 
 ## 本地开发
@@ -19,12 +20,13 @@ RepoPulse 是一个 GitHub Trending 中文洞察站点，复刻 `github-trending
 ```bash
 npm install
 cp .env.example .env.local
-# 编辑 .env.local，填入 DEEPSEEK_API_KEY
+# 编辑 .env.local，填入 DEEPSEEK_API_KEY 和 FEISHU_WEBHOOK_URL
 npm run update-data
 npm run dev
 ```
 
 如果没有 `DEEPSEEK_API_KEY`，脚本会使用模板摘要继续生成页面，不会阻断日更。
+如果没有 `FEISHU_WEBHOOK_URL`，08:00 日报任务会生成 `logs/feishu-digest-preview.md` 预览，但不会发送。
 
 ## 本地自动化
 
@@ -32,12 +34,14 @@ npm run dev
 npm run install:local-automation
 ```
 
-安装后会创建两个 macOS LaunchAgent：
+安装后会创建三个 macOS LaunchAgent：
 
 - `com.repopulse.fetch`：每天 06:00 执行 `npm run local:fetch`
 - `com.repopulse.publish`：每天 07:00 执行 `npm run local:publish`
+- `com.repopulse.digest`：每天 08:00 执行 `npm run local:digest`
 
 日志写入 `logs/` 目录。07:00 任务会先运行构建检查，再提交 `public/data/trending.json` 和 `data/deepseek-cache.json` 的变更并推送到 GitHub。
+08:00 任务会读取最新 `public/data/trending.json`，用 DeepSeek 提炼 Top 10 内容，并通过飞书自定义机器人 webhook 发送。若飞书机器人开启了签名校验，请同时设置 `FEISHU_WEBHOOK_SECRET`。
 
 ## 部署
 

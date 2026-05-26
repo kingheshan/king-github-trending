@@ -6,4 +6,6 @@ dist/
 !.env.example
 npm-debug.log*
 coverage/
+logs/
+data/feishu-digest-cache.json
 AGENTS.md
