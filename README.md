@@ -9,7 +9,7 @@ RepoPulse 是一个 GitHub Trending 中文洞察站点，复刻 `github-trending
 - 仓库星标、fork、趋势增量和热度展示
 - 中文摘要、适用场景、Agent 安装提示词
 - DeepSeek API 生成摘要，并用 `data/deepseek-cache.json` 缓存，避免重复消耗 token
-- AI 雷达：整合 `AI News Radar` 过去 24 小时热门 AI/科技信号，按分类展开每类 Top 10
+- AI 雷达：整合 `AI News Radar` 过去 24 小时热门 AI/科技信号，按价值评分精选 Top 8，并按分类展开每类 Top 5
 - 飞书日报：每天 08:00 用 AI 提炼全站最有价值的 Top 10 热门内容并发送到飞书群
 - 一键复制提示词
 - 本地 launchd 每天 06:00 抓取、07:00 提交并发布、08:00 发送飞书日报

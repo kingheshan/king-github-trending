@@ -454,7 +454,7 @@ function RadarView({ radar, query }) {
             <span>SIGNAL FLOW</span>
             <h2>AI 信号流</h2>
           </div>
-          <em>按分类展开 · 每类 Top 10</em>
+          <em>按分类展开 · 每类 Top 5</em>
         </div>
 
         <div className="category-list">
@@ -469,7 +469,7 @@ function RadarView({ radar, query }) {
                 </button>
                 {isOpen && (
                   <div className="category-items">
-                    {category.items.slice(0, 10).map((item, index) => (
+                    {category.items.slice(0, 5).map((item, index) => (
                       <RadarItem key={item.id} item={item} rank={index + 1} />
                     ))}
                   </div>

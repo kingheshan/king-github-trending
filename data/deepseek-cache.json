@@ -363,17 +363,17 @@
     },
     "repo:dograh-hq/dograh": {
       "type": "repo-insight",
-      "hash": "32da88919313dca51062757c",
+      "hash": "1d54699372f72a461944de95",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:49:03.458Z",
+      "generatedAt": "2026-05-26T07:35:29.287Z",
       "value": {
-        "summaryZh": "Dograh 是一个开源的语音代理平台，旨在帮助开发者快速构建和部署可定制的语音交互系统。它集成了语音识别（ASR）、自然语言理解（NLU）、对话管理及语音合成（TTS）等核心能力，提供模块化设计，支持自定义技能和集成第三方服务。亮点在于其轻量级、易于扩展且完全开源，适合需要构建语音客服、虚拟助手、语音控制应用的企业和AI开发者。",
+        "summaryZh": "Dograh 是一个开源语音AI平台，可作为 Vapi 和 Retell 的自托管替代方案。它支持本地部署（On Prem）和自带密钥（BYOK），涵盖语音到语音（Speech to Speech）或LLM/STT/TTS流程。项目提供可视化工作流构建器（Visual Workflow Builder），原生支持MCP（Model Context Protocol）和电话系统集成。适合需要私有化部署语音AI应用、定制对话流程、或集成电话通话能力的开发者和企业。",
         "scenarios": [
-          "构建企业级语音客服系统，实现自动应答和转人工服务",
-          "开发车载或智能家居场景下的语音控制助手",
-          "搭建多语言语音交互的虚拟角色或教育工具"
+          "构建私有化智能客服系统，支持语音交互和电话接入",
+          "开发语音助手或语音控制应用，结合LLM和TTS/STT",
+          "利用可视化工作流设计复杂的多轮对话和任务流程"
         ],
-        "agentInstallPrompt": "首先，克隆仓库：git clone https://github.com/dograh-hq/dograh.git。然后进入目录并创建虚拟环境：cd dograh && python3 -m venv venv && source venv/bin/activate。安装依赖：pip install -r requirements.txt。接着，配置环境变量（例如语音服务API密钥）。最后，运行示例：python examples/simple_voice_assistant.py。确保麦克风权限开启，即可通过语音与代理交互。"
+        "agentInstallPrompt": "请安装并试跑 Dograh：首先克隆仓库 git clone https://github.com/dograh-hq/dograh.git，进入目录 cd dograh，使用 pip install -r requirements.txt 安装依赖。然后修改配置文件 config.yaml 设置你的API密钥（如OpenAI、STT/TTS）。运行 python main.py 启动服务。访问 http://localhost:8080 进入可视化工作流编辑器，根据示例创建第一个语音项目。"
       }
     },
     "repo:presenton/presenton": {

@@ -341,6 +341,78 @@ function scorePercent(item) {
   return Math.round(score <= 1 ? score * 100 : score);
 }
 
+function clampScore(value) {
+  return Math.max(0, Math.min(98, Math.round(value)));
+}
+
+function hoursSince(value) {
+  const time = value ? new Date(value).getTime() : 0;
+  if (!time || Number.isNaN(time)) return 24;
+  return Math.max(0, (Date.now() - time) / 36e5);
+}
+
+function sourceQuality(item) {
+  const site = `${item.site_id || ''} ${item.site_name || ''} ${item.source || ''}`.toLowerCase();
+  if (site.includes('opml') || site.includes('infoq')) return 9;
+  if (site.includes('ai hot') || site.includes('hn热议') || site.includes('hacker')) return 8;
+  if (site.includes('info flow')) return 7;
+  if (site.includes('buzzing')) return 6;
+  if (site.includes('techurls') || site.includes('zeli')) return 5;
+  if (site.includes('tophub') || site.includes('readhub')) return 4;
+  if (site.includes('aibase')) return 2;
+  return 3;
+}
+
+function categoryWeight(label) {
+  return ({
+    agent_workflow: 9,
+    developer_tool: 8,
+    developer_tooling: 8,
+    model_release: 8,
+    infra_compute: 7,
+    infrastructure: 7,
+    ai_product_update: 6,
+    research_paper: 6,
+    research: 6,
+    industry_business: 5,
+    robotics: 5,
+    ai_tech: 5,
+    curated_hotlist: 2,
+    ai_general: 1
+  })[label] ?? 2;
+}
+
+function keywordValue(item) {
+  const text = `${radarTitle(item)} ${item.title_en || ''} ${(item.ai_signals || []).join(' ')}`.toLowerCase();
+  const groups = [
+    ['openai', 'anthropic', 'claude', 'gpt', 'gemini', 'deepseek', 'qwen', 'llama', 'mistral', 'kimi', '豆包', '通义', '千问'],
+    ['agent', 'codex', 'mcp', 'sdk', 'api', 'workflow', '工作流', '智能体', '代理'],
+    ['open source', '开源', 'github', 'benchmark', 'eval', '评测', '发布', 'release'],
+    ['security', '安全', '隐私', '治理', '监管', '成本', '缓存', '端侧', '本地', '推理'],
+    ['robot', '机器人', '具身', '算力', '芯片', 'gpu', '训练', '部署']
+  ];
+  return groups.reduce((total, group) => total + (group.some((word) => text.includes(word)) ? 3 : 0), 0);
+}
+
+function valueScore(item) {
+  const raw = scorePercent(item);
+  const base = raw >= 99 ? 70 : 45 + raw * 0.36;
+  const recencyBoost = Math.max(0, 4 - hoursSince(radarTime(item)) * 0.25);
+  const signalBoost = Math.min(5, (Array.isArray(item.ai_signals) ? item.ai_signals.length : 0) * 1.5);
+  const reasonBoost = item.ai_relevance_reason ? 2 : 0;
+  const noisePenalty = Math.min(12, (Array.isArray(item.ai_noise) ? item.ai_noise.length : 0) * 4);
+  return clampScore(
+    base +
+    sourceQuality(item) * 0.6 +
+    categoryWeight(item.ai_label) * 0.65 +
+    Math.min(8, keywordValue(item) * 0.65) +
+    signalBoost +
+    reasonBoost +
+    recencyBoost -
+    noisePenalty
+  );
+}
+
 function radarTitle(item) {
   return compactText(item.title_zh || item.title || item.title_en || '未命名更新');
 }
@@ -350,6 +422,7 @@ function radarTime(item) {
 }
 
 function normalizeRadarItem(item) {
+  const rawScore = scorePercent(item);
   return {
     id: item.id || hash(item),
     title: radarTitle(item),
@@ -359,7 +432,8 @@ function normalizeRadarItem(item) {
     siteName: item.site_name || '来源',
     source: item.source || '未分区',
     publishedAt: radarTime(item),
-    score: scorePercent(item),
+    rawScore,
+    score: valueScore(item),
     label: item.ai_label || 'ai_general',
     labelName: RADAR_LABELS[item.ai_label] || item.ai_label || 'AI 综合',
     reason: compactText(item.ai_relevance_reason || ''),
@@ -374,7 +448,44 @@ function shouldKeepRadarItem(item) {
 }
 
 function sortRadarItems(a, b) {
-  return b.score - a.score || new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+  return b.score - a.score || b.rawScore - a.rawScore || new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+}
+
+function compactKey(value) {
+  return String(value || '').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '').slice(0, 80);
+}
+
+function pickDiverseItems(items, limit = 8) {
+  const selected = [];
+  const seenTitles = new Set();
+  const siteCounts = new Map();
+  const categoryCounts = new Map();
+
+  for (const item of items) {
+    const titleKey = compactKey(item.title);
+    if (!titleKey || seenTitles.has(titleKey)) continue;
+
+    const siteKey = item.siteName || item.siteId || 'unknown';
+    const categoryKey = item.label || 'unknown';
+    if ((siteCounts.get(siteKey) || 0) >= 2) continue;
+    if ((categoryCounts.get(categoryKey) || 0) >= 3) continue;
+
+    selected.push(item);
+    seenTitles.add(titleKey);
+    siteCounts.set(siteKey, (siteCounts.get(siteKey) || 0) + 1);
+    categoryCounts.set(categoryKey, (categoryCounts.get(categoryKey) || 0) + 1);
+    if (selected.length >= limit) return selected;
+  }
+
+  for (const item of items) {
+    const titleKey = compactKey(item.title);
+    if (!titleKey || seenTitles.has(titleKey)) continue;
+    selected.push(item);
+    seenTitles.add(titleKey);
+    if (selected.length >= limit) return selected;
+  }
+
+  return selected;
 }
 
 async function fetchRadar() {
@@ -392,11 +503,11 @@ async function fetchRadar() {
     }
     const category = categoryMap.get(item.label);
     category.count += 1;
-    if (category.items.length < 10) category.items.push(item);
+    if (category.items.length < 5) category.items.push(item);
   });
 
   const categories = [...categoryMap.values()].sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'zh-CN'));
-  const picks = items.slice(0, 8);
+  const picks = pickDiverseItems(items, 8);
   const sourceCount = new Set(items.map((item) => `${item.siteName}:${item.source}`)).size;
 
   return {

@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-05-26T04:54:18.284Z",
+    "generatedAt": "2026-05-26T07:40:26.961Z",
     "source": "github-trending-search-ai-news-radar",
     "timezone": "Asia/Shanghai",
     "refreshPolicy": "Local launchd: 06:00 fetch, 07:00 commit and push",
     "deepseek": {
       "enabled": true,
       "model": "deepseek-v4-flash",
-      "generated": 1,
-      "reused": 67,
+      "generated": 0,
+      "reused": 68,
       "failed": 0,
       "cacheEntries": 68
     }
@@ -26,8 +26,8 @@
           "desc": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 32058,
-          "forks": 2629,
+          "stars": 32759,
+          "forks": 2665,
           "today": "5,604 stars today",
           "summaryZh": "Understand-Anything 是一个将代码仓库自动转换为交互式知识图谱的开源工具。它能够解析任意代码库，生成可探索、可搜索的可视化图谱，并支持自然语言提问。项目亮点在于“图谱用于教学而非炫技”，强调实用性，并原生集成了 Claude Code、Codex、Cursor 等主流 AI coding agent。适合希望快速理解陌生代码库、进行代码审查与重构、或者为团队项目建立索引的开发者。",
           "scenarios": [
@@ -45,8 +45,8 @@
           "desc": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 15761,
-          "forks": 1893,
+          "stars": 16023,
+          "forks": 1903,
           "today": "1,441 stars today",
           "summaryZh": "该仓库是Anthropic发布的开源插件集合，专为知识工作者在Claude Cowork环境中使用而设计。它提供一系列可扩展的插件，用于增强Claude的信息检索、文档处理、数据分析等能力，帮助用户更高效地完成研究、写作和日常任务。亮点包括完全开源、易于定制、与Claude深度集成，可显著提升工作效率。适合需要频繁处理信息、撰写报告、进行研究的专业人士，以及希望自定义AI助手功能的开发者。",
           "scenarios": [
@@ -64,8 +64,8 @@
           "desc": "Learn it. Build it. Ship it for others.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 19088,
-          "forks": 3212,
+          "stars": 19401,
+          "forks": 3247,
           "today": "3,154 stars today",
           "summaryZh": "该项目是一个从零开始学习AI工程的全流程指南，涵盖理论、实战与交付。通过循序渐进的项目式学习，用户可掌握数据预处理、模型训练、API开发、部署上线等关键技能。亮点在于强调“学习-构建-交付”闭环，提供完整可运行的Python代码与最佳实践。适合AI初学者、软件工程师转型者、希望系统化构建AI作品集的开发者。",
           "scenarios": [
@@ -83,8 +83,8 @@
           "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 192788,
-          "forks": 29816,
+          "stars": 193059,
+          "forks": 29840,
           "today": "2,025 stars today",
           "summaryZh": "ECC 是一个为 AI 编码代理设计的性能优化系统，支持 Claude Code、Codex、Opencode、Cursor 等主流工具。它通过技能库、直觉模拟、记忆管理、安全策略与研究优先的开发方式，提升代理的响应速度、代码质量与自主决策能力。核心亮点是跨代理兼容、可插拔架构以及内存-安全双保障，适合使用 AI 编程助手进行复杂项目开发的开发者或团队。",
           "scenarios": [
@@ -102,8 +102,8 @@
           "desc": "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 26 security domains · Apache 2.0",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 9415,
-          "forks": 1146,
+          "stars": 9534,
+          "forks": 1150,
           "today": "1,004 stars today",
           "summaryZh": "Anthropic-Cybersecurity-Skills 是一个面向 AI 代理的结构化网络安全技能库，包含 754 项技能，覆盖 26 个安全领域。它映射到 MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND 和 NIST AI RMF 五大安全框架，并遵循 agentskills.io 标准。该项目兼容 Claude Code、GitHub Copilot、Cursor、Gemini CLI 等 20 多个 AI 平台，使 AI 代理能够直接调用标准化的安全操作，如攻击检测、防御配置、合规评估等。适合安全工程师、AI 开发者及希望以程序化方式集成网络安全能力的团队，可显著减少重复工作并提升响应一致性。",
           "scenarios": [
@@ -121,8 +121,8 @@
           "desc": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 25801,
-          "forks": 1434,
+          "stars": 26248,
+          "forks": 1462,
           "today": "3,161 stars today",
           "summaryZh": "Codegraph 是一个预索引代码知识图谱工具，专为 Claude Code、Codex、Cursor、OpenCode 和 Hermes Agent 等 AI 编程助手设计。它通过提前分析代码库结构、符号依赖和类型信息，生成紧凑的索引文件，从而显著减少 AI 对话中的 token 消耗和工具调用次数，同时 100% 在本地运行，保障数据隐私。核心亮点：轻量、离线、高效，适合任何需要为 AI 编写助手提供精准代码上下文的中大型项目。目标用户是使用 AI 辅助编程的开发者，尤其是那些希望降低 API 成本、提升响应速度并避免代码泄露的团队。",
           "scenarios": [
@@ -140,8 +140,8 @@
           "desc": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents",
           "lang": "Swift",
           "langColor": "#F05138",
-          "stars": 19586,
-          "forks": 1478,
+          "stars": 19635,
+          "forks": 1480,
           "today": "603 stars today",
           "summaryZh": "Cmux 是一款基于 Ghostty 的 macOS 终端模拟器，专为 AI 编码代理优化。其最大亮点是垂直标签布局，允许用户同时高效管理多个终端会话，并通过通知机制在后台任务完成时即时提醒。此外，它利用 Metal 进行高性能渲染，界面简洁流畅。适合 AI 开发人员、自动化工作流使用者及需要多终端管理的 macOS 用户。",
           "scenarios": [
@@ -159,8 +159,8 @@
           "desc": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
           "lang": "",
           "langColor": "#8b949e",
-          "stars": 155423,
-          "forks": 15941,
+          "stars": 155790,
+          "forks": 15974,
           "today": "2,749 stars today",
           "summaryZh": "该项目提供一份名为 CLAUDE.md 的单一配置文件，源自 AI 先驱 Andrej Karpathy 对大型语言模型编程陷阱的观察与实践总结。通过将此文件置于项目根目录，Claude Code（或其他兼容的 AI 编码助手）可直接读取其中的系统级指令，从而显著改善代码生成质量、减少幻觉、规范输出格式。亮点在于它凝练了 Karpathy 在训练与使用 LLM 编码时的核心教训，无需额外安装或依赖，即插即用。适合所有使用 AI 辅助编程的开发者，尤其是希望避免常见错误、提升代码一致性与可靠性的 Claude Code 用户。",
           "scenarios": [
@@ -178,8 +178,8 @@
           "desc": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 23969,
-          "forks": 3293,
+          "stars": 24038,
+          "forks": 3294,
           "today": "317 stars today",
           "summaryZh": "FinceptTerminal 是一款基于Python构建的现代金融终端应用，集成了高级市场分析、投资研究与经济数据工具。它提供交互式数据探索界面，支持实时市场数据、技术指标计算、基本面分析以及宏观经济数据可视化。亮点在于模块化设计和丰富的金融数据源整合，适合量化分析师、个人投资者及金融研究人员快速获取深度洞察并辅助决策。",
           "scenarios": [
@@ -197,7 +197,7 @@
           "desc": "A community-supported supercharged document management system: scan, index and archive all your documents",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 41407,
+          "stars": 41462,
           "forks": 2749,
           "today": "176 stars today",
           "summaryZh": "Paperless-ngx 是一款社区驱动的增强型文档管理系统，支持扫描、索引和归档纸质文件。它自动执行 OCR（光学字符识别）以提取文本，并提供强大的搜索、标签和分类功能。亮点包括 Docker 一键部署、多用户协作、邮件导入及规则自动处理。适合个人或团队高效管理收据、发票、合同、笔记等各类文档，彻底告别纸质杂乱。项目基于 Python 开发，开源免费，社区活跃，持续迭代。",
@@ -216,8 +216,8 @@
           "desc": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
           "lang": "Jupyter Notebook",
           "langColor": "#DA5B0B",
-          "stars": 44117,
-          "forks": 5053,
+          "stars": 44175,
+          "forks": 5056,
           "today": "141 stars today",
           "summaryZh": "这是一个由Anthropic官方维护的Claude Cookbook集合，包含多个Jupyter Notebook示例，展示了Claude在各种场景下的高效用法，如系统提示定制、图像理解、工具调用、长文本处理、多轮对话、代码生成等。亮点在于每个Notebook都配有详细文档和可复现代码，最佳实践直接来自Claude核心团队。适合希望深入了解Claude能力边界、快速集成到AI应用中的开发者、数据科学家和AI研究者。通过交互式Notebook，用户能边学边试，快速掌握Claude的高级特性和优化技巧。",
           "scenarios": [
@@ -235,8 +235,8 @@
           "desc": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
           "lang": "Shell",
           "langColor": "#89e051",
-          "stars": 20009,
-          "forks": 1662,
+          "stars": 20180,
+          "forks": 1668,
           "today": "264 stars today",
           "summaryZh": "Taste-Skill 是一个轻量级 Shell 工具，旨在通过注入“品味”来提升 AI 输出质量。它能自动注入高质量、有深度的系统提示，有效避免 AI 生成千篇一律的泛泛之谈。适合需要 AI 产出创意文案、深度分析、个性化建议或专业内容的人员，如内容创作者、产品经理和开发者。该工具通过简单命令行即可集成到现有工作流，无需复杂配置。亮点在于将人类审美标准模块化，让 AI 输出更鲜活、独特。",
           "scenarios": [
@@ -254,8 +254,8 @@
           "desc": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 39834,
-          "forks": 4025,
+          "stars": 39902,
+          "forks": 4027,
           "today": "62 stars today",
           "summaryZh": "Airi 是一款自托管的、你完全拥有的 AI 伴侣，类似 Grok Companion，旨在将虚拟角色（“waifu”）带入现实世界，目标是达到 Neuro-sama 的高度。它支持实时语音对话，并能操控 Minecraft 和 Factorio 等游戏。项目基于 TypeScript 实现，提供 Web、macOS 和 Windows 客户端，适合想要完全掌控 AI 交互体验、追求低延迟与高度定制化的开发者或二次元爱好者。亮点包括开源、自托管、多平台、实时语音、游戏集成，以及可扩展的“灵魂容器”架构。",
           "scenarios": [
@@ -273,8 +273,8 @@
           "desc": "Kronos: A Foundation Model for the Language of Financial Markets",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 26089,
-          "forks": 4526,
+          "stars": 26200,
+          "forks": 4547,
           "today": "245 stars today",
           "summaryZh": "Kronos 是一个专为金融市场语言设计的基座模型，基于大规模金融语料训练，可理解财报、新闻、行情等非结构化数据。亮点在于其领域适应性强，能捕捉金融文本中的细微语义，支持情感分析、事件驱动预测、风险识别等任务。适合量化研究员、金融科技开发者、数据科学家用于构建智能化金融分析工具。",
           "scenarios": [
@@ -292,8 +292,8 @@
           "desc": "Curated list of the best free apps for PC and mobile",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 4672,
-          "forks": 239,
+          "stars": 4768,
+          "forks": 242,
           "today": "192 stars today",
           "summaryZh": "这是一个精心整理的免费应用列表，涵盖PC和移动设备上的最佳免费软件。项目亮点在于分类详尽、持续更新，覆盖多平台（Windows、macOS、Linux、Android、iOS）的实用工具、媒体、安全、开发等类别。适合寻找商业软件免费替代品的个人用户，以及热衷于探索优质免费应用的技术爱好者，帮助节省开支并提升效率。",
           "scenarios": [
@@ -311,8 +311,8 @@
           "desc": "A skill file for removing AI tells from prose",
           "lang": "",
           "langColor": "#8b949e",
-          "stars": 4526,
-          "forks": 387,
+          "stars": 4593,
+          "forks": 390,
           "today": "345 stars today",
           "summaryZh": "stop-slop 是一个轻量级的技能文件，用于从AI生成的散文中去除常见的AI写作痕迹（如生硬措辞、重复模式、过度正式等）。它提供了一套规则或脚本，帮助用户快速后处理文本，使其更加自然流畅、接近人类写作风格。亮点在于专注单一任务、无需复杂配置，适合内容创作者、编辑、学生以及任何使用AI辅助写作后希望提升文本真实感和可读性的人。",
           "scenarios": [
@@ -330,8 +330,8 @@
           "desc": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 102675,
-          "forks": 15314,
+          "stars": 102781,
+          "forks": 15323,
           "today": "640 stars today",
           "summaryZh": "gstack 是知名投资人 Garry Tan 为 Claude Code 定制的 23 个意见性工具集合，模拟 CEO、设计师、工程经理、发布经理、文档工程师和 QA 等角色。每个工具都封装了特定角色视角下的 prompt，能直接与 Claude Code 交互，帮助开发者快速完成从项目规划、设计评审、任务分解到发布管理和质量检查的全流程。亮点在于将 AI 代理的隐性知识显性化为可复用的提示模板，适合希望利用 Claude Code 进行结构化、角色化协作开发的前端、全栈或 AI 应用开发者。",
           "scenarios": [
@@ -355,8 +355,8 @@
           "desc": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 25801,
-          "forks": 1434,
+          "stars": 26248,
+          "forks": 1462,
           "today": "20,208 stars this week",
           "summaryZh": "Codegraph 是一个预索引代码知识图谱工具，专为 Claude Code、Codex、Cursor、OpenCode 和 Hermes Agent 等 AI 编程助手设计。它通过提前分析代码库结构、符号依赖和类型信息，生成紧凑的索引文件，从而显著减少 AI 对话中的 token 消耗和工具调用次数，同时 100% 在本地运行，保障数据隐私。核心亮点：轻量、离线、高效，适合任何需要为 AI 编写助手提供精准代码上下文的中大型项目。目标用户是使用 AI 辅助编程的开发者，尤其是那些希望降低 API 成本、提升响应速度并避免代码泄露的团队。",
           "scenarios": [
@@ -374,8 +374,8 @@
           "desc": "Your Personal AI super intelligence. Private, Simple and extremely powerful.",
           "lang": "Rust",
           "langColor": "#dea584",
-          "stars": 27888,
-          "forks": 2580,
+          "stars": 27950,
+          "forks": 2587,
           "today": "11,906 stars this week",
           "summaryZh": "OpenHuman 是一款用 Rust 构建的个人 AI 超级智能系统，主打私有、简单和强大。它允许用户在本地运行高性能 AI 模型，无需依赖云端，彻底保护数据隐私。亮点包括极低的资源占用、一键部署的自托管方案以及丰富的插件扩展能力。适合注重隐私的开发者、极客用户以及希望将 AI 能力集成到本地工作流的个人或小团队。",
           "scenarios": [
@@ -393,8 +393,8 @@
           "desc": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 32058,
-          "forks": 2629,
+          "stars": 32759,
+          "forks": 2665,
           "today": "14,750 stars this week",
           "summaryZh": "Understand-Anything 是一个将代码仓库自动转换为交互式知识图谱的开源工具。它能够解析任意代码库，生成可探索、可搜索的可视化图谱，并支持自然语言提问。项目亮点在于“图谱用于教学而非炫技”，强调实用性，并原生集成了 Claude Code、Codex、Cursor 等主流 AI coding agent。适合希望快速理解陌生代码库、进行代码审查与重构、或者为团队项目建立索引的开发者。",
           "scenarios": [
@@ -412,8 +412,8 @@
           "desc": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 21615,
-          "forks": 1837,
+          "stars": 21733,
+          "forks": 1845,
           "today": "10,678 stars this week",
           "summaryZh": "这是一个面向学术研究的 AI 辅助工具链，专为 Claude Code 设计，覆盖从文献调研、初稿撰写、同行评审、修改润色到最终定稿的完整流程。亮点在于将繁琐的研究写作步骤自动化，提供清晰的阶段化工作流（research → write → review → revise → finalize），并可直接在 Claude 命令行环境中运行。适合需要高效产出论文、综述或报告的学生、科研人员及学术写作者。",
           "scenarios": [
@@ -431,8 +431,8 @@
           "desc": "Learn it. Build it. Ship it for others.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 19088,
-          "forks": 3212,
+          "stars": 19401,
+          "forks": 3247,
           "today": "10,035 stars this week",
           "summaryZh": "该项目是一个从零开始学习AI工程的全流程指南，涵盖理论、实战与交付。通过循序渐进的项目式学习，用户可掌握数据预处理、模型训练、API开发、部署上线等关键技能。亮点在于强调“学习-构建-交付”闭环，提供完整可运行的Python代码与最佳实践。适合AI初学者、软件工程师转型者、希望系统化构建AI作品集的开发者。",
           "scenarios": [
@@ -450,8 +450,8 @@
           "desc": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
           "lang": "Rust",
           "langColor": "#dea584",
-          "stars": 65983,
-          "forks": 8732,
+          "stars": 66024,
+          "forks": 8733,
           "today": "6,396 stars this week",
           "summaryZh": "RuView 是一个基于 Rust 的开源项目，利用普通商用 WiFi 信号实现实时空间智能感知、生命体征监测和人员存在检测，全程无需任何摄像头或穿戴设备。其亮点在于完全依赖无线信号处理，保护隐私且成本极低，适用于对隐私敏感的室内环境。适合智能家居开发者、物联网工程师、医疗健康领域研究者以及建筑自动化从业者。",
           "scenarios": [
@@ -469,8 +469,8 @@
           "desc": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 17918,
-          "forks": 1466,
+          "stars": 17978,
+          "forks": 1470,
           "today": "5,687 stars this week",
           "summaryZh": "agentmemory 是一个专为 AI 编码代理设计的持久化记忆库，基于真实世界基准测试优化。它用 TypeScript 实现，轻量且易于集成，帮助代理在多次会话中保持上下文、偏好和项目状态，显著提升连续交互的准确性与效率。适合开发长期记忆能力的聊天机器人、自动化工作流、编程助手等场景的开发者。",
           "scenarios": [
@@ -488,8 +488,8 @@
           "desc": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 21081,
-          "forks": 1664,
+          "stars": 21144,
+          "forks": 1672,
           "today": "6,167 stars this week",
           "summaryZh": "CloakBrowser 是一个基于 Chromium 的隐身浏览器，通过源代码级别的指纹补丁，能够规避几乎所有机器人检测系统。它可作为 Playwright 的即插即用替代品，已通过 30/30 项测试。适合需要高匿名性自动化浏览器操作的用户，如爬虫开发者、自动化测试者、账号管理工具使用者。亮点在于无需额外配置即可绕过主流反爬机制，保持与 Playwright 相同的 API 体验。",
           "scenarios": [
@@ -507,8 +507,8 @@
           "desc": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX.",
           "lang": "Swift",
           "langColor": "#F05138",
-          "stars": 10504,
-          "forks": 1079,
+          "stars": 10529,
+          "forks": 1080,
           "today": "2,329 stars this week",
           "summaryZh": "Supertonic 是一个基于ONNX 的本地多语言 TTS 引擎，专为 Swift 开发者设计。它利用 ONNX Runtime 在设备端实现毫秒级语音合成，支持英语、韩语、中文等语言，无需网络连接。亮点包括极低延迟、高效内存占用、原生 Swift 并发安全性，以及可定制语音参数（语速、音调）。适合需要离线、高速、多语言语音能力的 iOS/macOS 应用，如语音助手、有声读物、无障碍功能等。项目已开源，提供了 MIT 许可。",
           "scenarios": [
@@ -526,8 +526,8 @@
           "desc": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 7340,
-          "forks": 596,
+          "stars": 7370,
+          "forks": 597,
           "today": "2,584 stars this week",
           "summaryZh": "oh-my-pi 是一个为终端打造的 AI 编码代理，采用哈希锚定编辑保证操作原子性，集成 LSP、Python、浏览器、子代理等功能，优化工具链以提升开发效率。亮点包括轻量级架构、支持多种语言和运行时环境，适合追求自动化编码与智能辅助的开发者。适用人群：希望用 AI 增强 CLI 工作流的全栈工程师、数据科学家及DevOps从业者。",
           "scenarios": [
@@ -542,19 +542,19 @@
           "owner": "dograh-hq",
           "repo": "dograh",
           "url": "https://github.com/dograh-hq/dograh",
-          "desc": "Open Source Voice Agent Platform",
+          "desc": "Open source voice AI platform. Self-hosted alternative to Vapi and Retell. On Prem, BYOK across Speech to Speech or LLM/STT/TTS, with a visual workflow builder, MCP native and telephony support.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 2986,
-          "forks": 662,
+          "stars": 3044,
+          "forks": 671,
           "today": "693 stars this week",
-          "summaryZh": "Dograh 是一个开源的语音代理平台，旨在帮助开发者快速构建和部署可定制的语音交互系统。它集成了语音识别（ASR）、自然语言理解（NLU）、对话管理及语音合成（TTS）等核心能力，提供模块化设计，支持自定义技能和集成第三方服务。亮点在于其轻量级、易于扩展且完全开源，适合需要构建语音客服、虚拟助手、语音控制应用的企业和AI开发者。",
+          "summaryZh": "Dograh 是一个开源语音AI平台，可作为 Vapi 和 Retell 的自托管替代方案。它支持本地部署（On Prem）和自带密钥（BYOK），涵盖语音到语音（Speech to Speech）或LLM/STT/TTS流程。项目提供可视化工作流构建器（Visual Workflow Builder），原生支持MCP（Model Context Protocol）和电话系统集成。适合需要私有化部署语音AI应用、定制对话流程、或集成电话通话能力的开发者和企业。",
           "scenarios": [
-            "构建企业级语音客服系统，实现自动应答和转人工服务",
-            "开发车载或智能家居场景下的语音控制助手",
-            "搭建多语言语音交互的虚拟角色或教育工具"
+            "构建私有化智能客服系统，支持语音交互和电话接入",
+            "开发语音助手或语音控制应用，结合LLM和TTS/STT",
+            "利用可视化工作流设计复杂的多轮对话和任务流程"
           ],
-          "agentInstallPrompt": "首先，克隆仓库：git clone https://github.com/dograh-hq/dograh.git。然后进入目录并创建虚拟环境：cd dograh && python3 -m venv venv && source venv/bin/activate。安装依赖：pip install -r requirements.txt。接着，配置环境变量（例如语音服务API密钥）。最后，运行示例：python examples/simple_voice_assistant.py。确保麦克风权限开启，即可通过语音与代理交互。"
+          "agentInstallPrompt": "请安装并试跑 Dograh：首先克隆仓库 git clone https://github.com/dograh-hq/dograh.git，进入目录 cd dograh，使用 pip install -r requirements.txt 安装依赖。然后修改配置文件 config.yaml 设置你的API密钥（如OpenAI、STT/TTS）。运行 python main.py 启动服务。访问 http://localhost:8080 进入可视化工作流编辑器，根据示例创建第一个语音项目。"
         },
         {
           "rank": 12,
@@ -564,8 +564,8 @@
           "desc": "Open-Source AI Presentation Generator and API (Gamma, Beautiful AI, Decktopus Alternative)",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 6922,
-          "forks": 1162,
+          "stars": 6953,
+          "forks": 1166,
           "today": "1,787 stars this week",
           "summaryZh": "Presenton 是一个开源的 AI 演示文稿生成器，可作为 Gamma、Beautiful AI、Decktopus 的替代方案。它提供 Web 界面和 API，用户输入主题或大纲，AI 自动生成结构完整、设计精美的幻灯片。亮点包括支持 Markdown 编辑、多种主题模板、导出为 PPTX/PDF，以及可自托管的 API 接口。适合需要快速制作专业演示文稿的内容创作者、教育工作者、销售团队和开发者。开源、免费、数据可控，是闭源工具的理想平替。",
           "scenarios": [
@@ -583,8 +583,8 @@
           "desc": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 40422,
-          "forks": 3824,
+          "stars": 40461,
+          "forks": 3825,
           "today": "4,010 stars this week",
           "summaryZh": "CLI-Anything 是香港大学团队推出的开源工具，旨在为任意软件生成命令行接口（CLI），使其原生兼容AI代理调用。核心亮点是无需修改软件源码，通过描述文件自动生成CLI，支持集成LLM代理、自动化脚本和智能工作流。适合AI开发者、DevOps工程师、以及需要将传统GUI或复杂工具接入AI系统的用户。项目提供在线CLI Hub仓库，共享社区预制的软件接口。",
           "scenarios": [
@@ -602,8 +602,8 @@
           "desc": "An agentic skills framework & software development methodology that works.",
           "lang": "Shell",
           "langColor": "#89e051",
-          "stars": 206697,
-          "forks": 18420,
+          "stars": 206973,
+          "forks": 18430,
           "today": "9,950 stars this week",
           "summaryZh": "本项目提供了一个基于代理技能框架的软件开发方法论，旨在提升开发效率和协作能力。其核心亮点是定义了一套可组合的技能模块，让AI代理能够自主执行复杂任务，如代码生成、测试、部署等。通过声明式配置和工作流编排，降低人工干预成本。适合希望探索AI辅助编程、自动化工作流的开发团队和个人，特别是对敏捷开发和质量保障有较高要求的场景。",
           "scenarios": [
@@ -621,8 +621,8 @@
           "desc": "一款在线的 微信公众号文章批量下载 工具，支持导出阅读量与评论数据，无需搭建任何环境，可通过 在线网站 使用，支持 docker 私有化部署和 Cloudflare 部署。 支持下载各种文件格式，其中 HTML 格式可100%还原文章排版与样式。",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 10855,
-          "forks": 1892,
+          "stars": 10873,
+          "forks": 1894,
           "today": "809 stars this week",
           "summaryZh": "wechat-article-exporter 是一款基于 TypeScript 开发的微信公众号文章批量下载工具，支持在线使用或 Docker 私有化部署。它可一键导出文章阅读量与评论数据，并支持保存为 HTML、PDF、Markdown 等多种格式，其中 HTML 格式能 100% 还原原文排版样式。无需搭建复杂环境，内置在线网站可直接使用，也支持通过 Cloudflare 部署。适合自媒体运营、内容存档、数据分析等场景。亮点在于其便捷性与高还原度，尤其适合需要长期保存公众号内容或进行批量分析的开发者与运营人员。",
           "scenarios": [
@@ -640,7 +640,7 @@
           "desc": "Cursor plugin specification and official plugins",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 839,
+          "stars": 846,
           "forks": 90,
           "today": "366 stars this week",
           "summaryZh": "Cursor 插件规范与官方插件仓库，为开发者提供插件开发指南和参考实现。亮点包括完整的插件规范文档、多种官方插件示例（如代码检查、自定义 AI 命令等），帮助快速理解插件架构并上手开发。适合希望定制 Cursor 编辑器功能、集成外部服务或贡献插件生态的开发者。",
@@ -659,8 +659,8 @@
           "desc": "Workspace-first multi-agent coordination platform for AI development, with shared Specs, Kanban orchestration, and MCP/ACP/ A2A support across web and desktop.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 1456,
-          "forks": 204,
+          "stars": 1478,
+          "forks": 205,
           "today": "470 stars this week",
           "summaryZh": "Routa 是一个工作区优先的多智能体协作平台，专为 AI 开发设计。其核心亮点包括共享规范（Specs）以统一智能体行为、看板编排来管理任务流程，并原生支持 MCP、ACP、A2A 等协议，实现跨 Web 与桌面的无缝集成。适合构建复杂多智能体系统的开发团队，尤其是需要可视化协调与协议兼容的场景。通过工作区隔离与版本控制，可有效提升多 Agent 开发效率与可维护性。",
           "scenarios": [
@@ -678,8 +678,8 @@
           "desc": "Chrome DevTools for coding agents",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 41756,
-          "forks": 2656,
+          "stars": 41779,
+          "forks": 2657,
           "today": "1,818 stars this week",
           "summaryZh": "该项目为编码代理提供直接操控 Chrome DevTools 的能力，通过 MCP 协议实现双向通信。代理可以读取控制台日志、网络请求、页面元素、性能数据等，并执行如截屏、模拟点击、修改 DOM 等操作。亮点在于无需人工干预，AI 即可实时诊断和修复 Web 应用问题。适合需要自动化浏览器调试的 AI 代理开发者、前端自动化测试工程师以及 LLM 工具链集成者。",
           "scenarios": [
@@ -703,8 +703,8 @@
           "desc": "Skills for Real Engineers. Straight from my .claude directory.",
           "lang": "Shell",
           "langColor": "#89e051",
-          "stars": 105579,
-          "forks": 9326,
+          "stars": 105837,
+          "forks": 9343,
           "today": "86,188 stars this month",
           "summaryZh": "mattpocock/skills 是知名 TypeScript 工程师 Matt Pocock 分享的 .claude 技能配置库，包含可直接加载到 AI 助手（如 Claude）中的预设工程师技能。仓库以 Shell 脚本和配置文件形式提供代码审查、测试生成、重构建议、性能分析等实用能力，旨在让开发者快速为 AI 赋予专业工程直觉。亮点在于技能来自资深工程师的实际工作流，开箱即用且可自由组合。适合所有使用 Claude 或兼容 AI 助手的软件工程师，尤其是前端、TypeScript 和全栈开发者。",
           "scenarios": [
@@ -722,8 +722,8 @@
           "desc": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 25801,
-          "forks": 1434,
+          "stars": 26248,
+          "forks": 1462,
           "today": "23,688 stars this month",
           "summaryZh": "Codegraph 是一个预索引代码知识图谱工具，专为 Claude Code、Codex、Cursor、OpenCode 和 Hermes Agent 等 AI 编程助手设计。它通过提前分析代码库结构、符号依赖和类型信息，生成紧凑的索引文件，从而显著减少 AI 对话中的 token 消耗和工具调用次数，同时 100% 在本地运行，保障数据隐私。核心亮点：轻量、离线、高效，适合任何需要为 AI 编写助手提供精准代码上下文的中大型项目。目标用户是使用 AI 辅助编程的开发者，尤其是那些希望降低 API 成本、提升响应速度并避免代码泄露的团队。",
           "scenarios": [
@@ -741,8 +741,8 @@
           "desc": "",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 27604,
-          "forks": 3874,
+          "stars": 27634,
+          "forks": 3876,
           "today": "19,853 stars this month",
           "summaryZh": "Anthropic 推出的金融助手项目，基于 Claude 大模型提供智能金融咨询、报告生成与数据分析能力。亮点是发挥 Claude 在长文本理解与逻辑推理上的优势，可解析复杂金融术语、政策及市场数据，输出结构化建议。适合金融分析师、投资顾问和开发者快速搭建合规的金融问答或文档分析工具。项目代码简洁，提供 API 调用示例与常见金融场景模板，降低 AI 在金融领域落地的门槛。",
           "scenarios": [
@@ -760,8 +760,8 @@
           "desc": "Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 21081,
-          "forks": 1664,
+          "stars": 21144,
+          "forks": 1672,
           "today": "19,438 stars this month",
           "summaryZh": "CloakBrowser 是一个基于 Chromium 的隐身浏览器，通过源代码级别的指纹补丁，能够规避几乎所有机器人检测系统。它可作为 Playwright 的即插即用替代品，已通过 30/30 项测试。适合需要高匿名性自动化浏览器操作的用户，如爬虫开发者、自动化测试者、账号管理工具使用者。亮点在于无需额外配置即可绕过主流反爬机制，保持与 Playwright 相同的 API 体验。",
           "scenarios": [
@@ -779,8 +779,8 @@
           "desc": "#1 Persistent memory for AI coding agents based on real-world benchmarks",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 17918,
-          "forks": 1466,
+          "stars": 17978,
+          "forks": 1470,
           "today": "15,782 stars this month",
           "summaryZh": "agentmemory 是一个专为 AI 编码代理设计的持久化记忆库，基于真实世界基准测试优化。它用 TypeScript 实现，轻量且易于集成，帮助代理在多次会话中保持上下文、偏好和项目状态，显著提升连续交互的准确性与效率。适合开发长期记忆能力的聊天机器人、自动化工作流、编程助手等场景的开发者。",
           "scenarios": [
@@ -798,8 +798,8 @@
           "desc": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 21615,
-          "forks": 1837,
+          "stars": 21733,
+          "forks": 1845,
           "today": "17,780 stars this month",
           "summaryZh": "这是一个面向学术研究的 AI 辅助工具链，专为 Claude Code 设计，覆盖从文献调研、初稿撰写、同行评审、修改润色到最终定稿的完整流程。亮点在于将繁琐的研究写作步骤自动化，提供清晰的阶段化工作流（research → write → review → revise → finalize），并可直接在 Claude 命令行环境中运行。适合需要高效产出论文、综述或报告的学生、科研人员及学术写作者。",
           "scenarios": [
@@ -817,8 +817,8 @@
           "desc": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 30419,
-          "forks": 2173,
+          "stars": 30434,
+          "forks": 2171,
           "today": "10,826 stars this month",
           "summaryZh": "Maigret 是一个基于用户名的开源情报收集工具，能自动从3000多个网站（包括社交媒体、论坛、博客等）搜索与指定用户名关联的个人资料，并汇总生成详细档案。它支持批量检查、自定义站点列表、导出报告（HTML/JSON）以及多线程加速。亮点在于覆盖站点数量庞大、可配置性强，且提供交互式结果展示。适合安全研究人员、OSINT分析师、隐私保护者及调查记者，用于快速评估用户的在线足迹、识别潜在隐私泄露或进行社交工程分析。",
           "scenarios": [
@@ -836,8 +836,8 @@
           "desc": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 79585,
-          "forks": 15521,
+          "stars": 79624,
+          "forks": 15527,
           "today": "27,064 stars this month",
           "summaryZh": "TradingAgents 是一个基于多智能体 LLM 的金融交易框架，利用大语言模型驱动多个智能体协同完成市场分析、策略生成、风险管理和交易执行。亮点在于其模块化设计，可模拟不同角色（如分析师、交易员、风控员）的决策过程，支持自定义数据源和回测。适合量化交易开发者、金融 AI 研究者以及希望探索 LLM 在交易决策中应用的爱好者。项目提供清晰 API 和示例脚本，便于快速上手实验。",
           "scenarios": [
@@ -855,8 +855,8 @@
           "desc": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
           "lang": "",
           "langColor": "#8b949e",
-          "stars": 155423,
-          "forks": 15941,
+          "stars": 155790,
+          "forks": 15974,
           "today": "68,832 stars this month",
           "summaryZh": "该项目提供一份名为 CLAUDE.md 的单一配置文件，源自 AI 先驱 Andrej Karpathy 对大型语言模型编程陷阱的观察与实践总结。通过将此文件置于项目根目录，Claude Code（或其他兼容的 AI 编码助手）可直接读取其中的系统级指令，从而显著改善代码生成质量、减少幻觉、规范输出格式。亮点在于它凝练了 Karpathy 在训练与使用 LLM 编码时的核心教训，无需额外安装或依赖，即插即用。适合所有使用 AI 辅助编程的开发者，尤其是希望避免常见错误、提升代码一致性与可靠性的 Claude Code 用户。",
           "scenarios": [
@@ -874,7 +874,7 @@
           "desc": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 19810,
+          "stars": 19836,
           "forks": 2793,
           "today": "13,152 stars this month",
           "summaryZh": "Pixelle-Video 是一款 AI 全自动短视频引擎，基于 Python 开发，能够通过脚本或模板自动完成素材采集、画面剪辑、语音合成、字幕添加等流程，一键生成高质量短视频。其亮点在于端到端自动化：用户仅需输入文本或简单配置，即可输出带有背景音乐、旁白和动态画面的成品视频。适合内容创作者、社交媒体运营人员以及需要批量生产营销短视频的团队，显著降低制作成本与时间。",
@@ -893,8 +893,8 @@
           "desc": "A curated list of practical Codex skills for automating workflows across the Codex CLI and API.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 11701,
-          "forks": 1116,
+          "stars": 11722,
+          "forks": 1114,
           "today": "10,408 stars this month",
           "summaryZh": "「awesome-codex-skills」是一个精选的 Codex 技能集合，旨在通过 Codex CLI 和 API 自动化工作流。项目收录了多种实用技能（如代码生成、重构、测试、文档编写等），每个技能以结构化格式定义，便于直接集成到开发流程中。亮点在于社区维护、即插即用，适合希望快速利用 AI 提升开发效率的工程师、AI agent 开发者以及探索 Codex 能力边界的爱好者。",
           "scenarios": [
@@ -912,8 +912,8 @@
           "desc": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 14298,
-          "forks": 2145,
+          "stars": 14346,
+          "forks": 2150,
           "today": "11,172 stars this month",
           "summaryZh": "9router 是一个开源 AI 编码路由代理，旨在为 Claude Code、Codex、Cursor、Cline、Copilot 等主流编码助手提供免费且无限的 API 接入。它聚合超过 40 个免费 AI 提供商（如 Claude、GPT、Gemini），自动故障转移，并采用 RTK 技术减少 40% 的 token 消耗，彻底打破编码工具的使用限制。适合需要低成本、高频次调用 AI 编程能力的个人开发者和小型团队，无需付费订阅即可获得稳定生成体验。",
           "scenarios": [
@@ -931,8 +931,8 @@
           "desc": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 32058,
-          "forks": 2629,
+          "stars": 32759,
+          "forks": 2665,
           "today": "20,742 stars this month",
           "summaryZh": "Understand-Anything 是一个将代码仓库自动转换为交互式知识图谱的开源工具。它能够解析任意代码库，生成可探索、可搜索的可视化图谱，并支持自然语言提问。项目亮点在于“图谱用于教学而非炫技”，强调实用性，并原生集成了 Claude Code、Codex、Cursor 等主流 AI coding agent。适合希望快速理解陌生代码库、进行代码审查与重构、或者为团队项目建立索引的开发者。",
           "scenarios": [
@@ -950,8 +950,8 @@
           "desc": "Use claude-code for free in the terminal, VSCode extension or discord like OpenClaw (voice supported)",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 29734,
-          "forks": 4475,
+          "stars": 29773,
+          "forks": 4479,
           "today": "19,114 stars this month",
           "summaryZh": "Free Claude Code 是一个开源工具，让开发者可以在终端、VSCode 扩展或 Discord 中免费使用 Claude Code 的能力（支持语音）。它通过模拟或绕过官方付费限制，提供类似 OpenClaw 的体验，适合希望免费获取 AI 代码助手的开发者。亮点在于多平台集成（终端、编辑器、聊天工具）和语音交互，但需注意合规风险。",
           "scenarios": [
@@ -969,8 +969,8 @@
           "desc": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 55145,
-          "forks": 6276,
+          "stars": 55204,
+          "forks": 6280,
           "today": "22,151 stars this month",
           "summaryZh": "Ruflo 是基于 TypeScript 的领先代理编排平台，专为 Claude 设计，用于部署智能多智能体群、协调自主工作流和构建对话式 AI 系统。其核心亮点包括企业级架构、自学习群体智能、RAG（检索增强生成）集成以及对 Claude Code / Codex 的原生支持。适合开发者和 AI 工程师需要快速搭建复杂多代理协同场景，例如智能客服、自动化流程与知识问答，降低集成门槛并提升系统扩展性。",
           "scenarios": [
@@ -988,8 +988,8 @@
           "desc": "Let's use AI to Earn!",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 16523,
-          "forks": 2659,
+          "stars": 16542,
+          "forks": 2660,
           "today": "7,524 stars this month",
           "summaryZh": "AiToEarn 是一个基于 TypeScript 的开源项目，旨在帮助开发者利用 AI 技术快速构建能够产生收益的应用或工具。它整合了多种 AI 模型和 API（如图像生成、文本处理、自动对话等），提供简洁的接口和示例代码，降低 AI 应用开发门槛。亮点包括模块化设计、即插即用集成、以及完善的文档与示例。适合希望将 AI 能力转化为实际收入的开发者、自由职业者以及创业团队，尤其适合那些想快速验证 AI 赚钱点子、搭建自动化内容创作或智能客服系统的人群。",
           "scenarios": [
@@ -1007,8 +1007,8 @@
           "desc": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 35259,
-          "forks": 3544,
+          "stars": 35276,
+          "forks": 3546,
           "today": "5,825 stars this month",
           "summaryZh": "UI-TARS-desktop 是字节跳动开源的多模态 AI 代理栈，旨在连接前沿 AI 模型与代理基础设施。它提供统一的接口调用多种多模态大模型（如文本、图像、音频），并支持构建自主代理执行复杂任务。亮点包括完全开源、模块化架构、灵活的插件机制，以及针对桌面端优化的低延迟交互。适合 AI 开发者、研究人员及需要快速搭建智能代理应用（如自动化助手、多模态分析工具）的团队。项目采用 TypeScript 编写，易于集成现有前端生态。",
           "scenarios": [
@@ -1026,8 +1026,8 @@
           "desc": "Learn it. Build it. Ship it for others.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 19088,
-          "forks": 3212,
+          "stars": 19401,
+          "forks": 3247,
           "today": "12,957 stars this month",
           "summaryZh": "该项目是一个从零开始学习AI工程的全流程指南，涵盖理论、实战与交付。通过循序渐进的项目式学习，用户可掌握数据预处理、模型训练、API开发、部署上线等关键技能。亮点在于强调“学习-构建-交付”闭环，提供完整可运行的Python代码与最佳实践。适合AI初学者、软件工程师转型者、希望系统化构建AI作品集的开发者。",
           "scenarios": [
@@ -1045,8 +1045,8 @@
           "desc": "Production-grade engineering skills for AI coding agents.",
           "lang": "Shell",
           "langColor": "#89e051",
-          "stars": 45765,
-          "forks": 5071,
+          "stars": 45815,
+          "forks": 5076,
           "today": "22,920 stars this month",
           "summaryZh": "这是一套为AI编码代理打造的“生产级工程技能”集合。项目以Shell脚本和配置文件形式，封装了代码审查、单元测试生成、重构、文档编写等常见工程任务的精确指令。亮点在于将资深工程师的经验转化为可复用的代理技能，显著提升AI生成代码的质量与可靠性。适合在代码辅助工具（如GitHub Copilot、Cursor）中嵌入使用，也适合希望让AI代理遵循严格工程规范的开发团队。",
           "scenarios": [
@@ -1064,7 +1064,7 @@
           "desc": "Orchestrate sandboxed coding agents in TypeScript with sandcastle.run()",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 5086,
+          "stars": 5095,
           "forks": 530,
           "today": "4,110 stars this month",
           "summaryZh": "Sandcastle 是一个 TypeScript 库，通过 `sandcastle.run()` 提供沙箱化的代码执行环境。它专为安全编排 AI 编码代理设计，允许在隔离的上下文中运行由大模型生成的代码，防止恶意操作。核心亮点是简洁的 API 与强类型支持，适合需要动态执行不可信代码的 AI 应用、在线代码编辑器或 CI/CD 安全检查。开发者可快速集成到 TypeScript 项目，实现代理输出的可控运行。该项目由 TypeScript 专家 Matt Pocock 维护，社区活跃。",
@@ -1089,8 +1089,8 @@
           "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 192788,
-          "forks": 29816,
+          "stars": 193060,
+          "forks": 29840,
           "today": "",
           "summaryZh": "ECC 是一个为 AI 编码代理设计的性能优化系统，支持 Claude Code、Codex、Opencode、Cursor 等主流工具。它通过技能库、直觉模拟、记忆管理、安全策略与研究优先的开发方式，提升代理的响应速度、代码质量与自主决策能力。核心亮点是跨代理兼容、可插拔架构以及内存-安全双保障，适合使用 AI 编程助手进行复杂项目开发的开发者或团队。",
           "scenarios": [
@@ -1108,8 +1108,8 @@
           "desc": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
           "lang": "Rust",
           "langColor": "#dea584",
-          "stars": 192516,
-          "forks": 109954,
+          "stars": 192539,
+          "forks": 109957,
           "today": "",
           "summaryZh": "claw-code 是一个基于 Rust 语言构建的、革命性的代码生成与优化工具。它利用自研的 oh-my-codex 库实现了极致的性能，在 GitHub 上以史上最快速度突破了 100K 星标。该项目专为追求极致效率的开发者设计，提供了自动化的代码生成、重构与优化能力，适用于大型项目、微服务及算法竞赛等场景。其轻量级架构和原生编译特性使得运行速度远超同类 Python/JavaScript 工具。",
           "scenarios": [
@@ -1127,8 +1127,8 @@
           "desc": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
           "lang": "",
           "langColor": "#8b949e",
-          "stars": 155423,
-          "forks": 15941,
+          "stars": 155790,
+          "forks": 15974,
           "today": "",
           "summaryZh": "该项目提供一份名为 CLAUDE.md 的单一配置文件，源自 AI 先驱 Andrej Karpathy 对大型语言模型编程陷阱的观察与实践总结。通过将此文件置于项目根目录，Claude Code（或其他兼容的 AI 编码助手）可直接读取其中的系统级指令，从而显著改善代码生成质量、减少幻觉、规范输出格式。亮点在于它凝练了 Karpathy 在训练与使用 LLM 编码时的核心教训，无需额外安装或依赖，即插即用。适合所有使用 AI 辅助编程的开发者，尤其是希望避免常见错误、提升代码一致性与可靠性的 Claude Code 用户。",
           "scenarios": [
@@ -1146,8 +1146,8 @@
           "desc": "Skills for Real Engineers. Straight from my .claude directory.",
           "lang": "Shell",
           "langColor": "#89e051",
-          "stars": 105580,
-          "forks": 9326,
+          "stars": 105837,
+          "forks": 9343,
           "today": "",
           "summaryZh": "mattpocock/skills 是知名 TypeScript 工程师 Matt Pocock 分享的 .claude 技能配置库，包含可直接加载到 AI 助手（如 Claude）中的预设工程师技能。仓库以 Shell 脚本和配置文件形式提供代码审查、测试生成、重构建议、性能分析等实用能力，旨在让开发者快速为 AI 赋予专业工程直觉。亮点在于技能来自资深工程师的实际工作流，开箱即用且可自由组合。适合所有使用 Claude 或兼容 AI 助手的软件工程师，尤其是前端、TypeScript 和全栈开发者。",
           "scenarios": [
@@ -1165,8 +1165,8 @@
           "desc": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 102675,
-          "forks": 15314,
+          "stars": 102781,
+          "forks": 15323,
           "today": "",
           "summaryZh": "gstack 是知名投资人 Garry Tan 为 Claude Code 定制的 23 个意见性工具集合，模拟 CEO、设计师、工程经理、发布经理、文档工程师和 QA 等角色。每个工具都封装了特定角色视角下的 prompt，能直接与 Claude Code 交互，帮助开发者快速完成从项目规划、设计评审、任务分解到发布管理和质量检查的全流程。亮点在于将 AI 代理的隐性知识显性化为可复用的提示模板，适合希望利用 Claude Code 进行结构化、角色化协作开发的前端、全栈或 AI 应用开发者。",
           "scenarios": [
@@ -1184,8 +1184,8 @@
           "desc": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
           "lang": "",
           "langColor": "#8b949e",
-          "stars": 84121,
-          "forks": 10113,
+          "stars": 84207,
+          "forks": 10123,
           "today": "",
           "summaryZh": "awesome-design-md 项目汇集了来自流行品牌设计系统的 DESIGN.md 文件（如 Material Design、Apple HIG 等），每个文件详细描述了设计规范、组件库和样式指南。开发者只需将对应品牌的 DESIGN.md 文件放入项目根目录，即可让 AI 编码代理（如 Copilot、Cursor 等）自动理解并生成与品牌一致的 UI 代码。亮点是零配置集成、实时同步设计系统更新、降低跨团队设计沟通成本。适合需要快速搭建品牌化界面、依赖 AI 辅助编码的前端工程师和设计团队。",
           "scenarios": [
@@ -1203,8 +1203,8 @@
           "desc": "AI agents running research on single-GPU nanochat training automatically",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 83369,
-          "forks": 12113,
+          "stars": 83405,
+          "forks": 12112,
           "today": "",
           "summaryZh": "autoresearch 是 Andrej Karpathy 开发的一个 AI 研究自动化工具，旨在让 AI Agent 在单 GPU 上自动运行 nanochat 微调实验。项目通过定义实验脚本、配置和评估标准，实现从数据准备到训练、结果分析的完整闭环。亮点在于模拟人类研究者的迭代过程：Agent 可动态调整超参数、监控损失、保存检查点，并自主决定何时停止或继续训练。适合对语言模型训练流程探索、自动化机器学习实验管理以及开源研究复现感兴趣的开发者与研究人员。",
           "scenarios": [
@@ -1222,8 +1222,8 @@
           "desc": "The open-source app everyone uses to manage agents at work",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 67658,
-          "forks": 12446,
+          "stars": 67676,
+          "forks": 12449,
           "today": "",
           "summaryZh": "Paperclip 是一款开源的 AI 代理管理平台，专为团队协作场景设计。它提供可视化接口来创建、部署和监控 AI 工作助手（Agent），支持自定义工具集成、多模型切换与权限控制。亮点在于低代码编排、实时日志追踪和可扩展的插件体系。适合需要将 AI 融入日常工作流程的开发者与运维团队，尤其适合企业内部多个 Agent 的集中管理。",
           "scenarios": [
@@ -1241,8 +1241,8 @@
           "desc": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 64766,
-          "forks": 3659,
+          "stars": 64833,
+          "forks": 3665,
           "today": "",
           "summaryZh": "Caveman 是一个专为 Claude Code 设计的技能，通过模拟穴居人极简说话方式，将复杂提示压缩成少数词汇，从而减少约65%的Token消耗。亮点在于大幅降低AI交互成本，同时保留核心意图。适合高频调用Claude Code以节省费用的开发者、追求高效沟通的团队，以及对Token优化感兴趣的AI爱好者。",
           "scenarios": [
@@ -1260,8 +1260,8 @@
           "desc": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 54917,
-          "forks": 8836,
+          "stars": 54924,
+          "forks": 8835,
           "today": "",
           "summaryZh": "WorldMonitor是一个基于TypeScript构建的实时全球情报仪表盘，利用AI技术聚合新闻、监控地缘政治动态并跟踪关键基础设施，为用户提供统一态势感知界面。其亮点在于实时数据流处理与智能分析能力，适合研究人员、分析师、企业战略团队及对全球事件保持关注的个人使用。",
           "scenarios": [
@@ -1279,8 +1279,8 @@
           "desc": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
           "lang": "Rust",
           "langColor": "#dea584",
-          "stars": 54166,
-          "forks": 3328,
+          "stars": 54259,
+          "forks": 3335,
           "today": "",
           "summaryZh": "rtk 是一个基于 Rust 的 CLI 代理工具，通过智能缓存与合并机制，可将常见开发命令的 LLM token 消耗降低 60–90%。它作为本地代理运行，对开发者透明，自动去重和分组 LLM 请求，适合高频率使用 GPT/Claude 等 API 的编程辅助场景。单 Rust 二进制文件，零外部依赖，安装后即开即用，大幅削减 API 费用。",
           "scenarios": [
@@ -1298,8 +1298,8 @@
           "desc": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 53807,
-          "forks": 5696,
+          "stars": 53885,
+          "forks": 5699,
           "today": "",
           "summaryZh": "Graphify 是一个 AI 编程助手技能，可将任意代码文件夹、SQL 模式、R 脚本、Shell 脚本、文档、论文、图像或视频转换为可查询的知识图谱。它支持 Claude Code、Codex、OpenCode、Cursor、Gemini CLI 等多种 AI 编码助手，并创新性地将应用代码、数据库模式、基础设施整合在同一张图中。亮点在于一键构建跨类型文件的关系网络，帮助开发者快速理解项目全局结构、追踪数据流和依赖链。适合需要深度理解复杂代码库、进行跨组件影响分析、或希望利用知识图谱提升 AI 编程辅助效率的开发者和数据工程师。",
           "scenarios": [
@@ -1317,8 +1317,8 @@
           "desc": "The best-benchmarked open-source AI memory system. And it's free.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 52836,
-          "forks": 6969,
+          "stars": 52847,
+          "forks": 6965,
           "today": "",
           "summaryZh": "MemPalace 是一个开源、性能标杆级的 AI 记忆系统。它通过结构化的长期记忆管理，帮助大语言模型（LLM）突破上下文窗口限制，实现持久化、可检索的对话历史和知识。项目在基准测试中表现出色，完全免费。适合需要构建具备记忆能力的 AI 助手、知识库、个人助理或长期对话系统的开发者。核心亮点包括高效的记忆检索、低延迟存储和友好的 Python API。",
           "scenarios": [
@@ -1336,8 +1336,8 @@
           "desc": "🎨 Local-first, open-source  Claude Design alternative. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 52260,
-          "forks": 5953,
+          "stars": 52401,
+          "forks": 5964,
           "today": "",
           "summaryZh": "Open Design 是一个本地优先、开源的设计工具，可作为 Claude Design 的替代品。它内置 19 种技能和 71 套品牌级设计系统，支持生成网页、桌面、移动端原型、幻灯片、图像、视频及 HyperFrames。提供沙盒预览，并可将成果导出为 HTML、PDF、PPTX 和 MP4 格式。该项目兼容多种 AI CLI 工具（如 Claude Code、Cursor、Gemini 等），适合希望实现设计自动化、快速搭建原型或构建设计系统管理的团队和个人。",
           "scenarios": [
@@ -1355,7 +1355,7 @@
           "desc": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞",
           "lang": "",
           "langColor": "#8b949e",
-          "stars": 49312,
+          "stars": 49319,
           "forks": 4829,
           "today": "",
           "summaryZh": "该项目收录了超过5400个从OpenClaw官方技能注册表筛选分类的优质技能，为AI助手（如Claw）提供技能库。亮点在于结构化整理与大量技能覆盖，适合开发者快速集成智能技能到自身应用或系统，提升AI应答能力。适合AI应用开发者、RPA工程师、智能对话系统搭建者。",
@@ -1374,8 +1374,8 @@
           "desc": "Fast, accurate & comprehensive text measurement & layout",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 47726,
-          "forks": 2661,
+          "stars": 47744,
+          "forks": 2663,
           "today": "",
           "summaryZh": "Pretext 是一个基于 TypeScript 构建的高性能文本测量与布局库，专注于为前端应用提供快速、准确且全面的文本尺寸计算与排版能力。其核心亮点在于算法优化后相比传统 canvas 测量或浏览器原生 API 速度提升显著，同时支持多种字体、换行策略和复杂文本属性。适用于需要密集或动态文本渲染的场景，如富文本编辑器、游戏 UI、排版引擎及前端图形化工具。主要面向 Web 开发者和需要精确控制文本布局的工程师，可作为替代或增强浏览器文本测量能力的底层工具。",
           "scenarios": [
@@ -1393,8 +1393,8 @@
           "desc": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 47245,
-          "forks": 9850,
+          "stars": 47257,
+          "forks": 9853,
           "today": "",
           "summaryZh": "CareerOps 是一个基于 Claude Code 构建的 AI 驱动求职系统，提供 14 种技能模式、Go 语言编写的仪表盘、PDF 简历生成及批量处理功能。亮点在于深度集成 Claude 的对话能力，可自动化分析职位描述、优化简历关键词、生成个性化的求职信和面试准备材料。适合求职者、招聘顾问以及希望用 AI 提升求职效率的开发者，用户可通过简单命令快速上手。",
           "scenarios": [
@@ -1412,8 +1412,8 @@
           "desc": "Production-grade engineering skills for AI coding agents.",
           "lang": "Shell",
           "langColor": "#89e051",
-          "stars": 45765,
-          "forks": 5071,
+          "stars": 45815,
+          "forks": 5076,
           "today": "",
           "summaryZh": "这是一套为AI编码代理打造的“生产级工程技能”集合。项目以Shell脚本和配置文件形式，封装了代码审查、单元测试生成、重构、文档编写等常见工程任务的精确指令。亮点在于将资深工程师的经验转化为可复用的代理技能，显著提升AI生成代码的质量与可靠性。适合在代码辅助工具（如GitHub Copilot、Cursor）中嵌入使用，也适合希望让AI代理遵循严格工程规范的开发团队。",
           "scenarios": [
@@ -1431,8 +1431,8 @@
           "desc": "Lightweight, open-source AI agent for your tools, chats, and workflows.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 43152,
-          "forks": 7604,
+          "stars": 43163,
+          "forks": 7605,
           "today": "",
           "summaryZh": "Nanobot是一个轻量级、开源的人工智能代理框架，专为简化工具集成、对话管理和工作流自动化而设计。其亮点在于极简的架构、模块化插件系统和低学习成本，适合开发者快速构建自定义AI助手。通过统一接口连接各类API、数据库和大模型，支持多轮对话与任务编排，尤其擅长处理需要调用外部工具的复杂场景。适合个人开发者、小团队及有快速原型需求的AI应用构建者。",
           "scenarios": [
@@ -1450,8 +1450,8 @@
           "desc": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 40422,
-          "forks": 3824,
+          "stars": 40461,
+          "forks": 3825,
           "today": "",
           "summaryZh": "CLI-Anything 是香港大学团队推出的开源工具，旨在为任意软件生成命令行接口（CLI），使其原生兼容AI代理调用。核心亮点是无需修改软件源码，通过描述文件自动生成CLI，支持集成LLM代理、自动化脚本和智能工作流。适合AI开发者、DevOps工程师、以及需要将传统GUI或复杂工具接入AI系统的用户。项目提供在线CLI Hub仓库，共享社区预制的软件接口。",
           "scenarios": [
@@ -1469,8 +1469,8 @@
           "desc": "LLM驱动的 A/H/美股智能分析：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered stock analysis system for A/H/US markets.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 38861,
-          "forks": 37539,
+          "stars": 38887,
+          "forks": 37564,
           "today": "",
           "summaryZh": "daily_stock_analysis 是一个基于LLM的智能股票分析系统，支持A股、港股、美股多市场。项目亮点：整合多数据源行情与实时新闻，通过LLM生成决策仪表盘，并提供多渠道推送（如钉钉、微信等）。零成本定时运行，利用GitHub Actions等免费资源实现“纯白嫖”。适合个人投资者、量化爱好者以及希望利用AI辅助决策的用户。",
           "scenarios": [
@@ -1488,8 +1488,8 @@
           "desc": "Installable GitHub library of 1,400+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes installer CLI, bundles, workflows, and official/community skill collections.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 38714,
-          "forks": 6297,
+          "stars": 38723,
+          "forks": 6300,
           "today": "",
           "summaryZh": "Antigravity Awesome Skills 是一个可安装的 GitHub 技能库，内含 1400+ 个 agentic skills，专为 Claude Code、Cursor、Codex CLI、Gemini CLI、Antigravity 等 AI 编程工具设计。项目提供统一的 CLI 安装器、技能包、工作流以及官方/社区集合。亮点在于跨工具兼容、海量覆盖、即插即用。适合 AI 辅助编程的开发者、Prompt 工程师及希望扩展 AI Agent 能力的团队。",
           "scenarios": [
@@ -1507,7 +1507,7 @@
           "desc": "Teams-first Multi-agent orchestration for Claude Code",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 34848,
+          "stars": 34859,
           "forks": 3187,
           "today": "",
           "summaryZh": "oh-my-claudecode 是一个面向团队的、多智能体编排工具，专为 Claude Code 设计。它允许开发者将多个 Claude Code 实例组织成团队，协同完成复杂任务，如并行代码审查、大规模重构、多模块开发等。该工具以简洁的配置和 API 驱动，支持动态分配任务、结果聚合、角色定义，显著提升 AI 编程协作效率。适合使用 Claude Code 的团队或需要深度多智能体工作流的开发者。亮点包括开箱即用的团队定义、事件驱动的任务分发、以及灵活的插件扩展机制。",
@@ -1526,8 +1526,8 @@
           "desc": "Agentic coding terminal. DeepSeek-first, multi-provider, cache-maximal, whale-themed. Five-locale UI + CN-region endpoints + CNB mirror.",
           "lang": "Rust",
           "langColor": "#dea584",
-          "stars": 34791,
-          "forks": 2973,
+          "stars": 34844,
+          "forks": 2977,
           "today": "",
           "summaryZh": "CodeWhale 是一个基于 Rust 开发的智能编码终端，专为追求高效 AI 辅助编程的开发者设计。项目以 DeepSeek 作为默认 AI 提供商，同时支持切换多家主流 AI 服务（如 OpenAI、Anthropic 等），并采用激进缓存策略减少重复请求，大幅提升响应速度。其特色包括五语言界面（中英日韩法）、内置中国区域优化端点（适配国内网络）以及 CNB 镜像支持，对国内用户极为友好。鲸鱼主题的 UI 风格独特，终端体验流畅。适合需要快速迭代代码、习惯使用 AI 助手、且关注网络性能和本地化体验的开发者。",
           "scenarios": [
@@ -1545,8 +1545,8 @@
           "desc": "Browser automation CLI for AI agents",
           "lang": "Rust",
           "langColor": "#dea584",
-          "stars": 34308,
-          "forks": 2156,
+          "stars": 34321,
+          "forks": 2157,
           "today": "",
           "summaryZh": "Agent Browser 是 Vercel 实验室开源的浏览器自动化 CLI 工具，专为 AI 代理设计。它基于 Rust 开发，性能高效且跨平台，支持通过自然语言或指令控制浏览器执行点击、输入、导航等操作。亮点在于简洁的命令行接口和与 LLM 的深度集成，让 AI 能像人类一样操作网页。适合需要浏览器交互的 AI 应用开发者、自动化测试工程师以及 RPA 场景从业者。项目高度模块化，可扩展性强，是构建自主网页代理的理想基石。",
           "scenarios": [
@@ -1564,8 +1564,8 @@
           "desc": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 33097,
-          "forks": 3974,
+          "stars": 33149,
+          "forks": 3984,
           "today": "",
           "summaryZh": "Multica 是一个开源托管代理平台，专为管理多个 AI 编码代理而设计。它将编码代理转化为真正的协作队友，支持任务分配、进度追踪与技能复合。基于 TypeScript 开发，提供简洁的 API 和可视化界面，适合需要多代理协同完成复杂开发工作的团队。亮点在于可动态组合不同代理的能力，实现流水线式智能开发流程。适用于希望提升开发效率、降低人工协调成本的技术团队。",
           "scenarios": [
@@ -1583,8 +1583,8 @@
           "desc": "Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and use the CLI.",
           "lang": "",
           "langColor": "#8b949e",
-          "stars": 33051,
-          "forks": 2303,
+          "stars": 33072,
+          "forks": 2304,
           "today": "",
           "summaryZh": "Obsidian Skills 是一个为 AI 代理设计的技能集合，专注于增强 Obsidian 笔记应用的自动化能力。项目包含 Markdown 操作、Bases 数据库交互、JSON Canvas 处理以及命令行工具使用等模块化的技能定义。亮点在于将 Obsidian 的常用功能转化为可由 AI 代理直接调用的原子化指令，显著提升笔记管理、内容生成和复杂工作流的自动化效率。适合 Obsidian 重度用户、知识管理爱好者、使用 AI 辅助写作或自动化脚本的人员。通过简单配置即可让代理理解并操作 Obsidian 的 Markdown 语法、Base 视图、画布和 CLI 命令，降低手动重复操作。",
           "scenarios": [
@@ -1602,8 +1602,8 @@
           "desc": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 32058,
-          "forks": 2629,
+          "stars": 32760,
+          "forks": 2665,
           "today": "",
           "summaryZh": "Understand-Anything 是一个将代码仓库自动转换为交互式知识图谱的开源工具。它能够解析任意代码库，生成可探索、可搜索的可视化图谱，并支持自然语言提问。项目亮点在于“图谱用于教学而非炫技”，强调实用性，并原生集成了 Claude Code、Codex、Cursor 等主流 AI coding agent。适合希望快速理解陌生代码库、进行代码审查与重构、或者为团队项目建立索引的开发者。",
           "scenarios": [
@@ -1621,8 +1621,8 @@
           "desc": "Fast, small, and fully autonomous AI personal assistant infrastructure, any OS, any platform — deploy anywhere, swap anything 🦀",
           "lang": "Rust",
           "langColor": "#dea584",
-          "stars": 31584,
-          "forks": 4655,
+          "stars": 31583,
+          "forks": 4656,
           "today": "",
           "summaryZh": "ZeroClaw 是一个用 Rust 编写的、快速且轻量的全自主 AI 个人助理基础设施。它跨平台支持任何操作系统与设备，核心优势在于完全自主、可任意替换组件，且体积小、性能高。适合寻求自托管智能助手、需要低延迟 AI 服务的开发者，以及希望在边缘设备或服务器上运行私有 AI 助理的高级用户。",
           "scenarios": [
@@ -1640,7 +1640,7 @@
           "desc": "A community collection of OpenClaw use cases for making life easier.",
           "lang": "",
           "langColor": "#8b949e",
-          "stars": 31193,
+          "stars": 31196,
           "forks": 2683,
           "today": "",
           "summaryZh": "OpenClaw 是一个开源自动化工具，专注于简化日常重复任务。该仓库汇集了社区贡献的 OpenClaw 使用案例，覆盖文件处理、网页抓取、系统监控等场景。亮点在于提供可直接运行的示例配置，降低学习曲线，让用户快速上手自动化。适合希望用代码自动提升效率的开发者、运维人员及技术爱好者。",
@@ -1661,23 +1661,101 @@
     "windowHours": 24,
     "total": 615,
     "sourceCount": 86,
-    "topScore": 100,
+    "topScore": 93,
     "picks": [
       {
-        "id": "65edcc7522be105aa519170eb6b72af2dc96a098",
-        "title": "打破手机跑大模型壁垒，面壁智能联合清华开源端侧新品BitCPM-CANN",
+        "id": "8c4751f65b3c274d286ba59046411d799bf8c49d",
+        "title": "如何在 Snowflake 上构建可编程 AI Agent？Cortex Code Agent SDK 深度解析 ｜ 技术实践",
         "titleEn": "",
-        "url": "https://www.aibase.com/news/28335",
-        "siteId": "aibase",
-        "siteName": "AIbase",
-        "source": "AIbase",
-        "publishedAt": "2026-05-26T04:43:26.324832Z",
-        "score": 100,
+        "url": "https://www.infoq.cn/article/yB9yJlJADmFBNurNUEaG",
+        "siteId": "opmlrss",
+        "siteName": "OPML RSS",
+        "source": "InfoQ CN",
+        "publishedAt": "2026-05-26T11:24:26Z",
+        "rawScore": 73,
+        "score": 93,
+        "label": "developer_tool",
+        "labelName": "开发工具",
+        "reason": "matched_ai_signal",
+        "signals": [
+          "技术",
+          "编程"
+        ]
+      },
+      {
+        "id": "cce47963bd9a6e3b52945d710443d380f8b44aca",
+        "title": "OpenAI GPT-5.6 模型曝下月发布：AI 上下文 150 万 tokens",
+        "titleEn": "",
+        "url": "https://www.ithome.com/0/955/078.htm",
+        "siteId": "aihot",
+        "siteName": "AI HOT",
+        "source": "IT之家（RSS）",
+        "publishedAt": "2026-05-25T22:59:12Z",
+        "rawScore": 100,
+        "score": 91,
         "label": "model_release",
         "labelName": "模型发布",
         "reason": "trusted_ai_source_default_keep",
         "signals": [
-          "大模型"
+          "gpt",
+          "openai"
+        ]
+      },
+      {
+        "id": "f4d3bfb5aeede2568e23093e1e72209eb10d2979",
+        "title": "AWS MCP服务器正式可用，全面适配API并支持IAM权限控制",
+        "titleEn": "",
+        "url": "https://www.infoq.cn/article/4gwXqyRPs4RTUIMpRte7",
+        "siteId": "opmlrss",
+        "siteName": "OPML RSS",
+        "source": "InfoQ CN",
+        "publishedAt": "2026-05-26T10:56:00Z",
+        "rawScore": 71,
+        "score": 91,
+        "label": "developer_tool",
+        "labelName": "开发工具",
+        "reason": "matched_ai_signal",
+        "signals": [
+          "mcp"
+        ]
+      },
+      {
+        "id": "4f68f6957e9c068f0504c71400efdeff6f3c8c48",
+        "title": "[分享创造] 探讨：如何用 Prompt Caching (上下文缓存) 降低大模型 Agent 的运行成本？",
+        "titleEn": "",
+        "url": "https://www.v2ex.com/t/1215465",
+        "siteId": "iris",
+        "siteName": "Info Flow",
+        "source": "V2EX (创意工作者社区)",
+        "publishedAt": "2026-05-26T01:43:01Z",
+        "rawScore": 65,
+        "score": 91,
+        "label": "model_release",
+        "labelName": "模型发布",
+        "reason": "matched_ai_signal",
+        "signals": [
+          "prompt",
+          "大模型",
+          "上下文"
+        ]
+      },
+      {
+        "id": "01737daa951790b8633ccc0684473469a13762d1",
+        "title": "约 1000 行代码搭起网页 AI 智能体：微软 Webwright 让 GPT-5.4 跑分提升 81%",
+        "titleEn": "",
+        "url": "https://www.ithome.com/0/955/251.htm",
+        "siteId": "iris",
+        "siteName": "Info Flow",
+        "source": "IT之家 (ITHome)",
+        "publishedAt": "2026-05-26T04:03:04Z",
+        "rawScore": 65,
+        "score": 90,
+        "label": "model_release",
+        "labelName": "模型发布",
+        "reason": "matched_ai_signal",
+        "signals": [
+          "gpt",
+          "智能体"
         ]
       },
       {
@@ -1689,7 +1767,8 @@
         "siteName": "AIbase",
         "source": "AIbase",
         "publishedAt": "2026-05-26T04:43:26.324832Z",
-        "score": 100,
+        "rawScore": 100,
+        "score": 89,
         "label": "developer_tool",
         "labelName": "开发工具",
         "reason": "trusted_ai_source_default_keep",
@@ -1699,105 +1778,42 @@
         ]
       },
       {
-        "id": "63963e4c91683052921964de9fef63900af75323",
-        "title": "仅重1. 75 公斤！海尔发布全球最轻AI运动外骨骼机器人",
+        "id": "bd577731c5bef0c4f2ce2d30105bccf766c95d25",
+        "title": "Show HN: AgentToolBench-Code – 人工智能编码代理的安全性基准测试",
         "titleEn": "",
-        "url": "https://www.aibase.com/news/28333",
-        "siteId": "aibase",
-        "siteName": "AIbase",
-        "source": "AIbase",
-        "publishedAt": "2026-05-26T04:43:26.324832Z",
-        "score": 100,
-        "label": "model_release",
-        "labelName": "模型发布",
-        "reason": "trusted_ai_source_default_keep",
-        "signals": [
-          "aibase"
-        ]
-      },
-      {
-        "id": "d229c9d42be3421c13869ed4c913c85235ae7e2f",
-        "title": "苹果 Siri 重磅升级：1.2 万亿参数谷歌定制模型“掌脑”，本地运行速度成关键",
-        "titleEn": "",
-        "url": "https://www.aibase.com/news/28332",
-        "siteId": "aibase",
-        "siteName": "AIbase",
-        "source": "AIbase",
-        "publishedAt": "2026-05-26T04:43:26.324832Z",
-        "score": 100,
-        "label": "model_release",
-        "labelName": "模型发布",
-        "reason": "trusted_ai_source_default_keep",
-        "signals": [
-          "aibase"
-        ]
-      },
-      {
-        "id": "f76a5b81b2442fe4594c38c988e96788a2d0c473",
-        "title": "AI“治安官”上岗周年：抖音大模型治理谣言，处置浏览量下降62%",
-        "titleEn": "",
-        "url": "https://www.aibase.com/news/28331",
-        "siteId": "aibase",
-        "siteName": "AIbase",
-        "source": "AIbase",
-        "publishedAt": "2026-05-26T04:43:26.324832Z",
-        "score": 100,
-        "label": "model_release",
-        "labelName": "模型发布",
-        "reason": "trusted_ai_source_default_keep",
-        "signals": [
-          "大模型"
-        ]
-      },
-      {
-        "id": "409d6bc3891fbfb6ec77683c2115881ea419821b",
-        "title": "AIGCPanel 2.0.0 重磅更新：工作流引擎开启“一键化”数字人创作新纪元",
-        "titleEn": "",
-        "url": "https://www.aibase.com/news/28330",
-        "siteId": "aibase",
-        "siteName": "AIbase",
-        "source": "AIbase",
-        "publishedAt": "2026-05-26T04:43:26.324832Z",
-        "score": 100,
+        "url": "https://gist.github.com/allenwu-blip/fa2bd0218b93a1d7aef765817e3c6608",
+        "siteId": "buzzing",
+        "siteName": "Buzzing",
+        "source": "gist.github.com",
+        "publishedAt": "2026-05-26T03:57:53.247000Z",
+        "rawScore": 65,
+        "score": 88,
         "label": "agent_workflow",
         "labelName": "Agent 工作流",
-        "reason": "trusted_ai_source_default_keep",
+        "reason": "matched_ai_signal",
         "signals": [
-          "aigc"
+          "人工智能"
         ]
       },
       {
-        "id": "940f417ba8871a28158c44499cf981792a7d7388",
-        "title": "职场警报！九成九企业高管预计AI两年内将引发裁员潮",
+        "id": "dbb0f5944153816d3f82cc7b0aa9cdc1dd33790c",
+        "title": "深圳「十五五」规划纲要：大力发展人工智能终端、具身智能机器人等一批新兴支柱产业",
         "titleEn": "",
-        "url": "https://www.aibase.com/news/28329",
-        "siteId": "aibase",
-        "siteName": "AIbase",
-        "source": "AIbase",
+        "url": "https://finance.sina.com.cn/stock/t/2026-05-26/doc-inhzevaw1638112.shtml",
+        "siteId": "tophub",
+        "siteName": "TopHub",
+        "source": "Readhub · AI",
         "publishedAt": "2026-05-26T04:43:26.324832Z",
-        "score": 100,
-        "label": "ai_general",
-        "labelName": "AI 综合",
-        "reason": "trusted_ai_source_default_keep",
+        "rawScore": 66,
+        "score": 87,
+        "label": "robotics",
+        "labelName": "机器人",
+        "reason": "matched_ai_signal",
         "signals": [
-          "aibase"
-        ]
-      },
-      {
-        "id": "63ab3620dbb9711f4d2da0bd4f2e9ff331da3613",
-        "title": "​育碧《孤岛惊魂 7》秘密测试生成式 AI 遭曝光",
-        "titleEn": "",
-        "url": "https://www.aibase.com/news/28328",
-        "siteId": "aibase",
-        "siteName": "AIbase",
-        "source": "AIbase",
-        "publishedAt": "2026-05-26T04:43:26.324832Z",
-        "score": 100,
-        "label": "ai_general",
-        "labelName": "AI 综合",
-        "reason": "trusted_ai_source_default_keep",
-        "signals": [
-          "aibase"
+          "人工智能",
+          "具身智能",
+          "具身",
+          "机器人"
         ]
       }
     ],
@@ -1808,54 +1824,21 @@
         "count": 245,
         "items": [
           {
-            "id": "940f417ba8871a28158c44499cf981792a7d7388",
-            "title": "职场警报！九成九企业高管预计AI两年内将引发裁员潮",
+            "id": "9eecc79f88a79cf22d232c7b85c513c4004796ca",
+            "title": "Kling AI驱动《大卫之家》实现多项行业首创",
             "titleEn": "",
-            "url": "https://www.aibase.com/news/28329",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
+            "url": "https://x.com/Kling_ai/status/2059121691385622761",
+            "siteId": "aihot",
+            "siteName": "AI HOT",
+            "source": "X：可灵 Kling AI (@Kling_ai)",
+            "publishedAt": "2026-05-26T03:57:22Z",
+            "rawScore": 100,
+            "score": 82,
             "label": "ai_general",
             "labelName": "AI 综合",
             "reason": "trusted_ai_source_default_keep",
             "signals": [
-              "aibase"
-            ]
-          },
-          {
-            "id": "63ab3620dbb9711f4d2da0bd4f2e9ff331da3613",
-            "title": "​育碧《孤岛惊魂 7》秘密测试生成式 AI 遭曝光",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28328",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
-            "label": "ai_general",
-            "labelName": "AI 综合",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
-          },
-          {
-            "id": "bf519b3579865bcfeba78e50afa7d40c2159bb52",
-            "title": "“AI World”元年：京东科技 JoyInside 如何让硬件成为家庭“新成员”？",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28326",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
-            "label": "ai_general",
-            "labelName": "AI 综合",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
+              "aihot"
             ]
           },
           {
@@ -1867,46 +1850,13 @@
             "siteName": "AIbase",
             "source": "AIbase",
             "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
+            "rawScore": 100,
+            "score": 81,
             "label": "ai_general",
             "labelName": "AI 综合",
             "reason": "trusted_ai_source_default_keep",
             "signals": [
               "aibase"
-            ]
-          },
-          {
-            "id": "a5012b1feed4d12a5ced3f98807dfcb8b3d76a69",
-            "title": "中国游戏AI竞赛进入“关键赛点”：从“提效”迈向“重塑”",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28319",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
-            "label": "ai_general",
-            "labelName": "AI 综合",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
-          },
-          {
-            "id": "9eecc79f88a79cf22d232c7b85c513c4004796ca",
-            "title": "Kling AI驱动《大卫之家》实现多项行业首创",
-            "titleEn": "",
-            "url": "https://x.com/Kling_ai/status/2059121691385622761",
-            "siteId": "aihot",
-            "siteName": "AI HOT",
-            "source": "X：可灵 Kling AI (@Kling_ai)",
-            "publishedAt": "2026-05-26T03:57:22Z",
-            "score": 100,
-            "label": "ai_general",
-            "labelName": "AI 综合",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aihot"
             ]
           },
           {
@@ -1918,7 +1868,8 @@
             "siteName": "AI HOT",
             "source": "X：xAI (@xai)",
             "publishedAt": "2026-05-25T18:09:33Z",
-            "score": 100,
+            "rawScore": 100,
+            "score": 80,
             "label": "ai_general",
             "labelName": "AI 综合",
             "reason": "trusted_ai_source_default_keep",
@@ -1927,55 +1878,38 @@
             ]
           },
           {
-            "id": "7d7c13a20c08da3adc5d389d45e31162f6dbb40b",
-            "title": "谷歌重拳治理“AI 投毒”：GEO 垃圾内容将遭降权与移除",
+            "id": "22ef02d314e192b3c1a58bf03b54a33b98300051",
+            "title": "[人工智能] 拍一个 token 自由的短剧咋样，有没有前途",
             "titleEn": "",
-            "url": "https://www.aibase.com/news/28311",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T11:29:46.906183Z",
-            "score": 100,
+            "url": "https://www.v2ex.com/t/1215521",
+            "siteId": "iris",
+            "siteName": "Info Flow",
+            "source": "V2EX (创意工作者社区)",
+            "publishedAt": "2026-05-26T04:17:17Z",
+            "rawScore": 65,
+            "score": 80,
             "label": "ai_general",
             "labelName": "AI 综合",
-            "reason": "trusted_ai_source_default_keep",
+            "reason": "matched_ai_signal",
             "signals": [
-              "aibase"
+              "人工智能"
             ]
           },
           {
-            "id": "ea6a528f68bce48680e5bc5df210625df3e6bc14",
-            "title": "仅需两小时！全球首个全自动AI科学家Robin颠覆传统科研范式",
+            "id": "c9f7a5166629fd61b3ccef7a7a9f64830400325e",
+            "title": "别再无脑装豆包了，实测五款国产AI App，最强的竟是...",
             "titleEn": "",
-            "url": "https://www.aibase.com/news/28309",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T08:56:57.056498Z",
-            "score": 100,
+            "url": "https://www.huxiu.com/article/4861550.html?f=rss",
+            "siteId": "iris",
+            "siteName": "Info Flow",
+            "source": "虎嗅 (Huxiu)",
+            "publishedAt": "2026-05-26T04:16:23Z",
+            "rawScore": 65,
+            "score": 80,
             "label": "ai_general",
             "labelName": "AI 综合",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
-          },
-          {
-            "id": "41710e963ce0d89d60383f5d1711c8ba7f302ac7",
-            "title": "强强联合！得州拟建2. 5 吉瓦核电燃气混合电站以应对AI用电激增",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28305",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T08:56:57.056498Z",
-            "score": 100,
-            "label": "ai_general",
-            "labelName": "AI 综合",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
+            "reason": "matched_ai_signal",
+            "signals": []
           }
         ]
       },
@@ -1985,134 +1919,16 @@
         "count": 131,
         "items": [
           {
-            "id": "65edcc7522be105aa519170eb6b72af2dc96a098",
-            "title": "打破手机跑大模型壁垒，面壁智能联合清华开源端侧新品BitCPM-CANN",
+            "id": "cce47963bd9a6e3b52945d710443d380f8b44aca",
+            "title": "OpenAI GPT-5.6 模型曝下月发布：AI 上下文 150 万 tokens",
             "titleEn": "",
-            "url": "https://www.aibase.com/news/28335",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
-            "label": "model_release",
-            "labelName": "模型发布",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "大模型"
-            ]
-          },
-          {
-            "id": "63963e4c91683052921964de9fef63900af75323",
-            "title": "仅重1. 75 公斤！海尔发布全球最轻AI运动外骨骼机器人",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28333",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
-            "label": "model_release",
-            "labelName": "模型发布",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
-          },
-          {
-            "id": "d229c9d42be3421c13869ed4c913c85235ae7e2f",
-            "title": "苹果 Siri 重磅升级：1.2 万亿参数谷歌定制模型“掌脑”，本地运行速度成关键",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28332",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
-            "label": "model_release",
-            "labelName": "模型发布",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
-          },
-          {
-            "id": "f76a5b81b2442fe4594c38c988e96788a2d0c473",
-            "title": "AI“治安官”上岗周年：抖音大模型治理谣言，处置浏览量下降62%",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28331",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
-            "label": "model_release",
-            "labelName": "模型发布",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "大模型"
-            ]
-          },
-          {
-            "id": "9a9c1f7e9d13aac833a6bf009f1cd2b002778053",
-            "title": "福布斯中国AI企业TOP50榜单发布 东经科技入选“生态建设与开源贡献”子榜单",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28324",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
-            "label": "model_release",
-            "labelName": "模型发布",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
-          },
-          {
-            "id": "e77f1cda03176f7a9ca64ac703b0044e941442f6",
-            "title": "Anthropic 正酝酿公开上线最强模型 Mythos，AI 赛博安全进入“深水区”",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28322",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
-            "label": "model_release",
-            "labelName": "模型发布",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "anthropic"
-            ]
-          },
-          {
-            "id": "5fcf54c607fce83ada1a2ed6dd95d2a333b142c5",
-            "title": "商汤 Seko AI 再进化：发布生产链路 Seko Space，加速漫短剧工业化布局",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28321",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
-            "label": "model_release",
-            "labelName": "模型发布",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
-          },
-          {
-            "id": "15e5d8fcae0068668f8daf4b9fe02a4a7358187d",
-            "title": "上下文 150 万 tokens！OpenAI未官宣新旗舰GPT-5.6意外曝光",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28320",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
+            "url": "https://www.ithome.com/0/955/078.htm",
+            "siteId": "aihot",
+            "siteName": "AI HOT",
+            "source": "IT之家（RSS）",
+            "publishedAt": "2026-05-25T22:59:12Z",
+            "rawScore": 100,
+            "score": 91,
             "label": "model_release",
             "labelName": "模型发布",
             "reason": "trusted_ai_source_default_keep",
@@ -2122,38 +1938,78 @@
             ]
           },
           {
-            "id": "f5b6a034e0b0528ecf8cff720339aabc9819129a",
-            "title": "​欧洲央行紧急会议应对 Anthropic 新 Claude Mythos 带来的网络安全威胁",
+            "id": "4b257701b38f4e9a4cb16e291d701eba4fb00903",
+            "title": "从模型诞生到上线：Ray 在小红书 AI 数据生产中的算力调度实践｜AICon上海",
             "titleEn": "",
-            "url": "https://www.aibase.com/news/28318",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
+            "url": "https://www.infoq.cn/article/YHD4cguvebWJled2FK96",
+            "siteId": "opmlrss",
+            "siteName": "OPML RSS",
+            "source": "InfoQ CN",
+            "publishedAt": "2026-05-26T10:00:00Z",
+            "rawScore": 71,
+            "score": 91,
             "label": "model_release",
             "labelName": "模型发布",
-            "reason": "trusted_ai_source_default_keep",
+            "reason": "matched_ai_signal",
             "signals": [
-              "anthropic",
+              "算力"
+            ]
+          },
+          {
+            "id": "47e331c657ae3c5abe968d358c1bd986ab357472",
+            "title": "微软将弃用Claude：太贵了还是薅明白了？",
+            "titleEn": "",
+            "url": "https://www.infoq.cn/article/qdvNe5mRkvPkPS2JGMx2",
+            "siteId": "opmlrss",
+            "siteName": "OPML RSS",
+            "source": "InfoQ CN",
+            "publishedAt": "2026-05-26T08:00:00Z",
+            "rawScore": 71,
+            "score": 91,
+            "label": "model_release",
+            "labelName": "模型发布",
+            "reason": "matched_ai_signal",
+            "signals": [
               "claude"
             ]
           },
           {
-            "id": "e20e951b915d47501c08a8fa6b5db8b6380860a4",
-            "title": "“阿里云·无锡青年创客AI加速计划”发布，开启漫剧青年创业全链路赋能",
+            "id": "4f68f6957e9c068f0504c71400efdeff6f3c8c48",
+            "title": "[分享创造] 探讨：如何用 Prompt Caching (上下文缓存) 降低大模型 Agent 的运行成本？",
             "titleEn": "",
-            "url": "https://www.aibase.com/news/28317",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
+            "url": "https://www.v2ex.com/t/1215465",
+            "siteId": "iris",
+            "siteName": "Info Flow",
+            "source": "V2EX (创意工作者社区)",
+            "publishedAt": "2026-05-26T01:43:01Z",
+            "rawScore": 65,
+            "score": 91,
             "label": "model_release",
             "labelName": "模型发布",
-            "reason": "trusted_ai_source_default_keep",
+            "reason": "matched_ai_signal",
             "signals": [
-              "aibase"
+              "prompt",
+              "大模型",
+              "上下文"
+            ]
+          },
+          {
+            "id": "b5c3b4345492444267b7dd0d3b1fca26cec7820c",
+            "title": "模型之外，皆属Harness！DeepSeek终于出手：招人、组队、从零造一个中国版Claude Code",
+            "titleEn": "",
+            "url": "https://www.infoq.cn/article/zqYChrE48RgRbWTX7vhT",
+            "siteId": "opmlrss",
+            "siteName": "OPML RSS",
+            "source": "InfoQ CN",
+            "publishedAt": "2026-05-25T10:51:55Z",
+            "rawScore": 75,
+            "score": 90,
+            "label": "model_release",
+            "labelName": "模型发布",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "claude",
+              "deepseek"
             ]
           }
         ]
@@ -2164,15 +2020,16 @@
         "count": 57,
         "items": [
           {
-            "id": "14639692c324f81fbbe17ef7d48420e5537fe61b",
-            "title": "有人真的喜欢 React 吗？",
-            "titleEn": "Does Anybody Actually Like React?",
-            "url": "https://jsx.lol",
+            "id": "58adaa1fd924565f3d638540832c2c662440b70a",
+            "title": "Anthropic联合创始人Chris Olah在教皇通谕发布会上的讲话",
+            "titleEn": "Anthropic Cofounder Chris Olah's Remarks on Pope Leo XIV's \"Magnifica Humanitas\"",
+            "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
             "siteId": "zeli",
             "siteName": "Zeli",
             "source": "Hacker News · 24h最热",
-            "publishedAt": "2026-05-26T01:55:15Z",
-            "score": 65,
+            "publishedAt": "2026-05-25T19:12:29Z",
+            "rawScore": 65,
+            "score": 83,
             "label": "curated_hotlist",
             "labelName": "精选榜单",
             "reason": "zeli_24h_hot_allowlist",
@@ -2189,7 +2046,8 @@
             "siteName": "Zeli",
             "source": "Hacker News · 24h最热",
             "publishedAt": "2026-05-25T23:40:40Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 82,
             "label": "curated_hotlist",
             "labelName": "精选榜单",
             "reason": "zeli_24h_hot_allowlist",
@@ -2198,117 +2056,16 @@
             ]
           },
           {
-            "id": "fb1ffdb9924271a809970bbf72042dccda28594a",
-            "title": "Rust 语言的性能",
-            "titleEn": "Performance of Rust Language [pdf]",
-            "url": "https://github.com/yugr/rust-slides",
+            "id": "14639692c324f81fbbe17ef7d48420e5537fe61b",
+            "title": "有人真的喜欢 React 吗？",
+            "titleEn": "Does Anybody Actually Like React?",
+            "url": "https://jsx.lol",
             "siteId": "zeli",
             "siteName": "Zeli",
             "source": "Hacker News · 24h最热",
-            "publishedAt": "2026-05-25T23:37:31Z",
-            "score": 65,
-            "label": "curated_hotlist",
-            "labelName": "精选榜单",
-            "reason": "zeli_24h_hot_allowlist",
-            "signals": [
-              "zeli_24h_hot"
-            ]
-          },
-          {
-            "id": "e5c6a5764a5a1a27856046de35f1d891daad742e",
-            "title": "现在没人再翻编程书了",
-            "titleEn": "Nobody cracks open a programming book anymore",
-            "url": "https://unix.foo/posts/nobody-cracks-open-a-programming-book",
-            "siteId": "zeli",
-            "siteName": "Zeli",
-            "source": "Hacker News · 24h最热",
-            "publishedAt": "2026-05-25T23:21:57Z",
-            "score": 65,
-            "label": "curated_hotlist",
-            "labelName": "精选榜单",
-            "reason": "zeli_24h_hot_allowlist",
-            "signals": [
-              "zeli_24h_hot"
-            ]
-          },
-          {
-            "id": "54c2b12eb9fca09682074dd20df394e51f2352ba",
-            "title": "考克斯媒体因吹嘘通过手机监视用户而被罚款",
-            "titleEn": "Cox Media fined after bragging it spied on users through their phones",
-            "url": "https://www.theverge.com/policy/937027/cox-media-marketing-ai-powered-phone-spying-ads-ftc-fine",
-            "siteId": "zeli",
-            "siteName": "Zeli",
-            "source": "Hacker News · 24h最热",
-            "publishedAt": "2026-05-25T23:10:05Z",
-            "score": 65,
-            "label": "curated_hotlist",
-            "labelName": "精选榜单",
-            "reason": "zeli_24h_hot_allowlist",
-            "signals": [
-              "zeli_24h_hot"
-            ]
-          },
-          {
-            "id": "db08ef53e329120b3f0fa110c2fa5574af74edb9",
-            "title": "每个前沿人工智能都是 INTJ",
-            "titleEn": "Every Frontier AI Is INTJ",
-            "url": "https://zonted.com/posts/every-ai-is-intj",
-            "siteId": "zeli",
-            "siteName": "Zeli",
-            "source": "Hacker News · 24h最热",
-            "publishedAt": "2026-05-25T22:43:16Z",
-            "score": 65,
-            "label": "curated_hotlist",
-            "labelName": "精选榜单",
-            "reason": "zeli_24h_hot_allowlist",
-            "signals": [
-              "zeli_24h_hot"
-            ]
-          },
-          {
-            "id": "40ae15c5f878b77d524234ab9e8e82c1dfeea4d5",
-            "title": "随着工人前往美国，加拿大失去了顶尖人才",
-            "titleEn": "Canada losing top talent as workers head to the U.S.",
-            "url": "https://www.bnnbloomberg.ca/investing/market-outlook/2026/05/25/market-outlook-canada-losing-top-talent-as-workers-head-to-the-us",
-            "siteId": "zeli",
-            "siteName": "Zeli",
-            "source": "Hacker News · 24h最热",
-            "publishedAt": "2026-05-25T22:42:41Z",
-            "score": 65,
-            "label": "curated_hotlist",
-            "labelName": "精选榜单",
-            "reason": "zeli_24h_hot_allowlist",
-            "signals": [
-              "zeli_24h_hot"
-            ]
-          },
-          {
-            "id": "0a0c4374d21e3c67959df8bc0453a6174b01dd59",
-            "title": "沙米尔秘密共享算法的工作原理",
-            "titleEn": "How Shamir's Secret Sharing Works",
-            "url": "https://ente.com/blog/how-shamirs-secret-sharing-works",
-            "siteId": "zeli",
-            "siteName": "Zeli",
-            "source": "Hacker News · 24h最热",
-            "publishedAt": "2026-05-25T22:37:24Z",
-            "score": 65,
-            "label": "curated_hotlist",
-            "labelName": "精选榜单",
-            "reason": "zeli_24h_hot_allowlist",
-            "signals": [
-              "zeli_24h_hot"
-            ]
-          },
-          {
-            "id": "e750f115faa2cbb46c58f78acc007cc1cc42af20",
-            "title": "研究发现，散步比坐着更能激发创造力（2014）",
-            "titleEn": "Taking a walk may lead to more creativity than sitting, study finds (2014)",
-            "url": "https://www.apa.org/news/press/releases/2014/04/creativity-walk",
-            "siteId": "zeli",
-            "siteName": "Zeli",
-            "source": "Hacker News · 24h最热",
-            "publishedAt": "2026-05-25T22:30:27Z",
-            "score": 65,
+            "publishedAt": "2026-05-26T01:55:15Z",
+            "rawScore": 65,
+            "score": 81,
             "label": "curated_hotlist",
             "labelName": "精选榜单",
             "reason": "zeli_24h_hot_allowlist",
@@ -2325,7 +2082,26 @@
             "siteName": "Zeli",
             "source": "Hacker News · 24h最热",
             "publishedAt": "2026-05-25T21:50:03Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 81,
+            "label": "curated_hotlist",
+            "labelName": "精选榜单",
+            "reason": "zeli_24h_hot_allowlist",
+            "signals": [
+              "zeli_24h_hot"
+            ]
+          },
+          {
+            "id": "bee6bd6c8eb0dc439688ef9ee32d92df999f531e",
+            "title": "Maia-3：免费且开源",
+            "titleEn": "Maia-3: free and open source",
+            "url": "https://lichess.org/@/ashtonanderson/blog/introducing-maia-3-free-and-open-source/vCPPRtX3",
+            "siteId": "zeli",
+            "siteName": "Zeli",
+            "source": "Hacker News · 24h最热",
+            "publishedAt": "2026-05-25T18:12:13Z",
+            "rawScore": 65,
+            "score": 81,
             "label": "curated_hotlist",
             "labelName": "精选榜单",
             "reason": "zeli_24h_hot_allowlist",
@@ -2341,92 +2117,6 @@
         "count": 57,
         "items": [
           {
-            "id": "bee5dd307ca649382d6a5a063aed27184e66571c",
-            "title": "OpenAI Codex 新增“锁屏运行”功能：Mac 桌面代理进入自动化新阶段",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28334",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
-            "label": "developer_tool",
-            "labelName": "开发工具",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "codex",
-              "openai"
-            ]
-          },
-          {
-            "id": "8c0dcbb0c58d82e2babc62f086e519a2f763baf6",
-            "title": "xAI 推出 Grok Build：进驻终端的“全能 AI 编程智能体”",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28323",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
-            "label": "developer_tool",
-            "labelName": "开发工具",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "智能体"
-            ]
-          },
-          {
-            "id": "7abaacbdb292d9713059446199fca6af9ca180db",
-            "title": "谷歌 CEO 皮查伊：坦诚承认编程领域落后，AI 搜索转型将采取“稳健策略”",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28308",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T08:56:57.056498Z",
-            "score": 100,
-            "label": "developer_tool",
-            "labelName": "开发工具",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
-          },
-          {
-            "id": "73a3de35ccad3787c4304b094dce8266f074c10b",
-            "title": "xAI 祭出“杀手锏”：1.5 万亿参数 Grok V9-Medium 训练完成，直指编程 AI 赛道",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28307",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T08:56:57.056498Z",
-            "score": 100,
-            "label": "developer_tool",
-            "labelName": "开发工具",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
-          },
-          {
-            "id": "5eab11a618d7bef6c40f8ab3aca64fdc5691fca9",
-            "title": "无需排队!腾讯ima 宣布全面开放 Copilot 并推出知识技能分享平台",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28291",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T04:44:17.617987Z",
-            "score": 100,
-            "label": "developer_tool",
-            "labelName": "开发工具",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "copilot"
-            ]
-          },
-          {
             "id": "8c4751f65b3c274d286ba59046411d799bf8c49d",
             "title": "如何在 Snowflake 上构建可编程 AI Agent？Cortex Code Agent SDK 深度解析 ｜ 技术实践",
             "titleEn": "",
@@ -2435,7 +2125,8 @@
             "siteName": "OPML RSS",
             "source": "InfoQ CN",
             "publishedAt": "2026-05-26T11:24:26Z",
-            "score": 73,
+            "rawScore": 73,
+            "score": 93,
             "label": "developer_tool",
             "labelName": "开发工具",
             "reason": "matched_ai_signal",
@@ -2453,7 +2144,8 @@
             "siteName": "OPML RSS",
             "source": "InfoQ CN",
             "publishedAt": "2026-05-26T10:56:00Z",
-            "score": 71,
+            "rawScore": 71,
+            "score": 91,
             "label": "developer_tool",
             "labelName": "开发工具",
             "reason": "matched_ai_signal",
@@ -2462,52 +2154,61 @@
             ]
           },
           {
-            "id": "e33f0610dfb602e0de353727c5ee325b9ec57b81",
-            "title": "Copilot 创始工程师：大多数 AI 编码“就像开着法拉利去买牛奶一样”",
+            "id": "bee5dd307ca649382d6a5a063aed27184e66571c",
+            "title": "OpenAI Codex 新增“锁屏运行”功能：Mac 桌面代理进入自动化新阶段",
             "titleEn": "",
-            "url": "https://www.infoq.cn/article/e17xvwLZf8rQrArWAFR6",
-            "siteId": "opmlrss",
-            "siteName": "OPML RSS",
-            "source": "InfoQ CN",
-            "publishedAt": "2026-05-25T11:25:40Z",
-            "score": 71,
+            "url": "https://www.aibase.com/news/28334",
+            "siteId": "aibase",
+            "siteName": "AIbase",
+            "source": "AIbase",
+            "publishedAt": "2026-05-26T04:43:26.324832Z",
+            "rawScore": 100,
+            "score": 89,
             "label": "developer_tool",
             "labelName": "开发工具",
-            "reason": "matched_ai_signal",
+            "reason": "trusted_ai_source_default_keep",
             "signals": [
-              "copilot"
+              "codex",
+              "openai"
             ]
           },
           {
-            "id": "117387e7233acbbf51672d009a25a1bc80a23e74",
-            "title": "C++之父开撕AI Coding：资深开发者宁愿退休也不愿伺候AI生成的代码",
+            "id": "890af7b428267101c371727033ac7f39127de5df",
+            "title": "[OpenAI] Codex App 压缩上下文卡死",
             "titleEn": "",
-            "url": "https://www.infoq.cn/article/51fCFjwWFtJBDh04sLVQ",
-            "siteId": "opmlrss",
-            "siteName": "OPML RSS",
-            "source": "InfoQ CN",
-            "publishedAt": "2026-05-25T11:07:09Z",
-            "score": 67,
-            "label": "developer_tool",
-            "labelName": "开发工具",
-            "reason": "matched_ai_signal",
-            "signals": []
-          },
-          {
-            "id": "0bf1b5f89bdb249aab6c252d0cafcbdc590e2f7a",
-            "title": "Codex 把我家烂网给优化后，我 TM 直接原地起飞了。",
-            "titleEn": "",
-            "url": "https://juejin.cn/post/7643639401154756662",
-            "siteId": "newsnow",
-            "siteName": "NewsNow",
-            "source": "juejin",
-            "publishedAt": "2026-05-26T04:43:52.279000Z",
-            "score": 65,
+            "url": "https://www.v2ex.com/t/1215315",
+            "siteId": "iris",
+            "siteName": "Info Flow",
+            "source": "V2EX (创意工作者社区)",
+            "publishedAt": "2026-05-25T07:14:56Z",
+            "rawScore": 65,
+            "score": 88,
             "label": "developer_tool",
             "labelName": "开发工具",
             "reason": "matched_ai_signal",
             "signals": [
-              "codex"
+              "codex",
+              "openai",
+              "上下文"
+            ]
+          },
+          {
+            "id": "7f157da019ddaf30c0f6017e7dd7ce8472c6b39b",
+            "title": "[OpenAI] codex cli 如何优雅的传图片？",
+            "titleEn": "",
+            "url": "https://www.v2ex.com/t/1215360",
+            "siteId": "iris",
+            "siteName": "Info Flow",
+            "source": "V2EX (创意工作者社区)",
+            "publishedAt": "2026-05-25T09:06:53Z",
+            "rawScore": 65,
+            "score": 87,
+            "label": "developer_tool",
+            "labelName": "开发工具",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "codex",
+              "openai"
             ]
           }
         ]
@@ -2526,12 +2227,31 @@
             "siteName": "AI HOT",
             "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
             "publishedAt": "2026-05-25T15:26:13Z",
-            "score": 100,
+            "rawScore": 100,
+            "score": 86,
             "label": "ai_product_update",
             "labelName": "产品更新",
             "reason": "trusted_ai_source_default_keep",
             "signals": [
               "aihot"
+            ]
+          },
+          {
+            "id": "db8fecad969df4c2d437a64bf8f01e91e889b657",
+            "title": "OpenAI被超越了，全球AI新王诞生",
+            "titleEn": "",
+            "url": "https://www.huxiu.com/article/4861547.html?f=rss",
+            "siteId": "iris",
+            "siteName": "Info Flow",
+            "source": "虎嗅 (Huxiu)",
+            "publishedAt": "2026-05-26T03:53:45Z",
+            "rawScore": 65,
+            "score": 85,
+            "label": "ai_product_update",
+            "labelName": "产品更新",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "openai"
             ]
           },
           {
@@ -2543,7 +2263,8 @@
             "siteName": "AI HOT",
             "source": "The Verge：AI（RSS）",
             "publishedAt": "2026-05-25T15:05:07Z",
-            "score": 100,
+            "rawScore": 100,
+            "score": 84,
             "label": "ai_product_update",
             "labelName": "产品更新",
             "reason": "trusted_ai_source_default_keep",
@@ -2560,7 +2281,8 @@
             "siteName": "AI HOT",
             "source": "X：Rohan Paul (@rohanpaul_ai)",
             "publishedAt": "2026-05-25T13:53:24Z",
-            "score": 100,
+            "rawScore": 100,
+            "score": 84,
             "label": "ai_product_update",
             "labelName": "产品更新",
             "reason": "trusted_ai_source_default_keep",
@@ -2569,122 +2291,22 @@
             ]
           },
           {
-            "id": "36019251093c940e462d4053819c6d8edbf39eb5",
-            "title": "OpenAI斥巨资在新加坡建实验室，开启首个海外AI大本营",
+            "id": "047515814c33838df70b2d7926f7b7bd4636be69",
+            "title": "SpaceX 和 OpenAI 的首次公开募股可能使人工智能板块进一步陷入泡沫：今日图表",
             "titleEn": "",
-            "url": "https://www.aibase.com/news/28304",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T08:56:57.056498Z",
-            "score": 100,
-            "label": "ai_product_update",
-            "labelName": "产品更新",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "openai"
-            ]
-          },
-          {
-            "id": "147375ac7357c9bf20b5df65255fd443bcdf458e",
-            "title": "OpenAI重磅投资新加坡：2.34 亿美元打造全球首个海外AI实验室！",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28301",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T08:56:57.056498Z",
-            "score": 100,
-            "label": "ai_product_update",
-            "labelName": "产品更新",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "openai"
-            ]
-          },
-          {
-            "id": "41fd449895bb8daf41aa5a45a83b06e8a0b2aea7",
-            "title": "​Zoom 对Anthropic 的投资回报超十亿美元",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28296",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T04:44:17.617987Z",
-            "score": 100,
-            "label": "ai_product_update",
-            "labelName": "产品更新",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "anthropic"
-            ]
-          },
-          {
-            "id": "db8fecad969df4c2d437a64bf8f01e91e889b657",
-            "title": "OpenAI被超越了，全球AI新王诞生",
-            "titleEn": "",
-            "url": "https://www.huxiu.com/article/4861547.html?f=rss",
-            "siteId": "iris",
-            "siteName": "Info Flow",
-            "source": "虎嗅 (Huxiu)",
-            "publishedAt": "2026-05-26T03:53:45Z",
-            "score": 65,
-            "label": "ai_product_update",
-            "labelName": "产品更新",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "openai"
-            ]
-          },
-          {
-            "id": "c86af867abf1db3fb589b59b0efb149d70998b73",
-            "title": "“新型战争”：中国电子战人工智能战略的内部视角 - South China Morning Post",
-            "titleEn": "",
-            "url": "https://news.google.com/read/CBMiuwFBVV95cUxQUDZyXzRBYnVBYm03SUwyTUtRUnhkUkdsX3N0Nm55eThseFlNY3ZQcklra3NXdWhDblNFcDhhdmNKZU53eWVVSkRlOXpETDNncFpLM0FMY0xTbkRNX2ZpUTRFSDlPZVBDeEJ0VEVQVkFBUDBjN2F2aEdBTnVzcWlQZGUtSXFDcnJpX0JFWnFya3RnRXRqeG4xNDlURkdKbW9LaTJfQU8ydUZhNm9ZU0l6Smh1LVJfZ3RzR01z0gG7AUFVX3lxTE5wYzlLU2dwSU9pMC1rRnFPYWZKWHFIM0E5NFdoTXNCY3I1dmdoWF90NlhTdlU2T2hCd0ZYZk9uWWhQYXJMSGw1VDlaYng2TW1Ua2lLU1d0d09NQ2VscWNUaVBzLWlrWDAxM0pqMjk2dWpUcTNEUHdoUFNNWXVaM2NYQm1jTTFRYmN1cmcwNUxmT2ZZWHY4MnB6Z244SW04UnVhOVVKa3JRdTBfQ0pnamcxa21rNVRBUS04bTg?hl=en-US&gl=US&ceid=US%3Aen",
+            "url": "https://finance.yahoo.com/markets/article/spacex-and-openai-ipos-could-push-the-ai-trade-deeper-into-bubble-territory-chart-of-the-day-120000795.html",
             "siteId": "buzzing",
             "siteName": "Buzzing",
-            "source": "news.google.com",
-            "publishedAt": "2026-05-25T22:00:06Z",
-            "score": 65,
+            "source": "finance.yahoo.com",
+            "publishedAt": "2026-05-25T12:15:48.964000Z",
+            "rawScore": 65,
+            "score": 83,
             "label": "ai_product_update",
             "labelName": "产品更新",
             "reason": "matched_ai_signal",
             "signals": [
+              "openai",
               "人工智能"
-            ]
-          },
-          {
-            "id": "5553c199b28d33d5406a7a8fd40ef2b8918c0ec9",
-            "title": "为什么网友都在调侃Anthropic聘请了教皇利奥",
-            "titleEn": "",
-            "url": "https://www.businessinsider.com/pope-leo-anthropic-chris-olah-vatican-visit-sparks-memes-2026-5",
-            "siteId": "buzzing",
-            "siteName": "Buzzing",
-            "source": "www.businessinsider.com",
-            "publishedAt": "2026-05-25T20:14:56.360000Z",
-            "score": 65,
-            "label": "ai_product_update",
-            "labelName": "产品更新",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "anthropic"
-            ]
-          },
-          {
-            "id": "52e093428e60b04f66c9f0eb31efdd1428dba2f5",
-            "title": "为什么网友都在调侃Anthropic聘请了教皇利奥",
-            "titleEn": "Why the internet is joking that Anthropic hired Pope Leo",
-            "url": "https://www.businessinsider.com/pope-leo-anthropic-chris-olah-vatican-visit-sparks-memes-2026-5",
-            "siteId": "techurls",
-            "siteName": "TechURLs",
-            "source": "Business Insider",
-            "publishedAt": "2026-05-25T19:46:00Z",
-            "score": 65,
-            "label": "ai_product_update",
-            "labelName": "产品更新",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "anthropic"
             ]
           }
         ]
@@ -2695,20 +2317,40 @@
         "count": 24,
         "items": [
           {
-            "id": "196af9cd3296643a5a58f4dae38069c5b19e9ec9",
-            "title": "清华联合腾讯混元斩获MLSys2026MoE推理挑战赛冠军，NPU推理提速4.1倍",
+            "id": "adcda28a2f6bcdbbcc9a6dc85bc2cca9166b72a3",
+            "title": "普华永道合伙人：客户愿意花5倍价钱买AI服务，AI让软件边界溃退，万亿美元算力投资谁会亏？",
             "titleEn": "",
-            "url": "https://www.aibase.com/news/28280",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T04:44:17.617987Z",
-            "score": 100,
+            "url": "https://www.huxiu.com/article/4861551.html?f=rss",
+            "siteId": "iris",
+            "siteName": "Info Flow",
+            "source": "虎嗅 (Huxiu)",
+            "publishedAt": "2026-05-26T04:22:40Z",
+            "rawScore": 65,
+            "score": 87,
             "label": "infra_compute",
             "labelName": "算力基础设施",
-            "reason": "trusted_ai_source_default_keep",
+            "reason": "matched_ai_signal",
             "signals": [
-              "推理"
+              "算力",
+              "软件"
+            ]
+          },
+          {
+            "id": "3bc8f1092386b6d2b52405ee53d9d58e238aacca",
+            "title": "陈诗一等：算力尽头是电力：“算电协同”如何重构中国AI总成本",
+            "titleEn": "",
+            "url": "https://www.huxiu.com/article/4861474.html?f=rss",
+            "siteId": "iris",
+            "siteName": "Info Flow",
+            "source": "虎嗅 (Huxiu)",
+            "publishedAt": "2026-05-26T00:36:53Z",
+            "rawScore": 65,
+            "score": 87,
+            "label": "infra_compute",
+            "labelName": "算力基础设施",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "算力"
             ]
           },
           {
@@ -2720,7 +2362,8 @@
             "siteName": "TopHub",
             "source": "掘金 · 人工智能本周最热",
             "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 86,
             "label": "infra_compute",
             "labelName": "算力基础设施",
             "reason": "matched_ai_signal",
@@ -2738,7 +2381,8 @@
             "siteName": "TopHub",
             "source": "Readhub · AI",
             "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 86,
             "label": "infra_compute",
             "labelName": "算力基础设施",
             "reason": "matched_ai_signal",
@@ -2756,118 +2400,14 @@
             "siteName": "TopHub",
             "source": "Readhub · AI",
             "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 86,
             "label": "infra_compute",
             "labelName": "算力基础设施",
             "reason": "matched_ai_signal",
             "signals": [
               "算力",
               "芯片"
-            ]
-          },
-          {
-            "id": "60a0af9d5cd77011c3384cff2a1eb4b40f4ad58b",
-            "title": "深圳「十五五」规划纲要：到 2030 年全市实时可用算力规模超 150EFlops，国产芯片部分指标和算力集群达到国际先进水平",
-            "titleEn": "",
-            "url": "https://wallstreetcn.com/livenews/3109192",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "Readhub · AI",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 65,
-            "label": "infra_compute",
-            "labelName": "算力基础设施",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "算力",
-              "芯片"
-            ]
-          },
-          {
-            "id": "0258d4ef0da3def2168d58f856e1f1bd92c6f519",
-            "title": "深圳「十五五」规划纲要：到 2030 年全市实时可用算力规模超 150EFlops 国产芯片部分指标和算力集群达到国际先进水平",
-            "titleEn": "",
-            "url": "https://finance.sina.com.cn/roll/2026-05-26/doc-inhzevau9188027.shtml",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "Readhub · AI",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 65,
-            "label": "infra_compute",
-            "labelName": "算力基础设施",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "算力",
-              "芯片"
-            ]
-          },
-          {
-            "id": "ad4aafe8a21dc78ef0e4b66b2f48d4f978db5ed1",
-            "title": "深圳「十五五」规划纲要：到 2030 年全市实时可用算力规模超 150EFlops",
-            "titleEn": "",
-            "url": "https://finance.sina.com.cn/stock/t/2026-05-26/doc-inhzevaw1637621.shtml",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "Readhub · AI",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 65,
-            "label": "infra_compute",
-            "labelName": "算力基础设施",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "算力"
-            ]
-          },
-          {
-            "id": "3210a58b28cd133001ff5a724064cb93d6b5d655",
-            "title": "深圳“十五五”规划纲要：到2030年，全市实时可用算力规模超150EFlops",
-            "titleEn": "",
-            "url": "https://36kr.com/newsflashes/3825629500232326?f=rss",
-            "siteId": "iris",
-            "siteName": "Info Flow",
-            "source": "36氪 (36Kr)",
-            "publishedAt": "2026-05-26T04:31:34Z",
-            "score": 65,
-            "label": "infra_compute",
-            "labelName": "算力基础设施",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "算力"
-            ]
-          },
-          {
-            "id": "adcda28a2f6bcdbbcc9a6dc85bc2cca9166b72a3",
-            "title": "普华永道合伙人：客户愿意花5倍价钱买AI服务，AI让软件边界溃退，万亿美元算力投资谁会亏？",
-            "titleEn": "",
-            "url": "https://www.huxiu.com/article/4861551.html?f=rss",
-            "siteId": "iris",
-            "siteName": "Info Flow",
-            "source": "虎嗅 (Huxiu)",
-            "publishedAt": "2026-05-26T04:22:40Z",
-            "score": 65,
-            "label": "infra_compute",
-            "labelName": "算力基础设施",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "算力",
-              "软件"
-            ]
-          },
-          {
-            "id": "a4d14708ebdccb9ce455c91490a9dcb2689e161c",
-            "title": "思特威、紫光展锐联手布局 MicroLED 高速光互连，打造国产化 AI 算力集群短距高速互连方案",
-            "titleEn": "",
-            "url": "https://www.ithome.com/0/955/169.htm",
-            "siteId": "iris",
-            "siteName": "Info Flow",
-            "source": "IT之家 (ITHome)",
-            "publishedAt": "2026-05-26T02:23:37Z",
-            "score": 65,
-            "label": "infra_compute",
-            "labelName": "算力基础设施",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "算力"
             ]
           }
         ]
@@ -2878,36 +2418,79 @@
         "count": 20,
         "items": [
           {
-            "id": "38f5bbfacafded030bc6c0e2ff9c9384773ecc6d",
-            "title": "漳州试水“一人公司”新范式：AI 赋能，“单人成军”抢滩数字贸易",
+            "id": "057827ec448d3a11832851e1f10510c6e947cfb7",
+            "title": "Anthropic 联合创始人奥拉：人工智能的发展不能仅由科技公司主导",
             "titleEn": "",
-            "url": "https://www.aibase.com/news/28299",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T04:44:17.617987Z",
-            "score": 100,
-            "label": "industry_business",
-            "labelName": "产业商业",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
-          },
-          {
-            "id": "e2ddda6cc002b5c5be7c0e75b926a5afa25de4d9",
-            "title": "AI 应用公司，已经到了最危险的时刻",
-            "titleEn": "",
-            "url": "https://www.huxiu.com/article/4861468.html?f=rss",
+            "url": "https://www.ithome.com/0/955/033.htm",
             "siteId": "iris",
             "siteName": "Info Flow",
-            "source": "虎嗅 (Huxiu)",
-            "publishedAt": "2026-05-26T00:07:32Z",
-            "score": 65,
+            "source": "IT之家 (ITHome)",
+            "publishedAt": "2026-05-25T12:34:37Z",
+            "rawScore": 65,
+            "score": 83,
             "label": "industry_business",
             "labelName": "产业商业",
             "reason": "matched_ai_signal",
-            "signals": []
+            "signals": [
+              "anthropic",
+              "人工智能"
+            ]
+          },
+          {
+            "id": "0ee5f732f2eacca8dbf8e2781be0f72ace82adf3",
+            "title": "Anthropic公司的“Glasswing”项目不仅发现了这些漏洞，还揭示了网络安全中真正存在的漏洞。 - CTech",
+            "titleEn": "",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9zc191MjAwQXdtZDdlclhNdlhrbWE4OEh1a0x2bWNZYS1lZmFoTXo5V3VGekxSN0IzTE81d050YUVjMGd2VE1MQ0d0NkZmMkw2clhKRmRPMS1YdWY4b0NFUFlKZ0huN0tOY2c?oc=5&hl=en-US&gl=US&ceid=US%3Aen",
+            "siteId": "buzzing",
+            "siteName": "Buzzing",
+            "source": "news.google.com",
+            "publishedAt": "2026-05-25T04:47:53.425000Z",
+            "rawScore": 65,
+            "score": 83,
+            "label": "industry_business",
+            "labelName": "产业商业",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "anthropic"
+            ]
+          },
+          {
+            "id": "2d13916d5d32164ba25dcf01916bff3634605ad9",
+            "title": "Anthropic公司的奥拉表示，人工智能必须在科技巨头之外受到引导",
+            "titleEn": "",
+            "url": "https://www.reuters.com/world/europe/anthropics-olah-says-ai-must-be-guided-outside-big-tech-2026-05-25",
+            "siteId": "buzzing",
+            "siteName": "Buzzing",
+            "source": "www.reuters.com",
+            "publishedAt": "2026-05-25T10:39:43.981000Z",
+            "rawScore": 65,
+            "score": 82,
+            "label": "industry_business",
+            "labelName": "产业商业",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "anthropic",
+              "人工智能"
+            ]
+          },
+          {
+            "id": "f3b907e2d1a93fffe9bcac853cd82bd19ec5bd96",
+            "title": "Anthropic公司的奥拉表示，人工智能必须在科技巨头之外受到引导",
+            "titleEn": "",
+            "url": "https://reut.rs/4uqE8zT",
+            "siteId": "buzzing",
+            "siteName": "Buzzing",
+            "source": "reut.rs",
+            "publishedAt": "2026-05-25T10:39:43.450000Z",
+            "rawScore": 65,
+            "score": 82,
+            "label": "industry_business",
+            "labelName": "产业商业",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "anthropic",
+              "人工智能"
+            ]
           },
           {
             "id": "2f1ac03758587535b387effb6da58c7042c6dd65",
@@ -2918,123 +2501,8 @@
             "siteName": "Info Flow",
             "source": "36氪 (36Kr)",
             "publishedAt": "2026-05-25T23:58:31Z",
-            "score": 65,
-            "label": "industry_business",
-            "labelName": "产业商业",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "人工智能"
-            ]
-          },
-          {
-            "id": "31644d7ea9dce1bea05229bc082d910ef22d5add",
-            "title": "Palantir 是增长最快的人工智能公司之一，但这是否意味着值得买入？",
-            "titleEn": "",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/palantir-1-fastest-growing-ai-130000420.html",
-            "siteId": "buzzing",
-            "siteName": "Buzzing",
-            "source": "finance.yahoo.com",
-            "publishedAt": "2026-05-25T21:49:59.977000Z",
-            "score": 65,
-            "label": "industry_business",
-            "labelName": "产业商业",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "人工智能"
-            ]
-          },
-          {
-            "id": "10954be8caed6fd7e9a545ed044d9cf31a2fb730",
-            "title": "这家AI公司财报中那个改变一切的关键数字",
-            "titleEn": "",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/1-number-ai-companys-earnings-111000394.html",
-            "siteId": "buzzing",
-            "siteName": "Buzzing",
-            "source": "finance.yahoo.com",
-            "publishedAt": "2026-05-25T20:14:56.341000Z",
-            "score": 65,
-            "label": "industry_business",
-            "labelName": "产业商业",
-            "reason": "matched_ai_signal",
-            "signals": []
-          },
-          {
-            "id": "35376842e6a2541730c9364356b87985e60bd766",
-            "title": "SpaceX的IPO图表显示，该公司在支出方面堪比人工智能巨头：今日图表",
-            "titleEn": "",
-            "url": "https://finance.yahoo.com/markets/article/spacexs-ipo-charts-reveal-a-company-spending-like-an-ai-giant-chart-of-the-day-120213160.html",
-            "siteId": "buzzing",
-            "siteName": "Buzzing",
-            "source": "finance.yahoo.com",
-            "publishedAt": "2026-05-25T18:22:55.127000Z",
-            "score": 65,
-            "label": "industry_business",
-            "labelName": "产业商业",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "人工智能"
-            ]
-          },
-          {
-            "id": "8340c3e83540d5bd2584bf74c71aac4b3d52023e",
-            "title": "塔吉特正大力推进人工智能的深度应用，并重新审视基于使用量的定价模式，该公司印度区负责人表示",
-            "titleEn": "",
-            "url": "https://www.reuters.com/business/retail-consumer/target-india-head-says-retailer-weighing-ai-tool-costs-amid-shift-usage-based-2026-05-25",
-            "siteId": "buzzing",
-            "siteName": "Buzzing",
-            "source": "www.reuters.com",
-            "publishedAt": "2026-05-25T17:03:03.178000Z",
-            "score": 65,
-            "label": "industry_business",
-            "labelName": "产业商业",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "人工智能"
-            ]
-          },
-          {
-            "id": "1e2013ffc9385a29d54aa72b57955a66bf2d4311",
-            "title": "最具争议的1人AI 公司融了3000万美金，估值达到了2.5亿",
-            "titleEn": "",
-            "url": "https://www.huxiu.com/article/4861419.html?f=rss",
-            "siteId": "iris",
-            "siteName": "Info Flow",
-            "source": "虎嗅 (Huxiu)",
-            "publishedAt": "2026-05-25T13:52:35Z",
-            "score": 65,
-            "label": "industry_business",
-            "labelName": "产业商业",
-            "reason": "matched_ai_signal",
-            "signals": []
-          },
-          {
-            "id": "057827ec448d3a11832851e1f10510c6e947cfb7",
-            "title": "Anthropic 联合创始人奥拉：人工智能的发展不能仅由科技公司主导",
-            "titleEn": "",
-            "url": "https://www.ithome.com/0/955/033.htm",
-            "siteId": "iris",
-            "siteName": "Info Flow",
-            "source": "IT之家 (ITHome)",
-            "publishedAt": "2026-05-25T12:34:37Z",
-            "score": 65,
-            "label": "industry_business",
-            "labelName": "产业商业",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "anthropic",
-              "人工智能"
-            ]
-          },
-          {
-            "id": "2a136d5ca9983faca54b9e9ce33fc091eaeca327",
-            "title": "塔吉特印度区负责人表示，随着定价模式转向按使用量计费，该公司正在权衡人工智能工具的成本",
-            "titleEn": "",
-            "url": "https://www.reuters.com/business/retail-consumer/target-india-head-says-retailer-weighing-ai-tool-costs-amid-shift-usage-based-2026-05-25",
-            "siteId": "buzzing",
-            "siteName": "Buzzing",
-            "source": "www.reuters.com",
-            "publishedAt": "2026-05-25T11:59:50.569000Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 81,
             "label": "industry_business",
             "labelName": "产业商业",
             "reason": "matched_ai_signal",
@@ -3050,23 +2518,6 @@
         "count": 18,
         "items": [
           {
-            "id": "a237ce782885d4aa2559071097483cdf522106ee",
-            "title": "物理AI时代的“视觉基建”：奥比中光如何重塑机器人感知？",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28290",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T04:44:17.617987Z",
-            "score": 100,
-            "label": "robotics",
-            "labelName": "机器人",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
-          },
-          {
             "id": "dbb0f5944153816d3f82cc7b0aa9cdc1dd33790c",
             "title": "深圳「十五五」规划纲要：大力发展人工智能终端、具身智能机器人等一批新兴支柱产业",
             "titleEn": "",
@@ -3075,12 +2526,33 @@
             "siteName": "TopHub",
             "source": "Readhub · AI",
             "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 66,
+            "rawScore": 66,
+            "score": 87,
             "label": "robotics",
             "labelName": "机器人",
             "reason": "matched_ai_signal",
             "signals": [
               "人工智能",
+              "具身智能",
+              "具身",
+              "机器人"
+            ]
+          },
+          {
+            "id": "e2708742c7f740005fa76157b3fbadfffac7b8f0",
+            "title": "深圳“十五五”规划纲要：提升具身智能机器人发展能级，打造全球具身智能科技创新和产业发展高地",
+            "titleEn": "",
+            "url": "https://36kr.com/newsflashes/3825615213597317?f=rss",
+            "siteId": "iris",
+            "siteName": "Info Flow",
+            "source": "36氪 (36Kr)",
+            "publishedAt": "2026-05-26T04:17:02Z",
+            "rawScore": 65,
+            "score": 87,
+            "label": "robotics",
+            "labelName": "机器人",
+            "reason": "matched_ai_signal",
+            "signals": [
               "具身智能",
               "具身",
               "机器人"
@@ -3095,7 +2567,8 @@
             "siteName": "Buzzing",
             "source": "www.bloomberg.com",
             "publishedAt": "2026-05-26T04:29:59.660000Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 85,
             "label": "robotics",
             "labelName": "机器人",
             "reason": "matched_ai_signal",
@@ -3113,49 +2586,14 @@
             "siteName": "NewsNow",
             "source": "36kr",
             "publishedAt": "2026-05-26T04:17:08.365000Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 85,
             "label": "robotics",
             "labelName": "机器人",
             "reason": "matched_ai_signal",
             "signals": [
               "具身智能",
               "具身",
-              "机器人"
-            ]
-          },
-          {
-            "id": "e2708742c7f740005fa76157b3fbadfffac7b8f0",
-            "title": "深圳“十五五”规划纲要：提升具身智能机器人发展能级，打造全球具身智能科技创新和产业发展高地",
-            "titleEn": "",
-            "url": "https://36kr.com/newsflashes/3825615213597317?f=rss",
-            "siteId": "iris",
-            "siteName": "Info Flow",
-            "source": "36氪 (36Kr)",
-            "publishedAt": "2026-05-26T04:17:02Z",
-            "score": 65,
-            "label": "robotics",
-            "labelName": "机器人",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "具身智能",
-              "具身",
-              "机器人"
-            ]
-          },
-          {
-            "id": "f9ca343946f823795284eb5e32166c0cfa89a180",
-            "title": "13 只机器人主题 ETF 总规模达 574 亿元",
-            "titleEn": "",
-            "url": "https://36kr.com/newsflashes/3825306996544131?f=rss",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "Readhub · AI",
-            "publishedAt": "2026-05-26T00:05:49.025681Z",
-            "score": 65,
-            "label": "robotics",
-            "labelName": "机器人",
-            "reason": "matched_ai_signal",
-            "signals": [
               "机器人"
             ]
           },
@@ -3168,64 +2606,13 @@
             "siteName": "TechURLs",
             "source": "TechRadar",
             "publishedAt": "2026-05-25T22:15:00Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 84,
             "label": "robotics",
             "labelName": "机器人",
             "reason": "matched_ai_signal",
             "signals": [
               "robot"
-            ]
-          },
-          {
-            "id": "4fc470b4404d30fb17ba18eccc0d66f02c34ff4a",
-            "title": "中国正在为每个人形机器人分配一个 29 个字符的 ID 代码，超过 28,000 个机器人已经拥有一个",
-            "titleEn": "China is giving every humanoid robot a 29-character ID code, and over 28,000 already have one",
-            "url": "https://thenextweb.com/news/china-humanoid-robot-id-system-lifecycle-tracking",
-            "siteId": "techurls",
-            "siteName": "TechURLs",
-            "source": "The Next Web",
-            "publishedAt": "2026-05-25T19:04:01Z",
-            "score": 65,
-            "label": "robotics",
-            "labelName": "机器人",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "robot"
-            ]
-          },
-          {
-            "id": "188cc1aa8ebeac9fee31b3d363e54c45a995bc18",
-            "title": "1100 亿的赌注：中国机器人离赢钱还差五年！",
-            "titleEn": "",
-            "url": "https://finance.sina.com.cn/wm/2026-05-25/doc-inhzchzh3486290.shtml",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "Readhub · AI",
-            "publishedAt": "2026-05-25T12:35:08.931275Z",
-            "score": 65,
-            "label": "robotics",
-            "labelName": "机器人",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "机器人"
-            ]
-          },
-          {
-            "id": "750f557f2dd400a078ab93c6484245406c7c5b24",
-            "title": "汇川技术：公司认为人形机器人产业仍处于非常早期阶段",
-            "titleEn": "",
-            "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-05-25/doc-inhzchzf5012644.shtml",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "Readhub · AI",
-            "publishedAt": "2026-05-25T12:35:08.931275Z",
-            "score": 65,
-            "label": "robotics",
-            "labelName": "机器人",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "技术",
-              "机器人"
             ]
           }
         ]
@@ -3236,20 +2623,21 @@
         "count": 15,
         "items": [
           {
-            "id": "409d6bc3891fbfb6ec77683c2115881ea419821b",
-            "title": "AIGCPanel 2.0.0 重磅更新：工作流引擎开启“一键化”数字人创作新纪元",
+            "id": "bd577731c5bef0c4f2ce2d30105bccf766c95d25",
+            "title": "Show HN: AgentToolBench-Code – 人工智能编码代理的安全性基准测试",
             "titleEn": "",
-            "url": "https://www.aibase.com/news/28330",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
+            "url": "https://gist.github.com/allenwu-blip/fa2bd0218b93a1d7aef765817e3c6608",
+            "siteId": "buzzing",
+            "siteName": "Buzzing",
+            "source": "gist.github.com",
+            "publishedAt": "2026-05-26T03:57:53.247000Z",
+            "rawScore": 65,
+            "score": 88,
             "label": "agent_workflow",
             "labelName": "Agent 工作流",
-            "reason": "trusted_ai_source_default_keep",
+            "reason": "matched_ai_signal",
             "signals": [
-              "aigc"
+              "人工智能"
             ]
           },
           {
@@ -3261,7 +2649,8 @@
             "siteName": "OPML RSS",
             "source": "InfoQ CN",
             "publishedAt": "2026-05-25T14:53:04Z",
-            "score": 70,
+            "rawScore": 70,
+            "score": 87,
             "label": "agent_workflow",
             "labelName": "Agent 工作流",
             "reason": "matched_ai_signal",
@@ -3270,20 +2659,39 @@
             ]
           },
           {
-            "id": "bd577731c5bef0c4f2ce2d30105bccf766c95d25",
-            "title": "Show HN: AgentToolBench-Code – 人工智能编码代理的安全性基准测试",
+            "id": "f9faa5c3d49085a0aca6fe11240451cd8a0a2094",
+            "title": "[AI Agent 智能体] MiMo Token 激励计划：你们拿它做出了什么？",
             "titleEn": "",
-            "url": "https://gist.github.com/allenwu-blip/fa2bd0218b93a1d7aef765817e3c6608",
-            "siteId": "buzzing",
-            "siteName": "Buzzing",
-            "source": "gist.github.com",
-            "publishedAt": "2026-05-26T03:57:53.247000Z",
-            "score": 65,
+            "url": "https://www.v2ex.com/t/1215505",
+            "siteId": "iris",
+            "siteName": "Info Flow",
+            "source": "V2EX (创意工作者社区)",
+            "publishedAt": "2026-05-26T03:15:30Z",
+            "rawScore": 65,
+            "score": 87,
             "label": "agent_workflow",
             "labelName": "Agent 工作流",
             "reason": "matched_ai_signal",
             "signals": [
-              "人工智能"
+              "智能体"
+            ]
+          },
+          {
+            "id": "409d6bc3891fbfb6ec77683c2115881ea419821b",
+            "title": "AIGCPanel 2.0.0 重磅更新：工作流引擎开启“一键化”数字人创作新纪元",
+            "titleEn": "",
+            "url": "https://www.aibase.com/news/28330",
+            "siteId": "aibase",
+            "siteName": "AIbase",
+            "source": "AIbase",
+            "publishedAt": "2026-05-26T04:43:26.324832Z",
+            "rawScore": 100,
+            "score": 86,
+            "label": "agent_workflow",
+            "labelName": "Agent 工作流",
+            "reason": "trusted_ai_source_default_keep",
+            "signals": [
+              "aigc"
             ]
           },
           {
@@ -3295,105 +2703,8 @@
             "siteName": "Info Flow",
             "source": "IT之家 (ITHome)",
             "publishedAt": "2026-05-26T03:49:06Z",
-            "score": 65,
-            "label": "agent_workflow",
-            "labelName": "Agent 工作流",
-            "reason": "matched_ai_signal",
-            "signals": []
-          },
-          {
-            "id": "f9faa5c3d49085a0aca6fe11240451cd8a0a2094",
-            "title": "[AI Agent 智能体] MiMo Token 激励计划：你们拿它做出了什么？",
-            "titleEn": "",
-            "url": "https://www.v2ex.com/t/1215505",
-            "siteId": "iris",
-            "siteName": "Info Flow",
-            "source": "V2EX (创意工作者社区)",
-            "publishedAt": "2026-05-26T03:15:30Z",
-            "score": 65,
-            "label": "agent_workflow",
-            "labelName": "Agent 工作流",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "智能体"
-            ]
-          },
-          {
-            "id": "34583135e745cc2cdd1bc23c8b91bcb1062c7c6d",
-            "title": "上海：鼓励企业打造 AI 微短剧技能库、智能体",
-            "titleEn": "",
-            "url": "https://finance.sina.com.cn/jjxw/2026-05-26/doc-inhzeknx2445750.shtml",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "Readhub · AI",
-            "publishedAt": "2026-05-26T00:05:49.025681Z",
-            "score": 65,
-            "label": "agent_workflow",
-            "labelName": "Agent 工作流",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "智能体"
-            ]
-          },
-          {
-            "id": "b6d9913ee2a263596ca53ce527b2bb46c7c831a5",
-            "title": "这些人工智能专家每天向华尔街银行收取25,000美元",
-            "titleEn": "",
-            "url": "https://www.bloomberg.com/news/features/2026-05-25/the-ai-trainers-charging-25-000-a-day-to-push-wall-street-s-agentic-shift",
-            "siteId": "buzzing",
-            "siteName": "Buzzing",
-            "source": "www.bloomberg.com",
-            "publishedAt": "2026-05-25T23:09:55.773000Z",
-            "score": 65,
-            "label": "agent_workflow",
-            "labelName": "Agent 工作流",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "人工智能"
-            ]
-          },
-          {
-            "id": "6042fca348514590bf1b62c464ba0c95f3a36adb",
-            "title": "Show HN: Nerve——AI 智能体的自托管运行时环境",
-            "titleEn": "",
-            "url": "https://github.com/ClickHouse/nerve",
-            "siteId": "buzzing",
-            "siteName": "Buzzing",
-            "source": "github.com",
-            "publishedAt": "2026-05-25T22:53:44.207000Z",
-            "score": 65,
-            "label": "agent_workflow",
-            "labelName": "Agent 工作流",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "智能体"
-            ]
-          },
-          {
-            "id": "9eb5b817f6f4a2fdf0c4322d1fc268d34b2ffbd8",
-            "title": "代理模式",
-            "titleEn": "Agentic Patterns",
-            "url": "https://veso.ai/research/agentic-patterns",
-            "siteId": "techurls",
-            "siteName": "TechURLs",
-            "source": "Hacker News",
-            "publishedAt": "2026-05-25T22:32:57Z",
-            "score": 65,
-            "label": "agent_workflow",
-            "labelName": "Agent 工作流",
-            "reason": "matched_ai_signal",
-            "signals": []
-          },
-          {
-            "id": "716c19c66f144d10bd43303a8800a62f6772e7a2",
-            "title": "Show HN: 适用于 Obsidian 的 Feynman AI 研究助手插件",
-            "titleEn": "",
-            "url": "https://community.obsidian.md/plugins/feynman-research-agent",
-            "siteId": "buzzing",
-            "siteName": "Buzzing",
-            "source": "community.obsidian.md",
-            "publishedAt": "2026-05-25T16:47:05.650000Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 85,
             "label": "agent_workflow",
             "labelName": "Agent 工作流",
             "reason": "matched_ai_signal",
@@ -3407,23 +2718,6 @@
         "count": 9,
         "items": [
           {
-            "id": "f593e0d0963a7611c23e10c0b72df2d478aafbc2",
-            "title": "单季吸金超千亿，AI创投潮涌掀起技术迭代新风暴",
-            "titleEn": "",
-            "url": "https://www.aibase.com/news/28298",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T04:44:17.617987Z",
-            "score": 100,
-            "label": "ai_tech",
-            "labelName": "ai_tech",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "aibase"
-            ]
-          },
-          {
             "id": "8754b30d354dfb65553d2d17cbc3052c35bc2dda",
             "title": "人工智能无法加速软件交付",
             "titleEn": "",
@@ -3432,48 +2726,14 @@
             "siteName": "OPML RSS",
             "source": "InfoQ CN",
             "publishedAt": "2026-05-25T11:19:57Z",
-            "score": 74,
+            "rawScore": 74,
+            "score": 85,
             "label": "ai_tech",
             "labelName": "ai_tech",
             "reason": "matched_ai_signal",
             "signals": [
               "人工智能",
               "软件"
-            ]
-          },
-          {
-            "id": "cc765003af2e9df42e1516bb90211f38997a07d1",
-            "title": "爱玛 × 华为达成合作，两轮车有望支持智能行车辅助系统、星闪等技术",
-            "titleEn": "",
-            "url": "https://www.ithome.com/0/955/085.htm",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "Readhub · AI",
-            "publishedAt": "2026-05-26T00:05:49.025681Z",
-            "score": 65,
-            "label": "ai_tech",
-            "labelName": "ai_tech",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "技术"
-            ]
-          },
-          {
-            "id": "2f1777fab05df101e32cbd22b4175fe2fbb864ef",
-            "title": "【企业风采】海淀企业光轮智能加入国际开源物理仿真引擎技术指导委员会！",
-            "titleEn": "",
-            "url": "https://finance.sina.com.cn/wm/2026-05-26/doc-inhzeknu3057582.shtml",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "Readhub · AI",
-            "publishedAt": "2026-05-26T00:05:49.025681Z",
-            "score": 65,
-            "label": "ai_tech",
-            "labelName": "ai_tech",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "开源",
-              "技术"
             ]
           },
           {
@@ -3485,13 +2745,51 @@
             "siteName": "Buzzing",
             "source": "github.com",
             "publishedAt": "2026-05-25T16:47:06.712000Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 84,
             "label": "ai_tech",
             "labelName": "ai_tech",
             "reason": "matched_ai_signal",
             "signals": [
               "人工智能",
               "开源"
+            ]
+          },
+          {
+            "id": "2f1777fab05df101e32cbd22b4175fe2fbb864ef",
+            "title": "【企业风采】海淀企业光轮智能加入国际开源物理仿真引擎技术指导委员会！",
+            "titleEn": "",
+            "url": "https://finance.sina.com.cn/wm/2026-05-26/doc-inhzeknu3057582.shtml",
+            "siteId": "tophub",
+            "siteName": "TopHub",
+            "source": "Readhub · AI",
+            "publishedAt": "2026-05-26T00:05:49.025681Z",
+            "rawScore": 65,
+            "score": 83,
+            "label": "ai_tech",
+            "labelName": "ai_tech",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "开源",
+              "技术"
+            ]
+          },
+          {
+            "id": "cc765003af2e9df42e1516bb90211f38997a07d1",
+            "title": "爱玛 × 华为达成合作，两轮车有望支持智能行车辅助系统、星闪等技术",
+            "titleEn": "",
+            "url": "https://www.ithome.com/0/955/085.htm",
+            "siteId": "tophub",
+            "siteName": "TopHub",
+            "source": "Readhub · AI",
+            "publishedAt": "2026-05-26T00:05:49.025681Z",
+            "rawScore": 65,
+            "score": 80,
+            "label": "ai_tech",
+            "labelName": "ai_tech",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "技术"
             ]
           },
           {
@@ -3503,65 +2801,13 @@
             "siteName": "Info Flow",
             "source": "Lobsters (技术社区)",
             "publishedAt": "2026-05-25T16:17:21Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 80,
             "label": "ai_tech",
             "labelName": "ai_tech",
             "reason": "matched_ai_signal",
             "signals": [
               "技术"
-            ]
-          },
-          {
-            "id": "06654d44ee0c89df80c23dbab105a25e13546e5a",
-            "title": "「技术er迷惑行为大赏 & 520不拘形式，自在过节」获奖名单公示｜本周互动话题上新🎊",
-            "titleEn": "",
-            "url": "https://juejin.cn/post/7643394566724665378",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "掘金 · 人工智能本周最热",
-            "publishedAt": "2026-05-25T15:50:47.883702Z",
-            "score": 65,
-            "label": "ai_tech",
-            "labelName": "ai_tech",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "人工智能",
-              "技术"
-            ]
-          },
-          {
-            "id": "70087fe96bb226acaf929921ec9e025d563bc9d2",
-            "title": "第六届车用动力系统国际论坛：长城汽车深耕全域动力技术，赋能全球化布局",
-            "titleEn": "",
-            "url": "https://finance.sina.com.cn/stock/relnews/hk/2026-05-25/doc-inhzchzf5027923.shtml",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "Readhub · AI",
-            "publishedAt": "2026-05-25T12:35:08.931275Z",
-            "score": 65,
-            "label": "ai_tech",
-            "labelName": "ai_tech",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "技术"
-            ]
-          },
-          {
-            "id": "139c03630ad6fd3d68f14940a8ac7b1e4e235272",
-            "title": "Yansu - 能够学习你的工作方式并将其转化为软件的人工智能",
-            "titleEn": "",
-            "url": "https://www.producthunt.com/r/YAPEOVBKBZUMNZ",
-            "siteId": "buzzing",
-            "siteName": "Buzzing",
-            "source": "www.producthunt.com",
-            "publishedAt": "2026-05-25T07:59:53.229000Z",
-            "score": 65,
-            "label": "ai_tech",
-            "labelName": "ai_tech",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "人工智能",
-              "软件"
             ]
           }
         ]
@@ -3580,7 +2826,8 @@
             "siteName": "AIbase",
             "source": "AIbase",
             "publishedAt": "2026-05-26T04:43:26.324832Z",
-            "score": 100,
+            "rawScore": 100,
+            "score": 86,
             "label": "research_paper",
             "labelName": "research_paper",
             "reason": "trusted_ai_source_default_keep",
@@ -3589,20 +2836,23 @@
             ]
           },
           {
-            "id": "ca302a9a6f8ef3d3cd108f34745b0da859e0b5ed",
-            "title": "蚂蚁灵波LingBot-VA论文被机器人顶会RSS2026接收，让机器人边推演、边行动",
+            "id": "0335d14e976f2f1fe1b2ed67d9f0c2714f24cfdf",
+            "title": "花 4.8 万美元自建 GPU 服务器，值不值？一位独立研究者的真实算力账本",
             "titleEn": "",
-            "url": "https://www.aibase.com/news/28297",
-            "siteId": "aibase",
-            "siteName": "AIbase",
-            "source": "AIbase",
-            "publishedAt": "2026-05-25T04:44:17.617987Z",
-            "score": 100,
+            "url": "https://www.oschina.net/news/444365/was-my-48k-gpu-worth-it",
+            "siteId": "tophub",
+            "siteName": "TopHub",
+            "source": "开源中国 · 热门资讯",
+            "publishedAt": "2026-05-25T12:35:08.931275Z",
+            "rawScore": 65,
+            "score": 85,
             "label": "research_paper",
             "labelName": "research_paper",
-            "reason": "trusted_ai_source_default_keep",
+            "reason": "matched_ai_signal",
             "signals": [
-              "aibase"
+              "算力",
+              "gpu",
+              "开源"
             ]
           },
           {
@@ -3614,61 +2864,13 @@
             "siteName": "TopHub",
             "source": "Readhub · AI",
             "publishedAt": "2026-05-26T00:05:49.025681Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 84,
             "label": "research_paper",
             "labelName": "research_paper",
             "reason": "matched_ai_signal",
             "signals": [
               "openai"
-            ]
-          },
-          {
-            "id": "dd1dcbd9ff4202d78b93ca86ccfa13924475ed2e",
-            "title": "9 位获得国际基础研究奖的人都是谁",
-            "titleEn": "",
-            "url": "https://finance.sina.com.cn/jjxw/2026-05-26/doc-inhzctrf2687837.shtml",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "Readhub · AI",
-            "publishedAt": "2026-05-25T17:43:28.783593Z",
-            "score": 65,
-            "label": "research_paper",
-            "labelName": "research_paper",
-            "reason": "matched_ai_signal",
-            "signals": []
-          },
-          {
-            "id": "4221040bbe9d602e5cc7724cf8e6a510d11399ce",
-            "title": "在美伊战争期间，伊朗威胁行为者 Nimbus Manticore 如何使用 AI 辅助恶意软件开发和 SEO 中毒等技术来攻击目标公司 (Check Point Research)",
-            "titleEn": "How Iranian threat actor Nimbus Manticore used techniques like AI-assisted malware development and SEO poisoning to target companies during the US-Iran war (Check Point Research)",
-            "url": "https://www.techmeme.com/260525/p15",
-            "siteId": "techurls",
-            "siteName": "TechURLs",
-            "source": "Techmeme",
-            "publishedAt": "2026-05-25T14:40:01Z",
-            "score": 65,
-            "label": "research_paper",
-            "labelName": "research_paper",
-            "reason": "matched_ai_signal",
-            "signals": []
-          },
-          {
-            "id": "0335d14e976f2f1fe1b2ed67d9f0c2714f24cfdf",
-            "title": "花 4.8 万美元自建 GPU 服务器，值不值？一位独立研究者的真实算力账本",
-            "titleEn": "",
-            "url": "https://www.oschina.net/news/444365/was-my-48k-gpu-worth-it",
-            "siteId": "tophub",
-            "siteName": "TopHub",
-            "source": "开源中国 · 热门资讯",
-            "publishedAt": "2026-05-25T12:35:08.931275Z",
-            "score": 65,
-            "label": "research_paper",
-            "labelName": "research_paper",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "算力",
-              "gpu",
-              "开源"
             ]
           },
           {
@@ -3680,13 +2882,32 @@
             "siteName": "Buzzing",
             "source": "news.ycombinator.com",
             "publishedAt": "2026-05-25T10:23:50.751000Z",
-            "score": 65,
+            "rawScore": 65,
+            "score": 83,
             "label": "research_paper",
             "labelName": "research_paper",
             "reason": "matched_ai_signal",
             "signals": [
               "人工智能",
               "开源"
+            ]
+          },
+          {
+            "id": "ca302a9a6f8ef3d3cd108f34745b0da859e0b5ed",
+            "title": "蚂蚁灵波LingBot-VA论文被机器人顶会RSS2026接收，让机器人边推演、边行动",
+            "titleEn": "",
+            "url": "https://www.aibase.com/news/28297",
+            "siteId": "aibase",
+            "siteName": "AIbase",
+            "source": "AIbase",
+            "publishedAt": "2026-05-25T04:44:17.617987Z",
+            "rawScore": 100,
+            "score": 81,
+            "label": "research_paper",
+            "labelName": "research_paper",
+            "reason": "trusted_ai_source_default_keep",
+            "signals": [
+              "aibase"
             ]
           }
         ]
