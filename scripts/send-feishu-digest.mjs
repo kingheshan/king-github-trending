@@ -15,6 +15,7 @@ const FEISHU_WEBHOOK_URL = process.env.FEISHU_WEBHOOK_URL || '';
 const FEISHU_WEBHOOK_SECRET = process.env.FEISHU_WEBHOOK_SECRET || '';
 const FEISHU_DIGEST_FORCE = process.env.FEISHU_DIGEST_FORCE === '1';
 const FEISHU_DIGEST_DRY_RUN = process.env.FEISHU_DIGEST_DRY_RUN === '1';
+const DIGEST_VERSION = 'compact-card-v2';
 
 function loadLocalEnv() {
   const file = path.resolve('.env.local');
@@ -34,6 +35,15 @@ function loadLocalEnv() {
 
 function compactText(value) {
   return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+function truncate(value, max) {
+  const text = compactText(value);
+  return text.length > max ? `${text.slice(0, max - 1)}…` : text;
+}
+
+function safeLinkText(value) {
+  return compactText(value).replace(/[\[\]\n]/g, ' ');
 }
 
 function hash(value) {
@@ -129,11 +139,10 @@ function topRepos(data) {
 function fallbackDigest(data, items) {
   return {
     title: `RepoPulse 每日 AI 热点 Top 10 · ${formatDate(data.meta?.generatedAt)}`,
-    executiveSummary: `过去 24 小时共捕捉 ${data.radar?.total || items.length} 条 AI/科技信号。今日重点集中在模型发布、Agent 工作流、开发工具和产业应用，建议优先关注能够改变开发效率、内容生产或产品形态的更新。`,
+    executiveSummary: `过去 24 小时捕捉 ${data.radar?.total || items.length} 条 AI/科技信号，优先关注模型发布、Agent 工作流、开发工具和产业应用。`,
     takeaways: [
-      '先看高评分且多来源重复出现的主题，通常代表短期关注度正在集中。',
-      '对工具类项目建议当天试跑，判断是否能进入个人或团队工作流。',
-      '对模型和平台更新建议关注成本、可用区域、API 兼容性和迁移门槛。'
+      '高评分且多来源重复出现的主题，通常代表短期关注正在集中。',
+      '工具类项目建议当天试跑，模型和平台更新重点看成本、区域和迁移门槛。'
     ],
     items: items.map((item, index) => ({
       rank: index + 1,
@@ -158,10 +167,11 @@ async function callDeepSeekDigest(data, items) {
   if (!DEEPSEEK_API_KEY) return fallbackDigest(data, items);
 
   const prompt = [
-    '你是一个中文 AI/科技资讯雷达编辑。请基于 RepoPulse 网站最新数据，提炼今日最值得发到飞书的 TOP 10 热门内容。',
-    '输出严格 JSON，不要 Markdown，不要代码块。字段：title、executiveSummary（120-180字）、takeaways（三条）、items。',
-    'items 每项字段：rank、title、source、category、why（40-70字，说明为什么值得看）、action（20-40字，给读者下一步建议）、url。',
-    '排序标准：热度评分、AI 相关性、对产品/研发/商业判断的价值、来源多样性。',
+    '你是中文 AI/科技资讯雷达编辑。请基于 RepoPulse 最新数据，提炼适合飞书卡片的 TOP 10 热门内容。',
+    '输出严格 JSON，不要 Markdown，不要代码块。字段：title、executiveSummary、takeaways、items。',
+    'executiveSummary 限 60-90 字，只说今天最重要的判断。takeaways 只给 2 条，每条 20-35 字。',
+    'items 每项字段：rank、title、source、category、why、action、url。why 限 22-36 字，action 限 10-22 字。',
+    '排序标准：热度评分、AI 相关性、对产品/研发/商业判断的价值、来源多样性。不要写套话。',
     `站点地址：${SITE_URL}`,
     `数据更新时间：${data.meta?.generatedAt || ''}`,
     `AI 雷达总信号：${data.radar?.total || 0}`,
@@ -211,32 +221,86 @@ async function writeCache(cache) {
   await writeFile(CACHE_FILE, `${JSON.stringify(cache, null, 2)}\n`, 'utf8');
 }
 
-function toFeishuPost(digest, data) {
-  const content = [];
-  content.push([{ tag: 'text', text: `${digest.executiveSummary}\n` }]);
-  content.push([{ tag: 'text', text: `站点：` }, { tag: 'a', text: 'RepoPulse', href: SITE_URL }]);
-  content.push([{ tag: 'text', text: `数据：AI 雷达 ${data.radar?.total || 0} 条 · 来源分组 ${data.radar?.sourceCount || 0} · ${formatDate(data.meta?.generatedAt)}\n` }]);
+function markdownLink(title, url) {
+  return `[${safeLinkText(title)}](${url})`;
+}
 
-  (digest.takeaways || []).slice(0, 3).forEach((item, index) => {
-    content.push([{ tag: 'text', text: `洞察 ${index + 1}：${compactText(item)}` }]);
-  });
+function itemLine(item, index) {
+  const rank = item.rank || index + 1;
+  const title = markdownLink(truncate(item.title, index < 3 ? 42 : 34), item.url);
+  const meta = [truncate(item.source, 18), truncate(item.category, 12)].filter(Boolean).join(' · ');
+  if (index < 3) {
+    return `**${rank}. ${title}**\n${meta}\n${truncate(item.why, 46)}`;
+  }
+  return `**${rank}. ${title}**\n${meta}`;
+}
 
-  (digest.items || []).slice(0, 10).forEach((item, index) => {
-    const rank = item.rank || index + 1;
-    content.push([
-      { tag: 'text', text: `\n#${rank} ${compactText(item.title)}\n${compactText(item.source)} · ${compactText(item.category)}\n价值：${compactText(item.why)}\n建议：${compactText(item.action)}\n` },
-      { tag: 'a', text: '查看原文', href: item.url }
-    ]);
-  });
+function toFeishuCard(digest, data) {
+  const summary = truncate(digest.executiveSummary, 96);
+  const takeaways = (digest.takeaways || [])
+    .slice(0, 2)
+    .map((item, index) => `${index + 1}. ${truncate(item, 42)}`)
+    .join('\n');
+
+  const elements = [
+    {
+      tag: 'markdown',
+      content: `**今日判断**\n${summary}`,
+      text_align: 'left',
+      text_size: 'normal_v2',
+      margin: '0px 0px 8px 0px'
+    },
+    {
+      tag: 'markdown',
+      content: `**两条信号**\n${takeaways}`,
+      text_align: 'left',
+      text_size: 'normal_v2',
+      margin: '0px 0px 8px 0px'
+    },
+    { tag: 'hr' },
+    ...((digest.items || []).slice(0, 10).map((item, index) => ({
+      tag: 'markdown',
+      content: itemLine(item, index),
+      text_align: 'left',
+      text_size: 'normal_v2',
+      margin: index === 2 ? '0px 0px 10px 0px' : '0px 0px 6px 0px'
+    }))),
+    { tag: 'hr' },
+    {
+      tag: 'button',
+      text: { tag: 'plain_text', content: '打开 RepoPulse' },
+      type: 'primary',
+      width: 'default',
+      size: 'medium',
+      behaviors: [{ type: 'open_url', default_url: SITE_URL }]
+    }
+  ];
 
   return {
-    msg_type: 'post',
-    content: {
-      post: {
-        zh_cn: {
-          title: digest.title || 'RepoPulse 每日 AI 热点 Top 10',
-          content
+    msg_type: 'interactive',
+    card: {
+      schema: '2.0',
+      config: {
+        update_multi: true,
+        style: {
+          text_size: {
+            normal_v2: { default: 'normal', pc: 'normal', mobile: 'normal' }
+          }
         }
+      },
+      body: {
+        direction: 'vertical',
+        padding: '12px 12px 12px 12px',
+        elements
+      },
+      header: {
+        title: { tag: 'plain_text', content: 'RepoPulse · AI 热点 Top 10' },
+        subtitle: {
+          tag: 'plain_text',
+          content: `${formatDate(data.meta?.generatedAt)} · ${data.radar?.total || 0} 条信号 · ${data.radar?.sourceCount || 0} 来源`
+        },
+        template: 'turquoise',
+        padding: '12px 12px 12px 12px'
       }
     }
   };
@@ -278,13 +342,12 @@ async function sendFeishu(payload) {
 
 function digestMarkdown(digest) {
   const lines = [`# ${digest.title}`, '', digest.executiveSummary, ''];
-  (digest.takeaways || []).forEach((item, index) => lines.push(`- 洞察 ${index + 1}: ${compactText(item)}`));
+  (digest.takeaways || []).slice(0, 2).forEach((item, index) => lines.push(`- 信号 ${index + 1}: ${compactText(item)}`));
   lines.push('');
   (digest.items || []).slice(0, 10).forEach((item, index) => {
     lines.push(`${index + 1}. ${compactText(item.title)}`);
     lines.push(`   - 来源: ${compactText(item.source)} / ${compactText(item.category)}`);
-    lines.push(`   - 价值: ${compactText(item.why)}`);
-    lines.push(`   - 建议: ${compactText(item.action)}`);
+    if (index < 3) lines.push(`   - 价值: ${compactText(item.why)}`);
     lines.push(`   - 链接: ${item.url}`);
   });
   lines.push('');
@@ -298,6 +361,7 @@ async function main() {
   if (!topItems.length) throw new Error('No radar items available for Feishu digest.');
 
   const digestHash = hash({
+    version: DIGEST_VERSION,
     generatedAt: data.meta?.generatedAt,
     items: topItems.map((item) => ({ title: item.title, url: item.url, score: item.score }))
   });
@@ -314,6 +378,7 @@ async function main() {
     }
     entry = {
       hash: digestHash,
+      version: DIGEST_VERSION,
       generatedAt: new Date().toISOString(),
       model: DEEPSEEK_API_KEY ? DEEPSEEK_MODEL : 'fallback',
       digest
@@ -330,7 +395,7 @@ async function main() {
     return;
   }
 
-  const result = await sendFeishu(toFeishuPost(entry.digest, data));
+  const result = await sendFeishu(toFeishuCard(entry.digest, data));
   if (result.skipped) {
     console.log(`Feishu webhook is not configured or dry-run is enabled. Preview: ${PREVIEW_FILE}`);
     return;
