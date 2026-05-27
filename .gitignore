@@ -9,3 +9,4 @@ coverage/
 logs/
 data/feishu-digest-cache.json
 AGENTS.md
+.edgeone/.Token

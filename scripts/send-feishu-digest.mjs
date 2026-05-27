@@ -8,7 +8,7 @@ loadLocalEnv();
 const DATA_FILE = path.resolve('public/data/trending.json');
 const CACHE_FILE = path.resolve('data/feishu-digest-cache.json');
 const PREVIEW_FILE = path.resolve('logs/feishu-digest-preview.md');
-const SITE_URL = process.env.SITE_URL || 'https://kingheshan.github.io/king-github-trending/';
+const SITE_URL = process.env.SITE_URL || 'https://king-github-trending-cn-cvkypafu.edgeone.cool/';
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || '';
 const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-v4-flash';
 const FEISHU_WEBHOOK_URL = process.env.FEISHU_WEBHOOK_URL || '';

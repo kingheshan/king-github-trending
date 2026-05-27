@@ -85,9 +85,7 @@ const fetchFile = install('com.repopulse.fetch', plist('com.repopulse.fetch', 6,
   `${JSON.stringify(nodeBin)} scripts/update-data.mjs`,
 ]));
 const publishFile = install('com.repopulse.publish', plist('com.repopulse.publish', 7, 0, [
-  `${JSON.stringify(nodeBin)} node_modules/vite/bin/vite.js build`,
-  'git add public/data/trending.json data/deepseek-cache.json',
-  'if git diff --cached --quiet; then echo "No data changes to publish."; else git commit -m "chore: daily data refresh" && git push; fi',
+  `${JSON.stringify(nodeBin)} scripts/local-publish.mjs`,
 ]));
 const digestFile = install('com.repopulse.digest', plist('com.repopulse.digest', 8, 0, [
   `${JSON.stringify(nodeBin)} scripts/send-feishu-digest.mjs`,

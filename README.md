@@ -13,7 +13,7 @@ RepoPulse 是一个 GitHub Trending 中文洞察站点，复刻 `github-trending
 - 飞书日报：每天 08:00 用 AI 提炼全站最有价值的 Top 10 热门内容并发送到飞书群
 - 一键复制提示词
 - 本地 launchd 每天 06:00 抓取、07:00 提交并发布、08:00 发送飞书日报
-- GitHub Pages 静态部署
+- EdgeOne Pages 国内入口，GitHub Pages 保留备份
 
 ## 本地开发
 
@@ -40,9 +40,9 @@ npm run install:local-automation
 - `com.repopulse.publish`：每天 07:00 执行 `npm run local:publish`
 - `com.repopulse.digest`：每天 08:00 执行 `npm run local:digest`
 
-日志写入 `logs/` 目录。07:00 任务会先运行构建检查，再提交 `public/data/trending.json` 和 `data/deepseek-cache.json` 的变更并推送到 GitHub。
+日志写入 `logs/` 目录。07:00 任务会先运行构建检查，再提交 `public/data/trending.json` 和 `data/deepseek-cache.json` 的变更并推送到 GitHub，随后把 `dist/` 发布到 EdgeOne Pages。
 08:00 任务会读取最新 `public/data/trending.json`，用 DeepSeek 提炼 Top 10 内容，并通过飞书自定义机器人 webhook 发送。若飞书机器人开启了签名校验，请同时设置 `FEISHU_WEBHOOK_SECRET`。
 
 ## 部署
 
-仓库包含 GitHub Pages 工作流。推送到 `main` 后会自动构建并发布。数据更新工作流保留手动触发入口，日常更新由本地自动化负责。
+仓库包含 GitHub Pages 工作流，作为备份入口继续保留。国内访问优先使用 EdgeOne Pages：`https://king-github-trending-cn-cvkypafu.edgeone.cool/`。数据更新工作流保留手动触发入口，日常更新由本地自动化负责。

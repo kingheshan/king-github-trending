@@ -535,7 +535,7 @@ async function main() {
       generatedAt: new Date().toISOString(),
       source: 'github-trending-search-ai-news-radar',
       timezone: 'Asia/Shanghai',
-      refreshPolicy: 'Local launchd: 06:00 fetch, 07:00 commit and push',
+      refreshPolicy: 'Local launchd: 06:00 fetch, 07:00 publish to GitHub and EdgeOne',
       deepseek
     },
     periods,

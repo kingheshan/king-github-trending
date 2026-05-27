@@ -9,7 +9,7 @@
     "preview": "vite preview --host 127.0.0.1",
     "update-data": "node scripts/update-data.mjs",
     "local:fetch": "zsh scripts/local-fetch.sh",
-    "local:publish": "zsh scripts/local-publish.sh",
+    "local:publish": "node scripts/local-publish.mjs",
     "local:digest": "zsh scripts/local-digest.sh",
     "install:local-automation": "node scripts/install-local-automation.mjs"
   },
@@ -20,6 +20,5 @@
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "vite": "^7.2.7"
-  },
-  "devDependencies": {}
+  }
 }
