@@ -4,7 +4,8 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT_DIR"
 
-npm run build
+NODE_BIN="${NODE_BIN:-$(command -v node)}"
+"$NODE_BIN" node_modules/vite/bin/vite.js build
 
 git add public/data/trending.json data/deepseek-cache.json
 if git diff --cached --quiet; then

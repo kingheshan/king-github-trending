@@ -5,4 +5,4 @@ ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT_DIR"
 
 NODE_BIN="${NODE_BIN:-$(command -v node)}"
-"$NODE_BIN" scripts/update-data.mjs
+"$NODE_BIN" scripts/send-feishu-digest.mjs

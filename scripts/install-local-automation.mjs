@@ -6,14 +6,30 @@ import path from 'node:path';
 const root = process.cwd();
 const launchDir = path.join(os.homedir(), 'Library', 'LaunchAgents');
 const logDir = path.join(root, 'logs');
+const nodeBin = process.execPath;
+const nodeDir = path.dirname(nodeBin);
+const launchPath = [
+  nodeDir,
+  '/opt/homebrew/bin',
+  '/usr/local/bin',
+  '/usr/bin',
+  '/bin',
+  '/usr/sbin',
+  '/sbin',
+].join(':');
 
 mkdirSync(launchDir, { recursive: true });
 mkdirSync(logDir, { recursive: true });
 
-function plist(label, hour, minute, npmScript) {
+function plist(label, hour, minute, commandSegments) {
   const log = path.join(logDir, `${label}.log`);
   const err = path.join(logDir, `${label}.err.log`);
-  const command = `cd ${JSON.stringify(root)} && npm run ${npmScript}`;
+  const command = [
+    `cd ${JSON.stringify(root)}`,
+    `export NODE_BIN=${JSON.stringify(nodeBin)}`,
+    `export PATH=${JSON.stringify(launchPath)}`,
+    ...commandSegments,
+  ].join(' && ');
   return `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -65,9 +81,17 @@ function install(label, content) {
   return file;
 }
 
-const fetchFile = install('com.repopulse.fetch', plist('com.repopulse.fetch', 6, 0, 'local:fetch'));
-const publishFile = install('com.repopulse.publish', plist('com.repopulse.publish', 7, 0, 'local:publish'));
-const digestFile = install('com.repopulse.digest', plist('com.repopulse.digest', 8, 0, 'local:digest'));
+const fetchFile = install('com.repopulse.fetch', plist('com.repopulse.fetch', 6, 0, [
+  `${JSON.stringify(nodeBin)} scripts/update-data.mjs`,
+]));
+const publishFile = install('com.repopulse.publish', plist('com.repopulse.publish', 7, 0, [
+  `${JSON.stringify(nodeBin)} node_modules/vite/bin/vite.js build`,
+  'git add public/data/trending.json data/deepseek-cache.json',
+  'if git diff --cached --quiet; then echo "No data changes to publish."; else git commit -m "chore: daily data refresh" && git push; fi',
+]));
+const digestFile = install('com.repopulse.digest', plist('com.repopulse.digest', 8, 0, [
+  `${JSON.stringify(nodeBin)} scripts/send-feishu-digest.mjs`,
+]));
 
 console.log(`Installed ${fetchFile}`);
 console.log(`Installed ${publishFile}`);

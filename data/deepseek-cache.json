@@ -78,17 +78,17 @@
     },
     "repo:colbymchenry/codegraph": {
       "type": "repo-insight",
-      "hash": "ae9274b632c690848d16440e",
+      "hash": "c77a9aa698c1232f18116d0a",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:46:53.106Z",
+      "generatedAt": "2026-05-27T02:20:21.507Z",
       "value": {
-        "summaryZh": "Codegraph 是一个预索引代码知识图谱工具，专为 Claude Code、Codex、Cursor、OpenCode 和 Hermes Agent 等 AI 编程助手设计。它通过提前分析代码库结构、符号依赖和类型信息，生成紧凑的索引文件，从而显著减少 AI 对话中的 token 消耗和工具调用次数，同时 100% 在本地运行，保障数据隐私。核心亮点：轻量、离线、高效，适合任何需要为 AI 编写助手提供精准代码上下文的中大型项目。目标用户是使用 AI 辅助编程的开发者，尤其是那些希望降低 API 成本、提升响应速度并避免代码泄露的团队。",
+        "summaryZh": "CodeGraph 是一个用 TypeScript 编写的开源工具，为 Claude Code、Codex、Gemini、Cursor 等 AI 编码助手预生成代码知识图谱。它通过索引代码库中的结构和依赖关系，使 AI 在对话中能快速理解项目上下文，显著减少 token 消耗和工具调用次数。核心亮点包括完全本地运行、支持多种 AI 平台、零额外成本。适合需要提升 AI 编码效率的开发者，尤其是大型项目团队。",
         "scenarios": [
-          "在大型代码库中，为 AI 助手提供即时、精准的符号定义和引用关系，避免反复搜索和上下文截断",
-          "本地开发时，让 AI 完全离线理解项目结构，无需上传代码至云端，满足安全合规要求",
-          "配合 Cursor 或 Codex 在 IDE 内使用，减少长对话中的 token 消耗，保持上下文一致"
+          "在大型代码库中，使用 CodeGraph 为 Claude Code 提供预索引的代码知识，减少对话 token 消耗",
+          "结合 Cursor 或 Codex，通过知识图谱快速定位函数、类和依赖关系，提升代码生成准确率",
+          "本地开发环境：为私密代码库建立索引，避免将完整代码发送到云端 AI，保障数据隐私"
         ],
-        "agentInstallPrompt": "请执行以下步骤安装并试跑 codegraph： 1. 克隆仓库：git clone https://github.com/colbymchenry/codegraph.git && cd codegraph 2. 安装依赖：npm install 3. 构建项目：npm run build 4. 在目标代码仓库根目录运行索引生成命令：npx codegraph init （若提示命令不存在，请查看 README 中的 CLI 用法，通常为 npx @codegraph/cli generate） 5. 生成的索引文件将自动被支持的 AI 工具（如 Claude Code、Cursor）识别，后续对话即可使用压缩后的知识图谱。"
+        "agentInstallPrompt": "首先克隆仓库：git clone https://github.com/colbymchenry/codegraph.git && cd codegraph。然后安装依赖：npm install。接着构建项目：npm run build。最后运行示例：npm start -- --path <你的项目路径>。注意需要 Node.js 18+ 环境。"
       }
     },
     "repo:manaflow-ai/cmux": {
@@ -918,17 +918,17 @@
     },
     "repo:Hmbown/CodeWhale": {
       "type": "repo-insight",
-      "hash": "0f345c3d42d7c343513e88e2",
+      "hash": "08507f25886cd4f3ad382d6a",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:52:52.425Z",
+      "generatedAt": "2026-05-27T02:21:06.923Z",
       "value": {
-        "summaryZh": "CodeWhale 是一个基于 Rust 开发的智能编码终端，专为追求高效 AI 辅助编程的开发者设计。项目以 DeepSeek 作为默认 AI 提供商，同时支持切换多家主流 AI 服务（如 OpenAI、Anthropic 等），并采用激进缓存策略减少重复请求，大幅提升响应速度。其特色包括五语言界面（中英日韩法）、内置中国区域优化端点（适配国内网络）以及 CNB 镜像支持，对国内用户极为友好。鲸鱼主题的 UI 风格独特，终端体验流畅。适合需要快速迭代代码、习惯使用 AI 助手、且关注网络性能和本地化体验的开发者。",
+        "summaryZh": "CodeWhale 是一个基于 Rust 构建的终端内 AI 编码代理，集成了 DeepSeek v4 模型。它直接在命令行中提供智能代码生成、解释和调试功能，响应迅速且资源占用低。亮点在于纯 Rust 实现带来的高性能与低延迟，以及无需离开终端即可获得顶级 AI 协助。适合习惯命令行的开发者、希望提升编码效率的工程师，以及需要本地化、私密编码助手的团队。项目开源且易于集成到现有工作流中。",
         "scenarios": [
-          "在 DeepSeek 环境下快速生成、调试或重构代码片段，利用其高性能模型提升编码效率。",
-          "作为多 AI 提供商统一入口，在开发过程中灵活切换 OpenAI、Claude 等模型，比较不同模型的输出质量。",
-          "在国内网络环境下，利用内置 CN 端点与 CNB 镜像加速 AI 请求，同时借助本地缓存减少重复 API 调用，节省成本。"
+          "在终端中通过自然语言指令快速生成代码片段或完整函数",
+          "对现有代码进行实时解释、重构建议或 Bug 定位",
+          "作为 CI/CD 流程中的自动化代码审查和问题解答工具"
         ],
-        "agentInstallPrompt": "首先确保系统已安装 Rust 工具链（rustc、cargo）。然后执行： git clone https://github.com/Hmbown/CodeWhale cd CodeWhale cargo build --release 在项目根目录创建 .env 文件，写入你的 DeepSeek API Key（或其他 AI 提供商 key），例如： DEEPSEEK_API_KEY=your_key_here # 可选：OPENAI_API_KEY、ANTHROPIC_API_KEY 等 # 国内用户可设置 USE_CN_ENDPOINT=true 以启用中国区域加速 最后运行：./target/release/codewhale 即可启动交互式终端。首次启动会提示选择语言（支持 zh/en/ja/ko/fr），之后可使用 /help 查看命令。"
+        "agentInstallPrompt": "请先确保已安装 Rust 工具链（rustc, cargo）。然后执行以下步骤： 1. 克隆仓库：git clone https://github.com/Hmbown/CodeWhale 2. 进入目录：cd CodeWhale 3. 构建项目：cargo build --release 4. 运行：./target/release/codewhale 首次运行可能需要配置 DeepSeek API 密钥（通过环境变量 DEEPSEEK_API_KEY 设置）。具体用法请参考项目 README。"
       }
     },
     "repo:vercel-labs/agent-browser": {
@@ -1019,6 +1019,171 @@
           "为内部工具开发AI助手，统一调度数据库查询、文件操作和通知服务，降低多系统切换成本。"
         ],
         "agentInstallPrompt": "首先确保Python版本>=3.9，然后执行以下命令安装Nanobot： pip install nanobot-ai 安装完成后，创建配置文件config.yaml，示例如下： model: gpt-4 # 或其他兼容模型 plugins: - tool_search - tool_calculator 运行交互模式： nanobot run --config config.yaml 或通过Python代码调用： from nanobot import Agent agent = Agent(config='config.yaml') response = agent.run('查询今天的天气') print(response)"
+      }
+    },
+    "repo:DigitalPlatDev/FreeDomain": {
+      "type": "repo-insight",
+      "hash": "95a0df1f86a742909073f6f1",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T02:19:40.286Z",
+      "value": {
+        "summaryZh": "FreeDomain 是一个免费域名获取项目，旨在为每个人提供免费的二级域名。它通过简单的网页界面，让用户无需信用卡或复杂注册流程即可申请免费域名，支持多种主流后缀。亮点在于完全免费、无隐藏条件，适合个人开发者、学生或小项目快速搭建网站或测试环境。该项目基于 HTML 实现，易于部署和使用。",
+        "scenarios": [
+          "个人开发者需要一个临时域名来测试网站或API接口",
+          "学生或初学者希望拥有一个免费域名用于学习或展示作品",
+          "小团队或项目需要低成本域名进行原型演示或内部工具"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/DigitalPlatDev/FreeDomain.git。进入目录后，直接打开 index.html 文件即可使用。如需本地运行，可使用 Python 简易服务器：python3 -m http.server 8000，然后访问 http://localhost:8000。无需额外依赖。"
+      }
+    },
+    "repo:jellyfin/jellyfin": {
+      "type": "repo-insight",
+      "hash": "0258183af110fdf898af8a6a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T02:19:46.953Z",
+      "value": {
+        "summaryZh": "Jellyfin 是一个免费开源媒体服务器软件，基于 .NET Core 构建，提供强大的流媒体、转码、元数据刮削和用户管理功能。支持电影、电视剧、音乐、照片等媒体库管理，具备实时转码适应不同客户端设备。亮点包括无许可证限制、完全自主可控、跨平台（Windows/Linux/macOS/Docker）、支持 DLNA/UPnP 以及第三方客户端。适合家庭用户、媒体收藏家、小型组织搭建私有影音中心，替代 Plex/Emby 的付费方案。",
+        "scenarios": [
+          "搭建家庭影音库，集中管理电影、电视剧和音乐，通过电视、手机、平板等多设备流畅播放。",
+          "为小型机构或社群提供内部流媒体服务，支持多用户权限控制、共享媒体资源。",
+          "作为私有云存储的补充，结合自动化工具实现下载、分类、转码的媒体处理流水线。"
+        ],
+        "agentInstallPrompt": "请使用 Docker 安装 Jellyfin 服务器。执行以下命令： 1. 创建持久化目录：mkdir -p /opt/jellyfin/{config,cache,media} 2. 运行容器： docker run -d \\ --name jellyfin \\ --restart unless-stopped \\ -p 8096:8096 \\ -v /opt/jellyfin/config:/config \\ -v /opt/jellyfin/cache:/cache \\ -v /opt/jellyfin/media:/media \\ jellyfin/jellyfin:latest 3. 启动后访问 http://<服务器IP>:8096 完成初始设置。如需硬件转码，可添加 --device /dev/dri:/dev/dri 等参数。"
+      }
+    },
+    "repo:twentyhq/twenty": {
+      "type": "repo-insight",
+      "hash": "588744011db6b963ee69dd15",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T02:19:54.003Z",
+      "value": {
+        "summaryZh": "Twenty 是一个开源的 CRM 系统，旨在成为 Salesforce 的替代品，专为 AI 时代设计。采用 TypeScript 构建，具有现代化的 UI 和丰富的功能，如联系人管理、销售管道、自动化工作流等。其亮点在于完全免费、可自托管，并深度集成 AI 能力，支持智能线索评分、自动摘要和对话分析。适合希望拥有数据控制权、需要灵活定制或寻求低成本 CRM 解决方案的中小企业及开发者。",
+        "scenarios": [
+          "销售团队使用 AI 自动记录客户互动，智能生成摘要和下一步建议，提升效率。",
+          "企业自托管 CRM，确保客户数据安全，同时利用 AI 分析销售趋势。",
+          "开发者基于开源代码扩展功能，快速构建符合特定业务需求的 CRM 系统。"
+        ],
+        "agentInstallPrompt": "在终端中依次执行以下命令： 1. git clone https://github.com/twentyhq/twenty.git 2. cd twenty 3. npx yarn install 4. 复制 .env.example 为 .env 并配置数据库（如 PostgreSQL）连接信息 5. npx nx run twenty-server:serve 6. 打开新终端，执行 cd twenty && npx nx run twenty-front:serve 7. 浏览器访问 http://localhost:3001 即可使用。"
+      }
+    },
+    "repo:Open-Dev-Society/OpenStock": {
+      "type": "repo-insight",
+      "hash": "9164c403afdb80310e173b53",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T02:19:58.829Z",
+      "value": {
+        "summaryZh": "OpenStock 是一款开源的市场平台替代品，核心亮点包括实时股票价格追踪、个性化价格提醒设置以及深度公司信息洞察。项目采用 TypeScript 构建，前端界面简洁，后端逻辑清晰，适合开发者学习和二次开发。它完全免费，旨在打破金融数据工具的高昂壁垒，让个人投资者和开发者都能自由获取市场信息。",
+        "scenarios": [
+          "个人投资者使用 OpenStock 追踪自选股实时行情，及时获取价格波动提醒。",
+          "开发者基于 OpenStock 代码学习 TypeScript 全栈项目实践，或二次定制私有化市场数据面板。",
+          "金融科技团队将 OpenStock 集成到自有平台，作为开源替代方案降低数据服务成本。"
+        ],
+        "agentInstallPrompt": "首先确保已安装 Node.js (>= 18) 和 Git。执行：git clone https://github.com/Open-Dev-Society/OpenStock.git && cd OpenStock && npm install。然后创建 .env 文件，添加你的实时数据 API 密钥（如 IEX Cloud 或 Polygon.io 的 token）。运行 npm run dev 启动开发服务器，浏览器访问 http://localhost:3000 即可看到股票仪表盘。如需构建，执行 npm run build 后使用 npm start 运行生产版本。"
+      }
+    },
+    "repo:thedotmack/claude-mem": {
+      "type": "repo-insight",
+      "hash": "368dc7d80614d9d776b44241",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T02:20:09.888Z",
+      "value": {
+        "summaryZh": "claude-mem是一款跨AI会话的上下文持久化工具，自动捕获代理每次会话的活动，利用AI压缩并注入未来会话，实现连续记忆。支持Claude Code、OpenClaw、Codex等多种代理。亮点是无需手动管理上下文，自动压缩与注入，显著提升长期任务效率。适合重度使用AI编程助手或对话代理的开发人员，尤其是处理复杂项目或需要长期记忆的用户。",
+        "scenarios": [
+          "开发大型项目时，让AI编码助手记住之前的代码修改、架构决策和问题解决记录，避免重复解释。",
+          "进行多轮代码审查或调试时，自动保留每次反馈和修复的上下文，提升后续会话的连贯性。",
+          "在团队协作中，共享代理的持久化上下文，确保不同成员使用同一代理时能延续之前的分析和建议。"
+        ],
+        "agentInstallPrompt": "请按照以下步骤安装和试跑claude-mem：1. 克隆仓库：git clone https://github.com/thedotmack/claude-mem.git 并进入目录。2. 安装依赖：npm install 或 yarn install。3. 配置环境变量：在项目根目录创建.env文件，设置必要的API密钥（如Claude API Key）。4. 运行示例：npm run dev 或 yarn dev 启动服务。5. 在支持的代理（如Claude Code）中配置使用claude-mem插件，按照文档启用持久上下文功能。测试时可以创建一个简单的对话任务，观察后续会话中是否自动注入前文摘要。具体配置可参考README。"
+      }
+    },
+    "repo:st-tech/ppf-contact-solver": {
+      "type": "repo-insight",
+      "hash": "878ccde7bcffe029f6963384",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T02:20:16.263Z",
+      "value": {
+        "summaryZh": "PPF Contact Solver 是一个基于物理的接触求解器，专为包含壳、固体和杆的仿真设计。它使用高效的算法处理复杂接触交互，支持大变形和摩擦。亮点包括对多种离散化方法的兼容性（如有限元、质点弹簧）以及GPU加速选项。适合游戏开发、电影特效、机器人仿真和计算力学领域的研究人员与工程师，尤其是需要处理柔性体与刚性体交互的场景。",
+        "scenarios": [
+          "模拟布料与刚体碰撞，用于服装设计或虚拟试衣。",
+          "软体机器人的接触力学仿真，优化运动控制。",
+          "绳索与障碍物交互的动力学分析，用于缆索机器人或动画制作。"
+        ],
+        "agentInstallPrompt": "git clone https://github.com/st-tech/ppf-contact-solver.git && cd ppf-contact-solver && pip install -r requirements.txt && python examples/simple_shell_contact.py"
+      }
+    },
+    "repo:HKUDS/ViMax": {
+      "type": "repo-insight",
+      "hash": "112f0d75747187ef66b82e77",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T02:20:25.913Z",
+      "value": {
+        "summaryZh": "ViMax是一个集导演、编剧、制片人和视频生成器于一体的多智能体视频生成系统。它利用多个大型语言模型（LLM）驱动的智能体协作，从剧本到视频全流程自动化。亮点在于将创意决策与视频生成分离，支持基于文本描述生成连贯、高质量的视频片段。适合AI视频生成研究者、内容创作者和希望探索自动视频制作的开发者。",
+        "scenarios": [
+          "自动短片或广告视频的快速原型制作，减少人工编写脚本和分镜的成本。",
+          "辅助视频创作者生成叙事性内容，如故事片段或概念演示视频。",
+          "教育或培训场景中，根据教学大纲自动生成可视化讲解视频。"
+        ],
+        "agentInstallPrompt": "克隆仓库并安装依赖：git clone https://github.com/HKUDS/ViMax.git && cd ViMax && pip install -r requirements.txt。然后运行示例：python run_example.py --prompt \"一个宇航员在火星上行走\"。如需更多配置，请参考README。"
+      }
+    },
+    "repo:NVlabs/Sana": {
+      "type": "repo-insight",
+      "hash": "013c4f65982f40638f0703a5",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T02:20:31.341Z",
+      "value": {
+        "summaryZh": "Sana 是 NVIDIA 实验室推出的高效高分辨率图像合成模型，基于线性扩散 Transformer 架构，能以更低计算成本生成高质量图像。亮点包括极快的推理速度、支持高达 4096x4096 分辨率、可部署在消费级 GPU 上。适合 AI 图像生成研究者、创意工作者和需要快速高分辨率生成的开发者。",
+        "scenarios": [
+          "大规模广告海报和封面图自动生成，降低设计成本",
+          "游戏或影视概念草图快速生成，加速创意迭代",
+          "个人创作者快速生成高分辨率艺术插画或壁纸"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Python 3.8+ 和 PyTorch 2.0+。然后执行以下命令克隆并安装 Sana： git clone https://github.com/NVlabs/Sana.git cd Sana pip install -r requirements.txt pip install -e . 下载预训练模型（约 2GB）： wget https://huggingface.co/nvlabs/Sana/resolve/main/Sana_1600M_1024.pth -P pretrained/ 运行推理示例： python scripts/inference.py --ckpt pretrained/Sana_1600M_1024.pth --prompt \"a cat sitting on a chair, high resolution\" --output output.png 注意：如果显存不足（< 16GB），可添加参数 --image_size 512 降低分辨率。"
+      }
+    },
+    "repo:humanlayer/12-factor-agents": {
+      "type": "repo-insight",
+      "hash": "f45ac483376e8857a3457571",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T02:20:37.243Z",
+      "value": {
+        "summaryZh": "该项目受经典“12-Factor App”启发，提炼出构建生产级LLM应用与AI Agent的12个关键原则。涵盖可观测性、人性化设计、鲁棒性、安全、可测试性、迭代部署等核心议题，帮助开发者避免常见陷阱，确保AI产品真正具备企业级可靠性。适合正在将LLM原型推向生产环境的工程师、技术负责人和AI架构师。",
+        "scenarios": [
+          "在企业级AI聊天机器人开发中，遵循12-Factor原则确保可观测性与安全合规。",
+          "设计多步骤Agent工作流时，应用原则管理状态、日志与错误恢复。",
+          "团队制定AI项目架构规范时，作为统一的技术决策指南。"
+        ],
+        "agentInstallPrompt": "要试跑该项目，直接在终端执行： ```bash git clone https://github.com/humanlayer/12-factor-agents.git cd 12-factor-agents npm install npm run dev ``` 然后查看examples目录下的示例，结合README中每个原则的说明进行学习。如果需要构建新Agent，可以参照principles/下的文档。"
+      }
+    },
+    "repo:Chachamaru127/claude-code-harness": {
+      "type": "repo-insight",
+      "hash": "4c0fa8f7e73dca2a62bde12e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T02:20:43.099Z",
+      "value": {
+        "summaryZh": "claude-code-harness 是一个围绕 Claude Code 的专用开发工具集，通过自主的“计划→工作→审查”循环实现高质量开发。它利用 Claude 的代码理解与生成能力，自动化代码编写、测试和审查流程，帮助开发者从重复劳动中解放，专注更高层次的设计。适合希望以 AI 代理方式提升开发效率和代码质量的个人开发者或团队。",
+        "scenarios": [
+          "在 CI/CD 流程中集成自动化代码审查与改进建议",
+          "开发新功能时，由 AI 代理自动完成代码实现、测试和文档生成",
+          "作为个人开发助手，在本地项目中执行代码质量检查和修复"
+        ],
+        "agentInstallPrompt": "请执行以下步骤安装并运行claude-code-harness： 1. 克隆仓库：git clone https://github.com/Chachamaru127/claude-code-harness.git 2. 进入目录：cd claude-code-harness 3. 若存在install.sh，运行：bash install.sh 4. 按照提示配置Claude API密钥和项目路径 5. 运行脚本启动自动化循环：bash harness.sh"
+      }
+    },
+    "repo:dotnet/skills": {
+      "type": "repo-insight",
+      "hash": "8f1a913c0991f95c38f5cc05",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T02:20:53.911Z",
+      "value": {
+        "summaryZh": "dotnet/skills 是微软 .NET 团队维护的开源项目，提供一系列专门为 AI 编码代理（如 GitHub Copilot、Cursor 等）设计的技能指令。这些技能涵盖 .NET 和 C# 的最佳实践、API 用法、调试技巧及项目模板，能显著提升 AI 代理生成代码的质量与准确性。亮点包括官方背书、社区贡献以及覆盖从入门到高级的多种场景。适合所有使用 AI 助手进行 .NET 开发的工程师，尤其是希望减少手动查阅文档、提高编码效率的开发者。",
+        "scenarios": [
+          "在 IDE 中让 AI 代理根据 .NET 最新 API 生成符合规范的代码片段",
+          "使用 AI 代理进行 C# 项目调试时，自动提供异常处理与性能优化建议",
+          "学习 .NET 新特性时，通过 AI 代理问答获取官方整合的知识与示例"
+        ],
+        "agentInstallPrompt": "请将以下仓库克隆到本地：git clone https://github.com/dotnet/skills.git。然后根据您使用的 AI 编码代理（如 GitHub Copilot Extensions 或 Cursor）的文档，将克隆的 skills 文件夹添加为技能来源或工作区。通常只需在代理设置中指定该目录路径即可生效。"
       }
     }
   }
