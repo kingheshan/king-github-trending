@@ -918,17 +918,17 @@
     },
     "repo:Hmbown/CodeWhale": {
       "type": "repo-insight",
-      "hash": "08507f25886cd4f3ad382d6a",
+      "hash": "bf13bfca2c8b92b454283dbb",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-27T02:21:06.923Z",
+      "generatedAt": "2026-05-27T22:00:44.390Z",
       "value": {
-        "summaryZh": "CodeWhale 是一个基于 Rust 构建的终端内 AI 编码代理，集成了 DeepSeek v4 模型。它直接在命令行中提供智能代码生成、解释和调试功能，响应迅速且资源占用低。亮点在于纯 Rust 实现带来的高性能与低延迟，以及无需离开终端即可获得顶级 AI 协助。适合习惯命令行的开发者、希望提升编码效率的工程师，以及需要本地化、私密编码助手的团队。项目开源且易于集成到现有工作流中。",
+        "summaryZh": "CodeWhale 是一款基于 Rust 构建的终端编码助手，深度融合 DeepSeek 与 MiMo 模型，提供实时代码生成、补全与智能问答能力。亮点在于低资源消耗、终端原生交互，尤其适合习惯命令行的开发者。无需离开终端即可获得 AI 辅助，提升编码效率。适合追求极致效率、偏好轻量级工具的开发者。",
         "scenarios": [
-          "在终端中通过自然语言指令快速生成代码片段或完整函数",
-          "对现有代码进行实时解释、重构建议或 Bug 定位",
-          "作为 CI/CD 流程中的自动化代码审查和问题解答工具"
+          "在终端中编写代码时，通过自然语言描述需求，实时生成函数或算法片段。",
+          "调试过程中，快速解释错误日志并建议修复方案。",
+          "作为学习工具，解释复杂代码逻辑或提供最佳实践示例。"
         ],
-        "agentInstallPrompt": "请先确保已安装 Rust 工具链（rustc, cargo）。然后执行以下步骤： 1. 克隆仓库：git clone https://github.com/Hmbown/CodeWhale 2. 进入目录：cd CodeWhale 3. 构建项目：cargo build --release 4. 运行：./target/release/codewhale 首次运行可能需要配置 DeepSeek API 密钥（通过环境变量 DEEPSEEK_API_KEY 设置）。具体用法请参考项目 README。"
+        "agentInstallPrompt": "首先确保已安装 Rust 工具链（rustup）。然后执行： git clone https://github.com/Hmbown/CodeWhale.git cd CodeWhale cargo build --release 配置 DeepSeek 和 MiMo API 密钥（参考项目 README），最后运行 ./target/release/codewhale 启动。在终端输入 /help 查看命令。"
       }
     },
     "repo:vercel-labs/agent-browser": {
@@ -1184,6 +1184,141 @@
           "学习 .NET 新特性时，通过 AI 代理问答获取官方整合的知识与示例"
         ],
         "agentInstallPrompt": "请将以下仓库克隆到本地：git clone https://github.com/dotnet/skills.git。然后根据您使用的 AI 编码代理（如 GitHub Copilot Extensions 或 Cursor）的文档，将克隆的 skills 文件夹添加为技能来源或工作区。通常只需在代理设置中指定该目录路径即可生效。"
+      }
+    },
+    "repo:harry0703/MoneyPrinterTurbo": {
+      "type": "repo-insight",
+      "hash": "3ef89bcaf0392bd3ac022bb0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T22:00:10.334Z",
+      "value": {
+        "summaryZh": "MoneyPrinterTurbo 是一款利用AI大模型一键生成高清短视频的开源工具。用户只需输入主题或文案，即可自动完成视频脚本生成、素材匹配、字幕添加、配音合成等全流程，输出专业级短片。亮点在于集成多种AI模型（如GPT、Claude）和TTS引擎，支持自定义素材和风格，无需视频编辑经验。适合自媒体创作者、营销人员、教育工作者等需要快速产出视频内容的群体，极大提升创作效率。",
+        "scenarios": [
+          "快速生成营销推广短视频，用于社交媒体或广告投放",
+          "自媒体账号批量制作短视频内容，保持高频更新",
+          "教育机构自动生成课程讲解视频，降低制作成本"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/harry0703/MoneyPrinterTurbo.git && cd MoneyPrinterTurbo。安装依赖：pip install -r requirements.txt。配置API密钥：在config.py中填写LLM（如OPENAI_API_KEY）和TTS的密钥。运行：python main.py --topic '你的视频主题' --style '风格'。如需本地LLM，可修改配置使用Ollama等。"
+      }
+    },
+    "repo:p-e-w/heretic": {
+      "type": "repo-insight",
+      "hash": "b4e8f4272639d7989cf060b5",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T22:00:13.769Z",
+      "value": {
+        "summaryZh": "Heretic 是一个完全自动化的开源工具，用于移除语言模型中的审查机制。它通过分析模型输出并应用对抗性技术，自动生成绕过内容过滤的提示。亮点在于无需手动干预，即可实现模型的无审查响应。适合 AI 安全研究员、内容创作者和开发者，用于评估模型审查机制的强度或获取未经过滤的输出。",
+        "scenarios": [
+          "研究人员评估大语言模型内容过滤策略的鲁棒性",
+          "内容创作者在合规前提下获取创意灵感（如虚构故事）",
+          "开发者测试模型对对抗性输入的防御能力"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Python 3.8+ 和 pip。然后执行：git clone https://github.com/p-e-w/heretic.git && cd heretic && pip install -r requirements.txt。运行：python heretic.py --model '模型名称' --prompt '你的提示语'。注意：默认使用 Hugging Face 模型，需提前安装 transformers 库并登录（如需要）。"
+      }
+    },
+    "repo:byoungd/English-level-up-tips": {
+      "type": "repo-insight",
+      "hash": "54c2e923b2193289cd35fa29",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T22:00:17.353Z",
+      "value": {
+        "summaryZh": "《英语提升指南》是一份全面且系统的英语学习进阶指南，覆盖听说读写、词汇语法等核心模块。亮点在于提供科学的学习路径（如i+1理论、精听精读方法）并推荐大量优质资源（播客、网站、书籍）。适合希望突破英语瓶颈的自学者、备考者及任何想系统提升英语水平的英语爱好者。项目以清晰目录和实用建议著称，中文内容易懂，但需读者自主实践。",
+        "scenarios": [
+          "自学英语时，缺乏系统方法和方向，通过本指南制定学习计划。",
+          "备考雅思/托福等考试前，利用指南中的高效练习技巧提升成绩。",
+          "工作中需要使用英语，参考指南中的实用资源提高实际应用能力。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/byoungd/English-level-up-tips.git，然后使用浏览器打开仓库内的README.md文件（或docs目录）即可阅读完整指南。如需离线阅读，可使用Markdown编辑器打开本地文件。"
+      }
+    },
+    "repo:iii-hq/iii": {
+      "type": "repo-insight",
+      "hash": "f074bc703239a61afd369709",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T22:00:21.171Z",
+      "value": {
+        "summaryZh": "iii是一个基于Rust编写的服务编排、扩展与实时观测工具，旨在让开发者首次能够轻松地对所有服务进行实时组合、扩展与观测。其亮点在于极致的性能表现和低资源占用，支持动态服务发现与热更新。适合微服务架构的运维和开发人员，尤其是追求高性能和实时观测能力的团队。",
+        "scenarios": [
+          "微服务架构中实时编排多个服务的调用链，并监控其性能指标。",
+          "动态扩展服务实例，实现弹性伸缩，同时保持对每个实例的实时观测。",
+          "分布式系统故障排查，通过实时追踪服务间通信快速定位瓶颈和错误。"
+        ],
+        "agentInstallPrompt": "首先确保已安装Rust工具链（rustc和cargo）。然后运行以下命令： git clone https://github.com/iii-hq/iii.git cd iii cargo build --release sudo ./target/release/iii 启动后，可通过配置文件指定服务端点，默认监听端口8080。测试时，访问http://localhost:8080查看实时仪表盘。"
+      }
+    },
+    "repo:rmyndharis/OpenWA": {
+      "type": "repo-insight",
+      "hash": "4df97bf71b3a500917dee8f5",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T22:00:25.444Z",
+      "value": {
+        "summaryZh": "OpenWA 是一个免费、开源、自托管的 WhatsApp API 网关，基于 TypeScript 开发。它允许开发者轻松集成 WhatsApp 消息功能到自己的应用中，无需依赖官方商业 API。亮点包括完全自主可控、数据隐私保护、支持消息收发与媒体文件处理，并且可扩展性强。适合需要低成本、高定制化 WhatsApp 集成的个人开发者、中小企业及开源社区。",
+        "scenarios": [
+          "为客户支持系统集成 WhatsApp 聊天通道，实现自动回复与工单管理。",
+          "构建用户通知服务，通过 WhatsApp 发送订单状态、活动提醒等消息。",
+          "作为企业内部通信工具，自动化向员工发送通知或报表。"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Node.js (>=16) 和 npm。克隆仓库：git clone https://github.com/rmyndharis/OpenWA.git，进入目录：cd OpenWA。复制环境变量模板：cp .env.example .env，并按注释填写 WhatsApp 账号凭据（需使用 WhatsApp Business API 或 unofficial 方式）。安装依赖：npm install。构建项目：npm run build。启动服务：npm start。默认监听 3000 端口，可通过 POST /send-message 等接口测试。"
+      }
+    },
+    "repo:aiming-lab/AutoResearchClaw": {
+      "type": "repo-insight",
+      "hash": "3ee0151e041eef411e36a6f9",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T22:00:28.822Z",
+      "value": {
+        "summaryZh": "AutoResearchClaw 是一个完全自主且自我进化的研究工具，能够从研究想法直接生成完整的论文。它利用大型语言模型和大规模知识库，自动进行文献调研、实验设计、结果分析和论文撰写，实现端到端的研究自动化。亮点在于其全流程自动化、自我进化能力以及开箱即用的易用性。适合需要快速验证研究想法、撰写文献综述或生成初稿的科研人员、学生以及AI研究者使用。",
+        "scenarios": [
+          "研究者快速生成指定主题的文献综述和初步研究框架",
+          "学生利用AI辅助完成课程论文或学位论文初稿",
+          "跨学科团队快速探索并生成新领域的研究提案"
+        ],
+        "agentInstallPrompt": "首先克隆仓库：git clone https://github.com/aiming-lab/AutoResearchClaw.git && cd AutoResearchClaw。然后安装依赖：pip install -r requirements.txt。最后运行示例：python run.py --api_key YOUR_API_KEY --idea '你的研究想法'。注意替换YOUR_API_KEY为有效的API密钥，并确保已配置好相关环境变量。"
+      }
+    },
+    "repo:warpdotdev/warp": {
+      "type": "repo-insight",
+      "hash": "0af90d1695ce38dd5b8d663e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T22:00:33.729Z",
+      "value": {
+        "summaryZh": "Warp是一个基于终端的智能开发环境，由Rust语言编写。它将现代终端功能与AI集成相结合，提供代码补全、智能搜索、错误解释及团队协作能力。亮点包括原生AI助手、快速命令查找、智能自动补全以及对多种Shell的全面支持。适合追求高效率的开发者、运维人员及数据科学家，尤其适合习惯终端操作但希望获得IDE级别智能化辅助的用户。",
+        "scenarios": [
+          "日常开发中替代传统终端，利用AI加速命令编写、调试和脚本编写。",
+          "团队协作时，通过内置的共享会话和命令历史功能提升沟通效率。",
+          "处理复杂数据管道或自动化任务时，依靠AI辅助生成并优化Shell命令。"
+        ],
+        "agentInstallPrompt": "请在macOS系统上安装Warp（目前不支持Windows/Linux）。首先确保已安装Homebrew，然后执行`brew install --cask warp`。安装完成后，运行`open -a Warp`启动终端。首次启动时按引导配置Shell（建议使用zsh）并登录AI功能。如需直接试跑，可在Warp中执行`echo 'Hello Warp'`验证。更详细文档请访问https://docs.warp.dev。"
+      }
+    },
+    "repo:1jehuang/jcode": {
+      "type": "repo-insight",
+      "hash": "4ef7fabe9d6ab8524c394857",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T22:00:37.071Z",
+      "value": {
+        "summaryZh": "jcode 是一个用 Rust 构建的轻量级编码代理工具（Coding Agent Harness），旨在为开发者提供高效的代码生成、测试与调试辅助。它通过命令行接口与 AI 模型交互，支持自定义提示和上下文，能够自动执行代码修改、运行测试等任务，适合追求极致性能与低资源占用的 Rust 开发者。亮点包括：纯 Rust 实现、无外部运行时依赖、支持多种 AI 后端（如 OpenAI）、以及可插拔的代理工作流。",
+        "scenarios": [
+          "在 CI/CD 流水线中，使用 jcode 自动修复代码问题并验证测试，无需人工介入。",
+          "作为 IDE 外挂工具，快速根据自然语言描述生成 Rust 代码片段或单元测试。",
+          "团队协作时，用 jcode 统一管理代码生成规则，确保风格一致性并提高开发效率。"
+        ],
+        "agentInstallPrompt": "首先安装 Rust 工具链（rustup 和 cargo）。然后克隆仓库：git clone https://github.com/1jehuang/jcode.git && cd jcode。使用 cargo build --release 编译。设置 AI 密钥（例如 export OPENAI_API_KEY=你的密钥）。运行示例：cargo run -- '写一个读取 CSV 文件的 Rust 函数'。若需测试，运行 cargo test。"
+      }
+    },
+    "repo:LearningCircuit/local-deep-research": {
+      "type": "repo-insight",
+      "hash": "030e9c053b2e65b6dbce5832",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-27T22:00:40.676Z",
+      "value": {
+        "summaryZh": "Local Deep Research 是一个本地化深度研究工具，支持在 3090 等显卡上运行多种 LLM（如 Qwen3.6-27B），在 SimpleQA 上达到约 95% 准确率。它可接入 llama.cpp、Ollama、Google 等本地及云端模型，并整合 arXiv、PubMed、私有文档等 10 多种搜索引擎。全程数据本地处理且加密，保障隐私。适合需要高质量、可定制研究流程的开发者、学者和隐私敏感用户。",
+        "scenarios": [
+          "学术文献综述：自动检索 arXiv、PubMed 等源，结合本地 LLM 生成摘要与对比分析。",
+          "技术报告生成：从私有文档和公开搜索引擎获取信息，生成结构化的技术报告或调研文档。",
+          "个人知识管理：加密存储本地文档，通过自然语言查询获取深度分析结果，辅助决策。"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/LearningCircuit/local-deep-research.git && cd local-deep-research。创建虚拟环境：python -m venv venv && source venv/bin/activate（Windows 使用 venv\\Scripts\\activate）。安装依赖：pip install -r requirements.txt。配置模型：编辑 config.yaml 设置 LLM 路径或 API key（如使用 Ollama 则无需额外配置）。运行测试：python main.py --query \"你的研究问题\"。首次运行会下载模型并验证搜索引擎。确保 GPU 驱动正常（推荐 NVIDIA 3090 或更高）。"
       }
     }
   }
