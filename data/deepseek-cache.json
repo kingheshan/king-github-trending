@@ -813,17 +813,17 @@
     },
     "repo:nexu-io/open-design": {
       "type": "repo-insight",
-      "hash": "af86f2f39b5da10ec1eb201d",
+      "hash": "b702c17e9f76e77925f6ce2b",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:52:09.607Z",
+      "generatedAt": "2026-05-28T22:01:16.805Z",
       "value": {
-        "summaryZh": "Open Design 是一个本地优先、开源的设计工具，可作为 Claude Design 的替代品。它内置 19 种技能和 71 套品牌级设计系统，支持生成网页、桌面、移动端原型、幻灯片、图像、视频及 HyperFrames。提供沙盒预览，并可将成果导出为 HTML、PDF、PPTX 和 MP4 格式。该项目兼容多种 AI CLI 工具（如 Claude Code、Cursor、Gemini 等），适合希望实现设计自动化、快速搭建原型或构建设计系统管理的团队和个人。",
+        "summaryZh": "Open Design 是一款本地优先、开源的原型设计工具，旨在替代 Claude Design。它提供原生桌面应用，内置 259+ 设计技能和 142+ 设计系统，支持 Web、桌面、移动端原型、幻灯片、图片、视频及 HyperFrames 创建。亮点包括沙盒预览、HTML/PDF/PPTX/MP4 导出，以及与 Claude Code、OpenClaw、Copilot 等 17+ CLI 工具的深度集成。适合设计师、开发者及需要快速生成交互原型或演示素材的团队，尤其适配 AI 辅助工作流。",
         "scenarios": [
-          "快速生成符合品牌规范的多平台产品原型图，用于客户演示或内部评审",
-          "利用 AI 技能与设计系统自动制作营销幻灯片、社交媒体图像或短视频",
-          "在代码编辑器或 AI CLI 中集成设计能力，实现设计与开发的实时协同"
+          "快速创建交互原型，并一键导出为 PDF 或 PPTX 用于演示汇报。",
+          "利用丰富的设计系统和技能库，本地高效完成 UI 组件设计与复用。",
+          "与 AI 编码工具（如 Claude Code）联动，实现从设计稿到代码的自动化转换。"
         ],
-        "agentInstallPrompt": "请先确保 Node.js 18+ 已安装。克隆仓库：git clone https://github.com/nexu-io/open-design.git && cd open-design。安装依赖：npm install。启动开发服务器：npm run dev。浏览器访问 http://localhost:5173 即可开始使用界面。如需在 CLI 中测试技能，可参考项目 README 中的 CLI 集成示例，例如 npx open-design generate --template hero --output hero.html"
+        "agentInstallPrompt": "请确保 Node.js >=18 和 Git 已安装。依次执行：git clone https://github.com/nexu-io/open-design.git && cd open-design && npm install && npm run dev。启动后桌面应用将打开，可在界面中加载设计系统或直接创建原型。如需 CLI 模式，运行 `npx open-design --help` 查看命令。"
       }
     },
     "repo:VoltAgent/awesome-openclaw-skills": {
@@ -1319,6 +1319,141 @@
           "个人知识管理：加密存储本地文档，通过自然语言查询获取深度分析结果，辅助决策。"
         ],
         "agentInstallPrompt": "克隆仓库：git clone https://github.com/LearningCircuit/local-deep-research.git && cd local-deep-research。创建虚拟环境：python -m venv venv && source venv/bin/activate（Windows 使用 venv\\Scripts\\activate）。安装依赖：pip install -r requirements.txt。配置模型：编辑 config.yaml 设置 LLM 路径或 API key（如使用 Ollama 则无需额外配置）。运行测试：python main.py --query \"你的研究问题\"。首次运行会下载模型并验证搜索引擎。确保 GPU 驱动正常（推荐 NVIDIA 3090 或更高）。"
+      }
+    },
+    "repo:microsoft/markitdown": {
+      "type": "repo-insight",
+      "hash": "0676b8e722d7a7d92df1dc8a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-28T22:00:10.692Z",
+      "value": {
+        "summaryZh": "MarkItDown是由微软开源的一款Python工具，专注于将多种文件和办公文档（如Word、Excel、PowerPoint、PDF、图片等）转换为Markdown格式。其亮点在于处理复杂文档结构（表格、列表、标题、图表等）的能力强，且支持OCR识别图片文本。适合需要将非结构化文档内容统一转为轻量Markdown格式的开发者、内容运营及数据分析师，便于后续的文本处理、索引或AI训练数据准备。",
+        "scenarios": [
+          "将大量Word和PDF格式的合同/报告批量转为Markdown，用于全文检索或知识库构建。",
+          "从Excel表格中提取数据及其结构化上下文（如标题、注释）并转换为Markdown表格，便于文档撰写。",
+          "自动从PPT演示文稿中提取内容（含幻灯片备注）生成课堂笔记或技术文档的Markdown版本。"
+        ],
+        "agentInstallPrompt": "请执行以下命令安装并试跑MarkItDown： 1. 确保Python 3.8+环境，用pip安装：`pip install markitdown` 2. 下载一个示例文件（如test.docx）到当前目录，然后运行：`markitdown test.docx > output.md` 3. 或使用Python API： ```python from markitdown import MarkItDown md = MarkItDown() result = md.convert('test.pdf') print(result.text_content) ``` 如果遇到PDF解析问题，需安装额外依赖：`pip install 'markitdown[pdf]'`"
+      }
+    },
+    "repo:revfactory/harness": {
+      "type": "repo-insight",
+      "hash": "a4d8ff6f502e09e323cc8780",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-28T22:00:16.073Z",
+      "value": {
+        "summaryZh": "Harness 是一个元技能框架，用于设计领域特定的智能体团队。它定义了专业化智能体角色，并自动生成这些智能体所需的技能。亮点在于通过元技能组合，动态构建适应任意领域的协作智能体系统，无需预先训练复杂模型。适合 AI 系统架构师、多智能体系统研究者、需要快速搭建专用智能体团队的产品经理。",
+        "scenarios": [
+          "为客服领域设计包含问题分类、知识检索、情绪识别的多智能体协作团队",
+          "在代码审查流程中定义代码检查员、安全分析员、性能优化师等智能体角色并生成其技能",
+          "构建医疗诊断辅助系统，生成症状分析、检验解读、治疗方案推荐等专业化智能体"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/revfactory/harness.git，进入 harness 目录，使用浏览器打开 index.html 或部署到静态服务器。查看演示示例，按页面指引定义智能体团队、角色及技能生成配置。"
+      }
+    },
+    "repo:codecrafters-io/build-your-own-x": {
+      "type": "repo-insight",
+      "hash": "cb06855f4a84386e8824fc9f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-28T22:00:22.377Z",
+      "value": {
+        "summaryZh": "该项目汇集了从零开始构建经典技术的教程集合，涵盖 Git、数据库、Docker、Redis 等。通过动手实践重现这些技术，帮助开发者深入理解底层原理。适合有一定编程基础、希望通过实战提升系统设计能力的程序员。亮点是分步指南清晰，且覆盖广泛的技术栈。",
+        "scenarios": [
+          "想深入理解 Git 内部机制，通过亲手实现来巩固知识",
+          "希望学习数据库或操作系统的核心原理，进行动手实践",
+          "准备技术面试，通过构建项目加深对分布式系统等概念的理解"
+        ],
+        "agentInstallPrompt": "执行以下命令克隆仓库并安装依赖： 1. git clone https://github.com/codecrafters-io/build-your-own-x.git 2. cd build-your-own-x 3. 选择教程目录（如 build-your-own-git），按照其 README.md 安装对应运行时（如 Rust、Python）并运行。"
+      }
+    },
+    "repo:unclecode/crawl4ai": {
+      "type": "repo-insight",
+      "hash": "394bbf3c53c3416d43bb1d33",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-28T22:00:28.749Z",
+      "value": {
+        "summaryZh": "Crawl4AI 是一个专为 LLM 应用设计的开源网络爬虫与抓取工具，提供简洁 API 和高效数据提取，支持异步、分布式、智能解析，可直接输出 LLM 友好的结构化文本。亮点包括对动态页面、JavaScript 渲染、自定义提取规则的支持，以及低资源占用。适合需要为大型语言模型收集训练数据、构建 RAG 系统或进行实时网页数据采集的 AI 开发者、数据科学家和研究者。",
+        "scenarios": [
+          "为 LLM 训练或微调抓取大规模、高质量的网页文本数据",
+          "从动态网站中提取结构化信息用于数据分析和知识图谱构建",
+          "构建实时更新的知识库或检索增强生成（RAG）系统的数据管道"
+        ],
+        "agentInstallPrompt": "首先确保已安装 Python 3.8+，然后执行 pip install crawl4ai。在 Python 脚本中导入：from crawl4ai import WebCrawler。初始化爬虫：crawler = WebCrawler()。抓取并获取 LLM 友好文本：result = crawler.run(url='https://example.com')，然后使用 result.extracted_content 或 result.markdown 作为输入。如需异步批量抓取，见官方文档。注意首次运行会自动下载 Chromium 用于动态渲染。"
+      }
+    },
+    "repo:EveryInc/compound-engineering-plugin": {
+      "type": "repo-insight",
+      "hash": "dd06b439c9612a9ebb98d672",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-28T22:00:45.486Z",
+      "value": {
+        "summaryZh": "Compound Engineering Plugin 是一个专为 AI 编码助手（如 Claude Code、Codex、Cursor 等）设计的官方插件，旨在实现复合工程方法论。它允许开发者将多个大语言模型（如 GPT、Claude、Gemini）组合编排，协同完成代码生成、重构、审查等任务，替代单一模型的局限。亮点包括灵活的模型编排、可定制的工程流程，以及无缝集成主流 AI IDE。适合需要利用多模型协作提升代码质量与效率的 AI 工程师、全栈开发者及团队。插件开源于 GitHub，基于 TypeScript 构建，易于扩展。",
+        "scenarios": [
+          "在 Claude Code 中安装插件，配置 GPT-4 和 Claude 3.5 协作进行复杂代码生成，自动对比输出并选择最优方案。",
+          "在 Cursor 编辑器内启用插件，为代码审查环节设置多模型轮询，检测隐藏 bug 并给出修复建议。",
+          "在 Codex 环境中使用插件串联多个模型，实现从需求描述到单元测试的全自动生成，减少人工干预。"
+        ],
+        "agentInstallPrompt": "请执行以下步骤安装 Compound Engineering Plugin： 1. 打开终端，克隆仓库：`git clone https://github.com/EveryInc/compound-engineering-plugin.git` 2. 进入目录：`cd compound-engineering-plugin` 3. 安装依赖：`npm install` 4. 复制环境变量模板：`cp .env.example .env` 并填入你的 API 密钥（如 OpenAI、Anthropic 等）。 5. 构建插件：`npm run build` 6. 根据你使用的 AI 编码工具（Claude Code/Codex/Cursor）的官方文档，将插件目录链接到对应的插件路径。例如，对于 Claude Code，运行 `claude plugin install /path/to/compound-engineering-plugin`。 7. 启动你的 AI 编码工具，测试命令：`/compound help` 应显示插件菜单。"
+      }
+    },
+    "repo:anthropics/skills": {
+      "type": "repo-insight",
+      "hash": "9fe35806dc1c13facae42237",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-28T22:00:50.402Z",
+      "value": {
+        "summaryZh": "Anthropics 的 Skills 仓库是一个开源的 AI 代理技能集合，提供模块化、可组合的 Python 技能模块，用于构建基于 Claude 等大语言模型的智能代理系统。亮点包括预定义的技能模式（如搜索、计算、代码执行）、清晰的接口设计和示例代码，支持快速集成与扩展。适合 AI 应用开发者、提示工程师及自动化探索者，用于快速原型设计或生产级代理开发。",
+        "scenarios": [
+          "构建能够自主调用搜索、计算等外部工具的 AI 助手",
+          "开发多步骤推理与任务拆解的智能代理工作流",
+          "在本地或云端快速部署可复用的 AI 技能模块"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/anthropics/skills.git && cd skills。安装依赖：pip install -r requirements.txt。运行示例：python examples/basic_agent.py。如需使用 Claude API，设置环境变量 ANTHROPIC_API_KEY，并修改示例中的模型配置。"
+      }
+    },
+    "repo:anthropics/claude-plugins-official": {
+      "type": "repo-insight",
+      "hash": "1eb4333ad72c5cb924d7397f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-28T22:00:55.581Z",
+      "value": {
+        "summaryZh": "Anthropic官方维护的Claude Code高质量插件目录，提供经过安全审核的预制插件，用于扩展Claude功能。亮点包括官方管理、高安全性、开箱即用，支持集成第三方API、自定义命令等。适合希望快速增强Claude Code能力的开发者，尤其是需要安全可靠插件生态的用户。",
+        "scenarios": [
+          "在Claude Code中集成GitHub Copilot或其他AI辅助工具，提升代码生成效率",
+          "通过官方插件快速接入Slack、Jira等第三方服务，实现工作流自动化",
+          "使用经过安全审核的插件扩展Claude的终端、文件操作等能力，避免自行开发风险"
+        ],
+        "agentInstallPrompt": "首先确保已安装Claude Code CLI（https://docs.anthropic.com/en/docs/claude-code/installation）。然后运行 `claude plugins list` 查看可用插件，使用 `claude plugins install <插件名>` 安装所需插件，例如 `claude plugins install github-copilot`。安装后，按照插件文档配置API密钥等参数，即可在Claude Code中直接调用插件命令。"
+      }
+    },
+    "repo:microsoft/agent-governance-toolkit": {
+      "type": "repo-insight",
+      "hash": "80f39d2c32f7cd87d8a04738",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-28T22:01:02.610Z",
+      "value": {
+        "summaryZh": "微软推出的AI Agent治理工具包，专为自治AI代理设计。它提供策略执行、零信任身份、执行沙箱和可靠性工程功能，全面覆盖OWASP Agentic Top 10安全风险。核心亮点包括细粒度权限控制、实时行为监控、异常检测和自动恢复机制。适合需要构建安全合规AI代理的开发者、DevOps团队和安全工程师，尤其适用于企业级多代理系统与高敏感性场景。",
+        "scenarios": [
+          "企业AI代理安全合规：为内部使用的AI代理配置自定义策略，确保符合行业法规（如GDPR、HIPAA）。",
+          "多代理协作可靠性保障：在多个自治代理协同工作时，利用沙箱隔离和故障恢复机制，防止级联失败。",
+          "代理行为审计与策略管理：实时监控代理执行轨迹，基于OWASP Top 10风险库自动阻断危险操作并生成审计报告。"
+        ],
+        "agentInstallPrompt": "请按照以下步骤安装并运行AI Agent Governance Toolkit： 1. 克隆仓库：`git clone https://github.com/microsoft/agent-governance-toolkit.git` 2. 进入目录：`cd agent-governance-toolkit` 3. 创建虚拟环境：`python -m venv venv && source venv/bin/activate` 4. 安装依赖：`pip install -r requirements.txt` 5. 运行示例测试：`pytest tests/` 6. 尝试快速启动演示：`python -m examples.basic_governance --policy policies/sample_policy.yaml`"
+      }
+    },
+    "repo:BenedictKing/ccx": {
+      "type": "repo-insight",
+      "hash": "9760153e9611e4706d4400ed",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-05-28T22:01:09.215Z",
+      "value": {
+        "summaryZh": "CCX是一个基于Go语言开发的AI API代理工具，支持Claude、Codex、Gemini等多个主流AI服务的统一代理转发。它提供简单的HTTP接口，方便用户在不直接暴露API密钥的情况下安全调用不同AI模型，同时支持负载均衡和错误重试。亮点在于轻量级、易部署，且能无缝切换不同AI提供商。适合需要集中管理AI API调用、降低延迟或绕过地域限制的开发者。",
+        "scenarios": [
+          "在无法直接访问Claude或Gemini API的地区，通过CCX代理实现稳定调用。",
+          "后端服务需要同时对接多个AI模型（如Claude、Codex），使用CCX统一接口简化集成。",
+          "开发测试阶段快速切换不同AI提供商，对比模型效果和性能。"
+        ],
+        "agentInstallPrompt": "安装并运行CCX代理。首先确保已安装Go 1.18+，然后执行：git clone https://github.com/BenedictKing/ccx.git && cd ccx && go build -o ccx .。接着设置环境变量（如CLAUDE_API_KEY、CODEX_API_KEY），运行./ccx -port 8080。启动后可通过http://localhost:8080/v1/chat/completions调用，并在请求中指定model为claude-3-5-sonnet、gemini-pro等。"
       }
     }
   }
