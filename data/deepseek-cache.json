@@ -168,17 +168,17 @@
     },
     "repo:Leonxlnx/taste-skill": {
       "type": "repo-insight",
-      "hash": "9d431a2f456c01b8714eccca",
+      "hash": "ce64f128a0e8ef82120cb42c",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:47:32.993Z",
+      "generatedAt": "2026-06-07T22:01:20.097Z",
       "value": {
-        "summaryZh": "Taste-Skill 是一个轻量级 Shell 工具，旨在通过注入“品味”来提升 AI 输出质量。它能自动注入高质量、有深度的系统提示，有效避免 AI 生成千篇一律的泛泛之谈。适合需要 AI 产出创意文案、深度分析、个性化建议或专业内容的人员，如内容创作者、产品经理和开发者。该工具通过简单命令行即可集成到现有工作流，无需复杂配置。亮点在于将人类审美标准模块化，让 AI 输出更鲜活、独特。",
+        "summaryZh": "Taste-Skill 是一个轻量级 Shell 工具，旨在为 AI 模型注入“好品味”，避免生成枯燥、通用的内容。通过简单的脚本配置，用户可以快速调整 AI 的输出风格，使其更具创意、个性化和趣味性。该项目适合 AI 开发者、提示词工程师以及内容创作者，用于改进聊天机器人、文本生成工具或艺术创作助手的表达质量。亮点在于其零依赖、易集成，且能直接作用于 AI 的 prompt 处理流程。",
         "scenarios": [
-          "内容创作者使用 Taste-Skill 辅助写博客、营销文案，让 AI 生成的文字更有个性和洞见。",
-          "产品经理在需求分析或竞品调研时，借助该工具让 AI 提供更深刻、非模板化的洞察。",
-          "开发者在调用大语言模型 API 前，通过 Taste-Skill 预处理提示词，提升回复的趣味性和专业深度。"
+          "在聊天机器人中启用 Taste-Skill，使其回复更生动有趣，避免千篇一律。",
+          "集成到文本生成工作流，提升营销文案、故事创作等内容的独特性和吸引力。",
+          "用于 AI 艺术工具，优化对图像或音乐的描述性输出，增加风格多样性。"
         ],
-        "agentInstallPrompt": "克隆仓库：git clone https://github.com/Leonxlnx/taste-skill.git && cd taste-skill。确认已安装 Shell（如 bash），然后运行 chmod +x taste-skill.sh 赋予执行权限。在终端执行 ./taste-skill.sh，根据提示输入你的原始提示词，工具会自动生成带有“品味”的增强版提示词。你也可以将脚本放入 PATH 以便全局调用：sudo cp taste-skill.sh /usr/local/bin/taste-skill。之后运行 taste-skill 即可。"
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/Leonxlnx/taste-skill.git && cd taste-skill。运行测试：bash taste.sh --example。查看帮助：bash taste.sh --help。如需集成到自己的 AI 项目，将 taste.sh 放在合适路径，并修改环境变量或源码中相关 API 调用。"
       }
     },
     "repo:moeru-ai/airi": {
@@ -1454,6 +1454,171 @@
           "开发测试阶段快速切换不同AI提供商，对比模型效果和性能。"
         ],
         "agentInstallPrompt": "安装并运行CCX代理。首先确保已安装Go 1.18+，然后执行：git clone https://github.com/BenedictKing/ccx.git && cd ccx && go build -o ccx .。接着设置环境变量（如CLAUDE_API_KEY、CODEX_API_KEY），运行./ccx -port 8080。启动后可通过http://localhost:8080/v1/chat/completions调用，并在请求中指定model为claude-3-5-sonnet、gemini-pro等。"
+      }
+    },
+    "repo:mvanhorn/last30days-skill": {
+      "type": "repo-insight",
+      "hash": "e75df4f3668b64af9e1a82cd",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T22:01:09.013Z",
+      "value": {
+        "summaryZh": "该项目是一个AI代理技能，能够跨Reddit、X（推特）、YouTube、Hacker News、Polymarket及整个网络搜索任何主题，并综合生成有依据的摘要。亮点在于多源信息聚合与自动摘要，适合需要快速获取跨平台观点汇总的研究人员、内容创作者和市场分析师。使用Python编写，易于集成到AI工作流中。",
+        "scenarios": [
+          "市场趋势分析：快速搜集Reddit、X等平台对某新产品的用户反馈，生成综合摘要。",
+          "热点事件追踪：从Hacker News和Polymarket获取技术评论与预测，形成事件进展报告。",
+          "内容创作调研：为视频或文章收集YouTube、Reddit等不同视角的素材，生成结构化摘要。"
+        ],
+        "agentInstallPrompt": "首先，克隆仓库：git clone https://github.com/mvanhorn/last30days-skill.git && cd last30days-skill。然后安装依赖：pip install -r requirements.txt。设置必要的API密钥（如OpenAI、Reddit、Twitter等），通常在.env文件中配置。最后运行示例：python main.py --topic 'your topic'。如需自定义，可修改配置或调用核心函数。"
+      }
+    },
+    "repo:opencv/opencv": {
+      "type": "repo-insight",
+      "hash": "ff10c7caee3c9fd7c745c826",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T22:01:13.854Z",
+      "value": {
+        "summaryZh": "OpenCV是一个开源的计算机视觉和机器学习软件库，提供了超过2500种优化算法，涵盖图像处理、视频分析、物体检测、人脸识别、深度学习等。它支持C++、Python、Java等多种语言，并可在Windows、Linux、macOS、Android和iOS上运行。亮点包括高效的实时性能、丰富的模块化设计以及广泛的社区支持。适合计算机视觉工程师、研究人员和开发者快速构建视觉应用。",
+        "scenarios": [
+          "在安防监控中实现实时人脸检测与识别系统",
+          "为自动驾驶车辆提供车道线检测和障碍物识别算法",
+          "在工业质检中自动检测产品表面缺陷"
+        ],
+        "agentInstallPrompt": "运行以下命令安装OpenCV并测试： # 安装OpenCV（Python版本） pip install opencv-python opencv-contrib-python # 验证安装并运行简单示例（保存为test.py） import cv2 print(cv2.__version__) # 读取并显示图像 img = cv2.imread('test.jpg') cv2.imshow('Image', img) cv2.waitKey(0) cv2.destroyAllWindows() # 运行：python test.py"
+      }
+    },
+    "repo:aaif-goose/goose": {
+      "type": "repo-insight",
+      "hash": "d768578f0cc95b4c63be0368",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T22:35:08.617Z",
+      "value": {
+        "summaryZh": "Goose 是一个用 Rust 编写的开源、可扩展 AI 代理，超越传统代码建议，能直接安装、执行、编辑和测试代码，并支持任意 LLM。其亮点在于直接与终端和文件系统交互，自动化开发工作流，适合希望提升效率的开发者、测试人员和 DevOps 工程师。可扩展的插件架构允许定制化功能。",
+        "scenarios": [
+          "自动化代码审查与测试：Goose 可接管代码修改、运行测试并反馈结果，减少手动操作。",
+          "自动化构建与部署：通过集成命令行，Goose 能执行构建脚本、部署应用，简化 CI/CD 流程。",
+          "辅助调试与探索：开发者可让 Goose 执行临时命令、编辑配置文件，快速排查问题。"
+        ],
+        "agentInstallPrompt": "请先确保安装 Rust 工具链（https://rustup.rs）。然后运行命令克隆仓库并编译安装： ``` git clone https://github.com/aaif-goose/goose.git cd goose cargo build --release ``` 编译后，可执行文件位于 `target/release/goose`。尝试运行： ``` ./target/release/goose --help ``` 即可查看使用说明。首次运行配置 LLM API 密钥，通过环境变量或配置文件设置，例如： ``` export LLM_API_KEY=\"your-key\" export LLM_MODEL=\"gpt-4\" ``` 更多用法请参阅项目 README。"
+      }
+    },
+    "repo:Crosstalk-Solutions/project-nomad": {
+      "type": "repo-insight",
+      "hash": "026af4f583420dee72703643",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T22:35:17.621Z",
+      "value": {
+        "summaryZh": "Project N.O.M.A.D 是一款自包含的离线生存计算机，专为无网络环境设计。它集成了关键工具、知识库和AI助手，提供离线地图、生存指南、文件管理等功能。亮点在于完全离线运行，内置AI可本地处理查询，无需联网即可获得智能支持。适合户外探险者、应急响应人员、极简主义者以及对隐私敏感的用户，确保任何时刻都能获取必要信息和计算能力。",
+        "scenarios": [
+          "野外徒步或露营时，无移动信号，使用N.O.M.A.D离线地图导航、查找野外生存技巧或记录行程日志。",
+          "自然灾害后通讯中断，利用内置AI获取急救知识、搭建临时庇护所指南，并离线管理应急物资清单。",
+          "偏远地区技术研究或文档工作，借助离线AI进行文字处理、代码片段查询或学习材料整理，无需互联网依赖。"
+        ],
+        "agentInstallPrompt": "请先确保系统已安装Node.js和npm。然后执行以下命令：git clone https://github.com/Crosstalk-Solutions/project-nomad.git && cd project-nomad && npm install && npm run build && npm start。如有具体设备部署需求，可参考项目根目录下的DEPLOYMENT.md文件。"
+      }
+    },
+    "repo:ggml-org/llama.cpp": {
+      "type": "repo-insight",
+      "hash": "854cc18de1afaba25d0bde50",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T22:35:23.122Z",
+      "value": {
+        "summaryZh": "llama.cpp 是一个基于 C/C++ 的高性能大语言模型推理引擎，支持多种量化方式以在 CPU 或 GPU 上高效运行 LLM。它无需 Python 依赖，启动极快，适合资源受限的设备。亮点包括纯 C++ 实现、支持 4-bit 到 8-bit 量化、可运行 LLaMA、Mistral、Falcon 等主流模型。适合希望在本地运行 LLM 的开发者、需要离线推理的场景、以及对推理延迟敏感的应用。",
+        "scenarios": [
+          "在无 GPU 的个人电脑上运行 LLaMA 等开源模型，用于本地问答或文档摘要。",
+          "嵌入式设备或 IoT 场景中，通过量化模型实现轻量级 AI 助手。",
+          "服务器端高并发推理，借助 Metal/Vulkan 后段加速大规模模型部署。"
+        ],
+        "agentInstallPrompt": "在 Linux/macOS 上，请按以下步骤编译并试跑 llama.cpp： 1. 克隆仓库：git clone https://github.com/ggml-org/llama.cpp && cd llama.cpp 2. 编译（支持 GPU 加速请添加 -DLLAMA_METAL=ON 等）：make -j4 3. 下载一个模型（例如 LLaMA 3.2 1B 的 GGUF 格式）：wget https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_M.gguf 4. 运行推理：./main -m Llama-3.2-1B-Instruct-Q4_K_M.gguf -p 'Hello, how are you?' -n 50 若需交互模式，替换为 -i 参数。"
+      }
+    },
+    "repo:RyanCodrai/turbovec": {
+      "type": "repo-insight",
+      "hash": "42dc0b5861810977e621728b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T22:35:28.267Z",
+      "value": {
+        "summaryZh": "TurboVec 是一个基于 TurboQuant 的高性能向量索引，核心使用 Rust 编写，提供 Python 绑定。它结合了 Rust 的速度与 Python 的易用性，适用于大规模向量的近似最近邻搜索。亮点在于极致的索引构建和查询性能，以及低内存占用。适合需要高效向量检索的 AI 工程师、数据科学家和推荐系统开发者。",
+        "scenarios": [
+          "构建大规模相似性搜索引擎，如商品推荐或图像检索。",
+          "增强 RAG（检索增强生成）系统的检索效率，快速匹配语义相关的文本片段。",
+          "实时异常检测，基于向量距离识别数据点偏离程度。"
+        ],
+        "agentInstallPrompt": "使用 pip 安装 turbovec：pip install turbovec。试跑示例： from turbovec import TurboVec index = TurboVec(dim=128, index_type='IVF') import numpy as np vectors = np.random.rand(1000, 128).astype(np.float32) index.add(vectors) index.train() query = np.random.rand(1, 128).astype(np.float32) ids, distances = index.search(query, k=10) print(ids, distances)"
+      }
+    },
+    "repo:openai/plugins": {
+      "type": "repo-insight",
+      "hash": "c64f152a5488dc716744d2e1",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T22:52:34.892Z",
+      "value": {
+        "summaryZh": "OpenAI Plugins 是 OpenAI 官方推出的插件系统，允许 ChatGPT 等模型调用外部 API，实现实时数据获取、任务执行等扩展功能。项目提供标准接口和示例代码，开发者可快速构建自定义插件（如联网搜索、代码解释器、第三方服务集成）。亮点包括官方支持、生态丰富、低门槛接入。适合 AI 应用开发者、ChatGPT 重度用户及企业自动化场景。",
+        "scenarios": [
+          "为 ChatGPT 添加实时数据查询能力，如天气、股票价格等。",
+          "集成企业内部系统（如 CRM、数据库），构建智能助手。",
+          "创建自动化工作流，让 AI 调用外部服务完成订餐、日程安排等任务。"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Node.js 和 git。运行以下命令： 1. git clone https://github.com/openai/plugins.git 2. cd plugins 3. npm install 4. 参照 docs 目录下的文档，配置环境变量（如 OPENAI_API_KEY）。 5. 运行 npm start 启动本地服务。 6. 在 ChatGPT 的插件商店中启用本地插件进行测试。"
+      }
+    },
+    "repo:refactoringhq/tolaria": {
+      "type": "repo-insight",
+      "hash": "df9a8a05fab8938aeb698c94",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T22:52:40.949Z",
+      "value": {
+        "summaryZh": "Tolaria 是一款基于 TypeScript 构建的桌面应用，专为管理 Markdown 知识库而设计。它提供了直观的界面来组织、搜索和编辑 Markdown 文件，支持标签分类、全文检索和实时预览。亮点在于其轻量级架构和高度可定制性，适合个人知识管理、笔记整理以及小型团队协作。对于使用 Markdown 写作的知识工作者、开发者或研究者来说，Tolaria 能够高效地串联碎片信息，打造个人知识体系。",
+        "scenarios": [
+          "个人知识管理：用于整理学习笔记、技术文档和读书摘要，通过标签和搜索快速定位信息。",
+          "团队协作：共享 Markdown 知识库，方便成员共同维护和查阅项目文档或内部知识库。",
+          "写作辅助：作为写作草稿的管理工具，支持实时预览和版本对比，提升长文写作效率。"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/refactoringhq/tolaria.git 进入目录：cd toloria 安装依赖：npm install 启动开发模式：npm run dev 如需构建生产版本：npm run build 然后按照提示运行对应平台的可执行文件。"
+      }
+    },
+    "repo:HunxByts/GhostTrack": {
+      "type": "repo-insight",
+      "hash": "5727d590864683b46f2c2c8a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T22:52:44.956Z",
+      "value": {
+        "summaryZh": "GhostTrack 是一个基于 Python 的实用工具，用于追踪手机号或设备的大致地理位置。它利用公开的 API 或数据库查询，无需复杂配置即可快速获取位置信息。亮点在于轻量、易用且支持批量查询，适合安全研究人员、渗透测试人员以及个人隐私保护需求者。注意：请合法使用，避免侵犯他人隐私。",
+        "scenarios": [
+          "在安全评估中，测试手机号是否泄露地理位置信息。",
+          "家长监控子女手机号的实时位置，确保安全。",
+          "应急场景下，协助定位丢失手机的持有人。"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/HunxByts/GhostTrack.git，进入目录：cd GhostTrack，安装依赖：pip install -r requirements.txt，运行：python ghosttrack.py -m <手机号>。注意：确保遵守当地法律法规。"
+      }
+    },
+    "repo:microsoft/pg_durable": {
+      "type": "repo-insight",
+      "hash": "b5f79ea5c3e214ba4bd7a338",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T22:52:49.304Z",
+      "value": {
+        "summaryZh": "pg_durable 是微软开源的 PostgreSQL 扩展，用 Rust 实现数据库内持久化执行引擎。它支持在 PostgreSQL 中定义可靠的任务和工作流，确保任务即使在系统崩溃后也能恢复并继续执行，提供 at-least-once 语义。亮点包括：基于 PostgreSQL 事务的持久化状态管理、轻量级无外部依赖、高性能异步任务执行。适合需要强一致性任务调度的工作负载，如金融交易、订单处理、物联网事件响应等。",
+        "scenarios": [
+          "需要数据库内事务性任务调度，确保任务不丢失，例如支付对账或库存更新。",
+          "构建微服务编排中的可靠工作流，利用 PostgreSQL 作为单一状态存储。",
+          "在物联网场景中处理设备上报事件，保证每个事件被精确处理一次。"
+        ],
+        "agentInstallPrompt": "请先在 PostgreSQL 环境中安装 Rust 编译工具链并确保有 cargo-pgx。然后执行以下命令： 1. git clone https://github.com/microsoft/pg_durable.git 2. cd pg_durable 3. cargo pgx run --release # 这会自动创建并启动一个测试数据库 （或对现有数据库：cargo pgx install --release） 创建扩展：CREATE EXTENSION pg_durable; 运行示例：SELECT durable.queue_create('my_queue');"
+      }
+    },
+    "repo:chopratejas/headroom": {
+      "type": "repo-insight",
+      "hash": "a1798e7f28bb01be2f7a5273",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T22:52:54.409Z",
+      "value": {
+        "summaryZh": "Headroom 是一个开源 Python 工具，用于在将工具输出、日志、文件和 RAG 块送入大语言模型之前进行压缩，可减少 60-95% 的 token 消耗，同时保持答案质量不变。它提供库、代理和 MCP 服务器三种使用方式，适合需要降低 LLM 调用成本、加快推理速度或处理大量文本输入的开发者。",
+        "scenarios": [
+          "压缩 CI/CD 流水线日志后再输入 LLM 进行错误分析，减少 token 费用。",
+          "在 RAG 系统中压缩检索到的文档块，使上下文窗口能容纳更多相关信息。",
+          "作为透明代理运行，自动压缩所有发送到 LLM API 的请求，无需修改现有代码。"
+        ],
+        "agentInstallPrompt": "安装 headroom 库并测试压缩功能：先运行 pip install headroom，然后从示例开始，使用 headroom.cli 压缩文件或标准输入。例如：echo '这是一段很长的测试文本' | headroom --model default --verbose，观察 token 减少效果。如需作为代理运行，执行 headroom proxy --port 8080，并将 LLM 客户端指向该代理。"
       }
     }
   }
