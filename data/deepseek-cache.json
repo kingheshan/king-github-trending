@@ -948,17 +948,17 @@
     },
     "repo:multica-ai/multica": {
       "type": "repo-insight",
-      "hash": "697a8c2c7f0694fd12e759f5",
+      "hash": "b63f8fea53d184fccfc79203",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:53:03.426Z",
+      "generatedAt": "2026-06-08T00:51:24.173Z",
       "value": {
-        "summaryZh": "Multica 是一个开源托管代理平台，专为管理多个 AI 编码代理而设计。它将编码代理转化为真正的协作队友，支持任务分配、进度追踪与技能复合。基于 TypeScript 开发，提供简洁的 API 和可视化界面，适合需要多代理协同完成复杂开发工作的团队。亮点在于可动态组合不同代理的能力，实现流水线式智能开发流程。适用于希望提升开发效率、降低人工协调成本的技术团队。",
+        "summaryZh": "Multica是一个开源的托管代理平台，旨在将编码代理转变为真正的队友。它允许用户分配任务、跟踪进度和复合技能，基于Go语言构建，适合需要管理多个AI代理的开发团队，提升协作效率和自动化能力。",
         "scenarios": [
-          "多代理并行开发：为不同模块分别配置编码代理，并行实现功能并自动整合进度。",
-          "自动化代码审查与修复：分配专门的审查代理和修复代理，自动检测代码问题并生成补丁。",
-          "智能任务分配与追踪：根据代理的历史表现和技能，自动分配子任务并实时监控完成状态。"
+          "团队使用Multica分配代码审查任务给多个AI代理，实时跟踪审查进度和结果",
+          "开发者在持续集成流程中集成Multica，自动运行测试和部署任务，由代理协作完成",
+          "个人开发者利用Multica的复合技能功能，将不同专长的代理组合解决复杂编程问题"
         ],
-        "agentInstallPrompt": "克隆仓库：git clone https://github.com/multica-ai/multica.git && cd multica。安装依赖：npm install。构建项目：npm run build。启动服务：npm run dev。访问本地仪表盘（默认端口 3000）创建代理并分配任务。如需单代理试跑，可运行示例：npx tsx examples/single-agent.ts"
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/multica-ai/multica.git && cd multica 确保已安装Go 1.18+，运行：go build -o multica ./cmd/multica 然后启动服务：./multica server 访问 http://localhost:8080 开始使用。"
       }
     },
     "repo:kepano/obsidian-skills": {
@@ -1619,6 +1619,51 @@
           "作为透明代理运行，自动压缩所有发送到 LLM API 的请求，无需修改现有代码。"
         ],
         "agentInstallPrompt": "安装 headroom 库并测试压缩功能：先运行 pip install headroom，然后从示例开始，使用 headroom.cli 压缩文件或标准输入。例如：echo '这是一段很长的测试文本' | headroom --model default --verbose，观察 token 减少效果。如需作为代理运行，执行 headroom proxy --port 8080，并将 LLM 客户端指向该代理。"
+      }
+    },
+    "repo:Panniantong/Agent-Reach": {
+      "type": "repo-insight",
+      "hash": "7f3f3e1d3f8560a3607eaf5e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T23:44:11.032Z",
+      "value": {
+        "summaryZh": "Agent-Reach 是一个开源 CLI 工具，让 AI 代理能够“看见”整个互联网。它支持从 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等主流平台读取和搜索内容，无需任何 API 密钥或费用。亮点在于零 API 成本、统一命令行接口、易于集成到 AI 工作流。适合需要将实时网络数据注入 AI 代理的开发者、AI 应用构建者、数据采集爱好者。",
+        "scenarios": [
+          "AI 代理在对话中实时搜索社交媒体获取最新话题和用户观点。",
+          "开发者构建自动化工作流，从多个平台抓取内容用于分析或训练。",
+          "数据科学家无需付费 API 即可采集多平台数据用于研究或监控。"
+        ],
+        "agentInstallPrompt": "克隆仓库并安装依赖：git clone https://github.com/Panniantong/Agent-Reach.git && cd Agent-Reach && pip install -r requirements.txt。使用前无需配置API密钥，直接运行 CLI：python main.py --help 查看支持平台。示例：python main.py search reddit 'AI news' 搜索 Reddit 上关于 AI 新闻的内容。"
+      }
+    },
+    "repo:nesquena/hermes-webui": {
+      "type": "repo-insight",
+      "hash": "1f49973751364e09526aa27c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-07T23:59:21.341Z",
+      "value": {
+        "summaryZh": "Hermes WebUI 是一个基于 Web 和移动端的界面，用于便捷地使用和管理 Hermes Agent。它提供了直观的仪表盘、任务调度、日志查看等功能，支持通过浏览器或手机远程控制 Agent。亮点在于无需复杂配置，即可在多种设备上实时监控和操作 Agent，适合需要灵活管理 AI 代理的开发者和运维人员。",
+        "scenarios": [
+          "远程管理 Hermes Agent，通过浏览器查看运行状态和日志",
+          "在手机上快速执行代理任务，无需登录服务器",
+          "团队协作共享 Agent 访问权限，统一监控多个实例"
+        ],
+        "agentInstallPrompt": "首先确保已安装 Python 3.8+ 和 Git。克隆仓库：git clone https://github.com/nesquena/hermes-webui.git，进入目录：cd hermes-webui，创建虚拟环境：python -m venv venv，激活：source venv/bin/activate（Windows 用 venv\\Scripts\\activate），安装依赖：pip install -r requirements.txt，复制配置文件：cp .env.example .env 并编辑填入 Hermes Agent 的连接信息，最后运行：python run.py，访问 http://localhost:5000 即可使用。"
+      }
+    },
+    "repo:pewdiepie-archdaemon/odysseus": {
+      "type": "repo-insight",
+      "hash": "d9422b42910153efd555e14e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-06-08T00:33:28.143Z",
+      "value": {
+        "summaryZh": "Odysseus 是一个自托管的 AI 工作空间，基于 Python 构建，旨在为用户提供私密、可控的 AI 助手环境。亮点包括完全本地化部署、支持多种 AI 模型集成、模块化插件架构，适合注重数据隐私的开发者、小团队或 AI 爱好者。无需依赖外部云服务，即可在个人服务器上运行强大的 AI 工作流，实现聊天、文档处理、代码辅助等功能。",
+        "scenarios": [
+          "企业内网部署私有 AI 助手，避免数据外泄",
+          "个人开发者搭建专属 AI 编程与文档助手",
+          "团队协作中利用自托管 AI 进行知识库问答"
+        ],
+        "agentInstallPrompt": "首先，确保系统已安装 Python 3.8+ 和 pip。然后执行：git clone https://github.com/pewdiepie-archdaemon/odysseus.git && cd odysseus && pip install -r requirements.txt。接着，复制 config.example.yaml 为 config.yaml，按需修改模型和存储配置。最后运行 python main.py 启动服务，访问 http://localhost:8080 即可开始使用。若需安装 Docker 版本，可运行：docker run -d -p 8080:8080 --name odysseus odysseus:latest（需先构建镜像）。"
       }
     }
   }
