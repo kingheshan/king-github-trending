@@ -1293,17 +1293,17 @@
     },
     "repo:1jehuang/jcode": {
       "type": "repo-insight",
-      "hash": "4ef7fabe9d6ab8524c394857",
+      "hash": "320e71a56130543e5a1d88c0",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-27T22:00:37.071Z",
+      "generatedAt": "2026-07-20T22:00:09.036Z",
       "value": {
-        "summaryZh": "jcode 是一个用 Rust 构建的轻量级编码代理工具（Coding Agent Harness），旨在为开发者提供高效的代码生成、测试与调试辅助。它通过命令行接口与 AI 模型交互，支持自定义提示和上下文，能够自动执行代码修改、运行测试等任务，适合追求极致性能与低资源占用的 Rust 开发者。亮点包括：纯 Rust 实现、无外部运行时依赖、支持多种 AI 后端（如 OpenAI）、以及可插拔的代理工作流。",
+        "summaryZh": "jcode 是一个面向代码任务的智能体框架，基于 Rust 实现高性能与安全性。它提供灵活的指令调度、多模型集成和上下文管理功能，支持自动化代码生成、审查与重构。亮点在于轻量级、低延迟，适合作为 LLM 应用的编排层。推荐给 AI 工程师、DevOps 和 Rust 开发者，用于构建定制化代码助手。",
         "scenarios": [
-          "在 CI/CD 流水线中，使用 jcode 自动修复代码问题并验证测试，无需人工介入。",
-          "作为 IDE 外挂工具，快速根据自然语言描述生成 Rust 代码片段或单元测试。",
-          "团队协作时，用 jcode 统一管理代码生成规则，确保风格一致性并提高开发效率。"
+          "在 CI/CD 流程中自动进行代码审查与修复建议",
+          "作为 VSCode 插件后端的智能代码补全引擎",
+          "构建多代理协作系统，完成复杂代码重构任务"
         ],
-        "agentInstallPrompt": "首先安装 Rust 工具链（rustup 和 cargo）。然后克隆仓库：git clone https://github.com/1jehuang/jcode.git && cd jcode。使用 cargo build --release 编译。设置 AI 密钥（例如 export OPENAI_API_KEY=你的密钥）。运行示例：cargo run -- '写一个读取 CSV 文件的 Rust 函数'。若需测试，运行 cargo test。"
+        "agentInstallPrompt": "首先确保已安装 Rust 工具链（https://rustup.rs）。然后执行：git clone https://github.com/1jehuang/jcode.git && cd jcode && cargo build --release。如需快速试跑，运行：cargo run --example basic -- 启动默认代理，并输入代码指令。更多文档见项目 README。"
       }
     },
     "repo:LearningCircuit/local-deep-research": {
@@ -2343,17 +2343,17 @@
     },
     "repo:Graphify-Labs/graphify": {
       "type": "repo-insight",
-      "hash": "05959853b930178f6a5c2a78",
+      "hash": "1148ed3d9cd1fc43d06b128a",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-19T22:05:13.643Z",
+      "generatedAt": "2026-07-20T22:02:04.165Z",
       "value": {
-        "summaryZh": "Graphify 是一款 AI 编码助手技能，能将任意代码文件夹、SQL 模式、R 脚本、Shell 脚本、文档、论文、图片或视频转化为可查询的知识图谱。它支持 Claude Code、Codex、OpenCode、Cursor、Gemini CLI 等多种 AI 工具。核心亮点是统一应用代码、数据库模式和基础设施图，帮助开发者快速理解项目全貌。适合需要快速上手陌生代码库、跨技术栈协作或文档与代码关联分析的技术人员。",
+        "summaryZh": "Graphify 是一个将代码库、文档、SQL 模式、配置文件及 PDF 转化为可查询知识图谱的开源工具。它采用本地确定性 AST 解析，每条边都附带解释，无需向量存储或外部依赖。亮点在于支持 Claude Code、Cursor、Codex 和 Gemini CLI 等 AI 编码助手，作为 /graphify skill 直接调用。适合需要深度理解代码结构、追踪依赖关系、维护跨文档知识库的开发者。",
         "scenarios": [
-          "当你接手一个大型遗留项目时，使用 Graphify 生成项目知识图谱，快速理解代码、数据库和基础设施之间的关系。",
-          "在跨团队协作中，将多个微服务代码、数据库 schema 和部署脚本整合为一个查询图，方便统一搜索和审查。",
-          "将论文、技术文档与代码仓库一同导入，构建可交互的知识网络，辅助学术研究或技术调研。"
+          "新成员快速上手大型项目：通过查询图谱了解模块调用、数据流和文档关联。",
+          "代码审查中自动生成依赖图：精准定位改动影响的范围，避免遗漏。",
+          "将多语言代码库与设计文档、数据库 schema 整合，构建统一的可查询知识库。"
         ],
-        "agentInstallPrompt": "克隆仓库：git clone https://github.com/Graphify-Labs/graphify.git，进入目录：cd graphify，安装依赖：pip install -r requirements.txt，然后运行：python graphify.py --folder /path/to/your/project，即可生成知识图谱文件（默认输出为 graph.json）。如果需要用 AI 工具查询，可配合 Claude Code 或 Cursor 加载该 JSON 文件。"
+        "agentInstallPrompt": "```bash # 克隆仓库并安装依赖 git clone https://github.com/Graphify-Labs/graphify.git cd graphify pip install -r requirements.txt # 对当前目录下的代码库生成知识图谱（支持 Python/JS 等） python -m graphify /path/to/your/codebase --output graph.json # 使用 /graphify skill 在 Claude Code 中查询（示例） # 在 Claude Code 中输入：/graphify graph.json \"show all functions that call database\" ```"
       }
     },
     "repo:DietrichGebert/ponytail": {
@@ -2414,6 +2414,246 @@
           "在本地环境中对技能进行沙盒测试和性能验证，无需部署至云端。"
         ],
         "agentInstallPrompt": "首先确保已安装Python 3.10+和pip。克隆仓库：git clone https://github.com/sickn33/agentic-awesome-skills.git，然后进入目录并安装：cd agentic-awesome-skills && pip install -r requirements.txt。接着运行CLI测试：python aas_cli.py --help。若要启动Workbench，执行：python workbench.py，打开浏览器访问对应地址。"
+      }
+    },
+    "repo:msitarzewski/agency-agents": {
+      "type": "repo-insight",
+      "hash": "77a48418ea16d581b566439a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:00:18.180Z",
+      "value": {
+        "summaryZh": "Agency-Agents 是一个 Shell 脚本集合，模拟完整 AI 代理团队，包含前端专家、Reddit 社区运营、创意注入者等角色。每个代理拥有独立人格、工作流程和可交付成果，可直接在终端调用。亮点在于轻量、零依赖，通过组合脚本实现多样化任务自动化。适合开发者、运维人员及 AI 代理探索者快速搭建自动化工作流。",
+        "scenarios": [
+          "自动化社交媒体营销：使用 Reddit 社区忍者代理自动发布推广内容、回复评论并监控舆情。",
+          "快速前端原型开发：调用前端向导代理根据提示词生成 HTML/CSS/JS 代码片段并本地预览。",
+          "内容质量审核：利用现实检测代理对 AI 生成的文章进行事实核查与逻辑验证。"
+        ],
+        "agentInstallPrompt": "克隆仓库并进入目录：git clone https://github.com/msitarzewski/agency-agents && cd agency-agents。确保已安装 bash、curl、jq 等基础工具。直接运行示例代理：./agents/frontend_wizard.sh --prompt \"创建一个带按钮的响应式卡片\"。若需完整帮助，查看 README：cat README.md。"
+      }
+    },
+    "repo:topoteretes/cognee": {
+      "type": "repo-insight",
+      "hash": "5eab807ef70d7b85403efc9e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:00:25.244Z",
+      "value": {
+        "summaryZh": "Cognee 是一个开源的 AI 记忆平台，专为智能代理设计。它通过自部署的知识图谱引擎，为代理提供跨会话的持久化长期记忆。亮点包括结构化记忆存储、图形化知识管理、与主流 LLM 框架集成。适合需要构建具备上下文记忆能力的 AI 应用开发者，如聊天机器人、个人助理、自动化工作流等。",
+        "scenarios": [
+          "构建具有长期记忆的聊天机器人，使其记住用户偏好和历史对话。",
+          "为自动化工作流代理提供连续任务的上下文记忆，避免重复输入。",
+          "在知识管理应用中，用知识图谱组织并检索非结构化信息。"
+        ],
+        "agentInstallPrompt": "请执行以下步骤安装并试跑 Cognee：首先，使用 git clone https://github.com/topoteretes/cognee 克隆仓库。然后，进入目录 cognee，运行 pip install -r requirements.txt 安装依赖。接着，复制 .env.example 为 .env 并根据需要配置 API 密钥。最后，运行 python examples/basic_usage.py 进行测试。注意确保 Python 版本 >= 3.9。"
+      }
+    },
+    "repo:Robbyant/lingbot-map": {
+      "type": "repo-insight",
+      "hash": "aebb7cbd254ccef125174454",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:00:34.358Z",
+      "value": {
+        "summaryZh": "LingBot-Map 是一个前馈式3D基础模型，专为从流式数据（如视频流或传感器流）实时重建3D场景而设计。与传统方法需要迭代优化不同，该模型通过前馈神经网络直接预测场景几何，实现高效率和实时性。其亮点在于无需后处理即可从连续数据流中生成连贯的3D地图，特别适合动态环境。适用于机器人、自动驾驶、AR/VR等领域的开发者，以及3D计算机视觉研究者，可快速部署用于实时场景理解与建模。",
+        "scenarios": [
+          "机器人实时探索未知环境，根据传感器流即时构建3D地图以辅助导航。",
+          "自动驾驶车辆处理连续激光雷达或摄像头数据，实时重建周围道路与障碍物场景。",
+          "AR/VR应用根据用户移动设备的摄像头流，动态生成可交互的虚拟空间模型。"
+        ],
+        "agentInstallPrompt": "首先，git clone https://github.com/Robbyant/lingbot-map.git && cd lingbot-map。然后，创建虚拟环境（如conda create -n lingbot python=3.9 && conda activate lingbot），并安装依赖：pip install -r requirements.txt（若存在）或根据项目说明安装torch、numpy等。接着，下载预训练模型（假设项目提供，在README中查找链接）。最后，运行示例：python demo.py --input path/to/streaming_data，观察3D重建结果。具体命令请参照项目README。"
+      }
+    },
+    "repo:every-app/open-seo": {
+      "type": "repo-insight",
+      "hash": "9db0b4db073dfd150754be33",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:00:42.755Z",
+      "value": {
+        "summaryZh": "Open SEO 是一款开源的搜索引擎优化工具，旨在成为 Semrush 和 Ahrefs 的免费替代品。它提供关键词研究、反向链接分析、网站审计、排名追踪等核心功能，所有数据均自托管，保护用户隐私。基于 TypeScript 构建，易于扩展和定制，适合需要低成本、高控制权的 SEO 专业团队或独立站长。项目活跃，社区友好，支持 Docker 部署，降低运维门槛。",
+        "scenarios": [
+          "中小型网站进行日常 SEO 诊断，发现技术问题和内容优化机会。",
+          "跨境电商运营者分析竞争对手关键词策略，制定自身排名提升计划。",
+          "自由职业者为客户提供可自托管的 SEO 报告，避免数据泄露到第三方平台。"
+        ],
+        "agentInstallPrompt": "克隆仓库并安装依赖： ```bash git clone https://github.com/every-app/open-seo.git cd open-seo npm install ``` 复制环境变量示例文件并修改： ```bash cp .env.example .env # 编辑 .env，配置数据库连接（支持 PostgreSQL）等参数 ``` 启动开发服务器： ```bash npm run dev ``` 生产环境构建： ```bash npm run build npm start ``` 也可以使用 Docker Compose（参考 docker-compose.yml）一键启动所有服务。"
+      }
+    },
+    "repo:PrefectHQ/fastmcp": {
+      "type": "repo-insight",
+      "hash": "c606c1b2bdb6edb718d239a6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:00:48.899Z",
+      "value": {
+        "summaryZh": "FastMCP 是一个用于构建 MCP（模型上下文协议）服务器和客户端的 Python 库，以其快速和 Pythonic 的设计著称。它简化了 MCP 的集成，提供高性能的异步 I/O 和直观的 API，适合需要构建基于 MCP 的 AI 应用或微服务的开发者。亮点包括零样板代码、自动类型推导、以及丰富的中间件支持，让开发者能快速搭建可靠的消息通信层。",
+        "scenarios": [
+          "在 AI 应用中构建高效的模型上下文通信层，快速集成不同模型或服务。",
+          "作为微服务架构中的消息中间件，实现服务间低延迟的异步通信。",
+          "构建实时数据流处理系统，利用 MCP 协议传输控制指令和事件。"
+        ],
+        "agentInstallPrompt": "首先，确保 Python 环境版本 >= 3.8。然后安装 FastMCP：运行 `pip install fastmcp`。创建一个简单服务器示例： ```python from fastmcp import FastMCPServer server = FastMCPServer() @server.handler('ping') async def handle_ping(data): return {'pong': data} if __name__ == '__main__': server.run('tcp://0.0.0.0:5555') ``` 客户端示例： ```python from fastmcp import FastMCPClient async def main(): client = FastMCPClient('tcp://localhost:5555') response = await client.call('ping', {'message': 'hello'}) print(response) ``` 运行客户端前，先启动服务器。"
+      }
+    },
+    "repo:tokio-rs/topcoat": {
+      "type": "repo-insight",
+      "hash": "2619ee316196ee497311db2b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:01:06.497Z",
+      "value": {
+        "summaryZh": "Topcoat 是 Tokio 团队推出的 Rust 全栈 Web 框架，提供电池包含式体验。内置路由、模板引擎、数据库集成等功能，简化 Rust Web 开发。基于 async/await，性能优异，适合追求类型安全和并发性能的开发者。亮点在于开箱即用，减少样板代码，快速构建生产级应用。适合熟悉 Rust 的中高级开发者。",
+        "scenarios": [
+          "快速构建 RESTful API 服务，利用 Rust 的高性能和类型安全。",
+          "构建全栈 Web 应用，支持前后端集成或服务端渲染。",
+          "作为微服务框架，利用 Tokio 异步运行时实现高并发处理。"
+        ],
+        "agentInstallPrompt": "使用 cargo 创建新项目并添加 topcoat 依赖：`cargo new my_web_app && cd my_web_app && cargo add topcoat`。然后创建 src/main.rs，写入以下内容启动服务器： ```rust use topcoat::prelude::*; #[topcoat::get(\"/\")] async fn index() -> &'static str { \"Hello, Topcoat!\" } #[topcoat::main] async fn main() -> std::io::Result<()> { topcoat::serve((\"127.0.0.1\", 3000), index).await } ``` 最后运行 `cargo run` 访问 http://127.0.0.1:3000。"
+      }
+    },
+    "repo:iptv-org/iptv": {
+      "type": "repo-insight",
+      "hash": "cbdf9205cb593a59f0624121",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:01:14.669Z",
+      "value": {
+        "summaryZh": "iptv-org/iptv 是一个收集全球公开 IPTV 频道的开源项目，提供大量高质量、持续更新的直播电视流，涵盖新闻、体育、娱乐等多种类别。项目数据以 JSON 和 M3U 格式提供，支持 VLC、Kodi 等主流播放器直接导入。适合希望免费观看国际电视节目、测试播放器兼容性或进行媒体数据研究的用户。",
+        "scenarios": [
+          "在 VLC 或 IINA 等播放器中导入频道列表，观看来自不同国家的新闻和体育直播。",
+          "开发者集成频道列表到自己的 IPTV 应用或测试播放器功能。",
+          "利用频道数据作为来源，进行媒体内容分析或可视化展示。"
+        ],
+        "agentInstallPrompt": "首先克隆仓库：git clone https://github.com/iptv-org/iptv.git && cd iptv。然后安装依赖：npm install。之后运行 npm start 以生成最新频道列表文件（如 iptv.m3u），该文件可直接用 VLC 等播放器打开。如需持续更新，可使用 cron 定期执行 npm start。"
+      }
+    },
+    "repo:oblien/openship": {
+      "type": "repo-insight",
+      "hash": "c0916f66cae88262948c22f0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:01:18.494Z",
+      "value": {
+        "summaryZh": "OpenShip 是一个自托管的部署平台，专注于简化应用部署流程。它支持多种部署策略，提供直观的 Web 界面，帮助开发者快速将应用部署到服务器或 Kubernetes 集群。亮点在于其轻量级、易于配置和高度可扩展性，适合需要自己掌控部署过程的团队。",
+        "scenarios": [
+          "中小团队内部持续部署，无需依赖第三方 CI/CD 服务",
+          "个人开发者快速部署个人项目到自有服务器",
+          "教育场景下教学部署流程，展示自托管平台搭建"
+        ],
+        "agentInstallPrompt": "请帮我完成 OpenShip 的安装和试跑。首先，确保已安装 Node.js 18+ 和 Docker。然后，克隆仓库：git clone https://github.com/oblien/openship.git && cd openship。接着，复制环境变量文件：cp .env.example .env 并根据需要修改配置。使用 pnpm install 安装依赖，然后运行 pnpm dev 启动开发服务器。最后，在浏览器中打开 http://localhost:3000 查看 Web 界面。"
+      }
+    },
+    "repo:microsoft/Ontology-Playground": {
+      "type": "repo-insight",
+      "hash": "7ae8e57f82415f9ba1def6b4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:01:22.795Z",
+      "value": {
+        "summaryZh": "Ontology-Playground 是微软开源的零后端静态 Web 应用，旨在帮助用户学习本体论（Ontology）和 Microsoft Fabric IQ。它提供预建本体目录，支持可视化设计、导出为 RDF/XML 格式，并可生成可分享的交互式图表。适合本体初学者、数据架构师及 Microsoft Fabric 用户快速上手和实验。",
+        "scenarios": [
+          "教育场景：用于本体论课程教学，学生可直观设计并导出本体。",
+          "企业数据建模：数据架构师利用预建本体快速构建数据语义模型。",
+          "Microsoft Fabric 集成：结合 Fabric IQ 测试和验证本体关系。"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/microsoft/Ontology-Playground.git，进入目录：cd Ontology-Playground，安装依赖：npm install，运行开发服务器：npm start。浏览器打开 http://localhost:3000 即可使用。"
+      }
+    },
+    "repo:handy-computer/transcribe.cpp": {
+      "type": "repo-insight",
+      "hash": "feec096e2d86dd966b5e0946",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:01:27.402Z",
+      "value": {
+        "summaryZh": "transcribe.cpp 是一个基于 ggml 的轻量级语音转文本推理工具，支持 16 种以上主流模型家族（如 Whisper、Distil-Whisper 等）。它完全离线运行，无需网络，保护用户隐私。亮点包括跨平台支持（Windows/Linux/macOS）、极小内存占用、极低延迟推理，以及简洁的 C++ API 接口。适合需要高质量离线语音识别的开发者、边缘设备部署者、隐私敏感用户，以及希望自定义模型的 AI 工程师。",
+        "scenarios": [
+          "在无网络环境下将会议录音实时转为文字笔记",
+          "为物联网设备添加本地语音命令识别功能",
+          "安全场景中对敏感对话进行本地化语音分析"
+        ],
+        "agentInstallPrompt": "首先克隆仓库：git clone https://github.com/handy-计算机/transcribe.cpp && cd transcribe.cpp。然后使用 CMake 构建：mkdir build && cd build && cmake .. && make -j4。下载一个 Whisper 模型（如 base.en），运行示例：./transcribe -m /path/to/ggml-base.en.bin -f /path/to/audio.wav。更多选项见 README。"
+      }
+    },
+    "repo:moonshine-ai/moonshine": {
+      "type": "repo-insight",
+      "hash": "d67aa405f5731686bd296020",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:01:37.848Z",
+      "value": {
+        "summaryZh": "Moonshine 是一个极低延迟的语音交互 C++ 库，集成语音转文字（STT）、意图识别和文字转语音（TTS）功能。其核心设计针对实时性要求极高的场景，支持边缘设备部署，延迟可低至毫秒级。项目采用免唤醒词或自定义唤醒词两种模式，内置轻量级神经网络模型，无需云端依赖。适合需要构建本地语音助手、智能客服、游戏内语音控制的开发者。开源且易于嵌入现有系统，是打造流畅语音交互体验的理想工具。",
+        "scenarios": [
+          "实时语音助手：在智能音箱、车载系统中实现无感唤醒、快速指令识别与语音回复。",
+          "智能客服IVR：在电话系统中将用户语音实时转为文本并解析意图，缩短等待时间。",
+          "游戏语音控制：在电子游戏中让玩家通过语音释放技能或沟通，要求端到端延迟低于100ms。"
+        ],
+        "agentInstallPrompt": "请按以下步骤在Ubuntu上安装并试跑Moonshine： 1. 安装依赖：sudo apt update && sudo apt install -y cmake build-essential libsndfile1-dev libportaudio2 libportaudiocpp0 portaudio19-dev libfst-dev 2. 克隆仓库：git clone https://github.com/moonshine-ai/moonshine.git && cd moonshine 3. 构建项目：mkdir build && cd build && cmake .. && make -j$(nproc) 4. 下载预训练模型（示例）：wget https://github.com/moonshine-ai/moonshine/releases/download/v1.0/stt_model.zip && unzip stt_model.zip 5. 运行示例：./bin/moonshine_demo --input audio.wav --model models/stt_model.pb 注意：具体模型路径和参数请参考仓库README。"
+      }
+    },
+    "repo:Dicklesworthstone/destructive_command_guard": {
+      "type": "repo-insight",
+      "hash": "f99a2fbbe634331ed8f1487a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:01:42.773Z",
+      "value": {
+        "summaryZh": "Destructive Command Guard (dcg) 是用 Rust 开发的命令行工具，用于拦截并阻止 AI agent 或脚本执行危险的 git 和 shell 命令。它通过预定义的规则库匹配命令模式，在命令实际执行前进行拦截，防止误操作导致数据丢失或系统损坏。亮点包括：轻量级、高性能、支持自定义规则、可集成到 CI/CD 管道。适合使用 AI 编码 agent 的开发者、运维人员以及任何需要保护系统免受意外破坏性命令影响的人。",
+        "scenarios": [
+          "在 CI/CD 流水线中集成 dcg，防止 agent 误执行 `git push --force` 或 `rm -rf /` 等危险命令。",
+          "作为 AI 编码助手的命令防火墙，在本地开发环境中拦截 agent 生成的破坏性 shell 指令。",
+          "用于安全审计，记录并阻止被 AI 调用的高风险 git 操作，如强制推送或分支删除。"
+        ],
+        "agentInstallPrompt": "首先确保已安装 Rust 和 Cargo。然后执行以下命令： ```bash git clone https://github.com/Dicklesworthstone/destructive_command_guard.git cd destructive_command_guard cargo build --release ``` 构建后，将 `target/release/dcg` 添加到 PATH。使用方式：将 dcg 作为命令前缀，例如 `dcg git push --force` 将被拦截。也可通过 `dcg --allow` 临时放行。详细用法见 `dcg --help`。"
+      }
+    },
+    "repo:tt-a1i/archify": {
+      "type": "repo-insight",
+      "hash": "aeab601352a3081fa5525dda",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:01:47.575Z",
+      "value": {
+        "summaryZh": "Archify 是一个 JavaScript 库，专为 AI agent 设计，用于生成美观的架构图。它支持深色/浅色主题切换，并可导出为 PNG、JPEG、WebP、SVG 等格式。亮点在于简洁的 API 和即插即用的特性，非常适合需要自动生成架构图文档的开发者、技术写作者或 AI 辅助工具。通过几行代码即可集成到任何项目中，无需复杂配置，快速产出高质量图表。",
+        "scenarios": [
+          "AI agent 在回答系统架构问题时，动态生成可视化架构图并附带说明。",
+          "技术博客或文档中自动生成代码库的架构图，并支持主题切换以匹配页面风格。",
+          "CI/CD 流程中自动生成微服务或模块依赖关系图，导出为 SVG 嵌入报告。"
+        ],
+        "agentInstallPrompt": "在项目根目录下运行：npm install archify@latest，然后创建文件 test.js，内容如下： ```javascript const Archify = require('archify'); const arch = new Archify(); const diagram = arch.createDiagram({ title: '示例架构', theme: 'light', // 可选 'dark' nodes: [{ id: '1', label: '前端' }, { id: '2', label: '后端' }], edges: [{ from: '1', to: '2' }] }); diagram.export('png').then(() => console.log('图表已导出为 diagram.png')); ``` 然后运行 node test.js 即可。如需更多帮助，请查看仓库 README。"
+      }
+    },
+    "repo:anthropics/cwc-workshops": {
+      "type": "repo-insight",
+      "hash": "eb86dbc740544dab8f0b39ac",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:01:52.184Z",
+      "value": {
+        "summaryZh": "该项目是Anthropic推出的\"Coding with Claude\"工作坊材料，旨在帮助开发者通过实践学习如何利用Claude AI助手进行软件开发和代码生成。项目包含多个TypeScript示例和练习，覆盖从提示词工程到复杂代码生成的全流程。亮点在于提供可复现的实战场景，让开发者快速掌握与Claude协作开发的技巧。适合想要提升AI编程协作效率的开发者、技术团队以及AI应用探索者。",
+        "scenarios": [
+          "使用Claude辅助生成后端API代码，快速搭建服务端架构",
+          "在已有代码基础上，利用Claude进行调试和重构，提升代码质量",
+          "通过提示词工程实践，学习如何精准描述需求以获得Claude的优质输出"
+        ],
+        "agentInstallPrompt": "请先确保Node.js 18+和pnpm已安装。然后执行：git clone https://github.com/anthropics/cwc-workshops && cd cwc-workshops && pnpm install && pnpm run dev。如需运行特定练习，请参照各子目录内的README.md说明。"
+      }
+    },
+    "repo:MadsLorentzen/ai-job-search": {
+      "type": "repo-insight",
+      "hash": "792353299c92f8127b46b6fa",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:01:55.870Z",
+      "value": {
+        "summaryZh": "ai-job-search 是一个基于 Claude Code 构建的 AI 求职应用框架，运行在本地机器上。它可以自动评估招聘信息、定制简历、撰写求职信和准备面试。完全开源，用户可 Fork 并自由定制，适合求职者、开发者以及希望通过 AI 自动化求职流程的用户。亮点包括完全本地运行保护隐私、深度集成 Claude 的 AI 能力、以及高度可定制的框架设计。",
+        "scenarios": [
+          "自动筛选和评估大量招聘信息，根据个人偏好和技能匹配度排序",
+          "根据目标职位要求，一键生成定制化的简历和求职信",
+          "模拟面试提问并提供反馈，帮助用户准备面试"
+        ],
+        "agentInstallPrompt": "请克隆仓库：git clone https://github.com/MadsLorentzen/ai-job-search.git，然后进入目录：cd ai-job-search，安装依赖：npm install，设置 Claude API 密钥（在 .env 文件中添加 ANTHROPIC_API_KEY=your_key），最后运行：npm run dev。确保已安装 Node.js 和 npm。"
+      }
+    },
+    "repo:headroomlabs-ai/headroom": {
+      "type": "repo-insight",
+      "hash": "215dfda8012a313063a9a535",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-20T22:02:12.201Z",
+      "value": {
+        "summaryZh": "Headroom 是一个Python库和代理，用于在将工具输出、日志、文件和RAG分片送入大语言模型前进行智能压缩。它可为编码代理减少20%的token消耗，对JSON数据减少60-95%，同时保持答案质量不变。支持作为库嵌入、HTTP代理和MCP服务器使用。适合需要优化LLM调用成本、降低延迟的开发者、AI代理构建者和RAG系统使用者。",
+        "scenarios": [
+          "在AI编码代理中压缩工具调用输出，减少Token消耗，提升响应速度。",
+          "在RAG系统中预处理知识库文档分片，降低检索后输入LLM的Token数。",
+          "作为日志、监控数据的预处理层，在发送到LLM分析前压缩以减少成本。"
+        ],
+        "agentInstallPrompt": "首先，确保已安装Python 3.8+。在终端运行 `pip install headroom` 安装最新版。然后，创建一个Python脚本，导入headroom并使用其压缩函数：`from headroom import compress; result = compress({\"key\": \"value\"})`。如需作为代理运行，执行 `headroom proxy` 启动本地代理服务，默认端口8080。更多用法请参考文档：https://github.com/headroomlabs-ai/headroom"
       }
     }
   }
