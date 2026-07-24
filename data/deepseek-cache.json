@@ -2655,6 +2655,21 @@
         ],
         "agentInstallPrompt": "首先，确保已安装Python 3.8+。在终端运行 `pip install headroom` 安装最新版。然后，创建一个Python脚本，导入headroom并使用其压缩函数：`from headroom import compress; result = compress({\"key\": \"value\"})`。如需作为代理运行，执行 `headroom proxy` 启动本地代理服务，默认端口8080。更多用法请参考文档：https://github.com/headroomlabs-ai/headroom"
       }
+    },
+    "repo:Automattic/harper": {
+      "type": "repo-insight",
+      "hash": "53c8dfe7e5540d8a940e7b97",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-24T22:57:12.119Z",
+      "value": {
+        "summaryZh": "Harper 是一款离线、隐私优先的英文语法检查工具，基于 Rust 开发，速度极快且完全开源。它无需联网即可运行，保护用户隐私，适合集成到编辑器或作为独立命令行使用。亮点包括低资源占用、支持多种格式（Markdown、LaTeX 等）以及可自定义规则。适合注重隐私的写作者、开发者以及需要离线语法检查的场景。",
+        "scenarios": [
+          "在 Vim/Neovim 中实时检查 Markdown 文档的语法错误",
+          "作为 CI/CD 流程的一部分，自动检查项目文档的英文质量",
+          "在离线环境下处理敏感文档的英文校对工作"
+        ],
+        "agentInstallPrompt": "安装 Harper 语法检查器：首先确保系统已安装 Rust 工具链（若没有，运行 'curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh'）。然后克隆仓库：git clone https://github.com/Automattic/harper.git && cd harper。构建并安装命令行工具：cargo install --path . --locked。完成后，可使用 'harper-ls' 启动语言服务器（用于编辑器集成）或 'harper-cli' 检查文件，例如：echo 'This is a test sentence with a error.' | harper-cli --stdin。更多用法见项目 README。"
+      }
     }
   }
 }
