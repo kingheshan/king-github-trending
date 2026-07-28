@@ -1293,17 +1293,17 @@
     },
     "repo:1jehuang/jcode": {
       "type": "repo-insight",
-      "hash": "320e71a56130543e5a1d88c0",
+      "hash": "f31cd99135338e6af6e725fa",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-20T22:00:09.036Z",
+      "generatedAt": "2026-07-28T22:28:53.710Z",
       "value": {
-        "summaryZh": "jcode 是一个面向代码任务的智能体框架，基于 Rust 实现高性能与安全性。它提供灵活的指令调度、多模型集成和上下文管理功能，支持自动化代码生成、审查与重构。亮点在于轻量级、低延迟，适合作为 LLM 应用的编排层。推荐给 AI 工程师、DevOps 和 Rust 开发者，用于构建定制化代码助手。",
+        "summaryZh": "jcode 是一个基于 Rust 开发的高内存效率代码执行框架（harness），专为资源受限环境设计。它能够在极低的内存占用下安全地编译和运行用户提交的代码片段，支持多种编程语言。相比同类工具，jcode 通过精细的内存管理和沙箱隔离机制，显著减少了内存开销，适用于在线评测系统（OJ）、持续集成测试和边缘计算场景。其亮点包括极低的 RAM 占用、安全隔离和跨语言支持。适合需要高并发且内存敏感的代码执行环境的开发者。",
         "scenarios": [
-          "在 CI/CD 流程中自动进行代码审查与修复建议",
-          "作为 VSCode 插件后端的智能代码补全引擎",
-          "构建多代理协作系统，完成复杂代码重构任务"
+          "在线编程评测系统（OJ）中，高并发地编译和执行用户提交的代码，同时节省服务器内存成本。",
+          "嵌入式或物联网设备的自动化测试，在资源受限的硬件上运行单元测试和集成测试。",
+          "微服务架构中的代码沙箱，安全地执行不可信的用户代码，防止内存泄漏和恶意攻击。"
         ],
-        "agentInstallPrompt": "首先确保已安装 Rust 工具链（https://rustup.rs）。然后执行：git clone https://github.com/1jehuang/jcode.git && cd jcode && cargo build --release。如需快速试跑，运行：cargo run --example basic -- 启动默认代理，并输入代码指令。更多文档见项目 README。"
+        "agentInstallPrompt": "请确保已安装 Rust 工具链（rustup）。运行以下命令安装 jcode： git clone https://github.com/1jehuang/jcode.git cd jcode cargo build --release 然后运行示例：./target/release/jcode --help 以查看使用说明。如需测试代码执行，准备一个代码文件（如 test.py）并运行：./target/release/jcode run test.py --lang python。若需要自定义内存限制，可添加 --max-memory 参数。"
       }
     },
     "repo:LearningCircuit/local-deep-research": {
@@ -3014,6 +3014,111 @@
           "字幕翻译与润色：获取视频转录文本，利用 Claude 进行多语言翻译或语法修正。"
         ],
         "agentInstallPrompt": "首先确保安装 Python 3.10+ 和 ffmpeg。然后运行： ``` git clone https://github.com/bradautomates/claude-video.git cd claude-video pip install -r requirements.txt ``` 设置环境变量 ANTHROPIC_API_KEY。使用命令： ``` python claude_video.py --url <视频URL> --api-key $ANTHROPIC_API_KEY ``` 首次运行会下载模型，后续自动处理。"
+      }
+    },
+    "repo:jenkinsci/jenkins": {
+      "type": "repo-insight",
+      "hash": "2bfcd4304fd423d4d3b06427",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-28T22:28:12.728Z",
+      "value": {
+        "summaryZh": "Jenkins 是一个开源的自动化服务器，广泛用于持续集成和持续交付（CI/CD）。它提供了数百个插件来支持构建、部署和自动化任意项目。亮点在于其高度可扩展的插件生态、分布式构建能力以及丰富的社区支持。适合开发团队、运维人员以及任何希望实现自动化流水线的技术人员。",
+        "scenarios": [
+          "代码提交后自动构建和测试",
+          "自动化部署到测试和生产环境",
+          "定期执行批量任务或脚本"
+        ],
+        "agentInstallPrompt": "使用 Docker 快速启动 Jenkins：运行 `docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts`。首次访问 http://localhost:8080，根据提示获取初始化密码（`docker exec <容器名> cat /var/jenkins_home/secrets/initialAdminPassword`），然后安装推荐插件并创建管理员用户。"
+      }
+    },
+    "repo:huggingface/speech-to-speech": {
+      "type": "repo-insight",
+      "hash": "e806c809e38bfcaa063d9523",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-28T22:28:16.669Z",
+      "value": {
+        "summaryZh": "该项目利用开源模型在本地构建语音代理，实现语音到语音的交互。亮点包括支持多种开源模型（如Whisper、TTS）、完全离线运行、低延迟，适合需要隐私保护或定制化语音助手的开发者。通过简单的Python接口，用户可以快速集成语音识别、自然语言处理和语音合成，打造个性化的语音应用。",
+        "scenarios": [
+          "构建本地语音助手，无需云端API，保护用户隐私",
+          "开发离线语音交互系统，适用于网络受限环境",
+          "为游戏或虚拟角色添加语音对话功能，提升沉浸感"
+        ],
+        "agentInstallPrompt": "# 安装并试跑 speech-to-speech 项目 # 1. 克隆仓库 git clone https://github.com/huggingface/speech-to-speech cd speech-to-speech # 2. 创建虚拟环境（可选但推荐） python3 -m venv venv source venv/bin/activate # 3. 安装依赖 pip install -r requirements.txt # 4. 运行语音代理（默认使用麦克风和扬声器） python run.py # 若需测试录音文件，使用： python run.py --input-file test.wav"
+      }
+    },
+    "repo:virgiliojr94/book-to-skill": {
+      "type": "repo-insight",
+      "hash": "10fe2b5ea060e8e92f388978",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-28T22:28:21.041Z",
+      "value": {
+        "summaryZh": "Book-to-Skill 是一款将技术书籍 PDF 转化为 Claude Code 可交互技能的开源工具。它能自动提取书籍内容、生成结构化知识，并嵌入到 Claude Code 的工作流中，让开发者边编程边查阅书籍精华。亮点包括：一键转换、支持任意技术书、自动生成技能配置。适合希望将读书与编程实践深度融合的开发者、技术学习者及研究团队。",
+        "scenarios": [
+          "将一本新购的技术书籍 PDF 快速转换为 Claude Code 技能，边写代码边查询关键概念。",
+          "在团队中共享书籍技能，统一知识库，提升协作开发时的效率。",
+          "个人学习时，通过对话式交互深入理解书籍内容，并直接复现代码示例。"
+        ],
+        "agentInstallPrompt": "请先安装依赖：pip install book-to-skill。然后运行：book-to-skill --input /path/to/book.pdf --output skill_dir。这会将书籍 PDF 转换为一个 Claude Code 技能文件夹。接着将 skill_dir 路径添加到 Claude Code 的 skill 配置目录中，即可在编程过程中通过 '@skill' 引用书籍知识。"
+      }
+    },
+    "repo:opengeos/GeoLibre": {
+      "type": "repo-insight",
+      "hash": "6a19a223f6265d36e3eca371",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-28T22:28:29.214Z",
+      "value": {
+        "summaryZh": "GeoLibre 是一款轻量级、云原生的 GIS 平台，专为可视化、探索和分析地理空间数据而设计。它支持在 Web 浏览器、桌面端、移动端以及 Jupyter Notebook 中运行，实现了跨平台一致性。基于 TypeScript 开发，开源且易于扩展，适合地理信息开发者、数据科学家和地图应用开发者快速构建交互式地图应用，无需复杂部署。亮点包括高性能渲染、模块化架构和与 Jupyter 生态的无缝集成，降低了空间数据分析的门槛。",
+        "scenarios": [
+          "在 Web 端快速构建交互式地图应用，展示实时地理空间数据，如气象、交通或人口分布。",
+          "在 Jupyter Notebook 中集成 GIS 分析，结合 Pandas 等工具进行空间数据探索和机器学习建模。",
+          "在移动设备上轻量部署，用于野外数据采集、导航或位置服务原型验证。"
+        ],
+        "agentInstallPrompt": "首先确保已安装 Node.js（v16+）和 npm。然后执行以下命令克隆并启动 GeoLibre： ```bash git clone https://github.com/opengeos/GeoLibre.git cd GeoLibre npm install npm run dev ``` 等待开发服务器启动后，在浏览器中打开 http://localhost:3000 即可看到示例地图。若要在 Jupyter Notebook 中使用，请额外安装 `jupyter-geolibre` 插件：`pip install jupyter-geolibre`，然后在 Notebook 中运行 `%load_ext jupyter_geolibre` 并调用 `GeoLibreMap()` 显示地图。更多配置请参考仓库 README。"
+      }
+    },
+    "repo:paperswithbacktest/awesome-systematic-trading": {
+      "type": "repo-insight",
+      "hash": "f36e7f16fda194eb008dae55",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-28T22:28:33.508Z",
+      "value": {
+        "summaryZh": "awesome-systematic-trading 是一个精选的系统化交易资源集合，涵盖库、策略、书籍、博客和教程。该项目由 paperswithbacktest 维护，旨在为量化交易者和开发者提供一站式学习与参考平台。亮点包括：资源分类清晰、覆盖主流策略（如动量、均值回归）、持续更新。适合量化研究员、算法交易开发者及金融科技爱好者快速入门或深入探索系统化交易。",
+        "scenarios": [
+          "量化交易者希望系统化学习各种交易策略及其实现。",
+          "开发者在构建交易系统时寻找可靠的开源库与工具。",
+          "金融科技学生或研究人员需要精选的书籍与教程列表。"
+        ],
+        "agentInstallPrompt": "在终端中运行以下命令克隆仓库：git clone https://github.com/paperswithbacktest/awesome-systematic-trading.git 然后进入目录：cd awesome-systematic-trading。如需浏览内容，可直接打开 README.md 或使用文件管理器。这是一个资源列表，无需安装额外依赖。"
+      }
+    },
+    "repo:ayghri/i-have-adhd": {
+      "type": "repo-insight",
+      "hash": "047e61e41a01f7378404fbcf",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-28T22:28:41.264Z",
+      "value": {
+        "summaryZh": "本项目是一个专为AI编码代理设计的技能，通过优化系统提示，强制代理直接输出简洁、聚焦的答案，避免将关键信息埋藏在冗长的解释中。特别适合ADHD用户或任何追求效率的开发者，帮助快速获取所需解决方案。亮点在于其极简输出风格，减少认知负荷。",
+        "scenarios": [
+          "当你需要编码代理快速给出解决方案，而非背景资料时",
+          "当你希望AI解释代码时，得到直接答案而非长篇分析",
+          "当你在多任务环境下，需要AI输出精简信息以便快速阅读"
+        ],
+        "agentInstallPrompt": "请将本仓库中的提示内容（如prompt.txt或README中的指令）复制到你的AI编码代理的自定义指令中。例如，在Cline中，将内容添加到设置中的customInstructions，重启后代理将输出简洁ADHD友好的回答。"
+      }
+    },
+    "repo:UditAkhourii/adhd": {
+      "type": "repo-insight",
+      "hash": "9f6e4286ed70ede342ac2247",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-28T22:28:47.302Z",
+      "value": {
+        "summaryZh": "ADHD 是一个为编码代理设计的技能，基于思维树（Tree-of-Thought）算法并结合剪枝策略。它利用 Claude 和 Codex Agent SDK，在多个认知框架下并行发散思维，对每个思路进行评分，自动剪除陷阱路径，并深化幸存的分支。该技能特别适合创意性和跨领域的工作，可显著增强 AI 代理的自主探索与问题解决能力，是开发者实现复杂推理与创新的得力工具。",
+        "scenarios": [
+          "在编程任务中，代理利用 ADHD 技能并行生成多种代码设计方案，自动评估并淘汰低效方案，最终输出最优解。",
+          "跨学科研究时，代理通过不同认知框架（如逻辑、类比、反事实）对同一问题发散思考，整合多个角度的洞察。",
+          "创意设计场景中，代理借助 ADHD 进行头脑风暴，生成大量创意点子并自动筛选，提升创新效率。"
+        ],
+        "agentInstallPrompt": "克隆仓库并安装依赖：git clone https://github.com/UditAkhourii/adhd.git && cd adhd && npm install。确保已配置 Claude API 密钥（环境变量 ANTHROPIC_API_KEY）和 Codex Agent SDK。运行示例：npm run example。如需自定义，修改 src/config.ts 中的参数。"
       }
     }
   }
