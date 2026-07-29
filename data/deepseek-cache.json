@@ -1008,17 +1008,17 @@
     },
     "repo:HKUDS/nanobot": {
       "type": "repo-insight",
-      "hash": "20525099649636f5f109f0ec",
+      "hash": "2ce4155261e0adefef95c35d",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:54:17.718Z",
+      "generatedAt": "2026-07-28T23:29:20.570Z",
       "value": {
-        "summaryZh": "Nanobot是一个轻量级、开源的人工智能代理框架，专为简化工具集成、对话管理和工作流自动化而设计。其亮点在于极简的架构、模块化插件系统和低学习成本，适合开发者快速构建自定义AI助手。通过统一接口连接各类API、数据库和大模型，支持多轮对话与任务编排，尤其擅长处理需要调用外部工具的复杂场景。适合个人开发者、小团队及有快速原型需求的AI应用构建者。",
+        "summaryZh": "Nanobot是一个超轻量、开源、可自托管的个人AI代理框架，基于Python构建，提供WebUI界面、工具集成、记忆管理、MCP协议支持、多代理工作流、自动化任务和聊天应用。其亮点在于极简设计（核心代码仅数千行）、模块化插件体系、以及灵活的MCP扩展能力，适合个人开发者、极客和小型团队快速搭建私有AI助手或自动化流程。无需GPU，低资源占用，可在树莓派等边缘设备运行。",
         "scenarios": [
-          "在客服系统中集成多个第三方API（如天气查询、订单查询），通过自然语言指令自动调用相关工具完成用户请求。",
-          "构建自动化工作流，例如自动抓取网页数据、调用大模型进行分析并生成报告，全程通过对话式配置。",
-          "为内部工具开发AI助手，统一调度数据库查询、文件操作和通知服务，降低多系统切换成本。"
+          "个人AI助手：集成日历、邮件、知识库等工具，通过对话管理日程、检索信息。",
+          "自动化工作流：利用记忆和工具链自动执行重复任务，如数据爬取、文件整理。",
+          "多代理协作：分解复杂任务（如研究调研），由多个专业子代理协同完成。"
         ],
-        "agentInstallPrompt": "首先确保Python版本>=3.9，然后执行以下命令安装Nanobot： pip install nanobot-ai 安装完成后，创建配置文件config.yaml，示例如下： model: gpt-4 # 或其他兼容模型 plugins: - tool_search - tool_calculator 运行交互模式： nanobot run --config config.yaml 或通过Python代码调用： from nanobot import Agent agent = Agent(config='config.yaml') response = agent.run('查询今天的天气') print(response)"
+        "agentInstallPrompt": "请执行以下步骤安装nanobot： 1. 克隆仓库：git clone https://github.com/HKUDS/nanobot && cd nanobot 2. 创建虚拟环境：python3 -m venv venv && source venv/bin/activate 3. 安装依赖：pip install -r requirements.txt 4. 配置环境变量：cp .env.example .env，修改其中的API密钥（如OpenAI）。 5. 启动WebUI：python app.py 6. 访问 http://localhost:8080 即可使用。"
       }
     },
     "repo:DigitalPlatDev/FreeDomain": {
@@ -2163,17 +2163,17 @@
     },
     "repo:asgeirtj/system_prompts_leaks": {
       "type": "repo-insight",
-      "hash": "19ee4da9e596901ad19b989e",
+      "hash": "3c92d04f17d04247c874edc6",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-19T22:03:43.173Z",
+      "generatedAt": "2026-07-28T23:29:11.745Z",
       "value": {
-        "summaryZh": "该项目收集并公开了来自Anthropic（Claude Fable 5、Opus 4.8、Claude Code、Claude Design）、OpenAI（ChatGPT GPT-5.6、Codex GPT-5.6、GPT-5.5）、Google（Gemini 3.5 Flash、3.1 Pro、Antigravity）以及xAI（Grok）、Cursor、Copilot、VS Code、Perplexity等多家公司AI模型的系统提示词。这些提示词揭示了模型的行为规则、能力边界和交互模式，对于理解AI底层逻辑、优化Prompt工程、进行AI安全研究以及开发更有效的AI应用具有极高参考价值。仓库定期更新，确保内容时效性。",
+        "summaryZh": "该项目收集并公开了多个主流AI模型（Anthropic Claude、OpenAI ChatGPT、Google Gemini、xAI Grok等）的系统提示（system prompts），包括Claude Fable 5、GPT-5.6-Sol、Gemini 3.5 Flash等。亮点在于提供了真实生产级提示文本，可用于分析模型行为、安全审计和提示工程研究。适合AI研究员、安全专家、提示工程师以及对大模型内部机制感兴趣的开发者。仓库使用JavaScript编写，数据以JSON格式存储，并定期更新。",
         "scenarios": [
-          "AI研究人员通过分析系统提示词，对比不同模型的设计哲学与安全策略，改进自身模型行为。",
-          "Prompt工程师学习官方提示词技巧，提升对GPT、Claude等模型输出质量的掌控力。",
-          "安全审计员检查提示词中的限制与保护措施，评估模型潜在风险及合规性。"
+          "研究不同AI模型系统提示的设计模式与行为约束差异",
+          "用于红队测试或安全审计，评估模型提示中的潜在风险",
+          "作为提示工程教学案例，分析如何通过系统提示控制模型输出"
         ],
-        "agentInstallPrompt": "首先，克隆仓库：git clone https://github.com/asgeirtj/system_prompts_leaks.git。进入目录后，无需安装依赖，所有提示词以Markdown或文本形式存储。可直接用cat命令查看各模型文件夹内的文件，例如查看Claude提示词：cat 'Claude Fable 5.txt'。如需搜索特定关键词，使用grep -r 'keyword' 。"
+        "agentInstallPrompt": "首先，使用git克隆仓库：git clone https://github.com/asgeirtj/system_prompts_leaks.git。然后，进入目录：cd system_prompts_leaks。使用Node.js运行index.js（如果有）或直接查看prompts文件夹中的JSON文件。无需额外依赖，直接读取JSON即可获取提示内容。"
       }
     },
     "repo:ogulcancelik/herdr": {
@@ -2673,17 +2673,17 @@
     },
     "repo:citrolabs/ego-lite": {
       "type": "repo-insight",
-      "hash": "ac60b295a599554fc02d3f5d",
+      "hash": "be6b26ff7f455b41fbbaac1a",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-24T23:12:37.211Z",
+      "generatedAt": "2026-07-29T22:00:59.135Z",
       "value": {
-        "summaryZh": "ego-lite 是一款专为 AI 代理打造的极速浏览器，用于运行 Web 自动化任务。它允许你将已登录的浏览器状态共享给 Codex、Claude Code 等 AI 代理，而不会干扰你的正常操作。零成本、零配置，开箱即用。适合需要让 AI 代理直接操作网页的开发者，尤其是希望复用现有登录会话、避免重复认证的场景。项目基于 JavaScript 开发，轻量高效，可快速集成到现有工作流中。",
+        "summaryZh": "ego-lite 是一款专为 AI 代理设计的极速浏览器，用于浏览器自动化。其核心亮点是能让 AI 代理（如 Codex 或 Claude Code）共享用户已登录的浏览器状态，而无需干扰用户当前操作。项目零成本、零配置，用 JavaScript 编写，适合需要让 AI 代理执行网页自动化任务的开发者，尤其是那些希望复用已有登录会话、避免重复认证的场景。",
         "scenarios": [
-          "AI 代理模拟用户登录后，自动执行表单填写、数据抓取等网页操作。",
-          "与 Codex 或 Claude Code 配合，由 AI 直接操控浏览器进行复杂交互测试。",
-          "快速验证和调试网页自动化脚本，利用真实浏览器状态提升开发效率。"
+          "AI 代理需要访问用户已登录的网页服务（如社交媒体、邮箱）执行自动化操作。",
+          "开发者在本地调试基于浏览器的 AI 代理时，希望快速获取浏览器环境。",
+          "在持续集成中，让 AI 代理利用共享浏览器状态进行端到端测试。"
         ],
-        "agentInstallPrompt": "请通过 npm 全局安装：npm install -g ego-lite。安装后，在终端运行 ego-lite 启动服务，然后可在 AI 代理的配置中指定本机浏览器会话。如需测试，运行 ego-lite --help 查看可选参数。"
+        "agentInstallPrompt": "首先，确保系统已安装 Node.js（版本 ≥16）。然后执行以下命令：克隆仓库：git clone https://github.com/citrolabs/ego-lite.git，进入目录：cd ego-lite，安装依赖：npm install。根据项目 README，启动命令可能为 npm start 或 npm run dev。建议运行 npm start 尝试启动，并观察控制台输出以确认是否正常运行。如果需要查看详细使用方法，请查看 README 文件。"
       }
     },
     "repo:CoreBunch/Instatic": {
@@ -3119,6 +3119,171 @@
           "创意设计场景中，代理借助 ADHD 进行头脑风暴，生成大量创意点子并自动筛选，提升创新效率。"
         ],
         "agentInstallPrompt": "克隆仓库并安装依赖：git clone https://github.com/UditAkhourii/adhd.git && cd adhd && npm install。确保已配置 Claude API 密钥（环境变量 ANTHROPIC_API_KEY）和 Codex Agent SDK。运行示例：npm run example。如需自定义，修改 src/config.ts 中的参数。"
+      }
+    },
+    "repo:openai/codex-plugin-cc": {
+      "type": "repo-insight",
+      "hash": "935f86315955fd91e04d9553",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-28T23:29:15.830Z",
+      "value": {
+        "summaryZh": "该项目是一个开源插件，允许开发者在Claude Code中直接调用OpenAI Codex进行代码审查和任务委托。亮点在于融合两大AI模型的能力，通过自然语言交互实现自动化代码分析、生成和调试。适合使用Claude Code并希望增强AI编程辅助的开发者，可显著提升编码效率与代码质量。",
+        "scenarios": [
+          "在代码审查流程中，自动调用Codex分析代码逻辑缺陷和安全隐患。",
+          "委托Codex完成具体编码任务，如编写单元测试、重构函数或生成文档。",
+          "结合Claude的对话能力与Codex的代码生成能力，解决复杂编程问题。"
+        ],
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/openai/codex-plugin-cc.git && cd codex-plugin-cc。安装依赖：npm install。配置环境变量（如OPENAI_API_KEY和CLAUDE_API_KEY），然后运行npm run build。将插件加载到Claude Code中，按照文档配置权限后即可使用。"
+      }
+    },
+    "repo:grokability/snipe-it": {
+      "type": "repo-insight",
+      "hash": "cf4c2ffc4c76725f03ec82c8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-29T22:00:12.220Z",
+      "value": {
+        "summaryZh": "Snipe-IT 是一个免费开源的 IT 资产/许可证管理系统，采用 PHP 开发，提供 Web 界面和 REST API。亮点包括：支持硬件、软件、许可证、消耗品等资产的全生命周期管理；内置用户角色权限、资产历史记录、报告导出、自定义字段等功能；支持 LDAP/AD 集成、多语言界面（含中文）。适合需要高效追踪 IT 资产的中小型企业、学校或组织，尤其是预算有限但希望规范资产管理的团队。",
+        "scenarios": [
+          "IT 部门统一管理公司电脑、打印机、服务器等硬件资产，记录采购、领用、维修和报废状态。",
+          "软件许可证合规管理，跟踪每份许可证的安装设备、到期日期，防止超量使用或遗漏续费。",
+          "资产盘点与审计，快速生成含资产位置、使用者、价值的 CSV / PDF 报告，支撑固定资产核算。"
+        ],
+        "agentInstallPrompt": "要安装 Snipe-IT，请先确保环境满足 PHP 7.4-8.2、MySQL 5.7+/MariaDB 10.3+/PostgreSQL 10+、Node.js 12+ 和 Composer。然后执行：git clone https://github.com/grokability/snipe-it.git && cd snipe-it && cp .env.example .env 并编辑数据库等信息。运行 composer install --no-dev --prefer-dist，php artisan key:generate，php artisan migrate --seed，php artisan storage:link。最后用 php artisan serve 启动开发服务器，浏览器访问 localhost:8000，默认账户 admin@example.com / password。生产环境建议配置 Apache/Nginx 和 HTTPS。"
+      }
+    },
+    "repo:deepfakes/faceswap": {
+      "type": "repo-insight",
+      "hash": "6996034322e3e8436d58f8be",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-29T22:00:18.609Z",
+      "value": {
+        "summaryZh": "Deepfakes Faceswap是一个基于深度学习的换脸开源工具，使用Python和TensorFlow/Keras实现。它提供完整的训练和转换流程，支持从视频中提取人脸、训练模型、生成换脸视频。亮点包括易于使用的界面、多种训练模型选择以及社区预训练模型支持。适合对AI换脸技术感兴趣的研究者、内容创作者以及需要批量处理换脸任务的用户。注意使用时需遵守伦理和法律规范。",
+        "scenarios": [
+          "影视后期制作中的演员面部替换或数字化妆容修改",
+          "个人娱乐视频创作，如将朋友或名人的脸替换到不同场景",
+          "学术研究领域，用于深度伪造检测或面部生成模型对比实验"
+        ],
+        "agentInstallPrompt": "请按以下步骤在Python 3.6-3.10环境中安装和运行faceswap：1. 克隆仓库：git clone https://github.com/deepfakes/faceswap.git && cd faceswap。2. 创建并激活虚拟环境：python -m venv fs_env && source fs_env/bin/activate (Linux/Mac) 或 fs_env\\Scripts\\activate (Windows)。3. 安装依赖：pip install -r requirements.txt。4. 运行图形界面：python faceswap.py gui。如需训练模型，请准备人脸数据集并参考官方文档。"
+      }
+    },
+    "repo:microsoft/VibeVoice": {
+      "type": "repo-insight",
+      "hash": "fc868c5e6db7f9a16ba63a2d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-29T22:00:25.126Z",
+      "value": {
+        "summaryZh": "VibeVoice 是微软开源的前沿语音 AI 项目，基于 Python 实现，专注于高质量语音合成与交互。采用最新深度学习模型，支持多语言、多音色及情感表达，生成自然流畅语音。适合语音应用开发者、AI 产品经理及学术研究者快速搭建原型。亮点包括微软技术背书、先进架构和易集成的 API。",
+        "scenarios": [
+          "为智能语音助手提供自然的人机对话语音输出",
+          "在内容创作中生成逼真的有声读物或播客配音",
+          "用于无障碍辅助工具，为视障用户朗读文本信息"
+        ],
+        "agentInstallPrompt": "首先，确保 Python 3.10+ 环境。克隆仓库：git clone https://github.com/microsoft/VibeVoice.git。进入目录后安装依赖：pip install -r requirements.txt。如有需要，下载预训练模型并按照 README 中的说明放置。运行示例：python examples/basic_tts.py --text \"你好，世界\" --output output.wav。"
+      }
+    },
+    "repo:different-ai/openwork": {
+      "type": "repo-insight",
+      "hash": "6b85c021680f1c552072b3b8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-29T22:00:31.029Z",
+      "value": {
+        "summaryZh": "Openwork 是 Claude Cowork 的开源替代品，基于 opencode 构建，提供智能代码协作功能。它允许开发者通过自然语言与代码库交互，支持代码审查、重构、文档生成等。亮点在于完全开源、可自托管、支持多种 LLM 后端（如 OpenAI、Anthropic），且紧密集成 Git 工作流。适合希望拥有私有化、可定制 AI 编程助手的个人开发者或团队。",
+        "scenarios": [
+          "作为本地 AI 编程助手，通过聊天界面直接修改项目代码，提高开发效率。",
+          "在团队协作中，利用 Openwork 自动生成代码评审意见或提交信息。",
+          "企业自托管部署，确保代码数据不外传，满足安全合规需求。"
+        ],
+        "agentInstallPrompt": "请首先确保安装了 Node.js 18+ 和 Git。克隆本仓库并进入目录：git clone https://github.com/different-ai/openwork && cd openwork。然后运行 npm install 安装依赖。接着复制 .env.example 为 .env，在 .env 中设置必要的 API 密钥（如 OPENAI_API_KEY 或 ANTHROPIC_API_KEY）。最后运行 npm run dev 启动开发服务器，访问 http://localhost:3000 即可使用。如果遇到问题，请检查 Node 版本和依赖是否安装完整。"
+      }
+    },
+    "repo:MoonshotAI/FlashKDA": {
+      "type": "repo-insight",
+      "hash": "dc90e5c32044a83b27e23965",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-29T22:00:35.933Z",
+      "value": {
+        "summaryZh": "FlashKDA 是月之暗面（Moonshot AI）开源的高性能 Kimi Delta Attention 内核实现，基于 CUDA 优化。它专为长上下文大语言模型设计，通过高效的注意力机制计算加速推理和训练，特别适合处理超长序列。亮点包括极致的显存优化和计算吞吐提升，支持动态稀疏注意力。适合 AI 研究员、算法工程师和系统优化开发者，尤其是需要优化 LLM 长上下文性能的团队。",
+        "scenarios": [
+          "长文本推理加速：用于需要处理百万级 token 上下文的 LLM 推理，如文档分析、代码库理解。",
+          "训练效率提升：在长序列训练中减少计算和显存开销，支持更大 batch size。",
+          "高性能部署：用于边缘或云端部署场景，降低延迟和成本，尤其适合 Moonshot 的 Kimi 模型。"
+        ],
+        "agentInstallPrompt": "请先确保系统已安装 CUDA 12.1+ 和 Python 3.10+。克隆仓库后，进入目录运行 `pip install -e .` 编译安装。测试可用 `python tests/test_flashkda.py`。如果使用 Docker，推荐基于 `nvidia/cuda:12.1.0-devel-ubuntu22.04` 镜像构建。"
+      }
+    },
+    "repo:NanmiCoder/MediaCrawler": {
+      "type": "repo-insight",
+      "hash": "f1e797e1fca649b82849e7de",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-29T22:00:40.496Z",
+      "value": {
+        "summaryZh": "MediaCrawler 是一个多平台社交媒体爬虫工具，支持小红书、抖音、快手、B站、微博、百度贴吧、知乎等主流平台的笔记、视频、帖子及评论爬取。亮点在于统一接口、易于扩展、反爬处理完善，适合数据分析师、研究人员及爬虫开发者快速采集社交数据。",
+        "scenarios": [
+          "社交媒体舆情监测：实时抓取指定话题下的评论和帖子内容，分析公众情感倾向。",
+          "内容聚合与推荐：从多个平台采集热门内容，构建个性化信息流。",
+          "竞品分析：定向收集竞品在社交平台上的营销内容和用户反馈。"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Python 3.7+ 和 pip。克隆仓库后，在项目根目录运行 'pip install -r requirements.txt' 安装依赖。根据所需平台，参考 config/settings.py 配置 cookies 和 proxies。然后运行 'python main.py --platform 平台名称' 启动爬虫。例如爬取小红书笔记：python main.py --platform xiaohongshu。"
+      }
+    },
+    "repo:maderix/ANE": {
+      "type": "repo-insight",
+      "hash": "1e039f9305149b4114d2212e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-29T22:00:46.203Z",
+      "value": {
+        "summaryZh": "ANE 是一个通过逆向工程 Apple Neural Engine 私有 API，在苹果设备上直接训练神经网络的工具。它绕过了 Core ML 的限制，允许开发者利用 ANE 进行模型训练，而不仅仅是推理。项目提供了底层接口调用示例和文档，适合需要深度优化模型性能或探索 ANE 潜力的开发者。亮点包括无需越狱、对主流神经网络架构支持、以及详细的逆向过程记录。主要面向 iOS/macOS 平台的机器学习研究人员、逆向工程师和性能调优专家。",
+        "scenarios": [
+          "在 Apple Neural Engine 上直接训练自定义神经网络模型，探索硬件加速极限",
+          "对现有 Core ML 推理流程进行底层优化，绕过框架限制实现更高的吞吐量",
+          "研究 Apple Neural Engine 的架构和私有 API，为逆向工程或学术研究提供参考"
+        ],
+        "agentInstallPrompt": "首先安装最新 Xcode 和 iOS SDK。克隆仓库：git clone https://github.com/maderix/ANE.git。打开 ANE.xcodeproj，选择您的 iOS 设备作为目标（需开发者账号）。在项目设置中配置正确的 Team 和 Bundle Identifier。运行应用即可在设备上测试训练示例。注意：依赖私有 API，可能随系统更新失效；建议在 iOS 14-15 设备上测试。"
+      }
+    },
+    "repo:pascalorg/editor": {
+      "type": "repo-insight",
+      "hash": "8407f2df13608a24cb5f607e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-29T22:00:49.998Z",
+      "value": {
+        "summaryZh": "pascalorg/editor 是一个基于 TypeScript 构建的 3D 建筑项目创建与分享工具。它提供了直观的界面，支持快速搭建三维建筑模型，并集成云端协作功能，便于团队共享和展示。亮点在于轻量化编辑、实时预览以及一键导出分享链接，适合建筑师、设计师和3D爱好者使用。开源 MIT 许可，可自由定制和扩展。",
+        "scenarios": [
+          "建筑师快速生成三维建筑概念模型并分享给客户或团队。",
+          "教育场景中用于建筑设计的教学演示和学生实践。",
+          "3D 爱好者探索建筑结构并导出模型用于渲染或游戏。"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Node.js（>=16）和 Git。 1. 克隆仓库： git clone https://github.com/pascalorg/editor.git cd editor 2. 安装依赖： npm install 3. 启动开发服务器： npm run dev 4. 在浏览器中打开 http://localhost:5173 即可开始使用。 如需构建生产版本，运行 npm run build。"
+      }
+    },
+    "repo:emilkowalski/skills": {
+      "type": "repo-insight",
+      "hash": "84e4ac548bd87356a8bef3c9",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-29T22:01:04.339Z",
+      "value": {
+        "summaryZh": "这是一个面向设计工程师的技能集合，旨在帮助设计师提升工程化能力，弥合设计与开发之间的鸿沟。项目提供了从基础到进阶的实践指南，涵盖原型设计、前端交互、版本控制等关键领域。其亮点在于聚焦“设计工程”这一细分方向，采用实战导向的案例教学，适合希望在设计中融入代码思维的设计师、UI/UX专业人士以及寻求转型的创意开发者使用。通过系统学习，用户能掌握将设计转化为可交互原型的高效工作流。",
+        "scenarios": [
+          "设计工程师需要快速掌握前端交互基础，将UI设计稿转化为高保真可交互原型。",
+          "团队中设计师与开发者的协作场景，利用技能集合建立共同语言，减少沟通成本。",
+          "个人技能提升：从纯视觉设计向设计工程方向转型，学习版本控制、响应式布局等工程实践。"
+        ],
+        "agentInstallPrompt": "请先确保安装了Git和Node.js。克隆仓库：git clone https://github.com/emilkowalski/skills.git，进入目录：cd skills。然后按照项目根目录下的README.md文件指引，通常需要运行npm install安装依赖，再运行npm run dev启动本地开发服务器。如果项目包含子模块或示例代码，请根据文档逐步执行即可。"
+      }
+    },
+    "repo:hasaneyldrm/exercises-dataset": {
+      "type": "repo-insight",
+      "hash": "d31cc1ef7fe8dfc3b6e68073",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-29T22:01:10.190Z",
+      "value": {
+        "summaryZh": "该数据集包含1,324个健身动作的详细信息，每个动作配有动画GIF、180×180缩略图、肌肉群与器械数据，以及6种语言的逐步指导。数据来源于LogPress应用，结构清晰，便于集成到健身追踪、AI教练或教学平台中。亮点在于高质量的多语言内容和可视化素材，适合健身应用开发者、AI教练系统开发者及运动科学研究者。",
+        "scenarios": [
+          "健身App开发：直接使用数据集中的动作GIF和文字指导，快速构建动作库和训练计划推荐功能。",
+          "AI动作识别训练：利用动作GIF和标注数据训练计算机视觉模型，实现实时动作检测与纠正。",
+          "多语言健身教学：基于6国语言步骤说明，打造面向全球用户的健身教学平台或交互式课程。"
+        ],
+        "agentInstallPrompt": "首先，克隆仓库：git clone https://github.com/hasaneyldrm/exercises-dataset.git。然后进入目录：cd exercises-dataset。查看数据集结构：ls。数据集主要包含CSV文件和GIF文件夹。打开exercises.csv查看字段说明：cat exercises.csv。如需在Python中加载，用pandas读取：import pandas as pd; df = pd.read_csv('exercises.csv')。若有GIF需求，GIFs/目录下按ID命名。开始探索吧！"
       }
     }
   }
