@@ -1293,17 +1293,17 @@
     },
     "repo:1jehuang/jcode": {
       "type": "repo-insight",
-      "hash": "f31cd99135338e6af6e725fa",
+      "hash": "05555421db187c307f04390c",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-28T22:28:53.710Z",
+      "generatedAt": "2026-07-31T22:00:51.763Z",
       "value": {
-        "summaryZh": "jcode 是一个基于 Rust 开发的高内存效率代码执行框架（harness），专为资源受限环境设计。它能够在极低的内存占用下安全地编译和运行用户提交的代码片段，支持多种编程语言。相比同类工具，jcode 通过精细的内存管理和沙箱隔离机制，显著减少了内存开销，适用于在线评测系统（OJ）、持续集成测试和边缘计算场景。其亮点包括极低的 RAM 占用、安全隔离和跨语言支持。适合需要高并发且内存敏感的代码执行环境的开发者。",
+        "summaryZh": "jcode 是一个用 Rust 编写的高效测试执行 harness，专为极低内存占用而设计。它通过优化资源管理，在运行大规模测试套件时显著降低 RAM 消耗，相比传统工具可节省数倍内存。该工具尤其适合资源受限的环境，如容器、边缘设备或大规模并行测试场景。其亮点在于极致的性能与内存控制，同时保持简单易用的接口。适合需要优化测试基础设施成本、处理高并发测试或部署在内存有限平台的开发团队。",
         "scenarios": [
-          "在线编程评测系统（OJ）中，高并发地编译和执行用户提交的代码，同时节省服务器内存成本。",
-          "嵌入式或物联网设备的自动化测试，在资源受限的硬件上运行单元测试和集成测试。",
-          "微服务架构中的代码沙箱，安全地执行不可信的用户代码，防止内存泄漏和恶意攻击。"
+          "在 CI/CD 流水线中运行大规模测试套件，减少内存峰值以避免 OOM 问题",
+          "在内存受限的容器或边缘设备上执行测试，最大化资源利用效率",
+          "需要高并发测试执行且关注硬件成本优化的云计算场景"
         ],
-        "agentInstallPrompt": "请确保已安装 Rust 工具链（rustup）。运行以下命令安装 jcode： git clone https://github.com/1jehuang/jcode.git cd jcode cargo build --release 然后运行示例：./target/release/jcode --help 以查看使用说明。如需测试代码执行，准备一个代码文件（如 test.py）并运行：./target/release/jcode run test.py --lang python。若需要自定义内存限制，可添加 --max-memory 参数。"
+        "agentInstallPrompt": "请克隆仓库 https://github.com/1jehuang/jcode 并进入目录。由于项目使用 Rust，确保已安装最新稳定版 Rust 工具链。执行 cargo build --release 进行编译，然后使用 cargo run -- --help 查看使用说明。为测试功能，可创建一个简单的测试文件或运行内置示例（如果有）。若需要基准测试，可运行 cargo bench 比较内存占用。请遵循 README 中的指南进行配置和运行。"
       }
     },
     "repo:LearningCircuit/local-deep-research": {
@@ -1938,17 +1938,17 @@
     },
     "repo:Shubhamsaboo/awesome-llm-apps": {
       "type": "repo-insight",
-      "hash": "d754ec6e7a68502261a84f0d",
+      "hash": "053efe9419960539eab39ca5",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-19T22:01:53.295Z",
+      "generatedAt": "2026-07-31T22:01:11.859Z",
       "value": {
-        "summaryZh": "该仓库汇集了100多个可实际运行的AI Agent和RAG（检索增强生成）应用，覆盖聊天机器人、知识库问答、自动化工具等多种场景。亮点在于每个应用都提供完整代码和配置，可直接克隆、定制和部署，无需从零开始。适合开发者、AI爱好者及产品经理快速搭建和测试AI应用原型，降低开发门槛。",
+        "summaryZh": "这是一个精选的AI应用集合，包含100多个免费开源的AI Agents、Agent Skills和RAG（检索增强生成）应用，全部使用Python实现。项目旨在为开发者提供丰富的参考实现和可复用的代码片段，覆盖从简单聊天机器人到复杂多智能体协作系统的多种场景。无论是想快速启动AI项目、学习前沿的Agent架构，还是寻找RAG应用的实用范例，这个仓库都提供了高质量的资源和清晰的分类导航。适合AI开发者、研究人员、产品经理以及任何对LLM应用感兴趣的爱好者探索和实践。",
         "scenarios": [
-          "快速构建基于RAG的企业内部知识库问答系统，用于员工文档检索和解答。",
-          "开发多轮对话AI客服，集成到网站或应用中以提升用户交互体验。",
-          "利用预置模板搭建个人AI助手，实现日程管理、信息查询等自动化工作流。"
+          "快速搭建基于大语言模型的原型应用，复用现成的Agent与RAG代码模块。",
+          "学习AI Agent的设计模式与最佳实践，参考多智能体协作和工具调用的典型实现。",
+          "评估不同LLM应用方案，对比多种RAG算法和Agent框架的适用性。"
         ],
-        "agentInstallPrompt": "请执行以下步骤：1. 克隆仓库：git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git；2. 进入项目目录：cd awesome-llm-apps；3. 根据README选择任一应用（如RAG Chatbot），进入其目录；4. 安装依赖：pip install -r requirements.txt；5. 配置所需的API密钥（如OpenAI、Hugging Face等）到环境变量或配置文件中；6. 运行应用：python app.py（具体命令见README）。如有问题，请参考各应用目录下的README文件。"
+        "agentInstallPrompt": "克隆仓库（git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git），进入目录后查看README.md了解项目结构。选择你感兴趣的示例子文件夹（如agents/或rag/），按照每个示例内的requirements.txt安装依赖，并设置必要的API密钥（如OpenAI、Anthropic等）。优先运行最简洁的示例（如simple-chatbot）验证环境，再逐步运行更复杂的Agent或RAG应用。注意Python版本建议3.9+，建议使用虚拟环境隔离依赖。"
       }
     },
     "repo:HKUDS/Vibe-Trading": {
@@ -2958,17 +2958,17 @@
     },
     "repo:earthtojake/text-to-cad": {
       "type": "repo-insight",
-      "hash": "a8b91b1d2f4975bfa79225f5",
+      "hash": "7edd7def9db53260166c823b",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-26T22:00:58.422Z",
+      "generatedAt": "2026-07-31T22:01:01.526Z",
       "value": {
-        "summaryZh": "text-to-cad 是一个面向 CAD、机器人和硬件设计的代理技能集合，通过自然语言指令驱动 AI 生成三维模型、修改设计参数或自动化工程流程。项目基于 JavaScript 实现，提供模块化技能库，支持与主流 CAD 工具（如 FreeCAD、OpenSCAD）对接，适合硬件工程师、机器人开发者及设计师快速原型验证。亮点在于将大语言模型与几何计算结合，降低建模门槛，提升从概念到实物的迭代效率。适合需要快速探索设计空间、缺乏深度 CAD 经验的研发团队。",
+        "summaryZh": "text-to-cad 是一个面向 CAD、CAE 和 CAM 领域的 JavaScript 代理技能库，旨在将自然语言指令转化为可执行的 CAD 建模、工程仿真和制造任务。它封装了与常见工程软件交互的智能体能力，使开发者能够快速构建基于 AI 的工程设计助手。项目亮点在于其以“技能”为粒度，提供了模块化、可复用的工具链，降低了将大语言模型接入专业工程软件的门槛。适合从事 AI 辅助设计、自动化建模、智能制造的开发者，以及希望将生成式 AI 引入传统工程流程的团队。",
         "scenarios": [
-          "从文字描述生成简单的 3D 零件模型（如支架、齿轮），加速概念验证阶段",
-          "在机器人设计流程中，通过自然语言修改现有模型的尺寸或特征（如调整臂长、添加安装孔）",
-          "集成到硬件开发 CI 流程，自动根据接口文档生成外壳或连接件"
+          "工程师使用自然语言描述零件形状，自动生成 CAD 模型文件，快速验证设计概念。",
+          "在 CAE 工作流中，通过文本指令设置仿真边界条件并自动运行分析，简化有限元前处理步骤。",
+          "面向 CAM 场景，将文本描述的加工工艺转换为数控程序，辅助实现从设计到制造的一体化自动化。"
         ],
-        "agentInstallPrompt": "克隆仓库：git clone https://github.com/earthtojake/text-to-cad.git 进入目录：cd text-to-cad 安装依赖：npm install 配置环境变量（如 OpenAI API Key）：在 .env 文件中添加 OPENAI_API_KEY=您的密钥 运行示例：node examples/basic.js --prompt \"生成一个长100mm、宽50mm、高20mm的矩形底座，带四个直径5mm的安装孔\" 详细用法参考 README.md。"
+        "agentInstallPrompt": "请克隆仓库 https://github.com/earthtojake/text-to-cad 到本地，使用 npm 安装依赖。查看 README 或示例文件了解如何导入技能模块。在项目根目录创建一个 Node.js 脚本，调用该库提供的函数，尝试将一句简单的产品描述（如“生成一个直径50mm、高度30mm的圆柱体”）转换为 CAD 操作。运行脚本观察输出，并检查是否生成了对应的几何数据或调用成功。如需集成到 AI agent，可将返回结果作为工具调用的一部分。"
       }
     },
     "repo:ComposioHQ/awesome-claude-skills": {
@@ -3093,17 +3093,17 @@
     },
     "repo:ayghri/i-have-adhd": {
       "type": "repo-insight",
-      "hash": "047e61e41a01f7378404fbcf",
+      "hash": "f0660a61168172637043b954",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-28T22:28:41.264Z",
+      "generatedAt": "2026-07-31T22:00:56.704Z",
       "value": {
-        "summaryZh": "本项目是一个专为AI编码代理设计的技能，通过优化系统提示，强制代理直接输出简洁、聚焦的答案，避免将关键信息埋藏在冗长的解释中。特别适合ADHD用户或任何追求效率的开发者，帮助快速获取所需解决方案。亮点在于其极简输出风格，减少认知负荷。",
+        "summaryZh": "这是一个面向AI编码代理的Python技能/插件，名为“我有多动症”（i-have-adhd）。它专门针对注意力不容易集中的开发者，强制代理在输出答案时直接给出核心结论，避免冗长解释和无关细节。项目通过注入提示或后处理逻辑，让代码搜索结果、调试建议等回复更加简洁明了，以醒目的方式突出重点。适合容易分心、希望快速获取要点、不想在复杂输出中翻找答案的程序员，以及所有希望提升AI助手沟通效率的团队。",
         "scenarios": [
-          "当你需要编码代理快速给出解决方案，而非背景资料时",
-          "当你希望AI解释代码时，得到直接答案而非长篇分析",
-          "当你在多任务环境下，需要AI输出精简信息以便快速阅读"
+          "在代码调试中，代理直接返回错误行和修复方案，不附带大段分析日志。",
+          "进行技术调研时，代理用要点列表概括答案，首句即结论。",
+          "使用AI辅助编程时，代理自动折叠或过滤无关输出，只显示关键代码片段。"
         ],
-        "agentInstallPrompt": "请将本仓库中的提示内容（如prompt.txt或README中的指令）复制到你的AI编码代理的自定义指令中。例如，在Cline中，将内容添加到设置中的customInstructions，重启后代理将输出简洁ADHD友好的回答。"
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/ayghri/i-have-adhd 到本地，然后阅读README了解安装方式。该项目为Python实现，建议创建虚拟环境并运行 pip install -r requirements.txt（若有）。根据文档，将其作为编码代理的插件或技能加载，配置默认输出风格为“ADHD友好”：所有回答必须以最简洁的结论开头，只包含必要细节，并用项目符号或加粗突出关键信息。启动一个测试对话，询问一个技术问题，验证输出是否符合简洁直观的要求。"
       }
     },
     "repo:UditAkhourii/adhd": {
@@ -3284,6 +3284,111 @@
           "多语言健身教学：基于6国语言步骤说明，打造面向全球用户的健身教学平台或交互式课程。"
         ],
         "agentInstallPrompt": "首先，克隆仓库：git clone https://github.com/hasaneyldrm/exercises-dataset.git。然后进入目录：cd exercises-dataset。查看数据集结构：ls。数据集主要包含CSV文件和GIF文件夹。打开exercises.csv查看字段说明：cat exercises.csv。如需在Python中加载，用pandas读取：import pandas as pd; df = pd.read_csv('exercises.csv')。若有GIF需求，GIFs/目录下按ID命名。开始探索吧！"
+      }
+    },
+    "repo:zhaoxuya520/reverse-skill": {
+      "type": "repo-insight",
+      "hash": "4ed22548cabd010b6aa646d1",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-31T22:00:18.629Z",
+      "value": {
+        "summaryZh": "reverse-skill 是一个面向逆向工程、授权渗透测试与安全研究的 AI 技能路由包，使用 PowerShell 编写。它能自动将 AI 客户端的请求路由到合适的工具链，按需自举安装所需组件，并通过自进化经验库持续积累知识。支持 Claude Code、Kiro、Cursor、Cline 等主流 AI 编程客户端，帮助安全人员借助 AI 高效完成二进制分析、漏洞挖掘、渗透测试等任务。适合需要自动化安全分析流程的渗透测试工程师、安全研究员及对 AI 辅助攻防感兴趣的开发者。",
+        "scenarios": [
+          "在授权渗透测试中，让 AI 自动识别目标环境并路由到合适的逆向或渗透工具，生成并执行测试步骤。",
+          "分析未知二进制文件时，AI 按需自举安装反汇编、调试等工具链，并辅助提取关键字符串和控制流信息。",
+          "团队安全研究中，利用自进化经验库沉淀攻防知识，AI 可基于历史经验快速给出针对类似目标的测试策略。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/zhaoxuya520/reverse-skill 到本地，然后查看 README 了解安装方式。在 PowerShell 中运行仓库内的安装脚本，脚本会自动配置技能路由包并支持 Claude Code、Cursor 等 AI 客户端。安装完成后，请向 AI 客户端输入一条授权渗透测试指令（如“对 192.168.1.1 进行授权端口扫描和漏洞检测”），验证 AI 能否正确路由到对应工具并执行。注意确保所有操作合法合规，仅用于授权环境。"
+      }
+    },
+    "repo:microsoft/AI-For-Beginners": {
+      "type": "repo-insight",
+      "hash": "feff52fc6399818d98bb1c83",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-31T22:00:22.605Z",
+      "value": {
+        "summaryZh": "微软出品的AI入门教程，12周24课，覆盖神经网络、计算机视觉、自然语言处理、生成式AI等核心主题。每课包含文字讲解、可运行代码示例和动手实验，采用Jupyter Notebook形式，兼顾理论与实战。适合零基础学生、转行开发者及希望系统学习AI的工程师，通过循序渐进的项目驱动学习，快速建立AI知识体系。",
+        "scenarios": [
+          "高校或培训机构作为AI入门课程教材，配合Notebook进行教学实践",
+          "自学开发者按12周计划系统掌握AI基础，完成课后作业和项目",
+          "企业内部培训中使用，帮助非AI背景员工快速了解机器学习与深度学习概念"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/microsoft/AI-For-Beginners.git，然后安装依赖：cd AI-For-Beginners && pip install -r requirements.txt。启动Jupyter Notebook：jupyter notebook，按照课程目录从/lessons/1-Introduction开始，逐个打开.ipynb文件并运行代码单元格，确保每个示例都能成功执行，并尝试修改参数观察结果。"
+      }
+    },
+    "repo:chatwoot/chatwoot": {
+      "type": "repo-insight",
+      "hash": "f6165195ffe89cd6213e2ded",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-31T22:00:28.442Z",
+      "value": {
+        "summaryZh": "Chatwoot 是一款开源的全渠道客户支持平台，集在线聊天、电子邮件、社交媒体消息于一体，旨在替代 Intercom、Zendesk 等商业客服工具。它支持多语言、多品牌、自动化工作流、实时协作和深度定制，企业可自托管以完全掌控数据隐私与部署环境。亮点在于界面现代、插件丰富，且拥有活跃的社区与持续迭代。适合希望降低客服成本、追求数据主权或构建个性化支持系统的技术团队。",
+        "scenarios": [
+          "企业需要自建客服系统，避免将客户数据托管给第三方 SaaS，满足合规与隐私要求。",
+          "团队希望整合网站聊天、邮件、Facebook、WhatsApp 等渠道，在一个界面统一管理所有客户会话。",
+          "开发团队需要可高度定制的开源客服方案，以便根据业务逻辑修改代码或扩展 API 集成。"
+        ],
+        "agentInstallPrompt": "请使用 Docker 快速部署 Chatwoot。先运行 `git clone https://github.com/chatwoot/chatwoot.git`，进入目录，复制 `.env.example` 为 `.env` 并设置必要的环境变量（如 SECRET_KEY_BASE、DATABASE_HOST 等），然后执行 `docker-compose up -d` 启动。首次运行会执行数据库迁移，等待初始化完成后访问 `http://localhost:3000`。若需本地开发环境，可安装 Ruby、PostgreSQL 和 Redis，运行 `bundle install`、`yarn install`，再执行 `rails db:create db:migrate` 和 `rails server`。注意确保端口未被占用，并检查日志以解决启动问题。"
+      }
+    },
+    "repo:agavra/tuicr": {
+      "type": "repo-insight",
+      "hash": "4ae9c2c92e1b5e25ff761c81",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-31T22:00:35.712Z",
+      "value": {
+        "summaryZh": "tuicr 是一个用 Rust 编写的终端界面（TUI）代码审查工具，专为开发者提供类似 Vim 的高效键盘操作体验。它直接对接 GitHub，让你无需离开终端即可浏览 PR、查看 diff、逐行评论和审批。亮点在于流畅的 Vim 键位、快速响应和轻量级部署，适合习惯命令行的开发者、开源维护者以及希望提升代码审查效率的团队。通过简单的命令即可启动，能够在终端中完成整个审查流程，减少上下文切换。",
+        "scenarios": [
+          "在终端中快速浏览 GitHub Pull Request 的变更，使用 vim 快捷键跳转和查看差异。",
+          "针对代码行添加评论和反馈，进行逐行审查，保持工作流不离开终端。",
+          "作为轻量级替代方案，用于远程服务器或开发机上无图形界面的代码审查。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 tuicr。首先确保系统已安装 Rust 工具链 (cargo)。然后执行 `cargo install tuicr` 或从源码构建：`git clone https://github.com/agavra/tuicr && cd tuicr && cargo build --release`。安装后，运行 `tuicr --help` 查看用法。接着尝试对某个 GitHub PR 进行代码审查，例如 `tuicr review owner/repo pull-number`（具体命令以帮助为准）。如果遇到缺失依赖，请根据错误提示安装对应系统库，并重新编译。最后，在终端中启动 TUI，验证 vim 键位是否正常导航。"
+      }
+    },
+    "repo:usekaneo/kaneo": {
+      "type": "repo-insight",
+      "hash": "c1dcebd08bc3cc073c3b4d6e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-31T22:00:40.421Z",
+      "value": {
+        "summaryZh": "Kaneo 是一款开源、自托管的项目管理工具，采用 TypeScript 构建，强调“所需即所得”的极简体验。它提供任务看板、里程碑、时间线等核心功能，无冗余干扰，界面简洁流畅，适合追求高效与数据自主权的团队。与主流闭源产品相比，Kaneo 更注重轻量级部署和灵活定制，支持 Docker 一键启动，可无缝集成到现有工作流中，是开发团队、初创公司及个人项目管理的理想选择。",
+        "scenarios": [
+          "小型团队或初创公司需要快速搭建内部任务管理看板，避免复杂配置和高成本订阅。",
+          "开发人员希望基于 TypeScript 二次开发或贡献代码，定制符合自身需求的项目管理工具。",
+          "注重数据隐私的组织需要将项目管理软件部署在私有服务器或内网环境，实现完全自主可控。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/usekaneo/kaneo.git，进入 kaneo 目录，确保已安装 Node.js（v18+）和 pnpm。执行 pnpm install 安装依赖，然后复制 .env.example 为 .env 并按需设置环境变量。使用 docker-compose up -d 启动依赖的数据库服务（如 PostgreSQL），再执行 pnpm dev 启动开发服务器，访问 http://localhost:3000 即可查看应用。若用于生产，请运行 pnpm build && pnpm start。"
+      }
+    },
+    "repo:geo-tp/ESP32-Bit-Pirate": {
+      "type": "repo-insight",
+      "hash": "293a558e6ea37db284672336",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-31T22:00:45.235Z",
+      "value": {
+        "summaryZh": "ESP32-Bit-Pirate 是一款基于 ESP32 的硬件黑客工具，提供 Web 界面命令行，可解析并通信多种常见协议（如 I2C、SPI、UART 等），适用于固件逆向、外设调试和硬件安全研究。其核心亮点是不需额外桌面软件，通过浏览器即可交互，极大降低使用门槛。项目采用 C++ 编写，结构清晰，便于二次开发。适合硬件安全爱好者、嵌入式开发者及渗透测试人员，用于快速探测目标设备电气特性、嗅探总线数据或注入自定义信号。",
+        "scenarios": [
+          "在硬件安全评估中，快速探测目标板卡的 I2C/SPI 总线并嗅探通信数据。",
+          "嵌入式开发调试时，利用 Web CLI 远程发送自定义协议帧，验证外设响应。",
+          "学习硬件协议分析，通过浏览器交互式探索不同总线的时序与逻辑。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/geo-tp/ESP32-Bit-Pirate 到本地。项目使用 PlatformIO 管理，确保已安装 PlatformIO 核心或 VSCode 扩展。先阅读 README.md 了解编译选项和依赖。使用 `pio run -e esp32dev` 编译固件，并通过 `pio run -t upload` 烧录到 ESP32 开发板。连接串口后，在浏览器打开设备提供的 Web 界面（默认为 http://192.168.4.1），开始使用 Web CLI 测试协议功能。若需自定义协议，请参考 src 目录下的协议实现文件进行修改，并重新编译烧录。"
+      }
+    },
+    "repo:erincatto/box3d": {
+      "type": "repo-insight",
+      "hash": "fb39a45d35fbf5d2b9209792",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-07-31T22:01:06.636Z",
+      "value": {
+        "summaryZh": "Box3D 是一个用 C 语言编写的高性能 3D 物理引擎，专为游戏和实时仿真设计。它提供刚体动力学、碰撞检测、约束求解等功能，支持球体、盒体、凸多面体等多种碰撞形状。项目源自 Box2D 作者 Erin Catto 的扩展，代码结构清晰，无外部依赖，易于集成到游戏引擎或仿真系统中。其亮点在于轻量级、可移植性强，并针对多平台优化，适合需要精确物理反馈的 3D 应用。适用于独立游戏开发者、模拟器构建者及物理引擎学习者，尤其适合对性能敏感或希望深入理解物理引擎原理的 C 语言用户。",
+        "scenarios": [
+          "在游戏开发中作为刚体动力学核心，处理角色碰撞、投掷物轨迹和场景交互。",
+          "在机器人仿真或虚拟现实环境中模拟物体真实运动，用于测试控制算法或交互设计。",
+          "作为教学工具，通过源码学习 3D 刚体物理、碰撞检测和约束求解的实现细节。"
+        ],
+        "agentInstallPrompt": "请将仓库 erincatto/box3d 克隆到本地，进入目录后查看 README 和构建说明。该项目使用 C 语言编写，无外部依赖，可用 CMake 构建。具体操作：在终端执行 `git clone https://github.com/erincatto/box3d.git && cd box3d`，然后创建构建目录 `mkdir build && cd build`，运行 `cmake ..` 和 `make`，最后运行测试程序（如 `./hello_box3d` 或 `./testbed`）验证安装。请确保已安装 CMake 和 C 编译器（如 gcc）。"
       }
     }
   }
