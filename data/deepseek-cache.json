@@ -3390,6 +3390,141 @@
         ],
         "agentInstallPrompt": "请将仓库 erincatto/box3d 克隆到本地，进入目录后查看 README 和构建说明。该项目使用 C 语言编写，无外部依赖，可用 CMake 构建。具体操作：在终端执行 `git clone https://github.com/erincatto/box3d.git && cd box3d`，然后创建构建目录 `mkdir build && cd build`，运行 `cmake ..` 和 `make`，最后运行测试程序（如 `./hello_box3d` 或 `./testbed`）验证安装。请确保已安装 CMake 和 C 编译器（如 gcc）。"
       }
+    },
+    "repo:microsoft/generative-ai-for-beginners": {
+      "type": "repo-insight",
+      "hash": "e5dd8af510246a3dcfc1887f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-01T22:00:09.987Z",
+      "value": {
+        "summaryZh": "微软出品的生成式 AI 入门免费课程，共 21 节，采用 Jupyter Notebook 形式，适合初学者系统学习构建生成式 AI 应用。课程涵盖提示工程、大模型基础、RAG、Agent 等核心主题，提供理论讲解与动手实践，并配有开源示例代码。适合开发者、学生或转行者快速入门生成式 AI，通过实际代码理解概念并构建自己的 AI 应用。",
+        "scenarios": [
+          "想从头系统学习生成式 AI 的开发者和学生，利用课程大纲和示例代码快速掌握核心概念。",
+          "需要为团队提供 AI 入门培训的技术负责人，可参考课程结构和内容组织内部 workshop。",
+          "正在寻找提示工程、RAG 等实战案例的开发者，可直接运行 Notebook 并修改代码进行实验。"
+        ],
+        "agentInstallPrompt": "请克隆该仓库：git clone https://github.com/microsoft/generative-ai-for-beginners.git，然后进入目录，安装 Jupyter Notebook 或使用 VS Code 打开。建议创建 Python 3.9+ 虚拟环境，执行 pip install -r requirements.txt（如果存在）。按顺序打开课程目录中的 .ipynb 文件，从头运行各单元，期间可能需要配置 Azure OpenAI 或 OpenAI API 密钥，可在环境变量中设置。允许自动下载代码依赖，并运行全部单元测试以验证结果。"
+      }
+    },
+    "repo:github/gh-stack": {
+      "type": "repo-insight",
+      "hash": "c7db27d97b10060ccb2152d6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-01T22:00:22.253Z",
+      "value": {
+        "summaryZh": "gh-stack 是 GitHub 官方发布的 CLI 扩展，用于高效管理堆叠式 Pull Request（Stacked PRs）。它基于 GitHub CLI，通过 Go 实现，提供简洁命令来创建、同步和重新排序依赖的 PR 链，解决多 PR 按依赖顺序提交的复杂流程。亮点包括自动化处理 PR 的基分支切换、依赖关系可视化，以及与 GitHub 深度集成。适合需要频繁拆分大型功能、维护多重依赖分支的团队，尤其对开源维护者和使用 Git 工作流的开发者非常友好，能显著减少手动 rebase 和分支管理的负担。",
+        "scenarios": [
+          "在大型功能开发中，将改动拆分为多个有依赖关系的 PR，并自动维护它们之间的基线更新。",
+          "当多个开发者协同开发同一功能链时，快速同步各 PR 的变更，避免冲突和重复劳动。",
+          "在代码审查场景下，通过堆叠 PR 的顺序管理，使审查者能按依赖逻辑逐级查看提交。"
+        ],
+        "agentInstallPrompt": "请先安装 GitHub CLI（gh）并确保已登录。然后运行命令：gh extension install github/gh-stack 来安装扩展。安装完成后，在一个已克隆的 Git 仓库中，使用 gh stack 命令查看帮助，例如运行 gh stack --help。接着尝试创建堆叠 PR：先创建主分支上的第一个 PR，然后创建基于它的第二个分支并提交，运行 gh stack sync 来自动更新 PR 依赖关系。如果遇到权限问题，请检查 gh auth status。"
+      }
+    },
+    "repo:abus-aikorea/voice-pro": {
+      "type": "repo-insight",
+      "hash": "8a239a7b32599bab380dcb2c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-01T22:00:27.145Z",
+      "value": {
+        "summaryZh": "Voice-Pro 是一款面向创作者与开发者的 Gradio WebUI，集成多种顶尖语音工具。它内置 Edge-TTS、kokoro 等文本转语音引擎，支持零样本声音克隆（E2、F5-TTS、CosyVoice），并具备 Whisper 音频转写、YouTube 视频下载、Demucs 人声分离及多语言翻译能力。通过统一的 Web 界面，用户无需编写代码即可完成从音频采集、处理到合成的一站式工作流，极大降低了语音 AI 的使用门槛。适合播客制作者、视频创作者、语言学习者及 AI 应用开发者快速试验和部署语音功能。",
+        "scenarios": [
+          "创作者将视频或播客中的语音转写为文字，并利用声音克隆生成多语言配音。",
+          "开发者为本地方言或小众语言的语音识别与合成搭建快速原型测试环境。",
+          "音乐爱好者利用人声分离工具提取伴奏或干声，用于混音或翻唱制作。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/abus-aikorea/voice-pro，并按照 README 安装依赖。推荐使用 Python 3.10 及以上版本，创建虚拟环境后运行 pip install -r requirements.txt。若需 GPU 加速，请确保安装正确版本的 PyTorch。启动方式为执行 python app.py，然后浏览器打开本地地址访问 Gradio 界面。首次运行会自动下载模型，请保持网络畅通。如有问题，可参考 README 中的常见问题排查。"
+      }
+    },
+    "repo:iv-org/invidious": {
+      "type": "repo-insight",
+      "hash": "9a4871de31ea035a19592db8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-01T22:00:31.831Z",
+      "value": {
+        "summaryZh": "Invidious 是一个开源的 YouTube 替代前端，使用 Crystal 语言开发，旨在提供轻量、隐私保护的 YouTube 观看体验。它无需 JavaScript 即可播放视频，去除广告和追踪器，支持订阅频道、创建播放列表、评论查看等功能，并可通过 API 集成到第三方应用中。适合注重隐私的用户、希望摆脱 YouTube 广告和推荐算法的使用者，以及开发者自建视频前端服务。该项目活跃，部署方式多样，支持 Docker 和系统服务，是隐私友好型 YouTube 访问方案。",
+        "scenarios": [
+          "在浏览器中无痕观看 YouTube 视频，避免广告和追踪，适合隐私敏感用户。",
+          "自建实例供团队或社区使用，提供无干扰的视频分享和订阅管理。",
+          "开发者通过 Invidious API 构建第三方播放器或视频聚合应用。"
+        ],
+        "agentInstallPrompt": "请帮我部署 Invidious 并完成本地试跑。首先使用 Docker 方式，运行 `docker run -p 3000:3000 quay.io/invidious/invidious` 启动容器，然后访问 `http://localhost:3000` 确认页面加载。若需要配置数据库，请参考官方文档创建 PostgreSQL 容器并设置环境变量，确保视频搜索和播放功能正常。完成后，请告诉我如何通过环境变量调整端口和启用 API 模式。"
+      }
+    },
+    "repo:ansible/ansible": {
+      "type": "repo-insight",
+      "hash": "90ee15c0eb3df0f90adf9d9a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-01T22:00:36.958Z",
+      "value": {
+        "summaryZh": "Ansible 是一款极简主义 IT 自动化平台，采用 Python 编写，通过 SSH 协议即可远程管理服务器，无需在目标主机安装代理。它以接近自然语言的 YAML 语法定义自动化任务，支持配置管理、应用部署、网络配置及云资源编排等场景。核心优势在于易学易用、幂等执行和模块化设计，拥有庞大的模块库和活跃社区，使得从数百台服务器的运维到复杂多云环境的治理都变得高效可控。适合希望简化运维流程、降低自动化门槛的开发与运维团队。",
+        "scenarios": [
+          "跨多台服务器批量执行命令、分发配置或滚动更新应用，确保环境一致性。",
+          "在混合云或多云环境中统一管理计算、网络和存储资源，实现基础设施即代码。",
+          "作为 CI/CD 流水线中的配置管理和应用部署工具，自动化发布流程并支持回滚。"
+        ],
+        "agentInstallPrompt": "请先确认目标环境已安装 Python 3.8+ 和 pip，然后执行 pip install ansible 安装最新稳定版。安装完成后，创建一个测试目录，编写一个简单的 ping 本机的 playbook（例如 - hosts: localhost, tasks: - ping），运行 ansible-playbook -i 'localhost,' site.yml 验证安装。若需管理远程主机，请在 inventory 文件中添加主机 IP 或域名，并确保 SSH 免密登录已配置。"
+      }
+    },
+    "repo:microsoft/TRELLIS.2": {
+      "type": "repo-insight",
+      "hash": "e03168fcc268a5e4b7a85263",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-01T22:00:41.763Z",
+      "value": {
+        "summaryZh": "TRELLIS.2 是微软开源的 3D 生成模型，基于原生且紧凑的结构化潜在表示，能够高效地将图像或文本转换为高质量 3D 资产。其核心优势在于采用统一的潜在编码器，显著降低计算开销并提升生成速度，同时保持细粒度几何与纹理保真度。项目提供完整的训练与推理代码，适合 3D 内容创作者、游戏开发者及 AI 研究人员探索快速原型制作。",
+        "scenarios": [
+          "从单张图片快速生成可编辑的 3D 模型，用于游戏或影视预制作。",
+          "在资源受限环境中批量生成低多边形 3D 资产，加速虚拟场景搭建。",
+          "作为研究基线，对比不同 3D 潜在表示方法对生成质量与效率的影响。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/microsoft/TRELLIS.2 到本地，创建 Python 3.10 环境并安装 requirements.txt 中的依赖。然后根据 README 准备示例输入图片，运行 demo.py 脚本生成 3D 模型，输出格式为 glb。若遇到 CUDA 相关错误，请检查 PyTorch 版本与 GPU 驱动，并尝试设置环境变量 CUDA_VISIBLE_DEVICES=0。"
+      }
+    },
+    "repo:TencentCloud/TencentDB-Agent-Memory": {
+      "type": "repo-insight",
+      "hash": "2c113526ea2e24d2ec2d4cd7",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-01T22:00:47.047Z",
+      "value": {
+        "summaryZh": "TencentDB Agent Memory 是一个面向 AI 代理的团队级记忆中枢，由腾讯云开源。它能够将对话、文档和代码转化为四种可复用的记忆资产：聊天记忆（Chat Memory）、技能（Skill）、LLM 知识库（LLM-Wiki）和代码图谱（Code-Graph）。这些记忆由团队统一治理和共享，可跨代理、跨框架使用，显著提升 AI 代理的长期记忆能力和协作效率。项目基于 TypeScript 开发，适合需要构建持久化、可共享智能体记忆的团队，尤其适用于复杂业务场景下的多代理协作。",
+        "scenarios": [
+          "多代理协作场景：多个 AI 代理共享团队级记忆，避免重复学习，保持上下文一致性。",
+          "企业知识管理：将文档和对话沉淀为 LLM-Wiki，供不同代理检索和引用，提升问答准确性。",
+          "代码库理解与维护：利用 Code-Graph 记忆代码结构和依赖，辅助代码生成、审查和重构。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/TencentCloud/TencentDB-Agent-Memory 到本地，使用 pnpm 或 npm 安装依赖（参考 README）。项目为 TypeScript 编写，请阅读 docs 目录了解架构和配置。运行示例前，需要设置环境变量以连接腾讯云数据库（如 TDSQL），或使用本地模拟存储。建议先运行测试套件验证安装：执行 `pnpm test` 或 `npm test`。然后根据 README 中的快速开始指南，启动一个简单的 AI 代理示例，调用记忆存储 API 保存和检索对话内容。如遇到依赖问题，请检查 Node.js 版本（建议 >=18）。"
+      }
+    },
+    "repo:NomaDamas/k-skill": {
+      "type": "repo-insight",
+      "hash": "c208e1e9c559b1c76da1add4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-01T22:00:54.252Z",
+      "value": {
+        "summaryZh": "k-skill 是一个面向韩语用户的 AI 智能体技能集合仓库，旨在将通用 AI 代理“改造”为具有韩国人思维方式、语言习惯和文化背景的本地化助手。项目采用 JavaScript 编写，通过模块化技能包的方式，为开发者提供即插即用的韩语对话、礼仪、流行语、地域文化等预设能力，同时还支持自定义扩展。亮点在于其轻量、易集成，适合需要快速构建韩语客户服务、本地化聊天机器人或韩国市场应用的开发者。无论你是做韩语 NLP 应用、跨境业务还是游戏本地化，都能从中获得便利。",
+        "scenarios": [
+          "开发韩语客服机器人，希望自动使用符合韩国礼仪的回应方式。",
+          "构建面向韩国用户的智能助手，需要理解流行文化和地域梗。",
+          "为韩国市场本地化应用，快速注入韩语习惯与语气，提升交互亲和力。"
+        ],
+        "agentInstallPrompt": "首先，使用 git clone https://github.com/NomaDamas/k-skill.git 将仓库克隆到本地，然后进入项目目录，查看 README 了解技能包的加载方式。由于项目是纯 JavaScript，无需安装额外依赖，你可以直接导入对应技能模块。运行 node 测试文件或示例代码，验证韩语技能是否生效。建议创建一个示例 prompt，调用技能包中的韩语对话生成接口，观察输出是否具有韩国人风格。如果需要自定义技能，请参考 src 目录下的模板，并遵循项目文档中的规范。"
+      }
+    },
+    "repo:bytedance/deer-flow": {
+      "type": "repo-insight",
+      "hash": "9717760bdb030ce91353a696",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-01T22:01:01.322Z",
+      "value": {
+        "summaryZh": "Deer Flow 是字节跳动开源的长周期 SuperAgent 框架（Python），旨在让 AI 代理自主处理从分钟到小时级别的复杂任务，如研究、编码和内容创作。它通过沙箱隔离执行环境、持久记忆、外部工具调用、可复用技能、子代理协同以及消息网关，构建了一个可扩展的智能体编排层。亮点在于多代理协作与长上下文管理能力，适合需要自动化深度工作流的开发者、AI 工程师及研究团队，尤其适用于复杂任务拆解与持续执行场景。",
+        "scenarios": [
+          "研究分析：自动收集多源资料，使用子代理并行调研并生成结构化报告。",
+          "编码开发：在沙箱中编写、调试和测试代码，处理跨文件或仓库的复杂开发任务。",
+          "内容创作：基于记忆和技能生成长文、代码注释或创意文案，并通过工具集成校验内容。"
+        ],
+        "agentInstallPrompt": "请克隆仓库并安装依赖：git clone https://github.com/bytedance/deer-flow.git && cd deer-flow && pip install -r requirements.txt。然后参考 README 配置环境变量（如模型 API 密钥），运行示例：python examples/simple_task.py，或启动 web 界面：python -m deer_flow.webui。若需自定义任务，可按照 docs/getting_started.md 编写任务描述，使用子代理和沙箱功能。注意确保 Python 3.10+ 并安装 Docker（用于沙箱）。"
+      }
     }
   }
 }
