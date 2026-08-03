@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generatedAt": "2026-08-01T22:01:02.770Z",
+    "generatedAt": "2026-08-02T23:51:37.944Z",
     "source": "github-trending-search-ai-news-radar",
     "timezone": "Asia/Shanghai",
     "refreshPolicy": "Local launchd: 06:00 fetch, 07:00 publish to GitHub and EdgeOne",
     "deepseek": {
       "enabled": true,
       "model": "deepseek-v4-flash",
-      "generated": 9,
+      "generated": 2,
       "reused": 69,
-      "failed": 0,
-      "cacheEntries": 235
+      "failed": 7,
+      "cacheEntries": 236
     }
   },
   "periods": {
@@ -26,9 +26,9 @@
           "desc": "12 Weeks, 24 Lessons, AI for All!",
           "lang": "Jupyter Notebook",
           "langColor": "#DA5B0B",
-          "stars": 57027,
-          "forks": 11327,
-          "today": "869 stars today",
+          "stars": 58914,
+          "forks": 11590,
+          "today": "2,617 stars today",
           "summaryZh": "微软出品的AI入门教程，12周24课，覆盖神经网络、计算机视觉、自然语言处理、生成式AI等核心主题。每课包含文字讲解、可运行代码示例和动手实验，采用Jupyter Notebook形式，兼顾理论与实战。适合零基础学生、转行开发者及希望系统学习AI的工程师，通过循序渐进的项目驱动学习，快速建立AI知识体系。",
           "scenarios": [
             "高校或培训机构作为AI入门课程教材，配合Notebook进行教学实践",
@@ -39,34 +39,15 @@
         },
         {
           "rank": 2,
-          "owner": "paperswithbacktest",
-          "repo": "awesome-systematic-trading",
-          "url": "https://github.com/paperswithbacktest/awesome-systematic-trading",
-          "desc": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 12204,
-          "forks": 1513,
-          "today": "529 stars today",
-          "summaryZh": "awesome-systematic-trading 是一个精选的系统化交易资源集合，涵盖库、策略、书籍、博客和教程。该项目由 paperswithbacktest 维护，旨在为量化交易者和开发者提供一站式学习与参考平台。亮点包括：资源分类清晰、覆盖主流策略（如动量、均值回归）、持续更新。适合量化研究员、算法交易开发者及金融科技爱好者快速入门或深入探索系统化交易。",
-          "scenarios": [
-            "量化交易者希望系统化学习各种交易策略及其实现。",
-            "开发者在构建交易系统时寻找可靠的开源库与工具。",
-            "金融科技学生或研究人员需要精选的书籍与教程列表。"
-          ],
-          "agentInstallPrompt": "在终端中运行以下命令克隆仓库：git clone https://github.com/paperswithbacktest/awesome-systematic-trading.git 然后进入目录：cd awesome-systematic-trading。如需浏览内容，可直接打开 README.md 或使用文件管理器。这是一个资源列表，无需安装额外依赖。"
-        },
-        {
-          "rank": 3,
           "owner": "usekaneo",
           "repo": "kaneo",
           "url": "https://github.com/usekaneo/kaneo",
           "desc": "🎯 All you need. Nothing you don't. Open source project management that works for you, not against you.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 5639,
-          "forks": 480,
-          "today": "778 stars today",
+          "stars": 6101,
+          "forks": 514,
+          "today": "491 stars today",
           "summaryZh": "Kaneo 是一款开源、自托管的项目管理工具，采用 TypeScript 构建，强调“所需即所得”的极简体验。它提供任务看板、里程碑、时间线等核心功能，无冗余干扰，界面简洁流畅，适合追求高效与数据自主权的团队。与主流闭源产品相比，Kaneo 更注重轻量级部署和灵活定制，支持 Docker 一键启动，可无缝集成到现有工作流中，是开发团队、初创公司及个人项目管理的理想选择。",
           "scenarios": [
             "小型团队或初创公司需要快速搭建内部任务管理看板，避免复杂配置和高成本订阅。",
@@ -76,130 +57,35 @@
           "agentInstallPrompt": "请克隆仓库 https://github.com/usekaneo/kaneo.git，进入 kaneo 目录，确保已安装 Node.js（v18+）和 pnpm。执行 pnpm install 安装依赖，然后复制 .env.example 为 .env 并按需设置环境变量。使用 docker-compose up -d 启动依赖的数据库服务（如 PostgreSQL），再执行 pnpm dev 启动开发服务器，访问 http://localhost:3000 即可查看应用。若用于生产，请运行 pnpm build && pnpm start。"
         },
         {
-          "rank": 4,
-          "owner": "zhaoxuya520",
-          "repo": "reverse-skill",
-          "url": "https://github.com/zhaoxuya520/reverse-skill",
-          "desc": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
-          "lang": "PowerShell",
-          "langColor": "#012456",
-          "stars": 11804,
-          "forks": 1785,
-          "today": "1,360 stars today",
-          "summaryZh": "reverse-skill 是一个面向逆向工程、授权渗透测试与安全研究的 AI 技能路由包，使用 PowerShell 编写。它能自动将 AI 客户端的请求路由到合适的工具链，按需自举安装所需组件，并通过自进化经验库持续积累知识。支持 Claude Code、Kiro、Cursor、Cline 等主流 AI 编程客户端，帮助安全人员借助 AI 高效完成二进制分析、漏洞挖掘、渗透测试等任务。适合需要自动化安全分析流程的渗透测试工程师、安全研究员及对 AI 辅助攻防感兴趣的开发者。",
-          "scenarios": [
-            "在授权渗透测试中，让 AI 自动识别目标环境并路由到合适的逆向或渗透工具，生成并执行测试步骤。",
-            "分析未知二进制文件时，AI 按需自举安装反汇编、调试等工具链，并辅助提取关键字符串和控制流信息。",
-            "团队安全研究中，利用自进化经验库沉淀攻防知识，AI 可基于历史经验快速给出针对类似目标的测试策略。"
-          ],
-          "agentInstallPrompt": "请先克隆仓库 https://github.com/zhaoxuya520/reverse-skill 到本地，然后查看 README 了解安装方式。在 PowerShell 中运行仓库内的安装脚本，脚本会自动配置技能路由包并支持 Claude Code、Cursor 等 AI 客户端。安装完成后，请向 AI 客户端输入一条授权渗透测试指令（如“对 192.168.1.1 进行授权端口扫描和漏洞检测”），验证 AI 能否正确路由到对应工具并执行。注意确保所有操作合法合规，仅用于授权环境。"
-        },
-        {
-          "rank": 5,
-          "owner": "microsoft",
-          "repo": "generative-ai-for-beginners",
-          "url": "https://github.com/microsoft/generative-ai-for-beginners",
-          "desc": "21 Lessons, Get Started Building with Generative AI",
+          "rank": 3,
+          "owner": "lyogavin",
+          "repo": "airllm",
+          "url": "https://github.com/lyogavin/airllm",
+          "desc": "AirLLM 70B inference with single 4GB GPU",
           "lang": "Jupyter Notebook",
           "langColor": "#DA5B0B",
-          "stars": 114160,
-          "forks": 61211,
-          "today": "104 stars today",
-          "summaryZh": "微软出品的生成式 AI 入门免费课程，共 21 节，采用 Jupyter Notebook 形式，适合初学者系统学习构建生成式 AI 应用。课程涵盖提示工程、大模型基础、RAG、Agent 等核心主题，提供理论讲解与动手实践，并配有开源示例代码。适合开发者、学生或转行者快速入门生成式 AI，通过实际代码理解概念并构建自己的 AI 应用。",
+          "stars": 25582,
+          "forks": 2877,
+          "today": "963 stars today",
+          "summaryZh": "AirLLM 是一个开源项目，能够在单张4GB显存的GPU上高效运行70B参数级别的大语言模型（如Llama 2 70B）。其核心创新在于采用分层推理技术，将模型切分到CPU和GPU内存中按需加载，从而极大降低显存需求。项目基于Jupyter Notebook实现，易于理解和使用。亮点包括：无需昂贵硬件即可体验超大模型、兼容主流开源LLM、推理速度可接受。适合预算有限但希望尝试大模型推理的个人开发者、教育研究者以及需在低配设备上部署AI应用的团队。",
           "scenarios": [
-            "想从头系统学习生成式 AI 的开发者和学生，利用课程大纲和示例代码快速掌握核心概念。",
-            "需要为团队提供 AI 入门培训的技术负责人，可参考课程结构和内容组织内部 workshop。",
-            "正在寻找提示工程、RAG 等实战案例的开发者，可直接运行 Notebook 并修改代码进行实验。"
+            "在仅有4GB显存的个人GPU（如RTX 3050）上运行Llama 2 70B进行文本生成或对话",
+            "低成本云服务器（如T4/RTX 4000系列）上部署70B大模型推理API，减少硬件开销",
+            "教学或研究环境中，无需高端GPU即可演示大模型推理原理和实验"
           ],
-          "agentInstallPrompt": "请克隆该仓库：git clone https://github.com/microsoft/generative-ai-for-beginners.git，然后进入目录，安装 Jupyter Notebook 或使用 VS Code 打开。建议创建 Python 3.9+ 虚拟环境，执行 pip install -r requirements.txt（如果存在）。按顺序打开课程目录中的 .ipynb 文件，从头运行各单元，期间可能需要配置 Azure OpenAI 或 OpenAI API 密钥，可在环境变量中设置。允许自动下载代码依赖，并运行全部单元测试以验证结果。"
+          "agentInstallPrompt": "git clone https://github.com/lyogavin/airllm.git && cd airllm && pip install -r requirements.txt && # 运行示例：在Jupyter Notebook中打开airllm_demo.ipynb，按照单元格提示下载模型权重并执行推理"
         },
         {
-          "rank": 6,
-          "owner": "github",
-          "repo": "copilot-sdk",
-          "url": "https://github.com/github/copilot-sdk",
-          "desc": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
-          "lang": "Java",
-          "langColor": "#b07219",
-          "stars": 10267,
-          "forks": 1385,
-          "today": "145 stars today",
-          "summaryZh": "GitHub Copilot SDK 是一个多平台 Java SDK，用于将 GitHub Copilot Agent 无缝集成到各类应用和服务中。其亮点包括跨平台兼容性、简洁的 API 设计以及深度结合 Copilot 的代码生成与理解能力，支持自定义工作流和上下文。适合希望利用 Copilot 增强产品智能化水平的开发者、IDE 扩展作者及企业级 AI 工具构建者，可快速实现代码补全、审查建议等功能。",
-          "scenarios": [
-            "在自定义代码编辑器或 IDE 中集成 Copilot 的实时代码补全与建议功能",
-            "构建自动化代码审查系统，利用 Copilot 生成修改意见和优化建议",
-            "开发企业级开发辅助工具，将 Copilot 嵌入内部开发平台以提升团队效率"
-          ],
-          "agentInstallPrompt": "使用 Maven 添加依赖到 pom.xml：<dependency><groupId>com.github.copilot</groupId><artifactId>copilot-sdk</artifactId><version>最新版本</version></dependency>。然后参考官方示例（https://github.com/github/copilot-sdk/tree/main/examples），初始化 CopilotAgent 并传入上下文，调用 generate 方法获取补全。运行前需配置 GitHub Copilot 的 API 密钥（环境变量 GITHUB_TOKEN），并确保 JDK 11+。"
-        },
-        {
-          "rank": 7,
-          "owner": "github",
-          "repo": "gh-stack",
-          "url": "https://github.com/github/gh-stack",
-          "desc": "GitHub Stacked PRs",
-          "lang": "Go",
-          "langColor": "#00ADD8",
-          "stars": 791,
-          "forks": 36,
-          "today": "90 stars today",
-          "summaryZh": "gh-stack 是 GitHub 官方发布的 CLI 扩展，用于高效管理堆叠式 Pull Request（Stacked PRs）。它基于 GitHub CLI，通过 Go 实现，提供简洁命令来创建、同步和重新排序依赖的 PR 链，解决多 PR 按依赖顺序提交的复杂流程。亮点包括自动化处理 PR 的基分支切换、依赖关系可视化，以及与 GitHub 深度集成。适合需要频繁拆分大型功能、维护多重依赖分支的团队，尤其对开源维护者和使用 Git 工作流的开发者非常友好，能显著减少手动 rebase 和分支管理的负担。",
-          "scenarios": [
-            "在大型功能开发中，将改动拆分为多个有依赖关系的 PR，并自动维护它们之间的基线更新。",
-            "当多个开发者协同开发同一功能链时，快速同步各 PR 的变更，避免冲突和重复劳动。",
-            "在代码审查场景下，通过堆叠 PR 的顺序管理，使审查者能按依赖逻辑逐级查看提交。"
-          ],
-          "agentInstallPrompt": "请先安装 GitHub CLI（gh）并确保已登录。然后运行命令：gh extension install github/gh-stack 来安装扩展。安装完成后，在一个已克隆的 Git 仓库中，使用 gh stack 命令查看帮助，例如运行 gh stack --help。接着尝试创建堆叠 PR：先创建主分支上的第一个 PR，然后创建基于它的第二个分支并提交，运行 gh stack sync 来自动更新 PR 依赖关系。如果遇到权限问题，请检查 gh auth status。"
-        },
-        {
-          "rank": 8,
-          "owner": "huggingface",
-          "repo": "speech-to-speech",
-          "url": "https://github.com/huggingface/speech-to-speech",
-          "desc": "Build local voice agents with open-source models",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 10173,
-          "forks": 1245,
-          "today": "393 stars today",
-          "summaryZh": "该项目利用开源模型在本地构建语音代理，实现语音到语音的交互。亮点包括支持多种开源模型（如Whisper、TTS）、完全离线运行、低延迟，适合需要隐私保护或定制化语音助手的开发者。通过简单的Python接口，用户可以快速集成语音识别、自然语言处理和语音合成，打造个性化的语音应用。",
-          "scenarios": [
-            "构建本地语音助手，无需云端API，保护用户隐私",
-            "开发离线语音交互系统，适用于网络受限环境",
-            "为游戏或虚拟角色添加语音对话功能，提升沉浸感"
-          ],
-          "agentInstallPrompt": "# 安装并试跑 speech-to-speech 项目 # 1. 克隆仓库 git clone https://github.com/huggingface/speech-to-speech cd speech-to-speech # 2. 创建虚拟环境（可选但推荐） python3 -m venv venv source venv/bin/activate # 3. 安装依赖 pip install -r requirements.txt # 4. 运行语音代理（默认使用麦克风和扬声器） python run.py # 若需测试录音文件，使用： python run.py --input-file test.wav"
-        },
-        {
-          "rank": 9,
-          "owner": "abus-aikorea",
-          "repo": "voice-pro",
-          "url": "https://github.com/abus-aikorea/voice-pro",
-          "desc": "Gradio WebUI for creators and developers, featuring key TTS (Edge-TTS, kokoro) and zero-shot Voice Cloning (E2 & F5-TTS, CosyVoice), with Whisper audio processing, YouTube download, Demucs vocal isolation, and multilingual translation.",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 11710,
-          "forks": 1715,
-          "today": "53 stars today",
-          "summaryZh": "Voice-Pro 是一款面向创作者与开发者的 Gradio WebUI，集成多种顶尖语音工具。它内置 Edge-TTS、kokoro 等文本转语音引擎，支持零样本声音克隆（E2、F5-TTS、CosyVoice），并具备 Whisper 音频转写、YouTube 视频下载、Demucs 人声分离及多语言翻译能力。通过统一的 Web 界面，用户无需编写代码即可完成从音频采集、处理到合成的一站式工作流，极大降低了语音 AI 的使用门槛。适合播客制作者、视频创作者、语言学习者及 AI 应用开发者快速试验和部署语音功能。",
-          "scenarios": [
-            "创作者将视频或播客中的语音转写为文字，并利用声音克隆生成多语言配音。",
-            "开发者为本地方言或小众语言的语音识别与合成搭建快速原型测试环境。",
-            "音乐爱好者利用人声分离工具提取伴奏或干声，用于混音或翻唱制作。"
-          ],
-          "agentInstallPrompt": "请先克隆仓库 https://github.com/abus-aikorea/voice-pro，并按照 README 安装依赖。推荐使用 Python 3.10 及以上版本，创建虚拟环境后运行 pip install -r requirements.txt。若需 GPU 加速，请确保安装正确版本的 PyTorch。启动方式为执行 python app.py，然后浏览器打开本地地址访问 Gradio 界面。首次运行会自动下载模型，请保持网络畅通。如有问题，可参考 README 中的常见问题排查。"
-        },
-        {
-          "rank": 10,
+          "rank": 4,
           "owner": "iv-org",
           "repo": "invidious",
           "url": "https://github.com/iv-org/invidious",
           "desc": "Invidious is an alternative front-end to YouTube",
           "lang": "Crystal",
           "langColor": "#000100",
-          "stars": 21580,
-          "forks": 2429,
-          "today": "361 stars today",
+          "stars": 21952,
+          "forks": 2454,
+          "today": "307 stars today",
           "summaryZh": "Invidious 是一个开源的 YouTube 替代前端，使用 Crystal 语言开发，旨在提供轻量、隐私保护的 YouTube 观看体验。它无需 JavaScript 即可播放视频，去除广告和追踪器，支持订阅频道、创建播放列表、评论查看等功能，并可通过 API 集成到第三方应用中。适合注重隐私的用户、希望摆脱 YouTube 广告和推荐算法的使用者，以及开发者自建视频前端服务。该项目活跃，部署方式多样，支持 Docker 和系统服务，是隐私友好型 YouTube 访问方案。",
           "scenarios": [
             "在浏览器中无痕观看 YouTube 视频，避免广告和追踪，适合隐私敏感用户。",
@@ -209,54 +95,111 @@
           "agentInstallPrompt": "请帮我部署 Invidious 并完成本地试跑。首先使用 Docker 方式，运行 `docker run -p 3000:3000 quay.io/invidious/invidious` 启动容器，然后访问 `http://localhost:3000` 确认页面加载。若需要配置数据库，请参考官方文档创建 PostgreSQL 容器并设置环境变量，确保视频搜索和播放功能正常。完成后，请告诉我如何通过环境变量调整端口和启用 API 模式。"
         },
         {
-          "rank": 11,
-          "owner": "ansible",
-          "repo": "ansible",
-          "url": "https://github.com/ansible/ansible",
-          "desc": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 70079,
-          "forks": 24270,
-          "today": "26 stars today",
-          "summaryZh": "Ansible 是一款极简主义 IT 自动化平台，采用 Python 编写，通过 SSH 协议即可远程管理服务器，无需在目标主机安装代理。它以接近自然语言的 YAML 语法定义自动化任务，支持配置管理、应用部署、网络配置及云资源编排等场景。核心优势在于易学易用、幂等执行和模块化设计，拥有庞大的模块库和活跃社区，使得从数百台服务器的运维到复杂多云环境的治理都变得高效可控。适合希望简化运维流程、降低自动化门槛的开发与运维团队。",
+          "rank": 5,
+          "owner": "codecrafters-io",
+          "repo": "build-your-own-x",
+          "url": "https://github.com/codecrafters-io/build-your-own-x",
+          "desc": "Master programming by recreating your favorite technologies from scratch.",
+          "lang": "Markdown",
+          "langColor": "#083fa1",
+          "stars": 534777,
+          "forks": 50549,
+          "today": "710 stars today",
+          "summaryZh": "该项目汇集了从零开始构建经典技术的教程集合，涵盖 Git、数据库、Docker、Redis 等。通过动手实践重现这些技术，帮助开发者深入理解底层原理。适合有一定编程基础、希望通过实战提升系统设计能力的程序员。亮点是分步指南清晰，且覆盖广泛的技术栈。",
           "scenarios": [
-            "跨多台服务器批量执行命令、分发配置或滚动更新应用，确保环境一致性。",
-            "在混合云或多云环境中统一管理计算、网络和存储资源，实现基础设施即代码。",
-            "作为 CI/CD 流水线中的配置管理和应用部署工具，自动化发布流程并支持回滚。"
+            "想深入理解 Git 内部机制，通过亲手实现来巩固知识",
+            "希望学习数据库或操作系统的核心原理，进行动手实践",
+            "准备技术面试，通过构建项目加深对分布式系统等概念的理解"
           ],
-          "agentInstallPrompt": "请先确认目标环境已安装 Python 3.8+ 和 pip，然后执行 pip install ansible 安装最新稳定版。安装完成后，创建一个测试目录，编写一个简单的 ping 本机的 playbook（例如 - hosts: localhost, tasks: - ping），运行 ansible-playbook -i 'localhost,' site.yml 验证安装。若需管理远程主机，请在 inventory 文件中添加主机 IP 或域名，并确保 SSH 免密登录已配置。"
+          "agentInstallPrompt": "执行以下命令克隆仓库并安装依赖： 1. git clone https://github.com/codecrafters-io/build-your-own-x.git 2. cd build-your-own-x 3. 选择教程目录（如 build-your-own-git），按照其 README.md 安装对应运行时（如 Rust、Python）并运行。"
         },
         {
-          "rank": 12,
+          "rank": 6,
+          "owner": "zhaoxuya520",
+          "repo": "reverse-skill",
+          "url": "https://github.com/zhaoxuya520/reverse-skill",
+          "desc": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
+          "lang": "PowerShell",
+          "langColor": "#012456",
+          "stars": 13222,
+          "forks": 1979,
+          "today": "1,145 stars today",
+          "summaryZh": "reverse-skill 是一个面向逆向工程、授权渗透测试与安全研究的 AI 技能路由包，使用 PowerShell 编写。它能自动将 AI 客户端的请求路由到合适的工具链，按需自举安装所需组件，并通过自进化经验库持续积累知识。支持 Claude Code、Kiro、Cursor、Cline 等主流 AI 编程客户端，帮助安全人员借助 AI 高效完成二进制分析、漏洞挖掘、渗透测试等任务。适合需要自动化安全分析流程的渗透测试工程师、安全研究员及对 AI 辅助攻防感兴趣的开发者。",
+          "scenarios": [
+            "在授权渗透测试中，让 AI 自动识别目标环境并路由到合适的逆向或渗透工具，生成并执行测试步骤。",
+            "分析未知二进制文件时，AI 按需自举安装反汇编、调试等工具链，并辅助提取关键字符串和控制流信息。",
+            "团队安全研究中，利用自进化经验库沉淀攻防知识，AI 可基于历史经验快速给出针对类似目标的测试策略。"
+          ],
+          "agentInstallPrompt": "请先克隆仓库 https://github.com/zhaoxuya520/reverse-skill 到本地，然后查看 README 了解安装方式。在 PowerShell 中运行仓库内的安装脚本，脚本会自动配置技能路由包并支持 Claude Code、Cursor 等 AI 客户端。安装完成后，请向 AI 客户端输入一条授权渗透测试指令（如“对 192.168.1.1 进行授权端口扫描和漏洞检测”），验证 AI 能否正确路由到对应工具并执行。注意确保所有操作合法合规，仅用于授权环境。"
+        },
+        {
+          "rank": 7,
+          "owner": "different-ai",
+          "repo": "openwork",
+          "url": "https://github.com/different-ai/openwork",
+          "desc": "The open-source alternative to Claude Cowork (powered by opencode)",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 20273,
+          "forks": 2085,
+          "today": "319 stars today",
+          "summaryZh": "Openwork 是 Claude Cowork 的开源替代品，基于 opencode 构建，提供智能代码协作功能。它允许开发者通过自然语言与代码库交互，支持代码审查、重构、文档生成等。亮点在于完全开源、可自托管、支持多种 LLM 后端（如 OpenAI、Anthropic），且紧密集成 Git 工作流。适合希望拥有私有化、可定制 AI 编程助手的个人开发者或团队。",
+          "scenarios": [
+            "作为本地 AI 编程助手，通过聊天界面直接修改项目代码，提高开发效率。",
+            "在团队协作中，利用 Openwork 自动生成代码评审意见或提交信息。",
+            "企业自托管部署，确保代码数据不外传，满足安全合规需求。"
+          ],
+          "agentInstallPrompt": "请首先确保安装了 Node.js 18+ 和 Git。克隆本仓库并进入目录：git clone https://github.com/different-ai/openwork && cd openwork。然后运行 npm install 安装依赖。接着复制 .env.example 为 .env，在 .env 中设置必要的 API 密钥（如 OPENAI_API_KEY 或 ANTHROPIC_API_KEY）。最后运行 npm run dev 启动开发服务器，访问 http://localhost:3000 即可使用。如果遇到问题，请检查 Node 版本和依赖是否安装完整。"
+        },
+        {
+          "rank": 8,
           "owner": "microsoft",
-          "repo": "TRELLIS.2",
-          "url": "https://github.com/microsoft/TRELLIS.2",
-          "desc": "Native and Compact Structured Latents for 3D Generation",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 9888,
-          "forks": 1195,
-          "today": "121 stars today",
-          "summaryZh": "TRELLIS.2 是微软开源的 3D 生成模型，基于原生且紧凑的结构化潜在表示，能够高效地将图像或文本转换为高质量 3D 资产。其核心优势在于采用统一的潜在编码器，显著降低计算开销并提升生成速度，同时保持细粒度几何与纹理保真度。项目提供完整的训练与推理代码，适合 3D 内容创作者、游戏开发者及 AI 研究人员探索快速原型制作。",
+          "repo": "generative-ai-for-beginners",
+          "url": "https://github.com/microsoft/generative-ai-for-beginners",
+          "desc": "21 Lessons, Get Started Building with Generative AI",
+          "lang": "Jupyter Notebook",
+          "langColor": "#DA5B0B",
+          "stars": 114719,
+          "forks": 61279,
+          "today": "588 stars today",
+          "summaryZh": "微软出品的生成式 AI 入门免费课程，共 21 节，采用 Jupyter Notebook 形式，适合初学者系统学习构建生成式 AI 应用。课程涵盖提示工程、大模型基础、RAG、Agent 等核心主题，提供理论讲解与动手实践，并配有开源示例代码。适合开发者、学生或转行者快速入门生成式 AI，通过实际代码理解概念并构建自己的 AI 应用。",
           "scenarios": [
-            "从单张图片快速生成可编辑的 3D 模型，用于游戏或影视预制作。",
-            "在资源受限环境中批量生成低多边形 3D 资产，加速虚拟场景搭建。",
-            "作为研究基线，对比不同 3D 潜在表示方法对生成质量与效率的影响。"
+            "想从头系统学习生成式 AI 的开发者和学生，利用课程大纲和示例代码快速掌握核心概念。",
+            "需要为团队提供 AI 入门培训的技术负责人，可参考课程结构和内容组织内部 workshop。",
+            "正在寻找提示工程、RAG 等实战案例的开发者，可直接运行 Notebook 并修改代码进行实验。"
           ],
-          "agentInstallPrompt": "请先克隆仓库 https://github.com/microsoft/TRELLIS.2 到本地，创建 Python 3.10 环境并安装 requirements.txt 中的依赖。然后根据 README 准备示例输入图片，运行 demo.py 脚本生成 3D 模型，输出格式为 glb。若遇到 CUDA 相关错误，请检查 PyTorch 版本与 GPU 驱动，并尝试设置环境变量 CUDA_VISIBLE_DEVICES=0。"
+          "agentInstallPrompt": "请克隆该仓库：git clone https://github.com/microsoft/generative-ai-for-beginners.git，然后进入目录，安装 Jupyter Notebook 或使用 VS Code 打开。建议创建 Python 3.9+ 虚拟环境，执行 pip install -r requirements.txt（如果存在）。按顺序打开课程目录中的 .ipynb 文件，从头运行各单元，期间可能需要配置 Azure OpenAI 或 OpenAI API 密钥，可在环境变量中设置。允许自动下载代码依赖，并运行全部单元测试以验证结果。"
         },
         {
-          "rank": 13,
+          "rank": 9,
+          "owner": "Panniantong",
+          "repo": "Agent-Reach",
+          "url": "https://github.com/Panniantong/Agent-Reach",
+          "desc": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 64623,
+          "forks": 5343,
+          "today": "645 stars today",
+          "summaryZh": "Agent-Reach 是一个开源 CLI 工具，让 AI 代理能够“看见”整个互联网。它支持从 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等主流平台读取和搜索内容，无需任何 API 密钥或费用。亮点在于零 API 成本、统一命令行接口、易于集成到 AI 工作流。适合需要将实时网络数据注入 AI 代理的开发者、AI 应用构建者、数据采集爱好者。",
+          "scenarios": [
+            "AI 代理在对话中实时搜索社交媒体获取最新话题和用户观点。",
+            "开发者构建自动化工作流，从多个平台抓取内容用于分析或训练。",
+            "数据科学家无需付费 API 即可采集多平台数据用于研究或监控。"
+          ],
+          "agentInstallPrompt": "克隆仓库并安装依赖：git clone https://github.com/Panniantong/Agent-Reach.git && cd Agent-Reach && pip install -r requirements.txt。使用前无需配置API密钥，直接运行 CLI：python main.py --help 查看支持平台。示例：python main.py search reddit 'AI news' 搜索 Reddit 上关于 AI 新闻的内容。"
+        },
+        {
+          "rank": 10,
           "owner": "TencentCloud",
           "repo": "TencentDB-Agent-Memory",
           "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
           "desc": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 10239,
-          "forks": 986,
-          "today": "342 stars today",
+          "stars": 10911,
+          "forks": 1033,
+          "today": "604 stars today",
           "summaryZh": "TencentDB Agent Memory 是一个面向 AI 代理的团队级记忆中枢，由腾讯云开源。它能够将对话、文档和代码转化为四种可复用的记忆资产：聊天记忆（Chat Memory）、技能（Skill）、LLM 知识库（LLM-Wiki）和代码图谱（Code-Graph）。这些记忆由团队统一治理和共享，可跨代理、跨框架使用，显著提升 AI 代理的长期记忆能力和协作效率。项目基于 TypeScript 开发，适合需要构建持久化、可共享智能体记忆的团队，尤其适用于复杂业务场景下的多代理协作。",
           "scenarios": [
             "多代理协作场景：多个 AI 代理共享团队级记忆，避免重复学习，保持上下文一致性。",
@@ -266,16 +209,35 @@
           "agentInstallPrompt": "请先克隆仓库 https://github.com/TencentCloud/TencentDB-Agent-Memory 到本地，使用 pnpm 或 npm 安装依赖（参考 README）。项目为 TypeScript 编写，请阅读 docs 目录了解架构和配置。运行示例前，需要设置环境变量以连接腾讯云数据库（如 TDSQL），或使用本地模拟存储。建议先运行测试套件验证安装：执行 `pnpm test` 或 `npm test`。然后根据 README 中的快速开始指南，启动一个简单的 AI 代理示例，调用记忆存储 API 保存和检索对话内容。如遇到依赖问题，请检查 Node.js 版本（建议 >=18）。"
         },
         {
-          "rank": 14,
+          "rank": 11,
+          "owner": "mvanhorn",
+          "repo": "last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 56843,
+          "forks": 4970,
+          "today": "217 stars today",
+          "summaryZh": "该项目是一个AI代理技能，能够跨Reddit、X（推特）、YouTube、Hacker News、Polymarket及整个网络搜索任何主题，并综合生成有依据的摘要。亮点在于多源信息聚合与自动摘要，适合需要快速获取跨平台观点汇总的研究人员、内容创作者和市场分析师。使用Python编写，易于集成到AI工作流中。",
+          "scenarios": [
+            "市场趋势分析：快速搜集Reddit、X等平台对某新产品的用户反馈，生成综合摘要。",
+            "热点事件追踪：从Hacker News和Polymarket获取技术评论与预测，形成事件进展报告。",
+            "内容创作调研：为视频或文章收集YouTube、Reddit等不同视角的素材，生成结构化摘要。"
+          ],
+          "agentInstallPrompt": "首先，克隆仓库：git clone https://github.com/mvanhorn/last30days-skill.git && cd last30days-skill。然后安装依赖：pip install -r requirements.txt。设置必要的API密钥（如OpenAI、Reddit、Twitter等），通常在.env文件中配置。最后运行示例：python main.py --topic 'your topic'。如需自定义，可修改配置或调用核心函数。"
+        },
+        {
+          "rank": 12,
           "owner": "NomaDamas",
           "repo": "k-skill",
           "url": "https://github.com/NomaDamas/k-skill",
           "desc": "한국인을 위한 스킬 모음집 - 에이전트를 한국인으로",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 6717,
-          "forks": 793,
-          "today": "103 stars today",
+          "stars": 6873,
+          "forks": 805,
+          "today": "179 stars today",
           "summaryZh": "k-skill 是一个面向韩语用户的 AI 智能体技能集合仓库，旨在将通用 AI 代理“改造”为具有韩国人思维方式、语言习惯和文化背景的本地化助手。项目采用 JavaScript 编写，通过模块化技能包的方式，为开发者提供即插即用的韩语对话、礼仪、流行语、地域文化等预设能力，同时还支持自定义扩展。亮点在于其轻量、易集成，适合需要快速构建韩语客户服务、本地化聊天机器人或韩国市场应用的开发者。无论你是做韩语 NLP 应用、跨境业务还是游戏本地化，都能从中获得便利。",
           "scenarios": [
             "开发韩语客服机器人，希望自动使用符合韩国礼仪的回应方式。",
@@ -285,23 +247,61 @@
           "agentInstallPrompt": "首先，使用 git clone https://github.com/NomaDamas/k-skill.git 将仓库克隆到本地，然后进入项目目录，查看 README 了解技能包的加载方式。由于项目是纯 JavaScript，无需安装额外依赖，你可以直接导入对应技能模块。运行 node 测试文件或示例代码，验证韩语技能是否生效。建议创建一个示例 prompt，调用技能包中的韩语对话生成接口，观察输出是否具有韩国人风格。如果需要自定义技能，请参考 src 目录下的模板，并遵循项目文档中的规范。"
         },
         {
-          "rank": 15,
-          "owner": "bytedance",
-          "repo": "deer-flow",
-          "url": "https://github.com/bytedance/deer-flow",
-          "desc": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 78681,
-          "forks": 10739,
-          "today": "204 stars today",
-          "summaryZh": "Deer Flow 是字节跳动开源的长周期 SuperAgent 框架（Python），旨在让 AI 代理自主处理从分钟到小时级别的复杂任务，如研究、编码和内容创作。它通过沙箱隔离执行环境、持久记忆、外部工具调用、可复用技能、子代理协同以及消息网关，构建了一个可扩展的智能体编排层。亮点在于多代理协作与长上下文管理能力，适合需要自动化深度工作流的开发者、AI 工程师及研究团队，尤其适用于复杂任务拆解与持续执行场景。",
+          "rank": 13,
+          "owner": "HarbourMasters",
+          "repo": "Lighthouse",
+          "url": "https://github.com/HarbourMasters/Lighthouse",
+          "desc": "",
+          "lang": "C",
+          "langColor": "#555555",
+          "stars": 213,
+          "forks": 15,
+          "today": "62 stars today",
+          "summaryZh": "HarbourMasters/Lighthouse 是一个近期热度较高的开源项目，主要语言是 C。它近期在 GitHub 上获得较高关注。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
           "scenarios": [
-            "研究分析：自动收集多源资料，使用子代理并行调研并生成结构化报告。",
-            "编码开发：在沙箱中编写、调试和测试代码，处理跨文件或仓库的复杂开发任务。",
-            "内容创作：基于记忆和技能生成长文、代码注释或创意文案，并通过工具集成校验内容。"
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
           ],
-          "agentInstallPrompt": "请克隆仓库并安装依赖：git clone https://github.com/bytedance/deer-flow.git && cd deer-flow && pip install -r requirements.txt。然后参考 README 配置环境变量（如模型 API 密钥），运行示例：python examples/simple_task.py，或启动 web 界面：python -m deer_flow.webui。若需自定义任务，可按照 docs/getting_started.md 编写任务描述，使用子代理和沙箱功能。注意确保 Python 3.10+ 并安装 Docker（用于沙箱）。"
+          "agentInstallPrompt": "把 https://github.com/HarbourMasters/Lighthouse 克隆到 ~/Code/Lighthouse。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 14,
+          "owner": "antirez",
+          "repo": "ds4",
+          "url": "https://github.com/antirez/ds4",
+          "desc": "DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
+          "lang": "C",
+          "langColor": "#555555",
+          "stars": 19963,
+          "forks": 1773,
+          "today": "187 stars today",
+          "summaryZh": "antirez/ds4 是一个近期热度较高的开源项目，主要语言是 C。它的公开描述是：“DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/antirez/ds4 克隆到 ~/Code/ds4。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 15,
+          "owner": "esengine",
+          "repo": "DeepSeek-Reasonix",
+          "url": "https://github.com/esengine/DeepSeek-Reasonix",
+          "desc": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+          "lang": "Go",
+          "langColor": "#00ADD8",
+          "stars": 29007,
+          "forks": 1868,
+          "today": "389 stars today",
+          "summaryZh": "esengine/DeepSeek-Reasonix 是一个近期热度较高的开源项目，主要语言是 Go。它的公开描述是：“DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/esengine/DeepSeek-Reasonix 克隆到 ~/Code/DeepSeek-Reasonix。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
         }
       ]
     },
@@ -311,34 +311,15 @@
       "repos": [
         {
           "rank": 1,
-          "owner": "permissionlesstech",
-          "repo": "bitchat",
-          "url": "https://github.com/permissionlesstech/bitchat",
-          "desc": "bluetooth mesh chat, IRC vibes",
-          "lang": "Swift",
-          "langColor": "#F05138",
-          "stars": 33946,
-          "forks": 5411,
-          "today": "6,761 stars this week",
-          "summaryZh": "BitChat 是一款基于蓝牙 Mesh 网络的去中心化聊天应用，灵感来自 IRC。它无需互联网或中心服务器，利用蓝牙直接连接附近设备，实现点对点通信。亮点包括离线通信、端到端加密和隐私保护，适合在无网络或弱网络环境下使用。项目使用 Swift 开发，开源且易于扩展，适合对去中心化通信感兴趣的开发者或户外爱好者。",
-          "scenarios": [
-            "户外徒步、露营等无手机信号区域，与队友保持联系",
-            "应急场景（如地震、断电）中，利用蓝牙 Mesh 建立临时通信网络",
-            "大型聚会、会议或音乐节等封闭场所，实现本地实时聊天"
-          ],
-          "agentInstallPrompt": "首先，确保你拥有 Mac 和 iOS 设备，并安装 Xcode 15+。打开终端，执行：git clone https://github.com/permissionlesstech/bitchat.git。进入项目目录，双击 BitChat.xcodeproj 打开 Xcode。连接 iOS 设备，选择你的开发者团队，然后点击运行按钮。如果遇到签名问题，请调整 Bundle Identifier。应用启动后，确保设备蓝牙开启，即可发现附近设备并开始聊天。"
-        },
-        {
-          "rank": 2,
           "owner": "block",
           "repo": "buzz",
           "url": "https://github.com/block/buzz",
           "desc": "A hive mind communication platform",
           "lang": "Rust",
           "langColor": "#dea584",
-          "stars": 20368,
-          "forks": 2116,
-          "today": "10,558 stars this week",
+          "stars": 21045,
+          "forks": 2252,
+          "today": "9,003 stars this week",
           "summaryZh": "Buzz是一个基于Rust构建的蜂群思维通信平台，旨在促进群体协作与实时交流。其亮点在于高性能、低延迟的消息传递机制，支持去中心化架构，适合开发者构建协作工具或社区平台。适合对实时通信、分布式系统感兴趣的Rust开发者。",
           "scenarios": [
             "用于构建团队内部的高效实时协作工具，如即时消息、任务分配。",
@@ -348,73 +329,16 @@
           "agentInstallPrompt": "首先，确保已安装Rust工具链（rustup和cargo）。然后克隆仓库：git clone https://github.com/block/buzz.git。进入目录：cd buzz。使用cargo build --release编译。运行：./target/release/buzz。如需测试，运行cargo test。"
         },
         {
-          "rank": 3,
-          "owner": "citrolabs",
-          "repo": "ego-lite",
-          "url": "https://github.com/citrolabs/ego-lite",
-          "desc": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
-          "lang": "JavaScript",
-          "langColor": "#f1e05a",
-          "stars": 7355,
-          "forks": 360,
-          "today": "4,741 stars this week",
-          "summaryZh": "ego-lite 是一款专为 AI 代理设计的极速浏览器，用于浏览器自动化。其核心亮点是能让 AI 代理（如 Codex 或 Claude Code）共享用户已登录的浏览器状态，而无需干扰用户当前操作。项目零成本、零配置，用 JavaScript 编写，适合需要让 AI 代理执行网页自动化任务的开发者，尤其是那些希望复用已有登录会话、避免重复认证的场景。",
-          "scenarios": [
-            "AI 代理需要访问用户已登录的网页服务（如社交媒体、邮箱）执行自动化操作。",
-            "开发者在本地调试基于浏览器的 AI 代理时，希望快速获取浏览器环境。",
-            "在持续集成中，让 AI 代理利用共享浏览器状态进行端到端测试。"
-          ],
-          "agentInstallPrompt": "首先，确保系统已安装 Node.js（版本 ≥16）。然后执行以下命令：克隆仓库：git clone https://github.com/citrolabs/ego-lite.git，进入目录：cd ego-lite，安装依赖：npm install。根据项目 README，启动命令可能为 npm start 或 npm run dev。建议运行 npm start 尝试启动，并观察控制台输出以确认是否正常运行。如果需要查看详细使用方法，请查看 README 文件。"
-        },
-        {
-          "rank": 4,
-          "owner": "ayghri",
-          "repo": "i-have-adhd",
-          "url": "https://github.com/ayghri/i-have-adhd",
-          "desc": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 15205,
-          "forks": 840,
-          "today": "5,133 stars this week",
-          "summaryZh": "这是一个面向AI编码代理的Python技能/插件，名为“我有多动症”（i-have-adhd）。它专门针对注意力不容易集中的开发者，强制代理在输出答案时直接给出核心结论，避免冗长解释和无关细节。项目通过注入提示或后处理逻辑，让代码搜索结果、调试建议等回复更加简洁明了，以醒目的方式突出重点。适合容易分心、希望快速获取要点、不想在复杂输出中翻找答案的程序员，以及所有希望提升AI助手沟通效率的团队。",
-          "scenarios": [
-            "在代码调试中，代理直接返回错误行和修复方案，不附带大段分析日志。",
-            "进行技术调研时，代理用要点列表概括答案，首句即结论。",
-            "使用AI辅助编程时，代理自动折叠或过滤无关输出，只显示关键代码片段。"
-          ],
-          "agentInstallPrompt": "请先克隆仓库 https://github.com/ayghri/i-have-adhd 到本地，然后阅读README了解安装方式。该项目为Python实现，建议创建虚拟环境并运行 pip install -r requirements.txt（若有）。根据文档，将其作为编码代理的插件或技能加载，配置默认输出风格为“ADHD友好”：所有回答必须以最简洁的结论开头，只包含必要细节，并用项目符号或加粗突出关键信息。启动一个测试对话，询问一个技术问题，验证输出是否符合简洁直观的要求。"
-        },
-        {
-          "rank": 5,
-          "owner": "alibaba",
-          "repo": "open-code-review",
-          "url": "https://github.com/alibaba/open-code-review",
-          "desc": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-          "lang": "Go",
-          "langColor": "#00ADD8",
-          "stars": 17455,
-          "forks": 1186,
-          "today": "4,746 stars this week",
-          "summaryZh": "阿里巴巴开源的免费代码审查工具，采用混合架构（确定性流水线+LLM Agent），已在阿里大规模生产环境验证。支持行级精准评论，内置针对NPE、线程安全、XSS、SQL注入等问题的精细规则集，兼容OpenAI和Anthropic模型。适合需要自动化代码审查、提升代码质量并降低人工review成本的团队，特别是Java/Go等企业级项目。",
-          "scenarios": [
-            "在CI/CD流程中集成自动代码审查，拦截常见漏洞如空指针、SQL注入等",
-            "大型团队开源项目或内部仓库中，对Pull Request进行行级智能评论和修复建议",
-            "作为代码质量门禁，与GitHub/GitLab等平台结合，辅助开发者快速定位并修正问题"
-          ],
-          "agentInstallPrompt": "首先克隆仓库：git clone https://github.com/alibaba/open-code-review.git。然后进入目录，根据文档配置环境变量（如OPENAI_API_KEY）。使用Go运行：go run main.go --help查看参数。典型用法：将工具集成到GitHub Actions或自建CI，监听PR事件后自动运行审查，输出行级评论到PR。注意需预先安装Go 1.18+及依赖。"
-        },
-        {
-          "rank": 6,
+          "rank": 2,
           "owner": "virgiliojr94",
           "repo": "book-to-skill",
           "url": "https://github.com/virgiliojr94/book-to-skill",
           "desc": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 14788,
-          "forks": 1601,
-          "today": "4,603 stars this week",
+          "stars": 15316,
+          "forks": 1651,
+          "today": "5,105 stars this week",
           "summaryZh": "Book-to-Skill 是一款将技术书籍 PDF 转化为 Claude Code 可交互技能的开源工具。它能自动提取书籍内容、生成结构化知识，并嵌入到 Claude Code 的工作流中，让开发者边编程边查阅书籍精华。亮点包括：一键转换、支持任意技术书、自动生成技能配置。适合希望将读书与编程实践深度融合的开发者、技术学习者及研究团队。",
           "scenarios": [
             "将一本新购的技术书籍 PDF 快速转换为 Claude Code 技能，边写代码边查询关键概念。",
@@ -424,6 +348,82 @@
           "agentInstallPrompt": "请先安装依赖：pip install book-to-skill。然后运行：book-to-skill --input /path/to/book.pdf --output skill_dir。这会将书籍 PDF 转换为一个 Claude Code 技能文件夹。接着将 skill_dir 路径添加到 Claude Code 的 skill 配置目录中，即可在编程过程中通过 '@skill' 引用书籍知识。"
         },
         {
+          "rank": 3,
+          "owner": "ayghri",
+          "repo": "i-have-adhd",
+          "url": "https://github.com/ayghri/i-have-adhd",
+          "desc": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 15643,
+          "forks": 872,
+          "today": "5,232 stars this week",
+          "summaryZh": "这是一个面向AI编码代理的Python技能/插件，名为“我有多动症”（i-have-adhd）。它专门针对注意力不容易集中的开发者，强制代理在输出答案时直接给出核心结论，避免冗长解释和无关细节。项目通过注入提示或后处理逻辑，让代码搜索结果、调试建议等回复更加简洁明了，以醒目的方式突出重点。适合容易分心、希望快速获取要点、不想在复杂输出中翻找答案的程序员，以及所有希望提升AI助手沟通效率的团队。",
+          "scenarios": [
+            "在代码调试中，代理直接返回错误行和修复方案，不附带大段分析日志。",
+            "进行技术调研时，代理用要点列表概括答案，首句即结论。",
+            "使用AI辅助编程时，代理自动折叠或过滤无关输出，只显示关键代码片段。"
+          ],
+          "agentInstallPrompt": "请先克隆仓库 https://github.com/ayghri/i-have-adhd 到本地，然后阅读README了解安装方式。该项目为Python实现，建议创建虚拟环境并运行 pip install -r requirements.txt（若有）。根据文档，将其作为编码代理的插件或技能加载，配置默认输出风格为“ADHD友好”：所有回答必须以最简洁的结论开头，只包含必要细节，并用项目符号或加粗突出关键信息。启动一个测试对话，询问一个技术问题，验证输出是否符合简洁直观的要求。"
+        },
+        {
+          "rank": 4,
+          "owner": "microsoft",
+          "repo": "AI-For-Beginners",
+          "url": "https://github.com/microsoft/AI-For-Beginners",
+          "desc": "12 Weeks, 24 Lessons, AI for All!",
+          "lang": "Jupyter Notebook",
+          "langColor": "#DA5B0B",
+          "stars": 58914,
+          "forks": 11590,
+          "today": "3,246 stars this week",
+          "summaryZh": "微软出品的AI入门教程，12周24课，覆盖神经网络、计算机视觉、自然语言处理、生成式AI等核心主题。每课包含文字讲解、可运行代码示例和动手实验，采用Jupyter Notebook形式，兼顾理论与实战。适合零基础学生、转行开发者及希望系统学习AI的工程师，通过循序渐进的项目驱动学习，快速建立AI知识体系。",
+          "scenarios": [
+            "高校或培训机构作为AI入门课程教材，配合Notebook进行教学实践",
+            "自学开发者按12周计划系统掌握AI基础，完成课后作业和项目",
+            "企业内部培训中使用，帮助非AI背景员工快速了解机器学习与深度学习概念"
+          ],
+          "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/microsoft/AI-For-Beginners.git，然后安装依赖：cd AI-For-Beginners && pip install -r requirements.txt。启动Jupyter Notebook：jupyter notebook，按照课程目录从/lessons/1-Introduction开始，逐个打开.ipynb文件并运行代码单元格，确保每个示例都能成功执行，并尝试修改参数观察结果。"
+        },
+        {
+          "rank": 5,
+          "owner": "bojieli",
+          "repo": "ai-agent-book",
+          "url": "https://github.com/bojieli/ai-agent-book",
+          "desc": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 29868,
+          "forks": 3181,
+          "today": "9,298 stars this week",
+          "summaryZh": "《深入理解 AI Agent：设计原理与工程实践》开源仓库，包含全书完整正文、编译版 PDF 及按章配套 Python 代码。系统讲解 AI Agent 的核心概念、架构设计、规划推理、工具使用、记忆机制等，并提供可运行的示例项目。适合希望深入掌握 AI Agent 内部原理并动手实践的中高级开发者、AI 工程师及研究人员。亮点是理论与实践紧密结合，代码可直接复现书中的 Agent 原型。",
+          "scenarios": [
+            "学习 AI Agent 理论：配合书籍章节阅读代码，理解 Agent 的规划、记忆、工具调用等核心机制。",
+            "快速搭建 Agent 原型：基于仓库提供的示例代码，修改和扩展以构建自定义的 AI 助手或自动化工具。",
+            "教学与分享：作为课程教材或技术分享的参考资料，展示完整的 Agent 实现流程。"
+          ],
+          "agentInstallPrompt": "克隆仓库：git clone https://github.com/bojieli/ai-agent-book.git，进入目录：cd ai-agent-book，建议使用 Python 3.10+，创建虚拟环境：python -m venv venv && source venv/bin/activate（Windows 下使用 venv\\Scripts\\activate），安装依赖：pip install -r requirements.txt。运行示例：以第3章为例，进入 ch03 目录，执行 python main.py 即可启动 Agent 示例。确保已配置 OpenAI API Key 或其他 LLM 端点（在对应配置文件中修改）。"
+        },
+        {
+          "rank": 6,
+          "owner": "1jehuang",
+          "repo": "jcode",
+          "url": "https://github.com/1jehuang/jcode",
+          "desc": "The most RAM efficient harness",
+          "lang": "Rust",
+          "langColor": "#dea584",
+          "stars": 15252,
+          "forks": 1688,
+          "today": "3,548 stars this week",
+          "summaryZh": "jcode 是一个用 Rust 编写的高效测试执行 harness，专为极低内存占用而设计。它通过优化资源管理，在运行大规模测试套件时显著降低 RAM 消耗，相比传统工具可节省数倍内存。该工具尤其适合资源受限的环境，如容器、边缘设备或大规模并行测试场景。其亮点在于极致的性能与内存控制，同时保持简单易用的接口。适合需要优化测试基础设施成本、处理高并发测试或部署在内存有限平台的开发团队。",
+          "scenarios": [
+            "在 CI/CD 流水线中运行大规模测试套件，减少内存峰值以避免 OOM 问题",
+            "在内存受限的容器或边缘设备上执行测试，最大化资源利用效率",
+            "需要高并发测试执行且关注硬件成本优化的云计算场景"
+          ],
+          "agentInstallPrompt": "请克隆仓库 https://github.com/1jehuang/jcode 并进入目录。由于项目使用 Rust，确保已安装最新稳定版 Rust 工具链。执行 cargo build --release 进行编译，然后使用 cargo run -- --help 查看使用说明。为测试功能，可创建一个简单的测试文件或运行内置示例（如果有）。若需要基准测试，可运行 cargo bench 比较内存占用。请遵循 README 中的指南进行配置和运行。"
+        },
+        {
           "rank": 7,
           "owner": "pascalorg",
           "repo": "editor",
@@ -431,9 +431,9 @@
           "desc": "Create and share 3D architectural projects.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 20602,
-          "forks": 2653,
-          "today": "2,863 stars this week",
+          "stars": 20731,
+          "forks": 2662,
+          "today": "3,028 stars this week",
           "summaryZh": "pascalorg/editor 是一个基于 TypeScript 构建的 3D 建筑项目创建与分享工具。它提供了直观的界面，支持快速搭建三维建筑模型，并集成云端协作功能，便于团队共享和展示。亮点在于轻量化编辑、实时预览以及一键导出分享链接，适合建筑师、设计师和3D爱好者使用。开源 MIT 许可，可自由定制和扩展。",
           "scenarios": [
             "建筑师快速生成三维建筑概念模型并分享给客户或团队。",
@@ -444,41 +444,41 @@
         },
         {
           "rank": 8,
-          "owner": "1jehuang",
-          "repo": "jcode",
-          "url": "https://github.com/1jehuang/jcode",
-          "desc": "The most RAM efficient harness",
-          "lang": "Rust",
-          "langColor": "#dea584",
-          "stars": 14930,
-          "forks": 1654,
-          "today": "3,351 stars this week",
-          "summaryZh": "jcode 是一个用 Rust 编写的高效测试执行 harness，专为极低内存占用而设计。它通过优化资源管理，在运行大规模测试套件时显著降低 RAM 消耗，相比传统工具可节省数倍内存。该工具尤其适合资源受限的环境，如容器、边缘设备或大规模并行测试场景。其亮点在于极致的性能与内存控制，同时保持简单易用的接口。适合需要优化测试基础设施成本、处理高并发测试或部署在内存有限平台的开发团队。",
+          "owner": "alibaba",
+          "repo": "open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "desc": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+          "lang": "Go",
+          "langColor": "#00ADD8",
+          "stars": 17853,
+          "forks": 1207,
+          "today": "4,708 stars this week",
+          "summaryZh": "alibaba/open-code-review 是一个近期热度较高的开源项目，主要语言是 Go。它的公开描述是：“Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
           "scenarios": [
-            "在 CI/CD 流水线中运行大规模测试套件，减少内存峰值以避免 OOM 问题",
-            "在内存受限的容器或边缘设备上执行测试，最大化资源利用效率",
-            "需要高并发测试执行且关注硬件成本优化的云计算场景"
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
           ],
-          "agentInstallPrompt": "请克隆仓库 https://github.com/1jehuang/jcode 并进入目录。由于项目使用 Rust，确保已安装最新稳定版 Rust 工具链。执行 cargo build --release 进行编译，然后使用 cargo run -- --help 查看使用说明。为测试功能，可创建一个简单的测试文件或运行内置示例（如果有）。若需要基准测试，可运行 cargo bench 比较内存占用。请遵循 README 中的指南进行配置和运行。"
+          "agentInstallPrompt": "把 https://github.com/alibaba/open-code-review 克隆到 ~/Code/open-code-review。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
         },
         {
           "rank": 9,
-          "owner": "opengeos",
-          "repo": "GeoLibre",
-          "url": "https://github.com/opengeos/GeoLibre",
-          "desc": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
-          "lang": "TypeScript",
-          "langColor": "#3178c6",
-          "stars": 4835,
-          "forks": 485,
-          "today": "2,765 stars this week",
-          "summaryZh": "GeoLibre 是一款轻量级、云原生的 GIS 平台，专为可视化、探索和分析地理空间数据而设计。它支持在 Web 浏览器、桌面端、移动端以及 Jupyter Notebook 中运行，实现了跨平台一致性。基于 TypeScript 开发，开源且易于扩展，适合地理信息开发者、数据科学家和地图应用开发者快速构建交互式地图应用，无需复杂部署。亮点包括高性能渲染、模块化架构和与 Jupyter 生态的无缝集成，降低了空间数据分析的门槛。",
+          "owner": "permissionlesstech",
+          "repo": "bitchat",
+          "url": "https://github.com/permissionlesstech/bitchat",
+          "desc": "bluetooth mesh chat, IRC vibes",
+          "lang": "Swift",
+          "langColor": "#F05138",
+          "stars": 34147,
+          "forks": 5453,
+          "today": "5,737 stars this week",
+          "summaryZh": "BitChat 是一款基于蓝牙 Mesh 网络的去中心化聊天应用，灵感来自 IRC。它无需互联网或中心服务器，利用蓝牙直接连接附近设备，实现点对点通信。亮点包括离线通信、端到端加密和隐私保护，适合在无网络或弱网络环境下使用。项目使用 Swift 开发，开源且易于扩展，适合对去中心化通信感兴趣的开发者或户外爱好者。",
           "scenarios": [
-            "在 Web 端快速构建交互式地图应用，展示实时地理空间数据，如气象、交通或人口分布。",
-            "在 Jupyter Notebook 中集成 GIS 分析，结合 Pandas 等工具进行空间数据探索和机器学习建模。",
-            "在移动设备上轻量部署，用于野外数据采集、导航或位置服务原型验证。"
+            "户外徒步、露营等无手机信号区域，与队友保持联系",
+            "应急场景（如地震、断电）中，利用蓝牙 Mesh 建立临时通信网络",
+            "大型聚会、会议或音乐节等封闭场所，实现本地实时聊天"
           ],
-          "agentInstallPrompt": "首先确保已安装 Node.js（v16+）和 npm。然后执行以下命令克隆并启动 GeoLibre： ```bash git clone https://github.com/opengeos/GeoLibre.git cd GeoLibre npm install npm run dev ``` 等待开发服务器启动后，在浏览器中打开 http://localhost:3000 即可看到示例地图。若要在 Jupyter Notebook 中使用，请额外安装 `jupyter-geolibre` 插件：`pip install jupyter-geolibre`，然后在 Notebook 中运行 `%load_ext jupyter_geolibre` 并调用 `GeoLibreMap()` 显示地图。更多配置请参考仓库 README。"
+          "agentInstallPrompt": "首先，确保你拥有 Mac 和 iOS 设备，并安装 Xcode 15+。打开终端，执行：git clone https://github.com/permissionlesstech/bitchat.git。进入项目目录，双击 BitChat.xcodeproj 打开 Xcode。连接 iOS 设备，选择你的开发者团队，然后点击运行按钮。如果遇到签名问题，请调整 Bundle Identifier。应用启动后，确保设备蓝牙开启，即可发现附近设备并开始聊天。"
         },
         {
           "rank": 10,
@@ -488,9 +488,9 @@
           "desc": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 46375,
-          "forks": 4569,
-          "today": "3,125 stars this week",
+          "stars": 46536,
+          "forks": 4590,
+          "today": "3,335 stars this week",
           "summaryZh": "Airi 是一款自托管的、你完全拥有的 AI 伴侣，类似 Grok Companion，旨在将虚拟角色（“waifu”）带入现实世界，目标是达到 Neuro-sama 的高度。它支持实时语音对话，并能操控 Minecraft 和 Factorio 等游戏。项目基于 TypeScript 实现，提供 Web、macOS 和 Windows 客户端，适合想要完全掌控 AI 交互体验、追求低延迟与高度定制化的开发者或二次元爱好者。亮点包括开源、自托管、多平台、实时语音、游戏集成，以及可扩展的“灵魂容器”架构。",
           "scenarios": [
             "部署为一个私有的智能助手，在个人电脑或服务器上运行，通过语音与用户进行日常对话、查询天气或控制智能家居。",
@@ -501,15 +501,72 @@
         },
         {
           "rank": 11,
+          "owner": "andrewyng",
+          "repo": "aisuite",
+          "url": "https://github.com/andrewyng/aisuite",
+          "desc": "Simple, unified interface to multiple Generative AI providers",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 15897,
+          "forks": 1683,
+          "today": "584 stars this week",
+          "summaryZh": "aisuite 是一个由 Andrew Ng 开源的 Python 库，提供统一的接口来访问多个生成式 AI 提供商（如 OpenAI、Anthropic、Google、Mistral 等）。其核心亮点在于通过简单的 API 封装，让开发者无需学习不同提供商的 SDK 即可切换模型，降低集成成本。适合需要快速构建多模型 AI 应用或进行模型对比的开发者。支持同步和异步调用，且可灵活配置默认提供方。",
+          "scenarios": [
+            "快速原型开发：使用统一接口调用不同 AI 模型，无需切换 SDK。",
+            "模型评估与对比：在相同代码逻辑下测试多个提供商的输出质量。",
+            "生产环境多提供商备份：当一个服务不可用时，无缝切换到备选模型。"
+          ],
+          "agentInstallPrompt": "运行以下命令安装 aisuite 并设置环境变量（以 OpenAI 为例）： pip install aisuite export OPENAI_API_KEY='your_api_key' 然后创建 Python 脚本 test.py： import aisuite as ai client = ai.Client() models = ['openai:gpt-4o', 'anthropic:claude-3-5-sonnet-20241022'] for model in models: response = client.chat.completions.create(model=model, messages=[{'role':'user','content':'Hello'}], temperature=0.75) print(f'{model}: {response.choices[0].message.content}') 执行 python test.py 即可测试。"
+        },
+        {
+          "rank": 12,
+          "owner": "opengeos",
+          "repo": "GeoLibre",
+          "url": "https://github.com/opengeos/GeoLibre",
+          "desc": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 4968,
+          "forks": 498,
+          "today": "2,951 stars this week",
+          "summaryZh": "GeoLibre 是一款轻量级、云原生的 GIS 平台，专为可视化、探索和分析地理空间数据而设计。它支持在 Web 浏览器、桌面端、移动端以及 Jupyter Notebook 中运行，实现了跨平台一致性。基于 TypeScript 开发，开源且易于扩展，适合地理信息开发者、数据科学家和地图应用开发者快速构建交互式地图应用，无需复杂部署。亮点包括高性能渲染、模块化架构和与 Jupyter 生态的无缝集成，降低了空间数据分析的门槛。",
+          "scenarios": [
+            "在 Web 端快速构建交互式地图应用，展示实时地理空间数据，如气象、交通或人口分布。",
+            "在 Jupyter Notebook 中集成 GIS 分析，结合 Pandas 等工具进行空间数据探索和机器学习建模。",
+            "在移动设备上轻量部署，用于野外数据采集、导航或位置服务原型验证。"
+          ],
+          "agentInstallPrompt": "首先确保已安装 Node.js（v16+）和 npm。然后执行以下命令克隆并启动 GeoLibre： ```bash git clone https://github.com/opengeos/GeoLibre.git cd GeoLibre npm install npm run dev ``` 等待开发服务器启动后，在浏览器中打开 http://localhost:3000 即可看到示例地图。若要在 Jupyter Notebook 中使用，请额外安装 `jupyter-geolibre` 插件：`pip install jupyter-geolibre`，然后在 Notebook 中运行 `%load_ext jupyter_geolibre` 并调用 `GeoLibreMap()` 显示地图。更多配置请参考仓库 README。"
+        },
+        {
+          "rank": 13,
+          "owner": "citrolabs",
+          "repo": "ego-lite",
+          "url": "https://github.com/citrolabs/ego-lite",
+          "desc": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+          "lang": "JavaScript",
+          "langColor": "#f1e05a",
+          "stars": 7644,
+          "forks": 380,
+          "today": "4,090 stars this week",
+          "summaryZh": "ego-lite 是一款专为 AI 代理设计的极速浏览器，用于浏览器自动化。其核心亮点是能让 AI 代理（如 Codex 或 Claude Code）共享用户已登录的浏览器状态，而无需干扰用户当前操作。项目零成本、零配置，用 JavaScript 编写，适合需要让 AI 代理执行网页自动化任务的开发者，尤其是那些希望复用已有登录会话、避免重复认证的场景。",
+          "scenarios": [
+            "AI 代理需要访问用户已登录的网页服务（如社交媒体、邮箱）执行自动化操作。",
+            "开发者在本地调试基于浏览器的 AI 代理时，希望快速获取浏览器环境。",
+            "在持续集成中，让 AI 代理利用共享浏览器状态进行端到端测试。"
+          ],
+          "agentInstallPrompt": "首先，确保系统已安装 Node.js（版本 ≥16）。然后执行以下命令：克隆仓库：git clone https://github.com/citrolabs/ego-lite.git，进入目录：cd ego-lite，安装依赖：npm install。根据项目 README，启动命令可能为 npm start 或 npm run dev。建议运行 npm start 尝试启动，并观察控制台输出以确认是否正常运行。如果需要查看详细使用方法，请查看 README 文件。"
+        },
+        {
+          "rank": 14,
           "owner": "pingdotgg",
           "repo": "t3code",
           "url": "https://github.com/pingdotgg/t3code",
           "desc": "",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 16219,
-          "forks": 3613,
-          "today": "1,488 stars this week",
+          "stars": 16339,
+          "forks": 3637,
+          "today": "1,439 stars this week",
           "summaryZh": "T3Code 是一个基于 T3 Stack（TypeScript、Tailwind CSS、tRPC、Prisma）的在线代码编辑器与快速原型工具。它提供实时预览、AI 辅助编码和一键部署功能，支持 Next.js 全栈开发。适合希望快速验证想法、学习 T3 技术栈或进行团队协作的全栈开发者。亮点在于零配置启动、丰富的模板库和高效的开发体验。",
           "scenarios": [
             "快速搭建 SaaS 应用原型",
@@ -519,54 +576,16 @@
           "agentInstallPrompt": "使用以下命令安装 T3Code 并创建项目：首先全局安装 `npm install -g t3code`，然后运行 `t3code init my-app` 创建一个新项目，接着进入目录 `cd my-app`，执行 `npm install` 安装依赖，最后运行 `npm run dev` 启动开发服务器。打开浏览器访问 http://localhost:3000 即可查看实时预览。"
         },
         {
-          "rank": 12,
-          "owner": "microsoft",
-          "repo": "AI-For-Beginners",
-          "url": "https://github.com/microsoft/AI-For-Beginners",
-          "desc": "12 Weeks, 24 Lessons, AI for All!",
-          "lang": "Jupyter Notebook",
-          "langColor": "#DA5B0B",
-          "stars": 57027,
-          "forks": 11327,
-          "today": "2,529 stars this week",
-          "summaryZh": "微软出品的AI入门教程，12周24课，覆盖神经网络、计算机视觉、自然语言处理、生成式AI等核心主题。每课包含文字讲解、可运行代码示例和动手实验，采用Jupyter Notebook形式，兼顾理论与实战。适合零基础学生、转行开发者及希望系统学习AI的工程师，通过循序渐进的项目驱动学习，快速建立AI知识体系。",
-          "scenarios": [
-            "高校或培训机构作为AI入门课程教材，配合Notebook进行教学实践",
-            "自学开发者按12周计划系统掌握AI基础，完成课后作业和项目",
-            "企业内部培训中使用，帮助非AI背景员工快速了解机器学习与深度学习概念"
-          ],
-          "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/microsoft/AI-For-Beginners.git，然后安装依赖：cd AI-For-Beginners && pip install -r requirements.txt。启动Jupyter Notebook：jupyter notebook，按照课程目录从/lessons/1-Introduction开始，逐个打开.ipynb文件并运行代码单元格，确保每个示例都能成功执行，并尝试修改参数观察结果。"
-        },
-        {
-          "rank": 13,
-          "owner": "shiyu-coder",
-          "repo": "Kronos",
-          "url": "https://github.com/shiyu-coder/Kronos",
-          "desc": "Kronos: A Foundation Model for the Language of Financial Markets",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 35373,
-          "forks": 5895,
-          "today": "1,939 stars this week",
-          "summaryZh": "Kronos 是一个专为金融市场语言设计的基座模型，基于大规模金融语料训练，可理解财报、新闻、行情等非结构化数据。亮点在于其领域适应性强，能捕捉金融文本中的细微语义，支持情感分析、事件驱动预测、风险识别等任务。适合量化研究员、金融科技开发者、数据科学家用于构建智能化金融分析工具。",
-          "scenarios": [
-            "从企业财报中自动提取关键财务指标并生成摘要，辅助投资决策。",
-            "对金融新闻进行情感和事件分析，预测短期市场波动趋势。",
-            "构建智能客服系统，回答用户关于股票、基金、宏观经济等专业问题。"
-          ],
-          "agentInstallPrompt": "请先安装 Python 3.8+ 和 Git。克隆仓库：git clone https://github.com/shiyu-coder/Kronos.git && cd Kronos。创建虚拟环境：python -m venv venv && source venv/bin/activate（Windows使用 venv\\Scripts\\activate）。安装依赖：pip install -r requirements.txt。下载预训练模型权重（参考 release 页面），将权重文件夹放在项目根目录。运行示例脚本：python examples/financial_sentiment.py，观察输出结果。如需微调，准备自有金融文本数据并按 data 目录下格式准备，然后运行 python train.py --config configs/finetune.yaml。"
-        },
-        {
-          "rank": 14,
+          "rank": 15,
           "owner": "diegosouzapw",
           "repo": "OmniRoute",
           "url": "https://github.com/diegosouzapw/OmniRoute",
           "desc": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 36997,
-          "forks": 4785,
-          "today": "7,701 stars this week",
+          "stars": 37817,
+          "forks": 4923,
+          "today": "7,259 stars this week",
           "summaryZh": "OmniRoute 是一款免费、开源的 MIT 协议 AI 网关，提供统一端点接入 290+ 提供商（含 90+ 免费）、500+ 模型，支持 Kimi、Claude、GPT、Gemini、DeepSeek 等主流模型。核心亮点包括配额感知自动故障转移、RTK+Caveman 压缩节省 15-95% Tokens、MCP/A2A 协议、桌面端和 PWA 支持。由 500+ 贡献者构建，兼容 Claude Code、Codex、Cursor、OpenCode、Cline 及 Copilot 等工具，大幅降低多模型调用复杂度与成本，适合需要灵活、高性价比 AI 接入的开发者。",
           "scenarios": [
             "构建多模型 AI 应用时，通过单一 API 键调用数百个模型并自动处理故障转移与配额限制。",
@@ -576,54 +595,16 @@
           "agentInstallPrompt": "执行以下步骤安装并运行 OmniRoute： 1. 克隆仓库：git clone https://github.com/diegosouzapw/OmniRoute.git 2. 进入目录：cd OmniRoute 3. 安装依赖：npm install 4. 复制环境变量：cp .env.example .env，并按需编辑 API 密钥等配置。 5. 启动服务：npm run dev，默认监听 3000 端口。 6. 验证：curl http://localhost:3000/v1/chat/completions -H \"Content-Type: application/json\" -d '{\"model\":\"gpt-4\",\"messages\":[{\"role\":\"user\",\"content\":\"Hello\"}]}'"
         },
         {
-          "rank": 15,
-          "owner": "CoreBunch",
-          "repo": "Instatic",
-          "url": "https://github.com/CoreBunch/Instatic",
-          "desc": "The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pages. Users, roles, plugins, content, database, it's all there.",
-          "lang": "TypeScript",
-          "langColor": "#3178c6",
-          "stars": 7125,
-          "forks": 622,
-          "today": "2,866 stars this week",
-          "summaryZh": "Instatic 是一个开源的视觉内容管理系统（CMS），旨在替代 Webflow、Framer 和 WordPress。它采用代理式自托管架构，能够输出干净的静态页面，同时内置用户、角色、插件、内容管理和数据库等完整功能。亮点在于结合了可视化编辑的易用性与静态站点的高性能、安全性，适合希望拥有灵活 CMS 但无需复杂后端运维的开发者、设计师和内容创作者。",
-          "scenarios": [
-            "快速搭建企业静态官网，通过可视化编辑器调整页面布局，无需编写代码。",
-            "为个人博客或作品集提供无头 CMS，通过 API 输出静态内容到前端框架。",
-            "用于多角色协作的内容管理项目，支持细粒度权限控制和插件扩展。"
-          ],
-          "agentInstallPrompt": "克隆仓库：git clone https://github.com/CoreBunch/Instatic.git 进入目录：cd Instatic 安装依赖：npm install 复制环境变量：cp .env.example .env，并按需编辑配置（如数据库连接）。 初始化数据库：npx prisma migrate dev 启动开发服务器：npm run dev 访问 http://localhost:3000 即可开始使用。"
-        },
-        {
           "rank": 16,
-          "owner": "microsoft",
-          "repo": "VibeVoice",
-          "url": "https://github.com/microsoft/VibeVoice",
-          "desc": "Open-Source Frontier Voice AI",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 51793,
-          "forks": 5741,
-          "today": "1,222 stars this week",
-          "summaryZh": "VibeVoice 是微软开源的前沿语音 AI 项目，基于 Python 实现，专注于高质量语音合成与交互。采用最新深度学习模型，支持多语言、多音色及情感表达，生成自然流畅语音。适合语音应用开发者、AI 产品经理及学术研究者快速搭建原型。亮点包括微软技术背书、先进架构和易集成的 API。",
-          "scenarios": [
-            "为智能语音助手提供自然的人机对话语音输出",
-            "在内容创作中生成逼真的有声读物或播客配音",
-            "用于无障碍辅助工具，为视障用户朗读文本信息"
-          ],
-          "agentInstallPrompt": "首先，确保 Python 3.10+ 环境。克隆仓库：git clone https://github.com/microsoft/VibeVoice.git。进入目录后安装依赖：pip install -r requirements.txt。如有需要，下载预训练模型并按照 README 中的说明放置。运行示例：python examples/basic_tts.py --text \"你好，世界\" --output output.wav。"
-        },
-        {
-          "rank": 17,
           "owner": "earthtojake",
           "repo": "text-to-cad",
           "url": "https://github.com/earthtojake/text-to-cad",
           "desc": "A library of agent skills for CAD, CAE and CAM",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 12379,
-          "forks": 1315,
-          "today": "1,901 stars this week",
+          "stars": 12502,
+          "forks": 1326,
+          "today": "2,009 stars this week",
           "summaryZh": "text-to-cad 是一个面向 CAD、CAE 和 CAM 领域的 JavaScript 代理技能库，旨在将自然语言指令转化为可执行的 CAD 建模、工程仿真和制造任务。它封装了与常见工程软件交互的智能体能力，使开发者能够快速构建基于 AI 的工程设计助手。项目亮点在于其以“技能”为粒度，提供了模块化、可复用的工具链，降低了将大语言模型接入专业工程软件的门槛。适合从事 AI 辅助设计、自动化建模、智能制造的开发者，以及希望将生成式 AI 引入传统工程流程的团队。",
           "scenarios": [
             "工程师使用自然语言描述零件形状，自动生成 CAD 模型文件，快速验证设计概念。",
@@ -633,6 +614,25 @@
           "agentInstallPrompt": "请克隆仓库 https://github.com/earthtojake/text-to-cad 到本地，使用 npm 安装依赖。查看 README 或示例文件了解如何导入技能模块。在项目根目录创建一个 Node.js 脚本，调用该库提供的函数，尝试将一句简单的产品描述（如“生成一个直径50mm、高度30mm的圆柱体”）转换为 CAD 操作。运行脚本观察输出，并检查是否生成了对应的几何数据或调用成功。如需集成到 AI agent，可将返回结果作为工具调用的一部分。"
         },
         {
+          "rank": 17,
+          "owner": "microsoft",
+          "repo": "TRELLIS.2",
+          "url": "https://github.com/microsoft/TRELLIS.2",
+          "desc": "Native and Compact Structured Latents for 3D Generation",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 10146,
+          "forks": 1219,
+          "today": "898 stars this week",
+          "summaryZh": "TRELLIS.2 是微软开源的 3D 生成模型，基于原生且紧凑的结构化潜在表示，能够高效地将图像或文本转换为高质量 3D 资产。其核心优势在于采用统一的潜在编码器，显著降低计算开销并提升生成速度，同时保持细粒度几何与纹理保真度。项目提供完整的训练与推理代码，适合 3D 内容创作者、游戏开发者及 AI 研究人员探索快速原型制作。",
+          "scenarios": [
+            "从单张图片快速生成可编辑的 3D 模型，用于游戏或影视预制作。",
+            "在资源受限环境中批量生成低多边形 3D 资产，加速虚拟场景搭建。",
+            "作为研究基线，对比不同 3D 潜在表示方法对生成质量与效率的影响。"
+          ],
+          "agentInstallPrompt": "请先克隆仓库 https://github.com/microsoft/TRELLIS.2 到本地，创建 Python 3.10 环境并安装 requirements.txt 中的依赖。然后根据 README 准备示例输入图片，运行 demo.py 脚本生成 3D 模型，输出格式为 glb。若遇到 CUDA 相关错误，请检查 PyTorch 版本与 GPU 驱动，并尝试设置环境变量 CUDA_VISIBLE_DEVICES=0。"
+        },
+        {
           "rank": 18,
           "owner": "different-ai",
           "repo": "openwork",
@@ -640,9 +640,9 @@
           "desc": "The open-source alternative to Claude Cowork (powered by opencode)",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 19919,
-          "forks": 2064,
-          "today": "2,213 stars this week",
+          "stars": 20273,
+          "forks": 2085,
+          "today": "2,720 stars this week",
           "summaryZh": "Openwork 是 Claude Cowork 的开源替代品，基于 opencode 构建，提供智能代码协作功能。它允许开发者通过自然语言与代码库交互，支持代码审查、重构、文档生成等。亮点在于完全开源、可自托管、支持多种 LLM 后端（如 OpenAI、Anthropic），且紧密集成 Git 工作流。适合希望拥有私有化、可定制 AI 编程助手的个人开发者或团队。",
           "scenarios": [
             "作为本地 AI 编程助手，通过聊天界面直接修改项目代码，提高开发效率。",
@@ -650,6 +650,25 @@
             "企业自托管部署，确保代码数据不外传，满足安全合规需求。"
           ],
           "agentInstallPrompt": "请首先确保安装了 Node.js 18+ 和 Git。克隆本仓库并进入目录：git clone https://github.com/different-ai/openwork && cd openwork。然后运行 npm install 安装依赖。接着复制 .env.example 为 .env，在 .env 中设置必要的 API 密钥（如 OPENAI_API_KEY 或 ANTHROPIC_API_KEY）。最后运行 npm run dev 启动开发服务器，访问 http://localhost:3000 即可使用。如果遇到问题，请检查 Node 版本和依赖是否安装完整。"
+        },
+        {
+          "rank": 19,
+          "owner": "permissionlesstech",
+          "repo": "bitchat-android",
+          "url": "https://github.com/permissionlesstech/bitchat-android",
+          "desc": "decentralized mesh chat",
+          "lang": "Kotlin",
+          "langColor": "#A97BFF",
+          "stars": 7257,
+          "forks": 1788,
+          "today": "1,049 stars this week",
+          "summaryZh": "permissionlesstech/bitchat-android 是一个近期热度较高的开源项目，主要语言是 Kotlin。它的公开描述是：“decentralized mesh chat”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/permissionlesstech/bitchat-android 克隆到 ~/Code/bitchat-android。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
         }
       ]
     },
@@ -665,9 +684,9 @@
           "desc": "bluetooth mesh chat, IRC vibes",
           "lang": "Swift",
           "langColor": "#F05138",
-          "stars": 33946,
-          "forks": 5411,
-          "today": "7,687 stars this month",
+          "stars": 34147,
+          "forks": 5453,
+          "today": "7,929 stars this month",
           "summaryZh": "BitChat 是一款基于蓝牙 Mesh 网络的去中心化聊天应用，灵感来自 IRC。它无需互联网或中心服务器，利用蓝牙直接连接附近设备，实现点对点通信。亮点包括离线通信、端到端加密和隐私保护，适合在无网络或弱网络环境下使用。项目使用 Swift 开发，开源且易于扩展，适合对去中心化通信感兴趣的开发者或户外爱好者。",
           "scenarios": [
             "户外徒步、露营等无手机信号区域，与队友保持联系",
@@ -684,8 +703,8 @@
           "desc": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 36997,
-          "forks": 4785,
+          "stars": 37817,
+          "forks": 4923,
           "today": "27,829 stars this month",
           "summaryZh": "OmniRoute 是一款免费、开源的 MIT 协议 AI 网关，提供统一端点接入 290+ 提供商（含 90+ 免费）、500+ 模型，支持 Kimi、Claude、GPT、Gemini、DeepSeek 等主流模型。核心亮点包括配额感知自动故障转移、RTK+Caveman 压缩节省 15-95% Tokens、MCP/A2A 协议、桌面端和 PWA 支持。由 500+ 贡献者构建，兼容 Claude Code、Codex、Cursor、OpenCode、Cline 及 Copilot 等工具，大幅降低多模型调用复杂度与成本，适合需要灵活、高性价比 AI 接入的开发者。",
           "scenarios": [
@@ -703,9 +722,9 @@
           "desc": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 35157,
-          "forks": 2481,
-          "today": "25,201 stars this month",
+          "stars": 35696,
+          "forks": 2516,
+          "today": "25,285 stars this month",
           "summaryZh": "Orca 是一个高级开发环境（ADE），专为管理并行编程代理集群而设计。它允许用户使用自己的订阅运行任意编码代理，支持桌面、移动设备和VPS平台。亮点在于灵活的并行代理管理和跨平台兼容性，适合需要大规模自动化编码任务的开发者和团队。",
           "scenarios": [
             "在多代理协作编写大型代码库时，使用 Orca 并行调度任务以提升效率。",
@@ -719,31 +738,50 @@
           "owner": "emilkowalski",
           "repo": "skills",
           "url": "https://github.com/emilkowalski/skills",
-          "desc": "Skills for Design Engineers.",
+          "desc": "Skills for Designers and Engineers.",
           "lang": "",
           "langColor": "#8b949e",
-          "stars": 23638,
-          "forks": 1283,
-          "today": "19,439 stars this month",
-          "summaryZh": "这是一个面向设计工程师的技能集合，旨在帮助设计师提升工程化能力，弥合设计与开发之间的鸿沟。项目提供了从基础到进阶的实践指南，涵盖原型设计、前端交互、版本控制等关键领域。其亮点在于聚焦“设计工程”这一细分方向，采用实战导向的案例教学，适合希望在设计中融入代码思维的设计师、UI/UX专业人士以及寻求转型的创意开发者使用。通过系统学习，用户能掌握将设计转化为可交互原型的高效工作流。",
+          "stars": 23949,
+          "forks": 1297,
+          "today": "19,576 stars this month",
+          "summaryZh": "emilkowalski/skills 是一个近期热度较高的开源项目。它的公开描述是：“Skills for Designers and Engineers.”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
           "scenarios": [
-            "设计工程师需要快速掌握前端交互基础，将UI设计稿转化为高保真可交互原型。",
-            "团队中设计师与开发者的协作场景，利用技能集合建立共同语言，减少沟通成本。",
-            "个人技能提升：从纯视觉设计向设计工程方向转型，学习版本控制、响应式布局等工程实践。"
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
           ],
-          "agentInstallPrompt": "请先确保安装了Git和Node.js。克隆仓库：git clone https://github.com/emilkowalski/skills.git，进入目录：cd skills。然后按照项目根目录下的README.md文件指引，通常需要运行npm install安装依赖，再运行npm run dev启动本地开发服务器。如果项目包含子模块或示例代码，请根据文档逐步执行即可。"
+          "agentInstallPrompt": "把 https://github.com/emilkowalski/skills 克隆到 ~/Code/skills。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
         },
         {
           "rank": 5,
+          "owner": "tt-a1i",
+          "repo": "archify",
+          "url": "https://github.com/tt-a1i/archify",
+          "desc": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+          "lang": "HTML",
+          "langColor": "#e34c26",
+          "stars": 8512,
+          "forks": 663,
+          "today": "6,644 stars this month",
+          "summaryZh": "Archify 是一个生成图表技能的 Agent 工具，专注于创建美观且可验证的架构图、工作流程图、序列图、数据流图和生命周期图。它生成自包含的 HTML 文件，内置动态效果与清晰导出功能，方便直接嵌入文档或演示。适用于软件架构师、开发人员和技术文档编写者，可快速将系统设计转化为可视化、交互式图表，提升沟通与协作效率。",
+          "scenarios": [
+            "在架构设计评审中，快速绘制系统架构图并导出为高清图片或 PDF 用于文档。",
+            "为复杂业务流程创建带交互动画的工作流或时序图，帮助团队理解逻辑。",
+            "在技术博客或产品手册中嵌入动态图表，增强读者对数据流或生命周期的直观感受。"
+          ],
+          "agentInstallPrompt": "请先克隆仓库 https://github.com/tt-a1i/archify 到本地，然后查看 README 了解项目结构和依赖要求。根据说明安装必要依赖（例如使用 npm install 或 pip install），运行示例或测试命令（如 npm run dev 或 python app.py），在浏览器中打开生成的 HTML 图表文件，确认功能正常。如果项目包含 CLI 工具，尝试运行帮助命令以了解如何使用。"
+        },
+        {
+          "rank": 6,
           "owner": "Nutlope",
           "repo": "hallmark",
           "url": "https://github.com/Nutlope/hallmark",
           "desc": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
           "lang": "CSS",
           "langColor": "#663399",
-          "stars": 20568,
-          "forks": 1031,
-          "today": "16,829 stars this month",
+          "stars": 20828,
+          "forks": 1043,
+          "today": "17,116 stars this month",
           "summaryZh": "Hallmark 是一个专为 AI 编程助手（如 Claude Code、Cursor 和 Codex）设计的反“AI 垃圾设计”技巧库。它通过一系列精炼的 CSS 规则和设计指南，帮助开发者避免 AI 生成代码中常见的样式混乱、不一致等问题，从而提升界面设计的专业度。亮点在于其轻量、易集成，能够无缝融入 AI 辅助的开发流程。适合使用 AI 编程助手的前端开发者，尤其是追求设计质量的团队和个人。",
           "scenarios": [
             "在使用 Claude Code 生成 UI 组件时，自动应用 Hallmark 的样式规则以确保设计一致性。",
@@ -753,25 +791,6 @@
           "agentInstallPrompt": "首先，确保你的项目已初始化。然后，在终端中执行：npm install hallmark-design 或 yarn add hallmark-design。接着，在你的主样式文件（如 index.css）中添加：@import 'hallmark-design/dist/hallmark.css';。若需要自定义，请参考文档调整变量。对于 AI 编程助手，请在对话开始时声明项目已引入 Hallmark，以便其生成的代码遵循相应设计规则。"
         },
         {
-          "rank": 6,
-          "owner": "Zackriya-Solutions",
-          "repo": "meetily",
-          "url": "https://github.com/Zackriya-Solutions/meetily",
-          "desc": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows. Understand How to write meeting minutes",
-          "lang": "Rust",
-          "langColor": "#dea584",
-          "stars": 27836,
-          "forks": 2875,
-          "today": "14,907 stars this month",
-          "summaryZh": "Meetily 是一款开源的 AI 会议助手，完全本地运行，保障隐私安全。它基于 Rust 构建，利用 Parakeet/Whisper 实现 4 倍速实时语音转录，支持说话人分离（Speaker Diarization），并整合 Ollama 进行本地摘要生成。无需联网，所有处理均在设备端完成，适用于 macOS 和 Windows。适合重视数据隐私的个人、团队或企业，希望在不泄露会议内容的前提下高效记录和总结会议。OpenAI Whisper 的优化版本带来更快的转录速度，而 Ollama 集成则提供了灵活的本地 AI 摘要能力。",
-          "scenarios": [
-            "在线会议（如 Zoom、Teams）中自动进行实时转录和说话人标记，会后生成会议纪要。",
-            "敏感行业（如法律、医疗）的内部会议，需完全本地处理，避免数据上传云端。",
-            "个人开发者或小团队使用本地 Ollama 模型，定制化总结会议要点，无需付费 API。"
-          ],
-          "agentInstallPrompt": "首先确保已安装 Rust 开发环境（curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh）。然后执行：git clone https://github.com/Zackriya-Solutions/meetily.git && cd meetily && cargo run --release。注意：该项目需要系统声卡支持，推荐在 macOS 或 Windows 上运行。首次运行会自动下载 Whisper 模型（约 1.5GB），请保持网络畅通。若需使用 Ollama 摘要，请先安装 Ollama 并拉取模型（如 ollama pull llama2）。运行后打开终端显示的本地地址（通常是 http://localhost:8000）即可使用。"
-        },
-        {
           "rank": 7,
           "owner": "koala73",
           "repo": "worldmonitor",
@@ -779,9 +798,9 @@
           "desc": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 77769,
-          "forks": 11619,
-          "today": "16,613 stars this month",
+          "stars": 78110,
+          "forks": 11676,
+          "today": "16,936 stars this month",
           "summaryZh": "WorldMonitor是一个基于TypeScript构建的实时全球情报仪表盘，利用AI技术聚合新闻、监控地缘政治动态并跟踪关键基础设施，为用户提供统一态势感知界面。其亮点在于实时数据流处理与智能分析能力，适合研究人员、分析师、企业战略团队及对全球事件保持关注的个人使用。",
           "scenarios": [
             "政治与安全分析师实时监控全球冲突、选举及政策变动，快速获取关键情报。",
@@ -792,34 +811,15 @@
         },
         {
           "rank": 8,
-          "owner": "openai",
-          "repo": "codex-plugin-cc",
-          "url": "https://github.com/openai/codex-plugin-cc",
-          "desc": "Use Codex from Claude Code to review code or delegate tasks.",
-          "lang": "JavaScript",
-          "langColor": "#f1e05a",
-          "stars": 30849,
-          "forks": 2038,
-          "today": "8,998 stars this month",
-          "summaryZh": "该项目是一个开源插件，允许开发者在Claude Code中直接调用OpenAI Codex进行代码审查和任务委托。亮点在于融合两大AI模型的能力，通过自然语言交互实现自动化代码分析、生成和调试。适合使用Claude Code并希望增强AI编程辅助的开发者，可显著提升编码效率与代码质量。",
-          "scenarios": [
-            "在代码审查流程中，自动调用Codex分析代码逻辑缺陷和安全隐患。",
-            "委托Codex完成具体编码任务，如编写单元测试、重构函数或生成文档。",
-            "结合Claude的对话能力与Codex的代码生成能力，解决复杂编程问题。"
-          ],
-          "agentInstallPrompt": "克隆仓库：git clone https://github.com/openai/codex-plugin-cc.git && cd codex-plugin-cc。安装依赖：npm install。配置环境变量（如OPENAI_API_KEY和CLAUDE_API_KEY），然后运行npm run build。将插件加载到Claude Code中，按照文档配置权限后即可使用。"
-        },
-        {
-          "rank": 9,
           "owner": "bradautomates",
           "repo": "claude-video",
           "url": "https://github.com/bradautomates/claude-video",
           "desc": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 13281,
-          "forks": 1301,
-          "today": "10,346 stars this month",
+          "stars": 13454,
+          "forks": 1315,
+          "today": "10,493 stars this month",
           "summaryZh": "claude-video 是一个让 Claude 具备视频理解能力的开源工具。它通过下载视频、提取关键帧、转录语音，将视频内容转化为结构化文本提交给 Claude 分析。亮点在于无需复杂配置即可让 AI 直接“看”视频，适合需要自动化视频摘要、内容审核、字幕生成等场景的用户。项目基于 Python，依赖 ffmpeg 和 Anthropic API，适合开发者快速集成到工作流中。",
           "scenarios": [
             "自动生成视频摘要：提取视频帧和字幕，交给 Claude 总结核心内容。",
@@ -829,35 +829,35 @@
           "agentInstallPrompt": "首先确保安装 Python 3.10+ 和 ffmpeg。然后运行： ``` git clone https://github.com/bradautomates/claude-video.git cd claude-video pip install -r requirements.txt ``` 设置环境变量 ANTHROPIC_API_KEY。使用命令： ``` python claude_video.py --url <视频URL> --api-key $ANTHROPIC_API_KEY ``` 首次运行会下载模型，后续自动处理。"
         },
         {
-          "rank": 10,
-          "owner": "asgeirtj",
-          "repo": "system_prompts_leaks",
-          "url": "https://github.com/asgeirtj/system_prompts_leaks",
-          "desc": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-5.6-Sol, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
-          "lang": "JavaScript",
-          "langColor": "#f1e05a",
-          "stars": 61843,
-          "forks": 10107,
-          "today": "14,733 stars this month",
-          "summaryZh": "该项目收集并公开了多个主流AI模型（Anthropic Claude、OpenAI ChatGPT、Google Gemini、xAI Grok等）的系统提示（system prompts），包括Claude Fable 5、GPT-5.6-Sol、Gemini 3.5 Flash等。亮点在于提供了真实生产级提示文本，可用于分析模型行为、安全审计和提示工程研究。适合AI研究员、安全专家、提示工程师以及对大模型内部机制感兴趣的开发者。仓库使用JavaScript编写，数据以JSON格式存储，并定期更新。",
+          "rank": 9,
+          "owner": "Zackriya-Solutions",
+          "repo": "meetily",
+          "url": "https://github.com/Zackriya-Solutions/meetily",
+          "desc": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows. Understand How to write meeting minutes",
+          "lang": "Rust",
+          "langColor": "#dea584",
+          "stars": 27993,
+          "forks": 2893,
+          "today": "14,946 stars this month",
+          "summaryZh": "Meetily 是一款开源的 AI 会议助手，完全本地运行，保障隐私安全。它基于 Rust 构建，利用 Parakeet/Whisper 实现 4 倍速实时语音转录，支持说话人分离（Speaker Diarization），并整合 Ollama 进行本地摘要生成。无需联网，所有处理均在设备端完成，适用于 macOS 和 Windows。适合重视数据隐私的个人、团队或企业，希望在不泄露会议内容的前提下高效记录和总结会议。OpenAI Whisper 的优化版本带来更快的转录速度，而 Ollama 集成则提供了灵活的本地 AI 摘要能力。",
           "scenarios": [
-            "研究不同AI模型系统提示的设计模式与行为约束差异",
-            "用于红队测试或安全审计，评估模型提示中的潜在风险",
-            "作为提示工程教学案例，分析如何通过系统提示控制模型输出"
+            "在线会议（如 Zoom、Teams）中自动进行实时转录和说话人标记，会后生成会议纪要。",
+            "敏感行业（如法律、医疗）的内部会议，需完全本地处理，避免数据上传云端。",
+            "个人开发者或小团队使用本地 Ollama 模型，定制化总结会议要点，无需付费 API。"
           ],
-          "agentInstallPrompt": "首先，使用git克隆仓库：git clone https://github.com/asgeirtj/system_prompts_leaks.git。然后，进入目录：cd system_prompts_leaks。使用Node.js运行index.js（如果有）或直接查看prompts文件夹中的JSON文件。无需额外依赖，直接读取JSON即可获取提示内容。"
+          "agentInstallPrompt": "首先确保已安装 Rust 开发环境（curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh）。然后执行：git clone https://github.com/Zackriya-Solutions/meetily.git && cd meetily && cargo run --release。注意：该项目需要系统声卡支持，推荐在 macOS 或 Windows 上运行。首次运行会自动下载 Whisper 模型（约 1.5GB），请保持网络畅通。若需使用 Ollama 摘要，请先安装 Ollama 并拉取模型（如 ollama pull llama2）。运行后打开终端显示的本地地址（通常是 http://localhost:8000）即可使用。"
         },
         {
-          "rank": 11,
+          "rank": 10,
           "owner": "iOfficeAI",
           "repo": "OfficeCLI",
           "url": "https://github.com/iOfficeAI/OfficeCLI",
           "desc": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
           "lang": "C#",
           "langColor": "#178600",
-          "stars": 24055,
-          "forks": 1624,
-          "today": "15,632 stars this month",
+          "stars": 24280,
+          "forks": 1641,
+          "today": "15,871 stars this month",
           "summaryZh": "OfficeCLI 是首个专为 AI 代理打造的 Office 套件命令行工具，支持读取、编辑和自动化 Word、Excel 及 PowerPoint 文件。它免费开源，以单二进制文件分发，无需安装 Office 即可运行。亮点在于为 AI 代理提供简洁的编程接口，大幅降低办公文档自动化门槛。适合需要集成文档处理功能的 AI 开发者、自动化流程工程师及追求轻量级办公解决方案的团队。",
           "scenarios": [
             "AI 代理根据数据自动生成格式规范的 Word 报告或合同。",
@@ -867,35 +867,73 @@
           "agentInstallPrompt": "请执行以下步骤安装 OfficeCLI：1. 访问 https://github.com/iOfficeAI/OfficeCLI/releases/latest 下载对应操作系统的压缩包（如 Windows-x64.zip）。2. 解压得到 OfficeCLI 可执行文件。3. 将其所在目录加入 PATH 或直接使用绝对路径。4. 运行 OfficeCLI 测试：`OfficeCLI --version`。如需在脚本中调用，可使用 `OfficeCLI <command>` 语法，详见项目文档。"
         },
         {
-          "rank": 12,
-          "owner": "usestrix",
-          "repo": "strix",
-          "url": "https://github.com/usestrix/strix",
-          "desc": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 46430,
-          "forks": 4880,
-          "today": "18,958 stars this month",
-          "summaryZh": "Strix 是一款开源 AI 驱动的渗透测试工具，旨在帮助开发者和安全团队自动化发现并修复 Web 应用中的漏洞。它利用 AI 模型识别常见安全风险（如 XSS、SQL 注入、路径遍历等），并提供详细的修复建议。亮点包括无代码配置、支持 CI/CD 集成、以及可扩展的插件系统。适合希望在不增加人力成本的前提下提升应用安全性的 DevSecOps 实践者。",
+          "rank": 11,
+          "owner": "asgeirtj",
+          "repo": "system_prompts_leaks",
+          "url": "https://github.com/asgeirtj/system_prompts_leaks",
+          "desc": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-5.6-Sol, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+          "lang": "JavaScript",
+          "langColor": "#f1e05a",
+          "stars": 61990,
+          "forks": 10122,
+          "today": "14,616 stars this month",
+          "summaryZh": "该项目收集并公开了多个主流AI模型（Anthropic Claude、OpenAI ChatGPT、Google Gemini、xAI Grok等）的系统提示（system prompts），包括Claude Fable 5、GPT-5.6-Sol、Gemini 3.5 Flash等。亮点在于提供了真实生产级提示文本，可用于分析模型行为、安全审计和提示工程研究。适合AI研究员、安全专家、提示工程师以及对大模型内部机制感兴趣的开发者。仓库使用JavaScript编写，数据以JSON格式存储，并定期更新。",
           "scenarios": [
-            "在 CI/CD 流水线中自动扫描每次代码更新引入的安全漏洞",
-            "开发阶段快速对测试环境进行渗透测试，降低上线风险",
-            "安全审计时作为初步扫描工具，减少人工重复劳动"
+            "研究不同AI模型系统提示的设计模式与行为约束差异",
+            "用于红队测试或安全审计，评估模型提示中的潜在风险",
+            "作为提示工程教学案例，分析如何通过系统提示控制模型输出"
           ],
-          "agentInstallPrompt": "克隆仓库并安装依赖： git clone https://github.com/usestrix/strix.git cd strix pip install -r requirements.txt 运行基本扫描（需提供目标 URL）： python strix.py --target https://example.com --scan basic 更多选项请参考 README.md。"
+          "agentInstallPrompt": "首先，使用git克隆仓库：git clone https://github.com/asgeirtj/system_prompts_leaks.git。然后，进入目录：cd system_prompts_leaks。使用Node.js运行index.js（如果有）或直接查看prompts文件夹中的JSON文件。无需额外依赖，直接读取JSON即可获取提示内容。"
+        },
+        {
+          "rank": 12,
+          "owner": "openai",
+          "repo": "codex-plugin-cc",
+          "url": "https://github.com/openai/codex-plugin-cc",
+          "desc": "Use Codex from Claude Code to review code or delegate tasks.",
+          "lang": "JavaScript",
+          "langColor": "#f1e05a",
+          "stars": 30971,
+          "forks": 2051,
+          "today": "9,083 stars this month",
+          "summaryZh": "该项目是一个开源插件，允许开发者在Claude Code中直接调用OpenAI Codex进行代码审查和任务委托。亮点在于融合两大AI模型的能力，通过自然语言交互实现自动化代码分析、生成和调试。适合使用Claude Code并希望增强AI编程辅助的开发者，可显著提升编码效率与代码质量。",
+          "scenarios": [
+            "在代码审查流程中，自动调用Codex分析代码逻辑缺陷和安全隐患。",
+            "委托Codex完成具体编码任务，如编写单元测试、重构函数或生成文档。",
+            "结合Claude的对话能力与Codex的代码生成能力，解决复杂编程问题。"
+          ],
+          "agentInstallPrompt": "克隆仓库：git clone https://github.com/openai/codex-plugin-cc.git && cd codex-plugin-cc。安装依赖：npm install。配置环境变量（如OPENAI_API_KEY和CLAUDE_API_KEY），然后运行npm run build。将插件加载到Claude Code中，按照文档配置权限后即可使用。"
         },
         {
           "rank": 13,
+          "owner": "facebook",
+          "repo": "astryx",
+          "url": "https://github.com/facebook/astryx",
+          "desc": "An open source design system that's fully customizable and agent ready",
+          "lang": "TypeScript",
+          "langColor": "#3178c6",
+          "stars": 11294,
+          "forks": 933,
+          "today": "8,278 stars this month",
+          "summaryZh": "facebook/astryx 是一个近期热度较高的开源项目，主要语言是 TypeScript。它的公开描述是：“An open source design system that's fully customizable and agent ready”。建议先把它当作候选工具进行快速试跑，再根据 README、issue 活跃度和依赖复杂度决定是否纳入长期技术栈。",
+          "scenarios": [
+            "快速判断项目是否值得收藏、试用或引入团队技术雷达。",
+            "让 AI agent 克隆仓库、阅读 README，并跑通最小可用示例。",
+            "围绕同类项目做竞品调研、功能拆解或技术选型。"
+          ],
+          "agentInstallPrompt": "把 https://github.com/facebook/astryx 克隆到 ~/Code/astryx。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
+        },
+        {
+          "rank": 14,
           "owner": "huggingface",
           "repo": "speech-to-speech",
           "url": "https://github.com/huggingface/speech-to-speech",
           "desc": "Build local voice agents with open-source models",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 10173,
-          "forks": 1245,
-          "today": "4,740 stars this month",
+          "stars": 10444,
+          "forks": 1274,
+          "today": "5,231 stars this month",
           "summaryZh": "该项目利用开源模型在本地构建语音代理，实现语音到语音的交互。亮点包括支持多种开源模型（如Whisper、TTS）、完全离线运行、低延迟，适合需要隐私保护或定制化语音助手的开发者。通过简单的Python接口，用户可以快速集成语音识别、自然语言处理和语音合成，打造个性化的语音应用。",
           "scenarios": [
             "构建本地语音助手，无需云端API，保护用户隐私",
@@ -905,16 +943,16 @@
           "agentInstallPrompt": "# 安装并试跑 speech-to-speech 项目 # 1. 克隆仓库 git clone https://github.com/huggingface/speech-to-speech cd speech-to-speech # 2. 创建虚拟环境（可选但推荐） python3 -m venv venv source venv/bin/activate # 3. 安装依赖 pip install -r requirements.txt # 4. 运行语音代理（默认使用麦克风和扬声器） python run.py # 若需测试录音文件，使用： python run.py --input-file test.wav"
         },
         {
-          "rank": 14,
+          "rank": 15,
           "owner": "wonderwhy-er",
           "repo": "DesktopCommanderMCP",
           "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
           "desc": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 9043,
-          "forks": 1047,
-          "today": "2,927 stars this month",
+          "stars": 9078,
+          "forks": 1052,
+          "today": "2,949 stars this month",
           "summaryZh": "DesktopCommanderMCP 是一个为 Claude 等 AI 助手设计的 MCP（Model Context Protocol）服务器，用 TypeScript 编写。它赋予 AI 终端控制、文件系统搜索和差异文件编辑能力，使 AI 能直接执行 Shell 命令、浏览项目文件并以精确的 diff 方式修改代码。亮点在于将桌面环境操作能力无缝集成到 LLM 工具链中，适合需要 AI 辅助编程、自动化运维或文件管理的开发者。",
           "scenarios": [
             "开发者让 AI 在终端中执行构建、测试或 git 命令，并实时返回输出。",
@@ -924,111 +962,35 @@
           "agentInstallPrompt": "请安装 DesktopCommanderMCP：首先确保已安装 Node.js（>=18），然后克隆仓库并运行 npm install。接着，在 Claude Desktop 的 MCP 配置文件中添加该服务器（参见仓库 README）。启动服务器后，即可在 Claude 中使用终端控制（如执行命令）、文件搜索（如查找文件）和差异编辑（如修改代码片段）功能。"
         },
         {
-          "rank": 15,
-          "owner": "Shubhamsaboo",
-          "repo": "awesome-llm-apps",
-          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-          "desc": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+          "rank": 16,
+          "owner": "usestrix",
+          "repo": "strix",
+          "url": "https://github.com/usestrix/strix",
+          "desc": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 129578,
-          "forks": 19112,
-          "today": "13,624 stars this month",
-          "summaryZh": "这是一个精选的AI应用集合，包含100多个免费开源的AI Agents、Agent Skills和RAG（检索增强生成）应用，全部使用Python实现。项目旨在为开发者提供丰富的参考实现和可复用的代码片段，覆盖从简单聊天机器人到复杂多智能体协作系统的多种场景。无论是想快速启动AI项目、学习前沿的Agent架构，还是寻找RAG应用的实用范例，这个仓库都提供了高质量的资源和清晰的分类导航。适合AI开发者、研究人员、产品经理以及任何对LLM应用感兴趣的爱好者探索和实践。",
+          "stars": 46646,
+          "forks": 4907,
+          "today": "17,847 stars this month",
+          "summaryZh": "Strix 是一款开源 AI 驱动的渗透测试工具，旨在帮助开发者和安全团队自动化发现并修复 Web 应用中的漏洞。它利用 AI 模型识别常见安全风险（如 XSS、SQL 注入、路径遍历等），并提供详细的修复建议。亮点包括无代码配置、支持 CI/CD 集成、以及可扩展的插件系统。适合希望在不增加人力成本的前提下提升应用安全性的 DevSecOps 实践者。",
           "scenarios": [
-            "快速搭建基于大语言模型的原型应用，复用现成的Agent与RAG代码模块。",
-            "学习AI Agent的设计模式与最佳实践，参考多智能体协作和工具调用的典型实现。",
-            "评估不同LLM应用方案，对比多种RAG算法和Agent框架的适用性。"
+            "在 CI/CD 流水线中自动扫描每次代码更新引入的安全漏洞",
+            "开发阶段快速对测试环境进行渗透测试，降低上线风险",
+            "安全审计时作为初步扫描工具，减少人工重复劳动"
           ],
-          "agentInstallPrompt": "克隆仓库（git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git），进入目录后查看README.md了解项目结构。选择你感兴趣的示例子文件夹（如agents/或rag/），按照每个示例内的requirements.txt安装依赖，并设置必要的API密钥（如OpenAI、Anthropic等）。优先运行最简洁的示例（如simple-chatbot）验证环境，再逐步运行更复杂的Agent或RAG应用。注意Python版本建议3.9+，建议使用虚拟环境隔离依赖。"
-        },
-        {
-          "rank": 16,
-          "owner": "OpenCut-app",
-          "repo": "OpenCut",
-          "url": "https://github.com/OpenCut-app/OpenCut",
-          "desc": "The open-source CapCut alternative",
-          "lang": "TypeScript",
-          "langColor": "#3178c6",
-          "stars": 80349,
-          "forks": 7975,
-          "today": "19,902 stars this month",
-          "summaryZh": "OpenCut 是一款开源的视频编辑工具，旨在替代 CapCut。它基于 TypeScript 开发，提供了丰富的视频剪辑功能，包括分割、裁剪、特效、字幕等。亮点在于完全免费、无广告，且支持插件扩展，适合希望摆脱付费软件或需要自定义工作流的视频创作者。仓库代码结构清晰，社区活跃，适合进阶开发者学习或贡献。",
-          "scenarios": [
-            "个人博主快速剪辑 Vlog，添加字幕和转场特效",
-            "小团队批量处理视频广告，自动化导出设定格式",
-            "开发者集成视频编辑能力到自有平台，或定制 UI 功能"
-          ],
-          "agentInstallPrompt": "请帮我安装并运行 OpenCut。首先，确保 Node.js (>=16) 和 Git 已安装。然后执行：git clone https://github.com/OpenCut-app/OpenCut.git && cd OpenCut && npm install && npm run dev。等待完成后，在浏览器访问 http://localhost:5173 即可看到编辑器界面。"
+          "agentInstallPrompt": "克隆仓库并安装依赖： git clone https://github.com/usestrix/strix.git cd strix pip install -r requirements.txt 运行基本扫描（需提供目标 URL）： python strix.py --target https://example.com --scan basic 更多选项请参考 README.md。"
         },
         {
           "rank": 17,
-          "owner": "pbakaus",
-          "repo": "impeccable",
-          "url": "https://github.com/pbakaus/impeccable",
-          "desc": "The design language that makes your AI harness better at design.",
-          "lang": "JavaScript",
-          "langColor": "#f1e05a",
-          "stars": 53702,
-          "forks": 3194,
-          "today": "11,096 stars this month",
-          "summaryZh": "Impeccable 是一个面向 AI 驱动的设计语言，旨在提升 AI 工具在界面设计中的表现。它提供了一套精心设计的组件和样式指南，帮助开发者快速构建美观、一致的用户界面。亮点在于与 AI 工作流的深度集成，使得 AI 生成的设计更符合人类审美和可用性原则。适合 AI 产品开发者、前端工程师以及关注 AI 界面设计的团队成员。",
-          "scenarios": [
-            "AI 驱动的设计系统：用于构建可复用的 UI 组件库，确保 AI 生成的设计一致且专业。",
-            "快速原型制作：利用 Impeccable 的预定义样式快速创建高保真设计原型，加速产品迭代。",
-            "AI 辅助设计工具集成：作为设计语言，嵌入到 AI 设计助手或代码生成器中，提升输出质量。"
-          ],
-          "agentInstallPrompt": "请先确保 Node.js 和 npm 已安装。运行 'npm install impeccable' 安装依赖。然后创建一个 HTML 文件，引入 Impeccable 的 CSS 文件（路径：node_modules/impeccable/dist/impeccable.css），并在 body 中使用其提供的类名（如 'impeccable-btn'）来体验组件样式。"
-        },
-        {
-          "rank": 18,
-          "owner": "HKUDS",
-          "repo": "DeepTutor",
-          "url": "https://github.com/HKUDS/DeepTutor",
-          "desc": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 31793,
-          "forks": 4151,
-          "today": "6,410 stars this month",
-          "summaryZh": "DeepTutor 是一个基于大语言模型的终身个性化辅导系统，旨在为学习者提供持续、自适应、多轮对话式教学。项目亮点包括对话历史管理、知识追踪、个性化反馈生成，以及支持多种学科（数学、编程等）。适合需要构建智能辅导系统的教育科技开发者、AI 教育研究者，以及希望实现低成本一对一辅导的在线教育平台。项目代码开源，模块化设计，易于集成和扩展。",
-          "scenarios": [
-            "在线教育平台集成 DeepTutor 作为智能助教，为学生提供 7x24 小时个性化答疑与习题讲解。",
-            "学校或培训机构使用 DeepTutor 进行小班辅导，根据学生历史学习数据调整教学节奏与内容。",
-            "AI 教育研究者基于 DeepTutor 框架实验记忆网络、知识追踪算法或对话策略改进。"
-          ],
-          "agentInstallPrompt": "请依次执行以下步骤：1. 克隆仓库：git clone https://github.com/HKUDS/DeepTutor.git。2. 进入目录：cd DeepTutor。3. 创建虚拟环境并激活：python -m venv venv && source venv/bin/activate（Windows 使用 venv\\Scripts\\activate）。4. 安装依赖：pip install -r requirements.txt。5. 运行示例：python examples/run_tutor.py --subject math --grade 8。6. 如需自定义学科或知识图谱，修改 config.yaml 中的学科路径后重新运行。"
-        },
-        {
-          "rank": 19,
-          "owner": "HKUDS",
-          "repo": "Vibe-Trading",
-          "url": "https://github.com/HKUDS/Vibe-Trading",
-          "desc": "\"Vibe-Trading: Your Personal Trading Agent\"",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 29146,
-          "forks": 4687,
-          "today": "13,643 stars this month",
-          "summaryZh": "Vibe-Trading 是一个基于 AI 的个人交易代理工具，旨在帮助用户自动化交易策略、分析市场情绪并执行买卖操作。它利用大语言模型理解自然语言指令，结合实时市场数据，提供智能交易辅助。亮点包括：一键部署、支持多种交易所、可定制策略模板。适合量化交易爱好者、散户投资者以及希望借助 AI 提升交易效率的开发者。项目采用 Python 开发，易于扩展，社区活跃。",
-          "scenarios": [
-            "当用户想根据特定新闻事件快速执行交易时，Vibe-Trading 可自动分析并下单。",
-            "量化开发者可利用其策略模板和 API，快速回测和部署自定义交易算法。",
-            "新手交易者通过自然语言描述投资想法，代理自动生成并执行交易计划。"
-          ],
-          "agentInstallPrompt": "请执行以下步骤安装并运行 Vibe-Trading 项目： 1. 打开终端，执行 `git clone https://github.com/HKUDS/Vibe-Trading.git` 克隆仓库。 2. 进入目录：`cd Vibe-Trading`。 3. 创建虚拟环境（可选但推荐）：`python -m venv venv` 并激活（Windows: `venv\\Scripts\\activate`，Mac/Linux: `source venv/bin/activate`）。 4. 安装依赖：`pip install -r requirements.txt`。 5. 配置 API 密钥：在项目根目录创建 `.env` 文件，按照 `.env.example` 填写交易所和 LLM 密钥。 6. 运行主程序：`python main.py`。 7. 根据提示输入交易指令或启动策略。"
-        },
-        {
-          "rank": 20,
           "owner": "1jehuang",
           "repo": "jcode",
           "url": "https://github.com/1jehuang/jcode",
           "desc": "The most RAM efficient harness",
           "lang": "Rust",
           "langColor": "#dea584",
-          "stars": 14930,
-          "forks": 1654,
-          "today": "6,587 stars this month",
+          "stars": 15252,
+          "forks": 1688,
+          "today": "6,915 stars this month",
           "summaryZh": "jcode 是一个用 Rust 编写的高效测试执行 harness，专为极低内存占用而设计。它通过优化资源管理，在运行大规模测试套件时显著降低 RAM 消耗，相比传统工具可节省数倍内存。该工具尤其适合资源受限的环境，如容器、边缘设备或大规模并行测试场景。其亮点在于极致的性能与内存控制，同时保持简单易用的接口。适合需要优化测试基础设施成本、处理高并发测试或部署在内存有限平台的开发团队。",
           "scenarios": [
             "在 CI/CD 流水线中运行大规模测试套件，减少内存峰值以避免 OOM 问题",
@@ -1038,23 +1000,99 @@
           "agentInstallPrompt": "请克隆仓库 https://github.com/1jehuang/jcode 并进入目录。由于项目使用 Rust，确保已安装最新稳定版 Rust 工具链。执行 cargo build --release 进行编译，然后使用 cargo run -- --help 查看使用说明。为测试功能，可创建一个简单的测试文件或运行内置示例（如果有）。若需要基准测试，可运行 cargo bench 比较内存占用。请遵循 README 中的指南进行配置和运行。"
         },
         {
-          "rank": 21,
-          "owner": "every-app",
-          "repo": "open-seo",
-          "url": "https://github.com/every-app/open-seo",
-          "desc": "Open source alternative to Semrush and Ahrefs",
+          "rank": 18,
+          "owner": "Shubhamsaboo",
+          "repo": "awesome-llm-apps",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "desc": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 129835,
+          "forks": 19157,
+          "today": "13,797 stars this month",
+          "summaryZh": "这是一个精选的AI应用集合，包含100多个免费开源的AI Agents、Agent Skills和RAG（检索增强生成）应用，全部使用Python实现。项目旨在为开发者提供丰富的参考实现和可复用的代码片段，覆盖从简单聊天机器人到复杂多智能体协作系统的多种场景。无论是想快速启动AI项目、学习前沿的Agent架构，还是寻找RAG应用的实用范例，这个仓库都提供了高质量的资源和清晰的分类导航。适合AI开发者、研究人员、产品经理以及任何对LLM应用感兴趣的爱好者探索和实践。",
+          "scenarios": [
+            "快速搭建基于大语言模型的原型应用，复用现成的Agent与RAG代码模块。",
+            "学习AI Agent的设计模式与最佳实践，参考多智能体协作和工具调用的典型实现。",
+            "评估不同LLM应用方案，对比多种RAG算法和Agent框架的适用性。"
+          ],
+          "agentInstallPrompt": "克隆仓库（git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git），进入目录后查看README.md了解项目结构。选择你感兴趣的示例子文件夹（如agents/或rag/），按照每个示例内的requirements.txt安装依赖，并设置必要的API密钥（如OpenAI、Anthropic等）。优先运行最简洁的示例（如simple-chatbot）验证环境，再逐步运行更复杂的Agent或RAG应用。注意Python版本建议3.9+，建议使用虚拟环境隔离依赖。"
+        },
+        {
+          "rank": 19,
+          "owner": "pbakaus",
+          "repo": "impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "desc": "The design language that makes your AI harness better at design.",
+          "lang": "JavaScript",
+          "langColor": "#f1e05a",
+          "stars": 54061,
+          "forks": 3212,
+          "today": "11,229 stars this month",
+          "summaryZh": "Impeccable 是一个面向 AI 驱动的设计语言，旨在提升 AI 工具在界面设计中的表现。它提供了一套精心设计的组件和样式指南，帮助开发者快速构建美观、一致的用户界面。亮点在于与 AI 工作流的深度集成，使得 AI 生成的设计更符合人类审美和可用性原则。适合 AI 产品开发者、前端工程师以及关注 AI 界面设计的团队成员。",
+          "scenarios": [
+            "AI 驱动的设计系统：用于构建可复用的 UI 组件库，确保 AI 生成的设计一致且专业。",
+            "快速原型制作：利用 Impeccable 的预定义样式快速创建高保真设计原型，加速产品迭代。",
+            "AI 辅助设计工具集成：作为设计语言，嵌入到 AI 设计助手或代码生成器中，提升输出质量。"
+          ],
+          "agentInstallPrompt": "请先确保 Node.js 和 npm 已安装。运行 'npm install impeccable' 安装依赖。然后创建一个 HTML 文件，引入 Impeccable 的 CSS 文件（路径：node_modules/impeccable/dist/impeccable.css），并在 body 中使用其提供的类名（如 'impeccable-btn'）来体验组件样式。"
+        },
+        {
+          "rank": 20,
+          "owner": "OpenCut-app",
+          "repo": "OpenCut",
+          "url": "https://github.com/OpenCut-app/OpenCut",
+          "desc": "The open-source CapCut alternative",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 9952,
-          "forks": 1136,
-          "today": "5,978 stars this month",
-          "summaryZh": "Open SEO 是一款开源的搜索引擎优化工具，旨在成为 Semrush 和 Ahrefs 的免费替代品。它提供关键词研究、反向链接分析、网站审计、排名追踪等核心功能，所有数据均自托管，保护用户隐私。基于 TypeScript 构建，易于扩展和定制，适合需要低成本、高控制权的 SEO 专业团队或独立站长。项目活跃，社区友好，支持 Docker 部署，降低运维门槛。",
+          "stars": 80531,
+          "forks": 7995,
+          "today": "19,744 stars this month",
+          "summaryZh": "OpenCut 是一款开源的视频编辑工具，旨在替代 CapCut。它基于 TypeScript 开发，提供了丰富的视频剪辑功能，包括分割、裁剪、特效、字幕等。亮点在于完全免费、无广告，且支持插件扩展，适合希望摆脱付费软件或需要自定义工作流的视频创作者。仓库代码结构清晰，社区活跃，适合进阶开发者学习或贡献。",
           "scenarios": [
-            "中小型网站进行日常 SEO 诊断，发现技术问题和内容优化机会。",
-            "跨境电商运营者分析竞争对手关键词策略，制定自身排名提升计划。",
-            "自由职业者为客户提供可自托管的 SEO 报告，避免数据泄露到第三方平台。"
+            "个人博主快速剪辑 Vlog，添加字幕和转场特效",
+            "小团队批量处理视频广告，自动化导出设定格式",
+            "开发者集成视频编辑能力到自有平台，或定制 UI 功能"
           ],
-          "agentInstallPrompt": "克隆仓库并安装依赖： ```bash git clone https://github.com/every-app/open-seo.git cd open-seo npm install ``` 复制环境变量示例文件并修改： ```bash cp .env.example .env # 编辑 .env，配置数据库连接（支持 PostgreSQL）等参数 ``` 启动开发服务器： ```bash npm run dev ``` 生产环境构建： ```bash npm run build npm start ``` 也可以使用 Docker Compose（参考 docker-compose.yml）一键启动所有服务。"
+          "agentInstallPrompt": "请帮我安装并运行 OpenCut。首先，确保 Node.js (>=16) 和 Git 已安装。然后执行：git clone https://github.com/OpenCut-app/OpenCut.git && cd OpenCut && npm install && npm run dev。等待完成后，在浏览器访问 http://localhost:5173 即可看到编辑器界面。"
+        },
+        {
+          "rank": 21,
+          "owner": "HKUDS",
+          "repo": "DeepTutor",
+          "url": "https://github.com/HKUDS/DeepTutor",
+          "desc": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 31986,
+          "forks": 4175,
+          "today": "6,775 stars this month",
+          "summaryZh": "DeepTutor 是一个基于大语言模型的终身个性化辅导系统，旨在为学习者提供持续、自适应、多轮对话式教学。项目亮点包括对话历史管理、知识追踪、个性化反馈生成，以及支持多种学科（数学、编程等）。适合需要构建智能辅导系统的教育科技开发者、AI 教育研究者，以及希望实现低成本一对一辅导的在线教育平台。项目代码开源，模块化设计，易于集成和扩展。",
+          "scenarios": [
+            "在线教育平台集成 DeepTutor 作为智能助教，为学生提供 7x24 小时个性化答疑与习题讲解。",
+            "学校或培训机构使用 DeepTutor 进行小班辅导，根据学生历史学习数据调整教学节奏与内容。",
+            "AI 教育研究者基于 DeepTutor 框架实验记忆网络、知识追踪算法或对话策略改进。"
+          ],
+          "agentInstallPrompt": "请依次执行以下步骤：1. 克隆仓库：git clone https://github.com/HKUDS/DeepTutor.git。2. 进入目录：cd DeepTutor。3. 创建虚拟环境并激活：python -m venv venv && source venv/bin/activate（Windows 使用 venv\\Scripts\\activate）。4. 安装依赖：pip install -r requirements.txt。5. 运行示例：python examples/run_tutor.py --subject math --grade 8。6. 如需自定义学科或知识图谱，修改 config.yaml 中的学科路径后重新运行。"
+        },
+        {
+          "rank": 22,
+          "owner": "Emily2040",
+          "repo": "seedance-2.0",
+          "url": "https://github.com/Emily2040/seedance-2.0",
+          "desc": "Comprehensive production pipeline for quad-modal AI filmmaking with Seedance 2.0",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 5898,
+          "forks": 893,
+          "today": "4,182 stars this month",
+          "summaryZh": "Seedance 2.0 是一套面向四模态 AI 电影制作的全流程生产管线，基于 Python 实现。它整合文本、图像、音频与视频生成能力，提供从剧本分镜、角色一致性、场景生成到最终剪辑的一站式工作流。项目亮点在于模块化设计、可扩展的接口和丰富的示例配置，适合独立电影制作人、AI 内容创作者及影视预可视化团队快速搭建自动化制片流程。通过该管线，用户能显著降低传统影视制作门槛，高效产出高质量短片或概念预告。",
+          "scenarios": [
+            "快速生成电影预告片或概念短片，用于项目提案和创意验证。",
+            "在广告和短视频制作中，实现从脚本到成片的自动化流水线。",
+            "为游戏或动画工作室创建角色和场景的概念可视化素材。"
+          ],
+          "agentInstallPrompt": "请先克隆仓库 git clone https://github.com/Emily2040/seedance-2.0.git 并进入目录，创建虚拟环境 python -m venv venv 并激活，然后 pip install -r requirements.txt。根据 README 配置 Seedance API 密钥，运行示例脚本 python examples/quickstart.py 验证安装。若需使用全部功能，请确保安装 FFmpeg 并检查依赖项。"
         }
       ]
     },
@@ -1070,8 +1108,8 @@
           "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 236817,
-          "forks": 36000,
+          "stars": 237036,
+          "forks": 36030,
           "today": "",
           "summaryZh": "ECC 是一个为 AI 编码代理设计的性能优化系统，支持 Claude Code、Codex、Opencode、Cursor 等主流工具。它通过技能库、直觉模拟、记忆管理、安全策略与研究优先的开发方式，提升代理的响应速度、代码质量与自主决策能力。核心亮点是跨代理兼容、可插拔架构以及内存-安全双保障，适合使用 AI 编程助手进行复杂项目开发的开发者或团队。",
           "scenarios": [
@@ -1089,8 +1127,8 @@
           "desc": "Skills for Real Engineers. Straight from my .agents directory.",
           "lang": "Shell",
           "langColor": "#89e051",
-          "stars": 198907,
-          "forks": 17134,
+          "stars": 199833,
+          "forks": 17235,
           "today": "",
           "summaryZh": "这是一个面向实战工程师的技能工具集，直接来自知名TS专家Matt Pocock的.agents目录。集合了精心编写的Shell脚本、配置文件和开发技巧，旨在提升日常编码效率、简化环境配置并传播工程最佳实践。亮点是作者亲自实战验证，零废话，直接可用。适合有一定经验、追求高效工作流的中高级开发者。",
           "scenarios": [
@@ -1108,8 +1146,8 @@
           "desc": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
           "lang": "",
           "langColor": "#8b949e",
-          "stars": 198490,
-          "forks": 20412,
+          "stars": 198779,
+          "forks": 20450,
           "today": "",
           "summaryZh": "该项目提供一份名为 CLAUDE.md 的单一配置文件，源自 AI 先驱 Andrej Karpathy 对大型语言模型编程陷阱的观察与实践总结。通过将此文件置于项目根目录，Claude Code（或其他兼容的 AI 编码助手）可直接读取其中的系统级指令，从而显著改善代码生成质量、减少幻觉、规范输出格式。亮点在于它凝练了 Karpathy 在训练与使用 LLM 编码时的核心教训，无需额外安装或依赖，即插即用。适合所有使用 AI 辅助编程的开发者，尤其是希望避免常见错误、提升代码一致性与可靠性的 Claude Code 用户。",
           "scenarios": [
@@ -1127,8 +1165,8 @@
           "desc": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
           "lang": "Rust",
           "langColor": "#dea584",
-          "stars": 194958,
-          "forks": 109372,
+          "stars": 194955,
+          "forks": 109352,
           "today": "",
           "summaryZh": "Claw-Code 是一个由 AI 代理完全自主开发与维护的 Rust 项目，基于 Gajae-Code / LazyCodex 构建，作为博物馆展品展示 AI 自主编程能力。项目亮点在于其代码的创建、提交、发布等全流程均由 AI 代理自动完成，无需任何人工干预，体现了 AI 在软件工程中的自主性和效率。该项目适合对 AI 自主编程、自动化软件维护及 Rust 语言感兴趣的开发者和研究者，特别是关注 AI 代理与代码生成技术的人群。",
           "scenarios": [
@@ -1146,8 +1184,8 @@
           "desc": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 125736,
-          "forks": 18856,
+          "stars": 125918,
+          "forks": 18902,
           "today": "",
           "summaryZh": "gstack 是知名投资人 Garry Tan 为 Claude Code 定制的 23 个意见性工具集合，模拟 CEO、设计师、工程经理、发布经理、文档工程师和 QA 等角色。每个工具都封装了特定角色视角下的 prompt，能直接与 Claude Code 交互，帮助开发者快速完成从项目规划、设计评审、任务分解到发布管理和质量检查的全流程。亮点在于将 AI 代理的隐性知识显性化为可复用的提示模板，适合希望利用 Claude Code 进行结构化、角色化协作开发的前端、全栈或 AI 应用开发者。",
           "scenarios": [
@@ -1165,8 +1203,8 @@
           "desc": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
           "lang": "",
           "langColor": "#8b949e",
-          "stars": 105825,
-          "forks": 12099,
+          "stars": 105989,
+          "forks": 12113,
           "today": "",
           "summaryZh": "awesome-design-md 项目汇集了来自流行品牌设计系统的 DESIGN.md 文件（如 Material Design、Apple HIG 等），每个文件详细描述了设计规范、组件库和样式指南。开发者只需将对应品牌的 DESIGN.md 文件放入项目根目录，即可让 AI 编码代理（如 Copilot、Cursor 等）自动理解并生成与品牌一致的 UI 代码。亮点是零配置集成、实时同步设计系统更新、降低跨团队设计沟通成本。适合需要快速搭建品牌化界面、依赖 AI 辅助编码的前端工程师和设计团队。",
           "scenarios": [
@@ -1184,8 +1222,8 @@
           "desc": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 100211,
-          "forks": 9726,
+          "stars": 101014,
+          "forks": 9810,
           "today": "",
           "summaryZh": "Graphify 是一个将代码库、文档、SQL 模式、配置文件及 PDF 转化为可查询知识图谱的开源工具。它采用本地确定性 AST 解析，每条边都附带解释，无需向量存储或外部依赖。亮点在于支持 Claude Code、Cursor、Codex 和 Gemini CLI 等 AI 编码助手，作为 /graphify skill 直接调用。适合需要深度理解代码结构、追踪依赖关系、维护跨文档知识库的开发者。",
           "scenarios": [
@@ -1203,8 +1241,8 @@
           "desc": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 95088,
-          "forks": 5453,
+          "stars": 95260,
+          "forks": 5461,
           "today": "",
           "summaryZh": "Caveman 是一个专为 Claude Code 设计的技能，通过模拟穴居人极简说话方式，将复杂提示压缩成少数词汇，从而减少约65%的Token消耗。亮点在于大幅降低AI交互成本，同时保留核心意图。适合高频调用Claude Code以节省费用的开发者、追求高效沟通的团队，以及对Token优化感兴趣的AI爱好者。",
           "scenarios": [
@@ -1222,8 +1260,8 @@
           "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 93483,
-          "forks": 5134,
+          "stars": 93983,
+          "forks": 5168,
           "today": "",
           "summaryZh": "Ponytail 是一个 JavaScript 工具库，旨在让 AI 编码代理像资深懒人开发者一样思考，减少不必要的代码生成。它通过优化提示和代码生成策略，鼓励代理产生最简洁、最必要的代码，避免冗余。适合使用 AI 辅助编码的团队，特别是希望降低代码复杂度、提高生成效率的开发者。核心亮点是“最佳代码是没写的那一行”，帮助代理聚焦核心逻辑，省略无关细节。",
           "scenarios": [
@@ -1241,8 +1279,8 @@
           "desc": "AI agents running research on single-GPU nanochat training automatically",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 92745,
-          "forks": 13203,
+          "stars": 92818,
+          "forks": 13214,
           "today": "",
           "summaryZh": "autoresearch 是 Andrej Karpathy 开发的一个 AI 研究自动化工具，旨在让 AI Agent 在单 GPU 上自动运行 nanochat 微调实验。项目通过定义实验脚本、配置和评估标准，实现从数据准备到训练、结果分析的完整闭环。亮点在于模拟人类研究者的迭代过程：Agent 可动态调整超参数、监控损失、保存检查点，并自主决定何时停止或继续训练。适合对语言模型训练流程探索、自动化机器学习实验管理以及开源研究复现感兴趣的开发者与研究人员。",
           "scenarios": [
@@ -1260,8 +1298,8 @@
           "desc": "Self-hosted AI workspace. ",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 84465,
-          "forks": 238,
+          "stars": 84553,
+          "forks": 262,
           "today": "",
           "summaryZh": "Odysseus 是一个自托管的 AI 协作工作空间，提供类似 ChatGPT 的对话界面，支持多种 AI 模型（如 OpenAI、Anthropic、本地模型等），并内置文件上传、知识库、提示词管理等功能。亮点在于完全自托管，数据隐私可控，适合需要灵活集成多种 AI 服务的团队。适合开发者、研究人员和需要本地化 AI 助手的组织。",
           "scenarios": [
@@ -1279,8 +1317,8 @@
           "desc": "🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen & 20+ CLIs via BYOK.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 83032,
-          "forks": 9612,
+          "stars": 83213,
+          "forks": 9648,
           "today": "",
           "summaryZh": "Open Design 是一款开源、本地优先的桌面应用，作为 Claude Design 的替代方案，它能让你的 AI 编码代理（如 Claude Code、Cursor、Gemini 等）变身为设计引擎。支持生成原型、落地页、仪表盘、幻灯片、图片及视频，并导出为 HTML、PDF、PPTX、MP4 等真实文件。适合需要快速迭代 UI 设计、生成演示文稿或营销素材的开发者和设计师，无需云依赖，数据完全本地化。",
           "scenarios": [
@@ -1298,8 +1336,8 @@
           "desc": "Production-grade engineering skills for AI coding agents.",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 81240,
-          "forks": 8759,
+          "stars": 81344,
+          "forks": 8772,
           "today": "",
           "summaryZh": "Agent Skills 是一个由 Google 工程师 Addy Osmani 维护的开源项目，旨在为 AI 编码代理提供生产级工程技能。它包含一系列精心设计的技能配置（如代码审查、调试、测试等），以 JSON 或 JavaScript 格式存储，可直接嵌入代理的提示词中。亮点在于其高质量、模块化和实战验证，适合开发者快速增强 AI 编程助手的专业能力。适合需要定制 AI 编码代理的中高级开发者。",
           "scenarios": [
@@ -1317,8 +1355,8 @@
           "desc": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 77769,
-          "forks": 11619,
+          "stars": 78110,
+          "forks": 11676,
           "today": "",
           "summaryZh": "WorldMonitor是一个基于TypeScript构建的实时全球情报仪表盘，利用AI技术聚合新闻、监控地缘政治动态并跟踪关键基础设施，为用户提供统一态势感知界面。其亮点在于实时数据流处理与智能分析能力，适合研究人员、分析师、企业战略团队及对全球事件保持关注的个人使用。",
           "scenarios": [
@@ -1336,8 +1374,8 @@
           "desc": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 77046,
-          "forks": 6455,
+          "stars": 77171,
+          "forks": 6468,
           "today": "",
           "summaryZh": "Understand-Anything 是一个开源工具，能将任何代码库转化为交互式知识图谱。它不仅生成美观的图形，更重要的是通过图谱帮助理解代码结构。支持多种 AI 编程助手（如 Claude Code、Cursor、Copilot 等），用户可探索、搜索和提问。亮点在于将静态代码转化为动态、可查询的知识网络，适合开发者快速上手陌生项目、重构代码或进行代码审查。",
           "scenarios": [
@@ -1355,8 +1393,8 @@
           "desc": "The open-source app everyone uses to manage agents at work",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 75350,
-          "forks": 14029,
+          "stars": 75432,
+          "forks": 14048,
           "today": "",
           "summaryZh": "Paperclip 是一款开源的 AI 代理管理平台，专为团队协作场景设计。它提供可视化接口来创建、部署和监控 AI 工作助手（Agent），支持自定义工具集成、多模型切换与权限控制。亮点在于低代码编排、实时日志追踪和可扩展的插件体系。适合需要将 AI 融入日常工作流程的开发者与运维团队，尤其适合企业内部多个 Agent 的集中管理。",
           "scenarios": [
@@ -1374,8 +1412,8 @@
           "desc": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
           "lang": "Rust",
           "langColor": "#dea584",
-          "stars": 74268,
-          "forks": 4652,
+          "stars": 74376,
+          "forks": 4663,
           "today": "",
           "summaryZh": "rtk 是一个基于 Rust 的 CLI 代理工具，通过智能缓存与合并机制，可将常见开发命令的 LLM token 消耗降低 60–90%。它作为本地代理运行，对开发者透明，自动去重和分组 LLM 请求，适合高频率使用 GPT/Claude 等 API 的编程辅助场景。单 Rust 二进制文件，零外部依赖，安装后即开即用，大幅削减 API 费用。",
           "scenarios": [
@@ -1393,8 +1431,8 @@
           "desc": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop ",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 70004,
-          "forks": 4828,
+          "stars": 70389,
+          "forks": 4850,
           "today": "",
           "summaryZh": "Taste-Skill 是一个开源 JavaScript 库，旨在通过微调 AI 模型的输出风格，避免生成平庸、模板化的内容。它利用特定算法或提示工程，让 AI 产生更具创意、有品味的文本。适合希望提升生成内容独特性和审美水平的 AI 应用开发者、内容创作者以及与 LLM 交互的团队。亮点是轻量、易集成，能显著改善 AI 的“品味”。",
           "scenarios": [
@@ -1406,33 +1444,14 @@
         },
         {
           "rank": 19,
-          "owner": "colbymchenry",
-          "repo": "codegraph",
-          "url": "https://github.com/colbymchenry/codegraph",
-          "desc": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
-          "lang": "C",
-          "langColor": "#555555",
-          "stars": 63980,
-          "forks": 4021,
-          "today": "",
-          "summaryZh": "Codegraph 是一个用 C 编写的预索引代码知识图谱工具，能在代码变更时自动同步。它专为 Claude Code、Codex、Gemini、Cursor 等 AI 编码代理设计，通过减少 token 消耗和工具调用次数，提升代码理解效率。所有数据完全本地存储，保证隐私安全。适合需要高效代码上下文提供给 AI 代理的开发者。",
-          "scenarios": [
-            "在大型代码库中使用 AI 编码助手时，快速提供精准的代码上下文，减少 token 浪费。",
-            "团队协作中保持代码知识图谱与最新代码变更同步，提升 AI 代理的理解准确性。",
-            "本地开发环境需要隐私保护的代码分析工具，无需上传代码到云端。"
-          ],
-          "agentInstallPrompt": "克隆仓库后，在项目根目录执行 `make` 编译。然后运行 `./codegraph index` 对当前目录代码建立索引，之后 AI 代理即可通过 `./codegraph query \"你的问题\"` 获取代码上下文。支持自动监听变更：`./codegraph watch`。"
-        },
-        {
-          "rank": 20,
           "owner": "Panniantong",
           "repo": "Agent-Reach",
           "url": "https://github.com/Panniantong/Agent-Reach",
           "desc": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 63942,
-          "forks": 5268,
+          "stars": 64623,
+          "forks": 5343,
           "today": "",
           "summaryZh": "Agent-Reach 是一个开源 CLI 工具，让 AI 代理能够“看见”整个互联网。它支持从 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书等主流平台读取和搜索内容，无需任何 API 密钥或费用。亮点在于零 API 成本、统一命令行接口、易于集成到 AI 工作流。适合需要将实时网络数据注入 AI 代理的开发者、AI 应用构建者、数据采集爱好者。",
           "scenarios": [
@@ -1443,6 +1462,25 @@
           "agentInstallPrompt": "克隆仓库并安装依赖：git clone https://github.com/Panniantong/Agent-Reach.git && cd Agent-Reach && pip install -r requirements.txt。使用前无需配置API密钥，直接运行 CLI：python main.py --help 查看支持平台。示例：python main.py search reddit 'AI news' 搜索 Reddit 上关于 AI 新闻的内容。"
         },
         {
+          "rank": 20,
+          "owner": "colbymchenry",
+          "repo": "codegraph",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "desc": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+          "lang": "C",
+          "langColor": "#555555",
+          "stars": 64093,
+          "forks": 4031,
+          "today": "",
+          "summaryZh": "Codegraph 是一个用 C 编写的预索引代码知识图谱工具，能在代码变更时自动同步。它专为 Claude Code、Codex、Gemini、Cursor 等 AI 编码代理设计，通过减少 token 消耗和工具调用次数，提升代码理解效率。所有数据完全本地存储，保证隐私安全。适合需要高效代码上下文提供给 AI 代理的开发者。",
+          "scenarios": [
+            "在大型代码库中使用 AI 编码助手时，快速提供精准的代码上下文，减少 token 浪费。",
+            "团队协作中保持代码知识图谱与最新代码变更同步，提升 AI 代理的理解准确性。",
+            "本地开发环境需要隐私保护的代码分析工具，无需上传代码到云端。"
+          ],
+          "agentInstallPrompt": "克隆仓库后，在项目根目录执行 `make` 编译。然后运行 `./codegraph index` 对当前目录代码建立索引，之后 AI 代理即可通过 `./codegraph query \"你的问题\"` 获取代码上下文。支持自动监听变更：`./codegraph watch`。"
+        },
+        {
           "rank": 21,
           "owner": "headroomlabs-ai",
           "repo": "headroom",
@@ -1450,8 +1488,8 @@
           "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 63864,
-          "forks": 4845,
+          "stars": 64054,
+          "forks": 4871,
           "today": "",
           "summaryZh": "Headroom 是一个Python库和代理，用于在将工具输出、日志、文件和RAG分片送入大语言模型前进行智能压缩。它可为编码代理减少20%的token消耗，对JSON数据减少60-95%，同时保持答案质量不变。支持作为库嵌入、HTTP代理和MCP服务器使用。适合需要优化LLM调用成本、降低延迟的开发者、AI代理构建者和RAG系统使用者。",
           "scenarios": [
@@ -1469,8 +1507,8 @@
           "desc": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
           "lang": "JavaScript",
           "langColor": "#f1e05a",
-          "stars": 62466,
-          "forks": 12308,
+          "stars": 62543,
+          "forks": 12329,
           "today": "",
           "summaryZh": "Career-Ops 是一款开源的 AI 求职辅助工具，可自动扫描招聘门户网站，使用结构化的 A-F 评分标准将职位列表评估为 1.0-5.0 分，根据评估结果个性化定制简历，并跟踪申请进度。它完全在本地运行，支持在 Claude Code、Codex、OpenCode、Antigravity 等 AI 编码 CLI 环境中使用，适合求职者高效管理求职流程，提升申请质量与成功率。",
           "scenarios": [
@@ -1488,8 +1526,8 @@
           "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 59779,
-          "forks": 51164,
+          "stars": 59870,
+          "forks": 51237,
           "today": "",
           "summaryZh": "这是一个基于大语言模型（LLM）的多市场股票智能分析系统。它整合了多源行情数据、实时新闻和决策看板，并支持自动推送通知。亮点在于零成本定时运行，适合个人投资者快速获取市场洞察。项目使用Python实现，通过LLM对股票数据进行智能解读和趋势分析，帮助用户做出更明智的投资决策。适合有一定编程基础的股票投资者或量化分析爱好者。",
           "scenarios": [
@@ -1507,8 +1545,8 @@
           "desc": "The best-benchmarked open-source AI memory system. And it's free.",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 57944,
-          "forks": 7450,
+          "stars": 57988,
+          "forks": 7452,
           "today": "",
           "summaryZh": "MemPalace 是一个开源、性能标杆级的 AI 记忆系统。它通过结构化的长期记忆管理，帮助大语言模型（LLM）突破上下文窗口限制，实现持久化、可检索的对话历史和知识。项目在基准测试中表现出色，完全免费。适合需要构建具备记忆能力的 AI 助手、知识库、个人助理或长期对话系统的开发者。核心亮点包括高效的记忆检索、低延迟存储和友好的 Python API。",
           "scenarios": [
@@ -1526,8 +1564,8 @@
           "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 56593,
-          "forks": 4941,
+          "stars": 56843,
+          "forks": 4970,
           "today": "",
           "summaryZh": "该项目是一个AI代理技能，能够跨Reddit、X（推特）、YouTube、Hacker News、Polymarket及整个网络搜索任何主题，并综合生成有依据的摘要。亮点在于多源信息聚合与自动摘要，适合需要快速获取跨平台观点汇总的研究人员、内容创作者和市场分析师。使用Python编写，易于集成到AI工作流中。",
           "scenarios": [
@@ -1545,7 +1583,7 @@
           "desc": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞",
           "lang": "",
           "langColor": "#8b949e",
-          "stars": 51660,
+          "stars": 51690,
           "forks": 4985,
           "today": "",
           "summaryZh": "该项目收录了超过5400个从OpenClaw官方技能注册表筛选分类的优质技能，为AI助手（如Claw）提供技能库。亮点在于结构化整理与大量技能覆盖，适合开发者快速集成智能技能到自身应用或系统，提升AI应答能力。适合AI应用开发者、RPA工程师、智能对话系统搭建者。",
@@ -1564,8 +1602,8 @@
           "desc": "Fast, accurate & comprehensive text measurement & layout",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 49601,
-          "forks": 2725,
+          "stars": 49617,
+          "forks": 2726,
           "today": "",
           "summaryZh": "Pretext 是一个基于 TypeScript 构建的高性能文本测量与布局库，专注于为前端应用提供快速、准确且全面的文本尺寸计算与排版能力。其核心亮点在于算法优化后相比传统 canvas 测量或浏览器原生 API 速度提升显著，同时支持多种字体、换行策略和复杂文本属性。适用于需要密集或动态文本渲染的场景，如富文本编辑器、游戏 UI、排版引擎及前端图形化工具。主要面向 Web 开发者和需要精确控制文本布局的工程师，可作为替代或增强浏览器文本测量能力的底层工具。",
           "scenarios": [
@@ -1583,8 +1621,8 @@
           "desc": "The open-source AI voice studio. Clone, dictate, create.",
           "lang": "TypeScript",
           "langColor": "#3178c6",
-          "stars": 47888,
-          "forks": 5885,
+          "stars": 48190,
+          "forks": 5943,
           "today": "",
           "summaryZh": "Voicebox 是一个开源的AI语音工作室，基于TypeScript开发，支持语音克隆、听写和创作。它提供了模块化的API和直观的界面，方便开发者快速集成语音功能。亮点在于完全开源、易于扩展，适合需要个性化语音合成、语音交互的开发者，以及内容创作者和语音技术爱好者。",
           "scenarios": [
@@ -1597,32 +1635,13 @@
         {
           "rank": 29,
           "owner": "HKUDS",
-          "repo": "nanobot",
-          "url": "https://github.com/HKUDS/nanobot",
-          "desc": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-          "lang": "Python",
-          "langColor": "#3572A5",
-          "stars": 46499,
-          "forks": 8225,
-          "today": "",
-          "summaryZh": "Nanobot是一个超轻量、开源、可自托管的个人AI代理框架，基于Python构建，提供WebUI界面、工具集成、记忆管理、MCP协议支持、多代理工作流、自动化任务和聊天应用。其亮点在于极简设计（核心代码仅数千行）、模块化插件体系、以及灵活的MCP扩展能力，适合个人开发者、极客和小型团队快速搭建私有AI助手或自动化流程。无需GPU，低资源占用，可在树莓派等边缘设备运行。",
-          "scenarios": [
-            "个人AI助手：集成日历、邮件、知识库等工具，通过对话管理日程、检索信息。",
-            "自动化工作流：利用记忆和工具链自动执行重复任务，如数据爬取、文件整理。",
-            "多代理协作：分解复杂任务（如研究调研），由多个专业子代理协同完成。"
-          ],
-          "agentInstallPrompt": "请执行以下步骤安装nanobot： 1. 克隆仓库：git clone https://github.com/HKUDS/nanobot && cd nanobot 2. 创建虚拟环境：python3 -m venv venv && source venv/bin/activate 3. 安装依赖：pip install -r requirements.txt 4. 配置环境变量：cp .env.example .env，修改其中的API密钥（如OpenAI）。 5. 启动WebUI：python app.py 6. 访问 http://localhost:8080 即可使用。"
-        },
-        {
-          "rank": 30,
-          "owner": "HKUDS",
           "repo": "CLI-Anything",
           "url": "https://github.com/HKUDS/CLI-Anything",
           "desc": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
           "lang": "Python",
           "langColor": "#3572A5",
-          "stars": 46474,
-          "forks": 4323,
+          "stars": 46518,
+          "forks": 4327,
           "today": "",
           "summaryZh": "CLI-Anything 是香港大学团队推出的开源工具，旨在为任意软件生成命令行接口（CLI），使其原生兼容AI代理调用。核心亮点是无需修改软件源码，通过描述文件自动生成CLI，支持集成LLM代理、自动化脚本和智能工作流。适合AI开发者、DevOps工程师、以及需要将传统GUI或复杂工具接入AI系统的用户。项目提供在线CLI Hub仓库，共享社区预制的软件接口。",
           "scenarios": [
@@ -1631,6 +1650,25 @@
             "构建可被大模型调用的本地工具库，类似MCP协议，但更轻量且无需修改软件代码"
           ],
           "agentInstallPrompt": "安装并试跑 CLI-Anything：1. 克隆仓库：git clone https://github.com/HKUDS/CLI-Anything.git && cd CLI-Anything；2. 安装依赖：pip install -r requirements.txt；3. 查看示例配置：cat examples/find.json（或使用官方CLI Hub下载配置）；4. 启动代理界面：python run.py --config configs/default.yaml；5. 输入自然语言指令如'列出当前目录下所有Python文件'测试效果。详细文档见 https://clianything.cc/。"
+        },
+        {
+          "rank": 30,
+          "owner": "HKUDS",
+          "repo": "nanobot",
+          "url": "https://github.com/HKUDS/nanobot",
+          "desc": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+          "lang": "Python",
+          "langColor": "#3572A5",
+          "stars": 46516,
+          "forks": 8231,
+          "today": "",
+          "summaryZh": "Nanobot是一个超轻量、开源、可自托管的个人AI代理框架，基于Python构建，提供WebUI界面、工具集成、记忆管理、MCP协议支持、多代理工作流、自动化任务和聊天应用。其亮点在于极简设计（核心代码仅数千行）、模块化插件体系、以及灵活的MCP扩展能力，适合个人开发者、极客和小型团队快速搭建私有AI助手或自动化流程。无需GPU，低资源占用，可在树莓派等边缘设备运行。",
+          "scenarios": [
+            "个人AI助手：集成日历、邮件、知识库等工具，通过对话管理日程、检索信息。",
+            "自动化工作流：利用记忆和工具链自动执行重复任务，如数据爬取、文件整理。",
+            "多代理协作：分解复杂任务（如研究调研），由多个专业子代理协同完成。"
+          ],
+          "agentInstallPrompt": "请执行以下步骤安装nanobot： 1. 克隆仓库：git clone https://github.com/HKUDS/nanobot && cd nanobot 2. 创建虚拟环境：python3 -m venv venv && source venv/bin/activate 3. 安装依赖：pip install -r requirements.txt 4. 配置环境变量：cp .env.example .env，修改其中的API密钥（如OpenAI）。 5. 启动WebUI：python app.py 6. 访问 http://localhost:8080 即可使用。"
         }
       ]
     }
@@ -1638,50 +1676,52 @@
   "radar": {
     "title": "AI 雷达",
     "sourceUrl": "https://learnprompt.github.io/ai-news-radar/",
-    "generatedAt": "2026-08-01T21:09:31.638246Z",
+    "generatedAt": "2026-08-02T23:12:14.350442Z",
     "windowHours": 24,
-    "total": 157,
-    "sourceCount": 64,
-    "topScore": 95,
+    "total": 119,
+    "sourceCount": 58,
+    "topScore": 98,
     "picks": [
       {
-        "id": "89cfa8714fead0abee3517f394b1be0d6c47e92e",
-        "title": "如果市场要彻底摆脱向下的向心力，需要解决几个问题: 1、半导体高点回不去的，那个高点几乎提前计价了所有美好的未来，不能指望半导体带领大盘上行，它能稳住不崩就不错了，大概率随着时间的推移，重心震荡缓慢下移； 2、云巨头的确出现了新的叙事，开源大模型带来的算力成本降低加速了与更多非coding产业的融合，但是这种超级重资产、快速折旧、定期重购服务器的商业模式本质并不性感，如果剔除ai的外层包装，跟旧时代的盖楼收租区别不太大，而且固定资产折…",
+        "id": "fb1907f4d4718d1be2062cd37c5eb55b53b8fd60",
+        "title": "AI 算力不再只是英伟达的独角戏。最近业内的一项测试显示，国产 AI 模型 Kimi 的 K3 版本在 AMD 的 MI355X 芯片上运行，性价比已经超过了英伟达的 B300。这意味着在高性能 AI 推理领域，我们有了更多元的硬件选择。 这项测试由 Wafer AI 发布，核心看点在于针对特定场景的算力适配。为什么这事值得关注？ 1. 硬件多样化的意义：过去企业训练或运行大模型，几乎只能锁定英伟达生态。这次测试证明，只要软件适配得当…",
         "titleEn": "",
-        "url": "https://x.com/Frankvi1900/status/2083560582872285236",
+        "url": "https://x.com/Alan_jupiters/status/2083909804876292493",
         "siteId": "socialdata_x",
         "siteName": "SocialData X",
-        "source": "@Frankvi1900",
-        "publishedAt": "2026-08-01T14:28:48Z",
-        "rawScore": 78,
-        "score": 95,
+        "source": "@Alan_jupiters",
+        "publishedAt": "2026-08-02T13:36:29Z",
+        "rawScore": 85,
+        "score": 98,
         "label": "model_release",
         "labelName": "模型发布",
         "reason": "matched_ai_signal",
         "signals": [
           "大模型",
+          "推理",
           "算力",
-          "开源"
+          "芯片",
+          "软件"
         ]
       },
       {
-        "id": "ab7313e3cbda734e781ae6ee8c035c43f24662bf",
-        "title": "AI 大神 Karpathy 之前做了个 autoresearch 脚本，能让模型一晚上自动跑上百轮实验调优。 Autoresearch 这个开源项目把同样的思路搬到了 Claude Code 和 Codex 上。 给一个目标和量化指标，Agent 自己循环改代码、跑验证，效果好留着，差了自动回滚。 GitHub：https://t.co/4BrvBcGeIX 提供 14 个子命令，涵盖调优、找 Bug、安全审计、发版等场景，还内置…",
+        "id": "05bf50785c36f9ff08039b66b8914f44fb06bd47",
+        "title": "🧠 当AI开始\"思考\"，我们在思考什么？ 昨天DeepSeek发布了V4-Flash-0731正式版，一个284B参数的MoE模型，每次推理只激活13B。这个效率让人震惊——但更让我震惊的是它在哪方面进步最大： 不是数学，不是写作，而是「智能体能力」。 Terminal Bench从61.8跳到82.7。 DeepSWE从12.8飙到54.4。 Toolathlon从55.9到70.3。 这些是什么意思？意味着AI正在从「回答问题」进…",
         "titleEn": "",
-        "url": "https://x.com/GitHub_Daily/status/2083492943521010021",
+        "url": "https://x.com/Thuweni1/status/2083916955627733438",
         "siteId": "socialdata_x",
         "siteName": "SocialData X",
-        "source": "@GitHub_Daily",
-        "publishedAt": "2026-08-01T10:00:01Z",
-        "rawScore": 78,
-        "score": 95,
+        "source": "@Thuweni1",
+        "publishedAt": "2026-08-02T14:04:54Z",
+        "rawScore": 79,
+        "score": 96,
         "label": "model_release",
         "labelName": "模型发布",
         "reason": "matched_ai_signal",
         "signals": [
-          "claude",
-          "codex",
-          "开源"
+          "deepseek",
+          "推理",
+          "智能体"
         ]
       },
       {
@@ -1703,172 +1743,242 @@
         ]
       },
       {
-        "id": "34cd4a150a88b3ab46f8d7334ec78684c57fc44c",
-        "title": "Supabase 发布 Evals：一个开源基准，用于在真实 Supabase 任务上评测 Claude Code、Codex 和 OpenCode",
-        "titleEn": "Supabase Releases Evals: an Open Source Benchmark That Scores Claude Code, Codex and OpenCode on Real Supabase Tasks",
-        "url": "https://www.marktechpost.com/2026/08/01/supabase-releases-evals-an-open-source-benchmark-that-scores-claude-code-codex-and-opencode-on-real-supabase-tasks",
-        "siteId": "curated_media",
-        "siteName": "Curated Media",
-        "source": "MarkTechPost Research",
-        "publishedAt": "2026-08-01T09:52:49Z",
-        "rawScore": 76,
-        "score": 92,
-        "label": "research_paper",
-        "labelName": "research_paper",
-        "reason": "curated_media_source_filter",
-        "signals": [
-          "claude",
-          "codex",
-          "benchmark",
-          "eval"
-        ]
-      },
-      {
-        "id": "df502540718815844895ae4218dd9348941827be",
-        "title": "利用NVIDIA Transformer Engine、融合内核、BF16、FP8及GPU基准测试加速Transformer训练",
-        "titleEn": "Accelerating Transformer Training with NVIDIA Transformer Engine, Fused Kernels, BF16, FP8, and GPU Benchmarking",
-        "url": "https://www.marktechpost.com/2026/08/01/accelerating-transformer-training-with-nvidia-transformer-engine-fused-kernels-bf16-fp8-and-gpu-benchmarking",
-        "siteId": "curated_media",
-        "siteName": "Curated Media",
-        "source": "MarkTechPost Research",
-        "publishedAt": "2026-08-01T18:31:15Z",
-        "rawScore": 75,
+        "id": "b02401c080930792e17dc012904ecbea963e8d3c",
+        "title": "Show HN：MicroCodex Coding Agent – 用 C++ 重新实现 OpenAI/codex <1MB 二进制文件",
+        "titleEn": "Show HN: MicroCodex Coding Agent – OpenAI/codex reimplemented in C++ <1MB binary",
+        "url": "https://news.ycombinator.com/item?id=49147842",
+        "siteId": "newsnow",
+        "siteName": "NewsNow",
+        "source": "hackernews",
+        "publishedAt": "2026-08-02T21:55:16.950000Z",
+        "rawScore": 65,
         "score": 91,
-        "label": "research_paper",
-        "labelName": "research_paper",
-        "reason": "curated_media_source_filter",
+        "label": "developer_tool",
+        "labelName": "开发工具",
+        "reason": "matched_ai_signal",
         "signals": [
-          "transformer",
-          "benchmark",
-          "gpu"
+          "codex",
+          "openai"
         ]
       },
       {
-        "id": "cd2703fdea2f077ee993b9c3277462729a528840",
-        "title": "llm-mcp-client 0.1a0",
-        "titleEn": "llm-mcp-client 0.1a0",
-        "url": "https://simonwillison.net/2026/Jul/31/llm-mcp-client",
-        "siteId": "opmlrss",
-        "siteName": "OPML RSS",
-        "source": "Simon Willison",
-        "publishedAt": "2026-07-31T23:03:47Z",
-        "rawScore": 75,
-        "score": 90,
+        "id": "821d3bcc145b06cb4db88d240a92a0d71429725a",
+        "title": "OpenAI 新模型 Astra 数学表现出色，但被过度吹捧",
+        "titleEn": "OpenAI's amazing - but vastly oversold - new model Astra",
+        "url": "https://garymarcus.substack.com/p/openais-amazing-but-vastly-oversold",
+        "siteId": "aihot",
+        "siteName": "AI HOT",
+        "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+        "publishedAt": "2026-08-02T21:25:27Z",
+        "rawScore": 100,
+        "score": 89,
         "label": "model_release",
         "labelName": "模型发布",
-        "reason": "matched_ai_signal",
-        "signals": [
-          "llm",
-          "mcp"
-        ]
-      },
-      {
-        "id": "a0e4b1e4f3be1357532241ca9041be11d4352f4f",
-        "title": "数学与理论计算机科学领域的十大进展",
-        "titleEn": "Ten advances in mathematics and theoretical computer science",
-        "url": "https://openai.com/index/ten-advances-in-mathematics",
-        "siteId": "official_ai",
-        "siteName": "Official AI Updates",
-        "source": "OpenAI News",
-        "publishedAt": "2026-08-01T00:00:00Z",
-        "rawScore": 91,
-        "score": 89,
-        "label": "ai_product_update",
-        "labelName": "产品更新",
-        "reason": "matched_ai_signal",
+        "reason": "trusted_ai_source_default_keep",
         "signals": [
           "openai"
         ]
       },
       {
-        "id": "4ff53ce71f2fe2c02f9db6d34d0eb102f8e12045",
-        "title": "没人知道OpenAI和Anthropic的AI黑客狂欢是否违法",
-        "titleEn": "Nobody Knows if OpenAI’s and Anthropic’s AI Hacking Sprees Are Illegal",
-        "url": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal",
-        "siteId": "opmlrss",
-        "siteName": "OPML RSS",
-        "source": "Wired AI",
-        "publishedAt": "2026-08-01T09:30:00Z",
-        "rawScore": 75,
-        "score": 89,
-        "label": "ai_product_update",
-        "labelName": "产品更新",
+        "id": "5e977dd8ef725f97307ebf594cf6774b2a79536c",
+        "title": "OpenAI Presence 希望让 AI 代理为企业做好生产准备",
+        "titleEn": "OpenAI Presence wants to make AI agents production-ready for businesses",
+        "url": "https://the-decoder.com/openai-presence-wants-to-make-ai-agents-production-ready-for-businesses",
+        "siteId": "curated_media",
+        "siteName": "Curated Media",
+        "source": "The Decoder AI News",
+        "publishedAt": "2026-08-02T13:10:21Z",
+        "rawScore": 79,
+        "score": 88,
+        "label": "research_paper",
+        "labelName": "research_paper",
+        "reason": "curated_media_source_filter",
+        "signals": [
+          "openai"
+        ]
+      },
+      {
+        "id": "fd132bb8303e23d13ed295718428aba04a0d3b98",
+        "title": "Codex 用 Sol 指挥 Luna Max 省额度翻倍产出",
+        "titleEn": "",
+        "url": "https://x.com/AYi_AInotes/status/2083867265179537565",
+        "siteId": "aihot",
+        "siteName": "AI HOT",
+        "source": "X：阿易 AI Notes (@AYi_AInotes)",
+        "publishedAt": "2026-08-02T10:47:27Z",
+        "rawScore": 100,
+        "score": 86,
+        "label": "developer_tool",
+        "labelName": "开发工具",
+        "reason": "trusted_ai_source_default_keep",
+        "signals": [
+          "codex"
+        ]
+      },
+      {
+        "id": "de2aebe71cb4fe599af5e34eec552b9a233564ad",
+        "title": "我个人的 AI 基准：“生成带有哈布斯堡下巴的青蛙的 SVG。”",
+        "titleEn": "My personal AI benchmark: \"Generate an SVG of a frog with a Habsburg jaw.\"",
+        "url": "https://news.ycombinator.com/item?id=49147622",
+        "siteId": "newsnow",
+        "siteName": "NewsNow",
+        "source": "hackernews",
+        "publishedAt": "2026-08-02T20:55:13.221000Z",
+        "rawScore": 65,
+        "score": 86,
+        "label": "research_paper",
+        "labelName": "research_paper",
         "reason": "matched_ai_signal",
         "signals": [
-          "anthropic",
-          "openai"
+          "benchmark"
         ]
       }
     ],
     "categories": [
       {
-        "id": "ai_general",
-        "label": "AI 综合",
-        "count": 53,
+        "id": "model_release",
+        "label": "模型发布",
+        "count": 42,
         "items": [
           {
-            "id": "25a4652c9e4e3ee96dcf0cc869650a35bb5ea94a",
-            "title": "法官驳回xAI要求阻止明尼苏达州“脱衣”应用禁令的请求",
-            "titleEn": "Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps",
-            "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps",
-            "siteId": "curated_media",
-            "siteName": "Curated Media",
-            "source": "TechCrunch AI",
-            "publishedAt": "2026-08-01T20:26:04Z",
-            "rawScore": 76,
-            "score": 82,
-            "label": "ai_general",
-            "labelName": "AI 综合",
-            "reason": "curated_media_source_filter",
-            "signals": [
-              "techcrunch ai"
-            ]
-          },
-          {
-            "id": "84fdbd266269ef8d357bcdb7a60aaf44ea958dcc",
-            "title": "YouTuber Hank Green 称自己的 AI 使用“不健康",
-            "titleEn": "YouTuber Hank Green says his AI usage is ‘not healthy’",
-            "url": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy",
-            "siteId": "curated_media",
-            "siteName": "Curated Media",
-            "source": "TechCrunch AI",
-            "publishedAt": "2026-08-01T19:45:45Z",
-            "rawScore": 76,
-            "score": 82,
-            "label": "ai_general",
-            "labelName": "AI 综合",
-            "reason": "curated_media_source_filter",
-            "signals": [
-              "techcrunch ai"
-            ]
-          },
-          {
-            "id": "1af37655e7e4bac7d5d6d13fea08039000871601",
-            "title": "扫描 HuggingFace 训练数据中的 7.6 PB 数据，寻找机密信息",
-            "titleEn": "Scanning 7.6 Petabytes of HuggingFace Training Data for Secrets",
-            "url": "https://trufflesecurity.com/blog/scanning-7-6-petabytes-of-ai-training-data-for-secrets",
-            "siteId": "iris",
-            "siteName": "Info Flow",
-            "source": "Hacker News (黑客新闻)",
-            "publishedAt": "2026-08-01T18:21:41Z",
-            "rawScore": 65,
-            "score": 82,
-            "label": "ai_general",
-            "labelName": "AI 综合",
+            "id": "fb1907f4d4718d1be2062cd37c5eb55b53b8fd60",
+            "title": "AI 算力不再只是英伟达的独角戏。最近业内的一项测试显示，国产 AI 模型 Kimi 的 K3 版本在 AMD 的 MI355X 芯片上运行，性价比已经超过了英伟达的 B300。这意味着在高性能 AI 推理领域，我们有了更多元的硬件选择。 这项测试由 Wafer AI 发布，核心看点在于针对特定场景的算力适配。为什么这事值得关注？ 1. 硬件多样化的意义：过去企业训练或运行大模型，几乎只能锁定英伟达生态。这次测试证明，只要软件适配得当…",
+            "titleEn": "",
+            "url": "https://x.com/Alan_jupiters/status/2083909804876292493",
+            "siteId": "socialdata_x",
+            "siteName": "SocialData X",
+            "source": "@Alan_jupiters",
+            "publishedAt": "2026-08-02T13:36:29Z",
+            "rawScore": 85,
+            "score": 98,
+            "label": "model_release",
+            "labelName": "模型发布",
             "reason": "matched_ai_signal",
             "signals": [
-              "huggingface"
+              "大模型",
+              "推理",
+              "算力",
+              "芯片",
+              "软件"
             ]
           },
           {
-            "id": "5cd591f053fe235abb8b44b01928bb8d631061ab",
-            "title": "AI不断攻克未解数学难题，数学家们心情复杂",
-            "titleEn": "AI keeps cracking unsolved math problems, and mathematicians have mixed feelings",
-            "url": "https://the-decoder.com/ai-keeps-cracking-unsolved-math-problems-and-mathematicians-have-mixed-feelings",
+            "id": "05bf50785c36f9ff08039b66b8914f44fb06bd47",
+            "title": "🧠 当AI开始\"思考\"，我们在思考什么？ 昨天DeepSeek发布了V4-Flash-0731正式版，一个284B参数的MoE模型，每次推理只激活13B。这个效率让人震惊——但更让我震惊的是它在哪方面进步最大： 不是数学，不是写作，而是「智能体能力」。 Terminal Bench从61.8跳到82.7。 DeepSWE从12.8飙到54.4。 Toolathlon从55.9到70.3。 这些是什么意思？意味着AI正在从「回答问题」进…",
+            "titleEn": "",
+            "url": "https://x.com/Thuweni1/status/2083916955627733438",
+            "siteId": "socialdata_x",
+            "siteName": "SocialData X",
+            "source": "@Thuweni1",
+            "publishedAt": "2026-08-02T14:04:54Z",
+            "rawScore": 79,
+            "score": 96,
+            "label": "model_release",
+            "labelName": "模型发布",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "deepseek",
+              "推理",
+              "智能体"
+            ]
+          },
+          {
+            "id": "083f2cd14d01a6f486f77768744a1b4bfa899bb6",
+            "title": "学 AI 的人，这个不看，确实有点吃亏。 聪明的人已经放咸鱼去赚钱了。 微软开源了一套《AI for Beginners》，专门给初学者补基础。 整套课程安排了12周、24节课。 从人工智能的历史、符号 AI、神经网络开始，往后讲计算机视觉、自然语言处理、Transformer、BERT、大语言模型、强化学习、多智能体和 AI 伦理。 它也不是只让你看概念。 课程里有 Jupyter Notebook、实验和测验，还会用 Tensor…",
+            "titleEn": "",
+            "url": "https://x.com/Tttx967715T/status/2083857609468371331",
+            "siteId": "socialdata_x",
+            "siteName": "SocialData X",
+            "source": "@Tttx967715T",
+            "publishedAt": "2026-08-02T10:09:04Z",
+            "rawScore": 86,
+            "score": 94,
+            "label": "model_release",
+            "labelName": "模型发布",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "transformer",
+              "人工智能",
+              "智能体",
+              "语言模型",
+              "开源"
+            ]
+          },
+          {
+            "id": "28e909b5c4c20794b065ffb6a7d031fcc5104c32",
+            "title": "🔥Breaking：北京一家酒吧，现在来消费就送无限量 @deepseek_ai V4 Flash API Token🤯 从今天开始，北京 AGI Bar 的顾客只要连接店内 Wi-Fi，就可以免费获得 DeepSeek V4 Flash 的 API，并且在店内使用期间 不限量。 无需订阅，也不用担心 Token 消耗。只需要把 Base URL 和 API Key 填到 Claude Code、Codex、Cursor、Cherry…",
+            "titleEn": "",
+            "url": "https://x.com/MaxForAI/status/2083907939811922105",
+            "siteId": "socialdata_x",
+            "siteName": "SocialData X",
+            "source": "@MaxForAI",
+            "publishedAt": "2026-08-02T13:29:04Z",
+            "rawScore": 83,
+            "score": 94,
+            "label": "model_release",
+            "labelName": "模型发布",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "claude",
+              "codex",
+              "cursor",
+              "deepseek"
+            ]
+          },
+          {
+            "id": "92a35d3fdbd44aeb4914e9d0b9db4c740c365382",
+            "title": "家里那台旧电脑，跑 Windows 已经有点吃力了，但直接扔掉又觉得可惜。后来发现 LocalAI 这个项目，正好给它找了个新用途——当本地 AI 服务器用。 目前在 GitHub 上 26k+ Star，MIT 协议。最核心的点是不依赖 GPU：纯 CPU 就能跑，支持 LLM、视觉、语音、图像生成、视频等多种模型。接口完全兼容 OpenAI 格式，现有的套壳项目基本不用改代码就能直接对接。 架构上比较有意思的是模块化设计——每个模…",
+            "titleEn": "",
+            "url": "https://x.com/cevenif/status/2083728740819828997",
+            "siteId": "socialdata_x",
+            "siteName": "SocialData X",
+            "source": "@cevenif",
+            "publishedAt": "2026-08-02T01:37:00Z",
+            "rawScore": 78,
+            "score": 94,
+            "label": "model_release",
+            "labelName": "模型发布",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "llm",
+              "openai",
+              "gpu"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ai_general",
+        "label": "AI 综合",
+        "count": 37,
+        "items": [
+          {
+            "id": "dc0c8cd60fc848476c62f7ad071a1ce5197475dc",
+            "title": "Sam Altman 和 AI 的减速争论",
+            "titleEn": "Sam Altman and AI’s decel debate",
+            "url": "https://techcrunch.com/2026/08/02/sam-altman-and-ais-decel-debate",
+            "siteId": "curated_media",
+            "siteName": "Curated Media",
+            "source": "TechCrunch AI",
+            "publishedAt": "2026-08-02T20:54:22Z",
+            "rawScore": 76,
+            "score": 82,
+            "label": "ai_general",
+            "labelName": "AI 综合",
+            "reason": "curated_media_source_filter",
+            "signals": [
+              "techcrunch ai"
+            ]
+          },
+          {
+            "id": "e44a3967f5cdf8572b4d0869976f7d13f8f5610f",
+            "title": "人工智能发现了大量安全漏洞，但几乎没有一个被利用",
+            "titleEn": "AI finds plenty of security flaws, but almost none of them get exploited",
+            "url": "https://the-decoder.com/ai-finds-plenty-of-security-flaws-but-almost-none-of-them-get-exploited",
             "siteId": "curated_media",
             "siteName": "Curated Media",
             "source": "The Decoder AI News",
-            "publishedAt": "2026-08-01T16:01:31Z",
+            "publishedAt": "2026-08-02T10:09:34Z",
             "rawScore": 76,
             "score": 81,
             "label": "ai_general",
@@ -1879,126 +1989,152 @@
             ]
           },
           {
-            "id": "7952f3b44d93aa83940660f24a7d3f8c9be65ac8",
-            "title": "这款9美元的钥匙能物理锁定你最上瘾的应用",
-            "titleEn": "This $9 key physically locks your most addictive apps",
-            "url": "https://techcrunch.com/2026/08/01/this-9-key-physically-locks-your-most-addictive-apps",
+            "id": "2b8b8ee136f730b02d0e78e2ac945c9434f5ad20",
+            "title": "A real macOS flaw worth $200K went unreported because Apple's bug bounty inbox was full of AI slop",
+            "titleEn": "A real macOS flaw worth $200K went unreported because Apple's bug bounty inbox was full of AI slop",
+            "url": "https://the-decoder.com/a-real-macos-flaw-worth-200k-went-unreported-because-apples-bug-bounty-inbox-was-full-of-ai-slop",
             "siteId": "curated_media",
             "siteName": "Curated Media",
-            "source": "TechCrunch AI",
-            "publishedAt": "2026-08-01T15:58:17Z",
+            "source": "The Decoder AI News",
+            "publishedAt": "2026-08-02T12:42:49Z",
             "rawScore": 76,
-            "score": 81,
+            "score": 80,
             "label": "ai_general",
             "labelName": "AI 综合",
             "reason": "curated_media_source_filter",
             "signals": [
-              "techcrunch ai"
+              "the decoder ai news"
             ]
+          },
+          {
+            "id": "4482ac0b34e8a66df33dcfffcbff66f3e210ec46",
+            "title": "Grok 支持分析任意视频",
+            "titleEn": "Grok can analyze any video https://grok.com/share/bGVnYWN5_8013f7a3-f604-4351-8cd7-acecf3ef165b",
+            "url": "https://x.com/elonmusk/status/2083800942927839307",
+            "siteId": "aihot",
+            "siteName": "AI HOT",
+            "source": "X：Elon Musk (@elonmusk, xAI)",
+            "publishedAt": "2026-08-02T06:23:54Z",
+            "rawScore": 100,
+            "score": 79,
+            "label": "ai_general",
+            "labelName": "AI 综合",
+            "reason": "trusted_ai_source_default_keep",
+            "signals": [
+              "grok"
+            ]
+          },
+          {
+            "id": "88dc85283bb17267354ebd5702c07e1fc7709030",
+            "title": "人工智能狂热：从郁金香到代币",
+            "titleEn": "AI Mania: From Tulips to Tokens",
+            "url": "https://news.ycombinator.com/item?id=49148159",
+            "siteId": "newsnow",
+            "siteName": "NewsNow",
+            "source": "hackernews",
+            "publishedAt": "2026-08-02T21:55:16.950000Z",
+            "rawScore": 65,
+            "score": 79,
+            "label": "ai_general",
+            "labelName": "AI 综合",
+            "reason": "matched_ai_signal",
+            "signals": []
           }
         ]
       },
       {
-        "id": "model_release",
-        "label": "模型发布",
-        "count": 47,
+        "id": "research_paper",
+        "label": "research_paper",
+        "count": 12,
         "items": [
           {
-            "id": "89cfa8714fead0abee3517f394b1be0d6c47e92e",
-            "title": "如果市场要彻底摆脱向下的向心力，需要解决几个问题: 1、半导体高点回不去的，那个高点几乎提前计价了所有美好的未来，不能指望半导体带领大盘上行，它能稳住不崩就不错了，大概率随着时间的推移，重心震荡缓慢下移； 2、云巨头的确出现了新的叙事，开源大模型带来的算力成本降低加速了与更多非coding产业的融合，但是这种超级重资产、快速折旧、定期重购服务器的商业模式本质并不性感，如果剔除ai的外层包装，跟旧时代的盖楼收租区别不太大，而且固定资产折…",
-            "titleEn": "",
-            "url": "https://x.com/Frankvi1900/status/2083560582872285236",
-            "siteId": "socialdata_x",
-            "siteName": "SocialData X",
-            "source": "@Frankvi1900",
-            "publishedAt": "2026-08-01T14:28:48Z",
-            "rawScore": 78,
-            "score": 95,
-            "label": "model_release",
-            "labelName": "模型发布",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "大模型",
-              "算力",
-              "开源"
-            ]
-          },
-          {
-            "id": "ab7313e3cbda734e781ae6ee8c035c43f24662bf",
-            "title": "AI 大神 Karpathy 之前做了个 autoresearch 脚本，能让模型一晚上自动跑上百轮实验调优。 Autoresearch 这个开源项目把同样的思路搬到了 Claude Code 和 Codex 上。 给一个目标和量化指标，Agent 自己循环改代码、跑验证，效果好留着，差了自动回滚。 GitHub：https://t.co/4BrvBcGeIX 提供 14 个子命令，涵盖调优、找 Bug、安全审计、发版等场景，还内置…",
-            "titleEn": "",
-            "url": "https://x.com/GitHub_Daily/status/2083492943521010021",
-            "siteId": "socialdata_x",
-            "siteName": "SocialData X",
-            "source": "@GitHub_Daily",
-            "publishedAt": "2026-08-01T10:00:01Z",
-            "rawScore": 78,
-            "score": 95,
-            "label": "model_release",
-            "labelName": "模型发布",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "claude",
-              "codex",
-              "开源"
-            ]
-          },
-          {
-            "id": "56797760531ebc1016387b31875dee6d98dbafb0",
-            "title": "《Artificial Analysis Intelligence Index v4.1 模型智能与成本分布解析》 图表展示了基于“每任务成本（USD）”与“Artificial Analysis智能指数得分”的二维坐标系，涵盖了128个AI模型的表现。横轴采用对数刻度，反映了模型运行评估任务的边际成本；纵轴代表了模型在综合智能任务中的表现。图中标注了不同厂商（如OpenAI、Anthropic、Google、DeepSeek等）旗下…",
-            "titleEn": "",
-            "url": "https://x.com/TAMPICTG87/status/2083521935376273809",
-            "siteId": "socialdata_x",
-            "siteName": "SocialData X",
-            "source": "@TAMPICTG87",
-            "publishedAt": "2026-08-01T11:55:14Z",
+            "id": "5e977dd8ef725f97307ebf594cf6774b2a79536c",
+            "title": "OpenAI Presence 希望让 AI 代理为企业做好生产准备",
+            "titleEn": "OpenAI Presence wants to make AI agents production-ready for businesses",
+            "url": "https://the-decoder.com/openai-presence-wants-to-make-ai-agents-production-ready-for-businesses",
+            "siteId": "curated_media",
+            "siteName": "Curated Media",
+            "source": "The Decoder AI News",
+            "publishedAt": "2026-08-02T13:10:21Z",
             "rawScore": 79,
-            "score": 92,
-            "label": "model_release",
-            "labelName": "模型发布",
-            "reason": "matched_ai_signal",
+            "score": 88,
+            "label": "research_paper",
+            "labelName": "research_paper",
+            "reason": "curated_media_source_filter",
             "signals": [
-              "anthropic",
-              "deepseek",
               "openai"
             ]
           },
           {
-            "id": "da139fe2c4c19fbb37d4b20f6e3d512195297097",
-            "title": "如果你是 Agent Harness 相关开源项目的开发者，希望参加 DeepSeek Harness 的内测，可以回复或私信联系我。请附上 GitHub id 以及开源代表作。",
-            "titleEn": "",
-            "url": "https://x.com/tianyi/status/2083519855203078320",
-            "siteId": "socialdata_x",
-            "siteName": "SocialData X",
-            "source": "@tianyi",
-            "publishedAt": "2026-08-01T11:46:58Z",
-            "rawScore": 74,
-            "score": 91,
-            "label": "model_release",
-            "labelName": "模型发布",
+            "id": "de2aebe71cb4fe599af5e34eec552b9a233564ad",
+            "title": "我个人的 AI 基准：“生成带有哈布斯堡下巴的青蛙的 SVG。”",
+            "titleEn": "My personal AI benchmark: \"Generate an SVG of a frog with a Habsburg jaw.\"",
+            "url": "https://news.ycombinator.com/item?id=49147622",
+            "siteId": "newsnow",
+            "siteName": "NewsNow",
+            "source": "hackernews",
+            "publishedAt": "2026-08-02T20:55:13.221000Z",
+            "rawScore": 65,
+            "score": 86,
+            "label": "research_paper",
+            "labelName": "research_paper",
             "reason": "matched_ai_signal",
             "signals": [
-              "deepseek",
-              "开源"
+              "benchmark"
             ]
           },
           {
-            "id": "cd2703fdea2f077ee993b9c3277462729a528840",
-            "title": "llm-mcp-client 0.1a0",
-            "titleEn": "llm-mcp-client 0.1a0",
-            "url": "https://simonwillison.net/2026/Jul/31/llm-mcp-client",
-            "siteId": "opmlrss",
-            "siteName": "OPML RSS",
-            "source": "Simon Willison",
-            "publishedAt": "2026-07-31T23:03:47Z",
-            "rawScore": 75,
-            "score": 90,
-            "label": "model_release",
-            "labelName": "模型发布",
+            "id": "f3fb9f6175bfd55e7d16b6addb41e2722c44d99e",
+            "title": "我个人的 AI 基准：“生成带有哈布斯堡下巴的青蛙的 SVG。”",
+            "titleEn": "My personal AI benchmark: \"Generate an SVG of a frog with a Habsburg jaw.\"",
+            "url": "https://frogs.vaguespac.es",
+            "siteId": "techurls",
+            "siteName": "TechURLs",
+            "source": "Hacker News",
+            "publishedAt": "2026-08-02T19:42:08Z",
+            "rawScore": 65,
+            "score": 86,
+            "label": "research_paper",
+            "labelName": "research_paper",
             "reason": "matched_ai_signal",
             "signals": [
-              "llm",
-              "mcp"
+              "benchmark"
+            ]
+          },
+          {
+            "id": "6329f4cb578f37db2bf3ce5cd2ebcb7f88354e0a",
+            "title": "抱脸事件后，METR 敦促对 AI 代理不当行为进行独立根本原因调查",
+            "titleEn": "After Hugging Face incident, METR urges independent root-cause investigations into AI agent misbehavior",
+            "url": "https://the-decoder.com/after-hugging-face-incident-metr-urges-independent-root-cause-investigations-into-ai-agent-misbehavior",
+            "siteId": "curated_media",
+            "siteName": "Curated Media",
+            "source": "The Decoder AI News",
+            "publishedAt": "2026-08-02T07:33:17Z",
+            "rawScore": 79,
+            "score": 85,
+            "label": "research_paper",
+            "labelName": "research_paper",
+            "reason": "curated_media_source_filter",
+            "signals": [
+              "hugging face"
+            ]
+          },
+          {
+            "id": "da7912d4c4b50c141990acc66ed38a494c5de70b",
+            "title": "Meta AI 使用第二个 AI 代理作为记忆教练，让长时间任务保持在正轨上",
+            "titleEn": "Meta AI uses a second AI agent as a memory coach to keep long tasks on track",
+            "url": "https://the-decoder.com/meta-ai-uses-a-second-ai-agent-as-a-memory-coach-to-keep-long-tasks-on-track",
+            "siteId": "curated_media",
+            "siteName": "Curated Media",
+            "source": "The Decoder AI News",
+            "publishedAt": "2026-08-02T12:57:38Z",
+            "rawScore": 76,
+            "score": 85,
+            "label": "research_paper",
+            "labelName": "research_paper",
+            "reason": "curated_media_source_filter",
+            "signals": [
+              "the decoder ai news"
             ]
           }
         ]
@@ -2006,7 +2142,7 @@
       {
         "id": "ai_product_update",
         "label": "产品更新",
-        "count": 22,
+        "count": 8,
         "items": [
           {
             "id": "1a88b98b8fb6fb30c3c8a33f925220a2d5f4d7ef",
@@ -2027,16 +2163,52 @@
             ]
           },
           {
-            "id": "a0e4b1e4f3be1357532241ca9041be11d4352f4f",
-            "title": "数学与理论计算机科学领域的十大进展",
-            "titleEn": "Ten advances in mathematics and theoretical computer science",
-            "url": "https://openai.com/index/ten-advances-in-mathematics",
-            "siteId": "official_ai",
-            "siteName": "Official AI Updates",
-            "source": "OpenAI News",
-            "publishedAt": "2026-08-01T00:00:00Z",
-            "rawScore": 91,
-            "score": 89,
+            "id": "5a69c4a8196f54f24b6ce0c9814b07da43ca660c",
+            "title": "Cancelling Cursor",
+            "titleEn": "Cancelling Cursor",
+            "url": "https://news.ycombinator.com/item?id=49147190",
+            "siteId": "newsnow",
+            "siteName": "NewsNow",
+            "source": "hackernews",
+            "publishedAt": "2026-08-02T19:24:59.103000Z",
+            "rawScore": 65,
+            "score": 83,
+            "label": "ai_product_update",
+            "labelName": "产品更新",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "cursor"
+            ]
+          },
+          {
+            "id": "ae7c23a398221988a9010d3d8c4a9c11ccf11833",
+            "title": "Cancelling Cursor",
+            "titleEn": "Cancelling Cursor",
+            "url": "https://www.jitbit.com/alexblog/cancelling-cursor",
+            "siteId": "zeli",
+            "siteName": "Zeli",
+            "source": "Hacker News · 24h最热",
+            "publishedAt": "2026-08-02T18:49:30Z",
+            "rawScore": 65,
+            "score": 83,
+            "label": "ai_product_update",
+            "labelName": "产品更新",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "cursor"
+            ]
+          },
+          {
+            "id": "846ab4d6958eb39ee263a298be58980f0cf9ee8b",
+            "title": "OpenAI 声称对 Connes 刚性猜想的反驳无效 [pdf]",
+            "titleEn": "OpenAI's claimed disproof of Connes' Rigidity Conjecture is invalid [pdf]",
+            "url": "https://philarchive.org/archive/NIEWTCv17",
+            "siteId": "zeli",
+            "siteName": "Zeli",
+            "source": "Hacker News · 24h最热",
+            "publishedAt": "2026-08-02T03:41:38Z",
+            "rawScore": 65,
+            "score": 83,
             "label": "ai_product_update",
             "labelName": "产品更新",
             "reason": "matched_ai_signal",
@@ -2045,160 +2217,19 @@
             ]
           },
           {
-            "id": "4ff53ce71f2fe2c02f9db6d34d0eb102f8e12045",
-            "title": "没人知道OpenAI和Anthropic的AI黑客狂欢是否违法",
-            "titleEn": "Nobody Knows if OpenAI’s and Anthropic’s AI Hacking Sprees Are Illegal",
-            "url": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal",
-            "siteId": "opmlrss",
-            "siteName": "OPML RSS",
-            "source": "Wired AI",
-            "publishedAt": "2026-08-01T09:30:00Z",
-            "rawScore": 75,
-            "score": 89,
+            "id": "328874dd2c5c5b8b889040717dd49189d43f0da4",
+            "title": "A profile of Jacob Tsimerman, who won the Fields Medal last week and is taking a leave from the University of Toronto to join OpenAI and work on AI safety (Ben Cohen/Wall Street Journal)",
+            "titleEn": "A profile of Jacob Tsimerman, who won the Fields Medal last week and is taking a leave from the University of Toronto to join OpenAI and work on AI safety (Ben Cohen/Wall Street Journal)",
+            "url": "https://www.techmeme.com/260802/p5",
+            "siteId": "techurls",
+            "siteName": "TechURLs",
+            "source": "Techmeme",
+            "publishedAt": "2026-08-02T06:00:36Z",
+            "rawScore": 65,
+            "score": 81,
             "label": "ai_product_update",
             "labelName": "产品更新",
             "reason": "matched_ai_signal",
-            "signals": [
-              "anthropic",
-              "openai"
-            ]
-          },
-          {
-            "id": "aed3a0e15d06273af5e61bdcd5d5acf7d4a6ff7f",
-            "title": "OpenAI 和 Anthropic 的 AI 黑客行动开辟了棘手的法律新疆域",
-            "titleEn": "The OpenAI and Anthropic AI Hacking Sprees Are a Messy New Legal Frontier",
-            "url": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal",
-            "siteId": "opmlrss",
-            "siteName": "OPML RSS",
-            "source": "Wired AI",
-            "publishedAt": "2026-08-01T09:30:00Z",
-            "rawScore": 75,
-            "score": 89,
-            "label": "ai_product_update",
-            "labelName": "产品更新",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "anthropic",
-              "openai"
-            ]
-          },
-          {
-            "id": "5388e09d34b8b96f7241cc196d2cde3bb212a98d",
-            "title": "OpenAI Astra 以约2000美元证明10项数学难题",
-            "titleEn": "ten significant advances in mathematics and theoretical computer science. solved using an internal …",
-            "url": "https://x.com/gdb/status/2083457463337287721",
-            "siteId": "aihot",
-            "siteName": "AI HOT",
-            "source": "X：Greg Brockman (@gdb)",
-            "publishedAt": "2026-08-01T07:39:02Z",
-            "rawScore": 100,
-            "score": 85,
-            "label": "ai_product_update",
-            "labelName": "产品更新",
-            "reason": "trusted_ai_source_default_keep",
-            "signals": [
-              "openai"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "research_paper",
-        "label": "research_paper",
-        "count": 11,
-        "items": [
-          {
-            "id": "34cd4a150a88b3ab46f8d7334ec78684c57fc44c",
-            "title": "Supabase 发布 Evals：一个开源基准，用于在真实 Supabase 任务上评测 Claude Code、Codex 和 OpenCode",
-            "titleEn": "Supabase Releases Evals: an Open Source Benchmark That Scores Claude Code, Codex and OpenCode on Real Supabase Tasks",
-            "url": "https://www.marktechpost.com/2026/08/01/supabase-releases-evals-an-open-source-benchmark-that-scores-claude-code-codex-and-opencode-on-real-supabase-tasks",
-            "siteId": "curated_media",
-            "siteName": "Curated Media",
-            "source": "MarkTechPost Research",
-            "publishedAt": "2026-08-01T09:52:49Z",
-            "rawScore": 76,
-            "score": 92,
-            "label": "research_paper",
-            "labelName": "research_paper",
-            "reason": "curated_media_source_filter",
-            "signals": [
-              "claude",
-              "codex",
-              "benchmark",
-              "eval"
-            ]
-          },
-          {
-            "id": "df502540718815844895ae4218dd9348941827be",
-            "title": "利用NVIDIA Transformer Engine、融合内核、BF16、FP8及GPU基准测试加速Transformer训练",
-            "titleEn": "Accelerating Transformer Training with NVIDIA Transformer Engine, Fused Kernels, BF16, FP8, and GPU Benchmarking",
-            "url": "https://www.marktechpost.com/2026/08/01/accelerating-transformer-training-with-nvidia-transformer-engine-fused-kernels-bf16-fp8-and-gpu-benchmarking",
-            "siteId": "curated_media",
-            "siteName": "Curated Media",
-            "source": "MarkTechPost Research",
-            "publishedAt": "2026-08-01T18:31:15Z",
-            "rawScore": 75,
-            "score": 91,
-            "label": "research_paper",
-            "labelName": "research_paper",
-            "reason": "curated_media_source_filter",
-            "signals": [
-              "transformer",
-              "benchmark",
-              "gpu"
-            ]
-          },
-          {
-            "id": "f25222c52bbf6765ff4d09c45250e37db37dcfee",
-            "title": "AMD发布Instella-MoE-16B-A3B：完全开源的混合专家LLM，2.8B激活参数，在Instinct GPU上训练",
-            "titleEn": "AMD Releases Instella-MoE-16B-A3B: A Fully Open Mixture-of-Experts LLM With 2.8B Active Parameters Trained On Instinct GPUs",
-            "url": "https://www.marktechpost.com/2026/08/01/amd-instella-moe-16b-a3b-fully-open-mixture-of-experts-llm",
-            "siteId": "curated_media",
-            "siteName": "Curated Media",
-            "source": "MarkTechPost Research",
-            "publishedAt": "2026-08-01T19:01:42Z",
-            "rawScore": 73,
-            "score": 89,
-            "label": "research_paper",
-            "labelName": "research_paper",
-            "reason": "curated_media_source_filter",
-            "signals": [
-              "llm",
-              "gpu"
-            ]
-          },
-          {
-            "id": "48025726c3cd32c7e1ff877e70d0eccc76f4132a",
-            "title": "安全研究员打造自传播蠕虫，藏身Word文档劫持Microsoft Copilot",
-            "titleEn": "A security researcher built a self-spreading worm that hides inside Word docs and hijacks Microsoft Copilot",
-            "url": "https://the-decoder.com/a-security-researcher-built-a-self-spreading-worm-that-hides-inside-word-docs-and-hijacks-microsoft-copilot",
-            "siteId": "curated_media",
-            "siteName": "Curated Media",
-            "source": "The Decoder AI News",
-            "publishedAt": "2026-08-01T13:51:57Z",
-            "rawScore": 79,
-            "score": 87,
-            "label": "research_paper",
-            "labelName": "research_paper",
-            "reason": "curated_media_source_filter",
-            "signals": [
-              "copilot"
-            ]
-          },
-          {
-            "id": "006111cc204e3afc698e6c3f3623f1d59ae58b86",
-            "title": "据报道，OpenAI发现更多其agents失控的证据",
-            "titleEn": "OpenAI reportedly finds evidence that more of its agents ran amok",
-            "url": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok",
-            "siteId": "curated_media",
-            "siteName": "Curated Media",
-            "source": "TechCrunch AI",
-            "publishedAt": "2026-07-31T22:47:26Z",
-            "rawScore": 79,
-            "score": 87,
-            "label": "research_paper",
-            "labelName": "research_paper",
-            "reason": "curated_media_source_filter",
             "signals": [
               "openai"
             ]
@@ -2208,57 +2239,19 @@
       {
         "id": "developer_tool",
         "label": "开发工具",
-        "count": 10,
+        "count": 8,
         "items": [
           {
-            "id": "180a9e3e400e159d5d43e9a9043eb9671c68c617",
-            "title": "凌晨三点写代码的仪式感，终于要被AI终结了。 说真的，我以前觉得\"程序员\"这个职业至少能安稳到我退休。但2026年看了下行业数据，有点坐不住了。 Anthropic的报告说84%的Web开发者每天在用AI编码工具，不再是什么\"尝鲜\"，而是和喝水一样自然。代码补全？那已经是上古时代的事了。现在流行的是\"智能体工程\"——你给AI一个需求，它自己拆任务、写代码、跑测试、改bug，甚至能自己部署上线。 有个数据挺震撼的：原来4-8个月的开发项…",
-            "titleEn": "",
-            "url": "https://x.com/Thuweni1/status/2083388626541682743",
-            "siteId": "socialdata_x",
-            "siteName": "SocialData X",
-            "source": "@Thuweni1",
-            "publishedAt": "2026-08-01T03:05:30Z",
-            "rawScore": 75,
-            "score": 90,
-            "label": "developer_tool",
-            "labelName": "开发工具",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "anthropic",
-              "智能体"
-            ]
-          },
-          {
-            "id": "a91b197177f511cec1f3409d0c4962bde29bbc2c",
-            "title": "无状态的 MCP 重新引起了我的兴趣（并启发了 mcp-explorer 和 datasette-mcp）",
-            "titleEn": "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)",
-            "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp",
-            "siteId": "opmlrss",
-            "siteName": "OPML RSS",
-            "source": "Simon Willison",
-            "publishedAt": "2026-07-31T23:13:22Z",
-            "rawScore": 74,
-            "score": 89,
-            "label": "developer_tool",
-            "labelName": "开发工具",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "mcp",
-              "dataset"
-            ]
-          },
-          {
-            "id": "d88cd7d7493bcfa098f83eb931735a63630884fa",
-            "title": "Codex Micro体验与拆解看看 OpenAI 是怎么做 AI 硬件的",
-            "titleEn": "",
-            "url": "https://waytoagi.feishu.cn/wiki/F3n3wqgJyiQIsRkiBN0cT7XQnTd?from=from_copylink",
-            "siteId": "waytoagi",
-            "siteName": "WaytoAGI",
-            "source": "社区更新 · 2026-08-01",
-            "publishedAt": "2026-08-01T17:16:44.605977Z",
+            "id": "b02401c080930792e17dc012904ecbea963e8d3c",
+            "title": "Show HN：MicroCodex Coding Agent – 用 C++ 重新实现 OpenAI/codex <1MB 二进制文件",
+            "titleEn": "Show HN: MicroCodex Coding Agent – OpenAI/codex reimplemented in C++ <1MB binary",
+            "url": "https://news.ycombinator.com/item?id=49147842",
+            "siteId": "newsnow",
+            "siteName": "NewsNow",
+            "source": "hackernews",
+            "publishedAt": "2026-08-02T21:55:16.950000Z",
             "rawScore": 65,
-            "score": 87,
+            "score": 91,
             "label": "developer_tool",
             "labelName": "开发工具",
             "reason": "matched_ai_signal",
@@ -2268,37 +2261,77 @@
             ]
           },
           {
-            "id": "0a6487a9062afc1fa897a82163cd00e41147fad3",
-            "title": "你可能看了一堆 AI Agent 的教程，每篇都在讲概念画架构图， 但没有一篇让你从第一行代码写到一个能跑的 agent。 building-a-coding-agent-from-scratch-course 是一套开源课程， 用 8 篇文章和 4 个视频教你从零写 coding agent， GitHub 上已有 183 star。 四条命令就能把环境拉起来： ·git clone 仓库 ·make install ·cp .en…",
+            "id": "b9c66d3bbc38852eeb119501cf9db13f9d49f06d",
+            "title": "前manus大佬开源的agent team产品codexloom：把 Codex 的 thread 变成长期在岗的数字员工，再组织成一支团队。解决了一个人无法同时高效管理几十个agent的场景，一旦agent多了人就是最大的瓶颈，主要面向手里养着数十以上专职 agent、想让agent各守一个细分场景、还能被同事或用户通过飞书直接调用的高级个人/一人公司。 现在大家用 code agent 都是任务式的：开 thread，交代背景，拿…",
             "titleEn": "",
-            "url": "https://x.com/yangyanglxy/status/2083383076005310686",
+            "url": "https://x.com/aigclink/status/2083729293923017094",
             "siteId": "socialdata_x",
             "siteName": "SocialData X",
-            "source": "@yangyanglxy",
-            "publishedAt": "2026-08-01T02:43:27Z",
-            "rawScore": 70,
-            "score": 85,
+            "source": "@aigclink",
+            "publishedAt": "2026-08-02T01:39:12Z",
+            "rawScore": 78,
+            "score": 90,
             "label": "developer_tool",
             "labelName": "开发工具",
             "reason": "matched_ai_signal",
             "signals": [
+              "aigc",
+              "codex",
               "开源"
             ]
           },
           {
-            "id": "ed0616f0cadae2c9d26eb41bb67b96686d00d5ad",
-            "title": "Codex 进阶指南：作为 Multi-Agent 编排控制平面",
-            "titleEn": "",
-            "url": "https://waytoagi.feishu.cn/wiki/FFsDwOBJVisiPDkZOqlcVj8ZnNc?from=from_copylink",
-            "siteId": "waytoagi",
-            "siteName": "WaytoAGI",
-            "source": "社区更新 · 2026-08-01",
-            "publishedAt": "2026-08-01T17:16:44.605977Z",
+            "id": "1eafc6bd65713bf0ac88c09d44c540c13e9441dc",
+            "title": "Show HN：MicroCodex Coding Agent – 用 C++ 重新实现 OpenAI/codex <1MB 二进制文件",
+            "titleEn": "Show HN: MicroCodex Coding Agent – OpenAI/codex reimplemented in C++ <1MB binary",
+            "url": "https://github.com/paoloanzn/microcodex",
+            "siteId": "techurls",
+            "siteName": "TechURLs",
+            "source": "Hacker News",
+            "publishedAt": "2026-08-02T20:11:35Z",
             "rawScore": 65,
-            "score": 84,
+            "score": 90,
             "label": "developer_tool",
             "labelName": "开发工具",
             "reason": "matched_ai_signal",
+            "signals": [
+              "codex",
+              "openai"
+            ]
+          },
+          {
+            "id": "a6eb5f9c7b13b6a1989b15863d7d35de0e51616b",
+            "title": "字节跳动开源 AI 超级员工 近 8 万 GitHub Stars，能研究、写代码、做网页、生成 PPT，还会自己组建 AI 团队，DeerFlow 2.0 部署教程。 字节跳动开源了一个真正能“干活”的 AI：DeerFlow 2.0 🦌 它不只是陪你聊天。给它一个目标，它会：拆解任务 → 调用工具 → 分配子智能体 → 执行代码 → 检查结果 → 交付文件 GitHub 已接近 8 万 Stars，下面教你 5 分钟部署👇 Dee…",
+            "titleEn": "",
+            "url": "https://x.com/daweifs/status/2083713029741683133",
+            "siteId": "socialdata_x",
+            "siteName": "SocialData X",
+            "source": "@daweifs",
+            "publishedAt": "2026-08-02T00:34:34Z",
+            "rawScore": 74,
+            "score": 89,
+            "label": "developer_tool",
+            "labelName": "开发工具",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "智能体",
+              "开源"
+            ]
+          },
+          {
+            "id": "fd132bb8303e23d13ed295718428aba04a0d3b98",
+            "title": "Codex 用 Sol 指挥 Luna Max 省额度翻倍产出",
+            "titleEn": "",
+            "url": "https://x.com/AYi_AInotes/status/2083867265179537565",
+            "siteId": "aihot",
+            "siteName": "AI HOT",
+            "source": "X：阿易 AI Notes (@AYi_AInotes)",
+            "publishedAt": "2026-08-02T10:47:27Z",
+            "rawScore": 100,
+            "score": 86,
+            "label": "developer_tool",
+            "labelName": "开发工具",
+            "reason": "trusted_ai_source_default_keep",
             "signals": [
               "codex"
             ]
@@ -2306,21 +2339,117 @@
         ]
       },
       {
-        "id": "agent_workflow",
-        "label": "Agent 工作流",
-        "count": 9,
+        "id": "robotics",
+        "label": "机器人",
+        "count": 4,
         "items": [
           {
-            "id": "4834c30a9abaea1924c11396c8053acbb6a4bece",
-            "title": "Quick BI 数据分析智能体的可靠工程实践｜AICon深圳",
+            "id": "f3a16ab9e8dc7642289a0a61f91d32155945e0d5",
+            "title": "California startup Satyress has shown off Threehalves, a 2-meter-tall centaur-style robot built intended for disaster response and search-and-rescue operations",
+            "titleEn": "California startup Satyress has shown off Threehalves, a 2-meter-tall centaur-style robot built intended for disaster response and search-and-rescue operations",
+            "url": "https://www.reddit.com/r/interestingasfuck/comments/1vdk8il/california_startup_satyress_has_shown_off",
+            "siteId": "iris",
+            "siteName": "Info Flow",
+            "source": "Reddit (热门)",
+            "publishedAt": "2026-08-02T14:58:31Z",
+            "rawScore": 65,
+            "score": 83,
+            "label": "robotics",
+            "labelName": "机器人",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "robot"
+            ]
+          },
+          {
+            "id": "746ada127062f8a99fdc299dcdefa017b07540b5",
+            "title": "Chinese VC firms are rushing to raise new funds after three years of record-low fundraising, amid renewed enthusiasm for China's tech, AI, and robotics sectors (Eleanor Olcott/Financial Times)",
+            "titleEn": "Chinese VC firms are rushing to raise new funds after three years of record-low fundraising, amid renewed enthusiasm for China's tech, AI, and robotics sectors (Eleanor Olcott/Financial Times)",
+            "url": "https://www.techmeme.com/260802/p4",
+            "siteId": "techurls",
+            "siteName": "TechURLs",
+            "source": "Techmeme",
+            "publishedAt": "2026-08-02T05:40:00Z",
+            "rawScore": 65,
+            "score": 82,
+            "label": "robotics",
+            "labelName": "机器人",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "robot",
+              "robotics"
+            ]
+          },
+          {
+            "id": "e70f5e900076cc5affbdb1da759305e292f7f001",
+            "title": "UK tests robot boat that can fly its own wired drone even in 14ft waves and stay at sea for weeks",
+            "titleEn": "UK tests robot boat that can fly its own wired drone even in 14ft waves and stay at sea for weeks",
+            "url": "https://www.techradar.com/pro/uk-tests-robot-boat-that-can-fly-its-own-wired-drone-even-in-14ft-waves-and-stay-at-sea-for-weeks",
+            "siteId": "techurls",
+            "siteName": "TechURLs",
+            "source": "TechRadar",
+            "publishedAt": "2026-08-02T10:05:00Z",
+            "rawScore": 65,
+            "score": 81,
+            "label": "robotics",
+            "labelName": "机器人",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "robot"
+            ]
+          },
+          {
+            "id": "82f4740f4da401a709c4f68fd9eb42da126d3387",
+            "title": "China outs Nvidia-powered AS2-W quad-wheel 'robot wolf', just weeks after its armed version surfaced in joint military drills in Mongolia",
+            "titleEn": "China outs Nvidia-powered AS2-W quad-wheel 'robot wolf', just weeks after its armed version surfaced in joint military drills in Mongolia",
+            "url": "https://www.techradar.com/pro/china-outs-nvidia-powered-as2-w-quad-wheel-robot-wolf-just-weeks-after-its-armed-version-surfaced-in-joint-military-drills-in-mongolia",
+            "siteId": "techurls",
+            "siteName": "TechURLs",
+            "source": "TechRadar",
+            "publishedAt": "2026-08-01T23:40:00Z",
+            "rawScore": 65,
+            "score": 80,
+            "label": "robotics",
+            "labelName": "机器人",
+            "reason": "matched_ai_signal",
+            "signals": [
+              "robot"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "agent_workflow",
+        "label": "Agent 工作流",
+        "count": 4,
+        "items": [
+          {
+            "id": "fbc2fc17e6bdb4748a80a9bf092ef9610cd736f7",
+            "title": "Show HN: Sprocket——硬件和软件开发领域的最佳人工智能代理",
+            "titleEn": "Show HN: Sprocket – The Best AI Agent for Hardware and Software Development",
+            "url": "https://sprocket-demo.spikonado.com",
+            "siteId": "zeli",
+            "siteName": "Zeli",
+            "source": "Hacker News · 24h最热",
+            "publishedAt": "2026-08-02T16:26:19Z",
+            "rawScore": 65,
+            "score": 85,
+            "label": "agent_workflow",
+            "labelName": "Agent 工作流",
+            "reason": "matched_ai_signal",
+            "signals": []
+          },
+          {
+            "id": "904432f8253a89b3d1751cc61814b8a810b94513",
+            "title": "2026 年顶尖 AI 实验室如何构建 RL 智能体：从 RLHF 到 RULER",
             "titleEn": "",
-            "url": "https://www.infoq.cn/article/VJ3s26QZUG1C5ANF2O4Q",
-            "siteId": "opmlrss",
-            "siteName": "OPML RSS",
-            "source": "InfoQ CN",
-            "publishedAt": "2026-08-01T10:00:00Z",
-            "rawScore": 71,
-            "score": 88,
+            "url": "https://waytoagi.feishu.cn/wiki/GdflwLv3FiyalUkWbB7cWGPVnmc?from=from_copylink",
+            "siteId": "waytoagi",
+            "siteName": "WaytoAGI",
+            "source": "社区更新 · 2026-08-02",
+            "publishedAt": "2026-08-02T17:16:03.219610Z",
+            "rawScore": 65,
+            "score": 84,
             "label": "agent_workflow",
             "labelName": "Agent 工作流",
             "reason": "matched_ai_signal",
@@ -2329,76 +2458,36 @@
             ]
           },
           {
-            "id": "3b5f0f2bf4c19d38bc69ce0fc715af340289b16e",
-            "title": "YC开源了他们内部使用的多Agent协作框架：QM",
-            "titleEn": "",
-            "url": "https://waytoagi.feishu.cn/wiki/UFOOwTTJmixn2akLI7ncbwTDnNe?from=from_copylink",
-            "siteId": "waytoagi",
-            "siteName": "WaytoAGI",
-            "source": "社区更新 · 2026-08-01",
-            "publishedAt": "2026-08-01T17:16:44.605977Z",
-            "rawScore": 65,
-            "score": 86,
-            "label": "agent_workflow",
-            "labelName": "Agent 工作流",
-            "reason": "matched_broad_ai_plus_tech_signal",
-            "signals": [
-              "开源"
-            ]
-          },
-          {
-            "id": "dbe03d10117b9e75e82a32c501feb6b8db955e56",
-            "title": "个人 AI 投研系统（A股/美股/港股） 这个库是我从天津回来那天就开始用了，先说体验：夯爆。 虽然是个新库，但是已经彪到了1.1k星。作者也是大名鼎鼎的 @linsizhen ，他之前的几个库我都分享过，比如 a-stock-data 7.7k 星，TradingAgents 2.6k 星，global-stock-data 1.2k星。 说回这个库本身，Vibe-Research 是一个开源的 AI 投研系统，覆盖 A 股、美股和…",
-            "titleEn": "",
-            "url": "https://x.com/eastweb3eth/status/2083367213675999632",
-            "siteId": "socialdata_x",
-            "siteName": "SocialData X",
-            "source": "@eastweb3eth",
-            "publishedAt": "2026-08-01T01:40:25Z",
-            "rawScore": 70,
-            "score": 85,
-            "label": "agent_workflow",
-            "labelName": "Agent 工作流",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "开源"
-            ]
-          },
-          {
-            "id": "cfdd4881181fa09b2928c3bd9bce6f726b875342",
-            "title": "OpenAI 发现证据：其他 AI Agent 已逃脱限制",
-            "titleEn": "OpenAI Finds Evidence Other AI Agents Escaped Containment",
-            "url": "https://it.slashdot.org/story/26/07/31/2246237/openai-finds-evidence-other-ai-agents-escaped-containment",
+            "id": "cf5e49ce7d544b7531d18c9ff1b7b19be1866134",
+            "title": "温室和镜头：代理人工智能工作的两种模式",
+            "titleEn": "The Greenhouse and the Lens: Two Modes of Agentic AI Work",
+            "url": "https://www.brethorsting.com/blog/2026/08/the-greenhouse-and-the-lens-two-modes-of-agentic-ai-work",
             "siteId": "techurls",
             "siteName": "TechURLs",
-            "source": "Slashdot",
-            "publishedAt": "2026-08-01T03:30:00Z",
-            "rawScore": 65,
-            "score": 85,
-            "label": "agent_workflow",
-            "labelName": "Agent 工作流",
-            "reason": "matched_ai_signal",
-            "signals": [
-              "openai"
-            ]
-          },
-          {
-            "id": "aee76a643e0439bc503e651eeef9439b85c1ccb8",
-            "title": "TencentCloud / TencentDB-Agent-Memory",
-            "titleEn": "TencentCloud / TencentDB-Agent-Memory",
-            "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-            "siteId": "newsnow",
-            "siteName": "NewsNow",
-            "source": "github",
-            "publishedAt": "2026-08-01T13:43:34.539000Z",
+            "source": "Hacker News",
+            "publishedAt": "2026-08-02T00:06:25Z",
             "rawScore": 65,
             "score": 83,
             "label": "agent_workflow",
             "labelName": "Agent 工作流",
-            "reason": "matched_broad_ai_plus_tech_signal",
-            "signals": [
-              "cloud"
-            ]
+            "reason": "matched_ai_signal",
+            "signals": []
+          },
+          {
+            "id": "6ecc1bfb4af63ab0f5100a9530f7a0538aaf862b",
+            "title": "Agentic AI 工程实战",
+            "titleEn": "",
+            "url": "https://juejin.cn/post/7668524314757349385",
+            "siteId": "newsnow",
+            "siteName": "NewsNow",
+            "source": "juejin",
+            "publishedAt": "2026-08-02T11:23:25.433000Z",
+            "rawScore": 65,
+            "score": 81,
+            "label": "agent_workflow",
+            "labelName": "Agent 工作流",
+            "reason": "matched_ai_signal",
+            "signals": []
           }
         ]
       },
@@ -2408,40 +2497,40 @@
         "count": 2,
         "items": [
           {
-            "id": "a55ba1352b58969709e26276dc89feef44ea41ac",
-            "title": "人工智能的推理是否因错误的理由而正确？",
+            "id": "842229ce4419f1e83194b5af03b7627d6e1bc4f4",
+            "title": "#A股下周重点关注三个方向！🔥 ​1. 核电！核电！核电！ 2. AI算力硬件！AI算力硬件！AI算力硬件！ 3. 人形机器人！人形机器人！人形机器人！ ​核心逻辑和数据支撑： ​1. 核电：国常会重磅核准8台机组，单次总投资超1700亿 ​· 顶层定调：7月31日，国常会决定核准辽宁庄河一期工程等四个核电项目，共计8台新机组。会议明确要求，按照全球最高安全标准建设和运营核电机组。 ​· 投资规模：据估算，上述新项目总投资将超过170…",
             "titleEn": "",
-            "url": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731",
-            "siteId": "buzzing",
-            "siteName": "Buzzing",
-            "source": "www.quantamagazine.org",
-            "publishedAt": "2026-07-31T23:05:14.419000Z",
-            "rawScore": 65,
-            "score": 84,
+            "url": "https://x.com/AppWhat85289/status/2083778448074633526",
+            "siteId": "socialdata_x",
+            "siteName": "SocialData X",
+            "source": "@AppWhat85289",
+            "publishedAt": "2026-08-02T04:54:31Z",
+            "rawScore": 74,
+            "score": 87,
             "label": "infra_compute",
             "labelName": "算力基础设施",
             "reason": "matched_ai_signal",
             "signals": [
-              "人工智能",
-              "推理"
+              "算力",
+              "机器人"
             ]
           },
           {
-            "id": "3e5f2612935d55047b06ad6c0634bf03c3a1ffbb",
-            "title": "A look at the deluge of AI computing power set to come online in the coming years; Epoch AI expects the number of AI chips in use to double every nine months (New York Times)",
-            "titleEn": "A look at the deluge of AI computing power set to come online in the coming years; Epoch AI expects the number of AI chips in use to double every nine months (New York Times)",
-            "url": "https://www.techmeme.com/260801/p12",
+            "id": "480f3ae863551e5267d30f1184e1eefa61efb8e2",
+            "title": "Startup swaps costly AI GPUs for Arm cores and up to 128TB of 'cheap' LPDDR6 RAM instead of expensive HBM to smash through the memory wall",
+            "titleEn": "Startup swaps costly AI GPUs for Arm cores and up to 128TB of 'cheap' LPDDR6 RAM instead of expensive HBM to smash through the memory wall",
+            "url": "https://www.techradar.com/pro/startup-swaps-costly-ai-gpus-for-arm-cores-and-up-to-128tb-of-cheap-lpddr6-ram-instead-of-expensive-hbm-to-smash-through-the-memory-wall",
             "siteId": "techurls",
             "siteName": "TechURLs",
-            "source": "Techmeme",
-            "publishedAt": "2026-08-01T17:25:01Z",
+            "source": "TechRadar",
+            "publishedAt": "2026-08-02T00:25:00Z",
             "rawScore": 65,
-            "score": 82,
+            "score": 81,
             "label": "infra_compute",
             "labelName": "算力基础设施",
             "reason": "matched_ai_signal",
             "signals": [
-              "chip"
+              "gpu"
             ]
           }
         ]
@@ -2452,44 +2541,21 @@
         "count": 1,
         "items": [
           {
-            "id": "0ea43119529f7c64db1ef2c7de0c1f733191b2a8",
-            "title": "公司取消前端岗后，做了 10 年 Java 的我，第一次认真拥抱 AI",
+            "id": "ccd3ddc6424615c1e1581810cfe1878f76d5c6ed",
+            "title": "理解软件股，看这一篇就够了 前几天有群友问软件股，我说过几天给大家出一篇，来了。 我的主业是UI，加部分产品职能，就在软件行业工作，公司业务是软件与AI相关，还是有点资格讲这个的。 今年2月，全球软件与服务公司在六个交易日内蒸发约8300亿美元市值；截至4月9号，标普500软件与服务指数年内一度下跌25.5%。 但到了6月初，软件ETF又从4月低点反弹接近42%，年内跌幅收窄至不足2%。 这说明软件行业还没玩完儿呢。 过去二十年，市场…",
             "titleEn": "",
-            "url": "https://juejin.cn/post/7668341210563870720",
-            "siteId": "newsnow",
-            "siteName": "NewsNow",
-            "source": "juejin",
-            "publishedAt": "2026-08-01T06:21:24.768000Z",
-            "rawScore": 65,
-            "score": 76,
+            "url": "https://x.com/yijiangren/status/2083769088464273510",
+            "siteId": "socialdata_x",
+            "siteName": "SocialData X",
+            "source": "@yijiangren",
+            "publishedAt": "2026-08-02T04:17:19Z",
+            "rawScore": 70,
+            "score": 79,
             "label": "industry_business",
             "labelName": "产业商业",
             "reason": "matched_ai_signal",
-            "signals": []
-          }
-        ]
-      },
-      {
-        "id": "robotics",
-        "label": "机器人",
-        "count": 1,
-        "items": [
-          {
-            "id": "8b07a3747978b32ea294067ad49bf09663d6994d",
-            "title": "WAIC 收官真心话：数百家机器人刷屏背后，AI 究竟重写了什么？",
-            "titleEn": "",
-            "url": "https://www.infoq.cn/article/D9d8F0SUE4gCrXbbyU8N",
-            "siteId": "opmlrss",
-            "siteName": "OPML RSS",
-            "source": "InfoQ CN",
-            "publishedAt": "2026-08-01T17:20:20Z",
-            "rawScore": 70,
-            "score": 87,
-            "label": "robotics",
-            "labelName": "机器人",
-            "reason": "matched_ai_signal",
             "signals": [
-              "机器人"
+              "软件"
             ]
           }
         ]
@@ -2500,21 +2566,22 @@
         "count": 1,
         "items": [
           {
-            "id": "8e08f6d057d63b4cd1279f77b90f24e1dac7cc97",
-            "title": "Uber正在打造自动驾驶汽车帝国，以下是它所用到的所有公司。",
-            "titleEn": "Uber is building an autonomous vehicle empire, and here’s every company it’s using to do it",
-            "url": "https://techcrunch.com/2026/08/01/ubers-autonomous-vehicle-deal-tracker",
-            "siteId": "techurls",
-            "siteName": "TechURLs",
-            "source": "TechCrunch",
-            "publishedAt": "2026-08-01T15:05:00Z",
+            "id": "59dada4b0290f134c6813aa3084093f5f0b4f3b5",
+            "title": "Show HN: Sprocket——硬件和软件开发领域的最佳人工智能代理",
+            "titleEn": "",
+            "url": "https://sprocket-demo.spikonado.com",
+            "siteId": "buzzing",
+            "siteName": "Buzzing",
+            "source": "sprocket-demo.spikonado.com",
+            "publishedAt": "2026-08-02T19:04:45.454000Z",
             "rawScore": 65,
-            "score": 80,
+            "score": 85,
             "label": "ai_tech",
             "labelName": "ai_tech",
             "reason": "matched_ai_signal",
             "signals": [
-              "autonomous"
+              "人工智能",
+              "软件"
             ]
           }
         ]

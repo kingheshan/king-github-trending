@@ -2598,17 +2598,17 @@
     },
     "repo:tt-a1i/archify": {
       "type": "repo-insight",
-      "hash": "aeab601352a3081fa5525dda",
+      "hash": "0d9a74624b0c353e0512206b",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-20T22:01:47.575Z",
+      "generatedAt": "2026-08-02T23:39:29.625Z",
       "value": {
-        "summaryZh": "Archify 是一个 JavaScript 库，专为 AI agent 设计，用于生成美观的架构图。它支持深色/浅色主题切换，并可导出为 PNG、JPEG、WebP、SVG 等格式。亮点在于简洁的 API 和即插即用的特性，非常适合需要自动生成架构图文档的开发者、技术写作者或 AI 辅助工具。通过几行代码即可集成到任何项目中，无需复杂配置，快速产出高质量图表。",
+        "summaryZh": "Archify 是一个生成图表技能的 Agent 工具，专注于创建美观且可验证的架构图、工作流程图、序列图、数据流图和生命周期图。它生成自包含的 HTML 文件，内置动态效果与清晰导出功能，方便直接嵌入文档或演示。适用于软件架构师、开发人员和技术文档编写者，可快速将系统设计转化为可视化、交互式图表，提升沟通与协作效率。",
         "scenarios": [
-          "AI agent 在回答系统架构问题时，动态生成可视化架构图并附带说明。",
-          "技术博客或文档中自动生成代码库的架构图，并支持主题切换以匹配页面风格。",
-          "CI/CD 流程中自动生成微服务或模块依赖关系图，导出为 SVG 嵌入报告。"
+          "在架构设计评审中，快速绘制系统架构图并导出为高清图片或 PDF 用于文档。",
+          "为复杂业务流程创建带交互动画的工作流或时序图，帮助团队理解逻辑。",
+          "在技术博客或产品手册中嵌入动态图表，增强读者对数据流或生命周期的直观感受。"
         ],
-        "agentInstallPrompt": "在项目根目录下运行：npm install archify@latest，然后创建文件 test.js，内容如下： ```javascript const Archify = require('archify'); const arch = new Archify(); const diagram = arch.createDiagram({ title: '示例架构', theme: 'light', // 可选 'dark' nodes: [{ id: '1', label: '前端' }, { id: '2', label: '后端' }], edges: [{ from: '1', to: '2' }] }); diagram.export('png').then(() => console.log('图表已导出为 diagram.png')); ``` 然后运行 node test.js 即可。如需更多帮助，请查看仓库 README。"
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/tt-a1i/archify 到本地，然后查看 README 了解项目结构和依赖要求。根据说明安装必要依赖（例如使用 npm install 或 pip install），运行示例或测试命令（如 npm run dev 或 python app.py），在浏览器中打开生成的 HTML 图表文件，确认功能正常。如果项目包含 CLI 工具，尝试运行帮助命令以了解如何使用。"
       }
     },
     "repo:anthropics/cwc-workshops": {
@@ -3524,6 +3524,21 @@
           "内容创作：基于记忆和技能生成长文、代码注释或创意文案，并通过工具集成校验内容。"
         ],
         "agentInstallPrompt": "请克隆仓库并安装依赖：git clone https://github.com/bytedance/deer-flow.git && cd deer-flow && pip install -r requirements.txt。然后参考 README 配置环境变量（如模型 API 密钥），运行示例：python examples/simple_task.py，或启动 web 界面：python -m deer_flow.webui。若需自定义任务，可按照 docs/getting_started.md 编写任务描述，使用子代理和沙箱功能。注意确保 Python 3.10+ 并安装 Docker（用于沙箱）。"
+      }
+    },
+    "repo:Emily2040/seedance-2.0": {
+      "type": "repo-insight",
+      "hash": "139bcf32b6877c1274abf54a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-02T23:51:36.976Z",
+      "value": {
+        "summaryZh": "Seedance 2.0 是一套面向四模态 AI 电影制作的全流程生产管线，基于 Python 实现。它整合文本、图像、音频与视频生成能力，提供从剧本分镜、角色一致性、场景生成到最终剪辑的一站式工作流。项目亮点在于模块化设计、可扩展的接口和丰富的示例配置，适合独立电影制作人、AI 内容创作者及影视预可视化团队快速搭建自动化制片流程。通过该管线，用户能显著降低传统影视制作门槛，高效产出高质量短片或概念预告。",
+        "scenarios": [
+          "快速生成电影预告片或概念短片，用于项目提案和创意验证。",
+          "在广告和短视频制作中，实现从脚本到成片的自动化流水线。",
+          "为游戏或动画工作室创建角色和场景的概念可视化素材。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 git clone https://github.com/Emily2040/seedance-2.0.git 并进入目录，创建虚拟环境 python -m venv venv 并激活，然后 pip install -r requirements.txt。根据 README 配置 Seedance API 密钥，运行示例脚本 python examples/quickstart.py 验证安装。若需使用全部功能，请确保安装 FFmpeg 并检查依赖项。"
       }
     }
   }
