@@ -3258,17 +3258,17 @@
     },
     "repo:emilkowalski/skills": {
       "type": "repo-insight",
-      "hash": "84e4ac548bd87356a8bef3c9",
+      "hash": "d32c57e82f04f19a211a752f",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-29T22:01:04.339Z",
+      "generatedAt": "2026-08-05T22:20:15.535Z",
       "value": {
-        "summaryZh": "这是一个面向设计工程师的技能集合，旨在帮助设计师提升工程化能力，弥合设计与开发之间的鸿沟。项目提供了从基础到进阶的实践指南，涵盖原型设计、前端交互、版本控制等关键领域。其亮点在于聚焦“设计工程”这一细分方向，采用实战导向的案例教学，适合希望在设计中融入代码思维的设计师、UI/UX专业人士以及寻求转型的创意开发者使用。通过系统学习，用户能掌握将设计转化为可交互原型的高效工作流。",
+        "summaryZh": "Skills 是一个面向设计师与工程师的技能清单/资源集合，由知名前端开发者 Emil Kowalski 创建。它汇集了现代产品开发中跨越设计与工程边界的实用技能，涵盖设计系统、UI 动画、前端实现、协作流程等主题。项目以简洁的网页形式呈现，适合希望提升全栈设计能力、弥合设计与代码鸿沟的个人或团队。其亮点在于精选的高质量内容与可操作性，能够帮助读者高效定位所需技能点。",
         "scenarios": [
-          "设计工程师需要快速掌握前端交互基础，将UI设计稿转化为高保真可交互原型。",
-          "团队中设计师与开发者的协作场景，利用技能集合建立共同语言，减少沟通成本。",
-          "个人技能提升：从纯视觉设计向设计工程方向转型，学习版本控制、响应式布局等工程实践。"
+          "设计师希望学习前端实现基础，以更好地与工程师协作",
+          "工程师需要了解设计原则与交互细节，提升产品整体品质",
+          "团队用于内部技能培训，建立共同的设计工程语言"
         ],
-        "agentInstallPrompt": "请先确保安装了Git和Node.js。克隆仓库：git clone https://github.com/emilkowalski/skills.git，进入目录：cd skills。然后按照项目根目录下的README.md文件指引，通常需要运行npm install安装依赖，再运行npm run dev启动本地开发服务器。如果项目包含子模块或示例代码，请根据文档逐步执行即可。"
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/emilkowalski/skills.git 到本地，然后查看 README 和 package.json 了解项目结构。若为静态站点，直接启动本地服务器（如 npx serve）预览；若有依赖，则运行 npm install 并执行 npm run dev 或类似脚本。请记录实际可用的启动命令并输出。"
       }
     },
     "repo:hasaneyldrm/exercises-dataset": {
@@ -3539,6 +3539,171 @@
           "为游戏或动画工作室创建角色和场景的概念可视化素材。"
         ],
         "agentInstallPrompt": "请先克隆仓库 git clone https://github.com/Emily2040/seedance-2.0.git 并进入目录，创建虚拟环境 python -m venv venv 并激活，然后 pip install -r requirements.txt。根据 README 配置 Seedance API 密钥，运行示例脚本 python examples/quickstart.py 验证安装。若需使用全部功能，请确保安装 FFmpeg 并检查依赖项。"
+      }
+    },
+    "repo:cloudflare/computer": {
+      "type": "repo-insight",
+      "hash": "b39489331b6cd44946944386",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-05T22:03:37.220Z",
+      "value": {
+        "summaryZh": "Cloudflare 推出的开源项目，旨在为 AI 代理提供一个可操作的真实计算机环境（如云桌面或浏览器），让代理能像人类一样点击、输入、运行命令。基于 TypeScript 构建，提供简洁的 API 和工具链，将复杂的基础设施抽象化，大幅降低开发门槛。适用于需要构建自主操作能力的 AI 应用开发者，尤其適合想要快速实现浏览器自动化、桌面操作或端到端测试的团队。亮点在于结合 Cloudflare 的边缘网络，实现低延迟、安全的远程控制，是探索代理操作系统的前沿方案。",
+        "scenarios": [
+          "让 AI 代理自动操作网页，完成表单填写、数据抓取等端到端测试任务。",
+          "为 AI 代理提供虚拟桌面环境，运行脚本、处理文件或执行日常计算机操作。",
+          "构建智能助手，通过自然语言指令控制电脑，实现自动化办公流程。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/cloudflare/computer.git，然后进入目录使用 npm install 安装依赖。阅读 README 了解项目结构和 API 用法。之后运行 npm run dev 启动开发环境，并按照示例代码尝试让你的代理连接到一个虚拟计算机，执行简单的浏览器操作（如打开网页、点击按钮）。注意确保 Node.js 版本 >= 18，并配置好 Cloudflare 凭据（如存在）。"
+      }
+    },
+    "repo:huangruiteng/loopx": {
+      "type": "repo-insight",
+      "hash": "c1b43c98bf19fd752bc57b79",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-05T22:03:42.564Z",
+      "value": {
+        "summaryZh": "loopx 是一个轻量级的循环工程状态内核，专为长时间运行的 AI 智能体团队设计。它不绑定特定智能体框架，可兼容 Codex、Claude Code 及其他编码智能体。核心特性包括持久化目标、基于配额感知的自动唤醒机制、可执行待办事项、证据日志以及可验证的交接流程，确保多智能体协作中的状态一致性和任务可追溯性。适合需要稳定运行复杂多步骤任务的 AI 团队，尤其是依赖多个智能体协同工作的场景。其轻量设计便于快速集成，帮助开发者构建可靠、可审计的自动化工作流。",
+        "scenarios": [
+          "在 CI/CD 流水线中管理多智能体协作，实现任务持久化与失败恢复。",
+          "构建长时间运行的研究助手，通过证据日志追踪决策来源。",
+          "协调不同编码智能体（如 Codex 和 Claude Code）处理大型代码库重构。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/huangruiteng/loopx 并阅读 README。使用 pip 安装依赖（建议 Python 3.10+），然后运行项目中的示例脚本（例如 examples/ 目录下的 demo）。在本地环境中初始化一个持久化目标，模拟多智能体交接流程，验证配额感知唤醒机制。确保运行环境支持异步任务，并检查日志输出以确认状态正确保存与恢复。"
+      }
+    },
+    "repo:donnemartin/system-design-primer": {
+      "type": "repo-insight",
+      "hash": "6105ea44d53bd8ec0059fa64",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-05T22:03:49.274Z",
+      "value": {
+        "summaryZh": "system-design-primer 是一个开源的大型系统设计学习资源库，以 Python 为主，通过图解、案例和 Anki 卡片系统讲解分布式系统架构设计。它覆盖了从基础概念到高级主题（如一致性、负载均衡、缓存、数据库分片等）的完整知识体系，并提供了真实面试题和参考答案。该项目适合准备系统设计面试的工程师、希望提升架构能力的开发者，以及想要系统学习大规模系统设计原理的学生。其亮点在于结构清晰、内容深入浅出，并配有互动式学习工具，能高效帮助用户建立系统设计的全局观和实战能力。",
+        "scenarios": [
+          "准备技术面试：系统梳理系统设计面试常见题型与解答思路，模拟真实面试场景。",
+          "架构设计参考：在构建分布式系统或微服务架构时，查阅最佳实践、权衡与模式。",
+          "团队培训学习：作为内部技术分享或新人培训的资料，统一团队架构设计方法论。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/donnemartin/system-design-primer.git，然后cd system-design-primer。项目内容为Markdown和Python脚本，无需安装依赖即可阅读。若要运行Anki卡片生成脚本，请安装Python 3和requests库（pip install requests），然后运行python -m scripts/generate_anki_deck。建议从README.md开始阅读，重点关注系统设计基础、面试题目和Anki学习卡片。如需本地搜索，可使用grep或安装ripgrep。请根据用户需求，引导其浏览关键章节或生成学习卡片。"
+      }
+    },
+    "repo:firecrawl/pdf-inspector": {
+      "type": "repo-insight",
+      "hash": "59ebcb3bca8e9fb0bdf379b6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-05T22:03:55.039Z",
+      "value": {
+        "summaryZh": "pdf-inspector 是一个基于 Rust 构建的高性能 PDF 检查、分类与文本提取库。其核心亮点在于能够智能识别扫描版 PDF 与文本版 PDF，帮助开发者在文档处理流程中做出精准的路由决策。该库具备极快的处理速度，适合需要高效批量处理 PDF 的场景。它面向构建文档管理系统、自动化工作流或需要预判后续处理步骤（如 OCR）的开发者，能够显著提升 PDF 处理的智能化水平，减少不必要的计算资源浪费。",
+        "scenarios": [
+          "在文档管理系统中，自动区分扫描版和文本版 PDF，以便对扫描件触发 OCR 流程，对文本件直接提取内容。",
+          "在批量文档处理管道中，快速提取 PDF 文本内容，用于索引、搜索或自然语言处理。",
+          "在智能路由场景中，根据 PDF 类型将任务分发到不同的下游服务，优化处理效率和成本。"
+        ],
+        "agentInstallPrompt": "请使用 Cargo 创建一个新项目，并添加 firecrawl/pdf-inspector 作为依赖。在 main.rs 中，读取一个示例 PDF 文件，调用库的 API 进行 PDF 类型检测（扫描版或文本版）并提取文本，最后打印结果。注意确保 Rust 环境已安装，运行 cargo run 验证。"
+      }
+    },
+    "repo:esengine/DeepSeek-Reasonix": {
+      "type": "repo-insight",
+      "hash": "c3f7763ed0696be648009dd4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-05T22:04:00.116Z",
+      "value": {
+        "summaryZh": "DeepSeek-Reasonix 是一款专为终端打造的 DeepSeek 原生 AI 编码代理，基于 Go 语言开发。其核心亮点是围绕前缀缓存（prefix-cache）稳定性进行工程设计，确保代理在长期运行中保持高效和响应迅速，避免重复计算。它旨在为开发者提供无缝的 AI 辅助编码体验，支持在终端内直接进行代码生成、重构和交互式编程。适合深度使用 DeepSeek 模型、追求开发效率与成本优化的开发者，尤其适合需要长时间连续编码工作的场景。",
+        "scenarios": [
+          "在终端中持续运行 AI 编码代理，辅助日常开发中的代码补全和问题解答。",
+          "利用前缀缓存稳定性，进行大规模重构或批量文件处理时保持高效响应。",
+          "集成到 CI/CD 流水线或监控脚本中，作为自动化代码审查和修复工具。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 esengine/DeepSeek-Reasonix，查看 README 了解安装要求。使用 Go 编译安装，配置 DeepSeek API 密钥。运行代理并测试基础代码生成命令，验证终端交互是否正常。随后模拟长时间运行（如持续 30 分钟），检查前缀缓存是否生效（观察重复请求的响应时间是否降低）。根据输出反馈调整配置。"
+      }
+    },
+    "repo:roboflow/supervision": {
+      "type": "repo-insight",
+      "hash": "c5c8185df087d6807bd40195",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-05T22:04:06.690Z",
+      "value": {
+        "summaryZh": "Supervision 是 Roboflow 开源的 Python 计算机视觉工具库，旨在提供可复用的推理后处理、目标跟踪、标注与可视化组件。它封装了检测结果解析、框选/掩码叠加、标签绘制、轨迹连接等常用功能，并兼容 Ultralytics YOLO、Detectron2 等主流模型输出，帮助开发者快速搭建从模型推理到结果可视化的完整流程。该库强调模块化与易用性，适合需要快速原型验证或构建生产级 CV 应用的开发者、研究人员及数据标注工程师，能显著减少重复编码，提升开发效率。",
+        "scenarios": [
+          "目标检测与实例分割结果的可视化与调试，快速标注并导出图像或视频",
+          "多目标追踪场景中，对检测结果进行后处理、轨迹关联与计数统计",
+          "构建 CV 数据流水线时，统一不同模型输出格式并进行标准化与展示"
+        ],
+        "agentInstallPrompt": "先创建 Python 虚拟环境并激活，然后运行 pip install supervision 安装库。接着下载官方示例：在终端执行 git clone https://github.com/roboflow/supervision.git 并进入 supervision/examples 目录。运行一个基础测试，使用 ultralytics 库加载 YOLOv8 模型，读取示例图片或视频帧，利用 supervision 的 Detections 类封装检测结果，并用 BoxAnnotator 和 LabelAnnotator 绘制框和标签，最后输出标注结果到文件。确保安装 ultralytics 和 opencv-python 作为依赖，若遇到缺少库则用 pip install 补全。"
+      }
+    },
+    "repo:tailwindlabs/tailwindcss": {
+      "type": "repo-insight",
+      "hash": "e460a55f078eef8e5bca6b76",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-05T22:19:56.035Z",
+      "value": {
+        "summaryZh": "Tailwind CSS 是一款以实用类优先（utility-first）为核心的 CSS 框架，旨在通过预设的低层级工具类（如 flex、pt-4、text-center）直接在 HTML 中组合样式，从而快速构建现代用户界面。它摒弃传统语义化类名，代之以原子化类，大幅提升开发效率与一致性。亮点包括高度可定制的配置文件、响应式设计内建支持、暗色模式、以及通过 PurgeCSS 自动移除未使用样式以保持体积精简。适合追求快速原型、需要严格设计系统或希望摆脱繁琐 CSS 编写的前端开发者与团队。无论是小型项目还是大型应用，Tailwind 都能显著简化样式管理，并配合框架（如 React、Vue）无缝集成。",
+        "scenarios": [
+          "快速搭建营销落地页或产品原型，无需编写自定义 CSS，直接使用工具类组合布局与组件。",
+          "在大型前端项目中统一设计规范，通过配置文件定制颜色、间距、字体等变量，保证视觉一致性。",
+          "需要实现响应式设计时，利用 Tailwind 内置的断点前缀（如 md:、lg:）快速适配不同屏幕尺寸。"
+        ],
+        "agentInstallPrompt": "请先确保环境已安装 Node.js 和 npm。在终端中执行以下命令创建一个新的 Vite 项目并安装 Tailwind CSS：npm create vite@latest my-project -- --template vanilla，然后 cd my-project，安装依赖 npm install，接着按照 Tailwind 官方文档安装：npm install -D tailwindcss postcss autoprefixer，运行 npx tailwindcss init -p 生成配置。修改 tailwind.config.js 中的 content 字段为 ['./index.html', './src/**/*.{js,ts,jsx,tsx}']，并在 src 目录下创建 style.css，加入 @tailwind base; @tailwind components; @tailwind utilities; 三行指令。在 index.html 中引入 /src/style.css，然后运行 npm run dev，即可在浏览器中查看效果。若需要快速验证，可直接创建一个测试 HTML 文件，引入 Tailwind 的 CDN 链接（如 https://cdn.tailwindcss.com），并写入一些工具类样式（如 <div class=\"bg-blue-500 p-4 rounded\">Hello Tailwind</div>）来体验。"
+      }
+    },
+    "repo:uber/ADR": {
+      "type": "repo-insight",
+      "hash": "b4ae50d51ec8bce52426319a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-05T22:20:00.686Z",
+      "value": {
+        "summaryZh": "ADR 是 Uber 开源的企业级 AI Agent 安全防护框架，专注于可观测性、安全基准测试和威胁检测。它能够帮助团队在真实生产环境中监控 AI Agent 的行为，识别潜在的安全威胁与异常，并通过基准测试评估模型抗攻击能力。该项目已在 Uber 内部大规模部署，经过生产验证，适合需要强化 AI 应用安全性的企业或研究团队。它提供了一套完整的工具链，支持从开发到上线的安全生命周期管理。",
+        "scenarios": [
+          "企业级 AI Agent 生产环境监控，实时检测异常行为和安全威胁。",
+          "对 LLM 应用进行安全基准测试，评估其对抗提示注入等攻击的鲁棒性。",
+          "安全团队审计 AI 系统，通过可观测性数据溯源攻击路径并快速响应。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 Uber 的 ADR 项目。首先克隆仓库 git clone https://github.com/uber/ADR.git，然后进入目录 pip install -r requirements.txt（建议使用 Python 3.10+）。根据 README 配置必要环境变量，如 API 密钥等。运行示例命令以体验其可观测性和安全检测功能，例如 python examples/quickstart.py。如果在本地需要集成自己的 Agent，参考 docs 中的集成指南进行配置。请确保所有依赖正确安装，并提供简要的运行结果说明。"
+      }
+    },
+    "repo:woosal1337/blog": {
+      "type": "repo-insight",
+      "hash": "524b754a4f34a697578660e8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-05T22:20:05.019Z",
+      "value": {
+        "summaryZh": "这是一个基于 JavaScript 构建的个人博客网站项目，由开发者 woosal1337 维护。项目的主要用途是作为作者的技术分享和内容发布平台，展示文章、项目或学习笔记。由于采用 JavaScript 技术栈，项目可能具备较好的交互性和可定制性，适合希望快速搭建个人博客或学习前端开发的开发者参考。项目结构简洁，代码开源，便于二次开发和部署。适合个人开发者、技术博主以及想了解博客网站构建流程的前端学习者。",
+        "scenarios": [
+          "个人技术博主用于搭建和托管自己的博客网站，分享技术文章和项目经验。",
+          "前端开发者学习 JavaScript 博客网站的架构、样式和交互实现。",
+          "开发者将此项目作为基础模板，快速定制和部署自己的个人网站。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/woosal1337/blog.git，进入目录 blog，查看 package.json 了解依赖和脚本。如果项目使用 npm，则运行 npm install 安装依赖，然后运行 npm start 或 npm run dev 启动开发服务器，在浏览器中打开本地地址查看效果。如果项目是静态站点，可直接用浏览器打开 index.html 或使用本地服务器工具（如 serve）预览。确保 Node.js 环境已安装。"
+      }
+    },
+    "repo:DataExpert-io/data-engineer-handbook": {
+      "type": "repo-insight",
+      "hash": "50115e3756e4023078f52769",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-05T22:20:10.891Z",
+      "value": {
+        "summaryZh": "DataExpert-io/data-engineer-handbook 是一个面向数据工程师的综合性学习资源仓库，以 Jupyter Notebook 形式整理了从入门到进阶所需的核心知识体系与工具链。它汇集了数据工程相关的教程、书籍、课程、开源项目及实战案例，覆盖数据管道、数据仓库、批处理/流处理、数据建模、云计算等主题，并提供了丰富的链接导航。该项目适合希望系统掌握数据工程技能的学习者、正在准备数据工程面试的求职者，以及需要快速查阅最佳实践的在职工程师。仓库内容持续更新，是构建个人学习路径和团队知识库的优质参考。",
+        "scenarios": [
+          "数据工程师系统学习：按 handbook 中的主题分类，逐步学习数据管道、数据仓库、ETL/ELT 等核心技能。",
+          "技术选型参考：在规划数据架构时，查阅仓库中各类工具（如 Airflow、Spark、Kafka）的对比与最佳实践。",
+          "面试准备与知识梳理：利用仓库中的资源列表快速回顾关键概念，并模拟实战场景巩固理解。"
+        ],
+        "agentInstallPrompt": "请先将仓库 DataExpert-io/data-engineer-handbook 克隆到本地：运行 `git clone https://github.com/DataExpert-io/data-engineer-handbook.git`，然后进入目录 `cd data-engineer-handbook`。接下来，使用 Jupyter Notebook 或 VS Code 打开其中的 .ipynb 文件，这些文件包含资源索引和学习指南。你可以先查看 README.md 了解整体结构，再按主题浏览各个 notebook。如果需要在本地运行代码，请确保已安装 Python 和 Jupyter，并按照 notebook 中的说明安装依赖（如 pandas、pyspark 等）。"
+      }
+    },
+    "repo:facebook/astryx": {
+      "type": "repo-insight",
+      "hash": "4829b5fff6789d10d43f78b6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-05T22:20:21.980Z",
+      "value": {
+        "summaryZh": "Astryx 是 Facebook 开源的一个设计系统，基于 TypeScript 构建，强调完全可定制性和对 AI Agent 的友好支持。它提供了一套可复用的 UI 组件和设计令牌，使开发者能够快速构建一致、可访问的界面，同时轻松进行主题定制。该项目特别考虑到了 AI Agent 集成的场景，提供了清晰的 API 和扩展点，适合希望将设计系统与现代 AI 工作流结合的团队。无论是创建新应用还是统一现有产品线，Astryx 都能帮助前端开发者、UI 工程师和 AI 应用开发者提升开发效率与设计一致性。",
+        "scenarios": [
+          "企业级应用开发：使用 Astryx 搭建统一的组件库，确保跨团队的产品界面风格一致。",
+          "AI Agent 界面构建：借助 Astryx 的 Agent Ready 特性，快速实现可交互的 AI 对话界面或工具面板。",
+          "品牌定制化主题：通过定制设计令牌和组件变体，将设计系统适配到特定品牌视觉规范。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/facebook/astryx ，然后使用 npm install 安装依赖。运行 npm run dev 启动开发服务器，并在浏览器中打开本地地址（通常为 http://localhost:3000）预览示例。若需要构建生产版本，运行 npm run build。你可以通过修改 src 下的主题文件（如 tokens）和组件来体验完全可定制性。同时查看 README 中的 Agent 集成指南，了解如何将设计系统与 AI 工作流结合。"
       }
     }
   }
