@@ -3705,6 +3705,96 @@
         ],
         "agentInstallPrompt": "请克隆仓库 https://github.com/facebook/astryx ，然后使用 npm install 安装依赖。运行 npm run dev 启动开发服务器，并在浏览器中打开本地地址（通常为 http://localhost:3000）预览示例。若需要构建生产版本，运行 npm run build。你可以通过修改 src 下的主题文件（如 tokens）和组件来体验完全可定制性。同时查看 README 中的 Agent 集成指南，了解如何将设计系统与 AI 工作流结合。"
       }
+    },
+    "repo:goauthentik/authentik": {
+      "type": "repo-insight",
+      "hash": "3270b403e8bc5563537793ca",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-06T22:00:14.286Z",
+      "value": {
+        "summaryZh": "authentik 是一个开源的身份认证与授权平台，用 Python 编写，旨在成为企业应用认证粘合剂。它提供统一登录、多因素认证、单点登录（SSO）和访问控制服务，支持 LDAP、OAuth2、SAML 等多种协议，可无缝集成现有系统。项目亮点包括灵活的流程引擎、可视化管理员界面、强大的审计日志和高扩展性，适合需要集中管理用户身份和权限的中大型组织、DevOps 团队或安全要求较高的平台。相比同类产品，它部署简单（Docker Compose 或 Kubernetes），且代码开源可定制。",
+        "scenarios": [
+          "作为企业统一身份认证中心，为多个内部应用提供 SSO 和集中用户管理，集成 LDAP、SAML、OAuth2 等协议。",
+          "为容器化或云原生应用提供安全访问入口，通过反向代理与 authentik 结合，实现基于身份的访问控制（如搭配 Traefik 或 nginx）。",
+          "用于开发测试环境快速搭建认证服务，验证多因素认证、授权策略等场景，降低自研认证系统的开发成本。"
+        ],
+        "agentInstallPrompt": "请先将 goauthentik/authentik 仓库克隆到本地，然后根据官方文档（README 或 docs.goauthentik.io）准备 Docker 环境（需要 Docker 和 Docker Compose）。复制 docker-compose.yml 和 .env 示例文件，按需修改 .env 中的生成密钥（如 AUTHENTIK_SECRET_KEY）和管理员初始密码。运行 docker-compose up -d 启动服务，等待端口 9000（HTTP）和 9443（HTTPS）就绪。接着通过浏览器访问 https://localhost:9443 完成初始管理员设置，然后体验登录流程、创建应用或配置 LDAP/OAuth2 集成。若需试跑，请确保端口未被占用，并在执行前检查 Docker 是否已启动。"
+      }
+    },
+    "repo:google/guava": {
+      "type": "repo-insight",
+      "hash": "8cd211ec7496a9710d43deeb",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-06T22:00:18.387Z",
+      "value": {
+        "summaryZh": "Guava 是 Google 开源的 Java 核心工具库，提供了集合、缓存、函数式编程、字符串处理、I/O、并发、哈希、事件总线等丰富组件。它旨在简化 Java 开发，弥补 JDK 的不足，提高代码质量与效率。其 API 设计优雅，文档完善，被大量知名项目采用。适合所有 Java 开发者，尤其是追求代码简洁高效、需要可靠并发工具和高级集合操作的团队。Guava 还包含强大的缓存框架和不可变集合，能有效提升应用性能与可维护性。",
+        "scenarios": [
+          "使用 Guava 的 ImmutableList、Multimap、BiMap 等高级集合类型处理复杂数据结构。",
+          "利用 Guava 的 Cache 构建本地高效缓存，提升系统响应速度。",
+          "使用 Guava 的 ListenableFuture、RateLimiter 和并发工具管理异步任务与限流。"
+        ],
+        "agentInstallPrompt": "请帮我创建一个 Java Maven 项目，并在 pom.xml 中添加 guava 依赖（最新版本）。然后编写一个简单示例使用 Guava 的 Joiner 和 Splitter 处理字符串，以及使用 ImmutableList 创建不可变列表。运行并验证输出。"
+      }
+    },
+    "repo:TapXWorld/ChinaTextbook": {
+      "type": "repo-insight",
+      "hash": "739258f19b19a7da492c1ea1",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-06T22:00:24.628Z",
+      "value": {
+        "summaryZh": "TapXWorld/ChinaTextbook 是一个开源的电子教材仓库，收录了中国从小学、初中、高中到大学各个阶段的PDF版教材。该项目旨在通过众包方式构建一个相对完整的教材资源库，方便用户免费获取和查阅。其亮点在于覆盖面广、更新持续，且以纯文本和PDF形式存储，便于检索和下载。适合需要查阅或下载中国教材的学生、教师、教育研究者以及自学爱好者使用，尤其适用于寻找特定版本教材或进行教育资料整理的场景。",
+        "scenarios": [
+          "学生查找或下载特定年级、学科的官方教材PDF，用于课前预习或课后复习。",
+          "教师备课或教研时，快速获取不同版本教材进行内容对比和教学参考。",
+          "教育研究者或自学者批量获取教材资源，用于课程开发或系统学习。"
+        ],
+        "agentInstallPrompt": "请克隆 GitHub 仓库 TapXWorld/ChinaTextbook 到本地。首先确保已安装 git，运行 'git clone https://github.com/TapXWorld/ChinaTextbook.git'。克隆后，进入仓库目录，浏览文件夹结构，通常按学段（如小学、初中、高中、大学）和学科分类。使用 find 命令或 ls -R 查看具体 PDF 文件路径。选择一个示例文件，如 '小学/数学/人教版/一年级上册.pdf'，使用文件管理器或命令行工具（如 open 命令）打开该 PDF 以验证下载成功。注意仓库内容较大，建议使用浅克隆 'git clone --depth=1' 以减少下载量。"
+      }
+    },
+    "repo:Significant-Gravitas/AutoGPT": {
+      "type": "repo-insight",
+      "hash": "93720b2f7f46076752b3846b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-06T22:00:29.605Z",
+      "value": {
+        "summaryZh": "AutoGPT 是一个旨在让 AI 为所有人可访问、可构建的开源项目，其核心愿景是提供易用的工具，让用户专注于真正重要的事情。它基于 Python 构建，允许用户创建和运行自主 AI 代理，这些代理能够分解复杂任务、自主决策并执行操作，从而完成从数据收集到内容生成等多种目标。项目提供了丰富的平台、文档和社区支持，适合开发者、研究者以及希望利用 AI 自动化工作流的个人或团队。其亮点在于将大型语言模型与自动化执行流程相结合，降低了 AI 应用开发的门槛，并鼓励社区贡献和二次开发。",
+        "scenarios": [
+          "个人开发者快速搭建一个能自主完成市场调研并生成报告的 AI 助手，自动浏览网页、汇总信息并输出文档。",
+          "企业团队利用 AutoGPT 构建内部知识库问答机器人，接入公司文档，自动回答员工常见问题并生成摘要。",
+          "研究者在本地环境中部署 AutoGPT，进行多步骤推理实验，测试不同语言模型在自主任务中的表现。"
+        ],
+        "agentInstallPrompt": "请先确保系统已安装 Python 3.10 或以上版本，并配置好 OpenAI API 密钥。在终端中执行以下命令：git clone https://github.com/Significant-Gravitas/AutoGPT.git，然后 cd AutoGPT，运行 pip install -r requirements.txt 安装依赖。接着复制 .env.template 为 .env，并在其中填写你的 OPENAI_API_KEY。最后，在 AutoGPT 目录下运行 python -m autogpt，启动后输入任务描述即可体验。若需使用 Docker，可执行 docker build -t autogpt . 和 docker run -it -v $PWD:/app autogpt。请确保网络可访问 GitHub 和 OpenAI API。"
+      }
+    },
+    "repo:antirez/ds4": {
+      "type": "repo-insight",
+      "hash": "460e919acedc3f41051d90b6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-06T22:00:35.102Z",
+      "value": {
+        "summaryZh": "ds4 是 Redis 作者 antirez 推出的轻量级本地推理引擎，专为 DeepSeek 4 Flash 和 PRO 模型设计，支持 Apple Metal、NVIDIA CUDA 和 AMD ROCm 三大主流 GPU 后端。项目以 C 语言编写，注重极简依赖和高效推理，适合希望在本地离线运行大模型的开发者和研究者。其亮点在于利用 Metal 深度优化了 Apple Silicon 性能，同时保持跨平台兼容性。相比主流框架，ds4 更易编译、更少抽象，适合技术极客或希望窥探大模型推理底层的 C 程序员。",
+        "scenarios": [
+          "在 Apple Silicon Mac 上本地运行 DeepSeek 4 模型，避免云端隐私风险。",
+          "深度定制模型推理流程，研究底层 GPU 加速和大模型内存布局。",
+          "在无网环境或内网中部署 DeepSeek 模型，作为私有 AI 服务底座。"
+        ],
+        "agentInstallPrompt": "请先安装依赖：macOS 需要 Xcode Command Line Tools，Linux 需要 CMake 和 NVIDIA CUDA 工具链（或 ROCm）。然后执行以下命令：git clone https://github.com/antirez/ds4.git && cd ds4 && make -j4。构建成功后，下载 DeepSeek 4 Flash 对应的 GGUF 或相关权重文件（可从模型库获取）。运行示例：./ds4 -m /path/to/model.gguf -p \"Hello world\"。注意：首次运行会自动编译针对当前 GPU 的优化内核，请确保系统有足够内存和显存。若在 Mac 上运行，请确认已开启 Metal 支持，建议使用 Apple M 系列芯片。更详细的参数和模型转换说明可查看 README。"
+      }
+    },
+    "repo:embabel/embabel-agent": {
+      "type": "repo-insight",
+      "hash": "98797107ce34568924d33455",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-06T22:00:40.641Z",
+      "value": {
+        "summaryZh": "embabel-agent 是一个基于 Kotlin 构建的 JVM Agent 框架，发音为 Em-BAY-bel。它旨在为 JVM 平台提供轻量级、灵活的智能代理开发能力，支持构建自主决策和任务执行的代理系统。该框架充分利用 Kotlin 的现代语法和函数式特性，使开发者能够以简洁的代码快速实现代理逻辑。其亮点在于与 JVM 生态的无缝集成，可方便地调用 Java 和 Kotlin 库。适合希望在 JVM 环境中开发 AI 代理、自动化工具或智能体的开发者，尤其适合已有 Kotlin 或 Java 技术栈的团队。",
+        "scenarios": [
+          "在 JVM 后端服务中集成自主任务执行代理，实现自动化运维或业务决策。",
+          "构建基于 Kotlin 的可定制聊天机器人或虚拟助手，利用 Java 生态资源。",
+          "作为微服务架构中的智能调度组件，根据环境变化动态执行操作。"
+        ],
+        "agentInstallPrompt": "请先确保已安装 JDK 17 和 Gradle。克隆仓库 https://github.com/embabel/embabel-agent.git，进入 embabel-agent 目录，运行 'gradle build' 构建项目。然后查看 README 了解基本用法，尝试运行示例代码（如 'gradle run' 或执行特定 main 类）以验证框架功能。"
+      }
     }
   }
 }
