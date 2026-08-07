@@ -3795,6 +3795,21 @@
         ],
         "agentInstallPrompt": "请先确保已安装 JDK 17 和 Gradle。克隆仓库 https://github.com/embabel/embabel-agent.git，进入 embabel-agent 目录，运行 'gradle build' 构建项目。然后查看 README 了解基本用法，尝试运行示例代码（如 'gradle run' 或执行特定 main 类）以验证框架功能。"
       }
+    },
+    "repo:666ghj/MiroFish": {
+      "type": "repo-insight",
+      "hash": "83f6530670494b5478773464",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-07T22:29:26.864Z",
+      "value": {
+        "summaryZh": "MiroFish 是一个简洁通用的群体智能引擎，基于 swarm intelligence 原理，通过模拟群体行为来实现对任意目标的预测。它融合了群体智慧与机器学习，提供简单易用的 API，支持多种预测场景。核心亮点在于其通用性与简洁性，无需复杂配置即可快速部署，适合需要轻量级预测能力的数据科学家、开发者和研究者。项目使用 Python 编写，拥有清晰的代码结构和文档，便于二次开发和集成。",
+        "scenarios": [
+          "金融市场的短期趋势预测，如股票价格或汇率波动。",
+          "物联网设备的时间序列异常检测，如传感器数据中的异常模式识别。",
+          "优化问题求解，如参数调优或路径规划中的群体智能搜索。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/666ghj/MiroFish ，并创建虚拟环境。执行 `pip install -r requirements.txt` 安装依赖。查看 README.md 中的快速开始示例，运行一个基础预测脚本，例如 `python examples/basic_prediction.py`。确保引擎能正确输出预测结果，并尝试修改输入数据以适配自定义场景。"
+      }
     }
   }
 }
