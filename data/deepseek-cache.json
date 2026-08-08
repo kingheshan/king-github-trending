@@ -3810,6 +3810,66 @@
         ],
         "agentInstallPrompt": "请克隆仓库 https://github.com/666ghj/MiroFish ，并创建虚拟环境。执行 `pip install -r requirements.txt` 安装依赖。查看 README.md 中的快速开始示例，运行一个基础预测脚本，例如 `python examples/basic_prediction.py`。确保引擎能正确输出预测结果，并尝试修改输入数据以适配自定义场景。"
       }
+    },
+    "repo:google/skills": {
+      "type": "repo-insight",
+      "hash": "154a5c4439fed64eb1dba36d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-07T23:56:49.508Z",
+      "value": {
+        "summaryZh": "google/skills 是 Google 官方提供的 Agent Skills 集合，旨在帮助 AI 代理（如 Gemini、智能体）无缝集成 Google 产品与技术服务。该项目以 Python 编写，提供预构建的技能模块，覆盖搜索、地图、日历、Gmail 等常用功能，简化了开发者将 Google 能力嵌入智能体流程的过程。它通过标准化的接口定义和示例代码，降低了开发门槛，适合构建个性化 AI 助手、自动化工作流及企业级智能应用。项目亮点包括官方维护、文档清晰、模块化设计，以及可直接复用或扩展的现成技能。适合需要快速融合 Google 生态的 AI 开发者、DevOps 团队和产品创新者。",
+        "scenarios": [
+          "构建一个能调用 Google 日历进行日程查询和事件创建的智能助手。",
+          "开发集成 Google 搜索能力的智能问答系统，提供实时信息检索。",
+          "打造自动化处理 Gmail 邮件的 AI 代理，实现邮件分类和回复生成。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/google/skills.git，进入目录后使用 pip install -r requirements.txt 安装依赖。根据 README 文档配置所需的 Google API 密钥（如 GOOGLE_API_KEY）。然后运行 example 目录下的示例脚本，例如 python examples/google_calendar_skill.py，确保能正常调用技能。若需自定义，可参考 skills 目录下的模块结构，按需修改或新增技能。"
+      }
+    },
+    "repo:litu54/DevOps-Interview-Guide": {
+      "type": "repo-insight",
+      "hash": "a528fb8d11bab14163413bdd",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-08T22:52:51.415Z",
+      "value": {
+        "summaryZh": "DevOps-Interview-Guide 是一个面向 DevOps 工程师的面试准备资源库，由社区维护，内容覆盖 CI/CD、容器化、云原生、自动化运维、监控告警、故障排查等核心主题。仓库以问答形式整理常见面试题，并附有详细解析和最佳实践，帮助候选人系统梳理知识体系，同时为面试官提供参考。无论你是准备跳槽的运维/开发工程师，还是需要快速回顾技术要点的团队负责人，都能从中获得实用价值。项目结构清晰，按主题分类，易于检索，且持续更新，紧跟行业趋势。",
+        "scenarios": [
+          "求职者准备 DevOps 岗位面试，系统复习核心知识点和常见问题。",
+          "面试官设计技术面试题目，参考仓库中的问题深度和考察维度。",
+          "团队内部培训新人，利用问答形式快速普及 DevOps 工具链和流程。"
+        ],
+        "agentInstallPrompt": "克隆仓库 https://github.com/litu54/DevOps-Interview-Guide 到本地，使用浏览器打开 README.md 或 index.html（如果有），或者用 markdown 阅读器查看。建议先浏览目录结构，按主题阅读。无需额外安装依赖，若有脚本或配置文件，按说明执行。目标是快速掌握面试题内容，可尝试自问自答。"
+      }
+    },
+    "repo:bannedbook/fanqiang": {
+      "type": "repo-insight",
+      "hash": "f7888faf40a72af9b0aa6754",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-08T22:53:00.483Z",
+      "value": {
+        "summaryZh": "该项目是一个提供科学上网（翻墙）工具、教程和配置的资源库，包含Kotlin编写的Android客户端、服务端脚本及各类规则。亮点是资源丰富，覆盖多种协议和平台，更新及时，社区活跃，适合需要访问海外网络资源的个人开发者或研究者。用户可根据教程快速搭建代理或直接使用现成客户端。但需注意，使用翻墙工具需遵守当地法律法规，仅限合法用途。",
+        "scenarios": [
+          "个人用户需要访问Google、GitHub等被屏蔽网站时，可参考项目中的客户端配置快速连接。",
+          "开发者在运营海外业务或需要测试海外服务时，利用项目中的服务器搭建脚本自建代理。",
+          "网络管理员或技术爱好者研究绕过封锁的技术原理，学习相关工具链。"
+        ],
+        "agentInstallPrompt": "请克隆仓库地址，然后仔细阅读README了解项目结构。如需试用Android客户端，可使用Android Studio打开Kotlin相关模块进行构建安装。如需部署服务器端，请参考文档中的脚本执行。注意：本项目涉及网络访问，请在合法合规的前提下使用。"
+      }
+    },
+    "repo:unclebob/swarm-forge": {
+      "type": "repo-insight",
+      "hash": "a644568fbfd25873a6dfe95b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-08T22:53:09.882Z",
+      "value": {
+        "summaryZh": "swarm-forge 是 Robert C. Martin（Bob 大叔）用 Clojure 编写的一个轻量级多 AI 代理协调工具。它专注于以简单的方式组织和调度多个 AI 代理之间的协作，支持任务分发、消息传递和结果汇总。该工具强调简洁性与实用性，适合希望快速构建多代理工作流的开发者。通过其设计，用户可以轻松定义代理角色与通信规则，从而模拟团队协作。项目代码风格清晰，是学习 Clojure 并发编程和代理系统设计的良好参考。",
+        "scenarios": [
+          "多代理协作实验：快速搭建多个 AI 代理，让它们分别处理不同子任务并协同完成复杂问题。",
+          "自动化工作流编排：在 Clojure 项目中集成 swarm-forge，实现代理间的消息路由和任务调度，自动化业务流程。",
+          "教学与研究：用于演示 AI 代理系统的基本原理，以及学习 Clojure 函数式编程和并发模型。"
+        ],
+        "agentInstallPrompt": "请从 https://github.com/unclebob/swarm-forge 克隆仓库。按照 README 中的说明安装 Clojure 和必要的依赖。由于是 Clojure 项目，建议使用 Clojure CLI 或 Leiningen 运行。若项目有命令行入口，尝试执行主函数；若无，可进入 REPL 加载核心命名空间，查看测试用例了解用法。请提供具体运行示例和常见错误处理。"
+      }
     }
   }
 }
