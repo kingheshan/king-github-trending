@@ -3870,6 +3870,96 @@
         ],
         "agentInstallPrompt": "请从 https://github.com/unclebob/swarm-forge 克隆仓库。按照 README 中的说明安装 Clojure 和必要的依赖。由于是 Clojure 项目，建议使用 Clojure CLI 或 Leiningen 运行。若项目有命令行入口，尝试执行主函数；若无，可进入 REPL 加载核心命名空间，查看测试用例了解用法。请提供具体运行示例和常见错误处理。"
       }
+    },
+    "repo:pranshuparmar/witr": {
+      "type": "repo-insight",
+      "hash": "1f05aafe7bfc5312947db08b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-09T22:29:42.066Z",
+      "value": {
+        "summaryZh": "witr 是一个用 Go 编写的命令行工具，用于逆向追踪进程、端口、容器或文件，查明它们究竟是由哪个父进程、脚本或系统服务启动的。它同时提供简洁的 CLI 和交互式 TUI，帮助你在排查异常活动时快速定位源头。亮点在于结合了进程树、文件描述符、容器元数据等多种线索，可以直观地回答“为什么这个还在运行”。适合系统管理员、DevOps、SRE 和安全分析人员使用，尤其适用于清理僵尸进程、排查端口占用、理解容器内部依赖以及安全取证等场景。",
+        "scenarios": [
+          "排查服务器上某个未知进程或端口被谁启动，快速找到归属并决定是否终止。",
+          "分析容器中正在运行的进程，追溯到镜像中的启动命令或入口点，辅助镜像优化与调试。",
+          "安全应急响应时，通过文件路径或网络连接反查启动它的可执行文件和父进程链，定位恶意行为源头。"
+        ],
+        "agentInstallPrompt": "请先安装 witr：使用 `go install github.com/pranshuparmar/witr@latest`（需安装 Go）。然后运行 `witr` 进入 TUI，或使用命令行参数如 `witr --help` 查看用法。若要追踪端口，可用 `witr port 8080` 查看启动该端口的进程；追踪进程用 `witr process <pid>`；追踪文件用 `witr file /path`。完成后按 q 退出。注意：可能需要 sudo 权限以读取系统信息。"
+      }
+    },
+    "repo:google-deepmind/weathernext": {
+      "type": "repo-insight",
+      "hash": "c76d9aaeaa1972fa472ded66",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-09T22:29:51.063Z",
+      "value": {
+        "summaryZh": "WeatherNext 是 Google DeepMind 开源的 AI 天气预报项目，基于先进深度学习模型（如图神经网络/扩散模型）实现高精度、高分辨率的天气预测。其亮点在于利用历史气象数据训练，能够快速生成短期和中期预报，显著提升传统数值预报的效率，并为极端天气预警提供科学支持。项目采用 Python 编写，提供完整的训练与推理流程，适合气象科研人员、 AI 开发者以及需要快速集成智能天气服务的行业用户，推动气象预测领域的开源创新与落地应用。",
+        "scenarios": [
+          "科研机构研究深度学习在气象建模中的应用，复现并改进预测算法。",
+          "气象服务公司集成 AI 预报能力，提供更精准的短中期天气数据。",
+          "教育领域用于教学演示，展示人工智能与地球科学交叉的实际案例。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/google-deepmind/weathernext 仓库，创建 Python 3.10+ 虚拟环境，安装 requirements.txt 中的依赖，并下载预训练模型权重（参照 README 的说明）。运行示例脚本，如 `python examples/forecast.py --input sample_data.nc --output result.nc`，验证模型推理是否正常。若需复现训练，请准备相应气象数据集，按文档指引执行训练命令。"
+      }
+    },
+    "repo:Comfy-Org/ComfyUI": {
+      "type": "repo-insight",
+      "hash": "41b8b229c4a90eeb45bb9ef8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-09T22:29:56.762Z",
+      "value": {
+        "summaryZh": "ComfyUI 是一个基于节点/图界面的模块化扩散模型图形界面与后端，支持 API 调用。它以高度灵活的可视化工作流著称，用户可通过连接不同节点构建图像生成、视频生成等复杂流程。项目采用 Python 编写，性能优异，支持多模型并行，适合研究者、开发者及高级用户深度定制。其亮点在于模块化设计、实时预览、丰富的自定义节点生态，以及可轻松嵌入其他应用的 API 接口。无论是快速原型验证还是生产级部署，ComfyUI 都能胜任。",
+        "scenarios": [
+          "研究实验：快速搭建并对比不同扩散模型、采样器与提示词策略，直观观察中间结果。",
+          "生产集成：通过其后端 API，将图像生成流水线嵌入现有应用或服务。",
+          "工作流开发：创建并分享可复用的节点工作流，实现复杂的多阶段生成任务（如图生图、修复、超分）。"
+        ],
+        "agentInstallPrompt": "在 Python 3.10+ 环境中安装 PyTorch（建议带 GPU 支持），然后克隆仓库：git clone https://github.com/Comfy-Org/ComfyUI.git。进入目录后运行 pip install -r requirements.txt。启动服务：python main.py。访问 http://127.0.0.1:8188 打开界面，可先加载默认工作流测试，或拖入示例图片生成。确保已下载合适的扩散模型（如 SDXL）并放入 models/checkpoints 目录。若需自定义节点，使用 ComfyUI Manager 安装。"
+      }
+    },
+    "repo:harveyai/harvey-labs": {
+      "type": "repo-insight",
+      "hash": "816bbf84d259e1fea592c6e6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-09T22:30:01.438Z",
+      "value": {
+        "summaryZh": "Harvey Labs 是一个专为法律工作场景设计的开源基准测试框架，旨在评估和提升 AI 智能体在法律领域的实际能力。它提供标准化的评估任务、数据集和指标，帮助开发者衡量智能体在合同分析、法律研究、文书撰写等任务上的表现。项目使用 Python 编写，集成灵活，适合法律科技公司、AI 研究人员和希望构建法律领域智能体的开发者使用。通过该基准，用户可以系统地对比不同模型或智能体方案的优劣势，并针对性地进行优化和迭代。",
+        "scenarios": [
+          "法律科技团队需要客观评估不同 AI 模型在合同审查、法律检索等任务上的性能差异。",
+          "研究人员希望建立可复现的实验环境，对法律领域智能体的能力进行基准测试和学术对比。",
+          "企业法务部门想要在引入 AI 助手前，基于标准数据集验证其在实际法律工作流中的可靠性和准确性。"
+        ],
+        "agentInstallPrompt": "首先，克隆仓库 git clone https://github.com/harveyai/harvey-labs && cd harvey-labs。然后创建虚拟环境并安装依赖：python -m venv venv && source venv/bin/activate && pip install -r requirements.txt。接下来，查看 README 中的快速开始指南，运行示例评估脚本（如 python examples/run_benchmark.py），确认框架能正常执行。最后，根据你的需求编写自定义评估配置或数据集，运行 harvey-labs 命令行工具对目标 legal agent 进行测试，并输出结果报告。"
+      }
+    },
+    "repo:drawdb-io/drawdb": {
+      "type": "repo-insight",
+      "hash": "9fcf8db37a67a44a7f694d35",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-09T22:30:11.085Z",
+      "value": {
+        "summaryZh": "DrawDB是一款免费、简单且直观的在线数据库图表编辑器与SQL生成器。它允许用户通过拖拽方式设计数据库表结构、定义关系和约束，并自动生成对应的SQL建表语句。界面简洁，操作轻松，无需注册即可使用，数据保存在浏览器本地。它支持多种主流数据库类型，适合软件开发人员、数据库管理员、架构师以及学生在项目初期快速进行数据库建模。无论是快速原型验证、数据库课程教学还是团队协作梳理数据关系，DrawDB都能提升效率，减少手工编写SQL的错误。",
+        "scenarios": [
+          "项目原型阶段快速设计数据库表结构，自动生成可执行的建表SQL，加速开发启动。",
+          "数据库课程教学中，教师通过可视化关系图讲解实体关系模型，学生直观理解。",
+          "团队协作梳理业务数据模型时，生成共享链接进行在线评审与迭代。"
+        ],
+        "agentInstallPrompt": "请先确保已安装Node.js和npm。然后克隆仓库：git clone https://github.com/drawdb-io/drawdb.git，进入目录并执行npm install安装依赖。接下来运行npm run dev启动开发服务器，根据终端提示打开浏览器访问本地地址（如http://localhost:3000），即可在浏览器中使用DrawDB。注意，该应用是前端项目，无需后端服务。"
+      }
+    },
+    "repo:livekit/agents": {
+      "type": "repo-insight",
+      "hash": "21e475bed3c27776c5ae724c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-09T22:30:16.989Z",
+      "value": {
+        "summaryZh": "LiveKit Agents 是一个用于构建实时语音 AI 代理的开源 Python 框架。它提供端到端的实时音视频管道，支持语音识别、自然语言处理和语音合成，可让开发者快速创建能听、能说、能看的交互式 AI 助手。该框架具备低延迟、高并发特性，内置多模态支持，并可通过插件集成主流大语言模型和语音服务。适合需要构建语音助手、虚拟客服、实时会议机器人等场景的开发者，尤其适合那些希望从零快速搭建生产级实时语音 AI 应用的团队。",
+        "scenarios": [
+          "构建实时语音交互助手，如智能客服、前台接待或语音控制应用。",
+          "开发实时会议或直播场景中的语音摘要、实时翻译或智能问答机器人。",
+          "创建多模态 AI 代理，同时处理语音、视频和文本输入，用于远程协助或互动教育。"
+        ],
+        "agentInstallPrompt": "请帮我安装并运行 livekit/agents 项目。首先，在终端中执行：git clone https://github.com/livekit/agents.git 并进入目录。然后，创建一个 Python 虚拟环境并激活它，执行：python -m venv venv && source venv/bin/activate。接着，安装项目依赖，执行：pip install -e . 以及 pip install livekit-agents[all]（根据 README 提示）。之后，复制示例配置：cp examples/voice-agent.env .env 并按需编辑其中的 API 密钥。最后，运行一个示例代理，例如：python examples/voice_assistant.py。请确保在运行前设置好环境变量或 .env 文件，并测试代码能正常启动并连接 LiveKit 服务。"
+      }
     }
   }
 }
