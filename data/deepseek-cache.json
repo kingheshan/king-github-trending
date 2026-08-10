@@ -3960,6 +3960,111 @@
         ],
         "agentInstallPrompt": "请帮我安装并运行 livekit/agents 项目。首先，在终端中执行：git clone https://github.com/livekit/agents.git 并进入目录。然后，创建一个 Python 虚拟环境并激活它，执行：python -m venv venv && source venv/bin/activate。接着，安装项目依赖，执行：pip install -e . 以及 pip install livekit-agents[all]（根据 README 提示）。之后，复制示例配置：cp examples/voice-agent.env .env 并按需编辑其中的 API 密钥。最后，运行一个示例代理，例如：python examples/voice_assistant.py。请确保在运行前设置好环境变量或 .env 文件，并测试代码能正常启动并连接 LiveKit 服务。"
       }
+    },
+    "repo:semantica-agi/semantica": {
+      "type": "repo-insight",
+      "hash": "04580adafd0a503cd48ae99e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-10T22:00:10.463Z",
+      "value": {
+        "summaryZh": "Semantica 是一个面向上下文与可问责 AI 系统的图原生基础设施。它采用 Python 构建，将知识图谱与 AI 工作流深度整合，为模型提供结构化、可追溯的上下文管理能力。项目核心亮点包括：原生支持图数据建模，可追踪数据来源与推理路径，增强 AI 决策的透明度和可审计性；同时提供灵活的 API 与生态集成，方便开发者快速构建需要复杂上下文和严格合规要求的智能应用。适合需要高可靠性、可解释性的企业级 AI 团队、知识图谱开发者以及研究可问责 AI 的工程师。",
+        "scenarios": [
+          "构建企业级知识图谱驱动的问答系统，确保答案可溯源到具体事实节点。",
+          "为金融、医疗等合规敏感领域部署 AI 助手，实现全链路决策审计。",
+          "开发多智能体协作平台，统一管理跨 Agent 的上下文记忆与信任关系。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/semantica-agi/semantica ，然后查看 README 了解安装要求。项目使用 Python，建议创建虚拟环境并执行 pip install -r requirements.txt。接着运行项目自带的示例或测试用例，例如 python examples/quickstart.py。若涉及数据库或图引擎依赖，请根据文档启动相应服务。最后验证基本功能是否正常工作，并记录输出结果。"
+      }
+    },
+    "repo:PrimeIntellect-ai/prime-agent": {
+      "type": "repo-insight",
+      "hash": "ac62d53970c977374fc148e0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-10T22:00:26.189Z",
+      "value": {
+        "summaryZh": "prime-agent 是一个基于 TypeScript 实现的自改进强化学习（RLM）智能体，专为编码工作流和长期自主任务设计。它能够持续从执行反馈中学习，优化决策策略，以应对复杂、多步骤的软件工程挑战。该工具适用于需要自动化代码生成、重构、错误修复及长期项目维护的开发场景，尤其适合希望提升团队效率、减少人工干预的工程团队和研究者。其亮点在于自适应强化学习机制，使其在长周期任务中表现稳定且不断进化。",
+        "scenarios": [
+          "自动化执行多文件代码重构与大规模代码库维护任务",
+          "长期无人值守的 Bug 修复与测试生成流水线",
+          "探索性编程研究，用于自动完成算法实现与优化"
+        ],
+        "agentInstallPrompt": "请先安装该项目的依赖并运行：git clone https://github.com/PrimeIntellect-ai/prime-agent.git；cd prime-agent；npm install。查看 README 了解配置文件，然后运行 npm run start 启动 agent。若有示例脚本，请先执行示例以理解基本用法。注意该项目需要 Node.js 环境，并可能需要配置 API 密钥，请根据 README 中的指引完成设置。"
+      }
+    },
+    "repo:LadybirdBrowser/ladybird": {
+      "type": "repo-insight",
+      "hash": "44e847aa091416eb58fef547",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-10T22:00:31.719Z",
+      "value": {
+        "summaryZh": "Ladybird 是一款真正独立的开源网页浏览器，完全从零构建，不依赖 Chromium、Gecko 或 WebKit 等主流渲染引擎。它采用 C++ 编写，强调隐私、兼容性和跨平台支持（Linux、macOS、Windows）。项目由 SerenityOS 社区驱动，旨在提供简洁、高效且可控的浏览体验。适合对浏览器架构感兴趣的开发者、注重隐私的用户，以及希望参与底层 Web 技术研究的贡献者。当前处于快速迭代阶段，已支持基础网页渲染和开发者工具。",
+        "scenarios": [
+          "开发者研究浏览器渲染引擎、Web 标准实现及安全性设计，并参与开源贡献",
+          "隐私敏感用户尝试不依赖主流引擎的替代浏览器，规避 Chromium 生态的追踪问题",
+          "教育场景下作为教学案例，演示从零构建一个可用的浏览器内核所需的核心技术栈"
+        ],
+        "agentInstallPrompt": "请克隆 LadybirdBrowser/ladybird 仓库，并按照 README 和构建文档操作：先安装依赖（CMake、Ninja、Clang、Python3、相关图形库等），然后运行 `./Meta/ladybird.sh run` 或 `./Lagom/ladybird.sh` 构建调试版本。若在 macOS 上，需安装 Homebrew 依赖；Windows 需配置 MSYS2 或 WSL。构建完成后启动浏览器，访问 example.com 验证基础渲染功能。注意项目较大，需保证磁盘空间和内存充足，并耐心等待编译完成。"
+      }
+    },
+    "repo:danielmiessler/LifeOS": {
+      "type": "repo-insight",
+      "hash": "ae2db783079b0aff3ed07b98",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-10T22:00:35.508Z",
+      "value": {
+        "summaryZh": "LifeOS 是一个基于 TypeScript 构建的通用爬山式 AI 辅助框架，旨在帮助用户从当前状态逐步逼近理想状态，覆盖生活与工作双领域。其核心亮点是将目标拆解为可执行的渐进步骤，利用 AI 持续评估、调整策略，形成闭环优化。适合追求系统化自我提升、希望用 AI 管理长期目标的个人，以及需要结构化任务推进的团队。",
+        "scenarios": [
+          "个人长期目标管理：如健身、学习新技能，通过 AI 分阶段规划并动态调整。",
+          "工作项目推进：将复杂项目拆解为里程碑，利用 AI 辅助识别风险并优化执行路径。",
+          "习惯养成与行为修正：基于当前行为数据，生成逐步改进建议并跟踪反馈。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 git clone https://github.com/danielmiessler/LifeOS.git，进入目录后安装依赖 npm install。随后阅读 README 了解配置方式，并设置必要的环境变量（如 AI 服务的 API Key）。运行 npm run dev 或根据 package.json 中的脚本启动项目，尝试用示例配置创建一个当前状态到理想状态的目标，观察 AI 如何生成爬山步骤。"
+      }
+    },
+    "repo:firecrawl/firecrawl": {
+      "type": "repo-insight",
+      "hash": "a3cf9a9239b52de0a31a51a1",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-10T22:00:40.041Z",
+      "value": {
+        "summaryZh": "Firecrawl 是一个用 TypeScript 构建的开源网页抓取与搜索 API，专为大规模数据采集设计。它将网页抓取、内容提取和搜索功能整合为一个统一接口，支持将网页转换为干净的 Markdown 或结构化数据，方便 LLM 和 AI 应用使用。其亮点在于抗爬虫处理、动态渲染、批量抓取和强大的 API 设计，能高效处理复杂网页。适合需要构建数据管道、训练模型或开发 AI 洞察工具的开发者。",
+        "scenarios": [
+          "构建大规模知识库或训练数据集，需要从多个网站批量抓取并清洗内容。",
+          "为 RAG 应用提供高质量网页内容，快速将网页转为 Markdown 供 LLM 检索。",
+          "监控网页变化或收集特定信息，通过 API 定期抓取并提取结构化字段。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 firecrawl。首先，克隆仓库：git clone https://github.com/firecrawl/firecrawl.git，然后进入目录。安装依赖：npm install 或 pnpm install（根据项目配置选择）。由于项目可能依赖外部服务（如 Playwright 或 Redis），请先阅读 README 或 docker-compose.yml 来启动必要的依赖（推荐使用 docker compose up）。之后，设置环境变量（如 OPENAI_API_KEY）或使用本地模式。运行 API 服务：npm run dev 或类似命令。最后，使用 curl 向 /v1/scrape 端点发送 POST 请求，传入测试 URL（例如 https://example.com），验证能否返回 Markdown 内容。若遇到问题，请检查日志并调整环境配置。"
+      }
+    },
+    "repo:vitali87/code-graph-rag": {
+      "type": "repo-insight",
+      "hash": "89ab82581d97dd1ee9efbb3d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-10T22:00:45.442Z",
+      "value": {
+        "summaryZh": "code-graph-rag 是一个面向大型代码仓库（monorepo）的终极 RAG（检索增强生成）工具。它利用知识图谱技术，将多语言代码库的结构与语义关系进行建模，使开发者能够通过自然语言查询、理解并编辑复杂代码。该工具适合处理跨模块、跨语言的代码搜索与问答，支持在 AI 辅助下进行代码修改。其核心优势在于构建代码实体间的图连接，显著提升检索准确性和上下文感知能力。适合需要深度代码理解的技术团队、AI 驱动开发工具集成者以及大型项目维护者。",
+        "scenarios": [
+          "开发者在大型 monorepo 中快速定位函数定义、调用关系和依赖链，进行代码审查或重构。",
+          "AI 编程助手基于代码图谱回答架构级问题，如某模块的职责、影响面分析，并生成修改建议。",
+          "新成员通过自然语言提问快速了解代码库结构，例如 '认证流程涉及哪些文件？' 并获取可视化知识图谱。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/vitali87/code-graph-rag 并阅读 README。使用 Python 3.10+ 创建虚拟环境，安装依赖（建议使用 pip install -r requirements.txt）。配置代码库路径（支持多语言），运行索引脚本构建知识图谱。之后启动查询接口或 CLI，尝试输入一个自然语言问题（如 'How does user authentication work?'）验证 RAG 回答。若需要编辑功能，请确保启用相应权限和 API 密钥。过程中注意检查日志，确保图数据库（如 Neo4j）正确连接。"
+      }
+    },
+    "repo:opa334/Dopamine": {
+      "type": "repo-insight",
+      "hash": "7b2cd6ecd1667ef4de575092",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-10T22:00:55.769Z",
+      "value": {
+        "summaryZh": "Dopamine 是一款基于 C 语言开发的半不完美越狱工具，支持 iOS 15 至 26.0.1 系统。它利用内核漏洞实现越狱，提供稳定且易用的越狱环境，亮点在于对最新 iOS 版本的支持。采用半不完美模式，重启后需重新激活，内置 Sileo 包管理器，方便安装各类插件和主题。适合追求个性化体验的越狱爱好者、需要深入分析系统的安全研究员，以及想要访问底层 API 或调试应用的开发者。通过简单的图形界面操作，即可完成越狱，解锁系统潜能。",
+        "scenarios": [
+          "越狱爱好者想在最新 iOS 设备上体验越狱，并安装 Sileo 中的各类插件和主题。",
+          "安全研究员需要对 iOS 系统进行漏洞分析、内核调试或安全测试。",
+          "开发者希望绕过沙盒限制，访问底层系统资源或调试自己的应用。"
+        ],
+        "agentInstallPrompt": "请从 https://github.com/opa334/Dopamine 克隆仓库，先阅读 README.md 了解构建要求和依赖。使用 Xcode 或 Theos 编译项目，生成 Dopamine.ipa 文件。然后将兼容的 iOS 设备连接到电脑，使用 AltStore 或类似工具安装该 ipa。安装后打开应用点击越狱按钮，等待完成。注意：此越狱为半不完美，设备重启后需要重新运行应用进行激活。若在非越狱环境试跑，可先执行 `make` 或 `xcodebuild` 验证编译流程。"
+      }
     }
   }
 }
