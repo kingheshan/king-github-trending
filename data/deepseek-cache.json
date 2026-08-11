@@ -738,17 +738,17 @@
     },
     "repo:JuliusBrussee/caveman": {
       "type": "repo-insight",
-      "hash": "c9d6464041578a7073a90127",
+      "hash": "2e10242d7f2841e1cc6a74cc",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:51:42.365Z",
+      "generatedAt": "2026-08-11T22:01:19.178Z",
       "value": {
-        "summaryZh": "Caveman 是一个专为 Claude Code 设计的技能，通过模拟穴居人极简说话方式，将复杂提示压缩成少数词汇，从而减少约65%的Token消耗。亮点在于大幅降低AI交互成本，同时保留核心意图。适合高频调用Claude Code以节省费用的开发者、追求高效沟通的团队，以及对Token优化感兴趣的AI爱好者。",
+        "summaryZh": "caveman 是一个面向 Claude Code 的 skill，通过将提示词转换为简洁的穴居人风格，平均减少约 65% 的 token 消耗。它基于 Go 实现，轻量易集成，适用于需要控制 API 成本或优化长对话场景的开发者。该工具保留核心语义，同时大幅精简措辞，适合在 Claude Code 工作流中作为预处理器使用。",
         "scenarios": [
-          "在Claude Code中执行代码审查或日志分析时，使用Caveman模式压缩提问，降低Token开销。",
-          "当API预算有限或希望延长免费额度时，通过该技能将长问题转换为简短关键词。",
-          "团队协作中统一采用极简表达，减少AI输入输出成本并提升响应速度。"
+          "在 Claude Code 中处理长文档或多轮对话时，降低 token 用量，节省 API 费用。",
+          "将复杂的技术指令精简为关键短语，提高 Claude 的响应速度和专注度。",
+          "作为开发团队共享的 skill，统一 prompt 风格，减少冗余表达。"
         ],
-        "agentInstallPrompt": "git clone https://github.com/JuliusBrussee/caveman.git && cd caveman && npm install && node caveman.js 或根据README将caveman.js放入Claude Code技能目录（通常为~/.claude/skills/），然后在Claude Code中输入/caveman 你的问题以测试。"
+        "agentInstallPrompt": "请先确保已安装 Claude Code 和 Go 环境。克隆仓库 https://github.com/JuliusBrussee/caveman，进入目录后运行 go build 或 go install 构建可执行文件。根据 README 将构建产物或 skill 文件配置到 Claude Code 的 skills 目录中。测试时，先用一个常规的英文 prompt 调用，然后启用 caveman 转换后再发送给 Claude，对比 token 数和输出质量。"
       }
     },
     "repo:koala73/worldmonitor": {
@@ -4064,6 +4064,66 @@
           "开发者希望绕过沙盒限制，访问底层系统资源或调试自己的应用。"
         ],
         "agentInstallPrompt": "请从 https://github.com/opa334/Dopamine 克隆仓库，先阅读 README.md 了解构建要求和依赖。使用 Xcode 或 Theos 编译项目，生成 Dopamine.ipa 文件。然后将兼容的 iOS 设备连接到电脑，使用 AltStore 或类似工具安装该 ipa。安装后打开应用点击越狱按钮，等待完成。注意：此越狱为半不完美，设备重启后需要重新运行应用进行激活。若在非越狱环境试跑，可先执行 `make` 或 `xcodebuild` 验证编译流程。"
+      }
+    },
+    "repo:3b1b/manim": {
+      "type": "repo-insight",
+      "hash": "c5f809cc04724c2b308d1905",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-11T22:00:56.494Z",
+      "value": {
+        "summaryZh": "Manim 是由 3Blue1Brown 作者 Grant Sanderson 开发的开源数学动画引擎，使用 Python 编写。它通过代码精确控制图形、文本、坐标变换和动画过渡，能够将复杂数学概念转化为直观的高质量视频。其亮点包括强大的 LaTeX 公式渲染、基于场景的动画编排、平滑的摄像机移动和精细的时间控制。适合数学教师、科普视频创作者、数据可视化爱好者以及希望提升内容表现力的开发者。学习曲线较陡，但社区活跃、文档丰富，能产出专业级动画。",
+        "scenarios": [
+          "制作数学教学视频，如微积分、线性代数或几何定理的可视化讲解，辅助学生理解抽象概念。",
+          "为技术博客或公开演讲生成动态演示，以动画形式展示算法流程、数据变化或模型结构。",
+          "创作科普类短视频，将科学原理通过引人入胜的动画呈现给大众，提升传播效果。"
+        ],
+        "agentInstallPrompt": "请安装 manim 及其依赖（支持 Python 3.9+），建议使用虚拟环境：python -m venv manim-env && source manim-env/bin/activate，然后执行 pip install manim。安装完成后，创建一个简单的场景文件 test.py，使用 manim 的 Scene 类生成一个带有圆形和公式的动画，并渲染为低分辨率预览（例如 -ql）以确保环境正常。命令如下：manim -ql test.py MyScene。注意：如遇系统依赖问题（如 ffmpeg、latex），请根据操作系统安装对应组件（Ubuntu 可执行 sudo apt-get install ffmpeg texlive texlive-latex-extra）。"
+      }
+    },
+    "repo:huggingface/transformers": {
+      "type": "repo-insight",
+      "hash": "6ca97ad5422b42061dd99f06",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-11T22:01:01.788Z",
+      "value": {
+        "summaryZh": "Transformers 是 Hugging Face 推出的核心模型库，为文本、视觉、音频及多模态领域提供统一的模型定义、训练与推理框架。它内置数千个预训练模型（如 BERT、GPT、T5、ViT、Whisper 等），支持 PyTorch、TensorFlow 和 JAX，并提供 Trainer API、Pipeline 工具和大量实用组件。该库让研究人员和开发者快速复用最新模型，简化从实验到生产的流程，是自然语言处理和多模态领域的行业标准。适合 AI 工程师、数据科学家、研究人员以及希望快速集成先进模型的开发者。",
+        "scenarios": [
+          "使用几行代码加载预训练 BERT 或 GPT 模型，完成文本分类、情感分析、文本生成等 NLP 任务。",
+          "基于 Trainer API 在自定义数据集上微调视觉 Transformer (ViT) 或语音模型 (Whisper)，进行图像分类或语音识别。",
+          "利用 Pipeline API 快速构建推理服务，支持文本、图像、音频等多种模态的零样本或多模态任务。"
+        ],
+        "agentInstallPrompt": "请先创建一个新的 Python 3.9+ 虚拟环境，然后执行 pip install transformers torch 安装核心库和 PyTorch 后端。为验证安装，可运行以下代码：from transformers import pipeline; classifier = pipeline('sentiment-analysis'); result = classifier('I love this project!'); print(result)。如果网络受限，请设置环境变量 HF_ENDPOINT=https://hf-mirror.com 以使用镜像，并尝试运行上述代码，确保输出包含 positive 标签且置信度正常。"
+      }
+    },
+    "repo:jaywcjlove/awesome-mac": {
+      "type": "repo-insight",
+      "hash": "b04da2f358422879e1b8051e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-11T22:01:07.756Z",
+      "value": {
+        "summaryZh": "awesome-mac 是一个精心整理的 macOS 软件资源清单，由社区持续维护，按类别系统收录了数百款高质量应用，涵盖开发工具、设计、办公、网络、安全、娱乐等众多领域。每个条目通常附有简介和官网链接，有些还标注开源或免费。项目结构清晰，支持搜索，方便用户快速发现并替代常用软件。适合 macOS 用户、开发者、软硬件爱好者以及任何想探索更高效工作流的人群。作为 GitHub 上的知名 awesome 系列，它不仅是软件导航站，也是了解 macOS 生态的窗口，帮助用户节省筛选时间，提升设备使用体验。",
+        "scenarios": [
+          "新入手 MacBook 后，需要快速了解常用推荐软件，按类别安装实用工具。",
+          "寻找某类 macOS 软件的替代品，比如从付费软件迁移到免费或开源方案。",
+          "开发者在配置开发环境时，查找编辑、终端、数据库管理等专业工具。"
+        ],
+        "agentInstallPrompt": "克隆仓库 git clone https://github.com/jaywcjlove/awesome-mac.git 并进入目录，使用任意 Markdown 阅读器或直接打开 README.md 查看全部软件分类。如需快速浏览，可在终端运行 grep '^###' README.md 查看类别列表，或使用 Python 脚本提取所有软件链接：python -c \"import re; [print(m) for m in re.findall(r'\\[([^\\]]+)\\]\\(([^)]+)\\)', open('README.md').read())]\"。由于该仓库只是信息列表，无需编译安装，可按需选择软件并访问官网下载。"
+      }
+    },
+    "repo:practical-tutorials/project-based-learning": {
+      "type": "repo-insight",
+      "hash": "9ae4d58be20ed2e63bb87bda",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-11T22:01:13.191Z",
+      "value": {
+        "summaryZh": "这是一个精选的基于项目的编程教程列表，旨在通过实际构建项目来学习编程。它按编程语言分类，涵盖Python、JavaScript、Java、C++等众多语言，每个教程都引导你从零开始完成一个完整的应用或系统，如构建Web服务器、游戏、数据可视化工具等。适合希望跳出纯理论、通过动手实践提升编程技能的开发者，尤其是自学编程者和计算机专业学生。项目仓库持续维护，内容质量高，且完全免费。",
+        "scenarios": [
+          "自学Python等编程语言时，需要从简单到复杂的实战项目来巩固基础知识。",
+          "准备技术面试前，通过构建中小型项目来展示实际编码能力和问题解决技巧。",
+          "作为教学辅助材料，教师或导师可选用其中项目作为课后作业或课程设计。"
+        ],
+        "agentInstallPrompt": "请先克隆该仓库：git clone https://github.com/practical-tutorials/project-based-learning.git，然后进入目录 project-based-learning，使用浏览器打开 README.md 或使用 cat 命令查看内容。此仓库是一个教程列表，无需安装依赖。可挑选其中一个Python教程，根据其链接在线查看具体项目指导。若需要本地运行某个项目的代码，请按照对应教程中的步骤自行操作。"
       }
     }
   }
