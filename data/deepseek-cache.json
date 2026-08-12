@@ -2208,17 +2208,17 @@
     },
     "repo:diegosouzapw/OmniRoute": {
       "type": "repo-insight",
-      "hash": "56d147ccd6e339c34d6c9255",
+      "hash": "69eb93d272831e4ed5d6e59c",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-24T23:30:44.952Z",
+      "generatedAt": "2026-08-12T22:01:35.115Z",
       "value": {
-        "summaryZh": "OmniRoute 是一款免费、开源的 MIT 协议 AI 网关，提供统一端点接入 290+ 提供商（含 90+ 免费）、500+ 模型，支持 Kimi、Claude、GPT、Gemini、DeepSeek 等主流模型。核心亮点包括配额感知自动故障转移、RTK+Caveman 压缩节省 15-95% Tokens、MCP/A2A 协议、桌面端和 PWA 支持。由 500+ 贡献者构建，兼容 Claude Code、Codex、Cursor、OpenCode、Cline 及 Copilot 等工具，大幅降低多模型调用复杂度与成本，适合需要灵活、高性价比 AI 接入的开发者。",
+        "summaryZh": "OmniRoute 是一个免费开源的 AI 网关，基于 TypeScript 构建，提供单一端点接入 330+ 提供商（其中 90+ 免费）和 1200+ 模型，涵盖 Kimi、Claude、GPT、Gemini、GLM、DeepSeek、MiniMax 等主流模型。它兼容 Claude Code、Codex、Cursor、OpenCode、Cline 及 Copilot 等工具，支持配额感知的自动故障转移，并通过 RTK+Caveman 压缩技术节省 15-95% 的 token 消耗。此外，还支持 MCP/A2A 协议，提供桌面端和 PWA 版本。项目由 320+ 贡献者共同维护，适合开发者、AI 应用团队和成本敏感型用户，用于统一管理多模型调用、降低成本并提升可靠性。",
         "scenarios": [
-          "构建多模型 AI 应用时，通过单一 API 键调用数百个模型并自动处理故障转移与配额限制。",
-          "在开发环境（如 Cursor、Claude Code）中切换不同 LLM 进行测试，利用压缩技术减少 Tokens 消耗。",
-          "部署私有 AI 网关，结合 MCP/A2A 协议为团队提供统一的模型接入层与成本管控。"
+          "在 Cursor 或 Claude Code 中配置单一网关，自动切换到免费或低价模型，降低 API 调用成本。",
+          "构建多模型应用时，通过统一端点实现模型热切换和故障转移，避免单点依赖。",
+          "需要节省 token 消耗的批量处理场景，利用内置压缩算法减少费用。"
         ],
-        "agentInstallPrompt": "执行以下步骤安装并运行 OmniRoute： 1. 克隆仓库：git clone https://github.com/diegosouzapw/OmniRoute.git 2. 进入目录：cd OmniRoute 3. 安装依赖：npm install 4. 复制环境变量：cp .env.example .env，并按需编辑 API 密钥等配置。 5. 启动服务：npm run dev，默认监听 3000 端口。 6. 验证：curl http://localhost:3000/v1/chat/completions -H \"Content-Type: application/json\" -d '{\"model\":\"gpt-4\",\"messages\":[{\"role\":\"user\",\"content\":\"Hello\"}]}'"
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/diegosouzapw/OmniRoute.git，然后进入目录安装依赖（npm install 或 pnpm install）。根据 README 配置环境变量（如 OPENAI_API_KEY 等），启动服务（npm run dev 或 npm start）。默认监听端口需查看文档，建议使用 curl 测试 /v1/chat/completions 端点，并选择免费模型进行验证。若需在 Claude Code 中使用，请按照文档配置 base_url 指向本地网关。"
       }
     },
     "repo:alibaba/page-agent": {
@@ -4124,6 +4124,171 @@
           "作为教学辅助材料，教师或导师可选用其中项目作为课后作业或课程设计。"
         ],
         "agentInstallPrompt": "请先克隆该仓库：git clone https://github.com/practical-tutorials/project-based-learning.git，然后进入目录 project-based-learning，使用浏览器打开 README.md 或使用 cat 命令查看内容。此仓库是一个教程列表，无需安装依赖。可挑选其中一个Python教程，根据其链接在线查看具体项目指导。若需要本地运行某个项目的代码，请按照对应教程中的步骤自行操作。"
+      }
+    },
+    "repo:cathrynlavery/diagram-design": {
+      "type": "repo-insight",
+      "hash": "8ef00484ffa630aec23551e7",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-12T22:00:13.130Z",
+      "value": {
+        "summaryZh": "diagram-design 是一个面向 Claude Code 的图表设计资源库，提供 29 种编辑级图表类型的自包含 HTML+SVG 模板。它强调简洁与专业，摒弃阴影和 Mermaid 生成的杂乱样式，确保图表清晰、精准，适合直接嵌入文档、报告或演示。该项目特别适合需要高质量数据可视化、架构图或流程图的开发者、技术写作者和 AI 辅助编程用户，能够快速生成风格统一、可定制且无外部依赖的图表。",
+        "scenarios": [
+          "在 Claude Code 中生成用于技术文档或博客的高质量架构图、流程图，无需外部工具。",
+          "为产品演示或客户报告快速创建风格简洁、无阴影干扰的编辑级 SVG 图表。",
+          "作为前端开发者的参考模板，定制或扩展 29 种图表类型以适配特定业务需求。"
+        ],
+        "agentInstallPrompt": "克隆该仓库到本地，查看 README 了解 29 种图表类型。选择一个示例 HTML 文件，直接在浏览器中打开预览。若要修改，编辑 SVG 结构和样式，确保自包含且无外部依赖。如需在 Claude Code 中使用，可参考模板生成新图，遵循其简洁无阴影的设计原则。运行方式：直接打开 HTML 文件即可，无需构建步骤。"
+      }
+    },
+    "repo:macro-inc/macro": {
+      "type": "repo-insight",
+      "hash": "feaf8632683bb2dcd6789eaf",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-12T22:00:19.620Z",
+      "value": {
+        "summaryZh": "Macro 是一个基于 Rust 构建的统一团队工作空间，将邮件、聊天、文档、任务、AI 代理、通话和 CRM 整合于一体，并通过 @ 链接实现对象间关联，搭配共享 AI 记忆，帮助团队在上下文中高效协作。其亮点在于用单一平台替代多种工具，减少切换成本，同时利用 AI 记忆自动沉淀项目背景和沟通脉络。适合需要跨职能协作、希望以数据驱动方式管理客户与项目的团队，尤其对追求高性能和隐私可控的 Rust 技术栈团队有吸引力。",
+        "scenarios": [
+          "将分散的邮件、聊天和任务集中管理，通过 @ 引用快速关联上下文，避免信息孤岛。",
+          "利用共享 AI 记忆自动记录项目决策和历史讨论，新成员快速上手，减少重复沟通。",
+          "作为轻量 CRM 与协作中枢，跟踪客户交互、文档和代理任务，提升销售与交付协同效率。"
+        ],
+        "agentInstallPrompt": "请先确保系统已安装 Rust 工具链（包括 cargo）。克隆仓库：git clone https://github.com/macro-inc/macro.git，然后进入目录。查看 README 或 Cargo.toml 了解依赖和启动方式，通常执行 cargo build 编译，再按文档运行 cargo run 或指定二进制。若需配置数据库或环境变量，请参考 .env.example 并复制为 .env 后填写。建议在本地启动后访问提供的 HTTP 端口，验证界面和核心功能。如有 Docker 支持，也可使用 docker compose up 快速试跑。"
+      }
+    },
+    "repo:hugohe3/ppt-master": {
+      "type": "repo-insight",
+      "hash": "91e75a9e344ada52b81d74f5",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-12T22:00:25.661Z",
+      "value": {
+        "summaryZh": "ppt-master 是一个基于 Python 的开源工具，利用 AI 将文档或主题自动转换为原生 PowerPoint 演示文稿。它支持生成真实的 PPTX 文件，包含原生形状、过渡效果和动画，并能按需插入数据图表和表格，甚至从演讲者备注生成音频旁白。用户还可以使用自己的 .pptx 模板以保持品牌风格。该项目适合需要快速制作专业演示文稿的内容创作者、商务人士和教育工作者，尤其适合希望自动化 PPT 制作流程、节省时间同时保持高质量输出的团队。其亮点在于不仅生成文本，还注重视觉和交互细节，使演示文稿可直接用于演讲。",
+        "scenarios": [
+          "将长篇研究报告或论文自动拆解并生成结构清晰的演示文稿，用于学术汇报或项目展示。",
+          "基于公司内部文档或数据，快速生成包含图表、动画的销售或产品路演 PPT，并套用企业模板。",
+          "为在线课程或培训视频自动生成带讲解旁白的幻灯片，提升内容制作效率。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/hugohe3/ppt-master 到本地，使用 Python 3.9+ 创建虚拟环境并安装 requirements.txt 中的依赖。阅读 README 了解核心命令和配置，然后运行一个示例：准备一份 Markdown 或文本文件，或直接使用项目自带的测试文档，执行类似 `python main.py --input sample.md --output output.pptx` 的命令，并确保生成的 PPTX 文件包含原生形状、动画和图表。若需使用模板，请将自定义 .pptx 放到指定目录并传入参数。完成后检查生成文件是否可用，并尝试调整 AI 模型或 API 密钥配置。"
+      }
+    },
+    "repo:infiniflow/ragflow": {
+      "type": "repo-insight",
+      "hash": "3f2596608a2abcb30a1e60d3",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-12T22:00:33.800Z",
+      "value": {
+        "summaryZh": "RAGFlow 是一款领先的开源检索增强生成（RAG）引擎，融合了前沿 RAG 与 Agent 能力，为大型语言模型构建高质量的上下文层。它基于深度文档理解，能够从复杂格式的非结构化数据中提取知识，提供精准、可引用的回答，显著降低幻觉。项目亮点包括精细的文档解析、模板化分块、可解释的引用溯源以及灵活的工作流编排，支持多种数据源和向量库。适合需要构建企业级知识库、智能问答系统或进行文档分析的开发者和团队，尤其关注数据安全与回答可靠性的场景。",
+        "scenarios": [
+          "企业知识库管理与问答：统一索引内部文档（如PDF、Word、PPT），员工可通过自然语言查询获取带引用来源的准确答案。",
+          "智能客服与助手：基于产品手册和历史工单训练RAG模型，为终端用户提供精准、可追溯的自动回复，提升服务效率。",
+          "学术研究与合规审查：分析大量研究论文或法规文档，快速提取关键信息并生成带出处的摘要，辅助决策和审查。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑开源项目 RAGFlow（https://github.com/infiniflow/ragflow）。首先，确保环境满足要求（Linux 或 macOS，已安装 Docker 和 Docker Compose），然后克隆仓库：git clone https://github.com/infiniflow/ragflow.git && cd ragflow。接着复制环境变量模板：cp .env.example .env，并启动所有服务：docker compose -f docker/docker-compose.yml up -d。等待服务启动完成后，访问 http://localhost:80 进入 Web 界面，使用默认账号（admin/ragflow）登录。接下来，请创建一个知识库，上传一份示例 PDF 文档，系统会自动解析并建立索引。最后，基于该知识库发起一个对话测试，验证返回结果包含引用来源。如果遇到问题，请检查 Docker 容器日志（docker compose logs -f）以排查错误。"
+      }
+    },
+    "repo:NVIDIA-NeMo/Switchyard": {
+      "type": "repo-insight",
+      "hash": "3050d905bf97fc6da96d0195",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-12T22:00:43.251Z",
+      "value": {
+        "summaryZh": "Switchyard 是 NVIDIA NeMo 生态中基于 Rust 构建的高性能服务路由与负载均衡工具，专注于为大规模 AI 推理工作流提供低延迟、高吞吐的智能请求分发能力。它支持多种路由策略、动态权重调整及健康检查，可无缝集成 Kubernetes 与微服务架构，帮助开发者精细控制流量走向，提升服务稳定性与资源利用率。适合需要生产级流量治理、多模型部署或高并发推理场景的团队使用。",
+        "scenarios": [
+          "在多个模型实例间按业务规则（如按用户ID或请求类型）动态路由推理请求，实现资源隔离与负载分担。",
+          "在线推理服务高峰期自动调整流量分配，结合健康检查规避故障实例，保障服务可用性。",
+          "作为 API 网关前置层，支持 A/B 测试、灰度发布或金丝雀部署，实现无感知流量切换。"
+        ],
+        "agentInstallPrompt": "请先克隆 Switchyard 仓库（git clone https://github.com/NVIDIA-NeMo/Switchyard），然后使用 cargo build --release 编译项目。编译完成后，运行示例配置文件（如 config/example.yaml），并利用项目自带的测试客户端或 curl 命令发送请求到指定端口，观察路由日志和指标输出，验证请求是否按预期规则被分发到不同后端服务。"
+      }
+    },
+    "repo:ZuodaoTech/everyone-can-use-english": {
+      "type": "repo-insight",
+      "hash": "12aa0a4b17a45cb0fe6ae91d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-12T22:00:48.065Z",
+      "value": {
+        "summaryZh": "这是一个面向所有人的英语学习开源项目，基于 TypeScript 构建，旨在通过技术手段降低英语学习门槛。项目提供系统化的学习资源和工具，帮助用户从零基础开始循序渐进地提升听说读写能力。其亮点在于开源免费、社区驱动，且内容持续更新，适合自学者、教育工作者以及想提升英语水平的职场人士。项目可能包含课程、练习或交互式组件，强调实用性和易用性，让英语学习融入日常。",
+        "scenarios": [
+          "自学英语：用户利用项目提供的结构化课程和资源，按计划提升英语水平。",
+          "教学辅助：教师或教育者引用项目内容作为补充教材，设计课堂活动或布置作业。",
+          "开发实践：开发者学习 TypeScript 开源项目，参与贡献或自定义学习工具。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/ZuodaoTech/everyone-can-use-english 到本地，查看 README 了解项目说明和依赖要求。然后安装依赖（通常为 npm install 或 yarn），根据 package.json 中的脚本运行开发服务器或构建命令。如果项目包含前端或 CLI，请分别启动并测试核心功能，记录运行结果和可能的问题。"
+      }
+    },
+    "repo:smicallef/spiderfoot": {
+      "type": "repo-insight",
+      "hash": "5943941b5ddcd7cb55a4aabb",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-12T22:01:09.249Z",
+      "value": {
+        "summaryZh": "SpiderFoot 是一款基于 Python 的开源自动化 OSINT 工具，专为威胁情报与攻击面映射设计。它内置超过200个数据源，能自动收集并关联域名、IP、邮箱、人员等目标信息，快速描绘目标攻击面。其亮点包括模块化架构、插件可扩展、支持Web界面与命令行，以及深度关联分析。适合安全研究员、渗透测试工程师、蓝队与威胁情报分析师使用，可显著提升被动侦察与情报收集效率，是安全评估的有力助手。",
+        "scenarios": [
+          "模拟外部攻击者视角，对指定域名或 IP 进行被动情报收集，快速发现暴露的端口、子域名和关联资产，为渗透测试提供侦察支持。",
+          "威胁情报分析师调查恶意 IP、钓鱼域名或邮件地址，使用 SpiderFoot 聚合多源 OSINT 数据，追踪攻击者基础设施与关联活动。",
+          "企业安全团队定期对自身网络进行攻击面持续监测，通过 SpiderFoot 自动化扫描并识别新出现的暴露面，及时修复安全缺口。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 SpiderFoot。首先执行 git clone https://github.com/smicallef/spiderfoot.git，进入目录 cd spiderfoot，然后用 pip 安装依赖 pip install -r requirements.txt。之后运行 python3 sf.py 启动 Web 界面，在浏览器访问 http://127.0.0.1:5001，按照界面提示创建扫描。另外，也可以通过命令行直接运行：python3 sf.py -m 查看可用模块，或使用 python3 sf.py -s example.com -m all 执行一次简单扫描。请确保环境为 Python 3.7 以上。"
+      }
+    },
+    "repo:localsend/localsend": {
+      "type": "repo-insight",
+      "hash": "095cbb635c3c725e809be2f8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-12T22:01:15.778Z",
+      "value": {
+        "summaryZh": "LocalSend 是一个开源的跨平台 AirDrop 替代品，基于 Dart 开发，支持 Windows、macOS、Linux、Android、iOS 等平台。它通过本地网络进行设备间文件传输，无需互联网连接，不依赖中央服务器，端到端加密保障隐私。亮点包括界面简洁易用、传输速度快、完全免费无广告。适合需要在不同设备间频繁分享文件且注重隐私的用户，尤其适合跨平台生态（如手机与电脑混合）场景。",
+        "scenarios": [
+          "在没有互联网的局域网环境中，快速传输文件给同事或朋友。",
+          "在 Android 与 iPhone 之间互传照片、文档，替代系统自带传输限制。",
+          "在办公室或家庭网络下，多设备间共享大型媒体文件，无需云盘。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/localsend/localsend 并按照 README 指引安装 Flutter 开发环境，然后运行 `flutter run -d linux` 或对应目标平台命令启动应用。若需打包，可执行 `flutter build apk` 或平台对应构建命令。测试时请确保两台设备在同一局域网，然后打开应用进行文件发送。"
+      }
+    },
+    "repo:Lightricks/LTX-2": {
+      "type": "repo-insight",
+      "hash": "d3b94608dff5ab742ae84580",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-12T22:01:21.777Z",
+      "value": {
+        "summaryZh": "LTX-2 是 Lightricks 官方发布的音频-视频生成模型推理与 LoRA 训练 Python 包，支持根据音频输入生成同步视频，或实现视频风格定制。其亮点在于将音频与视觉内容深度对齐，生成高动态、时间一致的视频片段，并提供轻量级 LoRA 微调能力，使开发者无需完整重训模型即可快速适配特定风格或人物。该项目适合 AI 视频创作者、多模态研究者以及需要集成音视频生成能力的应用开发者，尤其适合在高质量视频合成场景中探索音频驱动的创意表达。",
+        "scenarios": [
+          "根据音乐或语音音频生成对应的口型同步、动作匹配的视频内容。",
+          "使用 LoRA 在少量自定义数据集上微调模型，生成特定角色或艺术风格的视频。",
+          "在现有视频生成流程中集成 LTX-2，实现音频和视频联合生成的自动化管线。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 git clone https://github.com/Lightricks/LTX-2.git 并进入目录。然后根据 README 安装依赖，建议使用 Python 3.10+ 创建虚拟环境，执行 pip install -e . 或 pip install -r requirements.txt。接着下载官方预训练权重（可从 Hugging Face 获取），并运行示例脚本（例如 demo.py 或指定推理参数），用一段测试音频输入生成视频，验证环境是否可用。若需要训练 LoRA，请按文档准备训练数据，并运行训练脚本，设置合适的学习率和步数。注意检查 CUDA 环境，确保 PyTorch 版本兼容。"
+      }
+    },
+    "repo:cactus-compute/needle": {
+      "type": "repo-insight",
+      "hash": "203dfc07c96ab07c0d14de92",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-12T22:01:28.874Z",
+      "value": {
+        "summaryZh": "needle 是一个专为微型设备设计的极轻量级基础模型，模型大小仅约 14MB，可用于手机、可穿戴设备、智能家居和机器人等资源受限场景。它采用 Python 实现，旨在提供高效、低功耗的本地化 AI 推理能力，无需依赖云端服务。该项目的核心亮点是极小的模型体积和低计算需求，使其能够直接在边缘设备上运行，同时保持较好的性能。适合嵌入式开发者、物联网工程师以及边缘计算爱好者，有助于快速在小型硬件上部署智能功能。",
+        "scenarios": [
+          "在智能家居设备中，例如智能音箱或传感器节点，运行离线语音命令识别和场景理解，提升响应速度并保护隐私。",
+          "用于可穿戴设备（如手表、手环）上的健康数据实时分析，包括活动识别、异常心率检测等，实现端侧智能决策。",
+          "为移动端应用提供轻量级 AI 能力，如离线图像分类、文本生成或智能回复，降低对网络连接的依赖。"
+        ],
+        "agentInstallPrompt": "请克隆 GitHub 仓库 cactus-compute/needle，并按照 README 的指引完成安装。首先确保 Python 环境为 3.8 及以上，然后运行 pip install -r requirements.txt 安装依赖。接着下载预训练模型文件（如果仓库未自带，请从发布的模型版本下载），并运行提供的示例脚本，例如 python examples/demo.py，以验证模型在本地设备上的推理效果。注意检查项目是否包含针对 CPU 或特定硬件的优化选项，并根据目标设备调整运行参数。"
+      }
+    },
+    "repo:kunchenguid/firstmate": {
+      "type": "repo-insight",
+      "hash": "95bb9c92e10f39b843076478",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-12T22:01:41.106Z",
+      "value": {
+        "summaryZh": "firstmate 是一个基于 Shell 的轻量级 AI 代理协作工具，核心理念是“与一个代理对话，与一个团队交付”。它允许用户通过统一的对话入口，协调多个专业 AI 代理共同完成任务，类似于 AI 代理的“队长”模式。该项目适合希望以低门槛方式体验多代理协作、简化复杂工作流编排的开发者或团队。其亮点在于简洁的交互方式与灵活的代理配置，无需深入底层即可快速构建自动化流程。",
+        "scenarios": [
+          "在软件开发中，通过一个对话入口同时调用代码生成、测试、文档等多个 AI 代理，实现全流程自动化。",
+          "作为个人助理，统一调度不同领域的 AI 代理（如写作、翻译、数据分析），完成复合型任务。",
+          "在团队协作中，作为 AI 代理的总控节点，将任务拆解并分配给各个专用代理，提高交付效率。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/kunchenguid/firstmate 并查看 README 以了解安装要求。根据项目说明安装依赖（通常为 Shell 脚本，可能需要设置 API 密钥）。运行项目提供的启动脚本，尝试与默认代理对话，并按照文档配置自定义代理。若需要演示，请运行示例命令并验证输出。"
       }
     }
   }
