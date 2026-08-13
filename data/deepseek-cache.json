@@ -963,17 +963,17 @@
     },
     "repo:kepano/obsidian-skills": {
       "type": "repo-insight",
-      "hash": "f03f9731ae8c3fe422628849",
+      "hash": "8d4c2958ad2263a3948a589c",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:53:09.273Z",
+      "generatedAt": "2026-08-13T22:02:13.605Z",
       "value": {
-        "summaryZh": "Obsidian Skills 是一个为 AI 代理设计的技能集合，专注于增强 Obsidian 笔记应用的自动化能力。项目包含 Markdown 操作、Bases 数据库交互、JSON Canvas 处理以及命令行工具使用等模块化的技能定义。亮点在于将 Obsidian 的常用功能转化为可由 AI 代理直接调用的原子化指令，显著提升笔记管理、内容生成和复杂工作流的自动化效率。适合 Obsidian 重度用户、知识管理爱好者、使用 AI 辅助写作或自动化脚本的人员。通过简单配置即可让代理理解并操作 Obsidian 的 Markdown 语法、Base 视图、画布和 CLI 命令，降低手动重复操作。",
+        "summaryZh": "该项目提供面向 Obsidian 的 Agent 技能（Agent Skills），旨在帮助 AI 代理通过 Obsidian CLI 和开放格式（如 Markdown、Bases 和 JSON Canvas）高效地操作笔记库。它利用 Obsidian 的本地优先特性和开放数据格式，使 AI 能够直接读取、写入和组织笔记，而无需依赖非标准 API。亮点在于将 Obsidian 变成 AI 的可操作知识库，同时保持数据完全可控。适合使用 Obsidian 管理知识、希望借助 AI 自动化处理笔记、或构建个人 AI 工作流的开发者与知识工作者。",
         "scenarios": [
-          "基于 Obsidian Skills，让 AI 代理自动将网页内容转换为指定格式的 Markdown 笔记并保存到库中。",
-          "利用代理调用 Bases 技能，从 Obsidian 数据库中查询并汇总多个笔记的标签和链接关系。",
-          "通过 JSON Canvas 技能，让代理根据笔记大纲自动生成画布并添加节点连线，可视化知识结构。"
+          "让 AI 代理自动整理 Obsidian 笔记库，批量重命名、移动或更新 Markdown 文件，保持知识结构清晰。",
+          "通过 AI 智能创建和链接 Obsidian 笔记，使用 JSON Canvas 构建可视化思维导图或项目看板。",
+          "基于 Obsidian 中的 Bases 数据库文件，让 AI 代理进行结构化查询、数据提取或格式转换，实现数据驱动的工作流。"
         ],
-        "agentInstallPrompt": "请先确保已安装 Obsidian 并启用 CLI 或相关 API 支持（如 obsidian-local-rest-api 插件）。克隆仓库：git clone https://github.com/kepano/obsidian-skills.git。将 skills 文件夹内的 Markdown 文件作为系统提示词输入给 AI 代理（如 OpenAI 的 assistants API 或本地 agent 框架）。对于 CLI 技能，需配置 Obsidian 的 vault 路径并测试基本命令，例如：`obsidian help`。随后可让代理尝试执行“创建新笔记”或“搜索标签”等任务以验证安装。"
+        "agentInstallPrompt": "请克隆仓库 https://github.com/kepano/obsidian-skills 到本地，并阅读 README 以了解这些 Agent Skills 的用法。然后安装 Obsidian CLI，并确保 Obsidian 配置文件（如 vault 路径）正确。接下来，尝试运行一个简单的技能测试，例如让 AI 代理使用 CLI 列出指定 vault 中的所有 Markdown 文件，并读取其中一个文件的内容。根据输出结果验证技能是否生效。如果出现权限或路径问题，请检查 CLI 的依赖和配置。最后，参考 skills 目录下的文档，尝试使用 JSON Canvas 技能创建一个简单的画布文件，并用 Obsidian 打开验证。"
       }
     },
     "repo:zeroclaw-labs/zeroclaw": {
@@ -4188,17 +4188,17 @@
     },
     "repo:NVIDIA-NeMo/Switchyard": {
       "type": "repo-insight",
-      "hash": "3050d905bf97fc6da96d0195",
+      "hash": "ceddad68bc1f2c2d0b874348",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-12T22:00:43.251Z",
+      "generatedAt": "2026-08-13T22:02:02.539Z",
       "value": {
-        "summaryZh": "Switchyard 是 NVIDIA NeMo 生态中基于 Rust 构建的高性能服务路由与负载均衡工具，专注于为大规模 AI 推理工作流提供低延迟、高吞吐的智能请求分发能力。它支持多种路由策略、动态权重调整及健康检查，可无缝集成 Kubernetes 与微服务架构，帮助开发者精细控制流量走向，提升服务稳定性与资源利用率。适合需要生产级流量治理、多模型部署或高并发推理场景的团队使用。",
+        "summaryZh": "Switchyard 是 NVIDIA NeMo 团队推出的开源 LLM 路由层，使用 Rust 编写，支持在多个模型和 AI 提供商之间智能分发请求，同时保留 OpenAI 和 Anthropic 原生 API 兼容性。它使开发者能够灵活切换模型、进行基准测试并优化成本与性能，无需修改现有应用代码。该项目适合需要管理多模型调用、追求高可用性或降低推理成本的团队，尤其适合构建大规模 LLM 服务网关的场景。",
         "scenarios": [
-          "在多个模型实例间按业务规则（如按用户ID或请求类型）动态路由推理请求，实现资源隔离与负载分担。",
-          "在线推理服务高峰期自动调整流量分配，结合健康检查规避故障实例，保障服务可用性。",
-          "作为 API 网关前置层，支持 A/B 测试、灰度发布或金丝雀部署，实现无感知流量切换。"
+          "在多个 LLM 提供商（如 OpenAI、Anthropic）之间动态路由请求，实现负载均衡和故障转移，提升服务可用性。",
+          "对不同模型进行成本与性能基准测试，通过对比响应质量、延迟和费用，选择最佳模型或配置。",
+          "根据请求类型或用户策略，将流量路由至性价比最优的模型，降低整体 API 调用成本。"
         ],
-        "agentInstallPrompt": "请先克隆 Switchyard 仓库（git clone https://github.com/NVIDIA-NeMo/Switchyard），然后使用 cargo build --release 编译项目。编译完成后，运行示例配置文件（如 config/example.yaml），并利用项目自带的测试客户端或 curl 命令发送请求到指定端口，观察路由日志和指标输出，验证请求是否按预期规则被分发到不同后端服务。"
+        "agentInstallPrompt": "请帮我安装并试跑 Switchyard 项目。首先克隆仓库：git clone https://github.com/NVIDIA-NeMo/Switchyard.git 并进入目录。确保系统已安装 Rust 工具链（需 1.70+），然后执行 `cargo build --release` 构建项目。阅读 README 了解配置文件格式，创建一个简单的路由配置，指定至少两个模型端点（例如 OpenAI 和 Anthropic）。然后运行示例二进制 `cargo run --example basic_routing`，验证请求能正确路由到不同模型，并检查是否兼容 OpenAI/Anthropic 的 API 格式。如果遇到问题，请根据错误信息修复并补充必要的环境变量。"
       }
     },
     "repo:ZuodaoTech/everyone-can-use-english": {
@@ -4289,6 +4289,51 @@
           "在团队协作中，作为 AI 代理的总控节点，将任务拆解并分配给各个专用代理，提高交付效率。"
         ],
         "agentInstallPrompt": "请克隆仓库 https://github.com/kunchenguid/firstmate 并查看 README 以了解安装要求。根据项目说明安装依赖（通常为 Shell 脚本，可能需要设置 API 密钥）。运行项目提供的启动脚本，尝试与默认代理对话，并按照文档配置自定义代理。若需要演示，请运行示例命令并验证输出。"
+      }
+    },
+    "repo:holaboss-ai/holaOS": {
+      "type": "repo-insight",
+      "hash": "88a0cd0cd9588fdb26f9a942",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-13T22:02:07.871Z",
+      "value": {
+        "summaryZh": "holaOS 是一个开源的一体化 AI 代理工作空间，旨在统一管理多种 AI 代理（如 Claude Code、Codex）并连接超过 100 种工具、应用、浏览器和文件，支持 MCP 协议和共享记忆。内置模型或自带 API 密钥（BYOK），让用户灵活选择。其亮点在于将分散的 AI 工具整合到单一桌面环境，提升自动化效率。适合开发者、技术团队以及希望构建个性化 AI 工作流的进阶用户，尤其适合需要跨应用协作和长期上下文管理的场景。",
+        "scenarios": [
+          "开发者集中运行多个 AI 编程代理（如 Claude Code、Codex），统一管理项目上下文和工具调用。",
+          "团队成员共享 AI 记忆与工作区，实现跨人协作的自动化任务与一致性决策。",
+          "个人用户通过 100+ 集成和 MCP 连接日常应用（如浏览器、文件、聊天），构建端到端自动化流程。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/holaboss-ai/holaOS 。执行 npm install 安装依赖，复制 .env.example 为 .env 并填入所需 API 密钥（或使用内置模型）。运行 npm run dev 启动开发服务器，根据 README 配置代理和工具集成。若需连接 MCP 或额外服务，请按照文档添加配置。启动后，尝试创建一个新工作区并添加 Claude Code 代理，测试其与内置文件浏览器的交互。"
+      }
+    },
+    "repo:lightningpixel/modly": {
+      "type": "repo-insight",
+      "hash": "7396e62ddb9a0369cbd3e505",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-13T22:02:20.123Z",
+      "value": {
+        "summaryZh": "Modly 是一款基于本地 AI 的桌面应用，能够从单张图片直接生成 3D 模型，且完全在用户自己的 GPU 上运行，无需上传数据到云端，保障隐私安全。它利用先进的三维重建算法，将普通照片快速转换为可编辑、可导出的三维网格，支持多种常见格式。亮点在于纯本地处理、低延迟和高可控性，适合需要快速迭代创意的设计师、游戏开发者、3D 打印爱好者以及重视数据隐私的专业人士。无需高端服务器，一台配备 NVIDIA GPU 的消费级电脑即可流畅运行，大幅降低 3D 内容创作门槛。",
+        "scenarios": [
+          "产品设计师快速将手绘草图或实物照片转化为 3D 概念模型，用于内部评审或客户演示。",
+          "游戏开发者从概念艺术图中批量生成基础 3D 资产，作为场景原型或占位模型，加速预制作流程。",
+          "3D 打印爱好者和创客将日常物品或雕塑照片转换为可打印的 STL 文件，便于二次修复或直接输出。"
+        ],
+        "agentInstallPrompt": "请克隆 GitHub 仓库 https://github.com/lightningpixel/modly，确保系统已安装 Node.js 20+ 和 npm。按照 README 步骤执行：安装依赖（npm install）、下载预训练的 AI 模型（可能需手动放置到 ~/.cache/modly），然后运行 npm run dev 启动开发模式。若使用 Windows，需确认已安装 CUDA 12.x 的 NVIDIA 驱动。应用启动后，通过界面打开一张图片，等待 GPU 推理完成，即可预览并导出生成的 GLB/OBJ 格式 3D 模型。若遇到依赖冲突，请使用 --force 或更新至最新 LTS。"
+      }
+    },
+    "repo:PrismML-Eng/Bonsai-demo": {
+      "type": "repo-insight",
+      "hash": "c18f32783ae0ca6f5f551fd2",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-13T22:02:31.496Z",
+      "value": {
+        "summaryZh": "本项目是一个基于Shell的Bonsai演示仓库，旨在展示如何使用脚本快速实现自动化部署与配置管理。它包含简洁的示例脚本和清晰的目录结构，适合希望学习Shell编程及项目初始化的开发者。核心亮点在于零依赖、易于理解和高度可定制，能够帮助团队快速搭建原型或进行自动化任务演练。适合需要轻量级自动化解决方案的开发者或运维人员参考。",
+        "scenarios": [
+          "用于学习Shell脚本编写和项目结构设计。",
+          "作为自动化部署或配置管理的参考实现。",
+          "用于快速搭建一个简单的演示环境或测试脚本逻辑。"
+        ],
+        "agentInstallPrompt": "请先确认系统已安装Shell环境（bash/zsh），然后执行以下命令：git clone https://github.com/PrismML-Eng/Bonsai-demo.git && cd Bonsai-demo && bash main.sh 或根据README.md中的说明运行示例。注意检查脚本权限，必要时执行chmod +x *.sh。"
       }
     }
   }
