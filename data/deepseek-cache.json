@@ -63,17 +63,17 @@
     },
     "repo:mukul975/Anthropic-Cybersecurity-Skills": {
       "type": "repo-insight",
-      "hash": "c1f32f79ec3cc68041f41538",
+      "hash": "6fd18a83009a4527b64ef334",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:46:42.131Z",
+      "generatedAt": "2026-08-19T22:40:23.175Z",
       "value": {
-        "summaryZh": "Anthropic-Cybersecurity-Skills 是一个面向 AI 代理的结构化网络安全技能库，包含 754 项技能，覆盖 26 个安全领域。它映射到 MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND 和 NIST AI RMF 五大安全框架，并遵循 agentskills.io 标准。该项目兼容 Claude Code、GitHub Copilot、Cursor、Gemini CLI 等 20 多个 AI 平台，使 AI 代理能够直接调用标准化的安全操作，如攻击检测、防御配置、合规评估等。适合安全工程师、AI 开发者及希望以程序化方式集成网络安全能力的团队，可显著减少重复工作并提升响应一致性。",
+        "summaryZh": "Anthropic-Cybersecurity-Skills 是一个包含817个结构化网络安全技能的开源仓库，专为AI智能体设计。这些技能映射到MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF及MITRE F3六大框架，涵盖29个安全域。项目遵循agentskills.io标准，兼容Claude Code、GitHub Copilot、Codex CLI、Cursor、Gemini CLI等20多种平台，基于Python实现，采用Apache 2.0许可证。适合安全工程师、AI开发者及合规团队，用于将网络安全知识无缝集成到AI工作流中，提升威胁检测、响应和合规审计的效率。",
         "scenarios": [
-          "安全运营团队使用 AI 代理自动执行 MITRE ATT&CK 框架下的攻击模拟与检测规则生成",
-          "DevSecOps 流水线集成技能库，自动检查容器配置是否符合 NIST CSF 2.0 要求",
-          "AI 安全研究员利用该库训练代理识别并防御对抗性攻击（映射到 MITRE ATLAS）"
+          "安全分析师可通过AI智能体快速查询MITRE ATT&CK战术和技术，辅助威胁狩猎与事件响应。",
+          "合规团队利用NIST CSF 2.0映射功能，自动化评估组织安全控制措施的覆盖度与差距。",
+          "开发者将技能集成到GitHub Copilot或Cursor中，在编码时实时获取安全编码建议和漏洞修复方案。"
         ],
-        "agentInstallPrompt": "首先，克隆仓库并安装依赖：git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills.git && cd Anthropic-Cybersecurity-Skills && pip install -r requirements.txt。然后，根据你使用的 AI 平台（如 Claude Code、GitHub Copilot），按 agentskills.io 标准加载技能集。例如，若使用 Claude Code，可在配置中引用 skills/ 目录下的 JSON 文件，并调用相应技能函数。要快速验证，运行 python examples/quick_start.py 查看示例输出。确保所有 API Key 已设置（如 Anthropic API 等），并根据需要修改 config.yaml 中的框架选择。"
+        "agentInstallPrompt": "请克隆仓库 https://github.com/mukul975/Anthropic-Cybersecurity-Skills 到本地，使用Python 3.9+创建虚拟环境并安装requirements.txt中的依赖。按照README配置Anthropic API密钥，并确保您的AI编码工具（如Claude Code或GitHub Copilot）能够访问技能目录。运行示例脚本（例如skills/demo.py）验证安装，然后尝试调用一个与MITRE ATT&CK相关的技能，例如查询特定攻击技术，确保返回结构化结果。"
       }
     },
     "repo:colbymchenry/codegraph": {
@@ -4128,17 +4128,17 @@
     },
     "repo:cathrynlavery/diagram-design": {
       "type": "repo-insight",
-      "hash": "8ef00484ffa630aec23551e7",
+      "hash": "2f1cc5e9e3f053ee906d1b12",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-12T22:00:13.130Z",
+      "generatedAt": "2026-08-19T22:41:03.620Z",
       "value": {
-        "summaryZh": "diagram-design 是一个面向 Claude Code 的图表设计资源库，提供 29 种编辑级图表类型的自包含 HTML+SVG 模板。它强调简洁与专业，摒弃阴影和 Mermaid 生成的杂乱样式，确保图表清晰、精准，适合直接嵌入文档、报告或演示。该项目特别适合需要高质量数据可视化、架构图或流程图的开发者、技术写作者和 AI 辅助编程用户，能够快速生成风格统一、可定制且无外部依赖的图表。",
+        "summaryZh": "diagram-design 是一个为 Claude Code 量身定制的图表模板集合，提供 27 种“编辑级”类型的自包含 HTML+SVG 图表。它彻底告别了传统 Mermaid 生成的“面条图”，也无需任何外部依赖或阴影效果，每个图表都是独立文件，干净、精准、适合印刷和展示。无论你是想为项目文档绘制架构图、流程图、时间线还是矩阵图，这些模板都能直接复用或微调。特别适合使用 Claude Code 的开发者、技术写作者以及追求极简专业视觉的设计师，能显著提升 AI 辅助绘图的质量与一致性。",
         "scenarios": [
-          "在 Claude Code 中生成用于技术文档或博客的高质量架构图、流程图，无需外部工具。",
-          "为产品演示或客户报告快速创建风格简洁、无阴影干扰的编辑级 SVG 图表。",
-          "作为前端开发者的参考模板，定制或扩展 29 种图表类型以适配特定业务需求。"
+          "在 Claude Code 会话中快速生成精美的架构图或数据流示意图，用于设计文档或代码评审。",
+          "为技术博客或内部维基制作无冗余装饰、风格统一的信息图，提升阅读体验。",
+          "作为代码生成基准，测试 AI 代理是否遵循具体视觉设计规范（如无阴影、无外部库）。"
         ],
-        "agentInstallPrompt": "克隆该仓库到本地，查看 README 了解 29 种图表类型。选择一个示例 HTML 文件，直接在浏览器中打开预览。若要修改，编辑 SVG 结构和样式，确保自包含且无外部依赖。如需在 Claude Code 中使用，可参考模板生成新图，遵循其简洁无阴影的设计原则。运行方式：直接打开 HTML 文件即可，无需构建步骤。"
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/cathrynlavery/diagram-design 到本地工作目录。然后查看 README 或目录结构，了解 27 种图表模板的组织方式。每个模板都是自包含的 HTML 文件，直接用浏览器打开即可预览。若要与 Claude Code 集成，可将这些模板放入项目的可访问路径（如 docs/diagrams/），并在指令中引用具体模板文件（例如 '用 timeline.html 的样式生成一个项目里程碑图'）。如需修改样式，直接编辑对应 HTML 中的 SVG 部分。试跑时，任选一个模板（如 example.html）打开，确认渲染效果和代码结构。"
       }
     },
     "repo:macro-inc/macro": {
@@ -4334,6 +4334,96 @@
           "用于快速搭建一个简单的演示环境或测试脚本逻辑。"
         ],
         "agentInstallPrompt": "请先确认系统已安装Shell环境（bash/zsh），然后执行以下命令：git clone https://github.com/PrismML-Eng/Bonsai-demo.git && cd Bonsai-demo && bash main.sh 或根据README.md中的说明运行示例。注意检查脚本权限，必要时执行chmod +x *.sh。"
+      }
+    },
+    "repo:nautechsystems/nautilus_trader": {
+      "type": "repo-insight",
+      "hash": "94388bdd0b34ca5d7f0661b2",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-19T22:40:29.010Z",
+      "value": {
+        "summaryZh": "Nautilus Trader 是一个用 Rust 编写的生产级原生交易引擎，采用确定性事件驱动架构，专为算法交易和量化研究设计。它提供高性能的低延迟执行、回测和实时数据流处理能力，支持多种金融资产。其核心优势在于用 Rust 实现关键路径，确保极快的速度和内存安全，同时提供 Python API 以兼顾易用性。适合需要微秒级响应的高频交易团队、复杂策略研发的量化开发者，以及构建稳健交易系统的金融科技公司。该项目代码质量高，文档齐全，活跃社区支撑，是开源交易基础设施中的优秀选择。",
+        "scenarios": [
+          "用于加密货币或传统市场的高频策略回测，验证低延迟执行逻辑和订单管理流程。",
+          "构建生产级算法交易系统，实时处理市场数据、信号生成和自动下单，要求极低延迟和确定性。",
+          "作为研究平台，快速用 Python 编写策略原型，并借助 Rust 内核进行大规模历史数据模拟。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 nautilus_systems/nautilus_trader 到本地，确保系统已安装 Rust 工具链和 Python 3.8+。执行 `make install` 或按照 README 步骤安装依赖，然后运行 `nautilus_trader/examples` 下的回测示例（如 `backtest.py`），确认环境正常。若遇到编译错误，请根据错误信息调整系统库或 Rust 版本。最终输出安装成功标志和示例运行结果摘要。"
+      }
+    },
+    "repo:jundot/omlx": {
+      "type": "repo-insight",
+      "hash": "6eb1b8dc3cf48f35fbe56d0c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-19T22:40:34.885Z",
+      "value": {
+        "summaryZh": "omlx 是一个专为 Apple Silicon 打造的 LLM 推理服务器，具备连续批处理（continuous batching）和 SSD 缓存能力，可通过 macOS 菜单栏轻松管理。它旨在充分利用 Mac 的统一内存和高速存储，实现高效的大模型本地推理，降低延迟并提升吞吐量。项目以 Python 编写，适合希望在 Mac 上本地运行、调试或部署 LLM 的开发者、研究人员及隐私敏感用户。亮点在于将服务器功能与友好的菜单栏界面结合，简化了模型加载、切换和监控流程，同时通过 SSD 缓存减少重复加载开销，优化了资源利用。适合需要快速实验、离线推理或希望避免云依赖的场景。",
+        "scenarios": [
+          "在 Apple Silicon Mac 上本地运行 Llama、Mistral 等开源 LLM，进行私有化推理或原型开发。",
+          "通过菜单栏快捷管理多个模型，切换不同推理任务，并利用 SSD 缓存加速重复启动。",
+          "在无网络或低带宽环境下，作为轻量级推理服务，供本地应用或脚本调用。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 jundot/omlx 项目。首先，确保你的 Mac 是 Apple Silicon 且已安装 Python 3.9+ 和 Homebrew。然后，在终端中执行：`git clone https://github.com/jundot/omlx.git && cd omlx`。接着，创建虚拟环境并安装依赖：`python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt`。根据 README 提示，可能需要安装额外系统依赖（如 llama.cpp 相关库），请按说明操作。完成后，运行 `python main.py` 启动服务器，并检查菜单栏图标是否出现。尝试加载一个示例模型（如 tinyllama），通过 API 发送测试请求，验证连续批处理和 SSD 缓存功能。如果遇到问题，请查看日志并调整配置。"
+      }
+    },
+    "repo:immich-app/immich": {
+      "type": "repo-insight",
+      "hash": "495eceb3aba3b126c70da5c5",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-19T22:40:39.775Z",
+      "value": {
+        "summaryZh": "Immich 是一款高性能的自托管照片与视频管理解决方案，采用 TypeScript 构建，旨在替代 Google Photos 等云服务。它提供端到端加密、自动备份、强大的搜索（支持物体/人脸/地点识别）、时间线浏览、相册共享、元数据编辑等功能。项目开源活跃，支持 Docker 一键部署，适合注重数据隐私、希望完全掌控个人媒体库的用户、家庭用户及小型团队。其高性能后端和现代化前端带来流畅体验，且持续快速迭代，是自托管媒体管理的热门选择。",
+        "scenarios": [
+          "个人用户希望完全掌控自己的照片和视频数据，摆脱云服务隐私和容量限制，部署在 NAS 或家用服务器上。",
+          "家庭或小团队需要多用户共享相册、自动备份成员手机媒体，并提供智能分类与搜索能力。",
+          "开发者或技术爱好者希望在自托管环境中探索高可用媒体管理方案，并对项目进行二次开发或贡献代码。"
+        ],
+        "agentInstallPrompt": "请帮我部署 Immich 自托管照片管理服务。首先确保 Docker 和 Docker Compose 已安装，然后从 GitHub 克隆 immich-app/immich 仓库，参考官方文档（https://docs.immich.app）创建 .env 文件并设置所需环境变量（如 DB_PASSWORD）。使用 docker-compose.yml 启动全部服务（包括 PostgreSQL、Redis、Server 等），运行 docker-compose up -d 拉取镜像并后台启动。等待服务就绪后，通过浏览器访问 http://localhost:2283 进行初始设置，创建管理员账号，然后尝试上传照片或视频以验证功能。如有问题，请检查日志并确保端口映射和卷挂载正确。"
+      }
+    },
+    "repo:amadeusprotocol/node": {
+      "type": "repo-insight",
+      "hash": "f48f3ac5ca4c9c33622d9a84",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-19T22:40:44.773Z",
+      "value": {
+        "summaryZh": "Amadeus Protocol 的 Rust 官方节点实现，提供高性能、内存安全的网络节点运行环境。该项目以 Rust 语言编写，保证了高效并发与低资源占用，适合作为分布式协议的基础设施。虽然当前仓库描述为空，但结合协议名称与节点定位，可推测其用于构建去中心化网络或分布式系统。适合区块链开发者、协议研究者及需要部署验证节点的技术人员。亮点在于 Rust 的安全性与性能优势，以及作为协议核心组件的权威性。",
+        "scenarios": [
+          "部署并运行 Amadeus Protocol 网络节点，参与共识与数据同步。",
+          "在测试网中调试节点行为，验证协议逻辑的正确性与稳定性。",
+          "基于节点代码进行二次开发，构建上层应用或扩展协议功能。"
+        ],
+        "agentInstallPrompt": "请先安装 Rust 工具链（rustup）。然后执行：git clone https://github.com/amadeusprotocol/node.git && cd node && cargo build --release。构建成功后，执行 ./target/release/amadeus-node --help 查看可用命令。根据提示启动本地节点，建议先运行在测试模式，例如 ./target/release/amadeus-node --testnet。若需要连接现有网络，请查阅 README 或执行 --config 指定配置文件。若编译失败，请检查 Rust 版本并用 cargo update 更新依赖。"
+      }
+    },
+    "repo:marceloprates/prettymaps": {
+      "type": "repo-insight",
+      "hash": "948b70b9e4b78c31009d21fe",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-19T22:40:49.256Z",
+      "value": {
+        "summaryZh": "prettymaps 是一个基于 Python 的开源库，利用 OpenStreetMap 数据快速绘制风格化、高颜值的地图。它整合了 osmnx、matplotlib 和 shapely，能够轻松获取真实地理位置的路网、水域、绿地等要素，并自动生成带有优雅配色与排版的地图海报。用户只需提供地点名称或边界框，即可在几秒钟内产出适合分享或打印的精美地图。该工具非常适合数据可视化爱好者、城市规划师、地理信息开发者以及任何希望以艺术方式呈现城市肌理的人。它简单易用，同时支持深度定制，是探索城市空间与创意制图的绝佳选择。",
+        "scenarios": [
+          "为旅行游记或社交媒体生成具有艺术感的目的地地图海报。",
+          "在城市规划或地理教学中快速制作区域路网与绿地分布示意图。",
+          "为数据报告或演示文稿定制风格统一的城市地图背景。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 prettymaps 库。首先，使用 pip 安装 prettymaps 及其依赖（如 osmnx、matplotlib、shapely）。然后，写一个 Python 脚本，调用 prettymaps 的 plot() 函数，绘制一个你感兴趣的城市（例如 'Lisbon, Portugal'），并保存为 PNG 图片。请确保代码处理网络请求的异常，并给出简单的使用说明。"
+      }
+    },
+    "repo:genlayerlabs/genlayer-project-boilerplate": {
+      "type": "repo-insight",
+      "hash": "7af494979d23890ab5c9f629",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-19T22:40:56.194Z",
+      "value": {
+        "summaryZh": "GenLayer Project Boilerplate 是一个面向 GenLayer 区块链生态的 TypeScript 项目脚手架，为开发者提供开箱即用的智能合约开发环境。它内置了项目结构、构建配置、测试框架示例以及与 GenLayer 网络交互的基础工具，显著降低入门门槛。亮点在于结合了自然语言智能合约特性与标准工程化流程，支持快速迭代和部署。适合希望基于 GenLayer 构建去中心化应用、探索 AI 驱动合约逻辑的开发者，尤其适合快速验证原型和进行概念证明。",
+        "scenarios": [
+          "快速搭建 GenLayer 智能合约项目的基础目录结构和配置，省去手工初始化步骤。",
+          "作为学习 GenLayer 合约开发、跑通测试和部署流程的教学模板。",
+          "在 GenLayer 上开发涉及 AI 语义理解或自然语言处理的去中心化应用时，作为起始代码库。"
+        ],
+        "agentInstallPrompt": "克隆仓库 genlayerlabs/genlayer-project-boilerplate 到本地，进入目录后使用 npm 安装依赖（npm install）。然后查看 package.json 中的 scripts，通常包含 build、test 和 deploy 等命令。先运行 npm test 验证测试环境是否正常，再尝试运行 npm run deploy 或对应脚本启动本地节点并部署示例合约。注意确保 Node.js 版本符合要求，可参照 README 中的指引。如果遇到网络问题，可配置镜像源。"
       }
     }
   }
