@@ -813,17 +813,17 @@
     },
     "repo:nexu-io/open-design": {
       "type": "repo-insight",
-      "hash": "bcf4a0699766ae1daca987f4",
+      "hash": "50b4ba9dc964cd8a4fadab12",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-19T22:05:31.220Z",
+      "generatedAt": "2026-08-19T23:41:59.120Z",
       "value": {
-        "summaryZh": "Open Design 是一款开源、本地优先的桌面应用，作为 Claude Design 的替代方案，它能让你的 AI 编码代理（如 Claude Code、Cursor、Gemini 等）变身为设计引擎。支持生成原型、落地页、仪表盘、幻灯片、图片及视频，并导出为 HTML、PDF、PPTX、MP4 等真实文件。适合需要快速迭代 UI 设计、生成演示文稿或营销素材的开发者和设计师，无需云依赖，数据完全本地化。",
+        "summaryZh": "open-design 是一款开源、本地优先的桌面设计插件，被誉为 DeepSeek Harness 的得力设计工具和 Claude Design 的开源替代品。它能将你的编码代理（如 Claude Code、Codex、Cursor 等 20+ CLI）转变为强大的设计引擎，直接生成原型、落地页、仪表盘、幻灯片、图片和视频等真实文件，并支持导出为 HTML、PDF、PPTX、MP4 等格式。项目采用 TypeScript 构建，强调本地运行与数据隐私，同时通过 BYOK 模式灵活接入各家 AI 服务。适合希望利用 AI 自动化设计流程、快速交付可编辑设计文件的开发者、设计师及产品团队。",
         "scenarios": [
-          "快速生成网页原型和登陆页，用于产品概念验证或客户演示。",
-          "从文本描述自动创建演示文稿（PPTX），节省排版时间。",
-          "即时生成仪表盘或数据可视化图表，导出为 PDF 或 HTML 用于报告。"
+          "快速将产品概念转化为高保真网页原型，并导出为 HTML 供团队预览或二次开发。",
+          "使用自然语言驱动 AI 生成专业演示文稿，直接导出为 PPTX 用于客户汇报。",
+          "自动化创建数据仪表盘或营销视觉素材，输出为 PDF/MP4，提升内容生产与迭代效率。"
         ],
-        "agentInstallPrompt": "请先确保已安装 Node.js（v18+）和 pnpm。然后运行： ```bash git clone https://github.com/nexu-io/open-design.git cd open-design pnpm install pnpm dev ``` 启动后可在浏览器中访问 http://localhost:3000 使用。如需通过 CLI 集成，请参考项目 README 中的 BYOK 配置。"
+        "agentInstallPrompt": "请克隆 https://github.com/nexu-io/open-design 仓库到本地，进入 open-design 目录，然后运行 npm install 安装依赖。安装完成后，先查阅 README.md 了解项目启动方式和配置说明，随后运行 npm run dev 启动开发服务器，或根据 README 指导以开发模式运行桌面应用。如果项目有特殊环境要求（如 Node 版本、原生依赖），请按提示配置。运行成功后，尝试通过界面或 CLI 调用你的 AI 编码代理，生成一个简单的网页原型并导出 HTML 文件，以验证核心流程。"
       }
     },
     "repo:VoltAgent/awesome-openclaw-skills": {
@@ -1188,17 +1188,17 @@
     },
     "repo:harry0703/MoneyPrinterTurbo": {
       "type": "repo-insight",
-      "hash": "3ef89bcaf0392bd3ac022bb0",
+      "hash": "1c4a4779c52cc7e60017999e",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-27T22:00:10.334Z",
+      "generatedAt": "2026-08-20T22:00:28.922Z",
       "value": {
-        "summaryZh": "MoneyPrinterTurbo 是一款利用AI大模型一键生成高清短视频的开源工具。用户只需输入主题或文案，即可自动完成视频脚本生成、素材匹配、字幕添加、配音合成等全流程，输出专业级短片。亮点在于集成多种AI模型（如GPT、Claude）和TTS引擎，支持自定义素材和风格，无需视频编辑经验。适合自媒体创作者、营销人员、教育工作者等需要快速产出视频内容的群体，极大提升创作效率。",
+        "summaryZh": "MoneyPrinterTurbo 是一个基于 Python 的 AI 短视频自动生成工具，只需提供主题或关键词，即可利用大模型生成文案、匹配素材、自动配音并合成高清短视频。它整合了文本生成、语音合成、视频剪辑等环节，支持多语言和多种视频比例，极大降低短视频创作门槛。适合内容创作者、营销人员、自媒体运营者快速批量产出视频，也适合开发者二次集成。项目开源且社区活跃，是自动化内容生产的高效解决方案。",
         "scenarios": [
-          "快速生成营销推广短视频，用于社交媒体或广告投放",
-          "自媒体账号批量制作短视频内容，保持高频更新",
-          "教育机构自动生成课程讲解视频，降低制作成本"
+          "自媒体创作者需要快速生成多个短视频，用于发布到抖音、快手等平台，提升内容产出效率。",
+          "营销人员根据产品关键词自动生成宣传视频，用于广告投放或社交媒体推广，节省制作成本。",
+          "开发者希望集成或定制自动化视频生成流水线，用于批量生产教育、新闻或娱乐类短视频内容。"
         ],
-        "agentInstallPrompt": "克隆仓库：git clone https://github.com/harry0703/MoneyPrinterTurbo.git && cd MoneyPrinterTurbo。安装依赖：pip install -r requirements.txt。配置API密钥：在config.py中填写LLM（如OPENAI_API_KEY）和TTS的密钥。运行：python main.py --topic '你的视频主题' --style '风格'。如需本地LLM，可修改配置使用Ollama等。"
+        "agentInstallPrompt": "请克隆仓库 https://github.com/harry0703/MoneyPrinterTurbo，并按照 README 安装 Python 依赖（如使用 pip install -r requirements.txt）。配置好 API 密钥（如 OpenAI、Azure 等），然后运行 streamlit run app.py 启动 Web 界面。用中文提示词测试生成一个主题为“人工智能发展”的短视频，确保素材下载、语音合成和视频合成流程正常，并输出结果到指定目录。"
       }
     },
     "repo:p-e-w/heretic": {
@@ -1533,17 +1533,17 @@
     },
     "repo:RyanCodrai/turbovec": {
       "type": "repo-insight",
-      "hash": "42dc0b5861810977e621728b",
+      "hash": "10ffe8f1be80ab21a86f6141",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-06-07T22:35:28.267Z",
+      "generatedAt": "2026-08-20T22:01:22.970Z",
       "value": {
-        "summaryZh": "TurboVec 是一个基于 TurboQuant 的高性能向量索引，核心使用 Rust 编写，提供 Python 绑定。它结合了 Rust 的速度与 Python 的易用性，适用于大规模向量的近似最近邻搜索。亮点在于极致的索引构建和查询性能，以及低内存占用。适合需要高效向量检索的 AI 工程师、数据科学家和推荐系统开发者。",
+        "summaryZh": "turbovec 是一个基于 TurboQuant 构建的高性能向量索引库，使用 Rust 开发并提供 Python 绑定。它旨在为大规模向量检索场景提供低延迟、高吞吐的近似最近邻搜索能力。其核心亮点在于利用 TurboQuant 的量化技术压缩向量存储，在保持较高召回率的同时显著降低内存占用和计算开销。适合需要处理海量 embedding 数据的推荐系统、语义搜索、RAG 应用等场景的开发者使用，尤其适合对性能和资源效率有严格要求的团队。该库提供了简洁的 Python API，便于集成进现有 ML 流水线。",
         "scenarios": [
-          "构建大规模相似性搜索引擎，如商品推荐或图像检索。",
-          "增强 RAG（检索增强生成）系统的检索效率，快速匹配语义相关的文本片段。",
-          "实时异常检测，基于向量距离识别数据点偏离程度。"
+          "大规模 embedding 数据的实时相似度检索，如推荐系统召回。",
+          "内存受限环境下的向量索引，利用量化压缩降低资源消耗。",
+          "RAG 应用中文档向量的高效存储与快速查询。"
         ],
-        "agentInstallPrompt": "使用 pip 安装 turbovec：pip install turbovec。试跑示例： from turbovec import TurboVec index = TurboVec(dim=128, index_type='IVF') import numpy as np vectors = np.random.rand(1000, 128).astype(np.float32) index.add(vectors) index.train() query = np.random.rand(1, 128).astype(np.float32) ids, distances = index.search(query, k=10) print(ids, distances)"
+        "agentInstallPrompt": "请先确保已安装 Rust 工具链和 Python 3.8+。然后使用 pip 安装 turbovec 或从源码构建：git clone https://github.com/RyanCodrai/turbovec.git，进入目录，执行 pip install . 构建 Python 绑定。运行示例代码：from turbovec import VectorIndex; idx = VectorIndex(); idx.add(vectors); results = idx.search(query, k)。具体可参考仓库 README。"
       }
     },
     "repo:openai/plugins": {
@@ -2208,17 +2208,17 @@
     },
     "repo:diegosouzapw/OmniRoute": {
       "type": "repo-insight",
-      "hash": "69eb93d272831e4ed5d6e59c",
+      "hash": "8c9b353f948dac00fa416695",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-12T22:01:35.115Z",
+      "generatedAt": "2026-08-19T23:41:45.189Z",
       "value": {
-        "summaryZh": "OmniRoute 是一个免费开源的 AI 网关，基于 TypeScript 构建，提供单一端点接入 330+ 提供商（其中 90+ 免费）和 1200+ 模型，涵盖 Kimi、Claude、GPT、Gemini、GLM、DeepSeek、MiniMax 等主流模型。它兼容 Claude Code、Codex、Cursor、OpenCode、Cline 及 Copilot 等工具，支持配额感知的自动故障转移，并通过 RTK+Caveman 压缩技术节省 15-95% 的 token 消耗。此外，还支持 MCP/A2A 协议，提供桌面端和 PWA 版本。项目由 320+ 贡献者共同维护，适合开发者、AI 应用团队和成本敏感型用户，用于统一管理多模型调用、降低成本并提升可靠性。",
+        "summaryZh": "OmniRoute 是一个免费开源、遵循 MIT 协议的 AI 网关，通过单一端点接入 340+ 提供商、1200+ 模型（含 90+ 免费模型），兼容 Claude Code、Cursor、OpenCode、Cline 等主流 AI 编程工具。它具备配额感知自动回退、RTK+Caveman 压缩节省 15-95% token、支持 MCP/A2A 协议及桌面/PWA 应用等特性。适合需要降低 API 成本、提升调用稳定性的开发者与团队，特别适合多模型路由和智能容灾场景。",
         "scenarios": [
-          "在 Cursor 或 Claude Code 中配置单一网关，自动切换到免费或低价模型，降低 API 调用成本。",
-          "构建多模型应用时，通过统一端点实现模型热切换和故障转移，避免单点依赖。",
-          "需要节省 token 消耗的批量处理场景，利用内置压缩算法减少费用。"
+          "在多 AI 提供商间自动切换，避免因限流或故障导致服务中断，保障关键业务连续性。",
+          "为 Cursor、Claude Code 等编码工具统一配置多个模型，自动选择最便宜或最快的可用模型，显著降低 API 支出。",
+          "在内网或云上部署统一 AI 网关，为团队提供集中化的 API 管理、监控和访问控制，简化集成流程。"
         ],
-        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/diegosouzapw/OmniRoute.git，然后进入目录安装依赖（npm install 或 pnpm install）。根据 README 配置环境变量（如 OPENAI_API_KEY 等），启动服务（npm run dev 或 npm start）。默认监听端口需查看文档，建议使用 curl 测试 /v1/chat/completions 端点，并选择免费模型进行验证。若需在 Claude Code 中使用，请按照文档配置 base_url 指向本地网关。"
+        "agentInstallPrompt": "请克隆仓库 https://github.com/diegosouzapw/OmniRoute，并查看 README 的快速开始部分。使用 npm install 安装依赖，然后根据文档配置环境变量（如 API 密钥）。启动服务后，先调用 /v1/models 端点验证网关可用，再发送一个简单的聊天请求（例如使用免费提供商），确认响应正常。最后测试自动回退功能：故意使用一个无效的模型名称，观察是否自动切换到备用模型，并检查日志中的压缩 token 统计。"
       }
     },
     "repo:alibaba/page-agent": {
@@ -4128,17 +4128,17 @@
     },
     "repo:cathrynlavery/diagram-design": {
       "type": "repo-insight",
-      "hash": "2f1cc5e9e3f053ee906d1b12",
+      "hash": "8167d6e9df919df3778daef5",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-19T22:41:03.620Z",
+      "generatedAt": "2026-08-20T22:01:29.654Z",
       "value": {
-        "summaryZh": "diagram-design 是一个为 Claude Code 量身定制的图表模板集合，提供 27 种“编辑级”类型的自包含 HTML+SVG 图表。它彻底告别了传统 Mermaid 生成的“面条图”，也无需任何外部依赖或阴影效果，每个图表都是独立文件，干净、精准、适合印刷和展示。无论你是想为项目文档绘制架构图、流程图、时间线还是矩阵图，这些模板都能直接复用或微调。特别适合使用 Claude Code 的开发者、技术写作者以及追求极简专业视觉的设计师，能显著提升 AI 辅助绘图的质量与一致性。",
+        "summaryZh": "diagram-design 是一个为 AI 编程工具（如 Claude Code、Codex、Pi）设计的图表模板库，包含 38 种编辑级图表类型。所有图表均采用自包含的 HTML + SVG 实现，无外部依赖，风格简洁明快，明确摒弃阴影和 Mermaid 风格的粗糙输出。该项目旨在提供专业、可直接嵌入的图表方案，适合需要高质量视觉呈现的开发者、内容创作者和 AI 代理场景，可快速生成流程图、架构图、概念图等，并保持设计一致性与印刷级品质。",
         "scenarios": [
-          "在 Claude Code 会话中快速生成精美的架构图或数据流示意图，用于设计文档或代码评审。",
-          "为技术博客或内部维基制作无冗余装饰、风格统一的信息图，提升阅读体验。",
-          "作为代码生成基准，测试 AI 代理是否遵循具体视觉设计规范（如无阴影、无外部库）。"
+          "在 AI 编程助手中快速生成专业、无冗余装饰的 SVG 图表，用于技术文档或演示。",
+          "作为设计师或开发者的图表资源库，直接引用或修改 HTML+SVG 模板以适配具体项目。",
+          "用于自动化工作流，让 AI 代理根据需求挑选合适的图表类型并输出一致风格的视觉内容。"
         ],
-        "agentInstallPrompt": "请先克隆仓库 https://github.com/cathrynlavery/diagram-design 到本地工作目录。然后查看 README 或目录结构，了解 27 种图表模板的组织方式。每个模板都是自包含的 HTML 文件，直接用浏览器打开即可预览。若要与 Claude Code 集成，可将这些模板放入项目的可访问路径（如 docs/diagrams/），并在指令中引用具体模板文件（例如 '用 timeline.html 的样式生成一个项目里程碑图'）。如需修改样式，直接编辑对应 HTML 中的 SVG 部分。试跑时，任选一个模板（如 example.html）打开，确认渲染效果和代码结构。"
+        "agentInstallPrompt": "请克隆仓库 https://github.com/cathrynlavery/diagram-design，并查看 README 或文件结构。该项目为纯 HTML+SVG 图表模板，无需安装依赖。请选择一个示例文件（如 index.html 或 templates 目录下的某个图表），在浏览器中打开验证效果。若需集成，可将 SVG 代码直接复制到目标项目中，或根据需求调整样式属性（如颜色、尺寸）。试跑时建议先运行本地静态文件服务器（如 python -m http.server）以避免浏览器安全限制。"
       }
     },
     "repo:macro-inc/macro": {
@@ -4308,17 +4308,17 @@
     },
     "repo:lightningpixel/modly": {
       "type": "repo-insight",
-      "hash": "7396e62ddb9a0369cbd3e505",
+      "hash": "0d1158c4a6cf0bf90961815f",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-13T22:02:20.123Z",
+      "generatedAt": "2026-08-20T22:01:48.554Z",
       "value": {
-        "summaryZh": "Modly 是一款基于本地 AI 的桌面应用，能够从单张图片直接生成 3D 模型，且完全在用户自己的 GPU 上运行，无需上传数据到云端，保障隐私安全。它利用先进的三维重建算法，将普通照片快速转换为可编辑、可导出的三维网格，支持多种常见格式。亮点在于纯本地处理、低延迟和高可控性，适合需要快速迭代创意的设计师、游戏开发者、3D 打印爱好者以及重视数据隐私的专业人士。无需高端服务器，一台配备 NVIDIA GPU 的消费级电脑即可流畅运行，大幅降低 3D 内容创作门槛。",
+        "summaryZh": "Modly 是一款基于本地 AI 的桌面应用，能够从图像或文本提示词直接生成 3D 模型，所有计算都在本地 GPU 上完成，无需云端依赖。它采用 TypeScript 构建，界面简洁，主打隐私保护和离线可用。适合 3D 设计师、游戏开发者、AI 爱好者快速将概念图或描述转化为可编辑的 3D 资产。亮点在于本地推理、低延迟、数据不出设备，且支持多种输入方式。安装简单，需要配置支持 CUDA 的 GPU 环境。",
         "scenarios": [
-          "产品设计师快速将手绘草图或实物照片转化为 3D 概念模型，用于内部评审或客户演示。",
-          "游戏开发者从概念艺术图中批量生成基础 3D 资产，作为场景原型或占位模型，加速预制作流程。",
-          "3D 打印爱好者和创客将日常物品或雕塑照片转换为可打印的 STL 文件，便于二次修复或直接输出。"
+          "设计师根据产品草图快速生成基础 3D 模型，用于概念验证或初始建模。",
+          "游戏开发者通过文本描述生成游戏内道具或场景元素，加速原型制作。",
+          "在无网络环境中，利用本地 GPU 进行 3D 资产创作，保护敏感设计数据。"
         ],
-        "agentInstallPrompt": "请克隆 GitHub 仓库 https://github.com/lightningpixel/modly，确保系统已安装 Node.js 20+ 和 npm。按照 README 步骤执行：安装依赖（npm install）、下载预训练的 AI 模型（可能需手动放置到 ~/.cache/modly），然后运行 npm run dev 启动开发模式。若使用 Windows，需确认已安装 CUDA 12.x 的 NVIDIA 驱动。应用启动后，通过界面打开一张图片，等待 GPU 推理完成，即可预览并导出生成的 GLB/OBJ 格式 3D 模型。若遇到依赖冲突，请使用 --force 或更新至最新 LTS。"
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/lightningpixel/modly.git，检查 package.json 中的脚本。确保系统已安装 Node.js 和 npm，并具备支持 CUDA 的 NVIDIA GPU。运行 npm install 安装依赖，然后执行 npm run dev 启动开发模式。若遇到原生模块问题，请参考 README 中的平台特定说明。启动后，通过界面导入图片或输入提示词，即可生成 3D 模型。"
       }
     },
     "repo:PrismML-Eng/Bonsai-demo": {
@@ -4424,6 +4424,261 @@
           "在 GenLayer 上开发涉及 AI 语义理解或自然语言处理的去中心化应用时，作为起始代码库。"
         ],
         "agentInstallPrompt": "克隆仓库 genlayerlabs/genlayer-project-boilerplate 到本地，进入目录后使用 npm 安装依赖（npm install）。然后查看 package.json 中的 scripts，通常包含 build、test 和 deploy 等命令。先运行 npm test 验证测试环境是否正常，再尝试运行 npm run deploy 或对应脚本启动本地节点并部署示例合约。注意确保 Node.js 版本符合要求，可参照 README 中的指引。如果遇到网络问题，可配置镜像源。"
+      }
+    },
+    "repo:public-apis/public-apis": {
+      "type": "repo-insight",
+      "hash": "4226875751c7c051e297f5af",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-19T23:41:22.711Z",
+      "value": {
+        "summaryZh": "public-apis 是一个由社区维护的免费 API 公共列表，收录了数百个无需认证或开放授权的接口，涵盖动物、动漫、天气、金融、游戏、音乐等多个领域。项目以 README 表格形式呈现，每个 API 附有描述、认证方式与 HTTPS 支持情况，便于开发者快速检索和评估。它并非一个运行库，而是资源索引，适合需要快速寻找测试数据、搭建 Demo 或探索第三方服务的开发者使用。亮点在于覆盖面广、持续更新，且提供贡献指南，任何人都可以提交新 API。对于希望节省调研时间、专注业务逻辑的开发者来说，这是一个高效的工具入口。",
+        "scenarios": [
+          "在开发个人项目或 Hackathon 时，快速查找合适的免费 API 作为数据源，例如天气、笑话或加密货币行情。",
+          "学习前后端联调或测试接口时，从列表中选择无需认证的 API，快速搭建可运行的示例代码。",
+          "为开源项目或教程寻找演示数据，通过列表筛选出支持 CORS 的 API，避免跨域和鉴权问题。"
+        ],
+        "agentInstallPrompt": "请克隆 public-apis 仓库（git clone https://github.com/public-apis/public-apis.git），该项目为纯文档列表，无需安装依赖。可先打开 README.md 查看整体结构，然后使用脚本或手动方式解析 Markdown 表格，提取 API 名称、描述、认证和 HTTPS 字段，并随机选择 3 个 API 进行实际请求测试（建议优先选择无需认证的，如 https://api.publicapis.org/entries 或 poetrydb.org），验证可用性后将结果输出为 JSON 文件。注意部分 API 可能已失效，请忽略无法访问的条目。"
+      }
+    },
+    "repo:AlexsJones/llmfit": {
+      "type": "repo-insight",
+      "hash": "80c62eb06658de3a22c30c6a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-19T23:41:27.900Z",
+      "value": {
+        "summaryZh": "llmfit 是一个用 Rust 编写的命令行工具，旨在帮助用户快速找出其硬件能够运行的数百种大语言模型和提供商。它通过一条简单的命令，自动检测本机硬件（如 GPU、CPU、内存）的性能，并匹配出兼容的模型列表。该工具特别适合本地模型部署者、AI 开发者以及需要评估硬件能力的极客用户。其亮点在于支持广泛的模型生态，简化了模型选型过程，无需手动查阅大量文档即可获得可运行的模型候选。",
+        "scenarios": [
+          "在购买新电脑或升级硬件后，用 llmfit 快速确认哪些大语言模型可以在本地顺畅运行，避免踩坑。",
+          "开发 AI 应用时，需要依据目标用户的硬件条件选择兼容的模型，llmfit 可批量生成候选清单。",
+          "对多台异构设备进行模型部署前的兼容性巡检，统一用一条命令输出结果，便于自动化集成。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/AlexsJones/llmfit，查看 README 了解安装依赖，使用 cargo build --release 编译项目。然后运行 llmfit --help 查看命令选项，再执行 llmfit suggest 或类似命令（具体以帮助为准）测试当前硬件，输出推荐的模型列表。确保环境已安装 Rust 工具链，若缺少依赖请按提示安装。"
+      }
+    },
+    "repo:superradcompany/microsandbox": {
+      "type": "repo-insight",
+      "hash": "cb5f72abbed6252fee30aabf",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-19T23:41:31.829Z",
+      "value": {
+        "summaryZh": "microsandbox 是一个用 Rust 编写的轻量级、快速且本地优先的 microVM 运行时和库。它专注于提供简单易用的 API，让开发者能够轻松地在本地环境创建和管理微型虚拟机，实现进程级隔离与沙箱功能。项目强调性能与资源效率，适合作为嵌入式沙箱、边缘计算或持续集成中的安全隔离基础。其本地优先特性使得离线开发环境也能流畅运行。",
+        "scenarios": [
+          "在本地开发环境中快速启动多个隔离的微虚拟机，用于测试不受信任的代码或依赖。",
+          "作为持续集成/持续部署流水线中的安全沙箱，执行构建步骤或测试用例。",
+          "嵌入到桌面应用或边缘设备中，为插件或用户脚本提供轻量级隔离运行环境。"
+        ],
+        "agentInstallPrompt": "请先确保系统已安装 Rust 工具链（rustc 和 cargo）。然后执行以下命令：git clone https://github.com/superradcompany/microsandbox && cd microsandbox && cargo build --release。构建完成后，可通过运行 cargo run --example 查看示例，或根据 README 中的说明编写代码调用库功能。若遇依赖问题，请使用 cargo update 或参考官方文档调整。"
+      }
+    },
+    "repo:CodebuffAI/freebuff": {
+      "type": "repo-insight",
+      "hash": "088b652563335d18a88589bc",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-19T23:41:36.687Z",
+      "value": {
+        "summaryZh": "freebuff 是一个基于 TypeScript 构建的免费开源编码代理，旨在为开发者提供自动化的代码生成、修改与重构能力。它能够理解自然语言指令，在本地或远程仓库中执行常见的编程任务，如编写单元测试、修复 bug、实现新功能等。该项目强调零成本接入，支持与主流 IDE 或命令行工作流集成，适合个人开发者、小型团队以及希望在 CI/CD 中引入 AI 辅助编程的用户。其核心亮点是开放源码、透明可控，且无需付费订阅即可获得类似商业编码助手的核心体验。",
+        "scenarios": [
+          "为现有代码库自动生成单元测试用例，提升测试覆盖率",
+          "根据自然语言描述快速实现新功能或模块骨架",
+          "在 CI 流水线中自动修复简单的代码风格或静态检查问题"
+        ],
+        "agentInstallPrompt": "请先克隆项目：git clone https://github.com/CodebuffAI/freebuff.git，然后进入目录并安装依赖：npm install。查看 package.json 中的 scripts 了解构建和启动方式，通常可以使用 npm run dev 或 npm start 启动交互式代理服务。根据 README 中的说明配置必要的环境变量（如 API 密钥或模型端点）。启动后，尝试输入一个简单的编码任务（例如“为这个项目的 utils 目录添加一个加法函数”），观察输出结果。如果遇到问题，请查看日志并调整配置。"
+      }
+    },
+    "repo:deepseek-ai/deepseek-harness": {
+      "type": "repo-insight",
+      "hash": "72bb24722476820324fa2a13",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-19T23:41:51.030Z",
+      "value": {
+        "summaryZh": "DeepSeek Harness 是 DeepSeek 推出的插件化开发框架，基于 TypeScript 构建，核心设计理念是“一切皆插件”。它提供了一套灵活的事件驱动与模块解耦机制，使开发者能快速组装、扩展和替换各类功能组件，从而高效搭建面向深度求索场景的工具链或应用底座。亮点在于极低的耦合度、丰富的插件接口和开箱即用的脚手架，适合需要高度定制化流程的 AI 应用开发者、研究团队以及希望将复杂系统拆解为可插拔模块的工程师。无论是构建模型评估流水线、自动化数据处理工具，还是研发可扩展的 AI 工作台，都能显著提升开发效率与可维护性。",
+        "scenarios": [
+          "构建自定义的模型评估与测试流水线，通过插件灵活接入不同数据集和指标。",
+          "开发可扩展的 AI 工具平台，将数据预处理、推理、后处理等环节解耦为独立插件。",
+          "快速原型验证新想法，利用插件机制热插拔组件，降低系统集成成本。"
+        ],
+        "agentInstallPrompt": "首先克隆仓库：git clone https://github.com/deepseek-ai/deepseek-harness.git，然后进入目录执行 npm install 或 pnpm install（依赖包管理器）。查看 package.json 中的 scripts，通常会有 build 和 dev 命令。运行 npm run build 编译 TypeScript，再运行 npm run dev 启动开发模式。根据 README 中的示例，创建一个插件文件并在配置中注册，然后调用核心 harness 加载插件，测试基本功能。确保 Node.js 版本 >= 18，并检查环境变量是否满足要求。如果项目含测试用例，运行 npm test 验证框架是否正常。"
+      }
+    },
+    "repo:modular/modular": {
+      "type": "repo-insight",
+      "hash": "cbaaa983227525cccc6913fd",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-20T22:00:13.267Z",
+      "value": {
+        "summaryZh": "Modular Platform 是一个面向 AI 和高性能计算的开源平台，包含 MAX 运行时和 Mojo 编程语言。Mojo 融合了 Python 的易用性与 C 的性能，支持 Python 生态，并可将 Python 代码直接编译为高性能二进制。MAX 提供统一的 AI 推理与训练运行时，可加速大模型部署。该项目适合 AI 工程师、高性能计算开发者以及希望在不牺牲性能的前提下提升开发效率的团队。亮点是极致的性能、Python 兼容性以及端到端的 AI 工作流支持。",
+        "scenarios": [
+          "使用 Mojo 编写高性能 AI 推理服务，替代 Python 原型以降低延迟和资源消耗。",
+          "将现有 Python 机器学习项目迁移至 Mojo，利用其编译优化加速模型训练或推理。",
+          "利用 MAX 运行时在异构硬件（CPU/GPU）上部署大语言模型，简化生产环境配置。"
+        ],
+        "agentInstallPrompt": "请先安装 Modular CLI：curl -s https://get.modular.com | sh -，然后运行 modular auth 登录（若无账号可跳过）。克隆本仓库：git clone https://github.com/modular/modular.git，进入目录后运行 modular install max 与 modular install mojo。推荐先尝试 examples/hello_world.mojo：使用 mojo run examples/hello_world.mojo 运行。若要体验 MAX 推理，可参考 examples/llama 目录，按 README 加载模型并启动服务。注意：Mojo 需要 Python 3.9-3.11 环境，并确保已安装 cmake 和 ninja-build。"
+      }
+    },
+    "repo:AprilNEA/OpenLogi": {
+      "type": "repo-insight",
+      "hash": "03531b72e61d30201d9f1645",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-20T22:00:19.459Z",
+      "value": {
+        "summaryZh": "OpenLogi 是一款用 Rust 编写的罗技外设本地配置工具，旨在替代 Logitech Options+。它通过 HID++ 协议直接与设备通信，支持按钮重映射、DPI 调节和 SmartShift 功能。该工具强调本地优先，无需账户登录，无遥测数据收集，保护用户隐私。其原生性能出色，占用资源少，适合追求高效、安全和可定制性的罗技外设用户。无论是游戏玩家、设计师还是开发者，都能通过它精细调整鼠标行为，提升工作效率。",
+        "scenarios": [
+          "在 Windows、macOS 或 Linux 上无根权限地调整罗技鼠标的 DPI 和按键功能，避免安装臃肿的官方软件。",
+          "为游戏或专业软件创建特定的按键映射，如将侧键绑定为组合键，并启用 SmartShift 切换滚轮模式。",
+          "关注隐私，希望完全离线管理罗技设备，避免任何遥测数据上传和强制更新。"
+        ],
+        "agentInstallPrompt": "请先确保系统已安装 Rust 工具链（rustc 和 cargo）。然后执行 git clone https://github.com/AprilNEA/OpenLogi.git && cd OpenLogi，阅读 README 了解依赖要求（如 libudev 或 hidapi 相关系统库），根据你的操作系统安装所需依赖后，运行 cargo build --release 进行编译。编译完成后，将罗技设备连接到电脑，运行 ./target/release/openlogi 或相关子命令查看帮助，并尝试列出设备，再逐步测试按钮重映射和 DPI 调节功能。若遇到权限问题，请检查 udev 规则或设备访问权限。"
+      }
+    },
+    "repo:akitaonrails/ai-memory": {
+      "type": "repo-insight",
+      "hash": "8d7d067914774bde8e2be158",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-20T22:00:24.416Z",
+      "value": {
+        "summaryZh": "ai-memory 是一个基于 Rust 开发的长期记忆解决方案，专为 AI 编码命令行工具（CLI）设计。它帮助不同供应商的 AI 代理之间实现无缝交接，通过持久化存储上下文、决策历史和项目状态，确保连续会话中不丢失关键信息。亮点包括轻量高效、跨代理兼容、易于集成到现有 CLI 工作流。适合使用多种 AI 编码助手、需要稳定记忆与协作交接的开发者或团队。",
+        "scenarios": [
+          "当开发者切换不同 AI 编码代理时，保留项目上下文和决策记录，实现平滑交接。",
+          "在长时间编码任务中，为 CLI 工具提供持久记忆，避免重复解释需求。",
+          "团队协作时，共享 AI 代理的记忆数据，提升跨成员的代码维护一致性。"
+        ],
+        "agentInstallPrompt": "请先确保系统已安装 Rust 工具链（rustup）。然后克隆仓库：git clone https://github.com/akitaonrails/ai-memory.git。进入目录后运行 cargo build --release 以编译。编译完成后，可执行文件位于 target/release/ai-memory。运行 ./target/release/ai-memory --help 查看帮助，并使用 --init 初始化记忆存储。根据 README 中的示例，尝试将 ai-memory 集成到你的 AI CLI 工作流中，记录一次编码会话并验证记忆持久化。"
+      }
+    },
+    "repo:agent-substrate/substrate": {
+      "type": "repo-insight",
+      "hash": "ecf4da329c578a35ce117e51",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-20T22:00:33.917Z",
+      "value": {
+        "summaryZh": "Agent Substrate 是一个用 Go 语言实现的智能体核心系统，旨在为构建自主 AI Agent 提供基础运行时和开发框架。它专注于简化 Agent 的创建、调度与生命周期管理，内置消息传递、工具调用和状态持久化等关键能力。项目设计强调模块化与可扩展性，适合需要将 Agent 能力集成到后端服务的开发者。其亮点包括轻量级、高并发支持以及与现有 Go 生态的无缝衔接，是搭建可靠 Agent 基础设施的不错选择。",
+        "scenarios": [
+          "在 Go 服务中集成自主 Agent 以处理复杂业务逻辑，如自动化运维或客服对话。",
+          "作为多 Agent 协作框架的底座，管理 Agent 间的消息路由和任务分配。",
+          "为需要高并发、低延迟 Agent 响应的后端系统提供核心运行时支持。"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Go 1.20+，然后执行 `git clone https://github.com/agent-substrate/substrate.git` 并进入目录。阅读 README 了解项目结构，运行 `go mod tidy` 安装依赖，再通过 `go run ./cmd/example` 启动示例。若需要测试功能，可运行 `go test ./...`。尝试修改示例代码中的 Agent 行为，观察消息处理和状态变化，以快速上手。"
+      }
+    },
+    "repo:chaitanyagiri/munder-difflin": {
+      "type": "repo-insight",
+      "hash": "5c86f7e6bb7af7622722295c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-20T22:00:39.643Z",
+      "value": {
+        "summaryZh": "Munder Difflin 是一个基于 TypeScript 构建的本地多智能体（multi-agent）编排框架，旨在帮助开发者在本地环境中轻松协调多个 AI 代理完成复杂任务。它强调数据隐私与自主控制，无需依赖云端服务即可运行。项目亮点是轻量级、易于集成，并提供了清晰的 API 来定义代理行为与通信机制。适合希望构建自主工作流、探索多代理协作模式的 AI 应用开发者、自动化爱好者及隐私敏感型项目团队。",
+        "scenarios": [
+          "在本地开发环境中编排多个 AI 代理，协同完成代码分析、文档生成或数据处理等复杂任务。",
+          "构建一个自主执行多步骤操作的私人助理，如自动整理邮件、安排日程并生成报告。",
+          "在不依赖云端 API 的情况下，测试和验证多代理系统的通信协议与决策逻辑。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/chaitanyagiri/munder-difflin 到本地，确保已安装 Node.js 和 npm。进入项目目录后运行 npm install 安装依赖。然后查看 README.md 了解示例用法，运行 npm run example 或根据 package.json 中的脚本执行一个示例来体验多代理协作流程。"
+      }
+    },
+    "repo:mahlernim/google-timeline-visualizer": {
+      "type": "repo-insight",
+      "hash": "dbb806ce8a2ba6d6f5167093",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-20T22:00:46.628Z",
+      "value": {
+        "summaryZh": "google-timeline-visualizer 是一个基于 Kotlin 构建的开源工具，旨在利用 Google 位置历史（Timeline）数据可视化你的年度旅行轨迹。它能够解析导出的 JSON 数据，在地图上呈现你去过的地方，并生成统计信息或路线图。该工具亮点在于将原始位置数据转化为直观的视觉呈现，帮助用户回顾一年中的移动历程。适合希望探索个人位置数据、喜欢数据可视化、或想记录旅行足迹的开发者与隐私爱好者。它可能提供命令行或图形界面，具体使用方式需查看项目文档。",
+        "scenarios": [
+          "个人年度旅行回顾：将全年 Google 位置历史导出数据，生成可视化地图，直观看到去过的地方和移动路线。",
+          "数据分析与探索：解析和处理位置历史 JSON 数据，用于学习 Kotlin 数据处理或验证地理可视化算法。",
+          "隐私审计与自查：帮助用户检查自己位置历史数据的覆盖范围和持久性，提高对隐私的认知。"
+        ],
+        "agentInstallPrompt": "请帮我安装并运行 mahlernim/google-timeline-visualizer 项目。首先克隆仓库：git clone https://github.com/mahlernim/google-timeline-visualizer.git。然后进入项目目录，查看 README 或 build.gradle 文件，确认构建工具（如 Gradle）和依赖要求。由于是 Kotlin 项目，请确保安装了 JDK 和 Android SDK（如果需要）。使用 Gradle 命令构建项目，例如 ./gradlew build 或 ./gradlew run。如果项目有命令行参数，请解析其用法并运行一个示例，可能需要提供 Google 位置历史导出的 JSON 文件。若没有示例数据，可参考 README 中的指引或生成模拟数据。最终将运行结果或输出展示给我。"
+      }
+    },
+    "repo:volcengine/OpenViking": {
+      "type": "repo-insight",
+      "hash": "77d4d86d34dbc9f61bb51832",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-20T22:00:51.839Z",
+      "value": {
+        "summaryZh": "OpenViking 是火山引擎开源的面向 AI Agent 的自进化上下文数据库，用 Python 实现。它统一管理 Agent 的记忆、知识库 RAG 与技能调用，使 Agent 能动态积累经验并持续优化自身行为。核心亮点是“自进化”能力，系统可根据对话历史自动整理长期记忆，提升检索相关性与回答质量。适合需要构建复杂记忆体系、知识增强生成及长期自主学习能力的 AI 应用开发者，尤其适用于聊天机器人、个人助理和智能客服等场景。项目集成简单，提供多层记忆抽象，有助于降低 Agent 应用开发成本。",
+        "scenarios": [
+          "构建具有长期记忆的对话式 AI 助手，实现跨会话的用户偏好与上下文理解",
+          "为知识密集型应用提供动态更新的 RAG 知识库，自动提取并整合最新领域信息",
+          "开发可积累和复用工具使用技能的 Agent，通过历史调用优化后续任务执行策略"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/volcengine/OpenViking 仓库，检查 Python 版本要求（建议 3.9+），创建虚拟环境并执行 pip install -r requirements.txt。阅读 README 中的快速上手部分，运行示例脚本（如 examples/ 下的 demo），验证基础记忆存储与检索功能。若有 Docker 依赖，请启动相关服务。尝试初始化 OpenViking 客户端，调用其 API 写入一条自定义记忆并查询，确保端到端流程畅通。"
+      }
+    },
+    "repo:makeplane/plane": {
+      "type": "repo-insight",
+      "hash": "23c4da775a42795ea7bdf0ff",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-20T22:01:04.425Z",
+      "value": {
+        "summaryZh": "Plane是一个开源的项目管理平台，旨在替代Jira、Linear、Monday和ClickUp等商业工具。它提供任务管理、冲刺迭代、文档协作和问题分类等核心功能，界面现代简洁。Plane采用TypeScript构建，支持自托管，团队可完全掌控数据并灵活定制工作流。其亮点在于功能全面、开源免费，拥有活跃的社区支持。适合需要自托管、注重数据安全、希望从商业工具迁移或寻求高性价比方案的团队。",
+        "scenarios": [
+          "团队需要自托管项目管理工具，确保数据隐私和安全性。",
+          "从Jira等商业工具迁移，寻找无缝替代方案并降低成本。",
+          "需要同时管理任务、文档和冲刺的一体化平台。"
+        ],
+        "agentInstallPrompt": "请将makeplane/plane仓库克隆到本地，进入项目根目录。确保已安装Docker和Docker Compose。运行`cp .env.example .env`，然后编辑.env文件设置必要的环境变量（如数据库密码）。接着运行`docker compose up -d`来启动所有服务。等待容器启动完成后，通过浏览器访问http://localhost:8080即可进行初步试用。如果遇到问题，可参考项目README中的Troubleshooting部分。"
+      }
+    },
+    "repo:Tencent/AI-Infra-Guard": {
+      "type": "repo-insight",
+      "hash": "b4f5faa7e6f4d9f8b32c05bb",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-20T22:01:15.925Z",
+      "value": {
+        "summaryZh": "AI-Infra-Guard 是腾讯开源的 AI 红队测试平台，提供全栈安全防护能力。它支持 Agent 扫描、技能扫描、MCP 扫描、AI 基础设施扫描以及 LLM 越狱评估，帮助安全团队在 AI 应用上线前发现潜在漏洞。项目采用 Python 开发，模块化设计，覆盖 AI 生态的各个层面，既适用于安全研究人员进行深度渗透测试，也便于开发者集成到 CI/CD 流水线中。通过自动化扫描和评估，显著降低 AI 系统的安全风险，是构建可信 AI 基础设施的重要工具。",
+        "scenarios": [
+          "在部署 AI Agent 前，对自定义技能和工具调用链进行安全扫描，检测 prompt 注入和权限绕过风险。",
+          "对 MCP 服务的端点、认证和数据处理流程进行安全评估，防止数据泄露和非法访问。",
+          "对内部 LLM 应用执行越狱攻击模拟，评估模型在对抗性输入下的安全性和鲁棒性。"
+        ],
+        "agentInstallPrompt": "请克隆 Tencent/AI-Infra-Guard 仓库，阅读 README 了解安装和使用方式。然后使用 Python 3.9+ 创建虚拟环境并安装依赖。运行 `python main.py --help` 查看可用命令，根据帮助信息对本地或测试目标执行一次包含 agent、mcp 和 infra 扫描的完整评估。如果遇到依赖问题，请根据错误提示修复。最后将扫描结果保存到 report 目录。"
+      }
+    },
+    "repo:basecamp/omarchy": {
+      "type": "repo-insight",
+      "hash": "bfaedfc48060a29db800d975",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-20T22:01:37.745Z",
+      "value": {
+        "summaryZh": "Omarchy 是由 Basecamp（37signals）推出的定制 Linux 发行版，基于 Arch Linux，内置了 DHH（David Heinemeier Hansson）个人偏好的完整开发环境。它采用 Awesome 窗口管理器，预配置了终端、编辑器、主题和常用工具，追求美观、现代且“固执己见”的体验。开箱即用，适合希望直接拥有高效开发环境、认同 Basecamp 技术栈或想探索品味独特 Linux 桌面的开发者。",
+        "scenarios": [
+          "在物理机或虚拟机上安装 Omarchy，快速获得预设好的开发工作站环境，省去手动配置的时间。",
+          "体验 DHH 与 Basecamp 团队推崇的 Linux 桌面布局和工具链，感受其高效的窗口管理和终端工作流。",
+          "对 Arch Linux 感兴趣但希望有现成配置的开发者，可作为入门或日常使用的个性化发行版。"
+        ],
+        "agentInstallPrompt": "请先下载 Omarchy 的最新 ISO 镜像（可从官网或 GitHub Release 获取），然后在虚拟机或物理机上启动安装。安装过程遵循 Arch Linux 的标准流程（如分区、格式化、安装基础系统），但 Omarchy 提供了交互式安装脚本，你可以通过运行 `omarchy-install` 或根据 README 中的指引完成。安装完成后重启进入系统，桌面环境会自动加载。如需进一步验证，可打开终端检查预装工具（如 Git、Ruby、Neovim）及 Awesome WM 配置是否生效。若在虚拟机中测试，请确保启用硬件加速。"
+      }
+    },
+    "repo:megadose/holehe": {
+      "type": "repo-insight",
+      "hash": "a68202ce37e1558b90c967a1",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-20T22:01:43.503Z",
+      "value": {
+        "summaryZh": "holehe 是一款开源的 Python 命令行工具，用于检测指定邮箱是否已在 Twitter、Instagram 等众多网站注册。它通过模拟网站的“忘记密码”流程，根据响应差异判断邮箱关联情况，并尽可能提取公开信息。该工具支持多线程批量检查，可输出多种格式，适合安全研究人员、隐私保护者及运营人员使用。其亮点在于无需登录、操作简单、结果准确，且支持自定义网站列表，能有效帮助用户了解邮箱暴露范围。",
+        "scenarios": [
+          "安全审计：评估企业员工邮箱在外部平台的使用情况，识别潜在钓鱼攻击面。",
+          "隐私自查：个人用户检查自己的邮箱注册过哪些网站，清理不必要账号以降低泄露风险。",
+          "调查取证：在获授权的情况下，用于追踪某个邮箱地址在互联网上的足迹，辅助社工分析。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 holehe 项目。首先，执行 `pip install holehe` 或 `git clone https://github.com/megadose/holehe.git && cd holehe && pip install .`。安装完成后，运行 `holehe --help` 查看帮助，并尝试使用命令 `holehe test@gmail.com --only-used` 检查 gmail 邮箱在已注册网站上的使用情况。如果命令行工具不可用，也可以尝试 `python3 -m holehe test@gmail.com --only-used`。请确保 Python 3.6+ 环境已安装。"
+      }
+    },
+    "repo:unslothai/unsloth": {
+      "type": "repo-insight",
+      "hash": "4905904498855d7606bebac6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-20T22:01:53.358Z",
+      "value": {
+        "summaryZh": "Unsloth 是一个专注于本地运行和微调大语言模型及扩散模型的高性能工具，提供简洁的 UI 界面。它支持包括 Qwen3.8、Kimi K3、MiniMax-H3、Gemma 4、DeepSeek-V4、FLUX 在内的多种前沿模型，以极低的显存占用和更快的训练速度著称。其核心优势在于优化的内核和动态量化技术，使个人开发者能在消费级 GPU 上完成原本需要更高配置的任务。适合需要快速实验、微调或私有化部署的 AI 工程师、研究者和爱好者。",
+        "scenarios": [
+          "在本地 GPU 上对大型语言模型进行参数高效微调，如使用 LoRA 适配特定领域数据。",
+          "快速运行和体验最新的开源模型，如 DeepSeek-V4 或 Qwen3，无需复杂配置。",
+          "在资源受限的环境下，利用其显存优化技术运行或训练 FLUX 等扩散模型。"
+        ],
+        "agentInstallPrompt": "请帮我安装并运行 unsloth/unsloth 项目。首先克隆仓库：git clone https://github.com/unslothai/unsloth.git，然后创建 Python 虚拟环境并安装依赖（pip install -r requirements.txt 或 pip install unsloth）。注意需要 CUDA 环境，确保已安装 PyTorch 和适配的 CUDA 版本。启动本地 UI 的命令通常是 python app.py 或根据 README 指引，请查阅 README 确认。目标是在本地启动一个可交互的 web 界面，支持加载至少一个模型（如 Qwen2.5-7B 或更小）进行推理或微调。如果遇到显存不足，可以尝试使用 4bit 量化。"
       }
     }
   }
