@@ -603,17 +603,17 @@
     },
     "repo:ruvnet/ruflo": {
       "type": "repo-insight",
-      "hash": "195c4842e8c99c0a8898a866",
+      "hash": "c38f49fc3c1bac0e92f374c5",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:50:39.818Z",
+      "generatedAt": "2026-08-21T22:00:19.823Z",
       "value": {
-        "summaryZh": "Ruflo 是基于 TypeScript 的领先代理编排平台，专为 Claude 设计，用于部署智能多智能体群、协调自主工作流和构建对话式 AI 系统。其核心亮点包括企业级架构、自学习群体智能、RAG（检索增强生成）集成以及对 Claude Code / Codex 的原生支持。适合开发者和 AI 工程师需要快速搭建复杂多代理协同场景，例如智能客服、自动化流程与知识问答，降低集成门槛并提升系统扩展性。",
+        "summaryZh": "ruflo 是一个基于 TypeScript 构建的智能体元框架，旨在部署多智能体协作系统、协调自主工作流并构建对话式 AI。它提供自适应记忆、自学习机制、RAG 集成以及原生支持 Claude Code、Codex、Hermes 等主流模型。适合需要构建复杂多智能体应用、自动化流程或个性化对话助手的开发者，尤其适合追求灵活集成与可扩展性的团队。",
         "scenarios": [
-          "构建多智能体协作的智能客服系统，通过自学习群体智能优化对话分配与响应质量。",
-          "自动化企业工作流编排，如将 RAG 集成到审批流程中，实现智能文档检索与决策支持。",
-          "利用 Claude Code 原生集成，快速搭建基于多代理的代码审查与自动补全工具。"
+          "构建多智能体协作平台，如自动客服、研究助手等，实现任务分解与协同决策。",
+          "构建企业级 RAG 问答系统，结合自适应记忆提升知识检索与回答的准确性。",
+          "开发自学习型对话机器人，通过交互反馈持续优化模型行为与回复策略。"
         ],
-        "agentInstallPrompt": "首先确保已安装 Node.js 18+ 和 pnpm（或 npm）。使用命令 `git clone https://github.com/ruvnet/ruflo.git` 克隆仓库。进入目录 `cd ruflo`，然后运行 `pnpm install` 安装所有依赖。复制 `.env.example` 为 `.env`，在其中填入你的 Claude API 密钥（ANTHROPIC_API_KEY）以及其他可选配置（如 OpenAI 或本地模型）。若需启动开发模式，运行 `pnpm dev`；要运行内置示例，执行 `pnpm run example` 即可观察多智能体工作流的运行效果。"
+        "agentInstallPrompt": "请克隆仓库 https://github.com/ruvnet/ruflo ，安装 Node.js 和 npm 依赖。先运行 `npm install`，然后查看 README 或示例代码。在项目根目录创建你的第一个智能体配置，调用核心 API 启动一个简单对话循环。确保 TypeScript 编译通过，并尝试集成一个你熟悉的模型（如 Claude Code 或 OpenAI），运行演示用例。"
       }
     },
     "repo:yikart/AiToEarn": {
@@ -4679,6 +4679,111 @@
           "在资源受限的环境下，利用其显存优化技术运行或训练 FLUX 等扩散模型。"
         ],
         "agentInstallPrompt": "请帮我安装并运行 unsloth/unsloth 项目。首先克隆仓库：git clone https://github.com/unslothai/unsloth.git，然后创建 Python 虚拟环境并安装依赖（pip install -r requirements.txt 或 pip install unsloth）。注意需要 CUDA 环境，确保已安装 PyTorch 和适配的 CUDA 版本。启动本地 UI 的命令通常是 python app.py 或根据 README 指引，请查阅 README 确认。目标是在本地启动一个可交互的 web 界面，支持加载至少一个模型（如 Qwen2.5-7B 或更小）进行推理或微调。如果遇到显存不足，可以尝试使用 4bit 量化。"
+      }
+    },
+    "repo:microsoft/TypeScript": {
+      "type": "repo-insight",
+      "hash": "2ceb7bc53b3848f6b8ad2926",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-21T22:00:10.765Z",
+      "value": {
+        "summaryZh": "TypeScript 是 JavaScript 的超集，由微软开发并维护，它通过添加静态类型、接口、泛型等特性，使 JavaScript 开发更可靠、可维护。项目核心是一个高性能的编译器，能够将 TypeScript 代码转换为干净的 JavaScript，支持最新的 ECMAScript 标准。其亮点包括强大的类型推断、丰富的 IDE 工具支持（如自动补全、重构）、以及渐进式引入，适合大型项目或团队协作。无论是前端、后端（Node.js）还是全栈开发者，均可借助 TypeScript 提升代码质量与开发效率，尤其适合需要长期维护的复杂应用。",
+        "scenarios": [
+          "大型前端项目的类型安全与代码重构，如 React/Vue 应用开发。",
+          "Node.js 后端服务开发，利用接口与泛型提高代码健壮性。",
+          "团队协作时通过类型定义文档化接口，降低沟通成本。"
+        ],
+        "agentInstallPrompt": "请克隆 microsoft/TypeScript 仓库，然后安装依赖（运行 npm install）。接着构建编译器（运行 npm run build）。试跑：创建一个简单的示例文件 test.ts，内容为 `function greet(name: string): string { return `Hello ${name}`; } console.log(greet('World'));`，然后使用构建产物 `node built/local/tsc.js test.ts` 编译，输出 test.js 并运行验证。最后运行现有测试套件 `npm test` 确保环境正常。"
+      }
+    },
+    "repo:TryGhost/Ghost": {
+      "type": "repo-insight",
+      "hash": "b5d8bee719c852deb99373e1",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-21T22:00:15.552Z",
+      "value": {
+        "summaryZh": "Ghost 是一个开源、独立的现代发布平台，专注于内容创作、会员管理、订阅与新闻通讯。它采用 Node.js 构建，提供简洁优雅的写作界面和可定制的前端主题，支持多用户协作、SEO 优化、集成分析工具及邮件营销。其核心理念是让创作者拥有内容自主权，避免依赖封闭的第三方平台。平台功能完善，性能出色，适合博客、新闻媒体、在线杂志以及希望建立私域会员体系的个人或团队。通过自托管或官方托管服务，用户能快速搭建专业、高速、安全的在线出版站点。",
+        "scenarios": [
+          "独立博客或媒体网站：需要高效发布文章、管理多作者、并实现 SEO 优化。",
+          "会员订阅与付费内容：希望向读者提供会员专区、付费订阅、定期新闻通讯。",
+          "内容变现与私域运营：需要集成邮件营销、数据分析，构建用户成长体系。"
+        ],
+        "agentInstallPrompt": "请先确保环境已安装 Node.js（建议 v18+）和 MySQL 8+，然后执行：git clone https://github.com/TryGhost/Ghost.git && cd Ghost && yarn setup，配置 .env 文件并设置数据库连接，最后运行 yarn dev 启动开发服务器，访问 http://localhost:2368 验证。若使用 Docker，可运行 docker run -d --name ghost -p 3001:2368 -e url=http://localhost:3001 ghost:latest。"
+      }
+    },
+    "repo:apache/maka": {
+      "type": "repo-insight",
+      "hash": "1685b7df57da860de8754ee8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-21T22:00:23.773Z",
+      "value": {
+        "summaryZh": "Apache Maka（孵化中）是一个本地优先的AI智能体工作空间，基于TypeScript构建。它以仅追加日志的形式记录模型消息、工具调用、工具结果、权限决策和终止事件，确保操作全程可追溯。该项目适合需要透明、可审计AI代理行为的开发者和团队，尤其关注数据隐私与本地化部署。其亮点在于本地优先架构与完整的事件日志，便于调试、复现和安全管理。",
+        "scenarios": [
+          "在本地环境中运行AI代理，完整记录每次工具调用和决策过程，便于事后审计与调试。",
+          "构建需要严格权限管控的自动化工作流，通过日志追踪每个权限决策点。",
+          "作为研究或教学平台，观察和分析AI代理内部行为与事件流。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/apache/maka 并切换到最新发布版。确保Node.js环境（建议v20+），运行npm install安装依赖。阅读README了解项目结构，然后执行npm run dev启动开发模式。若需快速体验，可运行示例用例，观察生成的append-only日志文件。注意项目可能依赖其他服务，请根据文档配置环境变量。"
+      }
+    },
+    "repo:protocolbuffers/protobuf": {
+      "type": "repo-insight",
+      "hash": "257a79aa6a8b9ef7c0d14f62",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-21T22:00:29.292Z",
+      "value": {
+        "summaryZh": "Protocol Buffers（protobuf）是Google开发的语言中立、平台中立、可扩展的序列化结构化数据格式，类似于XML或JSON但更小、更快、更简单。它通过定义.proto文件描述数据结构，然后生成多种语言（如C++、Java、Python等）的访问类，广泛用于RPC通信、数据存储和跨语言数据交换。其亮点包括高效的二进制编码、向后兼容的字段编号、自动生成代码、支持多种编程语言。适合需要高性能序列化、跨语言通信或长期数据演进的开发者，特别是微服务、分布式系统和游戏后端场景。",
+        "scenarios": [
+          "微服务间的高效RPC通信，如gRPC框架默认使用protobuf作为接口定义语言和消息交换格式。",
+          "大数据管道中的数据序列化，如将日志、事件或业务数据编码为紧凑二进制格式以降低存储和传输开销。",
+          "跨语言系统集成，通过.proto文件生成各语言代码，确保不同服务间数据结构一致且兼容演进。"
+        ],
+        "agentInstallPrompt": "请先确保已安装CMake和C++编译器。克隆仓库：git clone https://github.com/protocolbuffers/protobuf.git，进入目录protobuf。然后执行cmake -S . -B build -DCMAKE_CXX_STANDARD=17，再执行cmake --build build -j4。编译后，运行测试：cd build && ctest。接着演示基本用法：创建一个example.proto文件，定义message Person，使用protoc编译器生成C++代码，再编写简单程序写入和读取Person对象，运行验证序列化与反序列化正确。最后可尝试生成Python代码（需安装Python）以体验多语言支持。"
+      }
+    },
+    "repo:elder-plinius/OBLITERATUS": {
+      "type": "repo-insight",
+      "hash": "dca3b941152650cc38e9502a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-21T22:00:42.288Z",
+      "value": {
+        "summaryZh": "OBLITERATUS 是一个基于 Python 的生成对抗性提示（jailbreak）的工具，其目标是通过精心构造的文本输入，使大型语言模型突破自身的限制和约束，从而引发模型输出平时被禁止的内容。它提供了一套自动化生成和测试越狱提示词的方法，适用于安全研究人员、AI开发者以及红队测试人员，用于评估和加固模型的防护能力。该工具通过尝试不同的语言模式、角色扮演和间接表达等技术，揭示模型的安全漏洞，有助于提升AI系统的鲁棒性。使用需谨慎，仅限合法合规的安全评估场景。",
+        "scenarios": [
+          "安全研究人员评估语言模型对恶意攻击的抵抗力，生成测试用例并检测越狱成功率。",
+          "AI开发者在发布前对模型进行红队测试，发现并修复内容安全策略中的薄弱环节。",
+          "渗透测试人员模拟对抗性输入，验证企业级AI系统是否符合合规与安全要求。"
+        ],
+        "agentInstallPrompt": "请帮我安装并运行 elder-plinius/OBLITERATUS 项目。首先，确认已安装 Python 3.8+ 和 pip。然后克隆仓库：git clone https://github.com/elder-plinius/OBLITERATUS.git，进入目录后使用 pip install -r requirements.txt 安装依赖。参考 README 了解基本用法，运行一个示例命令，例如 python obliberatus.py --help 或根据 README 提供的示例生成一组越狱测试提示，并输出结果到屏幕和文件。注意此工具仅用于合法的安全测试目的。"
+      }
+    },
+    "repo:microsoft/onnxruntime": {
+      "type": "repo-insight",
+      "hash": "ac5e4c6c822f7dd447dab0f3",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-21T22:00:48.458Z",
+      "value": {
+        "summaryZh": "ONNX Runtime 是微软推出的跨平台高性能机器学习推理与训练加速引擎，支持 ONNX 格式模型，并兼容 PyTorch、TensorFlow 等多种框架导出的模型。它通过优化的图变换、算子融合和硬件加速（CPU、GPU、NPU 等）显著提升模型运行效率，降低延迟。适用于生产环境部署、边缘设备推理及大规模服务场景。其核心代码以 C++ 编写，提供 Python、C#、Java 等多种语言接口，易于集成。适合需要高性能、跨平台模型部署的开发者、MLOps 工程师及研究人员。",
+        "scenarios": [
+          "将 PyTorch 或 TensorFlow 训练好的模型转换为 ONNX 格式，使用 ONNX Runtime 进行生产环境推理，显著降低延迟并提升吞吐量。",
+          "在资源受限的物联网或移动设备上部署模型，利用其轻量级和跨平台能力实现边缘端实时推理。",
+          "作为服务端推理引擎，配合 Kubernetes 等容器化平台，实现模型服务的弹性伸缩和高可用部署。"
+        ],
+        "agentInstallPrompt": "请在 Python 环境中安装 onnxruntime 包，并下载一个 ONNX 格式的示例模型（如从 ONNX Model Zoo 获取）。然后编写 Python 脚本，使用 onnxruntime.InferenceSession 加载模型，对随机输入或真实样本执行推理，并对比 CPU 与 GPU 执行时间（若可用）。注意安装时选择适合平台的版本（如 onnxruntime-gpu），确保依赖正确。运行脚本验证输出结果，并尝试开启优化选项（如 graph_optimization_level）观察性能变化。"
+      }
+    },
+    "repo:cordiverse/cordis": {
+      "type": "repo-insight",
+      "hash": "e5507706e8ffe803d508a48d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-21T22:00:55.213Z",
+      "value": {
+        "summaryZh": "Cordis 是一个基于 TypeScript 构建的元框架，专注于“时空组合性”（Spatiotemporal Composability），旨在帮助开发者以声明式、可组合的方式处理时间与空间维度的复杂逻辑。它提供统一抽象层，将时间序列、空间位置及事件关联性无缝集成到应用开发中，支持大规模分布式场景下的状态编排与可视化。亮点在于模块化架构、强类型推导及对多维度数据流的优雅处理，适合需要精细控制时序与地理空间交互的前沿项目。无论是物联网、实时监控、数字孪生，还是协同编辑系统，Cordis 都能简化时空数据的构建、演化与复用，显著降低系统复杂度。",
+        "scenarios": [
+          "在物联网平台中，利用 Cordis 统一管理设备上报的时间序列与地理位置，实现实时告警和轨迹追踪。",
+          "在数字孪生场景下，通过 Cordis 组合多路时空数据流，构建动态同步的虚拟场景与实体状态。",
+          "在协同编辑或多人在线工具中，使用 Cordis 对操作进行时空顺序编排，解决冲突和一致性难题。"
+        ],
+        "agentInstallPrompt": "请克隆 GitHub 仓库 cordiverse/cordis（https://github.com/cordiverse/cordis），确保已安装 Node.js 和 pnpm。进入目录后运行 pnpm install 安装依赖，然后执行 pnpm run build 构建项目。参考 README 中的快速上手示例，创建第一个使用 Cordis 的 TypeScript 文件，并在本地调试运行。注意项目可能包含示例代码，请运行 pnpm run demo 或查看 package.json 中的 scripts 尝试内置演示。若遇到缺失依赖或版本问题，请修复并确保能成功构建和试跑。"
       }
     }
   }
