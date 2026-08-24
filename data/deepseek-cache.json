@@ -258,17 +258,17 @@
     },
     "repo:tinyhumansai/openhuman": {
       "type": "repo-insight",
-      "hash": "2cf82b97da7e5ddd21e119da",
+      "hash": "7d9bf3e8db7771b84eeef640",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:48:19.633Z",
+      "generatedAt": "2026-08-24T02:21:52.049Z",
       "value": {
-        "summaryZh": "OpenHuman 是一款用 Rust 构建的个人 AI 超级智能系统，主打私有、简单和强大。它允许用户在本地运行高性能 AI 模型，无需依赖云端，彻底保护数据隐私。亮点包括极低的资源占用、一键部署的自托管方案以及丰富的插件扩展能力。适合注重隐私的开发者、极客用户以及希望将 AI 能力集成到本地工作流的个人或小团队。",
+        "summaryZh": "OpenHuman 是一个用 Rust 构建的个人 AI 超级智能系统。它专注于本地优先的生活记忆存储，作为你的私人大脑；同时是强大的编排器，能管理多个 AI 代理与工作流，并具备深度研究能力，帮助挖掘信息。该项目注重隐私保护，数据完全本地化，适合追求自主可控、希望拥有个性化 AI 助手的技术爱好者与开发者。通过它，你可以打造真正属于自己的智能伙伴。",
         "scenarios": [
-          "在本地部署一个完全离线的智能助手，进行日常对话、问答和任务编排。",
-          "作为个人知识管理中枢，自动整理笔记、文件并生成摘要。",
-          "集成到家庭自动化或开发环境中，通过 API 调用执行脚本、代码生成等操作。"
+          "个人知识库管理：自动收集并整理笔记、文档，建立可检索的记忆网络，快速回顾生活与工作信息。",
+          "自动化工作流编排：协调多个 AI 代理处理如邮件分类、日程安排、信息汇总等复杂任务，提升效率。",
+          "深度信息研究：针对特定主题进行多源资料挖掘与交叉分析，生成结构化研究简报或报告。"
         ],
-        "agentInstallPrompt": "请先在系统上安装 Rust 工具链（rustup 和 cargo）。然后执行以下步骤： 1. 克隆仓库：git clone https://github.com/tinyhumansai/openhuman.git 2. 进入目录：cd openhuman 3. 运行：cargo build --release 4. 根据 README 配置模型文件（如支持 GGUF 格式），并运行：./target/release/openhuman --model <模型路径> 如需体验 Web UI 或 API，请参考文档启动相应服务。"
+        "agentInstallPrompt": "请先克隆 https://github.com/tinyhumansai/openhuman 仓库。然后阅读 README.md 了解依赖与安装步骤。确保已安装 Rust 工具链（cargo），执行 `cargo build --release` 编译项目。构建成功后，根据文档运行二进制文件，并进行初始配置，例如设置本地存储路径和 API 密钥等。运行后即可体验本地优先的个人 AI 记忆和 agent 编排功能。若遇到问题，请检查系统依赖或查看项目 Issue。"
       }
     },
     "repo:Imbad0202/academic-research-skills": {
@@ -588,17 +588,17 @@
     },
     "repo:Alishahryar1/free-claude-code": {
       "type": "repo-insight",
-      "hash": "1e00ffa441c93f174d32862a",
+      "hash": "1778a4afe8cfe6e08068315f",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:50:32.337Z",
+      "generatedAt": "2026-08-24T02:21:43.344Z",
       "value": {
-        "summaryZh": "Free Claude Code 是一个开源工具，让开发者可以在终端、VSCode 扩展或 Discord 中免费使用 Claude Code 的能力（支持语音）。它通过模拟或绕过官方付费限制，提供类似 OpenClaw 的体验，适合希望免费获取 AI 代码助手的开发者。亮点在于多平台集成（终端、编辑器、聊天工具）和语音交互，但需注意合规风险。",
+        "summaryZh": "这是一个免费的AI编程助手聚合工具，支持Claude Code、Codex、Pi和OpenCode等多种主流模型，提供超过13亿免费token。用户可以通过终端、桌面应用、IDE插件或手机端访问，并支持语音交互，且符合服务条款。项目用Python开发，旨在降低AI编程门槛，特别适合希望尝试多种AI助手但预算有限的开发者。其核心亮点是零成本、多模型集成和跨平台支持，同时强调ToS友好，避免封号风险。",
         "scenarios": [
-          "在终端中直接调用 Claude Code 进行代码生成、修改或调试，无需付费 API 密钥",
-          "在 VSCode 中安装扩展后，通过侧边栏对话实现智能代码补全与问题解答",
-          "在 Discord 服务器中使用语音或文字与 Claude 交互，辅助团队协作编程"
+          "在终端中快速调用不同AI模型辅助代码编写、调试和重构，节省订阅费用。",
+          "通过IDE插件或手机端在移动场景下进行语音编程，提高开发效率。",
+          "在资源受限或预算有限的环境中，利用免费token运行自动化任务和脚本。"
         ],
-        "agentInstallPrompt": "请依次执行以下命令安装并运行 Free Claude Code： 1. 克隆仓库：git clone https://github.com/Alishahryar1/free-claude-code.git 2. 进入目录：cd free-claude-code 3. 创建虚拟环境（可选但推荐）：python -m venv venv && source venv/bin/activate（Windows 下使用 venv\\Scripts\\activate） 4. 安装依赖：pip install -r requirements.txt 5. 编辑配置文件（如 config.json）填入必要的 Claude Cookie 或 Token（请自行获取合法凭证） 6. 启动终端交互模式：python main.py 7. 如需 VSCode 扩展，执行 code --install-extension ./vscode-extension（若项目包含对应目录）或手动安装 .vsix。"
+        "agentInstallPrompt": "克隆仓库Alishahryar1/free-claude-code，使用pip安装依赖，运行python主入口文件并按照提示配置API密钥或激活免费token。启动后验证能否在终端成功调用Claude Code或Codex，并测试基本问答功能。若支持语音，尝试使用麦克风输入一条简单指令。"
       }
     },
     "repo:ruvnet/ruflo": {
@@ -858,17 +858,17 @@
     },
     "repo:santifer/career-ops": {
       "type": "repo-insight",
-      "hash": "0600825bc3ee5767a9e4c352",
+      "hash": "21ae25dfd6a8719ee9a057b0",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-25T00:59:12.033Z",
+      "generatedAt": "2026-08-24T02:22:37.662Z",
       "value": {
-        "summaryZh": "Career-Ops 是一款开源的 AI 求职辅助工具，可自动扫描招聘门户网站，使用结构化的 A-F 评分标准将职位列表评估为 1.0-5.0 分，根据评估结果个性化定制简历，并跟踪申请进度。它完全在本地运行，支持在 Claude Code、Codex、OpenCode、Antigravity 等 AI 编码 CLI 环境中使用，适合求职者高效管理求职流程，提升申请质量与成功率。",
+        "summaryZh": "这是一个开源的 AI 求职助手，运行在本地 AI 编码终端中（如 Claude Code、Codex 等），帮助求职者自动扫描招聘网站，将职位信息整理成结构化的 A-H 报告，并给出 1-5 分的综合评分。它还能根据目标职位定制简历，并跟踪申请进度。项目采用 JavaScript 编写，亮点是本地运行、数据隐私安全，且与主流 AI CLI 深度集成，自动化程度高。适合熟悉命令行工具、正在积极求职并希望提升效率的开发者或求职者。",
         "scenarios": [
-          "批量扫描多个招聘网站，自动获取职位信息并评分，节省手动筛选时间。",
-          "根据职位评分和要求，自动优化简历，突出匹配技能和经验。",
-          "在终端中集中管理所有求职申请，实时跟踪投递状态和反馈。"
+          "求职者每天自动抓取多个招聘网站的最新职位，生成评分报告，快速筛选高匹配度机会。",
+          "针对目标职位，使用该工具定制简历和求职信，突出关键词，提高面试通过率。",
+          "在求职过程中集中跟踪所有申请状态，记录反馈，避免遗漏面试通知或后续跟进。"
         ],
-        "agentInstallPrompt": "请执行以下步骤：1. 克隆仓库：git clone https://github.com/santifer/career-ops.git 2. 进入目录：cd career-ops 3. 安装依赖：npm install 4. 配置 API 密钥（如 OpenAI）为环境变量，例如 export OPENAI_API_KEY=your_key 5. 运行工具：npm start，按照提示输入搜索条件和简历内容进行求职分析。"
+        "agentInstallPrompt": "请帮我克隆 https://github.com/santifer/career-ops 仓库，先阅读 README 了解安装步骤，然后安装依赖并配置必要的环境变量（如 API 密钥）。完成后运行一个示例命令，演示如何扫描招聘网站并生成 A-H 评分报告。如果遇到任何错误，请根据日志信息进行修复，确保工具能正常运行。"
       }
     },
     "repo:ZhuLinsen/daily_stock_analysis": {
@@ -2208,17 +2208,17 @@
     },
     "repo:diegosouzapw/OmniRoute": {
       "type": "repo-insight",
-      "hash": "8c9b353f948dac00fa416695",
+      "hash": "664bc2cdef1fa7c126d28302",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-19T23:41:45.189Z",
+      "generatedAt": "2026-08-24T02:22:30.833Z",
       "value": {
-        "summaryZh": "OmniRoute 是一个免费开源、遵循 MIT 协议的 AI 网关，通过单一端点接入 340+ 提供商、1200+ 模型（含 90+ 免费模型），兼容 Claude Code、Cursor、OpenCode、Cline 等主流 AI 编程工具。它具备配额感知自动回退、RTK+Caveman 压缩节省 15-95% token、支持 MCP/A2A 协议及桌面/PWA 应用等特性。适合需要降低 API 成本、提升调用稳定性的开发者与团队，特别适合多模型路由和智能容灾场景。",
+        "summaryZh": "OmniRoute 是一个免费开源的 MIT 协议 AI 网关，提供统一端点接入 350+ 提供商（其中 90+ 免费）和 1200+ 模型，兼容 Kimi、Claude、GPT、Gemini、GLM、DeepSeek、MiniMax 等主流服务。它专为 AI 编码工具（Claude Code、Codex、Cursor、OpenCode、Cline、Copilot）设计，具备配额感知自动回退、RTK+Caveman 压缩（节省 15-95% token）、支持 MCP/A2A 协议，并提供桌面端/PWA 应用。项目由 450+ 贡献者共建，适合追求极致成本控制、需要多模型冗余和高效 token 利用的开发者与团队。",
         "scenarios": [
-          "在多 AI 提供商间自动切换，避免因限流或故障导致服务中断，保障关键业务连续性。",
-          "为 Cursor、Claude Code 等编码工具统一配置多个模型，自动选择最便宜或最快的可用模型，显著降低 API 支出。",
-          "在内网或云上部署统一 AI 网关，为团队提供集中化的 API 管理、监控和访问控制，简化集成流程。"
+          "在 Claude Code、Cursor 等编码工具中统一接入多个 AI 提供商，实现自动故障转移与配额管理。",
+          "通过智能压缩和模型路由，显著降低大规模 AI 调用成本，尤其适合高频开发场景。",
+          "需要同时使用免费和商业模型，并在不同任务间灵活切换的个人开发者或小型团队。"
         ],
-        "agentInstallPrompt": "请克隆仓库 https://github.com/diegosouzapw/OmniRoute，并查看 README 的快速开始部分。使用 npm install 安装依赖，然后根据文档配置环境变量（如 API 密钥）。启动服务后，先调用 /v1/models 端点验证网关可用，再发送一个简单的聊天请求（例如使用免费提供商），确认响应正常。最后测试自动回退功能：故意使用一个无效的模型名称，观察是否自动切换到备用模型，并检查日志中的压缩 token 统计。"
+        "agentInstallPrompt": "请先确保本机已安装 Node.js 18+ 和 Git。然后执行：git clone https://github.com/diegosouzapw/OmniRoute.git && cd OmniRoute && npm install && npm run build。查看 README.md 获取配置说明，在 .env 中填入至少一个 API 密钥（如 OpenAI 兼容格式），然后运行 npm start 启动网关。使用 curl 测试示例：curl http://localhost:3000/v1/chat/completions -H \"Content-Type: application/json\" -H \"Authorization: Bearer YOUR_KEY\" -d '{\"model\":\"gpt-4o-mini\",\"messages\":[{\"role\":\"user\",\"content\":\"Hello\"}]}'，若返回正常则安装成功。"
       }
     },
     "repo:alibaba/page-agent": {
@@ -2628,17 +2628,17 @@
     },
     "repo:MadsLorentzen/ai-job-search": {
       "type": "repo-insight",
-      "hash": "792353299c92f8127b46b6fa",
+      "hash": "495e50561d5238aa4f86c12c",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-20T22:01:55.870Z",
+      "generatedAt": "2026-08-24T22:00:11.884Z",
       "value": {
-        "summaryZh": "ai-job-search 是一个基于 Claude Code 构建的 AI 求职应用框架，运行在本地机器上。它可以自动评估招聘信息、定制简历、撰写求职信和准备面试。完全开源，用户可 Fork 并自由定制，适合求职者、开发者以及希望通过 AI 自动化求职流程的用户。亮点包括完全本地运行保护隐私、深度集成 Claude 的 AI 能力、以及高度可定制的框架设计。",
+        "summaryZh": "ai-job-search 是一个基于 Claude Code 构建的 AI 求职应用框架，完全运行在你自己的机器上。它能自动评估招聘信息、量身定制简历、撰写求职信，并辅助面试准备。其核心亮点是本地化与高度可定制：你可以 fork 代码仓库，根据自己的需求调整流程和策略，掌控整个求职过程。项目使用 Python，适合熟悉命令行、重视隐私、希望自动化求职流程的技术求职者，也适合希望探索 AI 代理工作流的开发者。",
         "scenarios": [
-          "自动筛选和评估大量招聘信息，根据个人偏好和技能匹配度排序",
-          "根据目标职位要求，一键生成定制化的简历和求职信",
-          "模拟面试提问并提供反馈，帮助用户准备面试"
+          "求职者批量筛选海量职位，快速评估匹配度，节省时间。",
+          "根据具体职位自动定制简历和求职信，提高申请效率。",
+          "针对目标公司生成模拟面试问题和准备材料，提升面试表现。"
         ],
-        "agentInstallPrompt": "请克隆仓库：git clone https://github.com/MadsLorentzen/ai-job-search.git，然后进入目录：cd ai-job-search，安装依赖：npm install，设置 Claude API 密钥（在 .env 文件中添加 ANTHROPIC_API_KEY=your_key），最后运行：npm run dev。确保已安装 Node.js 和 npm。"
+        "agentInstallPrompt": "请帮我安装并试跑这个项目：先克隆仓库 https://github.com/MadsLorentzen/ai-job-search 到本地，然后查看 README 了解依赖要求。使用 pip 安装所需的 Python 包（建议创建虚拟环境）。配置 Claude Code 的 API 密钥（如 ANTHROPIC_API_KEY）。按照文档运行示例命令，例如针对一个示例职位描述执行评估和简历定制功能，确保流程正常。最后简要说明如何修改配置文件以适配个人求职需求。"
       }
     },
     "repo:headroomlabs-ai/headroom": {
@@ -4784,6 +4784,156 @@
           "在协同编辑或多人在线工具中，使用 Cordis 对操作进行时空顺序编排，解决冲突和一致性难题。"
         ],
         "agentInstallPrompt": "请克隆 GitHub 仓库 cordiverse/cordis（https://github.com/cordiverse/cordis），确保已安装 Node.js 和 pnpm。进入目录后运行 pnpm install 安装依赖，然后执行 pnpm run build 构建项目。参考 README 中的快速上手示例，创建第一个使用 Cordis 的 TypeScript 文件，并在本地调试运行。注意项目可能包含示例代码，请运行 pnpm run demo 或查看 package.json 中的 scripts 尝试内置演示。若遇到缺失依赖或版本问题，请修复并确保能成功构建和试跑。"
+      }
+    },
+    "repo:freestylefly/awesome-gpt-image-2": {
+      "type": "repo-insight",
+      "hash": "9275becee666b907964f1cb7",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-24T22:00:35.734Z",
+      "value": {
+        "summaryZh": "GPT-Image2 工业级提示词引擎与模板库，将提示词视为代码（Prompt as Code）。项目包含530+个案例逆向工程，提炼出20+套工业级模板，并形成可复用的Skills。旨在帮助开发者、AI绘画爱好者和产品团队系统化构建高质量图像生成提示词，提升生成效果的稳定性和可复现性。适合需要批量生成商业级图像、探索提示词工程最佳实践的用户。持续更新中。",
+        "scenarios": [
+          "产品设计团队批量生成风格统一的营销视觉素材，通过模板和案例库快速迭代提示词。",
+          "AI绘画开发者学习高质量提示词结构，复用逆向工程案例提升生成效果。",
+          "构建提示词管理流程，将图像提示词作为代码进行版本控制和自动化测试。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/freestylefly/awesome-gpt-image-2.git。然后进入目录，查看README.md了解项目结构和模板用法。该项目是提示词模板库，无需安装依赖。建议打开模板目录（如templates/）和skills/目录，阅读示例。若要体验效果，可配置OpenAI API密钥，运行示例脚本（如果有）。请根据README指引尝试使用模板生成图像提示词，并尝试反向工程案例。"
+      }
+    },
+    "repo:VoltAgent/awesome-agent-skills": {
+      "type": "repo-insight",
+      "hash": "0a39760bab50d1afcdc2603f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-24T02:21:59.559Z",
+      "value": {
+        "summaryZh": "这是一个精选的 AI Agent 技能集合，收录了来自官方开发团队和社区的 1000+ 个技能，兼容 Claude Code、Codex、Gemini CLI、Cursor 等主流 AI 编程助手。它帮助开发者快速发现、学习并复用各种 agent 技能，大幅提升 AI 编码效率。仓库持续更新，内容丰富，适合使用 AI 编程工具的开发者、技术团队负责人以及希望探索 agent 能力边界的爱好者。通过本仓库，你可以轻松找到适合自己工作流的技能模块，并参考最佳实践优化日常开发流程。",
+        "scenarios": [
+          "开发者希望扩展 AI 编程助手的技能库，快速找到可复用的功能模块以提升开发效率。",
+          "团队制定 AI 编码规范或标准化工作流时，参考社区最佳实践和官方技能，确保一致性和质量。",
+          "AI 爱好者想对比不同平台（如 Claude Code、Codex）支持的技能差异，选择最适合自己的工具组合。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/VoltAgent/awesome-agent-skills.git。然后浏览仓库中的 README 和目录结构，选择你需要的技能。根据你使用的 AI agent 平台（如 Claude Code、Codex、Gemini CLI、Cursor 等），将对应技能的文件或配置复制到该平台的技能配置目录中，并重启 agent 使其生效。建议先查看每个技能自带的说明文档，确保正确安装和运行。若遇到问题，可参考仓库中的 Issues 或社区讨论。"
+      }
+    },
+    "repo:dani-garcia/vaultwarden": {
+      "type": "repo-insight",
+      "hash": "02e420717bcdcf477b4d5c95",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-24T02:22:05.354Z",
+      "value": {
+        "summaryZh": "Vaultwarden 是一个用 Rust 编写的非官方 Bitwarden 兼容服务器，前身是 bitwarden_rs。它旨在提供一种轻量、高效的自托管密码管理方案，几乎完全兼容 Bitwarden 官方客户端（包括浏览器扩展、移动应用和桌面应用）。项目亮点在于其极低的资源占用和简单的部署方式，非常适合个人或小型团队在本地或云服务器上搭建私有密码库。它不仅支持核心的密码存储、同步、共享功能，还支持组织、附件、Send 等高级特性，但通过更少的系统资源消耗实现。适合注重隐私、希望完全掌控数据的安全意识用户，以及希望以低成本替代官方 Bitwarden 服务的中小企业或开发者。",
+        "scenarios": [
+          "个人用户希望在树莓派或低配 VPS 上自托管密码管理器，替代付费的 Bitwarden 服务，实现数据完全私有。",
+          "小型团队或开发组需要内部共享密码、密钥和敏感凭证，但不想购买企业版 Bitwarden，寻求轻量级兼容方案。",
+          "技术爱好者希望深入学习和定制密码管理服务端，利用 Rust 的高性能和内存安全特性进行二次开发或扩展功能。"
+        ],
+        "agentInstallPrompt": "请在当前环境中安装并试跑 Vaultwarden（dani-garcia/vaultwarden）。首先确保系统已安装 Docker 和 Docker Compose。然后执行以下步骤：1. 创建一个项目目录 vw-data 用于持久化数据；2. 下载官方 docker-compose.yml 文件，参考仓库 https://github.com/dani-garcia/vaultwarden 的 README 中 Docker 部分；3. 修改 docker-compose.yml 中的端口映射（默认 80 端口，可改为 8080:80）和设置 ADMIN_TOKEN 环境变量；4. 运行 docker compose up -d 启动服务；5. 测试服务是否正常运行，访问 http://localhost:8080 应看到 Bitwarden 的网页登录界面。如果环境没有 Docker，请改用 cargo 编译运行：安装 Rust 工具链，git clone 仓库，然后使用 cargo run --release 启动，并设置 DATABASE_URL 为 sqlite:///data/db.sqlite3。完成后报告服务是否成功启动。"
+      }
+    },
+    "repo:anthropics/claude-plugins-community": {
+      "type": "repo-insight",
+      "hash": "4c1318fa7c2cc34e1c28d550",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-24T02:22:17.836Z",
+      "value": {
+        "summaryZh": "这是一个由 Anthropic 官方维护的社区插件市场，用于集中展示和分发 Claude Cowork 与 Claude Code 的社区插件。该仓库作为只读镜像，插件提交需通过专门目录系统完成。亮点在于官方认证的插件集合，方便用户发现、安装和管理扩展，同时也是插件开发者展示作品、学习最佳实践的场所。适合希望为 Claude 添加自定义功能的开发者、需要团队共享插件的组织以及热衷于 Claude 生态的社区成员。",
+        "scenarios": [
+          "开发者想为 Claude Code 增加代码分析工具，从市场查找并安装现成插件。",
+          "团队内部研发了多个 Claude 插件，统一发布到市场供成员安装使用。",
+          "初学者希望学习 Claude 插件开发，通过浏览市场代码获取灵感和规范。"
+        ],
+        "agentInstallPrompt": "请先执行 git clone https://github.com/anthropics/claude-plugins-community.git 将该插件市场克隆到本地。然后阅读 README 和目录结构，定位用户需要的插件。若用户想安装某个插件，请指导其使用 Claude Code 的插件市场命令（如 claude plugins install <插件名>）或手动将插件文件复制到 ~/.claude/plugins/ 目录。若用户希望提交插件，则引导其访问 https://clau.de/plugin-directory-submission 完成提交。操作前请确保 Claude Code 已安装并登录。"
+      }
+    },
+    "repo:ripienaar/free-for-dev": {
+      "type": "repo-insight",
+      "hash": "594ea24005e11d5ee4b1c811",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-24T02:22:21.989Z",
+      "value": {
+        "summaryZh": "free-for-dev 是一个由社区维护的开发者免费资源列表，收录了大量提供免费额度的 SaaS、PaaS 和 IaaS 服务，覆盖云主机、数据库、CI/CD、监控、域名、邮件、存储等类别。项目以 HTML 页面形式呈现，按用途分类，便于开发者快速查找可免费使用的工具和服务，尤其适合 DevOps、基础设施开发者、独立开发者和学习者在预算有限的情况下构建和部署应用。该列表持续更新，资源丰富，是发现高性价比技术栈的实用参考。",
+        "scenarios": [
+          "个人开发者或小团队在项目初期需要低成本搭建基础设施，寻找合适的免费云服务或开发工具。",
+          "DevOps 工程师评估不同服务商提供的免费额度，以规划 CI/CD、监控、日志等工具的选型。",
+          "技术爱好者或学生需要探索各类托管、数据库、API 服务，用于实验、学习和原型验证。"
+        ],
+        "agentInstallPrompt": "请先访问 https://github.com/ripienaar/free-for-dev 仓库，克隆或下载项目到本地。由于该项目是纯 HTML 静态页面，无需安装依赖，直接使用浏览器打开 index.html 或对应的 html 文件即可浏览。若需搜索特定类别，可打开页面后使用浏览器的查找功能（Ctrl+F）输入关键词，例如 'database'、'ci'、'monitoring' 等。此外，也可以使用 curl 或 wget 获取页面内容，并通过 grep 过滤关键字，快速定位相关服务，例如执行 'curl -s https://raw.githubusercontent.com/ripienaar/free-for-dev/master/README.md | grep -i \"database\"' 来查看数据库相关条目。"
+      }
+    },
+    "repo:NousResearch/hermes-agent": {
+      "type": "repo-insight",
+      "hash": "0d0fd8c349413520e71db203",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-24T02:22:26.103Z",
+      "value": {
+        "summaryZh": "Hermes-Agent 是一个由 NousResearch 推出的、用 Python 编写的智能代理框架，核心理念是“与你一同成长的代理”。它强调代理的持续学习和自我进化能力，能够根据用户交互和历史反馈动态调整行为，逐步适应用户的个性化需求。项目目前处于早期阶段，但架构清晰，适合开发者和研究者快速上手。亮点在于其成长性设计，将代理能力视为一个可演化的系统，而非静态工具。适合希望构建长期可迭代 AI 助手的开发者、研究自适应代理机制的研究者，以及需要个性化智能体的技术团队。",
+        "scenarios": [
+          "构建能够从用户对话历史中持续学习、逐步优化回答风格的个性化 AI 助手。",
+          "作为研究框架，用于实验代理的在线学习、记忆更新和行为适应机制。",
+          "在需要长期稳定服务且能随用户需求变化而自我调整的客服或教育系统中，作为核心代理引擎。"
+        ],
+        "agentInstallPrompt": "请先执行 `git clone https://github.com/NousResearch/hermes-agent.git` 并进入项目目录，然后查看 README 了解安装依赖方式（建议使用 Python 3.10+）。接着运行 `pip install -r requirements.txt` 或 `poetry install`（根据项目实际依赖管理方式）。安装完成后，查看项目中的示例文件（如 examples/ 或 run.py），尝试运行一个最小示例，注意其中可能需要配置 OpenAI API 密钥或其他模型服务。请按照 README 指引初始化代理，并测试基础对话功能。运行过程中如遇环境问题，请根据报错信息调整依赖版本或安装系统级依赖。"
+      }
+    },
+    "repo:openclaw/openclaw": {
+      "type": "repo-insight",
+      "hash": "d9c48560b7d9061cb68ca7e6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-24T22:00:17.461Z",
+      "value": {
+        "summaryZh": "OpenClaw 是一个用 TypeScript 构建的跨平台个人 AI 助手，以“龙虾方式”提供灵活、可扩展的自动化体验。它支持在任何操作系统上运行，帮助用户管理日程、处理消息、执行命令等，通过模块化设计集成多种 AI 服务。适合开发者快速搭建个性化助手，也适合追求高效生活的极客用户。项目代码开源，社区活跃，可轻松定制和扩展功能，让 AI 更贴近个人需求。",
+        "scenarios": [
+          "作为跨平台个人助理，统一管理日程、提醒和待办事项，提高日常效率。",
+          "集成多种 AI 服务，实现自然语言交互，自动完成文件整理、信息查询等任务。",
+          "开发者利用其模块化架构，构建自定义插件或接入现有工作流，打造专属 AI 助手。"
+        ],
+        "agentInstallPrompt": "请克隆 GitHub 仓库 openclaw/openclaw，查看 README 了解项目结构和依赖要求。使用 npm 安装依赖：npm install。根据文档配置环境变量（如 API 密钥）。然后运行 npm run dev 启动开发模式，或 npm run build && npm start 进行生产运行。若遇到平台相关问题，请参考 README 中的跨平台说明或查看 issues 获取解决方案。"
+      }
+    },
+    "repo:AgriciDaniel/claude-obsidian": {
+      "type": "repo-insight",
+      "hash": "d8be5660d43f41482f2a487c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-24T22:00:22.540Z",
+      "value": {
+        "summaryZh": "claude-obsidian 是一个基于 Obsidian 和 Claude Code 的自组织 AI 第二大脑项目，采用 Python 编写。它能将任何来源的内容交给 Claude 读取、建立关联，并整理成纯 Markdown 格式的知识图谱，让用户完全掌控自己的数据。项目借鉴了 Karpathy 的 LLM Wiki 模式，旨在成为开源、AI 驱动的笔记工具和个人知识管理（PKM）方案，可作为 Notion 的替代品。适合希望利用 AI 自动整理笔记、构建互联知识库的 Obsidian 用户，以及追求本地优先、隐私可控的 PKM 爱好者。",
+        "scenarios": [
+          "将散落的网页、PDF 或笔记自动整理成带双向链接的 Markdown 知识网络，提升信息检索效率。",
+          "为研究或写作项目构建自动更新的个人知识库，AI 根据内容语义自动分类和建立关联。",
+          "作为开源替代 Notion 的自托管知识管理方案，结合 Claude Code 实现智能问答和笔记生成。"
+        ],
+        "agentInstallPrompt": "请先安装 Python 3.10+ 和 Node.js，然后克隆仓库 https://github.com/AgriciDaniel/claude-obsidian.git，进入目录后创建虚拟环境并安装依赖（pip install -r requirements.txt）。接着配置 Claude Code 的 API 密钥（设置 ANTHROPIC_API_KEY 环境变量），并确保本地已有 Obsidian 仓库路径。运行主脚本示例：python run_ingest.py --input /path/to/source --vault /path/to/obsidian_vault，观察 AI 如何将源文件转换为 Markdown 并生成链接。如需查看详细用法，可运行 python run_ingest.py --help。"
+      }
+    },
+    "repo:tashfeenahmed/freellmapi": {
+      "type": "repo-insight",
+      "hash": "a8c70d2b706b23d17781bef4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-24T22:00:31.239Z",
+      "value": {
+        "summaryZh": "freellmapi 是一个聚合免费 LLM 提供商的开源 API 网关，用 TypeScript 编写。它将 34 个免费提供商、635 个模型端点统一到一个 /v1 兼容 API 后面，每月可处理 74 亿 token。亮点包括智能路由、自动故障转移和加密密钥管理，还支持自定义 OpenAI 兼容端点。适合个人开发者、研究人员用于实验性项目，快速集成多个免费模型，降低开发成本。",
+        "scenarios": [
+          "个人开发者快速原型开发：用一个 API 密钥调用多个免费模型，省去逐一注册和适配的麻烦。",
+          "实验对比测试：同时调用不同提供商的模型，通过智能路由选择最适合的响应，便于评估模型效果。",
+          "高可用实验环境：利用自动故障转移机制，当某个提供商不可用时自动切换到其他可用端点，保证实验连续性。"
+        ],
+        "agentInstallPrompt": "克隆仓库 tashfeenahmed/freellmapi 到本地，进入目录，运行 npm install 安装依赖。查看 README 了解配置要求，通常需要设置环境变量（如 API 密钥等），可参考 .env.example 文件。启动服务使用 npm run dev 或 npm start（具体见 package.json）。服务启动后，可通过 HTTP 请求 http://localhost:PORT/v1 进行测试，发送 OpenAI 格式的请求体，验证智能路由和故障转移功能。请注意该项目仅用于个人实验，不要用于生产环境。"
+      }
+    },
+    "repo:eneskirca/nodeterm": {
+      "type": "repo-insight",
+      "hash": "1c27b4b84e30d55b3ca6ef91",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-24T22:00:41.318Z",
+      "value": {
+        "summaryZh": "nodeterm 是一个专为 AI 编码代理设计的节点式终端管理器，采用 tmux 作为后端，将终端会话和并行代理会话呈现为无限缩放画布上的可拖拽节点。它支持 macOS、Linux，并提供基于浏览器的 Server Edition，方便远程或团队协作。项目使用 TypeScript 编写，界面直观，适合需要同时管理多个终端或 AI 代理任务的开发者，能显著提升复杂工作流的可视化和操作效率。",
+        "scenarios": [
+          "在本地开发中，同时运行多个 AI 编码代理，每个代理占据一个节点，通过拖拽和缩放直观监控各自日志与输出。",
+          "远程连接服务器，通过浏览器端 Server Edition 统一管理多台机器的 tmux 终端会话，实现跨设备协作。",
+          "将不同项目的终端或代理会话作为节点排列在画布上，快速切换上下文，减少窗口切换成本。"
+        ],
+        "agentInstallPrompt": "请克隆 GitHub 仓库 https://github.com/eneskirca/nodeterm 到本地，然后查看 README 了解依赖（需要 Node.js 和 tmux）。使用 npm install 安装依赖，根据 package.json 中的脚本启动应用（例如 npm run dev）。如果支持 Server Edition，可尝试以服务模式启动，并在浏览器中访问对应端口。运行后创建一个测试终端节点，并验证可拖拽和缩放功能。请逐步执行并报告结果。"
       }
     }
   }
