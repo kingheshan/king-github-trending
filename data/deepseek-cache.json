@@ -4935,6 +4935,36 @@
         ],
         "agentInstallPrompt": "请克隆 GitHub 仓库 https://github.com/eneskirca/nodeterm 到本地，然后查看 README 了解依赖（需要 Node.js 和 tmux）。使用 npm install 安装依赖，根据 package.json 中的脚本启动应用（例如 npm run dev）。如果支持 Server Edition，可尝试以服务模式启动，并在浏览器中访问对应端口。运行后创建一个测试终端节点，并验证可拖拽和缩放功能。请逐步执行并报告结果。"
       }
+    },
+    "repo:marin-community/marin": {
+      "type": "repo-insight",
+      "hash": "f9f74a9a917572f4a6e5740c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-25T22:00:11.202Z",
+      "value": {
+        "summaryZh": "Marin 是一个面向基础模型研究与开发的开源 Python 框架，旨在为研究人员和工程师提供统一的模型构建、训练与评估流程。它抽象了分布式训练、数据流水线、模型 checkpoint 管理等复杂环节，支持灵活的实验配置与可复现性。该框架强调模块化设计，便于集成新的模型架构和训练策略，适合需要快速迭代实验的深度学习团队。无论是学术研究还是工业级原型验证，Marin 都能降低基础模型开发的门槛。",
+        "scenarios": [
+          "研究团队用于快速搭建和对比不同基础模型架构，加速论文实验复现。",
+          "企业 AI 实验室用于大规模模型分布式训练，统一管理训练资源配置与监控。",
+          "教育场景中作为教学框架，帮助学生理解基础模型训练流程与组件协作。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 git clone https://github.com/marin-community/marin.git，然后进入目录执行 pip install -e . 安装依赖。根据 README 中的快速入门示例，创建一个简单的模型配置文件，并运行示例训练脚本，确保框架能正常启动并完成一个小的训练周期。若遇到缺少依赖，请自动安装并继续。"
+      }
+    },
+    "repo:asciimoo/hister": {
+      "type": "repo-insight",
+      "hash": "93afdbd8f22ba2b62126186e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-25T22:00:16.577Z",
+      "value": {
+        "summaryZh": "Hister 是一个用 Go 编写的自托管搜索引擎，旨在让用户完全掌控自己的搜索体验。它不依赖第三方搜索服务，也不追踪用户行为，能对个人或团队的知识库、文档、网站进行私有化索引与检索。项目亮点在于轻量、易部署，支持自定义爬取范围，提供简洁的 API 与 Web 界面，适合注重隐私、希望摆脱大厂搜索依赖的开发者、极客或中小企业内部使用。通过简单配置即可运行，并可集成到现有工作流中，为用户提供快速、无干扰的搜索服务。",
+        "scenarios": [
+          "个人或团队内部文档、知识库的私有化搜索引擎，保障数据不出内网。",
+          "对特定网站或域名进行定向爬取与索引，构建垂直领域的搜索服务。",
+          "集成到自托管应用（如 NAS、博客）中，替代外部搜索接口，提升隐私保护。"
+        ],
+        "agentInstallPrompt": "请先确保 Go 环境已安装（建议 1.18+）。然后执行 `git clone https://github.com/asciimoo/hister.git && cd hister`，查看 README.md 了解配置选项。根据文档修改配置文件（如监听端口、索引目录、爬取规则），运行 `go build -o hister .` 编译二进制，或直接 `go run .` 启动服务。启动后可通过浏览器访问默认端口（如 8080）进行搜索测试。如需爬取种子 URL，按 README 中的 API 调用示例添加任务，验证索引与搜索功能是否正常。"
+      }
     }
   }
 }
