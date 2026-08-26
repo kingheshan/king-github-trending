@@ -4563,17 +4563,17 @@
     },
     "repo:chaitanyagiri/munder-difflin": {
       "type": "repo-insight",
-      "hash": "5c86f7e6bb7af7622722295c",
+      "hash": "6e1587ad7986a20fcf24fb7b",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-20T22:00:39.643Z",
+      "generatedAt": "2026-08-26T22:00:32.589Z",
       "value": {
-        "summaryZh": "Munder Difflin 是一个基于 TypeScript 构建的本地多智能体（multi-agent）编排框架，旨在帮助开发者在本地环境中轻松协调多个 AI 代理完成复杂任务。它强调数据隐私与自主控制，无需依赖云端服务即可运行。项目亮点是轻量级、易于集成，并提供了清晰的 API 来定义代理行为与通信机制。适合希望构建自主工作流、探索多代理协作模式的 AI 应用开发者、自动化爱好者及隐私敏感型项目团队。",
+        "summaryZh": "munder-difflin 是一个基于 JavaScript 的本地多智能体（multi-agent）协调框架，旨在帮助开发者在本地环境中轻松创建、运行和管理多个 AI 代理实例。它提供了轻量级的代理间消息传递、任务调度与状态管理能力，让开发者无需复杂的基础设施即可搭建多代理协作系统。该框架强调简单性与可扩展性，适合快速原型验证、教学演示以及中小规模自动化任务。其亮点在于纯本地运行、依赖少、易于嵌入现有 Node.js 项目，对于希望探索多代理模式或需要构建本地 AI 工作流的开发者与研究者尤为实用。",
         "scenarios": [
-          "在本地开发环境中编排多个 AI 代理，协同完成代码分析、文档生成或数据处理等复杂任务。",
-          "构建一个自主执行多步骤操作的私人助理，如自动整理邮件、安排日程并生成报告。",
-          "在不依赖云端 API 的情况下，测试和验证多代理系统的通信协议与决策逻辑。"
+          "在本地开发环境中快速搭建多代理协作原型，验证 Agent 通信与任务分配逻辑。",
+          "为教学或研究项目构建一个轻量级的多代理仿真平台，观察不同代理策略的交互效果。",
+          "将多代理框架嵌入现有自动化流程，实现本地化的任务分解与并行处理，如数据处理、文本生成等。"
         ],
-        "agentInstallPrompt": "请克隆仓库 https://github.com/chaitanyagiri/munder-difflin 到本地，确保已安装 Node.js 和 npm。进入项目目录后运行 npm install 安装依赖。然后查看 README.md 了解示例用法，运行 npm run example 或根据 package.json 中的脚本执行一个示例来体验多代理协作流程。"
+        "agentInstallPrompt": "请安装并试跑这个仓库：https://github.com/chaitanyagiri/munder-difflin。首先克隆仓库到本地，检查 package.json 中的依赖，使用 npm install 安装。然后阅读 README 了解如何定义代理和运行示例，运行一个示例脚本（如 npm start 或 node example.js），确认多代理框架能正常启动并完成简单的代理间通信。最后，简要记录运行结果和关键配置方式。"
       }
     },
     "repo:mahlernim/google-timeline-visualizer": {
@@ -4964,6 +4964,66 @@
           "集成到自托管应用（如 NAS、博客）中，替代外部搜索接口，提升隐私保护。"
         ],
         "agentInstallPrompt": "请先确保 Go 环境已安装（建议 1.18+）。然后执行 `git clone https://github.com/asciimoo/hister.git && cd hister`，查看 README.md 了解配置选项。根据文档修改配置文件（如监听端口、索引目录、爬取规则），运行 `go build -o hister .` 编译二进制，或直接 `go run .` 启动服务。启动后可通过浏览器访问默认端口（如 8080）进行搜索测试。如需爬取种子 URL，按 README 中的 API 调用示例添加任务，验证索引与搜索功能是否正常。"
+      }
+    },
+    "repo:ConardLi/garden-skills": {
+      "type": "repo-insight",
+      "hash": "709a606527d69e15c64ce201",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-26T22:00:14.150Z",
+      "value": {
+        "summaryZh": "garden-skills 是 ConardLi 维护的开源技能集合，以 CSS 为核心语言，整合了网页设计、知识检索、图像生成等多种实用技能。该项目将日常开发中可复用的能力模块化，便于开发者或 AI 代理直接调用，从而提升效率。亮点在于其结构化定义和跨场景覆盖，适合前端开发者、全栈工程师、AI 应用设计者以及希望将智能体技能落地到实际项目的技术爱好者。通过简单的配置，即可快速体验这些技能，并将其集成到自己的工作流中。",
+        "scenarios": [
+          "前端开发时，利用其中的网页设计技能快速生成页面布局与视觉风格，缩短 UI 迭代周期。",
+          "在开发文档或知识库检索中，借助知识检索技能精准定位所需信息，提高查询效率。",
+          "需要生成创意图像或素材时，调用图像生成技能，快速产出适合项目使用的视觉内容。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/ConardLi/garden-skills.git，然后进入项目目录 garden-skills，阅读 README 文件了解技能定义与用法。根据项目文档安装必要的依赖（如无特殊说明则无需安装），并尝试运行示例或测试命令，验证技能是否可用。若项目包含配置文件，请根据实际需求进行调整，最后启动一个简单的演示以确认环境正常。"
+      }
+    },
+    "repo:browser-use/browser-use": {
+      "type": "repo-insight",
+      "hash": "4b5af2f9682b6cc98cdc5024",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-26T22:00:20.049Z",
+      "value": {
+        "summaryZh": "browser-use 是一个开源 Python 库，旨在让 AI 代理能够像人类一样操作浏览器，从而自动执行网页上的各类任务。它通过将网页内容转化为结构化的、可供大语言模型理解的格式，并支持多步骤操作、表单填写、数据提取等，显著降低了网页自动化的门槛。其亮点在于简单易用的 API、与主流 LLM（如 GPT、Claude）的无缝集成，以及内置的智能元素定位能力。适合需要快速构建网页自动化工具的开发者和数据科学家，尤其适合处理需要动态交互的复杂网页任务，可替代传统的 Selenium 脚本编写。",
+        "scenarios": [
+          "使用自然语言指令让 AI 代理自动完成网页上的数据采集、表单提交和内容验证。",
+          "构建个人化的浏览器助手，例如自动登录网站并下载每日报表。",
+          "为测试团队提供基于 LLM 的端到端 UI 自动化测试，减少脚本维护成本。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 browser-use 库。首先，在终端执行 `pip install browser-use` 和 `pip install langchain-openai`（或你偏好的 LLM 提供商）。然后，设置环境变量 `OPENAI_API_KEY`（或相应提供商的 API key）。接下来，创建一个 Python 脚本，导入 `from browser_use import Agent` 和 `from langchain_openai import ChatOpenAI`，初始化 `Agent`，传入任务描述（例如“打开 https://example.com 并提取页面标题”），并调用 `agent.run()` 执行。请确保浏览器驱动（如 ChromeDriver）已安装或由 Playwright 自动管理，并输出运行结果。如果遇到依赖冲突，请使用虚拟环境。"
+      }
+    },
+    "repo:K-Dense-AI/scientific-agent-skills": {
+      "type": "repo-insight",
+      "hash": "0a0aed4efecbced70e184510",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-26T22:00:25.819Z",
+      "value": {
+        "summaryZh": "scientific-agent-skills 是一个面向科学研究的 AI 智能体技能库，旨在将任何 AI 代理转化为“AI 科学家”。项目由 K-Dense-AI 维护，已被全球超过 17.5 万名科学家使用。它提供 163 个经过验证的即用型技能，并整合了 100 多个涵盖生物学、化学、医学和药物发现领域的科学数据库。该库兼容 Cursor、Claude Code、Codex、Pi、Antigravity 等主流工具，并遵循开放的 Agent Skills 标准，便于开发者集成与扩展。适合科研人员、AI 开发者及药物研发团队，可显著提升文献分析、实验设计、数据挖掘等工作的效率。",
+        "scenarios": [
+          "科研人员快速检索和整合跨数据库的生物学、化学文献数据，辅助文献综述与假设生成。",
+          "药物研发团队利用技能库进行靶点验证、化合物性质预测和临床试验数据初步分析。",
+          "AI 应用开发者将科学技能集成到现有智能体中，构建定制化的科研助手或自动化实验工作流。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/K-Dense-AI/scientific-agent-skills 仓库到本地，使用 Python 3.9+ 环境，运行 pip install -r requirements.txt 安装依赖。查看 README.md 了解技能库结构和配置方法。尝试加载其中一个技能（例如 'literature_search'），并用示例数据（如 'data/sample.csv'）执行一次端到端测试，验证推理结果。最后，按照文档将技能库连接到你的 AI 代理（如 Cursor 或 Claude Code），并运行内置的测试用例确认兼容性。详细步骤以仓库内 GUIDE.md 为准。"
+      }
+    },
+    "repo:bookorbit/bookorbit": {
+      "type": "repo-insight",
+      "hash": "533f83d3219df7e73253420b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-26T22:00:37.189Z",
+      "value": {
+        "summaryZh": "BookOrbit 是一个基于 TypeScript 构建的个人阅读空间管理工具，旨在帮助用户高效组织、追踪和享受阅读生活。它提供了书籍收藏、阅读进度记录、笔记标注等功能，界面简洁现代，注重用户体验。适合希望系统化管理阅读书目、养成阅读习惯的读者、学生及知识工作者。项目代码结构清晰，易于扩展，开发者可快速上手进行二次开发或定制。",
+        "scenarios": [
+          "个人阅读书库管理：集中收藏纸质书、电子书，记录阅读状态和进度。",
+          "阅读笔记沉淀：边读边记，随时添加批注、摘录和感想，形成个人知识库。",
+          "阅读习惯养成：通过进度追踪和统计，帮助用户设定并达成年度阅读目标。"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Node.js 和 npm/pnpm。然后执行 git clone https://github.com/bookorbit/bookorbit，进入项目目录，运行 pnpm install 安装依赖，再运行 pnpm dev 启动开发服务器。若项目包含后端或数据库，请参考 README 中 Docker 或环境变量配置。最后打开浏览器访问本地地址，体验 BookOrbit 的阅读空间功能。"
       }
     }
   }
