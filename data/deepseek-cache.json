@@ -78,17 +78,17 @@
     },
     "repo:colbymchenry/codegraph": {
       "type": "repo-insight",
-      "hash": "f31343cc5718d5b1c120b491",
+      "hash": "0e179686d1803ad189028288",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-26T22:01:17.878Z",
+      "generatedAt": "2026-08-27T22:01:14.353Z",
       "value": {
-        "summaryZh": "Codegraph 是一个用 C 编写的预索引代码知识图谱工具，能在代码变更时自动同步。它专为 Claude Code、Codex、Gemini、Cursor 等 AI 编码代理设计，通过减少 token 消耗和工具调用次数，提升代码理解效率。所有数据完全本地存储，保证隐私安全。适合需要高效代码上下文提供给 AI 代理的开发者。",
+        "summaryZh": "Codegraph 是一个用 C 语言实现的预索引代码知识图谱工具，能够自动同步代码变更，为 Claude Code、Codex、Gemini、Cursor 等主流 AI 编程助手提供本地化、高效的代码上下文。它通过构建知识图谱大幅减少 AI 工具在理解代码时所需的 token 数量和工具调用次数，显著提升响应速度和准确性。所有索引均在本地完成，保障代码安全与隐私。适合需要深度理解大型代码库、追求开发效率与成本控制的开发者和团队。",
         "scenarios": [
-          "在大型代码库中使用 AI 编码助手时，快速提供精准的代码上下文，减少 token 浪费。",
-          "团队协作中保持代码知识图谱与最新代码变更同步，提升 AI 代理的理解准确性。",
-          "本地开发环境需要隐私保护的代码分析工具，无需上传代码到云端。"
+          "在大型项目中，为 Claude Code 等 AI 助手提供快速、精准的代码语义索引，减少上下文窗口占用。",
+          "作为本地开发环境中的代码知识库，支撑多款 AI 编程工具的统一代码理解接口。",
+          "在敏感代码环境中，利用 100% 本地索引，避免代码外传，同时保证 AI 辅助的响应速度。"
         ],
-        "agentInstallPrompt": "克隆仓库后，在项目根目录执行 `make` 编译。然后运行 `./codegraph index` 对当前目录代码建立索引，之后 AI 代理即可通过 `./codegraph query \"你的问题\"` 获取代码上下文。支持自动监听变更：`./codegraph watch`。"
+        "agentInstallPrompt": "请先安装 Codegraph 工具。推荐使用 Homebrew 安装：打开终端执行 `brew install colbymchenry/codegraph/codegraph` 或参考仓库 README 从源码编译（需要 CMake 和 C 编译器）。安装后，在代码仓库根目录运行 `codegraph index` 生成初始知识图谱，然后运行 `codegraph watch` 开启自动同步。之后将 Codegraph 的 MCP 服务器地址（如 `http://localhost:9100`）配置到 Claude Code 或 Codex 等工具的 MCP 设置中，即可开始使用。"
       }
     },
     "repo:manaflow-ai/cmux": {
@@ -588,17 +588,17 @@
     },
     "repo:Alishahryar1/free-claude-code": {
       "type": "repo-insight",
-      "hash": "1778a4afe8cfe6e08068315f",
+      "hash": "4d17f16ed141b70deeff9040",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-24T02:21:43.344Z",
+      "generatedAt": "2026-08-27T22:01:03.242Z",
       "value": {
-        "summaryZh": "这是一个免费的AI编程助手聚合工具，支持Claude Code、Codex、Pi和OpenCode等多种主流模型，提供超过13亿免费token。用户可以通过终端、桌面应用、IDE插件或手机端访问，并支持语音交互，且符合服务条款。项目用Python开发，旨在降低AI编程门槛，特别适合希望尝试多种AI助手但预算有限的开发者。其核心亮点是零成本、多模型集成和跨平台支持，同时强调ToS友好，避免封号风险。",
+        "summaryZh": "free-claude-code 是一个基于 Python 的开源工具，可让开发者从终端、应用、IDE 或手机端免费使用 Claude Code、Codex、Pi、OpenCode 等多种 AI 编程助手。项目提供超过 13 亿免费 token，支持语音交互，且条款友好（ToS friendly），类似 OpenClaw 的体验。它聚合了多个顶级 AI 模型，降低了使用门槛，适合希望低成本接入 AI 编程能力、追求多端灵活操作的开发者。亮点在于免费额度大、跨平台支持、语音控制，以及无需复杂配置即可体验多种模型。",
         "scenarios": [
-          "在终端中快速调用不同AI模型辅助代码编写、调试和重构，节省订阅费用。",
-          "通过IDE插件或手机端在移动场景下进行语音编程，提高开发效率。",
-          "在资源受限或预算有限的环境中，利用免费token运行自动化任务和脚本。"
+          "在终端中直接调用 Claude Code 或 Codex 完成代码生成、重构和调试任务，节省 API 费用。",
+          "在 IDE 或手机端通过语音指令操作 AI 编程助手，提升移动办公和远程开发的效率。",
+          "作为 OpenClaw 的替代方案，集成多种 AI 模型用于自动化脚本编写、代码解释或技术问答。"
         ],
-        "agentInstallPrompt": "克隆仓库Alishahryar1/free-claude-code，使用pip安装依赖，运行python主入口文件并按照提示配置API密钥或激活免费token。启动后验证能否在终端成功调用Claude Code或Codex，并测试基本问答功能。若支持语音，尝试使用麦克风输入一条简单指令。"
+        "agentInstallPrompt": "请克隆仓库 https://github.com/Alishahryar1/free-claude-code 并进入目录，检查 Python 版本（需 3.9+），创建虚拟环境后运行 pip install -r requirements.txt 安装依赖。阅读 README 了解配置方法，根据提示设置 API 密钥或使用内置免费 token。然后运行主程序（如 python main.py 或 CLI 入口），尝试在终端中启动 Claude Code 交互，并测试语音功能。若依赖包含系统级库，请确保安装对应音频或网络包。如有问题，查看项目 issues 或运行 --help 获取帮助。"
       }
     },
     "repo:ruvnet/ruflo": {
@@ -813,17 +813,17 @@
     },
     "repo:nexu-io/open-design": {
       "type": "repo-insight",
-      "hash": "50b4ba9dc964cd8a4fadab12",
+      "hash": "23f27f38af6a92a65109b5a0",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-19T23:41:59.120Z",
+      "generatedAt": "2026-08-27T22:01:08.771Z",
       "value": {
-        "summaryZh": "open-design 是一款开源、本地优先的桌面设计插件，被誉为 DeepSeek Harness 的得力设计工具和 Claude Design 的开源替代品。它能将你的编码代理（如 Claude Code、Codex、Cursor 等 20+ CLI）转变为强大的设计引擎，直接生成原型、落地页、仪表盘、幻灯片、图片和视频等真实文件，并支持导出为 HTML、PDF、PPTX、MP4 等格式。项目采用 TypeScript 构建，强调本地运行与数据隐私，同时通过 BYOK 模式灵活接入各家 AI 服务。适合希望利用 AI 自动化设计流程、快速交付可编辑设计文件的开发者、设计师及产品团队。",
+        "summaryZh": "open-design 是一款本地优先的桌面设计插件，可作为 Claude Design 的开源替代方案，专为 DeepSeek Harness 等编码代理打造。它能让你的 AI 编程代理直接生成真实的设计文件，包括原型、落地页、仪表盘、幻灯片、图片和视频，并支持导出为 HTML、PDF、PPTX、MP4 等格式。通过 BYOK 模式，可接入 Claude Code、Codex、Cursor、DeepSeek Harness、OpenCode 等 20+ 命令行工具，适合希望将 AI 编码能力扩展至视觉设计领域的开发者、产品经理和设计工程师。",
         "scenarios": [
-          "快速将产品概念转化为高保真网页原型，并导出为 HTML 供团队预览或二次开发。",
-          "使用自然语言驱动 AI 生成专业演示文稿，直接导出为 PPTX 用于客户汇报。",
-          "自动化创建数据仪表盘或营销视觉素材，输出为 PDF/MP4，提升内容生产与迭代效率。"
+          "快速生成网页原型或落地页，并直接导出为 HTML 用于开发交付。",
+          "利用 AI 代理自动制作产品演示幻灯片或仪表盘，输出 PPTX 或 PDF。",
+          "生成营销图片或视频素材，导出为 MP4 等格式，用于内容创作。"
         ],
-        "agentInstallPrompt": "请克隆 https://github.com/nexu-io/open-design 仓库到本地，进入 open-design 目录，然后运行 npm install 安装依赖。安装完成后，先查阅 README.md 了解项目启动方式和配置说明，随后运行 npm run dev 启动开发服务器，或根据 README 指导以开发模式运行桌面应用。如果项目有特殊环境要求（如 Node 版本、原生依赖），请按提示配置。运行成功后，尝试通过界面或 CLI 调用你的 AI 编码代理，生成一个简单的网页原型并导出 HTML 文件，以验证核心流程。"
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/nexu-io/open-design 并查看 README。然后安装依赖（如 npm install 或 pnpm install）。根据项目说明配置环境，确保支持 DeepSeek Harness 或你的 CLI 工具（如 Claude Code）。运行本地开发服务器（例如 npm run dev 或类似命令），启动桌面应用。接着尝试用其中一个示例命令，让编码代理生成一个简单的落地页并导出为 HTML，验证全流程是否正常。"
       }
     },
     "repo:VoltAgent/awesome-openclaw-skills": {
@@ -1083,17 +1083,17 @@
     },
     "repo:thedotmack/claude-mem": {
       "type": "repo-insight",
-      "hash": "368dc7d80614d9d776b44241",
+      "hash": "f51d050729671746fafa0423",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-27T02:20:09.888Z",
+      "generatedAt": "2026-08-27T22:00:37.905Z",
       "value": {
-        "summaryZh": "claude-mem是一款跨AI会话的上下文持久化工具，自动捕获代理每次会话的活动，利用AI压缩并注入未来会话，实现连续记忆。支持Claude Code、OpenClaw、Codex等多种代理。亮点是无需手动管理上下文，自动压缩与注入，显著提升长期任务效率。适合重度使用AI编程助手或对话代理的开发人员，尤其是处理复杂项目或需要长期记忆的用户。",
+        "summaryZh": "claude-mem是为AI编码助手设计的跨会话记忆工具。它能自动捕获agent在工作会话中的全部行为，通过AI压缩提炼核心上下文，并在未来会话中智能注入，使Claude Code、Codex、Gemini等工具保持连续记忆。该项目用JavaScript实现，安装简便，适合需要长期依赖AI助手的开发者，可显著减少重复描述历史背景的工作，让AI更懂你的项目习惯与决策。它支持主流编码agent，是提升AI协作效率的实用中间层。",
         "scenarios": [
-          "开发大型项目时，让AI编码助手记住之前的代码修改、架构决策和问题解决记录，避免重复解释。",
-          "进行多轮代码审查或调试时，自动保留每次反馈和修复的上下文，提升后续会话的连贯性。",
-          "在团队协作中，共享代理的持久化上下文，确保不同成员使用同一代理时能延续之前的分析和建议。"
+          "长时间跨会话维护同一功能模块，自动延续此前讨论和决策",
+          "多agent协作场景下共享记忆，保持项目上下文一致",
+          "个人知识沉淀，将分散会话内容转化为可检索的项目要点"
         ],
-        "agentInstallPrompt": "请按照以下步骤安装和试跑claude-mem：1. 克隆仓库：git clone https://github.com/thedotmack/claude-mem.git 并进入目录。2. 安装依赖：npm install 或 yarn install。3. 配置环境变量：在项目根目录创建.env文件，设置必要的API密钥（如Claude API Key）。4. 运行示例：npm run dev 或 yarn dev 启动服务。5. 在支持的代理（如Claude Code）中配置使用claude-mem插件，按照文档启用持久上下文功能。测试时可以创建一个简单的对话任务，观察后续会话中是否自动注入前文摘要。具体配置可参考README。"
+        "agentInstallPrompt": "请先通过npm全局安装claude-mem：npm install -g claude-mem。然后在项目根目录执行claude-mem init完成初始化。之后正常使用Claude Code、Codex等agent工具，claude-mem会在后台自动捕获会话并利用AI压缩记忆。你可以通过运行claude-mem命令查看已记忆的上下文，或使用claude-mem search <关键词>检索历史。若想测试效果，可先运行一个简单对话，再重新启动会话，观察是否自动注入相关记忆。"
       }
     },
     "repo:st-tech/ppf-contact-solver": {
@@ -2598,17 +2598,17 @@
     },
     "repo:tt-a1i/archify": {
       "type": "repo-insight",
-      "hash": "0d9a74624b0c353e0512206b",
+      "hash": "5d878a6c2396065ab93628a7",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-02T23:39:29.625Z",
+      "generatedAt": "2026-08-27T22:00:23.379Z",
       "value": {
-        "summaryZh": "Archify 是一个生成图表技能的 Agent 工具，专注于创建美观且可验证的架构图、工作流程图、序列图、数据流图和生命周期图。它生成自包含的 HTML 文件，内置动态效果与清晰导出功能，方便直接嵌入文档或演示。适用于软件架构师、开发人员和技术文档编写者，可快速将系统设计转化为可视化、交互式图表，提升沟通与协作效率。",
+        "summaryZh": "Archify 是一个面向 AI agent 的技能包，用于生成美观且可验证的架构图、流程图、时序图、数据流图和生命周期图。它输出自包含的 HTML 文件，支持动画效果和清晰导出，方便在浏览器中直接查看和分享。核心亮点在于将图表生成与验证结合，确保图表逻辑正确，同时提供精致的视觉呈现。适合需要快速创建高质量技术图表的开发者、架构师、技术文档写作者，以及希望将图表生成能力集成到 AI 工作流中的团队。通过简单的配置，即可生成交互式图表，无需手动绘制。",
         "scenarios": [
-          "在架构设计评审中，快速绘制系统架构图并导出为高清图片或 PDF 用于文档。",
-          "为复杂业务流程创建带交互动画的工作流或时序图，帮助团队理解逻辑。",
-          "在技术博客或产品手册中嵌入动态图表，增强读者对数据流或生命周期的直观感受。"
+          "在技术方案设计中，快速生成系统架构图并验证组件间依赖关系的正确性。",
+          "在代码评审或技术分享中，创建带动画的时序图以清晰展示调用链路。",
+          "为项目文档自动生成可嵌入的数据流或生命周期图，并导出为图片用于演示。"
         ],
-        "agentInstallPrompt": "请先克隆仓库 https://github.com/tt-a1i/archify 到本地，然后查看 README 了解项目结构和依赖要求。根据说明安装必要依赖（例如使用 npm install 或 pip install），运行示例或测试命令（如 npm run dev 或 python app.py），在浏览器中打开生成的 HTML 图表文件，确认功能正常。如果项目包含 CLI 工具，尝试运行帮助命令以了解如何使用。"
+        "agentInstallPrompt": "请克隆仓库 https://github.com/tt-a1i/archify.git 并查看 README。使用 npm 安装依赖，然后运行示例脚本（如 npm run example）生成一个演示架构图。确保生成的 HTML 文件在浏览器中正常打开，并验证其包含动画和导出功能。如有测试，请运行 npm test 确认所有用例通过。最后，总结安装步骤和可用的配置选项。"
       }
     },
     "repo:anthropics/cwc-workshops": {
@@ -5024,6 +5024,96 @@
           "阅读习惯养成：通过进度追踪和统计，帮助用户设定并达成年度阅读目标。"
         ],
         "agentInstallPrompt": "请先确保已安装 Node.js 和 npm/pnpm。然后执行 git clone https://github.com/bookorbit/bookorbit，进入项目目录，运行 pnpm install 安装依赖，再运行 pnpm dev 启动开发服务器。若项目包含后端或数据库，请参考 README 中 Docker 或环境变量配置。最后打开浏览器访问本地地址，体验 BookOrbit 的阅读空间功能。"
+      }
+    },
+    "repo:bilawalsidhu/gods-eye-view": {
+      "type": "repo-insight",
+      "hash": "69c5dff3760dde33312ef2af",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-27T22:00:10.606Z",
+      "value": {
+        "summaryZh": "Gods Eye View 是一个运行在浏览器中的间谍卫星模拟器，但所用数据是真实的。它基于 JavaScript 构建，在逼真的三维地球仪上呈现实时开源空间情报。该项目利用公开卫星数据，让用户以类似卫星视角观察地球，支持动态轨道追踪与影像叠加。亮点在于将复杂空间数据可视化，提供沉浸式交互体验，适合对遥感、地理信息或卫星技术感兴趣的开发者、研究者和爱好者，用于快速原型验证或空间数据展示。",
+        "scenarios": [
+          "教育演示：用于课堂展示卫星轨道、遥感影像与地球观测的基本原理。",
+          "数据可视化：将实时或历史卫星数据映射到 3D 地球，辅助空间情报分析。",
+          "交互式探索：作为浏览器工具，供用户自由缩放、旋转并追踪卫星路径。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/bilawalsidhu/gods-eye-view 并进入目录。查看 README 或 package.json 中的安装说明，然后使用 npm install 安装依赖，再运行 npm start 或相应的开发命令启动本地服务器。在浏览器中打开提示的 URL（通常为 localhost:3000），验证是否能看到带真实卫星数据的 3D 地球界面，并确保无控制台错误。若需要 API 密钥，请查看环境变量配置。"
+      }
+    },
+    "repo:zedeus/nitter": {
+      "type": "repo-insight",
+      "hash": "29f1649fa04902e4018c8c15",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-27T22:00:17.419Z",
+      "value": {
+        "summaryZh": "Nitter 是一个用 Nim 语言编写的替代 Twitter 前端，注重隐私与性能。它允许用户在不登录、不使用 JavaScript 的情况下浏览推特内容，有效规避广告、追踪器和算法推荐。项目界面简洁，数据加载快速，支持自托管，可部署在服务器上作为代理服务。适合追求隐私保护、讨厌广告干扰的普通用户，也适合开发者学习 Nim 语言或搭建自己的推特镜像站。其开源特性使得社区能够持续改进，提供更稳定的服务。",
+        "scenarios": [
+          "个人隐私浏览：在不登录推特账号、不留下追踪痕迹的前提下，匿名查看用户时间线和话题内容。",
+          "服务器自托管：在自有 VPS 或 NAS 上部署 Nitter，为局域网或朋友提供无广告的推特代理访问入口。",
+          "开发学习参考：作为 Nim 语言的高质量开源项目，可供开发者研究异步编程、HTML 解析和 API 代理实现。"
+        ],
+        "agentInstallPrompt": "请先确保系统已安装 Git 和 Nim 编译器（版本需不低于 1.6）。然后执行以下命令：git clone https://github.com/zedeus/nitter.git && cd nitter && nimble build -d:release。若遇到 sqlite3 相关依赖问题，请安装 libsqlite3-dev。构建完成后，将 nitter.conf 中的端口改为 8080，并使用 ./nitter 启动服务。最后在浏览器访问 http://localhost:8080 验证是否可正常浏览推特内容。注意：请配置好网络代理以保证出口 IP 能访问推特。"
+      }
+    },
+    "repo:JetBrains/go-modern-guidelines": {
+      "type": "repo-insight",
+      "hash": "5b2566e1b21271c1b38a544c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-27T22:00:28.585Z",
+      "value": {
+        "summaryZh": "JetBrains/go-modern-guidelines 是一个指导 AI 编码代理编写现代 Go 代码的权威指南仓库。它汇集了 Go 社区的最佳实践、常见陷阱和风格规范，帮助开发者与 AI 工具生成更符合 Go 惯例的高质量代码。该项目由 JetBrains 维护，内容覆盖项目结构、错误处理、并发模式、性能优化等关键主题，适合希望提升 AI 辅助编码效果或学习现代 Go 写法的开发者。通过遵循此指南，AI 生成的代码将更易读、更健壮，并更贴合实际工程需求。",
+        "scenarios": [
+          "在 AI 编码代理（如 Copilot、Codeium）的提示中引用该指南，引导生成符合 Go 社区惯例的代码。",
+          "作为团队内部 Go 代码评审的参考标准，统一编码风格并减少常见错误。",
+          "用于学习现代 Go 最佳实践，提升个人代码质量并优化项目架构。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/JetBrains/go-modern-guidelines，并阅读其中的指南文件（如 guide.md 或类似文档）。然后，基于该指南中的原则，为当前项目生成一个示例 Go 模块，要求包含良好的项目结构、错误处理、并发使用和测试代码。请确保生成的代码与指南中的建议一致，并注释关键设计决策。"
+      }
+    },
+    "repo:google/googletest": {
+      "type": "repo-insight",
+      "hash": "b67e3a2549fe4f4ad6207b45",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-27T22:00:43.990Z",
+      "value": {
+        "summaryZh": "GoogleTest 是 Google 推出的 C++ 测试与模拟框架，支持单元测试、接口测试、死亡测试等，提供丰富的断言宏、测试固件、参数化测试和 mocking 功能。它广泛兼容多种编译器与构建系统，易于集成到各类 C++ 项目中。该框架设计简洁，文档完善，社区活跃，是 C++ 开发者进行测试驱动的开发的可靠选择。适合从个人项目到大型企业级应用，尤其适合需要严格质量保障的团队。通过 GoogleTest，开发者可以高效编写可维护的测试代码，提升代码健壮性与可验证性。",
+        "scenarios": [
+          "为 C++ 项目编写单元测试，验证函数或类的行为是否符合预期。",
+          "使用 Google Mock 创建模拟对象，隔离依赖进行接口交互测试。",
+          "在 CI/CD 管道中集成自动化测试，持续验证代码变更的正确性。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 GoogleTest 框架。首先，在终端中执行 git clone https://github.com/google/googletest.git 克隆仓库。然后，使用 cmake 构建并安装：cd googletest && cmake -B build && cmake --build build --target install。随后，创建一个简单的 C++ 测试文件 test.cpp，包含 #include <gtest/gtest.h> 和一个简单测试用例，使用 g++ 编译并链接 gtest 和 pthread 库：g++ -std=c++11 test.cpp -lgtest -lgtest_main -pthread -o test。最后运行 ./test 验证框架是否正常工作。如果遇到权限问题，请使用 sudo 或以 root 身份执行安装。"
+      }
+    },
+    "repo:actions/checkout": {
+      "type": "repo-insight",
+      "hash": "9302afe1acd9d7cefbdd9a92",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-27T22:00:49.924Z",
+      "value": {
+        "summaryZh": "actions/checkout 是 GitHub 官方提供的 Action，用于在 GitHub Actions 工作流中将仓库代码检出到运行器上，是 CI/CD 流水线中最基础、使用最广泛的步骤。它支持配置分支、标签、提交 SHA、fetch 深度、子模块、SSH 密钥等参数，并能正确处理 Git LFS、稀疏检出等高级场景。相比手动 git clone，它经过官方优化，能自动处理认证和持久化令牌，与 GitHub 生态无缝集成。适合任何需要自动化构建、测试或部署的开发者，尤其适合刚上手 GitHub Actions 的团队，能确保代码检出快速、可靠，是构建高质量自动化工作流的基石。",
+        "scenarios": [
+          "在 GitHub Actions 中运行测试套件前，使用该 Action 拉取指定分支或提交的代码。",
+          "部署流程中，通过配置 fetch-depth 实现浅克隆，加速代码检出并减少仓库体积。",
+          "需要检出带有子模块或 LFS 文件的仓库，利用其内置参数实现完整或部分拉取。"
+        ],
+        "agentInstallPrompt": "请创建一个 GitHub Actions 工作流文件（例如 .github/workflows/ci.yml），在 jobs.<job_id>.steps 中首先使用 actions/checkout@v4，无需额外参数即可检出当前仓库默认分支。随后可添加一个运行 `ls -la` 的步骤验证文件已存在。若要测试更多功能，可配置 `with` 参数如 `ref` 指定分支、`fetch-depth: 1` 进行浅克隆。确保该工作流在 push 或 pull_request 事件时触发。"
+      }
+    },
+    "repo:securo-finance/securo": {
+      "type": "repo-insight",
+      "hash": "a9ca56c5317c46921df1c6ac",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-27T22:00:55.971Z",
+      "value": {
+        "summaryZh": "Securo 是一款开源、自托管的个人财务管理工具，采用 Python 构建，以隐私优先为核心理念。它帮助用户本地存储和管理财务数据，避免依赖第三方云服务，确保敏感信息完全由自己掌控。该工具界面简洁，支持多平台部署，适合注重数据安全、希望自主管理财务记录的个人用户。其亮点包括无追踪、完全开源、可自定义扩展，以及简单直接的部署流程。无论是日常收支记录、预算规划还是资产概览，Securo 都提供了轻量且可靠的解决方案，是传统云端记账应用的理想替代品。",
+        "scenarios": [
+          "作为本地优先的个人记账应用，用于日常收入、支出和转账记录，数据完全保存在自己的服务器或电脑上。",
+          "在家庭或小团队中自托管部署，统一管理多账户财务数据，避免使用外部金融聚合服务以保护隐私。",
+          "作为开发者学习或扩展的基线，基于其 Python 代码库快速定制个性化财务分析功能或集成其他自托管服务。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 securo-finance/securo 项目（GitHub: https://github.com/securo-finance/securo）。首先克隆仓库，阅读 README 中的安装说明，推荐使用 Docker 或 Python 虚拟环境（pip install -r requirements.txt）初始化项目。然后运行迁移或初始化命令（如 flask db upgrade 或 python manage.py migrate），接着启动开发服务器（例如 python run.py 或 flask run）。启动后，在浏览器中打开提示的本地地址（通常为 http://localhost:5000），确认界面可访问，并创建测试账户验证基本的添加交易和预算功能。如果遇到依赖问题或配置缺失，请根据项目文档自动调整。最后总结部署步骤和运行方式，并给出默认访问地址和登录凭据（若有默认值）。"
       }
     }
   }
