@@ -5115,6 +5115,81 @@
         ],
         "agentInstallPrompt": "请帮我安装并试跑 securo-finance/securo 项目（GitHub: https://github.com/securo-finance/securo）。首先克隆仓库，阅读 README 中的安装说明，推荐使用 Docker 或 Python 虚拟环境（pip install -r requirements.txt）初始化项目。然后运行迁移或初始化命令（如 flask db upgrade 或 python manage.py migrate），接着启动开发服务器（例如 python run.py 或 flask run）。启动后，在浏览器中打开提示的本地地址（通常为 http://localhost:5000），确认界面可访问，并创建测试账户验证基本的添加交易和预算功能。如果遇到依赖问题或配置缺失，请根据项目文档自动调整。最后总结部署步骤和运行方式，并给出默认访问地址和登录凭据（若有默认值）。"
       }
+    },
+    "repo:abhigyanpatwari/GitNexus": {
+      "type": "repo-insight",
+      "hash": "a25389ff2a4c74bfe87d67e0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-28T22:10:02.688Z",
+      "value": {
+        "summaryZh": "GitNexus 是一款零服务器代码智能引擎，完全在浏览器端运行。用户可直接拖入 Git 仓库（支持 GitHub、GitLab、Azure 或本地）或 ZIP 文件，系统会自动生成交互式知识图谱，并内置 Graph RAG 智能问答代理，助力代码探索与理解。其亮点在于无需后端部署，数据全程本地处理，隐私安全，且开箱即用。适合需要快速熟悉陌生代码库的开发者、技术团队负责人以及开源项目贡献者，尤其适合在代码审查、技术债评估和新人 onboarding 等场景中提升效率。",
+        "scenarios": [
+          "快速熟悉陌生开源项目：将仓库导入 GitNexus，通过知识图谱和 RAG 问答快速定位模块关系与核心逻辑。",
+          "代码审查与重构规划：基于知识图谱发现模块间的隐式依赖，评估改动影响范围，辅助制定重构方案。",
+          "团队新成员入职培训：新人通过交互式图谱理解项目架构，并利用 Graph RAG 智能问答降低提问成本，加速上手。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/abhigyanpatwari/GitNexus 到本地，项目使用 TypeScript。先运行 `npm install` 安装依赖，然后执行 `npm run dev` 启动开发服务器，在浏览器中打开提示的本地地址（如 http://localhost:5173）。在页面中拖入任意一个 Git 仓库（或使用示例仓库地址），等待知识图谱生成，然后尝试在 Graph RAG 聊天框中询问关于代码结构的问题，以验证功能。若需构建生产版本，可运行 `npm run build`。"
+      }
+    },
+    "repo:abi/screenshot-to-code": {
+      "type": "repo-insight",
+      "hash": "51e82fd1dfbd01e1ce9b158c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-28T22:10:12.804Z",
+      "value": {
+        "summaryZh": "screenshot-to-code 是一个将截图自动转换为前端代码的开源工具，支持 HTML、Tailwind CSS、React 和 Vue。用户只需拖入一张 UI 截图，AI 即可识别界面结构并生成干净、可读的代码，极大加速原型制作和前端开发流程。项目基于 Python 构建，易于部署和二次开发。适合设计师、前端开发者、产品经理等快速将设计稿或竞品界面转化为实际代码，减少手动编码工作量，提升迭代效率。亮点是支持多种主流技术栈，且生成的代码质量较高，可直接用于项目。",
+        "scenarios": [
+          "设计师将 Figma 或 Sketch 中的 UI 设计稿截图，快速转换成 React/Tailwind 代码，用于前端开发联调。",
+          "前端开发者在重构现有网站时，截取目标页面视觉，生成 Vue 组件后结合业务逻辑进行二次开发。",
+          "产品经理在撰写 PRD 或 Demo 构思时，用简单手绘草图或参考应用截图，生成 HTML 原型供团队讨论。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 abi/screenshot-to-code 到本地，进入项目目录后，根据 README 安装依赖（推荐使用 Python 3.10+ 和 pip install -r requirements.txt 或 poetry install）。配置环境变量，至少提供 OpenAI API 密钥（如 OPENAI_API_KEY），如果需要使用本地模型也可参考 README。启动后端服务，通常执行 uvicorn main:app --reload，然后浏览器打开 http://localhost:8000，上传一张清晰的 UI 截图，点击生成即可获得对应代码。请确保网络可访问 API，并根据需要修改输入的模型名称。"
+      }
+    },
+    "repo:tailscale/tailcat": {
+      "type": "repo-insight",
+      "hash": "d95ca0468909cc8d0917847c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-28T22:10:25.800Z",
+      "value": {
+        "summaryZh": "Tailcat 是 Tailscale 官方出品的类 netcat 工具，它利用 Tailscale 的数据平面（基于 WireGuard 的加密隧道）在设备之间传输数据，而无需依赖控制平面。这意味着只要两台设备已加入同一个 tailnet（Tailscale 网络），即可直接通过 Tailcat 进行端口监听、数据转发，像 netcat 一样简单易用，但连接更安全、私密。它特别适合快速调试 Tailscale 网络内的服务、临时传输文件或构建轻量级数据管道。对于 Tailscale 用户和需要在内网或异地设备间安全传数据的开发者、运维人员来说，Tailcat 是一个轻量且强大的助手。",
+        "scenarios": [
+          "运维人员需要在同一 Tailscale 网络内的两台服务器间快速传输配置文件，无需额外搭建 FTP 或 HTTP 服务，直接用 tailcat 发送和接收数据。",
+          "开发者在调试微服务时，需要在本地与远程实例之间建立加密的 TCP 隧道来测试接口连通性，tailcat 提供类似 netcat 的简单命令。",
+          "在无公网 IP 的边缘设备与中心服务器之间，利用 Tailscale 的加密链路，通过 tailcat 实现端口转发或数据采集。"
+        ],
+        "agentInstallPrompt": "请在一个已安装 Tailscale 并已加入 tailnet 的环境中，获取安装 Tailcat：使用命令 'go install github.com/tailscale/tailcat@latest'（或从 GitHub Release 下载二进制）。安装后，在机器 A 上运行 'tailcat -l 8080 > received.bin' 监听端口 8080 并接收数据；在机器 B 上运行 'cat some_file.bin | tailcat <A的IP>:8080' 发送数据。验证文件传输成功并退出进程。注意：确保两台机器的防火墙允许 Tailscale 的 UDP 流量。"
+      }
+    },
+    "repo:NationalSecurityAgency/ghidra": {
+      "type": "repo-insight",
+      "hash": "82ef859c399fd51cdbc47516",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-28T22:10:31.782Z",
+      "value": {
+        "summaryZh": "Ghidra 是美国国家安全局（NSA）开源的企业级软件逆向工程（SRE）框架，基于 Java 开发，提供反汇编、反编译、脚本执行、图形化分析等完整功能。其内置的 Eclipse 集成界面支持多架构（x86/ARM/MIPS 等）和多种文件格式，可高效分析二进制程序、恶意代码及漏洞。亮点在于免费开源、持续更新、支持协作分析，并可通过 Python/Java 脚本扩展。适合安全研究员、恶意软件分析人员、CTF 选手及对二进制剖析感兴趣的开发者，是商业工具 IDA Pro 的有力替代方案。",
+        "scenarios": [
+          "对未知二进制样本进行逆向分析，提取控制流、函数调用关系并还原可读伪代码，辅助漏洞挖掘与恶意代码行为研判。",
+          "在安全事件应急响应中，快速分析恶意软件（如木马、勒索软件）的加密逻辑、网络通信协议及逃逸手段，支撑威胁情报产出。",
+          "教学与科研场景，用于软件安全课程实验、CTF 竞赛逆向题目求解，以及验证逆向工程算法或工具链的基准平台。"
+        ],
+        "agentInstallPrompt": "请先确认已安装 JDK 11+ 和 Gradle（推荐 7.x）。克隆仓库：git clone https://github.com/NationalSecurityAgency/ghidra.git。进入项目根目录，执行 gradle build -x test 构建（首次需下载依赖，耗时较长）。构建完成后，运行 build/dist/ghidra_*_PUBLIC/ghidraRun（Linux/macOS）或 ghidraRun.bat（Windows）。若需命令行模式，可使用 ./support/analyzeHeadless 进行无头分析。验证安装：启动 GUI 后新建项目，导入任意二进制文件（如 /bin/ls），等待自动分析并查看反编译结果。若构建失败，检查 Java 版本与 Gradle 配置，并参照 README.md 中的 Troubleshooting 部分。"
+      }
+    },
+    "repo:swoole/typephp": {
+      "type": "repo-insight",
+      "hash": "29e5b4b69d62126426570496",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-28T22:10:38.525Z",
+      "value": {
+        "summaryZh": "TypePHP 是 Swoole 团队推出的实验性项目，旨在将 PHP 代码直接编译为原生机器码二进制文件，从而显著提升运行性能并简化部署流程。其核心亮点在于无需额外运行时环境，即可生成独立可执行文件，同时兼容现有 PHP 语法和生态。该项目适合对 PHP 性能有极致追求、希望将 PHP 应用容器化或部署到边缘设备的开发者，尤其适合构建 CLI 工具、常驻服务和高并发网络应用。由于当前处于早期阶段，更适合技术探索与概念验证，而非生产环境使用。",
+        "scenarios": [
+          "将 PHP 编写的 CLI 工具编译为原生二进制，提升启动速度并避免依赖冲突",
+          "构建高性能微服务，通过静态链接实现零运行时依赖的独立部署",
+          "在嵌入式或物联网设备上运行 PHP 应用，借助原生二进制减少资源占用"
+        ],
+        "agentInstallPrompt": "请克隆 swoole/typephp 仓库，并参考 README 中的构建说明。建议使用 Docker 环境（如 swoole 官方镜像）以避免污染宿主机。首先安装必要的编译工具链（cmake、g++、php-cli），然后执行项目提供的构建脚本（通常为 build.sh 或 cmake 流程）。构建完成后，尝试将项目提供的示例 PHP 文件编译为二进制，并在本地运行验证输出。如果遇到缺失依赖，请根据 README 中的提示安装对应扩展或库。"
+      }
     }
   }
 }
