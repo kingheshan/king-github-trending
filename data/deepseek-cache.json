@@ -5190,6 +5190,36 @@
         ],
         "agentInstallPrompt": "请克隆 swoole/typephp 仓库，并参考 README 中的构建说明。建议使用 Docker 环境（如 swoole 官方镜像）以避免污染宿主机。首先安装必要的编译工具链（cmake、g++、php-cli），然后执行项目提供的构建脚本（通常为 build.sh 或 cmake 流程）。构建完成后，尝试将项目提供的示例 PHP 文件编译为二进制，并在本地运行验证输出。如果遇到缺失依赖，请根据 README 中的提示安装对应扩展或库。"
       }
+    },
+    "repo:THU-MAIC/OpenMAIC": {
+      "type": "repo-insight",
+      "hash": "a8e4021fdb633bb6dcb10f10",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-29T22:19:47.827Z",
+      "value": {
+        "summaryZh": "OpenMAIC（Open Multi-Agent Interactive Classroom）是一个基于TypeScript构建的多智能体互动课堂开源项目，由清华大学团队维护。它通过一键部署即可创建沉浸式多智能体学习环境，模拟真实课堂中的师生互动与协作，支持自定义智能体角色和教学内容。项目亮点在于低门槛启动、灵活的场景配置以及多智能体协同对话机制，适合教育科技开发者、AI教学研究者以及希望探索多智能体交互的爱好者。通过该项目，用户可以快速搭建个性化虚拟教室，体验AI驱动的互动式学习。",
+        "scenarios": [
+          "在线教育平台集成：为远程教学提供多智能体虚拟课堂，增强学生参与感和互动性。",
+          "AI教学研究：用于模拟课堂对话、评估多智能体协作效果，辅助教育者设计教学策略。",
+          "快速原型开发：开发者可基于OpenMAIC搭建定制化教学机器人或演示系统，缩短产品验证周期。"
+        ],
+        "agentInstallPrompt": "请先克隆OpenMAIC仓库（git clone https://github.com/THU-MAIC/OpenMAIC.git），确保已安装Node.js和pnpm。进入项目目录后运行pnpm install安装依赖，然后根据README配置必要的环境变量（如API密钥）。启动开发服务器：pnpm dev，打开浏览器访问本地地址即可体验。若需自定义场景，请查看docs目录下的配置指南，调整智能体角色和课堂流程。"
+      }
+    },
+    "repo:Osmantic/ODS": {
+      "type": "repo-insight",
+      "hash": "e1321e40f190f62f151307c7",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-29T22:36:25.877Z",
+      "value": {
+        "summaryZh": "ODS 是一个用 Python 打造的轻量级 AI 服务器，能把普通 PC、Mac 或 Linux 设备变成功能齐全的本地 AI 中心。它集成了 LLM 推理、聊天界面、语音交互、智能体、工作流编排、RAG 检索增强生成以及图像生成等能力，旨在简化自托管 AI 的部署流程。项目亮点是模块化设计和一键启动，适合希望脱离云端依赖、保护数据隐私的开发者、研究者及 AI 爱好者。通过它，你可以快速在本地硬件上运行模型，构建定制化 AI 应用，并利用社区生态扩展功能。无需昂贵 GPU，即可体验从文本到多模态的完整本地 AI 服务。",
+        "scenarios": [
+          "在本地电脑上快速启动并体验多个开源 LLM 的推理与对话，无需配置复杂环境。",
+          "为内部团队搭建私有知识库问答系统，利用 RAG 与本地文档进行安全交互。",
+          "作为开发环境，测试和部署包含智能体、工作流及图像生成的 AI 应用原型。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 ODS 项目：先克隆 https://github.com/Osmantic/ODS 仓库，然后创建 Python 虚拟环境，安装 requirements.txt 中的依赖。启动服务前，确认系统已安装 Ollama 或兼容的推理后端。运行主启动脚本（如 python main.py 或 ods serve），根据提示选择模型并启动。启动后，通过浏览器访问显示的服务地址，测试聊天功能和 API 接口。如果遇到依赖冲突，请根据错误信息调整版本并重试。"
+      }
     }
   }
 }
