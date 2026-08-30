@@ -5220,6 +5220,21 @@
         ],
         "agentInstallPrompt": "请帮我安装并试跑 ODS 项目：先克隆 https://github.com/Osmantic/ODS 仓库，然后创建 Python 虚拟环境，安装 requirements.txt 中的依赖。启动服务前，确认系统已安装 Ollama 或兼容的推理后端。运行主启动脚本（如 python main.py 或 ods serve），根据提示选择模型并启动。启动后，通过浏览器访问显示的服务地址，测试聊天功能和 API 接口。如果遇到依赖冲突，请根据错误信息调整版本并重试。"
       }
+    },
+    "repo:majd/ipatool": {
+      "type": "repo-insight",
+      "hash": "82fcb7a920e0ebda9cc77f9a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-30T22:33:29.026Z",
+      "value": {
+        "summaryZh": "ipatool 是一个用 Go 编写的命令行工具，专为 iOS、iPadOS、tvOS 和 visionOS 开发者及测试人员设计。它允许用户直接从 App Store 搜索并下载 .ipa 应用包，无需越狱或额外工具。该工具支持多种 Apple 平台，提供简单直观的命令行界面，可轻松集成到 CI/CD 流程中。适合需要自动化获取应用包进行审计、测试或备份的场景，尤其对逆向工程和安全研究人员有较大价值。",
+        "scenarios": [
+          "开发者需要从 App Store 下载特定版本的 .ipa 文件用于本地调试或测试。",
+          "安全研究人员批量获取应用包进行静态分析和漏洞扫描。",
+          "CI/CD 流水线中自动化获取应用包用于构建或分发前验证。"
+        ],
+        "agentInstallPrompt": "请在本机安装并试跑 ipatool。首先确认 Go 环境（版本 1.16+），然后执行 `go install github.com/majd/ipatool@latest`。安装完成后，运行 `ipatool --help` 检查命令用法。接着尝试使用 `ipatool search --term 'example'` 搜索一个应用，再使用 `ipatool download --bundle-id 'com.example.app'` 下载对应的 .ipa 文件（可能需要 Apple ID 凭据，可先用 `ipatool auth login` 登录）。请逐步执行并输出关键结果。"
+      }
     }
   }
 }
