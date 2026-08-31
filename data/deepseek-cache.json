@@ -5235,6 +5235,21 @@
         ],
         "agentInstallPrompt": "请在本机安装并试跑 ipatool。首先确认 Go 环境（版本 1.16+），然后执行 `go install github.com/majd/ipatool@latest`。安装完成后，运行 `ipatool --help` 检查命令用法。接着尝试使用 `ipatool search --term 'example'` 搜索一个应用，再使用 `ipatool download --bundle-id 'com.example.app'` 下载对应的 .ipa 文件（可能需要 Apple ID 凭据，可先用 `ipatool auth login` 登录）。请逐步执行并输出关键结果。"
       }
+    },
+    "repo:handsomestWei/patent-disclosure-skill": {
+      "type": "repo-insight",
+      "hash": "8c1838e0ad1d1590185bf63d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-08-30T23:16:42.813Z",
+      "value": {
+        "summaryZh": "patent-disclosure-skill 是一个面向专利撰写与申报的智能辅助工具，基于 Python 实现。它能帮助用户从技术方案中挖掘潜在专利点，自动生成发明、实用新型或外观设计的交底书初稿，并用通俗语言解读复杂专利文本，降低理解门槛。同时，该工具可嗅探最新政策动向，辅助用户进行审查意见答复，提升专利授权成功率。适合企业研发人员、专利代理人、创新创业者及知识产权管理者使用，能够显著提升专利挖掘与文档撰写的效率和质量。",
+        "scenarios": [
+          "研发团队在项目复盘时，使用该工具快速识别可专利的技术创新点，并生成交底书框架，避免创新成果流失。",
+          "专利代理人接到技术交底材料后，借助该工具自动撰写符合规范的交底书，并根据政策动向调整申请策略，提高工作效率。",
+          "企业知识产权管理人员利用该工具对现有专利进行通俗解读，辅助内部培训或技术决策，同时监控政策变化以应对审查意见。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/handsomestWei/patent-disclosure-skill 到本地，检查 requirements.txt 并安装依赖（建议使用 Python 3.9+ 创建虚拟环境）。然后阅读 README.md 了解用法，运行示例命令测试基本功能，例如输入一个技术方案，观察生成的交底书内容。如有配置项（如 API 密钥），请根据文档设置。最后，尝试运行测试用例确保环境正常。"
+      }
     }
   }
 }
