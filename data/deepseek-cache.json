@@ -5250,6 +5250,66 @@
         ],
         "agentInstallPrompt": "请先克隆仓库 https://github.com/handsomestWei/patent-disclosure-skill 到本地，检查 requirements.txt 并安装依赖（建议使用 Python 3.9+ 创建虚拟环境）。然后阅读 README.md 了解用法，运行示例命令测试基本功能，例如输入一个技术方案，观察生成的交底书内容。如有配置项（如 API 密钥），请根据文档设置。最后，尝试运行测试用例确保环境正常。"
       }
+    },
+    "repo:Gitlawb/openclaude": {
+      "type": "repo-insight",
+      "hash": "c97667a1caee486418de83b6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-01T22:02:29.693Z",
+      "value": {
+        "summaryZh": "OpenClaude 是一个基于 TypeScript 构建的轻量级运行时，旨在让 AI 能力（如 Claude）在任何环境、使用任意工具链即可运行。它秉持“随处运行、使用一切”的理念，不绑定特定云服务或硬件，支持本地、服务器及边缘设备部署，可灵活接入多种 API 和工具库。项目提供简洁的抽象层和扩展接口，方便开发者快速集成、定制推理管线。适合需要跨平台部署 AI 应用的团队、希望摆脱厂商锁定的技术负责人，以及想要在自有基础设施上构建对话式交互的开发者。",
+        "scenarios": [
+          "在本地开发环境中快速启动一个可交互的 AI 聊天客户端，用于原型验证和调试，无需依赖云端服务。",
+          "将 OpenClaude 作为内部工具平台的统一推理网关，通过标准接口调用不同模型，降低服务切换成本。",
+          "在边缘设备或容器中部署轻量级 AI 代理，实现智能助手功能，同时保留数据隐私和自主控制权。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/Gitlawb/openclaude.git，进入目录后安装依赖（npm install 或 yarn install）。查看 package.json 中的 scripts 配置，通常包含 dev、build、start 等命令。运行 npm run dev 启动开发模式，或 npm run build 后使用 npm start 启动生产版本。根据 README.md 配置必要的环境变量（如模型 API 密钥）。如需测试，执行 npm test。确保 Node.js 版本满足 package.json 中 engines 字段的要求。"
+      }
+    },
+    "repo:jingyaogong/minimind": {
+      "type": "repo-insight",
+      "hash": "274248a51af5a23941936341",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-01T22:02:34.518Z",
+      "value": {
+        "summaryZh": "MiniMind 是一个极简主义的大语言模型（LLM）训练项目，旨在让开发者仅用2小时就能从零训练一个6400万参数（64M）的模型。它基于Python实现，提供了完整的数据处理、模型构建、训练和推理流程，代码精简且高度可读。该项目的亮点在于打破了LLM训练的高门槛，使普通开发者也能在消费级GPU上快速上手，深入理解Transformer架构和语言模型训练的本质。适合希望快速入门LLM训练、教学演示或进行轻量级实验的研究者、学生和工程师。",
+        "scenarios": [
+          "教育学习：在课程或工作坊中，通过实际训练一个小型LLM来直观理解Transformer、注意力机制和训练流程。",
+          "快速原型验证：在有限算力下，快速测试新的数据预处理、模型结构或训练技巧，避免大型模型的漫长迭代。",
+          "个人技术探索：在个人电脑或云GPU上，用2小时从零构建一个可对话的迷你聊天机器人，体验从数据到模型的完整过程。"
+        ],
+        "agentInstallPrompt": "请帮我克隆仓库 jingyaogong/minimind 到本地，并按照README指引安装依赖（如torch、transformers等）。然后运行一个最小示例，例如执行训练脚本训练一个极小模型（如1M参数）以验证环境，并生成一段示例对话。注意使用CPU或单GPU，调整批量大小以适应内存。最后输出训练日志和推理结果。"
+      }
+    },
+    "repo:browser-use/video-use": {
+      "type": "repo-insight",
+      "hash": "97fbb5b7d436e2eb82b19583",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-01T22:02:39.808Z",
+      "value": {
+        "summaryZh": "video-use 是 browser-use 生态下的开源工具，让开发者通过自然语言或代码指令驱动 AI 智能体自动完成视频编辑任务，无需手动操作专业剪辑软件。它基于 Python，将视频处理能力封装为可供语言模型直接调用的工具接口，支持常见剪辑操作如剪辑拼接、字幕添加、转场效果、音视频分离等。亮点在于将 AI Agent 与视频处理工作流深度结合，实现可编程、可复用的自动化视频生产流程，同时兼容主流视频格式。适合希望通过自动化批量处理视频的开发者、内容创作者和 AI 应用构建者，尤其适合需要高效生成短视频或处理大量素材的场景。",
+        "scenarios": [
+          "让 AI 根据脚本自动剪辑多个视频片段并添加字幕，适用于短视频批量生产。",
+          "在开发 AI 视频编辑应用时，作为后端工具库快速实现视频处理能力。",
+          "用于自动化视频流水线，如自动生成课程、演示或产品介绍视频。"
+        ],
+        "agentInstallPrompt": "请在 Python 3.10+ 环境中安装 video-use，推荐使用虚拟环境。执行 pip install video-use 安装库，然后参考项目 README 中快速上手代码，创建一个简单的视频剪辑任务：导入 video_use 模块，初始化 AI 代理（需配置 OpenAI API 密钥），传入一段自然语言指令如“将 video.mp4 裁剪前5秒并添加文字Hello”，运行代理并检查输出视频。确保已安装 ffmpeg 并加入系统 PATH。若需测试更多功能，可运行项目自带示例脚本。"
+      }
+    },
+    "repo:punkpeye/awesome-mcp-servers": {
+      "type": "repo-insight",
+      "hash": "1d0bd5de6f646daf3cb7124b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-01T22:39:43.962Z",
+      "value": {
+        "summaryZh": "这是一个精选的 MCP（Model Context Protocol）服务器资源列表，收录了数百个官方与社区开发的 MCP 服务器，覆盖文件系统、数据库、浏览器、开发工具、AI 助手等场景。项目通过分类整理和简要说明，帮助开发者快速找到适合自己项目的 MCP 实现，并了解协议生态的多样性。适合需要为 AI 应用接入外部工具或数据的开发者、技术选型评估者，以及想要学习 MCP 协议最佳实践的工程师。",
+        "scenarios": [
+          "为 AI 编程助手接入代码托管、数据库或 CI/CD 工具，增强自动化能力。",
+          "在企业内部知识库应用中选择合适的数据同步 MCP 服务器，打通文档与 AI 问答。",
+          "学习 MCP 协议时，快速浏览不同语言和框架的实现案例，作为开发参考。"
+        ],
+        "agentInstallPrompt": "请先克隆该仓库：git clone https://github.com/punkpeye/awesome-mcp-servers.git。然后阅读 README.md 中的分类结构，挑选一个你感兴趣的 MCP 服务器（例如 filesystem-server），按照其官方文档安装依赖并运行。如果该服务器支持 npx，可以尝试直接用 npx 启动，并配置到你的 AI 客户端（如 Claude Desktop）中，验证连通性。"
+      }
     }
   }
 }
