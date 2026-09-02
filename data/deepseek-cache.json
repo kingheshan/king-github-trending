@@ -5310,6 +5310,21 @@
         ],
         "agentInstallPrompt": "请先克隆该仓库：git clone https://github.com/punkpeye/awesome-mcp-servers.git。然后阅读 README.md 中的分类结构，挑选一个你感兴趣的 MCP 服务器（例如 filesystem-server），按照其官方文档安装依赖并运行。如果该服务器支持 npx，可以尝试直接用 npx 启动，并配置到你的 AI 客户端（如 Claude Desktop）中，验证连通性。"
       }
+    },
+    "repo:career-ops-hq/career-ops": {
+      "type": "repo-insight",
+      "hash": "ed88b85eb499fa5aefaeef90",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-01T23:10:30.006Z",
+      "value": {
+        "summaryZh": "career-ops是一个开源的AI求职助手，用JavaScript编写，可在本地AI编码CLI（如Claude Code、Codex等）中运行。它能扫描招聘门户，将职位信息整理成结构化的A-H报告，并给出1-5分的综合评分。此外，还支持定制简历、跟踪申请进度，帮助求职者高效管理求职流程。其亮点是全程本地运行，保护隐私，且能无缝集成到开发者已有的AI工作流中，适合技术背景的求职者、独立开发者以及希望自动化求职的AI工具使用者。",
+        "scenarios": [
+          "在本地AI编码环境中批量扫描多个招聘网站，自动生成带评分的职位对比报告，快速筛选高匹配度机会。",
+          "针对特定职位描述，使用AI自动调整简历和求职信，突出相关技能与经验，提升申请通过率。",
+          "集中跟踪所有已投递职位的状态，通过A-H报告和1-5分评分体系，复盘优化求职策略。"
+        ],
+        "agentInstallPrompt": "请先安装Node.js和npm，然后克隆仓库：git clone https://github.com/career-ops-hq/career-ops.git，进入目录并运行npm install。接着，配置必要的环境变量（如API密钥），根据README设置所需的招聘门户源。最后，运行类似 `npm start` 或 `node index.js` 的命令启动扫描，生成示例报告，并与AI编码CLI集成测试基本功能。"
+      }
     }
   }
 }
