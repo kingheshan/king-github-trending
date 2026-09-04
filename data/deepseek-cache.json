@@ -4998,17 +4998,17 @@
     },
     "repo:K-Dense-AI/scientific-agent-skills": {
       "type": "repo-insight",
-      "hash": "0a0aed4efecbced70e184510",
+      "hash": "dd9c45cbf8b02e56241a1af2",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-26T22:00:25.819Z",
+      "generatedAt": "2026-09-04T22:28:35.986Z",
       "value": {
-        "summaryZh": "scientific-agent-skills 是一个面向科学研究的 AI 智能体技能库，旨在将任何 AI 代理转化为“AI 科学家”。项目由 K-Dense-AI 维护，已被全球超过 17.5 万名科学家使用。它提供 163 个经过验证的即用型技能，并整合了 100 多个涵盖生物学、化学、医学和药物发现领域的科学数据库。该库兼容 Cursor、Claude Code、Codex、Pi、Antigravity 等主流工具，并遵循开放的 Agent Skills 标准，便于开发者集成与扩展。适合科研人员、AI 开发者及药物研发团队，可显著提升文献分析、实验设计、数据挖掘等工作的效率。",
+        "summaryZh": "scientific-agent-skills 是一个面向科学研究的 Agent 技能库，旨在将通用 AI 代理转变为“AI 科学家”。它提供 165 个经过验证的即用型技能，整合了超过 100 个科学数据库，覆盖生物学、化学、医学和药物发现等领域。该库已被全球 190,000+ 科学家使用，并兼容 Cursor、Claude Code、Codex、Pi、Antigravity 等主流 AI 工具，遵循开放 Agent 技能标准。其核心亮点是“开箱即用”和跨学科覆盖，适合科研人员、医药研发人员以及希望构建科学工作流的开发者，能显著加速文献检索、实验设计、数据分析等研究环节。",
         "scenarios": [
-          "科研人员快速检索和整合跨数据库的生物学、化学文献数据，辅助文献综述与假设生成。",
-          "药物研发团队利用技能库进行靶点验证、化合物性质预测和临床试验数据初步分析。",
-          "AI 应用开发者将科学技能集成到现有智能体中，构建定制化的科研助手或自动化实验工作流。"
+          "科研人员快速检索基因、蛋白质或化合物数据库，获取结构化信息并辅助实验方案设计。",
+          "药物研发团队利用化学与医学相关技能进行分子性质预测、靶点分析或文献挖掘。",
+          "开发者将技能集成到 Cursor、Claude Code 等智能体中，构建定制化的自动化科研流水线。"
         ],
-        "agentInstallPrompt": "请克隆 https://github.com/K-Dense-AI/scientific-agent-skills 仓库到本地，使用 Python 3.9+ 环境，运行 pip install -r requirements.txt 安装依赖。查看 README.md 了解技能库结构和配置方法。尝试加载其中一个技能（例如 'literature_search'），并用示例数据（如 'data/sample.csv'）执行一次端到端测试，验证推理结果。最后，按照文档将技能库连接到你的 AI 代理（如 Cursor 或 Claude Code），并运行内置的测试用例确认兼容性。详细步骤以仓库内 GUIDE.md 为准。"
+        "agentInstallPrompt": "请克隆仓库 https://github.com/K-Dense-AI/scientific-agent-skills，并按照 README 中的说明安装依赖。在支持 Agent Skills 的编辑器（如 Cursor 或 Claude Code）中，将仓库中的 skills 目录配置为技能源，然后尝试加载一个示例技能（例如查询生物学数据库或执行化学计算）。若使用命令行，可运行仓库内提供的 Python 演示脚本，测试技能是否成功加载并返回正确结果。若环境中未预装所需 Python 包，请先执行 pip install -r requirements.txt 完成安装。"
       }
     },
     "repo:bookorbit/bookorbit": {
@@ -5324,6 +5324,141 @@
           "集中跟踪所有已投递职位的状态，通过A-H报告和1-5分评分体系，复盘优化求职策略。"
         ],
         "agentInstallPrompt": "请先安装Node.js和npm，然后克隆仓库：git clone https://github.com/career-ops-hq/career-ops.git，进入目录并运行npm install。接着，配置必要的环境变量（如API密钥），根据README设置所需的招聘门户源。最后，运行类似 `npm start` 或 `node index.js` 的命令启动扫描，生成示例报告，并与AI编码CLI集成测试基本功能。"
+      }
+    },
+    "repo:blader/humanizer": {
+      "type": "repo-insight",
+      "hash": "620cb5710fbd38709bf37372",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-04T22:07:12.250Z",
+      "value": {
+        "summaryZh": "humanizer 是一个基于 Python 的 Agent skill，专门用于消除文本中 AI 生成的痕迹，使内容更接近人类写作风格。它通过改写句式、调整词汇和优化语气，降低文本的机械化感，提升自然度和可读性。该工具集成简便，适合嵌入 AI Agent 工作流，为 AI 生成的文本提供润色和人性化处理。亮点在于轻量级、易扩展，且能针对常见 AI 表达模式进行优化。适合内容创作者、开发者以及需要批量处理 AI 文本以规避检测或提升品质的团队。",
+        "scenarios": [
+          "将 ChatGPT 等大模型生成的文案、文章改写成更自然的人类风格，避免被识别为 AI 内容。",
+          "在自动化内容生产管道中，批量处理 AI 草稿，降低机械化表达，提升用户阅读体验。",
+          "部署为写作辅助 Agent 的中间处理技能，让 AI 助手输出前自动进行人性化润色。"
+        ],
+        "agentInstallPrompt": "首先，克隆仓库：git clone https://github.com/blader/humanizer.git 并进入目录 humanizer。然后，查看 README.md 或 requirements.txt 以确定依赖，通常使用 pip install -r requirements.txt 安装。接着，运行一个测试示例：python example.py 或按照 README 提示调用核心函数。最后，尝试输入一段 AI 生成的文本，观察输出是否变得更加自然。若失败，尝试修改 Python 路径或使用 python -m。务必确保代码运行环境正确，并阅读项目文档理解输入输出格式。"
+      }
+    },
+    "repo:bikini/exploitarium": {
+      "type": "repo-insight",
+      "hash": "11f2617a2e908c484bdc68ac",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-04T22:12:07.056Z",
+      "value": {
+        "summaryZh": "Exploitarium 是一个公开的漏洞利用 PoC 与漏洞研究文章的集中归档库，使用 Python 编写。作者定期收录尚未被公开报告的漏洞利用代码与相关分析，旨在吸引更多人进入安全研究领域，并鼓励研究者自行复现、上报以获取 CVE 编号。该仓库亮点在于提供了大量真实、可参考的漏洞案例，便于分析利用原理与开发思路。适合安全研究员、渗透测试人员、漏洞分析初学者以及 CTF 玩家学习与借鉴，但必须强调合法合规使用，严禁未授权滥用。",
+        "scenarios": [
+          "在授权渗透测试中，参考其中公开的 PoC 快速理解特定漏洞的利用方法与影响范围。",
+          "安全研究者使用仓库中的 writeup 和 exploit 样本，复现漏洞环境、分析漏洞成因并尝试申请 CVE 编号。",
+          "高校学生或安全培训学员通过阅读真实漏洞案例及利用代码，提升漏洞挖掘与利用开发技能。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/bikini/exploitarium 到本地，然后查看 README 了解项目结构。使用 Python 3 安装依赖（如有 requirements.txt 则执行 pip install -r requirements.txt）。选择一个或多个 PoC 文件，在隔离的、已授权的本地靶场环境中运行，观察效果并阅读对应 writeup。注意：任何操作均须遵守法律法规，严禁对未授权目标发起真实攻击。可先运行 `python <poc.py> --help` 或查看源码了解用法。如果仓库包含示例环境或 Dockerfile，则优先使用 Docker 搭建复现环境。"
+      }
+    },
+    "repo:google-research/timesfm": {
+      "type": "repo-insight",
+      "hash": "e1399225969e6080535c085e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-04T22:18:43.544Z",
+      "value": {
+        "summaryZh": "TimesFM 是谷歌研究院开发的时间序列基础模型，专为时序预测设计。它是一个预训练模型，能够在多种时间序列数据上进行预测，如零售需求、能源消耗、金融指标等。其核心优势在于利用大规模数据预训练，具备强大的零样本预测能力，无需针对特定任务微调即可达到良好效果。模型基于Transformer架构，支持长时间序列的上下文理解与多步预测。适合数据科学家、机器学习工程师以及需要快速部署预测解决方案的团队。该模型提供了Python接口，易于集成到现有数据处理流程中，是时间序列分析领域的前沿工具。",
+        "scenarios": [
+          "零售业销售预测，根据历史销售数据预测未来时段的需求量，辅助库存管理。",
+          "能源领域负荷预测，基于历史用电或发电数据预测短期电力需求，优化调度。",
+          "金融时序分析，对股票价格、汇率等金融时间序列进行趋势预测，支持投资决策。"
+        ],
+        "agentInstallPrompt": "请克隆仓库 https://github.com/google-research/timesfm，创建Python 3.10+虚拟环境，安装依赖（建议使用pip install -e .）。然后参考README中的示例，下载预训练模型权重（如timesfm-1.0-2000p），运行一个简单的预测脚本：加载TimesFm类，构造输入时间序列（注意归一化参数），调用forecast方法获取预测结果。确保模型文件路径正确。如果遇到安装问题，请查看项目issues或调整依赖版本。"
+      }
+    },
+    "repo:anomalyco/opencode": {
+      "type": "repo-insight",
+      "hash": "676ca1a0d04fd9aa37feaef7",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-04T22:23:34.759Z",
+      "value": {
+        "summaryZh": "OpenCode 是一个开源的 AI 编码代理，旨在为开发者提供类似 Claude Code 或 GitHub Copilot 的终端交互式编程体验。它基于 TypeScript 构建，支持多种大语言模型（如 Anthropic、OpenAI 等），能够理解代码仓库上下文、自动修改文件、执行命令，并可通过自然语言指令完成复杂开发任务。该项目亮点在于完全开源、可自托管，强调隐私与可定制性，同时提供丰富的 CLI 交互和视觉反馈。适合希望将 AI 编码代理集成到自有工作流、注重数据安全或需要深度定制行为的个人开发者与团队。",
+        "scenarios": [
+          "在本地终端中通过自然语言指令驱动 AI 完成代码重构、Bug 修复或功能迭代，提升日常开发效率。",
+          "为团队内部搭建统一的 AI 编码代理服务，通过配置自有 API 密钥或自托管模型，保障代码隐私与合规性。",
+          "结合 CI/CD 流水线，利用其命令行模式自动生成测试、编写文档或处理代码审查意见，实现部分开发任务自动化。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/anomalyco/opencode.git 并进入目录。然后安装依赖：npm install 或 pnpm install（推荐）。接着构建项目：npm run build。若要快速试跑，使用 npx opencode 命令（会尝试自动拉取最新发布包），或者直接运行本地构建产物：node dist/index.js。首次启动时，按照提示配置模型提供商（如 Anthropic 或 OpenAI）的 API 密钥，也可通过环境变量设置。配置完成后，在终端中输入 opencode 启动交互界面，然后尝试用中文输入一条简单的编码任务（例如“当前目录下创建一个计算斐波那契数列的 TypeScript 文件”）来验证功能。如果想要更详细的使用指南，可运行 opencode help 或查看仓库 README。"
+      }
+    },
+    "repo:colinhacks/zod": {
+      "type": "repo-insight",
+      "hash": "34ec217dc0f985a15c47c1d3",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-04T22:33:18.391Z",
+      "value": {
+        "summaryZh": "Zod 是一个 TypeScript 优先的 schema 声明与验证库，让你用简洁可读的 API 定义数据结构，并自动推断出对应的静态 TypeScript 类型。它提供丰富的校验规则、错误定制、嵌套对象/数组处理、以及与其他库的集成，无需重复定义类型亦可获得完全类型安全。核心亮点是高度可组合、运行时验证和静态类型无缝衔接，大幅提升开发效率和代码健壮性。适合需要严格数据校验的 TypeScript 项目，尤其适合 API 入参、配置读取、表单验证等场景。",
+        "scenarios": [
+          "在 Node.js 后端或边缘函数中，用 Zod 校验 HTTP 请求体、查询参数、路径参数，并自动获得类型安全的响应数据结构。",
+          "在前端表单提交场景，用 Zod 定义表单模型，结合自定义错误信息，实现实时验证和类型推断，简化表单逻辑。",
+          "在解析环境变量、JSON 配置文件或第三方 API 响应时，用 Zod 确保数据形状符合预期，避免运行时类型错误。"
+        ],
+        "agentInstallPrompt": "请先创建一个新 TypeScript 项目（或进入现有项目），执行 `npm install zod` 安装依赖。然后创建一个示例文件，例如 `test-zod.ts`，内容为：`import { z } from 'zod'; const UserSchema = z.object({ name: z.string().min(2), age: z.number().positive() }); const user = UserSchema.parse({ name: 'Alice', age: 30 }); console.log(user);`。运行 `npx ts-node test-zod.ts` 或使用 `tsc` 编译后运行，确认输出 `{ name: 'Alice', age: 30 }`。若想测试验证失败情况，可故意传入错误数据如 `{ name: 'A', age: -1 }`，观察抛出的详细错误信息，从而验证 Zod 的校验功能。"
+      }
+    },
+    "repo:OpenWhispr/openwhispr": {
+      "type": "repo-insight",
+      "hash": "8dddcaa101de39f246368f97",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-04T22:38:25.119Z",
+      "value": {
+        "summaryZh": "OpenWhispr 是一款隐私优先的跨平台语音转文字听写应用，采用 JavaScript 开发。它支持本地 AI 模型（如 Nvidia Parakeet/Whisper）和自带密钥（BYOK）的云端模型，兼顾离线可用与高精度识别。应用界面简洁，操作流畅，适合需要高效语音输入或内容创作的用户。其核心优势在于数据自主可控，音频无需上传即可转录，同时保留云端可选能力以应对复杂场景。无论是快速记录灵感、撰写文档，还是辅助无障碍输入，OpenWhispr 都提供了灵活且安全的解决方案。",
+        "scenarios": [
+          "在无网络或敏感环境中，使用本地模型完成语音转文字，确保数据不外泄。",
+          "需要高精度识别且不愿订阅付费服务时，自带云厂商 API 密钥（BYOK）按需使用。",
+          "跨平台日常听写，如会议记录、邮件撰写、编程注释等，提升文字输入效率。"
+        ],
+        "agentInstallPrompt": "请帮我获取 OpenWhispr 项目并运行。首先克隆仓库：git clone https://github.com/OpenWhispr/openwhispr.git，然后进入目录 openwhispr，查看 package.json 确认依赖和脚本。使用 npm install 安装依赖。若项目含本地模型支持，请检查是否需下载模型文件或额外依赖（如 nvidia parakeet/whisper 相关）。运行 npm run dev 或等效命令启动开发服务器，并确保应用能正常打开界面。之后尝试进行一次简单的语音转文字测试，若需配置密钥，请在设置中预留环境变量占位。如有问题，请查看 README 或项目文档中的快速开始指南。"
+      }
+    },
+    "repo:xai-org/x-algorithm": {
+      "type": "repo-insight",
+      "hash": "cd109597ee770474ea3ffbc4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-04T22:43:19.028Z",
+      "value": {
+        "summaryZh": "x-algorithm 是 xAI 开源的推荐算法，用于驱动 X（原 Twitter）平台的“为你推荐”信息流。该项目采用 Rust 语言编写，具备高性能和低延迟特性，能够处理海量用户与内容的实时匹配。算法融合了多源信号、特征工程与机器学习排序模型，以预测用户兴趣并生成个性化内容流。该仓库旨在提升推荐系统的透明度和可复现性，适合推荐系统工程师、算法研究员和自建内容平台开发者学习与二次开发，可帮助理解工业级推荐系统的核心设计。",
+        "scenarios": [
+          "研究工业级推荐系统的架构与实现细节，剖析真实业务中的特征处理、候选召回和排序策略。",
+          "基于该算法构建个性化的信息流或内容推荐服务，替换自有推荐模块以提升用户体验。",
+          "在技术社区或内部培训中作为案例，演示如何用 Rust 开发高性能的实时推荐引擎。"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Rust 工具链（rustc 和 cargo），以及 Git 和依赖的 OpenSSL 等系统库。然后在终端执行：git clone https://github.com/xai-org/x-algorithm && cd x-algorithm && cargo build --release。若构建过程中提示缺少 protobuf 编译器，可运行 `apt-get install protobuf-compiler`（Ubuntu）或 `brew install protobuf`（macOS）。构建成功后，查看 README 了解如何配置数据源和运行示例，并尝试使用 `cargo run --example simple_ranking` 跑通一个最小推荐流程。"
+      }
+    },
+    "repo:cloudflare/cloudflare-os": {
+      "type": "repo-insight",
+      "hash": "80784c2e087c2c7f9275bea9",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-04T22:43:23.737Z",
+      "value": {
+        "summaryZh": "cloudflare-os 是 Cloudflare 推出的开源 Agent 工作台，基于 Cloudflare Workers 构建，旨在让开发者利用公司自有上下文和系统来创建文档、构建应用及运行智能代理。项目以 TypeScript 编写，充分拥抱 Cloudflare 边缘生态，具备轻量、快速、可扩展的特点。它适合希望将 AI 代理与内部知识库、API 和业务流程深度绑定的团队，也可作为构建定制化企业级 AI 助手的基础框架。通过 Workers 的无服务器架构，用户能低成本部署并享受全球边缘网络带来的低延迟体验。",
+        "scenarios": [
+          "企业内部知识库问答助手：连接公司文档与数据库，让代理基于内部上下文为员工提供精准回答。",
+          "自动化文档生成与处理：利用代理自动产出会议纪要、周报或合同草案，并集成到现有工作流。",
+          "轻量级应用原型开发：快速在 Cloudflare Workers 上搭建带 AI 能力的 Web 应用或 API 端点。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 cloudflare/cloudflare-os 到本地，查看 README 和环境要求。安装依赖（npm install 或 pnpm install），根据文档配置 Cloudflare 账户的 API 令牌和 Workers 环境变量。然后运行 npm run dev 进行本地开发，或使用 wrangler deploy 部署到 Cloudflare 边缘网络。在试跑时，请重点阅读 examples 目录下的示例，按照说明创建你的第一个 agent 工作区。"
+      }
+    },
+    "repo:denoland/celld": {
+      "type": "repo-insight",
+      "hash": "25675e449d5b1a462c07edf0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-04T22:43:27.218Z",
+      "value": {
+        "summaryZh": "celld 是 Deno 团队推出的自托管分布式持久对象（Durable Objects）运行时，基于 Rust 编写。它允许开发者在自己的基础设施上运行类似 Cloudflare Durable Objects 的有状态工作负载，提供强一致性、故障转移和持久化存储。项目亮点在于将 Actor 模型与分布式系统抽象结合，简化了有状态服务开发，并原生支持 Deno 生态。适合需要构建实时协作、状态化微服务或边缘计算应用的团队，尤其是希望摆脱平台锁定、掌控基础设施的开发者。",
+        "scenarios": [
+          "在自建 Kubernetes 集群中部署有状态 WebSocket 服务，如在线聊天或协同编辑，利用 Durable Objects 管理会话状态。",
+          "构建分布式任务队列或工作流引擎，每个对象代表一个工作流实例，实现可靠执行和故障恢复。",
+          "作为边缘节点上的状态存储层，为 IoT 设备或 CDN 边缘计算提供低延迟的读写和同步能力。"
+        ],
+        "agentInstallPrompt": "请先确保已安装 Rust 工具链和 Deno CLI。然后执行：git clone https://github.com/denoland/celld.git && cd celld && cargo build --release。阅读 README 了解配置方式，运行 ./target/release/celld --help 查看启动参数。建议使用 docker-compose 快速体验：在 Docker 中运行 celld 实例，并使用示例 Deno 客户端连接测试 Durable Object 的创建与调用。注意检查 examples 目录中的用法示例。"
       }
     }
   }
