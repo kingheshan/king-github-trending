@@ -2148,17 +2148,17 @@
     },
     "repo:stablyai/orca": {
       "type": "repo-insight",
-      "hash": "a54e15aa9ccb5e71fc5addee",
+      "hash": "2d091db3b71a9f3ef77c59bd",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-25T23:02:29.695Z",
+      "generatedAt": "2026-09-05T22:41:58.998Z",
       "value": {
-        "summaryZh": "Orca 是一个高级开发环境（ADE），专为管理并行编程代理集群而设计。它允许用户使用自己的订阅运行任意编码代理，支持桌面、移动设备和VPS平台。亮点在于灵活的并行代理管理和跨平台兼容性，适合需要大规模自动化编码任务的开发者和团队。",
+        "summaryZh": "Orca 是一个面向并行代理集群的代理开发环境（ADE），允许开发者通过自己的订阅运行任意编码代理，并支持桌面、移动端和远程运行时。它旨在简化多代理工作流的管理，提供统一的界面来调度、监控和协作。其亮点在于与代理无关的设计，可集成多种主流AI编码工具，并支持跨设备灵活访问。适合需要同时运行多个AI编码代理、追求高效并行任务处理的开发者或团队使用。该项目使用TypeScript编写，具备跨平台能力，是构建和编排复杂代理任务的基础设施。",
         "scenarios": [
-          "在多代理协作编写大型代码库时，使用 Orca 并行调度任务以提升效率。",
-          "在云端 VPS 上部署 Orca，实现 24/7 无人值守的编码代理运行。",
-          "在团队中统一管理多个第三方编码代理的 API 密钥和资源分配。"
+          "同时管理多个AI编码代理，并行处理多个模块的开发或重构任务，提升效率。",
+          "在移动设备上远程监控和操作运行在服务器或云端的代理任务，实现随时随地的开发管理。",
+          "通过订阅方式集成自有的编码代理（如GitHub Copilot、Codex等），并在统一界面中切换和调度。"
         ],
-        "agentInstallPrompt": "首先，确保安装了 Node.js 和 npm。然后执行以下命令安装 Orca CLI： ```bash npm install -g @stablyai/orca ``` 安装完成后，配置你的 AI 代理提供商 API 密钥（例如 OpenAI）： ```bash orca config set openai_api_key=sk-xxx ``` 启动一个代理集群示例： ```bash orca run --agents 3 --task \"实现一个用户登录系统\" ``` 更多用法请查看文档：https://github.com/stablyai/orca"
+        "agentInstallPrompt": "克隆仓库：git clone https://github.com/stablyai/orca.git && cd orca。然后安装依赖：npm install。查看package.json中的scripts（如dev、build、start），通常开发模式运行npm run dev。若为桌面应用，可能需要执行npm run electron或类似命令。根据README中的指引启动应用，并配置所需的编码代理API密钥。若涉及远程运行时，按文档配置服务端。确保Node.js版本符合要求。"
       }
     },
     "repo:asgeirtj/system_prompts_leaks": {
@@ -4713,17 +4713,17 @@
     },
     "repo:apache/maka": {
       "type": "repo-insight",
-      "hash": "1685b7df57da860de8754ee8",
+      "hash": "e828dd1f21e207ffb35b9e92",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-21T22:00:23.773Z",
+      "generatedAt": "2026-09-05T22:37:00.419Z",
       "value": {
-        "summaryZh": "Apache Maka（孵化中）是一个本地优先的AI智能体工作空间，基于TypeScript构建。它以仅追加日志的形式记录模型消息、工具调用、工具结果、权限决策和终止事件，确保操作全程可追溯。该项目适合需要透明、可审计AI代理行为的开发者和团队，尤其关注数据隐私与本地化部署。其亮点在于本地优先架构与完整的事件日志，便于调试、复现和安全管理。",
+        "summaryZh": "Apache Maka（孵化中）是一个高性能的AI代理工作空间，专注于完整记录代理执行的每一步操作。它基于TypeScript构建，为开发和运行AI代理提供结构化环境，具备可追溯、可重放、可审计的特性。其核心亮点在于全量操作日志，使得代理行为透明可控，便于调试与优化。适合需要精细管控AI代理流程的开发者、研究团队以及企业级AI应用构建者，尤其适用于复杂任务编排、自动化流程审计和多代理协作场景。",
         "scenarios": [
-          "在本地环境中运行AI代理，完整记录每次工具调用和决策过程，便于事后审计与调试。",
-          "构建需要严格权限管控的自动化工作流，通过日志追踪每个权限决策点。",
-          "作为研究或教学平台，观察和分析AI代理内部行为与事件流。"
+          "构建需要完整审计日志的AI自动化工作流，确保每一步操作可追溯。",
+          "在复杂多代理协作环境中，记录各代理交互细节以优化协作策略。",
+          "作为AI代理开发调试环境，通过操作记录快速定位问题并重放执行。"
         ],
-        "agentInstallPrompt": "请克隆仓库 https://github.com/apache/maka 并切换到最新发布版。确保Node.js环境（建议v20+），运行npm install安装依赖。阅读README了解项目结构，然后执行npm run dev启动开发模式。若需快速体验，可运行示例用例，观察生成的append-only日志文件。注意项目可能依赖其他服务，请根据文档配置环境变量。"
+        "agentInstallPrompt": "请克隆Apache Maka仓库（https://github.com/apache/maka），该仓库使用TypeScript。首先查看README和文档，理解项目结构。安装依赖（如pnpm或npm），然后运行官方示例或测试用例。根据项目指引构建项目，并尝试启动一个简单的代理工作空间，验证完整记录功能。若需快速体验，可查找docker-compose或开发脚本。确保Node.js环境已准备。"
       }
     },
     "repo:protocolbuffers/protobuf": {
@@ -5459,6 +5459,111 @@
           "作为边缘节点上的状态存储层，为 IoT 设备或 CDN 边缘计算提供低延迟的读写和同步能力。"
         ],
         "agentInstallPrompt": "请先确保已安装 Rust 工具链和 Deno CLI。然后执行：git clone https://github.com/denoland/celld.git && cd celld && cargo build --release。阅读 README 了解配置方式，运行 ./target/release/celld --help 查看启动参数。建议使用 docker-compose 快速体验：在 Docker 中运行 celld 实例，并使用示例 Deno 客户端连接测试 Durable Object 的创建与调用。注意检查 examples 目录中的用法示例。"
+      }
+    },
+    "repo:fmtlib/fmt": {
+      "type": "repo-insight",
+      "hash": "562420b365769fc49fe0ee3b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-05T22:13:01.810Z",
+      "value": {
+        "summaryZh": "fmtlib/fmt 是一个开源的现代 C++ 格式化库，提供与 Python 的 str.format 类似的语法，支持类型安全的格式化输出，性能优于 iostream 和 printf。它支持占位符、命名参数、自定义类型格式化，并能编译时检查格式字符串，减少运行时错误。该库轻量、跨平台，集成到现有项目非常方便，是 C++20 std::format 标准的基础实现。适合需要高效、安全、可读性强的文本格式化场景的 C++ 开发者，尤其适用于日志系统、错误信息构造和用户界面文本生成。",
+        "scenarios": [
+          "在 C++ 项目中替代 printf/iostream 进行类型安全的日志格式化，提升代码可读性和安全性。",
+          "需要高性能、低开销的格式化输出场景，例如高频日志记录或网络协议消息构造。",
+          "开发跨平台库或工具时，利用 fmt 实现与 C++20 std::format 兼容的功能，提前享受现代格式化特性。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/fmtlib/fmt 仓库，在项目内使用 CMake 构建并安装库。具体步骤：先运行 mkdir build && cd build，然后执行 cmake -DCMAKE_BUILD_TYPE=Release ..，再执行 cmake --build . --config Release 和 sudo cmake --install .。完成后编写一个简单 C++ 程序，包含 #include <fmt/core.h> 和 #include <fmt/format.h>，使用 fmt::print(\"Hello, {}!\\n\", \"world\"); 以及 fmt::format(\"{}-{:02d}-{:02d}\", 2025, 3, 14) 验证安装，然后通过 g++ -std=c++17 test_fmt.cpp -lfmt -o test_fmt 编译并运行。"
+      }
+    },
+    "repo:BraveOPotato/FckSignups": {
+      "type": "repo-insight",
+      "hash": "911b532184d523888bd3fc3f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-05T22:17:55.157Z",
+      "value": {
+        "summaryZh": "FckSignups 是一个精心整理的“无需注册即可用”的开源工具列表，所有工具均可在浏览器内直接使用，无需创建账号或登录。项目以简洁的网页形式呈现，为用户提供即时可用的在线工具索引，涵盖图形处理、文档转换、开发助手等常见需求。亮点在于严格筛选高质量、可离线或云端运行的开源替代方案，注重用户隐私与便利性，反对强制注册的体验。适合那些讨厌为临时任务注册账号、注重隐私和数据自主权的普通用户、开发者及设计师，也适合需要快速找到临时解决方案的办公人群。",
+        "scenarios": [
+          "需要临时处理图片、PDF、音频等文件，但不想注册在线服务时，快速查找可用的开源网页工具。",
+          "开发者希望在不泄露数据的前提下，通过浏览器工具完成格式转换、代码格式化或正则测试等小任务。",
+          "隐私意识强或访问受限环境下的用户，寻找无需账号即可使用的开源软件替代方案。"
+        ],
+        "agentInstallPrompt": "请先查看该项目的 GitHub 仓库 BraveOPotato/FckSignups。该项目很可能是一个静态网站或前端项目。请执行以下操作：1) git clone https://github.com/BraveOPotato/FckSignups.git 并进入目录；2) 检查 package.json，如果存在则按脚本安装依赖（如 npm install 或 pnpm install）并启动开发服务器（如 npm run dev 或 npm run start）；3) 如果没有 package.json，则直接使用本地静态服务器（如 python3 -m http.server）在浏览器中打开 index.html。启动后请验证页面能正常浏览，并确认列表中的链接是否有效。"
+      }
+    },
+    "repo:magnitudedev/magnitude": {
+      "type": "repo-insight",
+      "hash": "953848ae2306da6892a45773",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-05T22:22:40.199Z",
+      "value": {
+        "summaryZh": "Magnitude 是一个开源推理服务器，专为本地模型运行而设计，能根据你的硬件自动选择并运行最佳模型。它无缝集成到你已有的 AI 智能体中，支持 Pi、OpenCode、Hermes、OpenClaw、Codex、Claude Code 等多种主流工具。项目使用 TypeScript 编写，旨在降低本地 AI 部署门槛，让开发者无需复杂配置即可获得高性能、隐私安全的本地推理能力。适合希望摆脱云端依赖、追求数据隐私或需要离线工作的开发者和团队。",
+        "scenarios": [
+          "在本地开发环境中为 Claude Code、Codex 等 agent 提供高速模型推理，避免 API 延迟与费用。",
+          "需要严格数据隐私的团队，使用 Magnitude 在内部服务器上运行开源模型，处理敏感代码或文档。",
+          "在树莓派等低功耗设备上运行轻量级模型，配合 OpenClaw 等实现边缘 AI 智能体应用。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 Magnitude 推理服务器。首先运行 'git clone https://github.com/magnitudedev/magnitude.git'，然后进入目录执行 'npm install' 或 'yarn'。根据 README 配置一个本地模型（如 Llama 或 Qwen），启动服务后，用 curl 或测试脚本调用 /v1/completions 接口验证是否正常工作。如果遇到依赖问题，尝试使用 Node 20+ 版本并确保已安装 Python 及 llama.cpp 相关依赖。完成后告诉我成功运行的模型名称和示例请求。"
+      }
+    },
+    "repo:nvm-sh/nvm": {
+      "type": "repo-insight",
+      "hash": "88f6aa2fd1b5d51c8b3ea3d9",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-05T22:22:43.233Z",
+      "value": {
+        "summaryZh": "nvm 是一个符合 POSIX 标准的 bash 脚本，用于管理多个 Node.js 版本。它允许用户轻松安装、切换、列出和删除不同版本的 Node.js，支持按项目或 shell 会话动态选择版本，并可通过 .nvmrc 文件自动切换。项目轻量、无外部依赖，是前端和 Node.js 开发者的必备工具。适合需要频繁切换 Node 版本、测试多版本兼容性或遵循团队版本规范的开发者。",
+        "scenarios": [
+          "本地开发中需要同时维护多个使用不同 Node.js 版本的项目。",
+          "CI 环境或自动化脚本中按需安装指定 Node 版本并执行测试。",
+          "跟随 Node.js 主版本更新，快速体验新功能并回滚到稳定版本。"
+        ],
+        "agentInstallPrompt": "请先检查系统是否已安装 git、curl 和 bash。然后执行官网安装命令：curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash。安装完成后，重新加载 shell 配置（如 source ~/.bashrc），验证 nvm --version。接着使用 nvm install --lts 安装最新 LTS 版本，nvm use --lts 切换，最后运行 node -v 确认版本。如果环境是 CI，可先安装 nvm 再通过 nvm install 指定版本进行测试。"
+      }
+    },
+    "repo:debpalash/VoiceStudio": {
+      "type": "repo-insight",
+      "hash": "0cb1b4c0bdd12f59a53df9f3",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-05T22:27:37.795Z",
+      "value": {
+        "summaryZh": "VoiceStudio 是一个开源、完全本地运行的语音工具套件，被誉为 ElevenLabs 的替代品。它集语音克隆、语音设计、视频配音、听写、转录及有声书制作于一体，支持多达 646 种语言，强调数据隐私与离线可用性。基于 Python 构建，适合开发者、内容创作者、多语言学习者及隐私敏感用户。其亮点在于无需云端 API 即可实现高质量的语音处理，提供全流程本地化解决方案。适用于需要语音合成、转换或编辑场景，尤其适合希望摆脱商业服务束缚、深度定制语音管线的技术团队。",
+        "scenarios": [
+          "为视频内容添加多语言配音，无需依赖云端 API，保护原始素材隐私。",
+          "创建个人有声书或播客，利用语音克隆技术生成个性化 narrator 声音。",
+          "在无网络环境中进行语音转写、听写，或设计全新合成声音用于游戏、虚拟角色。"
+        ],
+        "agentInstallPrompt": "请先在本地克隆仓库：git clone https://github.com/debpalash/VoiceStudio，然后根据 README 安装依赖（建议创建 Python 虚拟环境并执行 pip install -r requirements.txt）。之后尝试运行项目提供的示例脚本或 CLI 命令，以完成一次语音克隆或转录任务。注意确保系统已安装必要的音频库（如 ffmpeg）。若遇到依赖冲突，请根据错误提示调整包版本或安装系统级依赖。目标是让 VoiceStudio 在本地成功运行并生成一个输出音频文件，验证其基本功能。"
+      }
+    },
+    "repo:checkstyle/checkstyle": {
+      "type": "repo-insight",
+      "hash": "cf96ab8fcd7af53a9e4db0dc",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-05T22:27:41.212Z",
+      "value": {
+        "summaryZh": "Checkstyle 是一款开源的 Java 静态代码分析工具，用于检查代码是否符合约定的编码规范。默认支持 Google Java Style 和 Sun Code Conventions，并高度可配置，允许自定义规则集。它可通过命令行、ANT 任务或 Maven/Gradle 插件集成到构建流程中。适用于希望统一团队编码风格、提升代码可读性和可维护性的 Java 开发者，特别适合在持续集成环境自动执行质量检查。",
+        "scenarios": [
+          "在 CI/CD 流水线中集成 Checkstyle，自动检测代码规范违规并阻止不合规代码合并。",
+          "团队引入新编码标准时，使用 Checkstyle 逐批修复存量代码，并防止新代码引入风格问题。",
+          "开发者在本地 IDE 或命令行运行 Checkstyle，提交前快速自查代码风格。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试用 Checkstyle。首先确保 Java 环境就绪，然后从 GitHub 克隆或下载 checkstyle 源码，使用 Maven 构建；或者直接下载最新发行版 jar。接着创建一个简单的 Java 项目，编写一个格式不规范的 HelloWorld.java（例如缺少空格、错误缩进），并准备一份 google_checks.xml 配置。运行命令 `java -jar checkstyle.jar -c google_checks.xml HelloWorld.java`，观察报告输出。若需要集成到 Maven，请添加 checkstyle 插件并执行 `mvn checkstyle:check`。完成后总结关键命令和结果。"
+      }
+    },
+    "repo:youssofal/MTPLX": {
+      "type": "repo-insight",
+      "hash": "30ea830f47883ec3704f32a2",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-05T22:32:20.694Z",
+      "value": {
+        "summaryZh": "MTPLX 是一个面向 Apple Silicon 的 MLX 推理加速工具，通过原生 MTP（Multi-Token Prediction）推测解码技术，无需外部草稿模型即可实现高达 3 倍的生成速度提升，尤其针对 Qwen3 8B/27B 等模型进行了优化。它利用自回归模型自身的多token预测头，在保持输出质量的同时大幅降低延迟，适合在 Mac 上本地运行大模型的开发者。项目专注于纯 Python 实现，易于集成和扩展，是 MLX 生态中提升推理性能的实用选择。",
+        "scenarios": [
+          "在 Apple Silicon Mac 上本地部署 Qwen3 8B/27B 模型，需要更低延迟的对话或生成任务。",
+          "作为 MLX 生态的推理加速层，集成到现有 AI 应用中，减少 token 生成等待时间。",
+          "研究推测解码或 MTP 机制，作为参考实现进行学习与二次开发。"
+        ],
+        "agentInstallPrompt": "请先确认系统为 macOS 且使用 Apple Silicon，并安装好 Python 3.9+ 与 mlx。然后克隆仓库：git clone https://github.com/youssofal/MTPLX.git && cd MTPLX。创建虚拟环境并安装依赖：python -m venv venv && source venv/bin/activate && pip install -e .。运行仓库提供的最小示例（如 examples 或 README 中的命令行），指定模型为 Qwen3 8B，输入一段测试文本，观察生成的 token 速度并与标准 MLX 生成方式进行对比，确保 MTP 路径生效。注意内存需满足模型加载需求。"
       }
     }
   }
