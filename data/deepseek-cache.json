@@ -5655,6 +5655,96 @@
         ],
         "agentInstallPrompt": "请先在 macOS 终端中确认已安装 Xcode 和 Swift 环境。然后克隆项目：git clone https://github.com/vorssaint/vorssaint-utils.git，进入目录并打开 Xcode 项目文件。使用 xcodebuild 构建：xcodebuild -project vorssaint-utils.xcodeproj -scheme vorssaint-utils build。构建成功后，从 DerivedData 中复制 app 到 /Applications 并运行，或直接在 Xcode 中点击 Run 启动。若需要命令行手动编译，可尝试 swift build（若为 Swift Package）。请根据项目实际结构调整，并确保满足 macOS 版本要求。"
       }
+    },
+    "repo:coreyhaines31/marketingskills": {
+      "type": "repo-insight",
+      "hash": "9d376e06ec1581198f80555a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-07T23:15:05.943Z",
+      "value": {
+        "summaryZh": "这是一个面向AI代理和Claude Code的营销技能库，提供转化率优化（CRO）、文案写作、SEO、数据分析和增长工程等模块化技能。通过结构化指令，让AI助手在营销任务中具备专业策略和执行能力，涵盖用户心理、A/B测试、关键词布局、漏斗分析等。适合希望用AI自动化营销流程的开发者、增长团队和独立创业者，尤其适合用Claude Code等工具快速落地营销实验。",
+        "scenarios": [
+          "快速生成符合CRO原则的落地页文案与行动号召策略，提升转化率",
+          "基于SEO最佳实践优化博客内容结构和关键词布局，提高搜索引擎排名",
+          "利用内置分析框架拆解营销漏斗数据，提出可执行的增长实验方案"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/coreyhaines31/marketingskills 到本地项目目录，查看README和skills文件夹内容。然后按照说明将技能文件复制到Claude Code的skills目录（如~/.claude/skills或项目.skills文件夹），并确认Claude Code版本支持自定义技能。安装后，尝试运行一个示例任务：使用CRO技能对一个登录页面文案进行评审，并输出改进建议。确保设置好必要的API密钥或环境变量，以便AI代理能访问文件系统。"
+      }
+    },
+    "repo:pollen-robotics/microduck_rl": {
+      "type": "repo-insight",
+      "hash": "215f6129d0b6a08f17cbe2fe",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-07T23:47:38.046Z",
+      "value": {
+        "summaryZh": "Microduck RL 是一个面向 Microduck 双足机器人的强化学习训练环境，基于 MJLab（MuJoCo 实验室）构建。它提供完整的 RL 训练流程，支持 Sim2Real 迁移，并附带预训练模型和实验配置。项目采用 Python 开发，适合机器人爱好者、强化学习研究者和 Microduck 用户，用于快速实现双足运动控制，如行走、转向等策略。亮点是环境轻量、易上手，无需实体机器人即可在仿真中训练，并能将策略部署到真实硬件。",
+        "scenarios": [
+          "在仿真中训练 Microduck 机器人的稳定行走策略，观察运动数据和奖励变化。",
+          "使用已提供的预训练模型进行快速测试，评估策略在标准地形上的表现。",
+          "自定义奖励函数或环境参数，研究迁移学习与领域随机化对 Sim2Real 的影响。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/pollen-robotics/microduck_rl.git，然后进入目录并安装依赖：pip install -e . 和 pip install mujoco。若需要可视化，建议安装 mjlab 相关依赖。接着运行快速训练示例：python examples/train_parkour.py --checkpoint output/checkpoints/step_1000000.pt，如果缺少 checkpoint，可运行 python examples/train_parkour.py 从零开始训练（约 10 万步即可看到初步效果）。训练后保存模型，并使用 python examples/play_policy.py --checkpoint output/checkpoints/step_1000000.pt 播放策略动画。若需 Sim2Real，请参考 microduck/ 目录下的硬件部署说明。"
+      }
+    },
+    "repo:advaitpaliwal/feynman": {
+      "type": "repo-insight",
+      "hash": "432ec36befc9c4ebb2bd8460",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-08T00:00:53.240Z",
+      "value": {
+        "summaryZh": "Feynman 是一个开源的 AI 研究智能体，基于 TypeScript 构建。它旨在自动化执行多步骤研究任务，能够自主检索信息、整合资料并生成结构化报告。该项目借鉴了“费曼学习法”的理念，强调通过简明解释来验证知识的理解，适合需要深度调研、文献综述或竞品分析的开发者与研究人员。其核心亮点在于将复杂的 AI 工作流封装为简单可扩展的代理，用户可通过配置文件定制研究流程。",
+        "scenarios": [
+          "自动收集并整合特定技术主题的最新论文、博客与社区讨论，生成综述文档。",
+          "作为开发者的研究助手，快速梳理项目依赖、API 文档和代码示例，辅助技术选型。",
+          "对市场竞品或行业趋势进行多源信息聚合，输出带引用来源的分析报告。"
+        ],
+        "agentInstallPrompt": "请先确保 Node.js 和 pnpm 已安装。然后克隆仓库：git clone https://github.com/advaitpaliwal/feynman.git，进入目录后运行 pnpm install 安装依赖。根据 README 配置必要的环境变量（例如 OpenAI API 密钥）。最后，运行 pnpm start 或使用文档中的示例命令启动代理，并传入一个研究主题进行测试。如果涉及浏览器自动化，可能需要安装 Playwright 的浏览器内核：pnpm exec playwright install。"
+      }
+    },
+    "repo:roboflow/rf-detr": {
+      "type": "repo-insight",
+      "hash": "deff274265e02195dc6c520d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-08T00:00:58.953Z",
+      "value": {
+        "summaryZh": "RF-DETR 是由 Roboflow 开发并入选 ICLR 2026 的实时目标检测与分割模型架构。它在 COCO 数据集上达到当前最优水平，专为便捷微调而设计，使开发者能够基于预训练权重高效适配自定义数据集。模型采用 DETR 风格端到端架构，无需手工设计锚框或后处理，推理速度快且精度高，适合边缘设备与实时应用。项目提供简洁的 Python API 和官方权重，降低了迁移学习门槛，特别适合需要快速构建高精度视觉检测/分割系统的团队。",
+        "scenarios": [
+          "工业质检场景：用少量缺陷样本微调 RF-DETR，实现生产线上产品瑕疵的实时定位与分割。",
+          "智慧安防与监控：快速训练专属模型，实时检测行人、车辆及异常目标，兼顾高精度与低延迟。",
+          "研究原型验证：基于 COCO SOTA 权重，在学术或商业项目中快速迭代新数据集上的检测分割效果。"
+        ],
+        "agentInstallPrompt": "请帮我搭建 RF-DETR 的试用环境。首先克隆仓库 https://github.com/roboflow/rf-detr 并阅读 README。然后创建 Python 3.10 虚拟环境，安装 requirements.txt 中的依赖（若需 GPU，请安装对应版本 PyTorch）。接着下载官方 COCO 预训练权重（提示用户提供访问方式或从命令行自动下载），并运行示例推理脚本，输入一张测试图片输出可视化检测结果。如果代码中有示例 Notebook，可一并演示训练自定义数据的最小流程。最后简要说明如何使用自己的数据集进行微调，包括数据格式转换和训练命令。"
+      }
+    },
+    "repo:openai/skills": {
+      "type": "repo-insight",
+      "hash": "dcb79ca24f60b0eb1183a2ce",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-08T22:01:38.131Z",
+      "value": {
+        "summaryZh": "OpenAI Skills 是一个官方发布的技能目录（Catalog），旨在为 Codex 智能体提供可复用的技能包集合。该项目使用 Python 编写，本质上是一组结构化的指令、提示词或脚本模板，帮助开发者快速扩展 Codex 的能力边界，使其能执行特定领域任务，如代码分析、自动化测试、文档生成等。仓库中的技能按类别组织，每个技能都包含清晰的说明与示例，便于直接集成到工作流中。适合希望利用 AI 编程助手提升开发效率、构建自定义自动化流程的开发者或团队。通过该目录，用户可以学习如何编写自己的技能，并共享给社区，从而推动 AI 辅助编程生态的标准化。",
+        "scenarios": [
+          "在 Codex 中加载特定技能，帮助完成某个编程语言或框架的代码生成、重构或调试任务。",
+          "作为团队内部标准化 AI 工作流的参考，将常用开发流程封装成可复用的技能模板。",
+          "开发者学习如何编写和发布自己的技能，参与 OpenAI 技能生态建设。"
+        ],
+        "agentInstallPrompt": "请先克隆 openai/skills 仓库到本地：git clone https://github.com/openai/skills.git，然后进入目录。阅读 README.md 了解技能目录结构与使用方法。根据 README 中的指引，选取一个示例技能进行安装和测试。如果要求安装到 Codex，请遵循官方文档中的安装步骤（例如复制技能文件夹到 Codex 的 skills 目录或使用 CLI 命令）。安装后，创建一个测试项目，调用该技能执行一次简单任务，验证功能正常。最后，总结技能的使用方式和可能遇到的问题。"
+      }
+    },
+    "repo:heygen-com/hyperframes": {
+      "type": "repo-insight",
+      "hash": "be9ab4e7d07223a8058e8ffd",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-08T22:01:42.464Z",
+      "value": {
+        "summaryZh": "HyperFrames 是一个面向 AI 代理的轻量级工具，它允许代理通过编写 HTML 来生成视频。该项目基于 TypeScript 构建，旨在简化从网页内容到动态视频的转换流程。其核心亮点是让开发者或 AI 系统无需复杂视频编辑知识，仅通过标准的 HTML/CSS/JS 技术栈即可创建动态视觉内容。适合需要自动化生成屏幕录制、演示视频或数据可视化动画的开发者，尤其适合集成到大语言模型代理的工作流中，以实现动态视频输出的自动化。",
+        "scenarios": [
+          "AI 代理根据用户指令自动生成产品演示或教学视频，通过 HTML 模板实时渲染。",
+          "在数据分析流水线中，将可视化图表以 HTML 片段形式动态合成解说视频。",
+          "为社交媒体自动生成动态广告或宣传短片，利用代码控制动画与交互效果。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 heygen-com/hyperframes 项目。首先克隆仓库 https://github.com/heygen-com/hyperframes，然后使用 npm 安装依赖（建议 Node.js 18+）。阅读 README 了解如何使用 API。请创建一个简单的示例：编写一个包含基本动画的 HTML 文件，然后调用 hyperframes 命令将其渲染为一段短视频（mp4 格式）。最后在终端展示渲染结果，并说明如何集成到智能代理中。"
+      }
     }
   }
 }
