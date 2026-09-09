@@ -813,17 +813,17 @@
     },
     "repo:nexu-io/open-design": {
       "type": "repo-insight",
-      "hash": "23f27f38af6a92a65109b5a0",
+      "hash": "50b4ba9dc964cd8a4fadab12",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-27T22:01:08.771Z",
+      "generatedAt": "2026-09-08T23:59:45.766Z",
       "value": {
-        "summaryZh": "open-design 是一款本地优先的桌面设计插件，可作为 Claude Design 的开源替代方案，专为 DeepSeek Harness 等编码代理打造。它能让你的 AI 编程代理直接生成真实的设计文件，包括原型、落地页、仪表盘、幻灯片、图片和视频，并支持导出为 HTML、PDF、PPTX、MP4 等格式。通过 BYOK 模式，可接入 Claude Code、Codex、Cursor、DeepSeek Harness、OpenCode 等 20+ 命令行工具，适合希望将 AI 编码能力扩展至视觉设计领域的开发者、产品经理和设计工程师。",
+        "summaryZh": "open-design 是一个本地优先的桌面设计插件，定位为 Claude Design 的开源替代品。它让 AI 编码智能体直接驱动设计引擎，通过 BYOK 接入 Claude Code、Codex、Cursor、DeepSeek Harness 等 20 多种 CLI，快速生成真实的原型图、落地页、仪表盘、幻灯片、图片及视频等设计文件，并支持导出为 HTML、PDF、PPTX、MP4 等格式。项目基于 TypeScript 构建，适合希望用 AI 智能体实现高效设计落地的开发者、设计师及 AI 自动化团队。",
         "scenarios": [
-          "快速生成网页原型或落地页，并直接导出为 HTML 用于开发交付。",
-          "利用 AI 代理自动制作产品演示幻灯片或仪表盘，输出 PPTX 或 PDF。",
-          "生成营销图片或视频素材，导出为 MP4 等格式，用于内容创作。"
+          "将 open-design 作为 AI 编码助手的插件，让智能体根据自然语言描述自动生成高保真网页原型并导出 HTML。",
+          "在本地桌面环境中，使用 BYOK 模式连接除 DeepSeek 外的多家大模型 CLI，统一完成从设计概念到幻灯片或视频交付的自动化流程。",
+          "开发团队通过自定义 AI Harness，将设计任务集成到 CI/CD 管道中，批量产出仪表盘、营销图片等具有真实文件格式的可交付设计资产。"
         ],
-        "agentInstallPrompt": "请先克隆仓库 https://github.com/nexu-io/open-design 并查看 README。然后安装依赖（如 npm install 或 pnpm install）。根据项目说明配置环境，确保支持 DeepSeek Harness 或你的 CLI 工具（如 Claude Code）。运行本地开发服务器（例如 npm run dev 或类似命令），启动桌面应用。接着尝试用其中一个示例命令，让编码代理生成一个简单的落地页并导出为 HTML，验证全流程是否正常。"
+        "agentInstallPrompt": "请安装并试跑 open-design 项目：首先使用 git clone https://github.com/nexu-io/open-design 下载仓库，然后查看 README 获取安装要求（如 Node 版本）。请执行 npm install 安装依赖，并按照文档配置一个支持 DeepSeek 或 OpenAI 协议的 BYOK 环境变量。接着运行 npm run dev 或 package 脚本启动桌面应用，使用内置示例任务（例如创建登录页或演示文稿）来验证 AI 生成设计文件的功能。若遇到依赖或版本问题，请检查 package.json 和文档中的调试建议，并在终端中记录输出。"
       }
     },
     "repo:VoltAgent/awesome-openclaw-skills": {
@@ -2208,17 +2208,17 @@
     },
     "repo:diegosouzapw/OmniRoute": {
       "type": "repo-insight",
-      "hash": "664bc2cdef1fa7c126d28302",
+      "hash": "067f812d28f63466dfe7f73f",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-24T02:22:30.833Z",
+      "generatedAt": "2026-09-09T22:00:50.095Z",
       "value": {
-        "summaryZh": "OmniRoute 是一个免费开源的 MIT 协议 AI 网关，提供统一端点接入 350+ 提供商（其中 90+ 免费）和 1200+ 模型，兼容 Kimi、Claude、GPT、Gemini、GLM、DeepSeek、MiniMax 等主流服务。它专为 AI 编码工具（Claude Code、Codex、Cursor、OpenCode、Cline、Copilot）设计，具备配额感知自动回退、RTK+Caveman 压缩（节省 15-95% token）、支持 MCP/A2A 协议，并提供桌面端/PWA 应用。项目由 450+ 贡献者共建，适合追求极致成本控制、需要多模型冗余和高效 token 利用的开发者与团队。",
+        "summaryZh": "OmniRoute 是一个免费开源的 MIT 协议 AI 网关，由 550+ 贡献者共同打造，旨在让开发者“永不停编码”。它通过单一端点接入 352 家提供商（其中 150+ 免费）、1200+ 模型，覆盖 Kimi、Claude、GPT、Gemini、GLM、DeepSeek、MiniMax 等主流模型。支持配额感知的自动故障转移，内置 RTK 和 Caveman 压缩技术，可节省 15-95% 的 token 用量。兼容 Claude Code、Codex、Cursor、OpenCode、Cline 及 Copilot 等主流 AI 编程工具，并支持 MCP/A2A 协议及桌面/PWA 应用。适合需要多模型汇聚、成本优化与高可用切换的 AI 应用开发者，尤其适用于工具链集成与本地部署场景。",
         "scenarios": [
-          "在 Claude Code、Cursor 等编码工具中统一接入多个 AI 提供商，实现自动故障转移与配额管理。",
-          "通过智能压缩和模型路由，显著降低大规模 AI 调用成本，尤其适合高频开发场景。",
-          "需要同时使用免费和商业模型，并在不同任务间灵活切换的个人开发者或小型团队。"
+          "开发者需要在一个统一 API 中调用多个 AI 提供商的模型，并希望免费或低成本访问 150+ 免费模型池，降低实验与原型开发成本。",
+          "在 CI/CD 或本地 AI 编程环境中，使用 Claude Code、Cursor、Cline 等工具时，希望对 API 请求进行智能路由、自动故障转移与 token 压缩，提升稳定性和减少费用。",
+          "构建桌面或 PWA 应用，需要通过 MCP/A2A 协议与 AI 模型交互，并利用配额感知调度实现多提供商负载均衡与高可用。"
         ],
-        "agentInstallPrompt": "请先确保本机已安装 Node.js 18+ 和 Git。然后执行：git clone https://github.com/diegosouzapw/OmniRoute.git && cd OmniRoute && npm install && npm run build。查看 README.md 获取配置说明，在 .env 中填入至少一个 API 密钥（如 OpenAI 兼容格式），然后运行 npm start 启动网关。使用 curl 测试示例：curl http://localhost:3000/v1/chat/completions -H \"Content-Type: application/json\" -H \"Authorization: Bearer YOUR_KEY\" -d '{\"model\":\"gpt-4o-mini\",\"messages\":[{\"role\":\"user\",\"content\":\"Hello\"}]}'，若返回正常则安装成功。"
+        "agentInstallPrompt": "克隆 GitHub 仓库 https://github.com/diegosouzapw/OmniRoute 到本地，使用 pnpm 或 npm 安装依赖。请先阅读 README 了解快速开始部分，然后使用 Docker Compose 或本地命令启动网关服务。配置环境变量，至少设置一个 API 提供商的密钥（如 OpenRouter 或 DeepSeek），确保 .env 文件正确。启动后，使用 curl 向 http://localhost:8787/v1/chat/completions 发送测试请求，验证模型列表和自动故障转移功能。如果遇到问题，检查 TypeScript 编译或容器日志，并尝试切换至开发模式。"
       }
     },
     "repo:alibaba/page-agent": {
@@ -2958,17 +2958,17 @@
     },
     "repo:earthtojake/text-to-cad": {
       "type": "repo-insight",
-      "hash": "7edd7def9db53260166c823b",
+      "hash": "298f9b8ec046466bcf064f5c",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-31T22:01:01.526Z",
+      "generatedAt": "2026-09-09T22:00:21.222Z",
       "value": {
-        "summaryZh": "text-to-cad 是一个面向 CAD、CAE 和 CAM 领域的 JavaScript 代理技能库，旨在将自然语言指令转化为可执行的 CAD 建模、工程仿真和制造任务。它封装了与常见工程软件交互的智能体能力，使开发者能够快速构建基于 AI 的工程设计助手。项目亮点在于其以“技能”为粒度，提供了模块化、可复用的工具链，降低了将大语言模型接入专业工程软件的门槛。适合从事 AI 辅助设计、自动化建模、智能制造的开发者，以及希望将生成式 AI 引入传统工程流程的团队。",
+        "summaryZh": "text-to-cad 是一个面向 CAD/CAE/CAM 领域的 Python 代理技能库，将自然语言指令转化为可执行的设计与仿真操作。它封装了参数化建模、几何约束求解、网格划分及刀具路径生成等底层能力，提供统一的 Agent 工具接口，使大语言模型能直接驱动工业软件或内核。核心亮点是模块化架构，支持多后端适配，降低工程自动化门槛。适合想要基于 LLM 构建智能设计助手、需要快速验证 AI 驱动工作流的工程师或研究者，尤其适用于机械设计、增材制造及数控编程场景。项目目前处于早期阶段，接口可能变化，但思路清晰，便于二次开发。",
         "scenarios": [
-          "工程师使用自然语言描述零件形状，自动生成 CAD 模型文件，快速验证设计概念。",
-          "在 CAE 工作流中，通过文本指令设置仿真边界条件并自动运行分析，简化有限元前处理步骤。",
-          "面向 CAM 场景，将文本描述的加工工艺转换为数控程序，辅助实现从设计到制造的一体化自动化。"
+          "将产品需求描述自动转换为参数化 CAD 模型，辅助概念设计阶段快速迭代。",
+          "在仿真环境中，通过自然语言设定边界条件并触发 CAE 求解，实现自动化分析报告生成。",
+          "为 CAM 编程提供文本驱动的刀具路径规划入口，简化从设计到制造的流程。"
         ],
-        "agentInstallPrompt": "请克隆仓库 https://github.com/earthtojake/text-to-cad 到本地，使用 npm 安装依赖。查看 README 或示例文件了解如何导入技能模块。在项目根目录创建一个 Node.js 脚本，调用该库提供的函数，尝试将一句简单的产品描述（如“生成一个直径50mm、高度30mm的圆柱体”）转换为 CAD 操作。运行脚本观察输出，并检查是否生成了对应的几何数据或调用成功。如需集成到 AI agent，可将返回结果作为工具调用的一部分。"
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/earthtojake/text-to-cad.git，然后进入目录并安装依赖：pip install -r requirements.txt。（可选）阅读 README 了解技能调用方式。接着运行 Python 解释器，尝试从 text_to_cad 导入核心模块，调用一个简单示例（如使用自然语言描述生成一个长方体模型），确认环境正常。若项目提供示例脚本，请运行 examples 中的脚本测试。注意需要安装配套的 CAD 内核（如 OpenCASCADE）或按提示配置外部服务。"
       }
     },
     "repo:ComposioHQ/awesome-claude-skills": {
@@ -3243,17 +3243,17 @@
     },
     "repo:pascalorg/editor": {
       "type": "repo-insight",
-      "hash": "8407f2df13608a24cb5f607e",
+      "hash": "4fe34e0cac7a1bc2f968992c",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-29T22:00:49.998Z",
+      "generatedAt": "2026-09-09T22:00:16.545Z",
       "value": {
-        "summaryZh": "pascalorg/editor 是一个基于 TypeScript 构建的 3D 建筑项目创建与分享工具。它提供了直观的界面，支持快速搭建三维建筑模型，并集成云端协作功能，便于团队共享和展示。亮点在于轻量化编辑、实时预览以及一键导出分享链接，适合建筑师、设计师和3D爱好者使用。开源 MIT 许可，可自由定制和扩展。",
+        "summaryZh": "pascalorg/editor 是一个开源的3D建筑编辑器，基于TypeScript开发，旨在为人类用户和AI代理提供高效的设计工具。它提供了本地CLI和MCP（Model Context Protocol）工具，使AI代理能够直接与编辑器交互，执行创建、修改和查询建筑模型等操作。该编辑器强调实用工作流，简化了3D建筑设计的流程，适合建筑师、3D设计师以及希望将AI集成到设计流程中的开发者。通过CLI和MCP接口，用户可以轻松实现自动化设计和AI辅助创作，是探索AI驱动建筑设计的有力工具。",
         "scenarios": [
-          "建筑师快速生成三维建筑概念模型并分享给客户或团队。",
-          "教育场景中用于建筑设计的教学演示和学生实践。",
-          "3D 爱好者探索建筑结构并导出模型用于渲染或游戏。"
+          "建筑师使用编辑器快速创建和迭代建筑3D模型，并通过CLI批量处理设计任务，提高设计效率。",
+          "AI代理通过MCP工具自动生成建筑模型，根据用户需求调整结构，实现自然语言驱动的设计修改。",
+          "开发者将编辑器集成到自定义工具链中，利用CLI和MCP接口实现自动化设计流程，如从参数文件生成模型或进行设计审查。"
         ],
-        "agentInstallPrompt": "请先确保已安装 Node.js（>=16）和 Git。 1. 克隆仓库： git clone https://github.com/pascalorg/editor.git cd editor 2. 安装依赖： npm install 3. 启动开发服务器： npm run dev 4. 在浏览器中打开 http://localhost:5173 即可开始使用。 如需构建生产版本，运行 npm run build。"
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/pascalorg/editor.git，然后进入目录并安装依赖（使用npm install或yarn）。查看README了解CLI用法和MCP配置说明。建议创建测试项目，运行如'editor create --help'等命令查看可用功能，同时尝试通过MCP服务器连接AI代理，体验AI辅助编辑流程。确保Node.js环境版本满足要求。"
       }
     },
     "repo:emilkowalski/skills": {
@@ -5744,6 +5744,111 @@
           "为社交媒体自动生成动态广告或宣传短片，利用代码控制动画与交互效果。"
         ],
         "agentInstallPrompt": "请帮我安装并试跑 heygen-com/hyperframes 项目。首先克隆仓库 https://github.com/heygen-com/hyperframes，然后使用 npm 安装依赖（建议 Node.js 18+）。阅读 README 了解如何使用 API。请创建一个简单的示例：编写一个包含基本动画的 HTML 文件，然后调用 hyperframes 命令将其渲染为一段短视频（mp4 格式）。最后在终端展示渲染结果，并说明如何集成到智能代理中。"
+      }
+    },
+    "repo:omacom/omarchy": {
+      "type": "repo-insight",
+      "hash": "5aa74765dd245e269f108f91",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-08T23:25:33.087Z",
+      "value": {
+        "summaryZh": "omarchy 是一个追求美观、现代化且高度可定制化的 Linux 发行版或配置方案，基于 Shell 脚本实现快速部署。它内置了精心调校的桌面环境、主题、图标和常用开发工具，强调开箱即用的优雅体验与极简主义。适合喜欢折腾但不想从零配置的开发者、设计师或 Linux 爱好者，帮助你在短时间内获得视觉惊艳且功能实用的操作系统。项目通过模块化脚本和意见式设计，让系统兼具性能与美感，同时保持透明可控。",
+        "scenarios": [
+          "希望快速搭建美观且开发友好的日常 Linux 桌面环境，省去手动配置大量细节。",
+          "用于体验或展示现代 Linux 桌面定制效果，适合做个人工作站的系统重装方案。",
+          "作为学习 Shell 脚本与 Linux 定制技巧的参考项目，或在此基础上二次开发个性化配置。"
+        ],
+        "agentInstallPrompt": "请先在本地或虚拟机上准备一个基于 Arch Linux 的系统（或参考项目文档确定基础环境）。然后克隆仓库：git clone https://github.com/omacom/omarchy.git。阅读 README 了解安装前提与脚本选项。通常运行项目内的安装脚本（如 ./install.sh 或类似），确保网络通畅并具有 sudo 权限。安装过程中注意交互提示，选择需要的组件。安装完成后重启，并检查桌面环境是否正常启动。若遇到依赖缺失，根据报错补充安装。最终验证桌面主题、终端、开发工具配置是否符合描述。"
+      }
+    },
+    "repo:Tencent/teamai-cli": {
+      "type": "repo-insight",
+      "hash": "53764fc95eb3cec6ed3dd63a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-09T22:00:11.172Z",
+      "value": {
+        "summaryZh": "teamai-cli 是腾讯开源的一款命令行工具，旨在帮助团队快速接入 AI 能力，实现“AI Native”转型。它基于 TypeScript 构建，提供简洁的 CLI 交互，可自动化完成 AI 相关配置、集成与流程搭建，降低团队采用 AI 的门槛。适合希望系统化落地 AI 协作、提升研发效率的工程团队，尤其适用于已使用 GitHub 和 DevOps 流程的组织。工具强调开箱即用，可嵌入现有 CI/CD 或本地开发环境，帮助团队从传统工作流平滑过渡到 AI 驱动模式。",
+        "scenarios": [
+          "团队需要快速在现有 Git 工作流中接入 AI 助手，如自动生成 PR 描述或代码审查建议。",
+          "DevOps 或平台工程团队希望统一管理多个 AI 服务（如 OpenAI、Hugging Face）的 API 配置与调用。",
+          "希望在内部项目脚手架中内置 AI 操作模板，让开发者通过命令行一键执行常见 AI 任务。"
+        ],
+        "agentInstallPrompt": "请先确保 Node.js 18+ 和 npm/pnpm 已安装，然后执行命令：npm install -g teamai-cli 或使用 pnpm add -g teamai-cli。安装完成后，运行 teamai --help 查看可用命令。接着，根据需要运行 teamai setup 进行初始化配置，输入 API Key 等必要参数（可参考 README 中的环境变量示例）。若要快速体验，可创建一个临时目录进入后，执行 teamai demo 来生成示例 AI 集成文件，或运行 teamai run --task summarize --repo . 来测试仓库摘要功能。详细用法请参照官方文档：https://github.com/Tencent/teamai-cli。"
+      }
+    },
+    "repo:liquidslr/system-design-notes": {
+      "type": "repo-insight",
+      "hash": "f0afd095ee6224007dc4d3e9",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-09T22:00:26.546Z",
+      "value": {
+        "summaryZh": "该项目是《System Design Interview - An Insider's Guide》一书的个人笔记仓库，由开发者liquidslr整理。内容涵盖系统设计面试中的核心主题，如可扩展性、负载均衡、缓存、数据库分片、消息队列等，并提炼了常见设计问题的解题框架与权衡分析。笔记适合正在准备系统设计面试的软件工程师，可快速回顾关键概念和架构模式，也可作为日常设计学习的参考。仓库以Markdown文件组织，便于阅读和检索，但当前无明确的目录索引或额外资源，内容深度取决于原书章节。",
+        "scenarios": [
+          "系统设计面试前突击复习：快速查阅核心概念、常用组件和典型架构模式。",
+          "学习《System Design Interview》一书时辅助笔记：对照原书章节梳理重点，加深理解。",
+          "作为团队内部系统设计知识库基础：基于笔记内容进一步扩充案例或实践总结。"
+        ],
+        "agentInstallPrompt": "请先克隆该GitHub仓库到当前工作目录：git clone https://github.com/liquidslr/system-design-notes.git，然后进入仓库目录，使用find或ls命令列出所有Markdown文件，并按内容分类（如缓存、负载均衡、数据库等）生成一个索引文档。最后，选取其中关于'设计一个短链接系统'或'设计新闻Feed系统'的笔记，提取其核心设计要点和权衡，并以中文简要总结在回复中。"
+      }
+    },
+    "repo:vastsa/PI-Desktop": {
+      "type": "repo-insight",
+      "hash": "78893dca0cb5408a7afd7f3c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-09T22:00:30.937Z",
+      "value": {
+        "summaryZh": "PI-Desktop 是一个本地优先的 AI 编码代理桌面应用，采用 Electron + Rust 构建主机核心，并集成 pi Agent Harness，支持用户安装插件以扩展功能。它强调数据隐私与本地处理，将 AI 代理能力带到桌面端，开发者可借此打造自主编写、调试代码的智能工作流。适合希望深度控制 AI 工具链、重视代码安全的专业开发者、技术团队以及追求可扩展性的 AI 工具爱好者。其模块化架构允许按需组装个性化编码助手，降低对云端服务的依赖，提升开发效率与响应速度。",
+        "scenarios": [
+          "在本地开发环境中运行 AI 编码代理，自动完成代码生成、重构或错误修复，同时确保代码不出本机。",
+          "作为可扩展的桌面基础平台，开发者安装自定义插件，打造专属的 AI 辅助工具链或团队内部协作工具。",
+          "利用 Rust 核心的高性能与 Electron 的跨平台 UI，在离线或受限网络环境中提供稳定的 AI 编程支持。"
+        ],
+        "agentInstallPrompt": "首先克隆仓库 git clone https://github.com/vastsa/PI-Desktop.git 并进入项目目录。阅读 README.md 了解依赖要求（Node.js、Rust 工具链）。执行 npm install 安装依赖，然后运行 npm run dev 启动开发模式。若构建生产版本，运行 npm run build。确保 Rust 已安装，因为核心使用 Rust 编写。如有问题请检查构建指南或提交 issue。"
+      }
+    },
+    "repo:mksglu/context-mode": {
+      "type": "repo-insight",
+      "hash": "bc2467926306d683c533ab47",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-09T22:00:35.819Z",
+      "value": {
+        "summaryZh": "context-mode 是一个面向 AI 编程代理的上下文窗口优化工具，通过沙箱化工具输出（平均减少 98% 的上下文占用）、持久化会话记忆，并借助 MCP 与钩子机制在 17 个平台间强制路由，从而大幅提升代理处理复杂任务的效率。该项目采用 TypeScript 编写，适合使用 AI 编程助手（如 Claude、Copilot 等）的开发者、团队或平台维护者，尤其适合需要在多个平台间切换、长对话或工具调用频繁的场景。通过集中管理上下文，它能减少令牌浪费，增强代理的连续性和准确性。",
+        "scenarios": [
+          "在长时间运行的 AI 编码任务中，减少工具输出对上下文的污染，保持对话连贯性。",
+          "团队统一使用 MCP 服务，跨 17 个平台（如 GitHub、Jira 等）执行上下文路由与策略控制。",
+          "开发或调试 AI 代理时，需要持久化会话记忆，以便在重启或切换智能体时恢复状态。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库 https://github.com/mksglu/context-mode 并安装依赖（pnpm install 或 npm install）。然后阅读 README 了解配置要求。运行 pnpm build 构建项目，并按文档在 MCP 配置文件中添加该服务。最后，通过 pnpm test 验证示例用例，或启动示例脚本（如 examples/ 目录下的 demo）查看上下文压缩效果。确保环境中已配置 Node.js 18+ 及 MCP 客户端。"
+      }
+    },
+    "repo:petergyang/no-ai-slop": {
+      "type": "repo-insight",
+      "hash": "52488c632e6f8b4209b35d3c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-09T22:00:39.959Z",
+      "value": {
+        "summaryZh": "no-ai-slop 是一个 Python 工具，用于自动检测并移除文本中 20 多种常见的 AI 生成痕迹（如“delve”、“furthermore”、“in conclusion”等陈词滥调或模板化表达）。它适合需要清理内容、避免被识别为 AI 生成的写作者、编辑和开发者，可提高文本的自然度与原创性。项目提供了简单的命令行或 API 接口，用户可轻松集成到内容工作流中。其亮点在于精确的模式匹配与可定制规则，帮助用户产出更人性化的文字。",
+        "scenarios": [
+          "内容创作者清理 AI 草稿，消除模板化措辞，使其更像真人写作。",
+          "编辑团队批量审阅外来稿件，快速标记并移除疑似 AI 的套话。",
+          "开发者将 no-ai-slop 作为后处理步骤，集成到自动化文本生成管道中。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/petergyang/no-ai-slop 仓库，检查 README 了解安装方法（通常需要 Python 环境）。安装依赖后，用命令行工具或 Python 库对一段示例文本进行测试，例如将英文段落中的 'delve'、'moreover' 等模式移除，并查看输出效果。确保运行示例代码并输出结果。"
+      }
+    },
+    "repo:titanwings/distilly": {
+      "type": "repo-insight",
+      "hash": "36a086c4061d092ba27470ed",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-09T22:00:45.282Z",
+      "value": {
+        "summaryZh": "Distilly（前身为 Colleague Skill）是一个用 TypeScript 构建的开源工具，旨在将专家或团队的思考过程与工作方式“蒸馏”为可复用的 Skill，供任意 Agent 或 Bot 直接调用。它解决了 AI 应用中隐性知识难以显性化、技能无法跨场景复用的问题。通过解析历史对话、文档或操作记录，Distilly 能自动提炼出结构化的技能模板，并支持导出到主流 Agent 框架。适合需要沉淀团队最佳实践、构建企业知识库或提升 AI 助手一致性的开发者。其亮点在于“从行为中学习”，而非手工编写技能，能显著降低技能开发成本并提升 Agent 的智能化水平。",
+        "scenarios": [
+          "将资深客服的对话记录提炼为标准化客服技能，让新 AI 机器人快速继承处理话术与流程。",
+          "从工程师的代码审查评论中抽取评审规则，生成自动化代码审查 Agent 的专属 Review Skill。",
+          "把产品经理的竞品分析路径蒸馏为可复用分析模板，供市场调研 Bot 一键执行。"
+        ],
+        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/titanwings/distilly.git。然后进入目录 distilly，安装依赖：npm install（若项目使用 pnpm 则执行 pnpm install）。接着阅读 README.md 了解项目结构，运行 npm run build 完成构建，并参考示例文件运行 npm run demo 或类似脚本快速体验。若需将 Distilly 集成到您的 Agent 项目，请查看 src 下的核心导出函数，按文档调用对应 API，并确保 Node.js 版本符合要求。如果遇到问题，可运行 npm test 检查环境是否正常。"
       }
     }
   }
