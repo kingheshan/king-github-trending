@@ -4188,17 +4188,17 @@
     },
     "repo:NVIDIA-NeMo/Switchyard": {
       "type": "repo-insight",
-      "hash": "ceddad68bc1f2c2d0b874348",
+      "hash": "0e74bbc2b3d7d6881c82a412",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-13T22:02:02.539Z",
+      "generatedAt": "2026-09-10T22:00:54.319Z",
       "value": {
-        "summaryZh": "Switchyard 是 NVIDIA NeMo 团队推出的开源 LLM 路由层，使用 Rust 编写，支持在多个模型和 AI 提供商之间智能分发请求，同时保留 OpenAI 和 Anthropic 原生 API 兼容性。它使开发者能够灵活切换模型、进行基准测试并优化成本与性能，无需修改现有应用代码。该项目适合需要管理多模型调用、追求高可用性或降低推理成本的团队，尤其适合构建大规模 LLM 服务网关的场景。",
+        "summaryZh": "Switchyard 是 NVIDIA NeMo 团队开源的 Python 路由层，让 LLM 应用在多模型、多供应商之间分发流量，同时保持 OpenAI 与 Anthropic 原生 API 兼容，现有客户端几乎无需改动即可接入。它支持按规则、权重或策略选择模型，可在供应商限流或故障时自动回退，并便于做模型选型对比、A/B 基准测试与成本、性能调优。适合构建多模型架构的 AI 应用开发者、需要评测与降本的平台团队，以及想在生产环境灰度新模型的工程团队。",
         "scenarios": [
-          "在多个 LLM 提供商（如 OpenAI、Anthropic）之间动态路由请求，实现负载均衡和故障转移，提升服务可用性。",
-          "对不同模型进行成本与性能基准测试，通过对比响应质量、延迟和费用，选择最佳模型或配置。",
-          "根据请求类型或用户策略，将流量路由至性价比最优的模型，降低整体 API 调用成本。"
+          "多供应商容灾与限流回退：主模型超时、报错或被限流时自动切换到备用模型，保障线上服务持续可用。",
+          "模型选型与 A/B 基准测试：用同一套客户端代码把请求同时路由到多个模型，对比质量、延迟与成本，快速产出评测结论。",
+          "成本与性能优化：按请求复杂度、预算或用户等级做策略路由，简单任务交给小模型，复杂任务交给大模型，降低整体调用开销。"
         ],
-        "agentInstallPrompt": "请帮我安装并试跑 Switchyard 项目。首先克隆仓库：git clone https://github.com/NVIDIA-NeMo/Switchyard.git 并进入目录。确保系统已安装 Rust 工具链（需 1.70+），然后执行 `cargo build --release` 构建项目。阅读 README 了解配置文件格式，创建一个简单的路由配置，指定至少两个模型端点（例如 OpenAI 和 Anthropic）。然后运行示例二进制 `cargo run --example basic_routing`，验证请求能正确路由到不同模型，并检查是否兼容 OpenAI/Anthropic 的 API 格式。如果遇到问题，请根据错误信息修复并补充必要的环境变量。"
+        "agentInstallPrompt": "请帮我在本地跑通 NVIDIA-NeMo/Switchyard。步骤：1）克隆 https://github.com/NVIDIA-NeMo/Switchyard 并先阅读 README，确认官方推荐的安装方式与启动命令；2）创建独立 Python 虚拟环境并安装项目依赖（如项目提供 pyproject.toml 或 requirements.txt，优先按官方说明安装）；3）通过环境变量配置一个 OpenAI 兼容后端的 API Key 与 base_url；4）按文档写一份最小路由配置，启动 Switchyard 服务，并用 curl 向本地端口发送一次 chat/completions 请求，确认返回正常；5）再加一个第二模型的路由分支，验证流量能按权重或规则分发，以及主模型失败时能自动回退；6）最后把实际执行的命令、配置文件路径、遇到的问题与解决办法整理成简短报告，不要修改项目源码。"
       }
     },
     "repo:ZuodaoTech/everyone-can-use-english": {
@@ -4788,17 +4788,17 @@
     },
     "repo:freestylefly/awesome-gpt-image-2": {
       "type": "repo-insight",
-      "hash": "9275becee666b907964f1cb7",
+      "hash": "ecc86a0cec85867c8849a108",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-24T22:00:35.734Z",
+      "generatedAt": "2026-09-10T22:00:25.850Z",
       "value": {
-        "summaryZh": "GPT-Image2 工业级提示词引擎与模板库，将提示词视为代码（Prompt as Code）。项目包含530+个案例逆向工程，提炼出20+套工业级模板，并形成可复用的Skills。旨在帮助开发者、AI绘画爱好者和产品团队系统化构建高质量图像生成提示词，提升生成效果的稳定性和可复现性。适合需要批量生成商业级图像、探索提示词工程最佳实践的用户。持续更新中。",
+        "summaryZh": "该项目是 GPT Image 2 / 2.5 的提示词与案例库，以 Prompt as Code 为理念，收录 530+ 个真实案例、20+ 套工业级模板与可复用 Skills，并新增 2.5 同提示词对比专区，附完整提示词与生成记录且持续更新。它把零散的出图经验沉淀为可检索、可复用的结构化资产，适合 AI 绘画爱好者、设计师、运营同学与提示词工程师快速选型、比对不同模型版本的差异，并搭建自己的出图工作流。",
         "scenarios": [
-          "产品设计团队批量生成风格统一的营销视觉素材，通过模板和案例库快速迭代提示词。",
-          "AI绘画开发者学习高质量提示词结构，复用逆向工程案例提升生成效果。",
-          "构建提示词管理流程，将图像提示词作为代码进行版本控制和自动化测试。"
+          "为电商主图、海报或社媒配图挑选合适的提示词模板，直接改写后批量出图",
+          "用同一提示词在 GPT Image 2 与 2.5 之间做横向对比，判断升级后风格、细节与文字渲染的差异",
+          "把仓库中的模板整理成团队内部的 Prompt as Code 规范，沉淀可复用的 Skills 并接入自动化生成流程"
         ],
-        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/freestylefly/awesome-gpt-image-2.git。然后进入目录，查看README.md了解项目结构和模板用法。该项目是提示词模板库，无需安装依赖。建议打开模板目录（如templates/）和skills/目录，阅读示例。若要体验效果，可配置OpenAI API密钥，运行示例脚本（如果有）。请根据README指引尝试使用模板生成图像提示词，并尝试反向工程案例。"
+        "agentInstallPrompt": "请帮我克隆并试用 GitHub 仓库 freestylefly/awesome-gpt-image-2：先执行 git clone https://github.com/freestylefly/awesome-gpt-image-2.git 并进入目录，读取 README 与目录结构，说明项目是纯资源库还是包含可运行代码；若含 package.json 则安装依赖并尝试启动本地预览。随后统计案例总数、模板与 Skills 的分类方式，找出 2.5 同提示词对比专区所在文件，挑一个案例完整展示其提示词与生成记录，最后给出该项目的最佳使用方式与可自动化改进建议。"
       }
     },
     "repo:VoltAgent/awesome-agent-skills": {
@@ -5849,6 +5849,81 @@
           "把产品经理的竞品分析路径蒸馏为可复用分析模板，供市场调研 Bot 一键执行。"
         ],
         "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/titanwings/distilly.git。然后进入目录 distilly，安装依赖：npm install（若项目使用 pnpm 则执行 pnpm install）。接着阅读 README.md 了解项目结构，运行 npm run build 完成构建，并参考示例文件运行 npm run demo 或类似脚本快速体验。若需将 Distilly 集成到您的 Agent 项目，请查看 src 下的核心导出函数，按文档调用对应 API，并确保 Node.js 版本符合要求。如果遇到问题，可运行 npm test 检查环境是否正常。"
+      }
+    },
+    "repo:alsk1992/CloddsBot": {
+      "type": "repo-insight",
+      "hash": "0df1674f14beda21c923a434",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-10T22:00:21.961Z",
+      "value": {
+        "summaryZh": "CloddsBot 是基于 Claude 的自托管 AI 交易代理，横跨 Polymarket、Kalshi、Binance、Hyperliquid 与多条链上 DEX 等 1000+ 市场，持续扫描定价偏差与套利机会，发现优势后即时下单并自动管理风险；内置 agent commerce 协议支持机器间结算。适合量化交易者、预测市场玩家与 AI 代理开发者。",
+        "scenarios": [
+          "在 Polymarket、Kalshi 等预测市场自动捕捉赔率偏差与事件套利，实现无人值守挂单与结算。",
+          "跨 Binance、Hyperliquid、Solana DEX 及 EVM 链监控价差，自动执行搬砖、对冲与仓位风控。",
+          "作为 Claude 驱动的自主交易与机器间支付协议的参考实现，用于研究 agent 决策、执行与风控架构。"
+        ],
+        "agentInstallPrompt": "你是一名资深 TypeScript 工程师。请先把 https://github.com/alsk1992/CloddsBot 克隆到本地，阅读 README 与 package.json，确认 Node 版本和包管理器，安装依赖并完成构建与类型检查。然后梳理全部配置项：列出所需凭证（Anthropic/Claude Key、各交易所 API Key、钱包私钥、RPC 节点、Polymarket/Kalshi 授权等），生成 .env.example，并逐项说明获取方式与权限最小化建议。接着以 paper trading 或测试网 + dry-run 模式启动一次完整链路，跑通行情扫描→信号生成→风险校验→下单模拟→结算的流程，输出关键日志与观察点。最后给出目录结构与核心模块（策略、执行引擎、风控、agent commerce 支付协议）的解读，整理本地试跑步骤、复现命令与常见报错排查清单，所有涉及真实资金的开关默认保持关闭。"
+      }
+    },
+    "repo:armory3d/armorpaint": {
+      "type": "repo-insight",
+      "hash": "3e29ba8460f18337cbaff050",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-10T22:00:32.173Z",
+      "value": {
+        "summaryZh": "ArmorPaint 是 Armory3D 生态下的开源 3D 纹理绘制工具，用 Haxe/Kha 编写并基于 GPU 加速，可在模型表面直接绘制 PBR 材质，支持图层、节点材质、笔刷、遮罩、Bake 以及常见贴图格式导入导出，可独立运行、跨平台。它适合游戏美术、独立开发者与希望替代 Substance Painter 的团队，用于贴图绘制、材质原型和烘焙流程。",
+        "scenarios": [
+          "独立游戏团队为角色、道具或场景模型绘制 PBR 贴图，并烘焙法线、AO、曲率等贴图后直接导入 Unity、Unreal 或 Godot 使用。",
+          "个人学习者或高校课程搭建免费开源的 3D 纹理绘制环境，用本地工具练习图层、笔刷与节点材质工作流，降低商业软件授权成本。",
+          "配合 Armory3D 或 Blender 流程快速试画材质与节点效果，进行美术风格探索、原型验证和贴图迭代。"
+        ],
+        "agentInstallPrompt": "请在本机源码编译并试跑 ArmorPaint：先确认已安装 git、Node.js 与 Haxe 4.x，然后执行 git clone --recursive https://github.com/armory3d/armorpaint 并进入仓库目录，按官方文档安装 Kha（haxelib 或子模块方式），运行 node armorcore/make.js 生成当前平台工程与可执行文件，缺少依赖时自动安装并重试；构建成功后启动程序，确认能新建工程、导入一个 glTF 或 OBJ 模型并完成一次简单笔刷绘制，最后输出构建日志、可执行文件路径与遇到的问题。"
+      }
+    },
+    "repo:JustVugg/colibri": {
+      "type": "repo-insight",
+      "hash": "db206a731fa781926694de7f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-10T22:00:38.019Z",
+      "value": {
+        "summaryZh": "Colibri 是一个纯 C 编写、零依赖的超轻量推理引擎，目标是在你已有的硬件上运行前沿 MoE 大模型。它的核心思路是把专家权重以文件形式存放在磁盘上，推理时按需流式加载，因此内存占用可以远小于模型总参数量，用小引擎驱动超大模型。项目不带任何第三方依赖，编译部署简单，适合想在消费级显卡、旧服务器或边缘设备上本地跑大模型的开发者，也适合研究 MoE 路由、磁盘流式加载与低资源推理优化的工程师。",
+        "scenarios": [
+          "在显存只有 8-24GB 的消费级显卡或旧服务器上，本地部署并运行参数量远超显存容量的大型 MoE 模型进行对话测试。",
+          "作为研究平台，验证 MoE 专家路由、按需磁盘流式加载策略对首 token 延迟、吞吐和内存峰值的影响。",
+          "在没有网络、无法安装复杂 Python/CUDA 依赖的隔离环境或边缘设备中，用纯 C 可执行文件完成离线推理服务部署。"
+        ],
+        "agentInstallPrompt": "请帮我在本地从源码构建并试跑 JustVugg/colibri：第一步，克隆仓库 https://github.com/JustVugg/colibri 并阅读 README，确认构建方式（该项目为纯 C、零第三方依赖，通常用 make 或 gcc/clang 直接编译）；第二步，检查并安装工具链（gcc 或 clang、make），执行编译得到可执行文件；第三步，按文档准备一个 MoE 模型权重目录，注意专家权重是保存在磁盘上按需流式读取的，不要尝试把全部参数加载进内存，可先用最小配置或最小模型试跑；第四步，运行一次最简推理，记录启动日志、峰值内存占用、首 token 延迟和生成速度；第五步，如果编译或加载报错，请定位原因并修复，最后输出可复现的完整命令清单、所需系统与硬件条件，以及实测性能数据。"
+      }
+    },
+    "repo:nashsu/llm_wiki": {
+      "type": "repo-insight",
+      "hash": "232e29471568079d6922503f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-10T22:00:43.362Z",
+      "value": {
+        "summaryZh": "LLM Wiki 是一款跨平台桌面应用，用 TypeScript 开发，能把本地文档自动整理成互相关联、可持续维护的知识库。它不走传统 RAG 每次从零检索再回答的老路，而是让 LLM 增量式构建并维护一份持久化 wiki，新资料会不断并入既有条目并补全链接，索引越用越厚。适合长期沉淀技术资料、做研究笔记、搭建个人或团队第二大脑的人。",
+        "scenarios": [
+          "把多年积累的 PDF、Markdown、网页剪藏批量导入，自动生成带双向链接的个人知识库，替代散落的文件夹。",
+          "把团队文档、会议纪要、需求说明持续喂进去，沉淀成不断自我补全的内部 wiki，减少重复检索成本。",
+          "调研一个新领域时增量投喂论文与博客，让 LLM 自动合并去重、补全概念之间的关联，形成可追溯的领域地图。"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 nashsu/llm_wiki 这个项目：先克隆仓库并阅读 README 与 package.json，确认所需的 Node、包管理器版本以及是否依赖 Tauri/Electron 等桌面端前置环境；然后安装依赖并启动应用。启动后新建一个知识库，导入我指定文件夹里的 Markdown 和 PDF 文档，配置 OpenAI 兼容的 API Key 与 base URL，触发一次增量构建。最后汇报生成的知识库目录结构、条目数量、几组典型条目间的链接关系，以及过程中出现的报错和解决办法。"
+      }
+    },
+    "repo:vercel-labs/skills": {
+      "type": "repo-insight",
+      "hash": "82f21268ed65811d23265598",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-10T22:00:48.247Z",
+      "value": {
+        "summaryZh": "vercel-labs/skills 是 Vercel Labs 开源的 Agent Skills 工具，用一条 npx skills 命令即可在终端发现、安装和管理可复用的 AI 技能包。它把技能规范化为「目录 + SKILL.md」结构，支持一键接入 Claude Code、Cursor 等编码代理，也便于把本地技能发布共享。适合希望为 AI 编程助手扩展领域知识、沉淀团队提示词与工作流资产的前端、全栈与平台工程师。",
+        "scenarios": [
+          "为 Claude Code、Cursor 等编码代理一键安装团队约定的技能包，统一代码规范、提交信息与代码评审流程。",
+          "在新项目初始化阶段快速试用热门开源技能，横向对比不同技能在组件开发、测试编写和文档生成上的效果。",
+          "把内部最佳实践（组件库用法、API 约定、发布流程）打包成私有技能目录，供多名开发者与多个 agent 共享复用。"
+        ],
+        "agentInstallPrompt": "请在本机安装并试跑 vercel-labs/skills：1) 确认已安装 Node.js 18+ 与 npx，并记录版本；2) 执行 npx skills --help 查看可用子命令；3) 在当前项目根目录创建技能目录并生成示例 SKILL.md（如无 init 等命令，请用等价方式手动创建）；4) 用 npx skills list 查看已安装技能，再用 npx skills add <skill> 安装一个官方示例技能并验证是否生效；5) 打开生成的 SKILL.md，逐字段解释其结构与作用；6) 最后汇总实际执行的命令、输出结果和遇到的问题，不要改动无关文件。"
       }
     }
   }
