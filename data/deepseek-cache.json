@@ -603,17 +603,17 @@
     },
     "repo:ruvnet/ruflo": {
       "type": "repo-insight",
-      "hash": "c38f49fc3c1bac0e92f374c5",
+      "hash": "e2d8325a83e5a318c0734a65",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-21T22:00:19.823Z",
+      "generatedAt": "2026-09-11T22:01:17.251Z",
       "value": {
-        "summaryZh": "ruflo 是一个基于 TypeScript 构建的智能体元框架，旨在部署多智能体协作系统、协调自主工作流并构建对话式 AI。它提供自适应记忆、自学习机制、RAG 集成以及原生支持 Claude Code、Codex、Hermes 等主流模型。适合需要构建复杂多智能体应用、自动化流程或个性化对话助手的开发者，尤其适合追求灵活集成与可扩展性的团队。",
+        "summaryZh": "ruflo（原 claude-flow）是用 TypeScript 编写的智能体编排框架，自称最初的 agent harness。它能把 Claude Code、Codex、Hermes 等编码助手组织成多角色蜂群，支持自主工作流编排、自适应记忆、自我学习、联邦式跨实例协作与向量 RAG 检索，并内置钩子、MCP 与终端界面。适合需要并行攻克大型任务的开发者、想构建多智能体产品的团队，以及研究 agent 记忆与协调机制的技术人员。",
         "scenarios": [
-          "构建多智能体协作平台，如自动客服、研究助手等，实现任务分解与协同决策。",
-          "构建企业级 RAG 问答系统，结合自适应记忆提升知识检索与回答的准确性。",
-          "开发自学习型对话机器人，通过交互反馈持续优化模型行为与回复策略。"
+          "用一条命令拉起分层蜂群，让多个编码智能体并行完成大型仓库的重构、批量修 bug 与测试补全。",
+          "为客服或知识库类产品搭建带向量 RAG 与长期记忆的对话式 AI 系统，跨会话保留上下文并持续自我优化。",
+          "在 CI 或本地脚本中编排自主工作流，把代码审查、文档生成、依赖升级等任务自动分派、执行并汇总结果。"
         ],
-        "agentInstallPrompt": "请克隆仓库 https://github.com/ruvnet/ruflo ，安装 Node.js 和 npm 依赖。先运行 `npm install`，然后查看 README 或示例代码。在项目根目录创建你的第一个智能体配置，调用核心 API 启动一个简单对话循环。确保 TypeScript 编译通过，并尝试集成一个你熟悉的模型（如 Claude Code 或 OpenAI），运行演示用例。"
+        "agentInstallPrompt": "请在本地帮我安装并试跑 ruflo：1) 确认已安装 Node.js 18+ 与 npm；2) 在空目录中执行 npx ruflo@latest init，或先 npm i -g ruflo 再运行 ruflo init 完成初始化；3) 运行 ruflo --help 和 ruflo status 验证安装，并列出全部可用子命令；4) 启动一个含 3 个 agent 的小型蜂群，完成示例任务，例如分析当前仓库结构并输出重构与测试改进建议；5) 把关键命令、生成的配置文件位置、运行日志与结果整理成一份简短中文报告，遇到报错时给出修复方案。"
       }
     },
     "repo:yikart/AiToEarn": {
@@ -5924,6 +5924,172 @@
           "把内部最佳实践（组件库用法、API 约定、发布流程）打包成私有技能目录，供多名开发者与多个 agent 共享复用。"
         ],
         "agentInstallPrompt": "请在本机安装并试跑 vercel-labs/skills：1) 确认已安装 Node.js 18+ 与 npx，并记录版本；2) 执行 npx skills --help 查看可用子命令；3) 在当前项目根目录创建技能目录并生成示例 SKILL.md（如无 init 等命令，请用等价方式手动创建）；4) 用 npx skills list 查看已安装技能，再用 npx skills add <skill> 安装一个官方示例技能并验证是否生效；5) 打开生成的 SKILL.md，逐字段解释其结构与作用；6) 最后汇总实际执行的命令、输出结果和遇到的问题，不要改动无关文件。"
+      }
+    },
+    "repo:nab138/iloader": {
+      "type": "repo-insight",
+      "hash": "20c604b9c2795141321704f7",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-11T22:00:12.126Z",
+      "value": {
+        "summaryZh": "iloader 是一款用 TypeScript 编写的开源跨平台桌面侧载（sideload）工具，目标是让普通用户也能把 IPA 应用装进 iPhone/iPad。它把设备连接、签名证书处理与安装进度等底层流程封装成图形界面，支持拖拽安装、状态反馈和更友好的报错提示，比纯命令行方案直观得多。适合不想折腾 idevice 工具链却想自签装应用的 iOS 用户、需要做内测分发的独立开发者，以及想研究设备通信与签名流程并二次开发的工程师。",
+        "scenarios": [
+          "在 Windows/macOS 桌面端把下载好的 IPA 拖入界面，一键完成签名并安装到已连接的 iPhone/iPad",
+          "为团队内测包做快速分发，让非技术同事无需命令行即可自行侧载安装",
+          "作为二次开发与学习底座，阅读其 TypeScript 代码了解设备连接、证书签名与安装流程的封装方式"
+        ],
+        "agentInstallPrompt": "请帮我本地跑通 nab138/iloader 这个 TypeScript 侧载工具：先 git clone https://github.com/nab138/iloader 并进入目录，阅读 README 与 package.json 判断包管理器（npm/pnpm/yarn）和运行方式；然后安装依赖、执行构建与开发启动命令，把完整命令和报错原样贴给我。若依赖原生设备通信库导致安装失败，请指出是哪个包、需要哪些系统级依赖（如 libimobiledevice、usbmuxd 或 Xcode 工具），并给出对应平台（macOS/Windows/Linux）的解决步骤。最后告诉我如何在 UI 中连接设备、选择 IPA 并完成一次侧载，以及常见的签名失败、设备未识别错误该怎么排查。"
+      }
+    },
+    "repo:melgarafael/DeskcommCRM": {
+      "type": "repo-insight",
+      "hash": "ba5826b961db13144a33c014",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-11T22:00:20.624Z",
+      "value": {
+        "summaryZh": "DeskcommCRM 是开源 AI 销售操作系统，用 TypeScript 编写、可自托管。它把 CRM、原生 AI 智能体与 WhatsApp（WAHA）渠道整合为一体，是 Kommo、Octadesk、Intercom 的开放替代，适合以聊天成单的团队。支持 MCP 接入外部 AI 工具、多租户与 LGPD 合规，数据自控。",
+        "scenarios": [
+          "中小电商或本地服务商在 WhatsApp 上接单，用 DeskcommCRM 统一客户档案、聊天记录与跟进任务，避免销售用个人号失联丢单。",
+          "SaaS 与教育机构搭建自托管售前客服系统，通过 MCP 让 AI 智能体查知识库、报价、约时间，人工只处理疑难会话。",
+          "多门店或多品牌团队利用多租户与 LGPD 合规特性，为每条业务线隔离数据，同时共用一套 AI 销售流程与报表。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/melgarafael/DeskcommCRM ，先通读 README、docker-compose 与 .env 示例，梳理数据库、WAHA/WhatsApp、LLM API Key、多租户与 LGPD 相关配置项，再用 Docker 或本地开发模式把项目跑起来，创建首个管理员与租户账号，接通一个测试 WhatsApp 会话并发送一条消息，验证 AI 智能体自动回复链路是否走通。最后输出启动命令、访问地址与端口、默认账号密码、依赖版本要求，以及常见报错（端口占用、WAHA 未连接、模型鉴权失败）的排查清单。"
+      }
+    },
+    "repo:Sonarr/Sonarr": {
+      "type": "repo-insight",
+      "hash": "f7ba5daccdbb584b4102e998",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-11T22:00:28.406Z",
+      "value": {
+        "summaryZh": "Sonarr 是开源智能 PVR，面向 Usenet 与 BitTorrent 用户，专注电视剧集的自动化管理。它监控 RSS 与索引器，按剧集、季和质量规则自动搜索、抓取、下载并重命名归档文件，可与 qBittorrent、Transmission、SABnzbd 等下载客户端联动，还提供日历、追剧列表、字幕与通知推送。项目基于 C#/.NET 开发，可运行在 Windows、Linux、macOS 或 Docker 上。适合搭建家庭媒体库、NAS 与 HomeLab 的追剧用户，也适合想研究媒体自动化编排与索引器对接的开发者。",
+        "scenarios": [
+          "在 NAS 或 Docker 主机上搭建家庭媒体中心，自动追更剧集并按 Plex/Jellyfin 命名规范整理文件",
+          "已使用 qBittorrent、Transmission 或 SABnzbd 下载，希望索引器搜索、质量筛选与版本升级全流程自动化",
+          "自建 Usenet 索引与 RSS 订阅源，定时抓取新剧集并把下载与完成事件推送到 Telegram、Discord 等通知渠道"
+        ],
+        "agentInstallPrompt": "请在本机部署并试跑 Sonarr：优先使用 Docker，拉取 lscr.io/linuxserver/sonarr:latest 镜像，创建配置目录与下载目录并挂载，映射 8989 端口，设置正确的 PUID、PGID 与 TZ，启动容器后用 docker logs 确认无报错，再访问 http://localhost:8989 验证 Web 界面可打开。若本机没有 Docker，则安装 .NET SDK，克隆 https://github.com/Sonarr/Sonarr 后执行 dotnet build 与 dotnet run 启动。完成后请汇报访问地址、日志状态，并列出仍需手工填写的索引器、下载客户端与媒体库根目录配置项。"
+      }
+    },
+    "repo:jihe520/MathModelAgent": {
+      "type": "repo-insight",
+      "hash": "91493aa2750f2524aa161dfa",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-11T22:00:39.160Z",
+      "value": {
+        "summaryZh": "MathModelAgent 是专为数学建模竞赛打造的 Python 智能体，用 Agent 加 skills 的模块化设计，把赛题理解、数据清洗、模型选型、代码求解、结果校验与论文写作串成端到端流水线，自动绘图、生成公式与参考文献，最终产出可直接提交的完整论文。亮点是技能可插拔、任务拆分清晰，支持对接主流大模型。适合备战国赛、美赛的学生与教练快速拿到基线方案。",
+        "scenarios": [
+          "参加全国大学生数学建模竞赛或美赛 MCM/ICM 时，用它在短时间内生成一份结构完整、含摘要图表与参考文献的候选论文，再人工打磨定稿。",
+          "高校教师或培训机构用于课堂演示，把赛题到成稿的完整流程可视化，帮助学生学习建模思路、代码实现与论文写作规范。",
+          "面向科研或业务中的定量分析任务，把原始数据交给它自动完成探索性分析、模型构建、求解验证与可视化报告输出。"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 jihe520/MathModelAgent。步骤：先 git clone https://github.com/jihe520/MathModelAgent 并进入目录，通读 README 确认 Python 版本、依赖与入口；用 uv 或 python -m venv 创建虚拟环境并安装依赖，把 .env.example 复制为 .env，然后停下来告诉我需要填写哪些大模型 API Key、Base URL 等变量。配置完成后，按文档启动后端、前端或 CLI，并用一道简单赛题（例如“某城市共享单车需求预测”）做一次端到端试跑，输出论文文件路径。过程中请逐条报告执行的命令、遇到的报错与修复方式；若出现依赖缺失、端口占用或模型调用失败，自行排查并给出最小可用修复方案。"
+      }
+    },
+    "repo:p1neappleXpress/OpenFlux": {
+      "type": "repo-insight",
+      "hash": "fdc4394e634e44bf3ddb7a88",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-11T22:00:44.312Z",
+      "value": {
+        "summaryZh": "OpenFlux 是一个用 Go 编写的网络栈研究工具，核心是 TCP 隧道并支持可插拔传输层：原始 TCP 流可以交给自定义 transport 实现，在握手、加密、混淆、分帧等环节自由替换，便于对比不同协议栈的真实行为。项目结构轻量、依赖少，编译成单一二进制即可运行，适合网络协议研究者、内网穿透与代理工具开发者，以及需要做链路性能、抗干扰和透明性实验的工程师，也可作为协议栈教学与二次开发的实验底座。",
+        "scenarios": [
+          "在实验室搭建自定义 TCP 隧道，验证自研握手、加密或混淆等传输层在真实链路下的连通性与吞吐表现。",
+          "为内网穿透、反向代理或跳板机场景快速构建最小可用隧道原型，通过替换 transport 适配不同网络策略。",
+          "作为网络协议课程或协议栈研究的学习示例，阅读并修改 Go 源码，观察不同传输实现对上层应用的透明性。"
+        ],
+        "agentInstallPrompt": "请帮我在本地试跑 OpenFlux。先确认已安装 Go 1.21+ 与 git，然后执行 git clone https://github.com/p1neappleXpress/OpenFlux.git 并进入目录；阅读 README 与 main 入口，确认构建和启动命令（大概率是 go build ./... 与 go run .），缺少参数时先用 --help 探测。接着在一台机器上以服务端模式启动，本地以客户端模式连接 127.0.0.1，用 curl 或 nc 验证 TCP 隧道是否真正连通。最后把依赖版本、实际执行的命令、报错信息和结论汇总给我；遇到问题先给出最小修复方案再改代码。"
+      }
+    },
+    "repo:jordan-gibbs/hyperresearch": {
+      "type": "repo-insight",
+      "hash": "ed43140b9819ddb4fa65e347",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-11T22:00:52.061Z",
+      "value": {
+        "summaryZh": "HyperResearch 是面向 AI Agent 的持久化研究知识库：Agent 自动抓取、检索并综合网络资料，把零散网页沉淀为可反复查询的 Wiki。项目以 Python 实现，强调研究过程可累积、可追溯，避免每次从零开始搜索。适合做深度调研的开发者、搭建 RAG 或知识管理工具的团队，以及需要让编码 Agent 持续跟进技术动态的个人。",
+        "scenarios": [
+          "技术调研：让 Agent 自动收集某个框架、论文或竞品的网页资料，沉淀为可持续更新的内部 Wiki。",
+          "RAG 知识库构建：把反复检索得到的网络研究结果持久化，作为检索增强生成的可信来源。",
+          "个人学习与情报跟踪：定期抓取领域动态，形成可搜索的长期笔记与趋势档案。"
+        ],
+        "agentInstallPrompt": "请把 https://github.com/jordan-gibbs/hyperresearch 克隆到本地，阅读 README 与依赖说明，用 Python 3 创建虚拟环境并安装依赖（requirements.txt 或 pyproject.toml）。按文档把所需的模型与搜索 API Key 写入 .env。然后跑一个最小示例：给定一个研究主题，让 Agent 抓取若干网页、写入知识库并执行一次检索查询。最后向我汇报运行命令、实际输出、遇到的报错及修复方式。"
+      }
+    },
+    "repo:alphaXiv/OpenResearch": {
+      "type": "repo-insight",
+      "hash": "9ef3fa0f5b11f4475e3f0928",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-11T22:00:57.376Z",
+      "value": {
+        "summaryZh": "OpenResearch 是 alphaXiv 团队用 Rust 打造的开源研究智能体框架，核心能力是并行调度多个研究 Agent，并兼容任意模型（OpenAI、Anthropic 及本地开源模型皆可）。它把选题拆解、资料检索、阅读归纳与交叉验证分配为并行子任务，再由主流程汇总成结构化结论，显著压缩深度调研耗时，同时借多模型并行降低单一模型的偏见。适合做文献综述的研究者、做技术选型与竞品分析的工程师，以及希望自建模型、二次开发调研流水线的团队。",
+        "scenarios": [
+          "文献综述：并行让多个 Agent 分头检索 arXiv、GitHub 与技术博客，快速产出带出处的综述初稿。",
+          "技术选型与竞品调研：对同一问题调用不同模型并行分析，交叉比对结论差异，减少单一视角偏差。",
+          "企业知识库调研：接入内部文档与本地模型，多 Agent 并行检索汇总，生成可追溯的调研报告。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 alphaXiv/OpenResearch：1) 克隆仓库 https://github.com/alphaXiv/OpenResearch 并阅读 README，确认所需 Rust 工具链版本，必要时用 rustup 安装或升级；2) 执行 cargo build --release 编译，遇到依赖缺失或编译错误逐个定位并修复，说明原因；3) 按文档配置至少一个模型提供方的 API Key 环境变量，若我想完全本地运行，请改用 Ollama 或兼容 OpenAI 接口的本地端点并给出配置示例；4) 用一个示例任务（例如「调研 Rust 异步运行时现状并给出对比」）启动并行研究 Agent，展示并发执行日志与最终输出；5) 最后总结项目结构、关键配置项、常见报错与可调参数，并给出一份最小可用的运行命令清单。"
+      }
+    },
+    "repo:github/spec-kit": {
+      "type": "repo-insight",
+      "hash": "df484d93609a2c623a0c789a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-11T22:01:06.704Z",
+      "value": {
+        "summaryZh": "Spec Kit 是 GitHub 官方的规范驱动开发工具包。它提供 specify CLI，可在 Claude Code、Copilot、Cursor 等 AI 助手中初始化模板与 /specify、/plan、/tasks 等命令：先写清规格、技术方案和原子任务，再交由 AI 实现，减少跑偏与返工。适合想把 AI 编码纳入工程化流程的团队和个人开发者。",
+        "scenarios": [
+          "新功能从零启动：先用 /specify 写清需求规格，再用 /plan 确定技术方案，最后用 /tasks 拆成原子任务交给 AI 逐条实现。",
+          "团队统一 AI 编码流程：在仓库中初始化同一套模板与斜杠命令，成员按规格协作，需求评审与实现验收都有据可依。",
+          "接手遗留项目或重构：把现有行为整理成规格文档，再驱动 AI 做小步、可验证的安全改造，避免大范围改坏。",
+          "技术方案预演：在动代码前生成计划与任务清单，用于可行性评估、工时估算和评审材料准备。"
+        ],
+        "agentInstallPrompt": "请帮我在当前项目试用 GitHub Spec Kit。先确认环境：Python 3.11+ 与 uv 是否可用，缺失则给出安装命令并说明。随后执行 `uvx --from git+https://github.com/github/spec-kit.git specify init --here`（若当前为空目录可省略 --here）完成初始化，初始化过程中如询问 AI 助手类型请根据本机已装工具选择。完成后检查生成的文件结构（如 .specify/、模板目录以及对应助手的命令文件），逐条说明 /specify、/plan、/tasks 等斜杠命令的作用，并以本仓库 README 为例演示一个最小工作流：写一条规格 → 生成技术方案 → 拆成任务清单。最后把执行过的命令、遇到的报错与解决办法整理成简短报告，不要修改我的业务代码。"
+      }
+    },
+    "repo:humanlayer/skills": {
+      "type": "repo-insight",
+      "hash": "a7c3cd1331433d1f1ced7aaa",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-11T22:01:12.541Z",
+      "value": {
+        "summaryZh": "humanlayer/skills 是 HumanLayer 开源的 TypeScript 技能库，目标是把面向 AI 编码代理的可复用能力（提示词模板、工具封装、执行流程与校验规则）沉淀为标准化 Skill 模块，方便 Claude Code、Cursor 等代理按需发现、加载和调用。亮点在于用代码和目录规范管理技能，而非散落的文档，因而支持版本化、单测、组合复用与团队共享，并可与人机协同审批流打通。适合正在搭建内部 Agent 平台、希望统一团队 AI 工作流与最佳实践的工程团队、平台工程师和工具链开发者参考或直接二次开发。",
+        "scenarios": [
+          "团队把内部规范、脚手架命令和代码审查流程写成 Skill，让编码代理在仓库中自动调用统一执行",
+          "构建企业级 Agent 平台时，参考其技能注册、发现与加载机制，避免自造一套不兼容的约定",
+          "将常用提示词和工具封装从个人文档迁移为可版本化、可测试、可 Code Review 的 TypeScript 技能包"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 humanlayer/skills：先执行 git clone https://github.com/humanlayer/skills 并进入目录，阅读 README 与 package.json，判断使用 npm/pnpm/yarn 哪一种，安装依赖并完成构建。随后运行测试或示例脚本，输出目录结构说明：技能定义文件的格式、字段含义、如何注册与加载一个新技能。最后新增一个最小示例技能（例如“提交前检查清单”），在本地成功加载并打印其元信息，把执行命令、输出结果和遇到的问题一并汇总给我。若缺少 Node 版本要求或环境变量，请先提示我补齐再继续。"
+      }
+    },
+    "repo:Tencent/WeKnora": {
+      "type": "repo-insight",
+      "hash": "8994f374b04847dcdf79b804",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-11T22:01:23.397Z",
+      "value": {
+        "summaryZh": "WeKnora 是腾讯开源的大模型知识平台，Go 编写，可把原始文档一键变成可查询的 RAG、自主推理 Agent 与自我维护的 Wiki。亮点是一站式文档解析、向量化与检索问答，兼顾多模态与多租户，内置推理型 Agent 支持多步检索和工具调用，Wiki 能自动归纳更新知识。适合想私有化部署知识库的企业团队、做 RAG/Agent 应用的开发者，以及需要快速验证“文档进、问答出”链路的个人。",
+        "scenarios": [
+          "企业内部文档、产品手册、规章制度等私有资料的统一入库与自然语言问答，替代传统关键词搜索。",
+          "在 RAG 之上搭建推理型 Agent，让模型自动多步检索、调用工具并给出带引用的答案。",
+          "用自动维护的 Wiki 持续沉淀团队知识，文档更新后由系统归纳、补全和修订条目，减少人工整理。"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 Tencent/WeKnora：先 git clone https://github.com/Tencent/WeKnora 并通读 README 与 docker-compose 配置，确认所需 Go 版本、数据库、向量库和对象存储等依赖；然后按官方方式用 Docker Compose 启动全部服务，创建 .env 填入大模型与向量化模型的 API Key、Base URL 和模型名；启动后访问 Web 控制台，上传一份 PDF/Markdown 测试文档，等待解析与索引完成，再提一个针对该文档的问题，验证 RAG 问答返回答案与引用来源；最后简要报告部署过程中遇到的报错、解决办法和访问地址。"
+      }
+    },
+    "repo:jakubkrehel/skills": {
+      "type": "repo-insight",
+      "hash": "2e17925767c1d012e72be5a0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-11T22:01:30.051Z",
+      "value": {
+        "summaryZh": "该项目是 jakubkrehel 维护的一组 agent skills，用 Markdown 编写，可被 AI 编码代理直接加载，目标是在生成前端代码时稳定产出优秀界面。技能把界面设计经验拆成可复用的规则与检查清单，覆盖布局层级、排版与间距、配色、组件状态、交互反馈和无障碍细节，让代理写代码时顺手遵循统一规范，减少粗糙默认样式和后期返工。适合用 Claude Code、Cursor、Codex 等代理写前端的开发者，也适合想把团队 UI 规范沉淀为技能包的工程师。",
+        "scenarios": [
+          "为 AI 编码代理补充界面设计技能，让生成的页面在排版、间距和配色上达到可交付水准",
+          "把团队已有的设计规范与 UI 检查清单整理成 Markdown 技能，接入 Claude Code 或 Cursor 复用",
+          "在重构遗留前端页面时，让代理按技能规则逐项检查组件状态、交互反馈与无障碍问题"
+        ],
+        "agentInstallPrompt": "请把 https://github.com/jakubkrehel/skills 克隆到本地，先阅读 README 与各技能的 Markdown 文件，梳理每个技能的名称、用途和触发条件，然后按当前工具（如 Claude Code 的 ~/.claude/skills 或项目内 skills 目录）的约定把可用技能安装注册好，并说明注册路径与验证方式。完成后在本仓库的前端项目里挑一个页面作为试跑对象，依据这些技能规则重构其布局层级、排版间距、配色和交互状态，启动开发服务器自测，最后输出改动清单、前后对比说明以及仍需人工决策的问题。"
       }
     }
   }
