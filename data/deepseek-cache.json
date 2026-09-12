@@ -2163,17 +2163,17 @@
     },
     "repo:asgeirtj/system_prompts_leaks": {
       "type": "repo-insight",
-      "hash": "3c92d04f17d04247c874edc6",
+      "hash": "d04b8706d778e07b4086d8a0",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-28T23:29:11.745Z",
+      "generatedAt": "2026-09-12T22:00:29.923Z",
       "value": {
-        "summaryZh": "该项目收集并公开了多个主流AI模型（Anthropic Claude、OpenAI ChatGPT、Google Gemini、xAI Grok等）的系统提示（system prompts），包括Claude Fable 5、GPT-5.6-Sol、Gemini 3.5 Flash等。亮点在于提供了真实生产级提示文本，可用于分析模型行为、安全审计和提示工程研究。适合AI研究员、安全专家、提示工程师以及对大模型内部机制感兴趣的开发者。仓库使用JavaScript编写，数据以JSON格式存储，并定期更新。",
+        "summaryZh": "汇总 Anthropic Claude、OpenAI Codex、Gemini、Grok、Cursor、Kimi 等产品的系统提示词，用 JavaScript 与文本分类整理并持续更新。可对比各家角色设定、工具调用、安全拒答与输出格式写法，是学习提示词工程与 Agent 设计的现成语料。适合提示词工程师、AI 开发者、对齐与红队研究者及智能体开发者。",
         "scenarios": [
-          "研究不同AI模型系统提示的设计模式与行为约束差异",
-          "用于红队测试或安全审计，评估模型提示中的潜在风险",
-          "作为提示工程教学案例，分析如何通过系统提示控制模型输出"
+          "研究主流大模型系统提示词差异，为公司自研 Agent 撰写角色设定、工具调用规范与安全策略时做横向对比参考。",
+          "用于提示词工程教学或团队内训，以真实厂商提示词为案例讲解拒答边界、输出格式约束与上下文组织方式。",
+          "支撑红队与合规评估，分析各产品在越狱、敏感话题上的处理策略，制定自家模型的防护规则和评测清单。"
         ],
-        "agentInstallPrompt": "首先，使用git克隆仓库：git clone https://github.com/asgeirtj/system_prompts_leaks.git。然后，进入目录：cd system_prompts_leaks。使用Node.js运行index.js（如果有）或直接查看prompts文件夹中的JSON文件。无需额外依赖，直接读取JSON即可获取提示内容。"
+        "agentInstallPrompt": "请把 https://github.com/asgeirtj/system_prompts_leaks 克隆到本地，安装依赖并输出仓库目录结构，然后按厂商与模型名整理出一份可用的系统提示词文件清单。接着挑选 Claude Code、ChatGPT/Codex、Gemini 三个样本，生成 Markdown 对比表，列出角色设定、工具与函数调用、安全拒答、输出格式四列差异，并标注每个结论对应的源文件路径；最后基于这些写法草拟一份可复用到我们自研 Agent 的提示词模板，说明哪些结构值得直接借鉴、哪些需要按我们的业务场景改写。"
       }
     },
     "repo:ogulcancelik/herdr": {
@@ -6090,6 +6090,81 @@
           "在重构遗留前端页面时，让代理按技能规则逐项检查组件状态、交互反馈与无障碍问题"
         ],
         "agentInstallPrompt": "请把 https://github.com/jakubkrehel/skills 克隆到本地，先阅读 README 与各技能的 Markdown 文件，梳理每个技能的名称、用途和触发条件，然后按当前工具（如 Claude Code 的 ~/.claude/skills 或项目内 skills 目录）的约定把可用技能安装注册好，并说明注册路径与验证方式。完成后在本仓库的前端项目里挑一个页面作为试跑对象，依据这些技能规则重构其布局层级、排版间距、配色和交互状态，启动开发服务器自测，最后输出改动清单、前后对比说明以及仍需人工决策的问题。"
+      }
+    },
+    "repo:yuliskov/SmartTube": {
+      "type": "repo-insight",
+      "hash": "a05c6d84008f9981066ef3b4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-12T22:00:35.427Z",
+      "value": {
+        "summaryZh": "SmartTube 是面向 Android TV 与电视盒子的第三方媒体客户端，使用 Java 编写，主打用自定义规则浏览内容。它可去除广告、集成 SponsorBlock 自动跳过赞助片段，支持高分辨率与高帧率播放、播放速度与画质策略、账号登录同步订阅，并针对遥控器操作优化。适合老旧智能电视、电视盒子、投影仪用户，以及希望摆脱官方客户端限制、按个人偏好定制客厅观影体验的进阶玩家。",
+        "scenarios": [
+          "在 Android TV 或电视盒子上安装 SmartTube，替代官方客户端实现无广告观看 YouTube 并自动跳过赞助片段。",
+          "为老人或家庭成员配置默认画质、播放速度与界面规则，用遥控器低门槛浏览视频内容。",
+          "在老旧低配电视上验证高帧率、高分辨率播放以及 SponsorBlock、订阅同步等功能的实际可用性。"
+        ],
+        "agentInstallPrompt": "请帮我在本机试跑 yuliskov/SmartTube：先 git clone https://github.com/yuliskov/SmartTube 并阅读 README 确认构建方式；使用仓库自带 Gradle Wrapper 执行 ./gradlew assembleDebug 生成调试 APK；若构建失败，检查 JDK（建议 17）与 Android SDK 环境并报告缺失依赖。构建成功后用 adb connect 连接 Android TV 或电视盒子（需先在设备上开启 ADB 调试），执行 adb install -r 安装 APK，并在电视端启动应用，验证视频列表加载与播放正常；最后把关键命令、步骤和遇到的错误整理成简短报告。"
+      }
+    },
+    "repo:SnailSploit/Claude-Red": {
+      "type": "repo-insight",
+      "hash": "1141609928d37efbc0acb05b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-12T22:00:43.083Z",
+      "value": {
+        "summaryZh": "Claude-Red 是面向 Claude Skills 机制的红队技能库，用结构化 SKILL.md 文件把专家级攻防方法论注入模型：覆盖 SQLi、XSS、shellcode 编写、EDR 绕过到漏洞利用开发，每个技能锁定一类攻击面并给出流程与检查要点。仓库以 Python 组织安装与加载，可按需挑选或裁剪，让 AI 在授权测试中输出更专业、更体系化的思路而非泛泛建议。适合红队工程师、渗透测试人员、CTF 选手与安全研究者参考，须在合法授权范围内使用。",
+        "scenarios": [
+          "授权渗透测试：加载 Web 漏洞类技能，让 Claude 按 SKILL.md 方法论生成测试用例、验证步骤与报告要点",
+          "CTF 与本地靶场练习：启用 pwn、shellcode、逆向类技能，辅助二进制分析、利用链构造与调试",
+          "红队演练与防御验证：用 EDR 绕过、后渗透技能检验检测规则有效性，反推蓝队加固与监控项"
+        ],
+        "agentInstallPrompt": "请把 https://github.com/SnailSploit/Claude-Red 克隆到本地，先浏览目录并列出所有 SKILL.md 文件及各自覆盖的攻击面；然后在 ~/.claude/skills 下用软链接或复制方式装入其中 2-3 个 Web 安全相关技能，验证 Claude 能识别并加载；接着选取 SQLi 技能，对我拥有授权的本地靶场（如 DVWA）完整走一遍其方法论，逐步输出所用命令、实际结果、判断依据与结论，最后总结该技能相比通用提示词的增益。全程只允许测试我明确授权的本地目标，不要对任何外部或未授权系统发起扫描与攻击。"
+      }
+    },
+    "repo:multimodal-art-projection/YuE": {
+      "type": "repo-insight",
+      "hash": "f7f705ad191bde44055b6a5c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-12T22:00:47.533Z",
+      "value": {
+        "summaryZh": "YuE 是面向整曲生成的开放音乐基础模型，YuE2 在“歌词生成歌曲”的基础上加入符号化编曲规划、零样本翻唱与智能体式音乐编辑，可产出带人声与伴奏的完整作品。项目以 Python 实现并开放权重，支持多语言歌词、风格与结构提示，强调可控与可编辑，适合音乐 AI 研究者、独立音乐人及开发者本地部署、二次开发或做音乐生成类产品原型。",
+        "scenarios": [
+          "输入歌词与风格、情绪标签，快速生成含人声与伴奏的整曲 Demo 小样",
+          "对已有歌曲做零样本翻唱、音色迁移或风格改写，无需额外训练",
+          "用自然语言指令驱动智能体自动改编段落、拼接结构或重新编曲"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/multimodal-art-projection/YuE，用 Python 3.10 创建独立虚拟环境并按 README 安装依赖（PyTorch、音频处理与推理相关库），先检查 CUDA 版本与可用显存再选择合适配置；随后下载官方模型权重并校对缓存目录，用仓库自带示例歌词与风格提示跑一次端到端生成，确认输出音频文件路径；若失败请逐条排查依赖版本冲突、权重路径和显存不足问题，最后给出可复现的最小运行命令、显存占用与生成耗时统计。"
+      }
+    },
+    "repo:max-sixty/worktrunk": {
+      "type": "repo-insight",
+      "hash": "62753c3275045f08ce2b55d5",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-12T22:00:52.956Z",
+      "value": {
+        "summaryZh": "Worktrunk 是 Rust 编写的 Git worktree 命令行管理工具，专为并行 AI 代理工作流设计。它把创建、切换、清理 worktree 的繁琐流程封装成简短子命令，让每个代理在独立工作目录里并行改代码，互不干扰，避免分支切换带来的中断与冲突。工具启动快、依赖少，能与 Claude Code、Cursor、Codex 等代理配合使用。适合同时跑多个任务的多代理开发者、需要隔离实验分支的工程师，以及希望把分支与工作目录管理自动化的团队。",
+        "scenarios": [
+          "同时启动多个 AI 编码代理处理不同 issue，每个代理在自己的 worktree 中工作，避免相互覆盖文件或抢占分支。",
+          "需要并行对比多个实现方案时，为每个实验分支快速创建独立工作目录，随时切换、验证与清理。",
+          "在本地脚本或 CI 中为每个任务自动创建临时 worktree，任务结束后一键回收，保持主仓库始终干净可用。"
+        ],
+        "agentInstallPrompt": "请帮我在本地安装并试跑 worktrunk。步骤：1）确认已安装 Rust 与 cargo，然后执行 git clone https://github.com/max-sixty/worktrunk 并进入目录；2）阅读 README，用 cargo build --release 编译，或用 cargo install --path . 安装到 PATH；3）在任意 Git 仓库中运行 worktrunk --help 查看可用子命令；4）用 worktrunk 创建一个测试 worktree（例如 worktrunk create test-branch），验证目录生成、切换与删除流程是否正常；5）最后把实际执行的命令、关键输出、失败原因和修复方式汇报给我，不要修改主分支已有文件。"
+      }
+    },
+    "repo:vxcontrol/pentagi": {
+      "type": "repo-insight",
+      "hash": "56a68d0d6ebe341a92e9a47d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-12T22:01:02.279Z",
+      "value": {
+        "summaryZh": "PentAGI 是一套完全自主的 AI Agent 系统，面向复杂渗透测试任务。它用 Go 编写，支持多智能体自主规划、工具调用与任务分解，能自动完成信息收集、漏洞验证和报告整理。亮点是将 LLM 编排与安全工具链结合，降低自动化渗透门槛。适合红队、安全研究员、DevSecOps 及想把 AI Agent 用于授权安全测试的团队。",
+        "scenarios": [
+          "授权红队演练中，自动完成目标信息收集、端口扫描、漏洞验证与利用链梳理。",
+          "在 CI/CD 或 DevSecOps 流程中，定期对预发布环境执行自动化安全自检并生成报告。",
+          "安全教学、CTF 或靶场环境中，快速复现攻击路径，辅助编写渗透测试报告与复盘。"
+        ],
+        "agentInstallPrompt": "请从 GitHub 克隆 vxcontrol/pentagi，阅读 README、docker-compose 与配置示例，确认 Go 与 Docker 环境及所需 LLM API Key。启动服务后，以授权靶场（如本地 DVWA 或 Metasploitable）为目标，配置一个最小渗透任务，观察 Agent 规划与工具调用过程，记录安装命令、配置文件修改、运行截图与遇到的问题，最后给出可复现的试跑步骤。"
       }
     }
   }
