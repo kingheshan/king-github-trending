@@ -6166,6 +6166,21 @@
         ],
         "agentInstallPrompt": "请从 GitHub 克隆 vxcontrol/pentagi，阅读 README、docker-compose 与配置示例，确认 Go 与 Docker 环境及所需 LLM API Key。启动服务后，以授权靶场（如本地 DVWA 或 Metasploitable）为目标，配置一个最小渗透任务，观察 Agent 规划与工具调用过程，记录安装命令、配置文件修改、运行截图与遇到的问题，最后给出可复现的试跑步骤。"
       }
+    },
+    "repo:tech-leads-club/agent-skills": {
+      "type": "repo-insight",
+      "hash": "9bab029df8fb6ebdf2e2d3da",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-13T22:26:01.848Z",
+      "value": {
+        "summaryZh": "agent-skills 是面向专业 AI 编程智能体的安全、可校验技能注册表，用 TypeScript 实现。它为 Claude Code、Cursor、Copilot、Antigravity 等工具提供统一的技能分发与安装方式，重点解决社区技能来源杂乱、脚本可信度不明的痛点：每条技能在进入仓库前都经过结构校验与安全审查，让团队在扩展智能体能力时更有确定性。适合把 AI 编码助手纳入工程流程的技术负责人、平台工程师，以及希望沉淀内部最佳实践的研发团队。",
+        "scenarios": [
+          "为团队统一管理和分发 Claude Code、Cursor 等智能体的技能包，避免成员各自复制来源不明的脚本。",
+          "在引入第三方智能体技能前做安全与结构校验，作为企业 AI 工具链的准入环节。",
+          "把团队内部的代码规范、发布流程、评审清单封装成技能，让不同智能体获得一致的工程行为。"
+        ],
+        "agentInstallPrompt": "请先阅读 https://github.com/tech-leads-club/agent-skills 的 README，确认当前支持的智能体客户端与技能目录结构。用 git clone 拉取仓库并安装 TypeScript 依赖，构建项目后运行本地技能校验命令，列出可用技能清单。随后任选一条技能，安装到我本机正在使用的 AI 编码工具（如 Claude Code 或 Cursor），并给出逐步操作记录与验证方式；若某步骤失败，请说明原因并给出替代方案。"
+      }
     }
   }
 }
