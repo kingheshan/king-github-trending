@@ -1503,17 +1503,17 @@
     },
     "repo:Crosstalk-Solutions/project-nomad": {
       "type": "repo-insight",
-      "hash": "026af4f583420dee72703643",
+      "hash": "ed08df49e8acb6d9c0ab80c4",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-06-07T22:35:17.621Z",
+      "generatedAt": "2026-09-14T22:00:35.386Z",
       "value": {
-        "summaryZh": "Project N.O.M.A.D 是一款自包含的离线生存计算机，专为无网络环境设计。它集成了关键工具、知识库和AI助手，提供离线地图、生存指南、文件管理等功能。亮点在于完全离线运行，内置AI可本地处理查询，无需联网即可获得智能支持。适合户外探险者、应急响应人员、极简主义者以及对隐私敏感的用户，确保任何时刻都能获取必要信息和计算能力。",
+        "summaryZh": "Project NOMAD 是一个用 TypeScript 打造的离线优先知识与教育服务器，把维基百科全量镜像、数千本电子书、课程资料和离线地图打包在一起，并可选接入本地 AI 模型，全部运行在你自己的硬件上，无需联网。亮点是一体化部署、开箱即用，断网状态下也能完成资料检索与问答。它适合偏远地区学校、科考船与应急救灾现场，也适合重视数据主权、想在内网自建知识库的技术爱好者与运维人员。",
         "scenarios": [
-          "野外徒步或露营时，无移动信号，使用N.O.M.A.D离线地图导航、查找野外生存技巧或记录行程日志。",
-          "自然灾害后通讯中断，利用内置AI获取急救知识、搭建临时庇护所指南，并离线管理应急物资清单。",
-          "偏远地区技术研究或文档工作，借助离线AI进行文字处理、代码片段查询或学习材料整理，无需互联网依赖。"
+          "在无网络的偏远学校或教学点部署一台本地服务器，为学生提供维基百科、电子书和课程资料检索",
+          "在科考船、野外营地或救灾现场搭建便携知识节点，断网时仍可查阅地图、手册与百科内容",
+          "在家庭或企业内网自建私有知识库，并接入本地 AI 模型实现离线问答，保证数据不出内网"
         ],
-        "agentInstallPrompt": "请先确保系统已安装Node.js和npm。然后执行以下命令：git clone https://github.com/Crosstalk-Solutions/project-nomad.git && cd project-nomad && npm install && npm run build && npm start。如有具体设备部署需求，可参考项目根目录下的DEPLOYMENT.md文件。"
+        "agentInstallPrompt": "请帮我在这台机器上部署并试跑 Project NOMAD（https://github.com/Crosstalk-Solutions/project-nomad）。第一步，检查系统环境：操作系统版本、是否已安装 Docker 与 Docker Compose、可用磁盘空间（建议预留 100GB 以上）和内存。第二步，把仓库克隆到 ~/project-nomad，仔细阅读 README 与 compose 文件，确认官方推荐的启动方式（通常是安装脚本或 docker compose up -d），然后拉取镜像并启动服务。第三步，启动后确认 Web 界面端口可访问，用 curl 检查健康检查接口，并验证维基百科与示例书籍内容是否已正确加载；若启用了可选本地 AI，请检查模型下载与推理服务状态。最后，把实际执行过的命令、访问地址、默认账号密码、数据存放路径以及踩到的坑整理成一份中文部署说明给我。"
       }
     },
     "repo:ggml-org/llama.cpp": {
@@ -2793,17 +2793,17 @@
     },
     "repo:alibaba/open-code-review": {
       "type": "repo-insight",
-      "hash": "a756f8226014370988aff5bc",
+      "hash": "6fb461e09c4cc79be604f3eb",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-25T22:16:23.642Z",
+      "generatedAt": "2026-09-14T22:00:10.614Z",
       "value": {
-        "summaryZh": "阿里巴巴开源的免费代码审查工具，采用混合架构（确定性流水线+LLM Agent），已在阿里大规模生产环境验证。支持行级精准评论，内置针对NPE、线程安全、XSS、SQL注入等问题的精细规则集，兼容OpenAI和Anthropic模型。适合需要自动化代码审查、提升代码质量并降低人工review成本的团队，特别是Java/Go等企业级项目。",
+        "summaryZh": "阿里巴巴开源的 open-code-review（Go），经阿里超大规模验证的高效代码审查工具。采用混合架构：确定性流水线做静态规则扫描，LLM Agent 做语义理解与建议生成，输出精确到行级的评论。内置多语言规则集，覆盖 NPE、线程安全、XSS、SQL 注入等缺陷，兼容 OpenAI 与 Anthropic 接口。适合把它接入 CI/CD 的研发团队、关注成本与准确率的效能负责人，以及需要私有化审查平台的开发者。",
         "scenarios": [
-          "在CI/CD流程中集成自动代码审查，拦截常见漏洞如空指针、SQL注入等",
-          "大型团队开源项目或内部仓库中，对Pull Request进行行级智能评论和修复建议",
-          "作为代码质量门禁，与GitHub/GitLab等平台结合，辅助开发者快速定位并修正问题"
+          "在 CI/CD 中为 Pull Request 自动生成行级审查评论，拦截空指针、线程安全、XSS、SQL 注入等高频缺陷，减少人工 Review 负担。",
+          "团队已有大模型网关时，用 OpenAI 或 Anthropic 兼容接口接入自研模型，做私有化、低成本、可控 token 消耗的代码质量门禁。",
+          "对历史仓库做批量扫描与治理，输出结构化问题清单，用于技术债盘点、安全合规检查或新人代码规范培训。"
         ],
-        "agentInstallPrompt": "首先克隆仓库：git clone https://github.com/alibaba/open-code-review.git。然后进入目录，根据文档配置环境变量（如OPENAI_API_KEY）。使用Go运行：go run main.go --help查看参数。典型用法：将工具集成到GitHub Actions或自建CI，监听PR事件后自动运行审查，输出行级评论到PR。注意需预先安装Go 1.18+及依赖。"
+        "agentInstallPrompt": "请帮我在本地跑通 alibaba/open-code-review。步骤：1）克隆 https://github.com/alibaba/open-code-review 并阅读 README，确认 Go 版本要求与构建/安装命令；2）用 go build 或 README 指定方式编译出 CLI，缺失依赖自动补全；3）按 README 创建配置文件，填入 OpenAI 或 Anthropic 兼容的 base_url、api_key、model，并说明环境变量名；4）在一个小型测试仓库上执行一次完整审查，最好针对包含空指针或 SQL 拼接的示例文件，验证内置多语言规则与 LLM Agent 混合流程；5）把输出整理成行级评论示例，并给出接入 CI/CD（如 GitHub Actions）的最小配置片段与常见报错排查清单。若某步骤在仓库中缺少文档，请明确指出并给出你的推断依据。"
       }
     },
     "repo:andrewyng/aisuite": {
@@ -6180,6 +6180,111 @@
           "把团队内部的代码规范、发布流程、评审清单封装成技能，让不同智能体获得一致的工程行为。"
         ],
         "agentInstallPrompt": "请先阅读 https://github.com/tech-leads-club/agent-skills 的 README，确认当前支持的智能体客户端与技能目录结构。用 git clone 拉取仓库并安装 TypeScript 依赖，构建项目后运行本地技能校验命令，列出可用技能清单。随后任选一条技能，安装到我本机正在使用的 AI 编码工具（如 Claude Code 或 Cursor），并给出逐步操作记录与验证方式；若某步骤失败，请说明原因并给出替代方案。"
+      }
+    },
+    "repo:Swordfish90/cool-retro-term": {
+      "type": "repo-insight",
+      "hash": "5bd1be82e238a50d6848324b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-13T23:01:29.157Z",
+      "value": {
+        "summaryZh": "cool-retro-term 是一款开源终端模拟器，基于 QML/Qt Quick 构建，专门复刻老式阴极射线管显示器的观感：扫描线、荧光余辉、屏幕弧面、噪点、闪烁与色偏都可调。它能正常跑 shell 和常见终端程序，内置 Apple II、IBM 5151、DEC VT220 等复古预设，并支持自定义字体、曲率、亮度与烧屏效果。适合追求氛围感的开发者、复古计算爱好者，以及需要在直播、录屏或教学中制造年代感的用户。",
+        "scenarios": [
+          "把日常 shell 会话包装成 80 年代 CRT 终端，用于直播、录屏或演示命令行工具时营造氛围。",
+          "复古显示与 CRT 视觉研究、教学中对比不同机型的扫描线、余辉、色偏与屏幕曲率参数。",
+          "在 Linux/macOS 上作为全屏主题终端，长时间写代码或运维时获得差异化的低干扰视觉体验。"
+        ],
+        "agentInstallPrompt": "请在本地帮我安装并试跑 cool-retro-term。步骤：1) 克隆仓库 https://github.com/Swordfish90/cool-retro-term（含子模块，用 git clone --recursive）；2) 检查依赖：Qt 5.15 或 Qt 6、Qt Quick Controls 2、QtGraphicalEffects、qml-module-* 相关模块，若缺失请用系统包管理器安装（Ubuntu/Debian 用 apt，Fedora 用 dnf，macOS 用 brew）；3) 在仓库根目录执行 qmake && make -j$(nproc)，若 qmake 不在 PATH 请尝试 qmake6 或指定 Qt 安装路径；4) 运行 ./cool-retro-term 验证能否正常启动并打开 shell；5) 若编译或运行报错，逐条给出错误原因与修复命令，并说明如何切换复古预设、调整字体与 CRT 效果。全程使用中文汇报结果。"
+      }
+    },
+    "repo:rlaope/oh-my-hermes": {
+      "type": "repo-insight",
+      "hash": "8faf73faf009322ce8f15e5e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-14T22:00:17.955Z",
+      "value": {
+        "summaryZh": "oh-my-hermes 是面向 Hermes Agent 的一体化插件，用 Python 实现，把编码智能、长期记忆系统与模型优化工作流打包在一起。它让 Agent 跨会话保留上下文，减少重复提示，并按预设流程调用工具与模型。亮点是开箱即用、模块化组合，记忆与工作流包可单独替换。适合把 Hermes Agent 当作日常编程助手的开发者、需要长期记忆的自动化流程搭建者，以及想统一管理提示词与模型配置的小团队。",
+        "scenarios": [
+          "为 Hermes Agent 加装长期记忆，让跨天、跨会话的编码任务保持上下文连续，不必每次重述项目背景。",
+          "在团队内统一模型调用与提示词工作流，用预设流程包快速搭建可复用的编程 Agent。",
+          "本地试跑与二次开发：克隆仓库后按文档注册插件，验证记忆与工作流模块是否满足自身需求。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 GitHub 项目 rlaope/oh-my-hermes。步骤：1) 克隆 https://github.com/rlaope/oh-my-hermes 到本地；2) 阅读 README、pyproject.toml 或 requirements.txt，确认所需 Python 版本与依赖；3) 创建独立虚拟环境并安装依赖；4) 说明它作为 Hermes Agent 插件的注册与启用方式，以及长期记忆和工作流包需要设置的环境变量或配置文件；5) 用一个最小示例跑通一次调用，告诉我实际执行的命令、遇到的报错及修复建议。"
+      }
+    },
+    "repo:OpenBMB/VoxCPM": {
+      "type": "repo-insight",
+      "hash": "633538efa49993268b40c3f8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-14T22:00:22.123Z",
+      "value": {
+        "summaryZh": "VoxCPM2 是 OpenBMB 开源的 Tokenizer-Free 语音合成模型，跳过离散语音分词环节，直接在连续语音表征上建模，从而减少量化带来的音质与韵律损失。它支持多语言语音生成、创意音色设计（用文字描述塑造音色）以及高保真音色克隆，仓库以 Python 实现，附带推理与微调脚本、示例音频和模型权重下载说明。适合语音算法研究者、TTS 应用开发者、需要私有化部署语音能力的团队，以及做播客、视频配音与虚拟人音色的创作者快速验证效果。",
+        "scenarios": [
+          "用一段参考音频克隆指定说话人音色，批量生成多语言有声书或播客配音",
+          "通过文字描述设计品牌专属虚拟人音色，接入智能客服或语音助手做端到端试听",
+          "在自有方言或垂直领域语料上微调模型，验证 Tokenizer-Free 方案相对传统离散 token TTS 的音质与韵律优势"
+        ],
+        "agentInstallPrompt": "请帮我跑通 OpenBMB/VoxCPM（VoxCPM2）语音合成 Demo：1) 克隆 https://github.com/OpenBMB/VoxCPM 到本地，用 Python 3.10 创建虚拟环境并按 README 安装依赖（含 PyTorch，注意按本机 CUDA 版本选择索引源）；2) 检查是否有模型权重下载脚本或 HuggingFace 仓库地址，自动下载权重到指定缓存目录；3) 阅读 README 和示例脚本，找到最简推理入口，用仓库自带的示例文本和参考音频跑一次多语言合成与音色克隆，输出 wav 到 outputs/ 目录；4) 如果显存不足，改用量化或 CPU 推理并说明取舍；5) 最后给我一份可复现的命令清单，包含已装依赖版本、权重路径、生成音频路径，以及常见报错（如 torch、librosa、ffmpeg 缺失）的修复方法。"
+      }
+    },
+    "repo:ever-co/ever-gauzy": {
+      "type": "repo-insight",
+      "hash": "b5339d51b4ab59b986f16a42",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-14T22:00:27.467Z",
+      "value": {
+        "summaryZh": "Ever Gauzy 是一套开源的企业经营管理平台，把 ERP、CRM、HRM、ATS 招聘与项目管理收敛进同一个 TypeScript 全栈应用，是 ERPNext、Odoo 之外可自托管的选择。项目基于 Nx 单仓 + Angular 前端 + NestJS/TypeORM 后端，原生支持多租户与多组织、时间追踪、发票账单、员工工时与绩效、候选人招聘流程，并配有桌面端和移动端。适合希望数据自主可控的中小企业、外包与咨询团队、需要按工时计费的代理公司，以及想把业务管理能力嵌入自有 SaaS 的开发者做二次开发与白标发行。",
+        "scenarios": [
+          "中小企业自建一体化的 ERP/CRM/HRM 后台，统一管理客户、订单、发票、员工档案与考勤，数据完全留在自己的服务器上。",
+          "外包、咨询或软件代理团队按项目和任务记录工时，自动生成可计费工时报表与客户发票，替代散落的表格与计时工具。",
+          "SaaS 厂商以 Gauzy 为底座做白标定制，利用多租户与模块化架构快速搭建面向特定行业的业务管理产品。"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑起 ever-co/ever-gauzy 并验证核心功能。步骤：1) 克隆仓库 https://github.com/ever-co/ever-gauzy 并 checkout 最新 release 标签；2) 确认环境为 Node LTS（建议 20+）、Yarn 1.x、Docker 与 Docker Compose，先读 README 与 .deploy 目录下的说明，确认官方推荐版本，不要自行猜测；3) 用 Docker Compose 启动 PostgreSQL、Redis 等依赖（.deploy/docker-compose 相关文件），若官方提供 demo 一键脚本优先使用；4) yarn install 后，分别启动 API（apps/api）与 Web 前端（apps/gauzy），记录实际使用的启动命令与端口；5) 首次启动后按文档执行数据库迁移与种子数据，创建管理员账号并登录；6) 验证路径：登录后台 → 新建组织与员工 → 记录一段工时 → 生成发票或报表；7) 若某步报错，先贴出完整日志与你的判断，再尝试修复，不要静默跳过；8) 最后输出一份简明总结，包含实际可用的启动命令、访问地址、默认账号、依赖版本和踩坑记录。"
+      }
+    },
+    "repo:reconurge/flowsint": {
+      "type": "repo-insight",
+      "hash": "5f10c4718319908d43483d8f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-14T22:00:40.923Z",
+      "value": {
+        "summaryZh": "Flowsint 是一个基于 TypeScript 构建的现代化图调查分析平台，面向网络安全分析师与调查人员。它把域名、IP、邮箱、账号、组织等实体及关系转化为可视化图谱，支持节点逐层扩展、数据源插件与自动化关联，帮助从零散线索还原攻击面与关系网络。界面直观、架构可扩展，适合威胁情报、红队侦察、反欺诈与 OSINT 调查等需要持续追溯关联的场景使用。",
+        "scenarios": [
+          "威胁情报分析：输入一个可疑域名或 IP，逐层展开解析记录、注册信息与关联基础设施，快速梳理攻击者资产脉络。",
+          "红队与外部攻击面侦察：在授权范围内枚举目标组织的域名、子域、证书与人员账号，识别薄弱环节并形成调查报告。",
+          "反欺诈与 OSINT 调查：围绕邮箱、社交账号、电话等线索构建关系图谱，发现团伙关联、共用基础设施与异常行为模式。"
+        ],
+        "agentInstallPrompt": "请帮我本地跑起来 https://github.com/reconurge/flowsint 。步骤：1) 克隆仓库并进入目录；2) 阅读 README、package.json 和 docker-compose 等配置，判断所需 Node.js 版本、包管理器（pnpm/npm/yarn）以及数据库或环境变量依赖（如 Neo4j、Postgres、.env 示例文件）；3) 安装依赖并按文档补齐必要配置，如需容器化服务请一并启动；4) 运行开发服务器，把访问地址、默认账号或注册方式告诉我；5) 用一个示例调查（例如查询 example.com 并展开其关联节点）验证图谱可视化与节点扩展功能是否正常，若报错请定位并给出修复方案。"
+      }
+    },
+    "repo:peetzweg/opendisplay": {
+      "type": "repo-insight",
+      "hash": "24f529a29b30f9af8d4e4033",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-14T22:00:46.045Z",
+      "value": {
+        "summaryZh": "opendisplay 是一个用 Swift 编写的免费开源项目，目标是替代苹果 Sidecar 与 Duet Display，让 iPhone 或 iPad 通过 USB 或 WiFi 变成 Mac 的真正第二显示器。它采用低延迟 H.264 编码传输画面，支持 Retina HiDPI 高分辨率渲染，并能把触屏输入回传给 Mac，在画质、流畅度与交互上兼顾。项目适合不想为投屏软件付费、又需要便携副屏的 Mac 用户、远程办公者与开发者，尤其在出差、咖啡馆办公或用 iPad 扩展桌面时非常实用。",
+        "scenarios": [
+          "出差或咖啡馆办公时，用数据线把 iPad 连上 Mac 作为便携第二屏，摆放参考资料、聊天窗口或监控面板，免去随身携带外接显示器。",
+          "在家通过 WiFi 把闲置 iPhone 或 iPad 变成 Mac 副屏，主屏写代码、副屏跑日志或看文档，减少频繁的窗口切换。",
+          "需要触控交互的场景：把 iPad 当作可直接触摸操作的 Mac 扩展屏，用于演示、绘图、批注或轻量远程控制。"
+        ],
+        "agentInstallPrompt": "请帮我在本机试跑 peetzweg/opendisplay：先执行 git clone https://github.com/peetzweg/opendisplay 并阅读 README，确认我的 macOS 版本、Xcode 与 Swift 工具链是否满足要求；然后按文档构建并运行 Mac 端程序，列出具体命令以及所需权限（屏幕录制、辅助功能、网络端口等）；接着说明如何在 iPhone 或 iPad 端安装或运行对应客户端，并通过 USB 或 WiFi 完成配对；最后给出验证第二屏幕是否正常显示、延迟表现与 HiDPI 是否生效的检查步骤，并汇总过程中遇到的报错与解决办法。"
+      }
+    },
+    "repo:microsoft/data-formulator": {
+      "type": "repo-insight",
+      "hash": "0bcd164604925e7211daa200",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-14T22:00:58.261Z",
+      "value": {
+        "summaryZh": "Data Formulator 是微软开源的交互式 AI 数据分析与可视化工具。用自然语言描述分析意图，AI 自动生成数据转换步骤并即时出图，可在图表与表格间反复迭代，省去手写 pandas 代码。支持 CSV、Excel 等数据源，可对接云端或本地模型，Python 后端配浏览器界面，本地运行数据不出域。适合数据分析师、数据科学初学者和需快速探索数据出图的业务人员。",
+        "scenarios": [
+          "拿到一份业务 CSV/Excel，想快速查看分布、趋势与异常值，但不熟悉 pandas/matplotlib，直接用自然语言反复调整图表，几分钟出图。",
+          "分析师做探索性分析时，让 AI 生成可追溯的数据转换链（data thread），再手动微调图表编码，形成可复现、可分享的分析草稿。",
+          "数据敏感、不能上传云端时，在本地或内网部署，并连接 Ollama 等本地大模型完成清洗、聚合与可视化，全程数据不出域。"
+        ],
+        "agentInstallPrompt": "请在本地帮我安装并跑通 microsoft/data-formulator：1) 确认 Python 3.10+ 与 pip 可用，并创建独立虚拟环境；2) 优先执行 pip install data-formulator，若要改源码则先克隆 https://github.com/microsoft/data-formulator 再在其目录执行 pip install -e .；3) 运行 data-formulator 启动本地服务（默认 http://localhost:5567），把访问地址和启动日志发给我；4) 按需配置模型：设置 OPENAI_API_KEY 或 Azure OpenAI 端点，没有云端 Key 就改用本地 Ollama 并说明对应配置项；5) 用自带示例数据加载一份 CSV，通过自然语言提示生成一张柱状图，描述结果并列出所有报错及你采取的修复命令。"
       }
     }
   }
