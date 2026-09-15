@@ -738,17 +738,17 @@
     },
     "repo:JuliusBrussee/caveman": {
       "type": "repo-insight",
-      "hash": "2e10242d7f2841e1cc6a74cc",
+      "hash": "62e1c7ac1efc3a648a3be3b5",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-11T22:01:19.178Z",
+      "generatedAt": "2026-09-15T22:00:47.536Z",
       "value": {
-        "summaryZh": "caveman 是一个面向 Claude Code 的 skill，通过将提示词转换为简洁的穴居人风格，平均减少约 65% 的 token 消耗。它基于 Go 实现，轻量易集成，适用于需要控制 API 成本或优化长对话场景的开发者。该工具保留核心语义，同时大幅精简措辞，适合在 Claude Code 工作流中作为预处理器使用。",
+        "summaryZh": "caveman 是一个用 Go 编写的「原始人语」压缩层，核心哲学是 why use many token when few token do trick：让编码 agent 用断句式极简表达回答，输出 token 可削减约 65%，直接降低费用与延迟。它同时提供技能（skill）和本地代理（proxy）两种接入方式，可架在现有 agent 工作流前，把冗长解释压成短句，同时保留代码、命令与关键结论。适合重度使用 Claude Code、Cursor 等编码 agent 的开发者、关注 token 成本与响应速度的团队，以及想研究提示压缩、代理拦截与输出规范的工程师。",
         "scenarios": [
-          "在 Claude Code 中处理长文档或多轮对话时，降低 token 用量，节省 API 费用。",
-          "将复杂的技术指令精简为关键短语，提高 Claude 的响应速度和专注度。",
-          "作为开发团队共享的 skill，统一 prompt 风格，减少冗余表达。"
+          "在 Claude Code、Cursor 等编码 agent 前挂本地代理，压缩日常问答与代码解释的输出 token，降低 API 账单和等待时间。",
+          "把 caveman 作为团队统一技能，约束 agent 用极简断句汇报改动、报错和 diff 摘要，提升多人协作时的信息密度。",
+          "作为提示压缩与代理拦截的实验样本，对比开启前后 token 消耗、回答准确率与可读性的差异，再决定是否纳入生产流程。"
         ],
-        "agentInstallPrompt": "请先确保已安装 Claude Code 和 Go 环境。克隆仓库 https://github.com/JuliusBrussee/caveman，进入目录后运行 go build 或 go install 构建可执行文件。根据 README 将构建产物或 skill 文件配置到 Claude Code 的 skills 目录中。测试时，先用一个常规的英文 prompt 调用，然后启用 caveman 转换后再发送给 Claude，对比 token 数和输出质量。"
+        "agentInstallPrompt": "请在本地克隆并试跑 GitHub 仓库 JuliusBrussee/caveman（Go 项目）。步骤：1) 先阅读 README，确认它提供了哪几种接入形态（技能 / 代理）以及推荐用法；2) 检查本机是否已安装 Go（go version），未安装则提示我安装；3) 在仓库目录执行 go build ./... 完成编译，若有依赖缺失先 go mod tidy；4) 按 README 说明启动本地代理服务或安装技能到我的编码 agent 配置中，说明需要我手动确认的步骤；5) 用一条普通编程问题做对比测试：分别在未启用和启用 caveman 的情况下提问，记录输出 token 量、响应耗时与答案可读性，把结果整理成简短表格；6) 最后告诉我如何关闭或卸载它，并指出可能影响代码正确性或可读性的风险点。全程不要修改仓库源码，除构建产物外不要写入其他文件。"
       }
     },
     "repo:koala73/worldmonitor": {
@@ -6018,17 +6018,17 @@
     },
     "repo:alphaXiv/OpenResearch": {
       "type": "repo-insight",
-      "hash": "9ef3fa0f5b11f4475e3f0928",
+      "hash": "708b1a6413f6582a741d10cc",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-11T22:00:57.376Z",
+      "generatedAt": "2026-09-15T22:00:19.889Z",
       "value": {
-        "summaryZh": "OpenResearch 是 alphaXiv 团队用 Rust 打造的开源研究智能体框架，核心能力是并行调度多个研究 Agent，并兼容任意模型（OpenAI、Anthropic 及本地开源模型皆可）。它把选题拆解、资料检索、阅读归纳与交叉验证分配为并行子任务，再由主流程汇总成结构化结论，显著压缩深度调研耗时，同时借多模型并行降低单一模型的偏见。适合做文献综述的研究者、做技术选型与竞品分析的工程师，以及希望自建模型、二次开发调研流水线的团队。",
+        "summaryZh": "OpenResearch 由 alphaXiv 团队开源，使用 Rust 编写，目标是把你手头的编码智能体变成研究智能体。它复用 agent 已有的文件读写与命令执行能力，再叠加论文检索、精读、引用整理等研究技能，让模型能围绕一个课题自动找文献、读全文并产出结构化笔记。适合经常刷 arXiv 的研究生、做技术调研的科研工程师，以及希望把文献综述接入自动化工作流的 AI 开发者。项目尚处早期，接口与文档可能快速变化，建议先跑通最小示例再考虑长期依赖。",
         "scenarios": [
-          "文献综述：并行让多个 Agent 分头检索 arXiv、GitHub 与技术博客，快速产出带出处的综述初稿。",
-          "技术选型与竞品调研：对同一问题调用不同模型并行分析，交叉比对结论差异，减少单一视角偏差。",
-          "企业知识库调研：接入内部文档与本地模型，多 Agent 并行检索汇总，生成可追溯的调研报告。"
+          "开题或技术选型前，让 agent 按关键词检索 arXiv 最新预印本，去重聚类后生成带链接和一句话点评的阅读清单。",
+          "精读一篇长论文时，让 agent 拆解方法、实验与结论，提取关键公式、数据集和超参，整理成结构化中文笔记。",
+          "维护长期研究课题的知识库，定期让 agent 拉取新论文，与已有笔记比对差异并更新引用与综述章节。"
         ],
-        "agentInstallPrompt": "请帮我安装并试跑 alphaXiv/OpenResearch：1) 克隆仓库 https://github.com/alphaXiv/OpenResearch 并阅读 README，确认所需 Rust 工具链版本，必要时用 rustup 安装或升级；2) 执行 cargo build --release 编译，遇到依赖缺失或编译错误逐个定位并修复，说明原因；3) 按文档配置至少一个模型提供方的 API Key 环境变量，若我想完全本地运行，请改用 Ollama 或兼容 OpenAI 接口的本地端点并给出配置示例；4) 用一个示例任务（例如「调研 Rust 异步运行时现状并给出对比」）启动并行研究 Agent，展示并发执行日志与最终输出；5) 最后总结项目结构、关键配置项、常见报错与可调参数，并给出一份最小可用的运行命令清单。"
+        "agentInstallPrompt": "请在本机帮我试用 alphaXiv/OpenResearch：先克隆 https://github.com/alphaXiv/OpenResearch ，通读 README 与 Cargo.toml，确认 Rust 工具链版本和系统依赖，缺少的组件用 rustup/系统包管理器装好，然后执行 cargo build --release 完成构建。接着按文档配置所需的模型 API 密钥与论文检索相关设置，启动程序并跑一个最小示例：以 “LLM agents for code” 为主题检索最近论文，输出一份含标题、链接和摘要要点的清单。遇到编译错误或配置缺失时先自行排查，最后把实际执行的安装命令、踩到的坑和可复现的运行步骤写入 SETUP.md。"
       }
     },
     "repo:github/spec-kit": {
@@ -6285,6 +6285,81 @@
           "数据敏感、不能上传云端时，在本地或内网部署，并连接 Ollama 等本地大模型完成清洗、聚合与可视化，全程数据不出域。"
         ],
         "agentInstallPrompt": "请在本地帮我安装并跑通 microsoft/data-formulator：1) 确认 Python 3.10+ 与 pip 可用，并创建独立虚拟环境；2) 优先执行 pip install data-formulator，若要改源码则先克隆 https://github.com/microsoft/data-formulator 再在其目录执行 pip install -e .；3) 运行 data-formulator 启动本地服务（默认 http://localhost:5567），把访问地址和启动日志发给我；4) 按需配置模型：设置 OPENAI_API_KEY 或 Azure OpenAI 端点，没有云端 Key 就改用本地 Ollama 并说明对应配置项；5) 用自带示例数据加载一份 CSV，通过自然语言提示生成一张柱状图，描述结果并列出所有报错及你采取的修复命令。"
+      }
+    },
+    "repo:Homebrew/BrewUI": {
+      "type": "repo-insight",
+      "hash": "c4eb6166b8e23ac1d0064f29",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-15T22:00:13.883Z",
+      "value": {
+        "summaryZh": "BrewUI 是 Homebrew 官方出品的 macOS 图形界面，用 Swift 和 SwiftUI 编写，把 brew 命令行的搜索、安装、升级、卸载与服务管理变成可视化窗口。它沿用 Homebrew 的软件源和依赖解析，提供更直观的包浏览、状态展示与过期提醒，适合不熟悉终端的新手、批量维护开发环境的工程师。",
+        "scenarios": [
+          "刚接触 Mac 开发、不想记 brew 子命令的新手，用图形界面搜索并安装常用命令行工具。",
+          "需要定期检查并批量升级已装包、清理过期依赖与服务的开发者。",
+          "团队分享或教学演示时，用可视化窗口展示 Homebrew 的包管理与服务管理流程。"
+        ],
+        "agentInstallPrompt": "请在本机帮我安装并试跑 Homebrew/BrewUI。步骤：1) 确认已安装 Xcode Command Line Tools 与 Homebrew，没有就先装好；2) 执行 git clone https://github.com/Homebrew/BrewUI.git ~/Projects/BrewUI 并进入目录；3) 阅读 README、Package.swift 或 *.xcodeproj，判断正确的构建方式，优先用 swift build 或 xcodebuild 构建；4) 若是 GUI 应用，构建完成后用 open 打开生成的 .app，或用 swift run 启动；5) 最后告诉我如何打开主窗口、当前支持哪些 brew 操作，以及构建中遇到的报错和解决办法。"
+      }
+    },
+    "repo:danny-avila/LibreChat": {
+      "type": "repo-insight",
+      "hash": "f886c3314a1b5cb00f80124e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-15T22:00:22.830Z",
+      "value": {
+        "summaryZh": "LibreChat 是一个可自托管的开源 AI 对话平台，定位为增强版 ChatGPT 克隆。它统一接入 OpenAI、Anthropic、Azure、AWS、Groq、Mistral、OpenRouter、Vertex AI、Gemini、DeepSeek 等多家模型，支持运行时切换模型、Agents、MCP、Skills、Artifacts、代码解释器、DALL·E-3、OpenAPI Actions 与函数调用，并提供多用户安全认证、预设、消息搜索等能力。技术栈为 TypeScript，适合想在内网或私有环境统一管理多模型入口的团队、注重数据合规的企业，以及需要为成员分配账号与权限的自建服务爱好者。",
+        "scenarios": [
+          "企业内部搭建统一的 AI 助手门户，集中管理多家大模型 API 密钥并为不同部门分配账号与权限",
+          "开发者本地或私有服务器自托管聊天环境，用 Agents、MCP 与代码解释器完成带工具调用的日常研发任务",
+          "团队对比评测 GPT、Claude、Gemini、DeepSeek 等模型在同一界面下的回答效果与成本表现"
+        ],
+        "agentInstallPrompt": "请帮我在本地部署并试跑 LibreChat：先克隆 https://github.com/danny-avila/LibreChat 仓库，阅读官方文档确认最新的 Docker Compose 部署方式；复制示例环境变量文件（如 .env.example 到 .env），按需填入至少一个模型提供商的 API Key（如 OpenAI 或 Anthropic）；用 docker compose up -d 启动全部服务，检查容器日志确认无报错；最后在浏览器打开默认端口（通常为 http://localhost:3080），注册首个账号并发送一条测试消息，验证模型能正常回复。请把每一步执行的命令、遇到的报错及解决方式都记录下来，遇到版本或配置差异时以仓库最新文档为准。"
+      }
+    },
+    "repo:pacifio/atlas": {
+      "type": "repo-insight",
+      "hash": "87117b4c58f5e0f347e4c50d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-15T22:00:27.791Z",
+      "value": {
+        "summaryZh": "Atlas 是一款用 Rust 编写的智能体源码管理工具，为多个 AI coding agent 提供统一的版本追踪与查询层。它能在本地为每个 agent 会话自动记录文件改动快照，形成可回溯的变更历史，让你在一个界面里对比、检索不同 agent 的产物，避免互相覆盖或丢失上下文。适合同时驱动多个编码代理的开发者、需要审计 AI 改动来源的团队，以及想复现某次 agent 编辑过程的研究者。",
+        "scenarios": [
+          "同时运行两个以上编码代理处理同一仓库时，用 Atlas 隔离并追踪各自改动，事后按会话对比与回滚",
+          "团队做 AI 代码审计时，用 Atlas 查询某次提交究竟由哪个 agent、哪条会话产生，还原修改链路",
+          "复现或调试 agent 行为时，将其写入的每个文件快照串成时间线，定位错误编辑发生的位置"
+        ],
+        "agentInstallPrompt": "克隆并试跑 Atlas：执行 git clone https://github.com/pacifio/atlas && cd atlas，先读 README 确认依赖与命令，然后用 cargo build --release 编译；编译完成后运行可执行文件查看帮助与子命令列表（如 --help、初始化仓库、查看会话或变更日志）。请用一个小型测试仓库验证流程：启动 Atlas 记录环境，让一个编码 agent 修改一两个文件，再用 Atlas 查询该会话的改动记录并导出对比结果，最后把可行的安装步骤、实际命令和遇到的问题整理成简短报告给我。"
+      }
+    },
+    "repo:MG1937/ASC": {
+      "type": "repo-insight",
+      "hash": "376bf49957d57fe616e59749",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-15T22:00:35.896Z",
+      "value": {
+        "summaryZh": "ASC 是一个用 Python 编写的超快速 Android 反编译前端，面向 AI Agent 与移动安全研究人员。它把 apktool、jadx 等底层工具封装成统一、可脚本化的接口，强调速度与自动化，支持批量处理 APK、提取 smali/Java 代码。适合移动逆向、恶意样本分析、自动化漏洞挖掘的工程师，也方便把反编译能力接入 Agent 工作流。",
+        "scenarios": [
+          "批量反编译应用商店或样本库中的 APK，快速产出 smali/Java 代码与资源目录，供后续静态分析",
+          "作为 AI Agent 的工具层，让 Agent 自动调用 ASC 完成 APK 解包、代码提取与初步特征检索",
+          "移动安全研究中对恶意样本做快速取证，对比不同版本 APK 的代码与资源差异"
+        ],
+        "agentInstallPrompt": "请帮我本地跑通 ASC：1) 执行 git clone https://github.com/MG1937/ASC 并进入仓库目录；2) 阅读 README，按说明创建 Python 虚拟环境并安装依赖（requirements.txt 或 pyproject.toml）；3) 运行 --help 或 README 示例命令，确认命令行入口与参数；4) 准备一个小型开源 APK，用它完整跑一次反编译，检查 smali/Java 与资源产物是否生成；5) 汇报安装是否成功、实际使用的命令、耗时与产物路径，若报错请定位原因并给出修复步骤。"
+      }
+    },
+    "repo:tonhowtf/omniget": {
+      "type": "repo-insight",
+      "hash": "b65093908bdc3a29b43ff81c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-15T22:00:41.843Z",
+      "value": {
+        "summaryZh": "Omniget 是一款基于 Rust 与 yt-dlp 的开源桌面下载器，支持 Windows、macOS、Linux，覆盖 Udemy、Hotmart 课程、YouTube 视频、音乐与电子书等 1800+ 站点。它把课程播放器、PDF/EPUB 阅读器和音乐库整合进同一图形界面，全程无需命令行，文件只保存在本机。适合想离线收藏付费课程与音视频、又不想折腾命令行的学习者、教师和内容整理者。",
+        "scenarios": [
+          "离线囤课：把已购的 Udemy、Hotmart 课程连同字幕批量下载到本地，用内置课程播放器按章节连续学习。",
+          "素材与音乐归档：从 YouTube 等 1800+ 站点抓取视频、播客或音乐，统一进本地音乐库，通勤时无网播放。",
+          "电子书阅读管理：下载 PDF/EPUB 后用内置阅读器直接翻看，避免安装多款阅读与下载工具来回切换。"
+        ],
+        "agentInstallPrompt": "请在本机帮我安装并试跑 omniget 桌面应用：1) 执行 git clone https://github.com/tonhowtf/omniget 并进入该目录；2) 检查环境，安装 Rust 工具链以及 yt-dlp、ffmpeg（按我的操作系统给出对应安装命令），如前端需要 Node 或 pnpm 也一并装好；3) 阅读 README 确认实际构建方式，执行依赖安装与构建，例如 cargo build --release 或项目指定的 Tauri 构建命令；4) 启动应用，确认主窗口能打开、能正确识别 yt-dlp 版本、下载设置与内置播放器/阅读器页面可访问；5) 用一个公开的 YouTube 短视频做小体积试下载，验证保存目录、进度显示与本地播放是否正常；6) 逐步输出你执行的命令、报错原文和修复方案，任何一步失败都不要跳过或假装成功。"
       }
     }
   }
