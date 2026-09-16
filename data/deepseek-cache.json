@@ -4563,17 +4563,17 @@
     },
     "repo:chaitanyagiri/munder-difflin": {
       "type": "repo-insight",
-      "hash": "6e1587ad7986a20fcf24fb7b",
+      "hash": "df8d35fb91a7bdec04a364cc",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-26T22:00:32.589Z",
+      "generatedAt": "2026-09-16T22:23:43.978Z",
       "value": {
-        "summaryZh": "munder-difflin 是一个基于 JavaScript 的本地多智能体（multi-agent）协调框架，旨在帮助开发者在本地环境中轻松创建、运行和管理多个 AI 代理实例。它提供了轻量级的代理间消息传递、任务调度与状态管理能力，让开发者无需复杂的基础设施即可搭建多代理协作系统。该框架强调简单性与可扩展性，适合快速原型验证、教学演示以及中小规模自动化任务。其亮点在于纯本地运行、依赖少、易于嵌入现有 Node.js 项目，对于希望探索多代理模式或需要构建本地 AI 工作流的开发者与研究者尤为实用。",
+        "summaryZh": "Munder Mifflin 是一个用 TypeScript 编写的本地多智能体编排框架，名字致敬《办公室》里的 Dunder Mifflin。它直接复用你已有的 Claude Code、Codex 等订阅，无需额外 API Key，就能在本地拉起一支“智能体办公室”：多角色分工、并行协作，且数据不出本机。适合已订阅 Claude Code/Codex 的开发者、想低成本试验多智能体协作的独立开发者。",
         "scenarios": [
-          "在本地开发环境中快速搭建多代理协作原型，验证 Agent 通信与任务分配逻辑。",
-          "为教学或研究项目构建一个轻量级的多代理仿真平台，观察不同代理策略的交互效果。",
-          "将多代理框架嵌入现有自动化流程，实现本地化的任务分解与并行处理，如数据处理、文本生成等。"
+          "把需求拆给产品、开发、测试等多个 agent 角色，在本地仓库上模拟一支软件小队并行推进迭代。",
+          "基于已有 Claude Code/Codex 订阅搭建个人自动化流水线，让不同 agent 分别负责调研、写稿、代码审查等重复任务。",
+          "作为多智能体编排的研究沙盒，对比不同角色分工、提示词与调度策略对任务完成质量的影响。"
         ],
-        "agentInstallPrompt": "请安装并试跑这个仓库：https://github.com/chaitanyagiri/munder-difflin。首先克隆仓库到本地，检查 package.json 中的依赖，使用 npm install 安装。然后阅读 README 了解如何定义代理和运行示例，运行一个示例脚本（如 npm start 或 node example.js），确认多代理框架能正常启动并完成简单的代理间通信。最后，简要记录运行结果和关键配置方式。"
+        "agentInstallPrompt": "请克隆 https://github.com/chaitanyagiri/munder-difflin 到本地，阅读 README 与 package.json，确认所需的 Node/pnpm 版本，安装依赖并完成环境配置。先检查本机是否已登录 Claude Code 或 Codex CLI 订阅，若没有请提示我登录。然后按文档初始化一个最小可用的“agent 办公室”，包含产品、开发、测试三个角色，跑一次示例任务，把每个 agent 的日志与最终产物路径贴出来；最后说明如何新增角色、修改提示词和调整并发调度。"
       }
     },
     "repo:mahlernim/google-timeline-visualizer": {
@@ -6360,6 +6360,96 @@
           "电子书阅读管理：下载 PDF/EPUB 后用内置阅读器直接翻看，避免安装多款阅读与下载工具来回切换。"
         ],
         "agentInstallPrompt": "请在本机帮我安装并试跑 omniget 桌面应用：1) 执行 git clone https://github.com/tonhowtf/omniget 并进入该目录；2) 检查环境，安装 Rust 工具链以及 yt-dlp、ffmpeg（按我的操作系统给出对应安装命令），如前端需要 Node 或 pnpm 也一并装好；3) 阅读 README 确认实际构建方式，执行依赖安装与构建，例如 cargo build --release 或项目指定的 Tauri 构建命令；4) 启动应用，确认主窗口能打开、能正确识别 yt-dlp 版本、下载设置与内置播放器/阅读器页面可访问；5) 用一个公开的 YouTube 短视频做小体积试下载，验证保存目录、进度显示与本地播放是否正常；6) 逐步输出你执行的命令、报错原文和修复方案，任何一步失败都不要跳过或假装成功。"
+      }
+    },
+    "repo:cloudflare/security-audit-skill": {
+      "type": "repo-insight",
+      "hash": "ce937e7e206d07bc0772e3fc",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-16T22:06:00.948Z",
+      "value": {
+        "summaryZh": "cloudflare/security-audit-skill 是 Cloudflare 开源的编码代理技能包，用 JavaScript 实现，把安全审计拆成多阶段流程：先侦察与建立代码模型，再逐项扫描，最后由独立验证环节复核每条发现，输出机器可读结果，便于流水线消费与复现。它适合让 AI 代理在 CI 或本地自动做安全审查的团队、安全工程师与开源维护者，可降低误报并保留可追溯证据。",
+        "scenarios": [
+          "在 CI 中让编码代理对每次 Pull Request 自动跑多阶段安全审计，并把机器可读发现回写到评审评论或工单。",
+          "安全工程师在本地对遗留服务做一次系统化排查，用独立验证阶段过滤误报，只保留可复现的高置信问题。",
+          "开源维护者在发布前对依赖与配置做快速体检，生成结构化报告，便于向上游或用户说明风险与修复建议。"
+        ],
+        "agentInstallPrompt": "请先克隆 https://github.com/cloudflare/security-audit-skill 并阅读 README 与技能清单，确认它支持的代理运行时与依赖安装方式。然后安装所需依赖，在本机对一个示例仓库执行一次完整的多阶段安全审计，逐阶段记录侦察、扫描与独立验证的输出。最后汇总为机器可读的 JSON 发现列表，标出每条发现的严重级别、证据位置、置信度与修复建议，并说明哪些步骤因环境限制未能执行。"
+      }
+    },
+    "repo:abue-ammar/tinycast": {
+      "type": "repo-insight",
+      "hash": "d935c380a390281ba1ed0169",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-16T22:06:11.002Z",
+      "value": {
+        "summaryZh": "Tinycast 是一款用 Swift 编写的原生 macOS 启动器，把快速搜索启动、全局快捷键与剪贴板历史整合进一个极小体量的菜单栏应用中。它完全原生、界面贴合系统风格，启动迅速、内存占用低，不依赖 Electron 等重型框架；按下自定义热键即可唤出搜索框，打开应用、文件或翻查历史剪贴板内容。适合追求极简与本地隐私的 macOS 用户，作为 Raycast、Alfred 的轻量替代；也适合想用 SwiftUI 做系统级工具的开发者本地试跑与二次开发。",
+        "scenarios": [
+          "日常办公中用自定义热键唤出搜索框，秒开应用、文件与文件夹，减少在 Dock 和 Finder 之间来回切换。",
+          "刚复制过一段代码、链接或截图后忘了存哪，打开剪贴板历史快速找回并一键重新粘贴。",
+          "不想装 Raycast、Alfred 等重型工具的用户可作轻量替代；开发者也可克隆源码，用 Xcode 学习 macOS 全局热键与菜单栏应用的实现方式。"
+        ],
+        "agentInstallPrompt": "请帮我在本地安装并试用 GitHub 项目 abue-ammar/tinycast（https://github.com/abue-ammar/tinycast）。步骤：1) 确认系统为 macOS，并检查是否已装 Xcode 或 Command Line Tools，没有则提示我用 xcode-select --install 安装；2) 克隆仓库到 ~/Projects/tinycast 并进入目录；3) 若存在 Package.swift 就用 swift build 构建，否则先跑 xcodebuild -list 查看 scheme，再用 xcodebuild 构建 Release 版本并告诉我产物路径；4) 构建成功后启动应用，指导我在系统设置里授予辅助功能、输入监控和通知权限；5) 带我实测三条流程：用全局热键唤出搜索框、搜索并打开一个应用（如 Safari）、复制两段文本后从剪贴板历史中粘贴回去。若遇到编译错误或权限问题，请给出具体修复命令与说明，最后用简短报告列出执行过的关键命令和结果。"
+      }
+    },
+    "repo:ankitects/anki": {
+      "type": "repo-insight",
+      "hash": "e4807eed6f0286dd91eaee2a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-16T22:06:17.112Z",
+      "value": {
+        "summaryZh": "Anki 是老牌开源间隔重复记忆卡片程序，近年将核心调度与数据层用 Rust 重写，配合 Python/Qt 界面，支持 FSRS 智能算法、多端同步、插件与共享牌组。它把复习时间集中在临遗忘点，适合备考语言、医学及职业资格的学生、教师和终身自学者自建高效记忆系统。",
+        "scenarios": [
+          "语言考试（雅思、托福、JLPT）词汇与语法高频复习，用 FSRS 调度和多端同步在不同设备上保持一致进度。",
+          "医学生或职业资格考生记忆解剖、药理、法条等密集知识点，导入社区共享牌组或自制带图带音频的卡片。",
+          "插件开发者与 Rust 贡献者本地编译 Anki，调试调度算法、同步协议或为现有插件适配新版后端接口。"
+        ],
+        "agentInstallPrompt": "请在本机克隆并试跑 ankitects/anki：1) git clone https://github.com/ankitects/anki.git && cd anki；2) 参考 docs/development.md 安装依赖：Rust 工具链、Python 3.9+、Qt6、protoc、ninja 等；3) 运行 ./run 启动开发版 Anki（若脚本不可用则执行 ./tools/build 后 python -m aqt）；4) 另开终端运行 cargo test 与 ./ninja check 做冒烟测试。请报告每步命令、报错原文、缺失依赖及最小修复方案，并说明当前操作系统与已安装版本。"
+      }
+    },
+    "repo:supabase/supabase": {
+      "type": "repo-insight",
+      "hash": "a55d671e04ab675f90d0d083",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-16T22:23:25.762Z",
+      "value": {
+        "summaryZh": "Supabase 是基于 Postgres 的开源后端开发平台，为 Web、移动端与 AI 应用提供专用 Postgres 数据库，并整合认证、自动生成 REST/GraphQL 接口、实时订阅、对象存储、边缘函数等能力，被称为开源版 Firebase。它支持自托管与云端托管，SQL 原生、生态兼容性强，适合全栈开发者、独立开发者与创业团队快速搭建产品后端，也适合企业以开源方式掌控数据。",
+        "scenarios": [
+          "独立开发者或小团队快速搭建带用户认证、数据库与文件上传的 MVP，替代 Firebase 以避免供应商锁定",
+          "AI 团队用 Supabase 的 pgvector 存储 embedding，配合边缘函数实现向量检索与 RAG 接口",
+          "企业在自有服务器上自托管 Supabase，运行 Postgres、Realtime 与 Storage，满足数据合规与私有化部署要求"
+        ],
+        "agentInstallPrompt": "请在本机帮我试用 Supabase：先执行 git clone https://github.com/supabase/supabase 并 cd supabase，检查是否已安装 Docker 与 Node.js 18+；然后进入 docker 目录执行 docker compose up -d 启动本地栈，等容器就绪后访问 http://localhost:8000 打开 Studio；接着用默认账号 postgres/postgres 连接数据库，创建一张 demo 表并插入一条记录；最后用 curl 调用 REST 接口验证 http://localhost:8000/rest/v1/demo 能返回刚插入的数据，并汇总每一步的执行结果与遇到的问题。"
+      }
+    },
+    "repo:cline/cline": {
+      "type": "repo-insight",
+      "hash": "71bfa539cf192c81f3143066",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-16T22:23:32.142Z",
+      "value": {
+        "summaryZh": "Cline 是一个开源的自主编程智能体，提供 SDK、VS Code 扩展与命令行三种形态，用 TypeScript 编写。它能读取与编辑文件、执行终端命令、操控浏览器并调用 MCP 工具，支持 Plan/Act 双模式与逐步人工确认，兼容 Anthropic、OpenAI、OpenRouter 及本地模型。每步操作可生成检查点便于回滚，项目采用 Apache 2.0 许可，社区活跃、迭代频繁。适合希望把 AI 编码能力嵌入编辑器、CI 或自有产品的开发者与团队。",
+        "scenarios": [
+          "在 VS Code 中安装 Cline 扩展重构老项目：先让它输出修改计划，再逐步批准改代码，借助检查点随时回滚。",
+          "通过 Cline SDK 把自动修复 issue、补测试、生成 PR 的能力集成进自研研发平台或内部工具链。",
+          "在服务器或 CI 中用 CLI 模式批量跑代码迁移、依赖升级与日志排障等无人值守任务，并接入 MCP 工具。"
+        ],
+        "agentInstallPrompt": "请帮我在本机安装并试跑 Cline（https://github.com/cline/cline）。先检查 Node.js 18+、npm 与 git 是否可用，然后 git clone 该仓库并进入目录，按 README 安装依赖并完成构建。接着告诉我 VS Code 扩展的本地调试方式，以及 CLI 的最简启动命令，例如 cline --help 和一次只读的文件总结任务。不要修改仓库源码；若需要 API Key，只提示我配置 Anthropic 或 OpenRouter 的环境变量。最后汇总你执行过的命令、产物路径以及遇到的问题。"
+      }
+    },
+    "repo:home-assistant/core": {
+      "type": "repo-insight",
+      "hash": "098c5f2403e17d7fb80de67a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-16T22:23:37.618Z",
+      "value": {
+        "summaryZh": "Home Assistant 是最流行的开源家庭自动化平台，Python 编写，坚持本地控制与隐私优先。它可接入 Zigbee、Z-Wave、Matter、MQTT 等数千种设备与协议，用图形界面或 YAML 编排自动化、仪表盘与语音助手，数据不出户。拥有庞大集成生态与活跃社区，适合智能家居玩家、树莓派/NAS 自托管用户及二次开发工程师。",
+        "scenarios": [
+          "在树莓派或 NAS 上自建家庭中枢，统一管理各品牌灯具、传感器与空调，避免数据上传云端。",
+          "用 YAML 或可视化编辑器编写自动化，例如人走灯灭、回家自动开空调、漏水报警推送手机。",
+          "作为开发者参考其 Python 集成框架与插件架构，开发自定义组件或调试第三方设备协议。"
+        ],
+        "agentInstallPrompt": "请在本机试跑 Home Assistant Core：先确认已安装 Python 3.12+ 与 git、pip，创建并激活虚拟环境（python3 -m venv .venv && source .venv/bin/activate），执行 git clone https://github.com/home-assistant/core 并进入目录，然后 pip install -r requirements.txt，创建 config 目录后运行 python -m homeassistant --config ./config 启动。启动成功后访问 http://localhost:8123 完成首次配置向导，并告诉我如何添加一个虚拟灯实体和一条「人走灯灭」的简单自动化，遇到依赖报错请直接修复并说明原因。"
       }
     }
   }
