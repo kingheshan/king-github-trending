@@ -6451,6 +6451,96 @@
         ],
         "agentInstallPrompt": "请在本机试跑 Home Assistant Core：先确认已安装 Python 3.12+ 与 git、pip，创建并激活虚拟环境（python3 -m venv .venv && source .venv/bin/activate），执行 git clone https://github.com/home-assistant/core 并进入目录，然后 pip install -r requirements.txt，创建 config 目录后运行 python -m homeassistant --config ./config 启动。启动成功后访问 http://localhost:8123 完成首次配置向导，并告诉我如何添加一个虚拟灯实体和一条「人走灯灭」的简单自动化，遇到依赖报错请直接修复并说明原因。"
       }
+    },
+    "repo:Tencent/BrowserSkill": {
+      "type": "repo-insight",
+      "hash": "1485f0737d9376f506257787",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-17T22:00:23.727Z",
+      "value": {
+        "summaryZh": "BrowserSkill 是腾讯开源的浏览器自动化工具，由 CLI 与浏览器扩展组成，让 AI Agent 复用本机已登录的真实浏览器，无需另起无头实例或重复登录。它把点击、输入、导航、读取页面等能力暴露给任何支持 shell 的 Agent，TypeScript 实现，便于二次开发。适合 Agent 工具链开发者、需自动化登录态页面的工程师与测试团队。",
+        "scenarios": [
+          "让 AI Agent 在你已登录的后台系统里自动填表、点按钮、导出报表，全程无需重新登录或人工接管。",
+          "为本地或远程 Agent 补上浏览器操作能力：查资料、抓取登录后才能访问的页面数据、串联多步骤网页流程。",
+          "前端与测试同学用 CLI 脚本跑端到端网页回归，直接复用真实浏览器环境和登录态，减少维护独立测试实例的成本。"
+        ],
+        "agentInstallPrompt": "请把 https://github.com/Tencent/BrowserSkill 克隆到本地，先通读 README 与 package.json，理清 CLI 与浏览器扩展两部分各自的职责和启动方式。用项目指定的包管理器安装依赖并完成构建；按文档把扩展以开发者模式加载到 Chrome 或 Edge，再在本地启动 CLI 服务，确认它与扩展成功建立连接。随后写一个最小验证脚本：让 Agent 新开标签页、访问一个示例网站、读取页面标题并截图，把完整运行日志、报错与踩坑点整理成中文说明，最后给出我在自己项目中接入该工具的最短步骤清单。"
+      }
+    },
+    "repo:anthropics/claude-code": {
+      "type": "repo-insight",
+      "hash": "3e32de1893c4d7420a4a8c3b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-17T22:00:28.579Z",
+      "value": {
+        "summaryZh": "Claude Code 是 Anthropic 官方推出的终端内智能编码代理，使用 TypeScript 编写。它常驻命令行，能理解整个代码仓库上下文，通过自然语言指令完成日常开发任务：解释复杂代码、批量修改文件、执行测试与构建、处理 Git 提交与分支等。亮点是与终端工作流无缝集成，无需切换 IDE，可读写本地文件、运行 shell 命令，并支持 MCP 扩展与自定义命令。该项目仓库同时用于发布变更日志与收集问题反馈。适合习惯命令行的开发者、希望自动化重复编码任务的团队，以及想把 AI 代理接入脚本或 CI 流程的工程师。",
+        "scenarios": [
+          "在已有 Git 仓库中用自然语言让 Claude Code 解释陌生模块的调用链、定位 bug 并直接生成修复补丁",
+          "让 Claude Code 自动执行例行任务，如跑测试、格式化代码、生成提交信息并完成 git 提交与分支切换",
+          "把 Claude Code 集成到终端脚本或 CI 流程中，按预设提示词批量处理代码审查、文档补全与重构建议"
+        ],
+        "agentInstallPrompt": "请帮我在本机安装并试跑 Claude Code（https://github.com/anthropics/claude-code）。步骤：1) 检查 Node.js 版本是否 ≥18，如不满足先提示我升级；2) 执行 npm install -g @anthropic-ai/claude-code 安装，若权限报错则改用 sudo 或配置 npm 全局目录；3) 运行 claude --version 与 claude doctor 验证安装状态；4) 在一个已有的 Git 仓库目录下执行 claude 启动交互式会话，引导我用 /login 完成 Anthropic 账号或 API key 授权；5) 让我输入“解释这个仓库的目录结构和主要模块”，确认它能读取代码并返回结果。过程中请把每条命令、输出和报错原样汇总给我，遇到失败先给排查方案再执行。"
+      }
+    },
+    "repo:cilium/cilium": {
+      "type": "repo-insight",
+      "hash": "052132ec44d2c95bdb935584",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-17T22:00:37.771Z",
+      "value": {
+        "summaryZh": "Cilium 是基于 eBPF 的云原生网络、安全与可观测性方案，为 Kubernetes 和容器提供高性能数据面，可替代 kube-proxy，支持 L3/L4/L7 策略、身份隔离、负载均衡、服务网格与 Hubble 可视化。项目已从 CNCF 毕业，社区活跃、生产验证充分，适合云原生平台工程师、SRE 与网络安全团队构建大规模容器网络。",
+        "scenarios": [
+          "在 Kubernetes 集群中用 Cilium 替换 kube-proxy，实现高性能 Service 负载均衡与统一网络策略管控。",
+          "为多租户或微服务环境配置基于身份（identity）的 L3-L7 安全隔离策略，替代零散难维护的 iptables 规则。",
+          "借助 Hubble 与 eBPF 数据面做流量可视化、故障排查和安全审计，观测服务间调用延迟与丢包情况。"
+        ],
+        "agentInstallPrompt": "请在本机帮我试跑 Cilium：第一步用 kind 创建集群，配置中设置 disableDefaultCNI: true 和 kubeProxyMode: none，避免与默认 CNI 冲突；第二步安装 Cilium CLI（可用 brew install cilium-cli 或官方安装脚本），执行 cilium install --version 指定最新稳定版；第三步用 cilium status --wait 确认各组件就绪，再运行 cilium connectivity test 验证网络连通性与策略生效；第四步执行 cilium hubble enable --ui 并打开 Hubble UI 查看服务流量。请逐步输出每一条命令、关键日志与失败原因分析，如遇镜像拉取超时，给出可用的镜像源或离线加载替代方案。"
+      }
+    },
+    "repo:TencentCloud/Octop": {
+      "type": "repo-insight",
+      "hash": "0168e773261c76f92c470c36",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-17T22:00:46.089Z",
+      "value": {
+        "summaryZh": "Octop 是腾讯云开源的 Python 自托管 AI 助手，主打多用户与多智能体：可为不同成员分配独立会话和权限，也能让多个 Agent 分工协作、调用工具完成复杂任务。项目可私有化部署，数据留在自有服务器，方便接入自建或第三方大模型，适合企业内部知识问答、自动化流程与个人助理场景。面向希望掌控数据与成本的开发者、运维及中小团队，支持二次开发与扩展。",
+        "scenarios": [
+          "在企业内网私有化部署多用户 AI 助手，为不同部门或成员分配独立会话与权限，并接入内部知识库做问答。",
+          "用多智能体编排复杂任务，例如一个 Agent 检索资料、一个总结成报告、另一个调用工具执行并发布结果。",
+          "个人或小团队搭建可自托管的通用助理，接入自建或第三方大模型，用于写作、代码问答与日常流程自动化。"
+        ],
+        "agentInstallPrompt": "请在本机部署并试跑 TencentCloud/Octop（Python 自托管的多用户、多智能体 AI 助手）。步骤：1）确认 Python 3.10+ 等基础环境，git clone https://github.com/TencentCloud/Octop 到工作目录并阅读 README；2）按文档创建虚拟环境、安装依赖（如 pip install -r requirements.txt 或 uv/pipx 方式）；3）复制示例配置文件，填入可用的模型 API Key 及数据库/存储配置，密钥只放本地环境变量，不要提交到仓库；4）按说明启动后端服务与前端界面，用默认管理员账号登录，新建一个测试用户验证多用户隔离；5）跑通一次普通对话和一个多智能体协作示例，遇到报错先查 README 与 Issues，最后把关键命令、配置改动和运行结果汇报给我。"
+      }
+    },
+    "repo:coder/coder": {
+      "type": "repo-insight",
+      "hash": "067cbf35b61920310c6e4704",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-17T22:00:52.437Z",
+      "value": {
+        "summaryZh": "Coder 是一个用 Go 编写的自托管远程开发环境平台，通过 Terraform 模板把开发工作区统一调度到 Kubernetes、虚拟机或云主机上，开发者用浏览器或本地 IDE 即可接入。它内置 RBAC、审计日志、SSO、网络隔离与自动休眠，保证源码与密钥不落在终端设备上；新版本还支持为 AI 编程代理提供隔离的安全运行环境，适合平台工程团队与有合规要求的中大型研发组织。",
+        "scenarios": [
+          "为分布式团队或外包人员提供统一云端开发环境，代码与依赖留在企业内网，成员用浏览器或 VS Code Remote 接入，离职即回收。",
+          "在 Kubernetes 上用 Terraform 模板批量创建高配或 GPU 工作区，供 AI 编程代理与数据科学任务隔离运行，任务结束自动销毁以节省成本。",
+          "满足金融、医疗等合规场景：通过 SSO、RBAC、网络策略与审计日志，精确控制谁能访问哪个仓库的代码与敏感数据。"
+        ],
+        "agentInstallPrompt": "请在本机帮我快速试跑 coder/coder：先检查 Docker 是否可用，然后执行 docker run --rm -it -p 7080:7080 -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/coder/coder:latest 启动服务，等日志就绪后访问 http://localhost:7080 完成首个管理员账号注册；接着用 curl -L https://coder.com/install.sh | sh 安装 coder CLI，执行 coder login http://localhost:7080，再通过 coder templates create 部署一个 Docker 模板，并创建一个工作区用 coder ssh 验证可正常进入。若 7080 端口被占用请自动换端口，并把每一步执行的命令、关键输出和访问地址汇报给我。"
+      }
+    },
+    "repo:n8n-io/n8n": {
+      "type": "repo-insight",
+      "hash": "0a25ac15872873fb0e1ff46f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-17T22:01:01.248Z",
+      "value": {
+        "summaryZh": "n8n 是一款 fair-code 工作流自动化平台，用可视化节点画布搭建流程，也能插入 JavaScript/Python 自定义代码，兼顾低代码效率与工程可控性。原生支持 LLM 节点、AI Agent、向量库与工具调用，可构建 RAG 等 AI 应用，并内置 400+ 集成，自托管或云端均可，数据可留在自有服务器。适合自动化工程师、后端开发者与想快速落地 AI 流程的团队。",
+        "scenarios": [
+          "把内部 CRM、数据库与 Slack/飞书等工具打通：表单提交后自动建档、分配销售并推送通知，替代人工搬运数据。",
+          "用 AI Agent 加向量库节点搭建企业知识库问答或工单自动分类，把 LLM 调用、检索与人工审核串成一条可观测流程。",
+          "在自托管环境中定时抓取 API 与日志，清洗后写入数据仓库或触发告警，作为轻量编排层替代零散脚本与 cron。"
+        ],
+        "agentInstallPrompt": "请在本机帮我把 n8n 跑起来并验证可用。步骤：1）检查 Docker 与 Docker Compose 是否已安装，缺失则提示我用哪种方式安装；2）新建目录 n8n-demo，在其中写 docker-compose.yml，使用镜像 docker.n8n.io/n8nio/n8n，端口映射 5678:5678，把 ./data 挂载到 /home/node/.n8n，设置环境变量 GENERIC_TIMEZONE=Asia/Shanghai 与 N8N_SECURE_COOKIE=false 以便本地访问；3）执行 docker compose up -d，等待容器就绪，用 curl 访问 http://localhost:5678/healthz 确认返回正常；4）告诉我浏览器访问地址、首次创建 owner 账号的步骤，以及如何查看日志、停止和升级容器。如果我更想从源码运行，则改为克隆仓库、用 pnpm 安装依赖并执行 pnpm dev，并说明所需 Node 版本。"
+      }
     }
   }
 }
