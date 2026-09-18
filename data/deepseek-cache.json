@@ -2793,17 +2793,17 @@
     },
     "repo:alibaba/open-code-review": {
       "type": "repo-insight",
-      "hash": "6fb461e09c4cc79be604f3eb",
+      "hash": "1ce493bdc6016669f98b324e",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-14T22:00:10.614Z",
+      "generatedAt": "2026-09-18T22:00:13.073Z",
       "value": {
-        "summaryZh": "阿里巴巴开源的 open-code-review（Go），经阿里超大规模验证的高效代码审查工具。采用混合架构：确定性流水线做静态规则扫描，LLM Agent 做语义理解与建议生成，输出精确到行级的评论。内置多语言规则集，覆盖 NPE、线程安全、XSS、SQL 注入等缺陷，兼容 OpenAI 与 Anthropic 接口。适合把它接入 CI/CD 的研发团队、关注成本与准确率的效能负责人，以及需要私有化审查平台的开发者。",
+        "summaryZh": "open-code-review 是阿里巴巴开源、经阿里内部实战检验的代码审查工具，采用混合架构：确定性流水线负责规则匹配与精准定位，LLM Agent 负责语义理解与解释，输出精确到行的审查评论。内置多语言规则集，覆盖空指针、线程安全、XSS、SQL 注入等缺陷，兼容 OpenAI 与 Anthropic 接口。适合要把 AI 代码审查嵌入 CI/CD 的研发与安全团队。",
         "scenarios": [
-          "在 CI/CD 中为 Pull Request 自动生成行级审查评论，拦截空指针、线程安全、XSS、SQL 注入等高频缺陷，减少人工 Review 负担。",
-          "团队已有大模型网关时，用 OpenAI 或 Anthropic 兼容接口接入自研模型，做私有化、低成本、可控 token 消耗的代码质量门禁。",
-          "对历史仓库做批量扫描与治理，输出结构化问题清单，用于技术债盘点、安全合规检查或新人代码规范培训。"
+          "在 CI/CD 流水线中对 Pull Request 自动执行行级代码审查，在合并前拦截空指针、SQL 注入、XSS 等缺陷",
+          "接入自建或第三方的 OpenAI/Anthropic 兼容模型，对 Go、Java 等多语言仓库做增量审查并输出精确到行的修复建议",
+          "安全与平台团队在上线前批量扫描存量代码库，梳理线程安全、注入类风险并跟踪整改"
         ],
-        "agentInstallPrompt": "请帮我在本地跑通 alibaba/open-code-review。步骤：1）克隆 https://github.com/alibaba/open-code-review 并阅读 README，确认 Go 版本要求与构建/安装命令；2）用 go build 或 README 指定方式编译出 CLI，缺失依赖自动补全；3）按 README 创建配置文件，填入 OpenAI 或 Anthropic 兼容的 base_url、api_key、model，并说明环境变量名；4）在一个小型测试仓库上执行一次完整审查，最好针对包含空指针或 SQL 拼接的示例文件，验证内置多语言规则与 LLM Agent 混合流程；5）把输出整理成行级评论示例，并给出接入 CI/CD（如 GitHub Actions）的最小配置片段与常见报错排查清单。若某步骤在仓库中缺少文档，请明确指出并给出你的推断依据。"
+        "agentInstallPrompt": "请在本机安装并试跑 alibaba/open-code-review：先确认已安装 Go 1.21+ 与 Git；然后 git clone https://github.com/alibaba/open-code-review 并进入目录，执行 go mod download 与 go build ./... 验证编译通过。接着参照 README 创建配置文件，填入 OpenAI 或 Anthropic 兼容的 base_url、api_key 与 model 名称，并指定待审查的本地仓库或 diff 范围。随后用构建出的二进制对一个示例仓库运行扫描，检查是否输出精确到行的审查评论与规则命中信息。若构建或运行失败，请阅读错误日志修复依赖后重试，最后给出一份可复现的安装与运行命令清单及注意事项。"
       }
     },
     "repo:andrewyng/aisuite": {
@@ -4128,17 +4128,17 @@
     },
     "repo:cathrynlavery/diagram-design": {
       "type": "repo-insight",
-      "hash": "8167d6e9df919df3778daef5",
+      "hash": "4401cb81fe2496ffb5dfaef7",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-20T22:01:29.654Z",
+      "generatedAt": "2026-09-18T22:00:50.202Z",
       "value": {
-        "summaryZh": "diagram-design 是一个为 AI 编程工具（如 Claude Code、Codex、Pi）设计的图表模板库，包含 38 种编辑级图表类型。所有图表均采用自包含的 HTML + SVG 实现，无外部依赖，风格简洁明快，明确摒弃阴影和 Mermaid 风格的粗糙输出。该项目旨在提供专业、可直接嵌入的图表方案，适合需要高质量视觉呈现的开发者、内容创作者和 AI 代理场景，可快速生成流程图、架构图、概念图等，并保持设计一致性与印刷级品质。",
+        "summaryZh": "diagram-design 是一套面向 Claude Code、Codex、Pi 等 AI 编码代理的编辑级图表设计规范与模板，主张用自包含的 HTML + SVG 取代 Mermaid 生成流程图、架构图与时序图。它强调排版、留白与克制的配色，明确禁用阴影等视觉噪音，产出可直接嵌入文档、幻灯片或网页的矢量图。文件零依赖、可离线渲染，便于版本管理与审阅。适合需要高质量技术配图的工程师、技术写作者、开源项目维护者，以及把 AI 代理接入文档流水线的团队。",
         "scenarios": [
-          "在 AI 编程助手中快速生成专业、无冗余装饰的 SVG 图表，用于技术文档或演示。",
-          "作为设计师或开发者的图表资源库，直接引用或修改 HTML+SVG 模板以适配具体项目。",
-          "用于自动化工作流，让 AI 代理根据需求挑选合适的图表类型并输出一致风格的视觉内容。"
+          "为技术博客、README 或设计文档生成风格统一的架构图与流程图，直接输出可嵌入的自包含 HTML+SVG 文件。",
+          "在方案评审或对外汇报中，用编辑级排版替代默认 Mermaid 主题，快速产出配色克制、无阴影的清晰示意图。",
+          "把图表生成步骤接入 CI 或内部知识库流程，让 AI 代理批量生成可版本管理、可 diff 的矢量插图。"
         ],
-        "agentInstallPrompt": "请克隆仓库 https://github.com/cathrynlavery/diagram-design，并查看 README 或文件结构。该项目为纯 HTML+SVG 图表模板，无需安装依赖。请选择一个示例文件（如 index.html 或 templates 目录下的某个图表），在浏览器中打开验证效果。若需集成，可将 SVG 代码直接复制到目标项目中，或根据需求调整样式属性（如颜色、尺寸）。试跑时建议先运行本地静态文件服务器（如 python -m http.server）以避免浏览器安全限制。"
+        "agentInstallPrompt": "请帮我试用 cathrynlavery/diagram-design 这个仓库：先把 https://github.com/cathrynlavery/diagram-design 克隆到本地（或作为子目录），通读仓库中的 README、模板与样式规范，总结它的图表结构约定（自包含 HTML + SVG、无阴影、非 Mermaid）。然后以“一个请求经过 API 网关、鉴权服务、业务服务与数据库的数据流”为主题，按该规范新建一个自包含 HTML 文件保存到 diagrams/ 目录，要求纯 SVG 绘制、内联样式、无外部依赖、可直接双击在浏览器打开。完成后告诉我文件路径、如何预览，以及如果要改成我自己的图表需要调整哪几处。"
       }
     },
     "repo:macro-inc/macro": {
@@ -6540,6 +6540,82 @@
           "在自托管环境中定时抓取 API 与日志，清洗后写入数据仓库或触发告警，作为轻量编排层替代零散脚本与 cron。"
         ],
         "agentInstallPrompt": "请在本机帮我把 n8n 跑起来并验证可用。步骤：1）检查 Docker 与 Docker Compose 是否已安装，缺失则提示我用哪种方式安装；2）新建目录 n8n-demo，在其中写 docker-compose.yml，使用镜像 docker.n8n.io/n8nio/n8n，端口映射 5678:5678，把 ./data 挂载到 /home/node/.n8n，设置环境变量 GENERIC_TIMEZONE=Asia/Shanghai 与 N8N_SECURE_COOKIE=false 以便本地访问；3）执行 docker compose up -d，等待容器就绪，用 curl 访问 http://localhost:5678/healthz 确认返回正常；4）告诉我浏览器访问地址、首次创建 owner 账号的步骤，以及如何查看日志、停止和升级容器。如果我更想从源码运行，则改为克隆仓库、用 pnpm 安装依赖并执行 pnpm dev，并说明所需 Node 版本。"
+      }
+    },
+    "repo:Fission-AI/OpenSpec": {
+      "type": "repo-insight",
+      "hash": "c479af484be7115db47890ed",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-18T22:00:18.813Z",
+      "value": {
+        "summaryZh": "OpenSpec 是面向 AI 编程助手的规范驱动开发（SDD）工具，使用 TypeScript 编写。它主张在你和 Claude Code、Cursor 等助手动手写代码之前，先在仓库内统一的 openspec/ 目录中沉淀提案、需求变更与规范增量，让“先对齐、再实现、后归档”变成可审查、可追踪的流程。它自带 CLI 与校验命令，生成的 Markdown 规范既方便人类 review，也能被 agent 直接读取当作上下文。适合希望用 AI 加速但又被代码漂移、需求走样和反复返工困扰的团队与独立开发者。",
+        "scenarios": [
+          "新功能开工前，先让 AI 助手把需求拆成 openspec 变更提案与规范增量，人工确认后再进入编码，降低返工率。",
+          "接手或改造遗留项目时，把现有系统行为沉淀成 spec，为 AI 提供稳定上下文，避免它凭猜测大范围乱改。",
+          "多人或多 agent 并行协作时，用统一的 openspec/ 目录与校验命令对齐接口约定，并在完成后归档变更历史。"
+        ],
+        "agentInstallPrompt": "请先确认本机已安装 Node.js 18+ 与 npm，然后在目标项目根目录执行 npm install -g @fission-ai/openspec 安装 OpenSpec CLI，接着运行 openspec init 初始化 openspec/ 目录，并按提示选择我正在使用的 AI 助手（如 Claude Code、Cursor）。初始化完成后，阅读 openspec/project.md 与 AGENTS.md，用 openspec list 和 openspec show 查看已有规范与变更，然后为我演示一个最小流程：新建一个变更提案、编写对应的 spec 增量、运行 openspec validate 校验，最后汇报结果。在我明确确认前，不要修改任何业务代码；若上述命令与实际不符，请以 openspec --help 的真实输出为准，并告知我差异。"
+      }
+    },
+    "repo:supermemoryai/supermemory": {
+      "type": "repo-insight",
+      "hash": "62aff9dd499d283b1e381233",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-18T22:00:26.483Z",
+      "value": {
+        "summaryZh": "Supermemory 是面向 AI 时代的记忆与上下文引擎，附带可直接运行的 TypeScript 应用。它为 LLM 提供统一记忆 API，可快速写入、检索与召回对话历史、用户偏好和知识片段，支持向量与关系检索，主打高吞吐、低延迟、易扩展。最大亮点是支持完全本地化部署，数据不出内网。适合开发 AI 助手、客服机器人、个人知识库的团队与独立开发者。",
+        "scenarios": [
+          "为 LLM 聊天助手接入长期记忆，让模型记住用户偏好、历史会话与项目上下文，减少重复提问。",
+          "企业内部知识库与客服机器人：本地化部署 Supermemory，敏感数据不出内网即可完成检索增强生成（RAG）。",
+          "个人 AI 笔记或第二大脑应用：把散落的文章、邮件、聊天记录统一写入记忆 API，随时按语义检索调用。"
+        ],
+        "agentInstallPrompt": "请在本地克隆并试跑 supermemoryai/supermemory：先确认已安装 Node.js 20+、pnpm 与 Docker，然后执行 git clone https://github.com/supermemoryai/supermemory && cd supermemory && pnpm install。阅读 README 与 .env.example，复制为 .env 并按要求填写本地部署变量（数据库与向量库连接、服务端口等）。用 Docker 或项目自带脚本启动依赖服务，再运行 pnpm dev 启动应用。启动后用 curl 调用记忆 API 做冒烟测试：写入一条测试记忆，再检索验证返回结果。最后把启动命令、访问地址、测试结果和遇到的问题总结给我。"
+      }
+    },
+    "repo:tradesdontlie/tradingview-mcp": {
+      "type": "repo-insight",
+      "hash": "aa1ec3e398c72d37a491b12b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-18T22:00:37.347Z",
+      "value": {
+        "summaryZh": "tradingview-mcp 通过 MCP 协议把 Claude Code 等 AI 助手接入本地 TradingView Desktop，让 AI 读取当前图表、切换品种与周期、绘制趋势线与标注，实现个人看盘与复盘自动化。纯 JavaScript 本地运行，无需官方 API Key。适合量化交易爱好者与想用 AI 做看盘的开发者。",
+        "scenarios": [
+          "让 Claude Code 读取当前 TradingView 图表，自动产出品种、周期、关键价位与趋势结构的文字解读，直接写入交易日志或复盘笔记。",
+          "按自选列表批量切换标的与时间周期，抓取多张图表状态并汇总相对强弱，快速完成盘前扫描与热点筛选。",
+          "复盘时由 AI Agent 在图表上绘制趋势线、支撑阻力位与标注，并输出结构化的复盘报告草稿，减少重复手工操作。"
+        ],
+        "agentInstallPrompt": "请在这台机器上安装并试跑 tradesdontlie/tradingview-mcp：先 git clone https://github.com/tradesdontlie/tradingview-mcp 并进入目录，执行 npm install；阅读 README 与 package.json，确认启动命令、所需环境变量以及 TradingView Desktop 调试端口等前置条件。然后把这个 MCP Server 写入 Claude Code 的 MCP 配置（claude_desktop_config.json 或 ~/.claude.json 中的 mcpServers 段），确保本机已安装 TradingView Desktop 并以允许远程调试的方式启动，重启 Claude Code 后列出可用工具，调用一次读取当前图表信息来验证连通性。若失败，请排查端口占用、Node 版本与绝对路径问题，最后给出可直接粘贴的完整配置片段和一条可复现的测试命令。"
+      }
+    },
+    "repo:rustfs/rustfs": {
+      "type": "repo-insight",
+      "hash": "1cc35a5134b5e7860e22ebd8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-18T22:00:41.377Z",
+      "value": {
+        "summaryZh": "RustFS 是使用 Rust 编写的高性能对象存储系统，兼容 S3 API，可与 MinIO、Ceph 等已有 S3 平台数据迁移并双活共存，方便平滑替换或混合部署。项目强调低内存占用、高并发吞吐与从单机到集群的横向扩展，提供 Docker、Kubernetes 等部署方式和 Web 控制台，适合需要自建存储的运维与后端工程师，也适合搭建 AI 训练数据湖、备份归档或边缘对象存储的独立开发者。",
+        "scenarios": [
+          "已有 MinIO 或 Ceph 集群的用户，想在不中断业务的前提下把数据迁移到 RustFS，并在一段时间内让两套 S3 存储并行提供服务。",
+          "在私有化或边缘环境中搭建 S3 兼容对象存储，用于保存日志、备份归档、模型权重和数据集，要求资源占用低且吞吐高。",
+          "为 AI/ML 训练流水线提供统一的数据湖底座，通过标准 S3 SDK 让训练任务、Spark、Flink 等组件直接读写对象。",
+          "在本地或 Kubernetes 集群中快速起一个兼容 S3 的存储服务，替代云厂商对象存储以降低测试与开发成本。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 RustFS 这个开源 S3 兼容对象存储。步骤：1) 克隆仓库 https://github.com/rustfs/rustfs 到本地并查看 README，确认推荐的部署方式（优先 Docker Compose，其次源码 cargo build --release）；2) 若用 Docker，拉起服务并暴露 S3 API 与控制台端口，记录默认的访问密钥、端口和持久化目录；3) 安装并配置 aws-cli，创建别名指向本机端点，执行 aws s3 mb 建桶、上传下载一个测试文件、列出对象，验证 S3 兼容性；4) 输出一份简要报告，包含启动命令、端口、访问凭证、验证结果以及常见坑（如签名 region 配置、路径风格寻址）。如果环境缺少 Docker 或 Rust 工具链，请先说明并给出替代方案。"
+      }
+    },
+    "repo:ahmedkhaleel2004/gitdiagram": {
+      "type": "repo-insight",
+      "hash": "a1f8920160e5f60b24b45a9d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-18T22:00:46.151Z",
+      "value": {
+        "summaryZh": "gitdiagram 是免费、简洁、快速的开源工具：输入任意 GitHub 仓库地址，即可自动生成可交互的架构与流程图，几分钟看懂陌生代码库。它用 TypeScript 与 Next.js 构建，经 GitHub API 抓取目录结构，由大模型生成 Mermaid 图表，支持缩放、点击节点跳转到对应文件，并带缓存所以响应很快。适合快速熟悉新项目的开发者、做技术评审与代码走查的工程师，以及想为开源项目补架构图的维护者。",
+        "scenarios": [
+          "接手或参与一个陌生开源项目时，先输入仓库地址生成交互式架构图，快速定位入口文件、核心模块与调用关系，再决定从哪读起。",
+          "技术评审、方案分享或新人 onboarding 时，把生成的图当作讲解底稿，点击节点即可跳到对应源码，边讲边看实现细节。",
+          "为自己维护的开源项目补一份可视化架构说明，截图或链接放进 README，降低外部贡献者的理解与上手门槛。"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 gitdiagram 这个开源项目：1) 执行 git clone https://github.com/ahmedkhaleel2004/gitdiagram 并进入目录；2) 阅读 README，确认包管理器（通常为 pnpm，必要时先 corepack enable）；3) 安装依赖，并按 .env.example 创建 .env.local，提示我需要填写哪些变量（如 OPENAI_API_KEY、GITHUB_TOKEN，以及可选的 Supabase/Upstash 缓存配置），缺少的变量告诉我从哪里申请；4) 启动开发服务器并告诉我访问地址；5) 用 https://github.com/vercel/next.js 作为示例仓库试跑一次生成流程图，若报错请定位原因并给出修复命令，最后汇总我本地需要保留的配置和常用命令。"
       }
     }
   }
