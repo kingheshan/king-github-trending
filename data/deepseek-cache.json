@@ -4263,17 +4263,17 @@
     },
     "repo:cactus-compute/needle": {
       "type": "repo-insight",
-      "hash": "203dfc07c96ab07c0d14de92",
+      "hash": "9c36d6b7250028321f9d9331",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-12T22:01:28.874Z",
+      "generatedAt": "2026-09-19T22:00:46.361Z",
       "value": {
-        "summaryZh": "needle 是一个专为微型设备设计的极轻量级基础模型，模型大小仅约 14MB，可用于手机、可穿戴设备、智能家居和机器人等资源受限场景。它采用 Python 实现，旨在提供高效、低功耗的本地化 AI 推理能力，无需依赖云端服务。该项目的核心亮点是极小的模型体积和低计算需求，使其能够直接在边缘设备上运行，同时保持较好的性能。适合嵌入式开发者、物联网工程师以及边缘计算爱好者，有助于快速在小型硬件上部署智能功能。",
+        "summaryZh": "Needle 是面向微型设备的自动化基础模型，采用 2-bit 量化，体积仅 8–29MB，可在手机、可穿戴设备、智能家居、机器人、汽车乃至单片机上本地运行。它支持工具调用、结构化信息抽取与向量嵌入，让端侧设备无需联网即可完成意图理解与函数调度，兼顾低延迟与隐私保护。适合嵌入式开发者、端侧 AI 工程师、IoT 与机器人团队，以及希望为小型硬件加入自然语言交互和自动化能力的开发者。",
         "scenarios": [
-          "在智能家居设备中，例如智能音箱或传感器节点，运行离线语音命令识别和场景理解，提升响应速度并保护隐私。",
-          "用于可穿戴设备（如手表、手环）上的健康数据实时分析，包括活动识别、异常心率检测等，实现端侧智能决策。",
-          "为移动端应用提供轻量级 AI 能力，如离线图像分类、文本生成或智能回复，降低对网络连接的依赖。"
+          "在手机或可穿戴设备上离线运行语音助手：本地解析用户意图并触发工具调用，避免云端往返与隐私外泄。",
+          "智能家居与单片机场景做结构化抽取：从简短指令中提取设备、动作、参数等字段，直接驱动控制逻辑。",
+          "机器人与汽车端侧做轻量语义嵌入与检索：在低算力芯片上完成文本向量化，支撑本地命令匹配与记忆检索。"
         ],
-        "agentInstallPrompt": "请克隆 GitHub 仓库 cactus-compute/needle，并按照 README 的指引完成安装。首先确保 Python 环境为 3.8 及以上，然后运行 pip install -r requirements.txt 安装依赖。接着下载预训练模型文件（如果仓库未自带，请从发布的模型版本下载），并运行提供的示例脚本，例如 python examples/demo.py，以验证模型在本地设备上的推理效果。注意检查项目是否包含针对 CPU 或特定硬件的优化选项，并根据目标设备调整运行参数。"
+        "agentInstallPrompt": "请帮我在本地跑通 cactus-compute/needle。步骤：1) git clone https://github.com/cactus-compute/needle 并进入目录；2) 用 Python 3.10+ 创建虚拟环境并安装 README 中列出的依赖（如 requirements.txt 或 pyproject.toml）；3) 下载或转换 2-bit 量化模型权重，确认体积在 8–29MB 区间；4) 运行仓库自带示例，分别验证工具调用、结构化抽取和嵌入三类能力；5) 写一个最小脚本：输入一句中文指令，输出结构化 JSON 与一次工具调用结果，并打印耗时与内存占用；6) 把可复现的命令、依赖版本、模型文件来源和踩坑记录整理成 RUN.md。"
       }
     },
     "repo:kunchenguid/firstmate": {
@@ -6616,6 +6616,81 @@
           "为自己维护的开源项目补一份可视化架构说明，截图或链接放进 README，降低外部贡献者的理解与上手门槛。"
         ],
         "agentInstallPrompt": "请帮我在本地跑通 gitdiagram 这个开源项目：1) 执行 git clone https://github.com/ahmedkhaleel2004/gitdiagram 并进入目录；2) 阅读 README，确认包管理器（通常为 pnpm，必要时先 corepack enable）；3) 安装依赖，并按 .env.example 创建 .env.local，提示我需要填写哪些变量（如 OPENAI_API_KEY、GITHUB_TOKEN，以及可选的 Supabase/Upstash 缓存配置），缺少的变量告诉我从哪里申请；4) 启动开发服务器并告诉我访问地址；5) 用 https://github.com/vercel/next.js 作为示例仓库试跑一次生成流程图，若报错请定位原因并给出修复命令，最后汇总我本地需要保留的配置和常用命令。"
+      }
+    },
+    "repo:higgsfield-ai/higgsfield": {
+      "type": "repo-insight",
+      "hash": "97f8d45d0802f273fcd93e48",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-19T22:00:11.799Z",
+      "value": {
+        "summaryZh": "Higgsfield 是面向超大规模模型训练的容错型 GPU 编排与机器学习框架，覆盖数十亿到万亿参数的分布式训练。它把集群调度、GPU 资源编排与训练运行时整合在一起，强调高可扩展与故障自愈，让长周期任务在节点掉线或异常时仍能持续推进，减少人工重跑成本。项目以 Jupyter Notebook 为主要形态，便于阅读源码、跑通示例并做二次开发。适合做大模型预训练与后训练的算法工程师、负责分布式训练平台的 MLOps 工程师，以及需要自建 GPU 集群调度方案的团队做技术选型参考。",
+        "scenarios": [
+          "自建多机多卡 GPU 集群，训练百亿到万亿参数大模型，需要节点故障自动恢复与任务续跑",
+          "为现有训练流水线引入统一调度层，提升 GPU 利用率并统一管理分布式训练作业",
+          "在 Jupyter Notebook 环境中快速验证框架的容错与扩展能力，评估是否接入生产训练平台"
+        ],
+        "agentInstallPrompt": "请帮我在本机试用 GitHub 项目 higgsfield-ai/higgsfield（https://github.com/higgsfield-ai/higgsfield）。步骤：1) 先克隆仓库并阅读 README、目录结构与依赖声明，用中文总结项目定位、核心模块（GPU 编排、容错调度、训练框架）和运行前置条件；2) 检查本机环境（Python 版本、CUDA/驱动、可用 GPU 数量、conda 或 venv），创建一个独立虚拟环境并按仓库说明安装依赖，若遇到版本冲突给出可用的替代版本方案；3) 优先运行仓库中的 Jupyter Notebook 示例或最小可跑 demo，若需要多卡或多机，先用单机单卡跑通最小闭环；4) 记录完整命令、报错信息与解决办法，把安装与试跑步骤整理成中文文档，并在末尾列出尚未验证的假设与下一步建议。全程不要修改仓库原始示例逻辑，如需改动请单独新建文件。"
+      }
+    },
+    "repo:docling-project/docling": {
+      "type": "repo-insight",
+      "hash": "e834780f5a1e51e6bcad77a7",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-19T22:00:20.961Z",
+      "value": {
+        "summaryZh": "Docling 是 LF AI & Data 托管的开源文档解析库，能把 PDF、DOCX、PPTX、XLSX、HTML、图片及音频转成结构化 Markdown/JSON，为 RAG 与生成式 AI 备好语料。内置版面分析、阅读顺序还原、表格与公式识别，可按需启用 OCR 与视觉语言模型，支持本地离线运行。自带分块器，并与 LangChain、LlamaIndex、Haystack 集成，适合搭建知识库的算法工程师与需批量解析文档的团队。",
+        "scenarios": [
+          "把上千页 PDF 年报、研报、扫描件批量转成 Markdown/JSON，清洗后灌入向量库，构建企业知识库问答。",
+          "在 RAG 流水线中做高精度分块与表格、公式、代码抽取，保留版面与阅读顺序，提升检索和引用溯源质量。",
+          "通过 Python API 或 MCP 服务让 AI Agent 直接读取本地合同、图纸、说明书并输出结构化字段，用于自动归档与信息抽取。"
+        ],
+        "agentInstallPrompt": "请在本机用 Python 3.10+ 创建虚拟环境并安装 Docling：pip install docling。然后准备一个测试文件（任选本地 PDF/DOCX，或从网上下载一份公开 PDF 存到 ./data/sample.pdf），先执行命令行验证：docling --to md --to json --output ./out ./data/sample.pdf；再编写 convert.py，使用 from docling.document_converter import DocumentConverter，调用 DocumentConverter().convert(source) 得到 doc，分别用 doc.document.export_to_markdown() 和 export_to_dict() 保存为 ./out/sample.md 与 ./out/sample.json，并打印 Markdown 前 500 字。若测试文件是扫描件，请加上 OCR 选项（--ocr 或 pipeline 选项）并确认 rapidocr/easyocr 等依赖已安装。最后汇报 Python 与 docling 版本、安装耗时、生成文件路径，以及解析中遇到的表格或公式问题。"
+      }
+    },
+    "repo:cloudflare/quiche": {
+      "type": "repo-insight",
+      "hash": "8a5a48dbff076bee2c3cccce",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-19T22:00:36.632Z",
+      "value": {
+        "summaryZh": "quiche 是 Cloudflare 用 Rust 实现的 QUIC 传输协议与 HTTP/3 库，长期承载其边缘网络流量，久经生产验证。它提供纯 Rust API，并通过 FFI 暴露 C 接口（curl 的 HTTP/3 支持即基于它），支持 0-RTT、连接迁移、CUBIC/BBR 拥塞控制与 qlog 调试，遵循 RFC 9000/9001/9114 等标准；仓库内含 quiche-client 与 quiche-server 示例程序，可快速完成端到端试验。项目维护活跃，配有模糊测试，适合自研 QUIC/HTTP3 客户端或网关、做协议研究与性能调优的 Rust 与系统工程师。",
+        "scenarios": [
+          "为自研 HTTP/3 网关或 CDN 边缘节点接入 QUIC 传输层，替代传统 TCP+TLS 栈",
+          "在 Rust 服务中嵌入 quiche 库，构建低延迟 QUIC 客户端/服务端并验证 0-RTT、连接迁移等特性",
+          "借助 quiche-client/quiche-server 与 qlog 输出做协议学习、互通性测试、性能基准与拥塞控制算法对比"
+        ],
+        "agentInstallPrompt": "请在本机克隆 https://github.com/cloudflare/quiche 并进入仓库根目录，安装 Rust 稳定工具链、cmake 与 C++ 编译器（用于构建 BoringSSL）；执行 cargo build --release 验证编译（若想避开 BoringSSL，可改用 --no-default-features --features rustls）。随后用仓库自带的示例证书 apps/src/bin/cert.crt 和 apps/src/bin/cert.key 启动服务端：cargo run --bin quiche-server -- --cert apps/src/bin/cert.crt --key apps/src/bin/cert.key --listen 127.0.0.1:4433；另开终端运行客户端：cargo run --bin quiche-client -- https://127.0.0.1:4433/ --no-verify。请确认 HTTP/3 请求成功，并汇报你使用的命令、关键日志输出，以及遇到的构建或运行报错和对应解决办法。"
+      }
+    },
+    "repo:ruanyf/weekly": {
+      "type": "repo-insight",
+      "hash": "309db1cf30cd9234940b59d7",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-19T22:00:42.886Z",
+      "value": {
+        "summaryZh": "ruanyf/weekly 是阮一峰维护的《科技爱好者周刊》仓库，每周五更新，汇总当周值得关注的科技新闻、开源项目、实用工具、技术文章与观点。内容以 Markdown 形式沉淀，历史期数完整可检索，中文表达精炼，信息密度高。适合开发者、产品经理、创业者与科技爱好者作为每周技术动态的固定信息源，也适合内容创作者参考选题与写作结构。",
+        "scenarios": [
+          "每周五一早快速浏览本期精选，用十分钟掌握技术圈本周热点与值得试用的新工具。",
+          "在团队周会或技术分享中挑选周刊里的开源项目与文章作为讨论素材。",
+          "为公众号、播客或内部邮件撰写科技资讯简报时，参考其选题角度与信息组织方式。"
+        ],
+        "agentInstallPrompt": "请帮我获取并使用阮一峰的科技爱好者周刊仓库：先执行 git clone https://github.com/ruanyf/weekly.git 并进入目录，阅读 README.md 了解期数与文件组织方式；然后定位最新一期内容（docs 目录下日期最新的 Markdown 文件或最新 Issue），用中文提炼该期的头条话题、推荐开源项目、实用工具和精彩言论各若干条；若 README 中提供了静态站点构建或预览脚本，请按其说明安装依赖并在本地启动预览，最后告诉我如何持续跟进后续更新。"
+      }
+    },
+    "repo:yynxxxxx/Codex-X": {
+      "type": "repo-insight",
+      "hash": "6a77947af7794bce5291725c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-19T22:00:54.940Z",
+      "value": {
+        "summaryZh": "Codex-X 是 OpenAI Codex 桌面端与 CLI 的可视化管理工具，用 Rust 编写、跨平台。它把手改 TOML 配置图形化，支持 Provider/API 一键切换、会话同步、提示词注入、Skills 与 MCP 管理，降低配置维护成本。适合常切换 API 的重度用户，以及需要统一管理提示词与 MCP 工具的开发者。",
+        "scenarios": [
+          "在多个 OpenAI 兼容 API 供应商之间频繁切换，需要一键更换 Base URL、模型与密钥，而不想每次手改 config.toml",
+          "把团队沉淀的提示词、Skills 与 MCP 服务器配置集中注入到 Codex 桌面端/CLI，保证成员环境一致",
+          "在不同机器之间同步 Codex 会话记录与配置，并在可视化面板里排查 MCP 连接、模型参数等设置问题"
+        ],
+        "agentInstallPrompt": "请帮我从 https://github.com/yynxxxxx/Codex-X 安装并试跑 Codex-X：1) 先检查本机是否已装 Rust 工具链（rustc、cargo），缺失则用 rustup 安装稳定版；2) git clone https://github.com/yynxxxxx/Codex-X 并进入仓库目录，阅读 README 确认构建方式；3) 执行 cargo build --release，若编译失败请读报错并补齐系统依赖；4) 运行 cargo run --release 启动图形界面，无 GUI 环境时改试 CLI 子命令并加 --help 查看用法；5) 启动后帮我导入现有 Codex 配置与 TOML，新增一个 Provider 与 API Key，验证 Provider 切换、会话同步、提示词注入和 Skills/MCP 管理是否正常；6) 最后把执行的命令、遇到的问题与验证结果整理成一份简要报告，不要擅自修改我的原始配置文件，先备份再操作。"
       }
     }
   }
