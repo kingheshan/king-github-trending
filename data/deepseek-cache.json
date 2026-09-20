@@ -6692,6 +6692,51 @@
         ],
         "agentInstallPrompt": "请帮我从 https://github.com/yynxxxxx/Codex-X 安装并试跑 Codex-X：1) 先检查本机是否已装 Rust 工具链（rustc、cargo），缺失则用 rustup 安装稳定版；2) git clone https://github.com/yynxxxxx/Codex-X 并进入仓库目录，阅读 README 确认构建方式；3) 执行 cargo build --release，若编译失败请读报错并补齐系统依赖；4) 运行 cargo run --release 启动图形界面，无 GUI 环境时改试 CLI 子命令并加 --help 查看用法；5) 启动后帮我导入现有 Codex 配置与 TOML，新增一个 Provider 与 API Key，验证 Provider 切换、会话同步、提示词注入和 Skills/MCP 管理是否正常；6) 最后把执行的命令、遇到的问题与验证结果整理成一份简要报告，不要擅自修改我的原始配置文件，先备份再操作。"
       }
+    },
+    "repo:BuilderIO/agent-native": {
+      "type": "repo-insight",
+      "hash": "36f4224a543df6647be74698",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-20T22:02:45.869Z",
+      "value": {
+        "summaryZh": "BuilderIO/agent-native 是 TypeScript 框架，用于构建 Agent 原生应用：把智能体执行循环、工具调用与状态管理直接嵌入产品，而非外挂一个聊天框。它强调前后端与 UI 共享同一套数据流，便于快速搭出可交互、可调试的 AI 功能。适合做 AI 产品原型的独立开发者、前端与全栈团队，以及正在选型智能体架构的工程师。",
+        "scenarios": [
+          "在现有 SaaS 或内部工具中嵌入可调用自身业务 API 的智能体，让用户用自然语言完成查数据、改配置、触发流程等操作。",
+          "快速搭建 AI 原生应用原型，例如多步骤任务助手或自动化工作流，用于验证交互设计与工具编排方案。",
+          "团队做 Agent 架构选型时，用同一套 TypeScript 代码贯穿前后端，对比自研执行循环与该框架的工程成本与可维护性。"
+        ],
+        "agentInstallPrompt": "请帮我试跑 BuilderIO/agent-native 这个开源框架：先 git clone https://github.com/BuilderIO/agent-native，阅读 README、package.json 与 examples 目录，确认它支持的包管理器（pnpm/npm/yarn）、Node 版本和示例入口。然后安装依赖并启动本地开发服务，把启动日志与访问地址反馈给我。若示例需要模型 API Key（如 OpenAI、Anthropic），先列出需要我提供哪些环境变量，写入 .env.example，不要写入或提交真实密钥。最后跑一个最小 demo（一句自然语言任务 + 两个工具调用）验证智能体循环可正常工作，并总结把它接入我现有项目的接入点、改动量与潜在风险。"
+      }
+    },
+    "repo:mihail911/modern-software-dev-assignments": {
+      "type": "repo-insight",
+      "hash": "ab5aa69134974950efe46a9c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-20T22:02:53.687Z",
+      "value": {
+        "summaryZh": "斯坦福 CS146S《现代软件开发》课程的官方作业仓库，Python 编写，由课程讲师维护。内容覆盖当代工程实践：版本控制与代码审查、自动化测试与持续集成、LLM 辅助编码与提示工程、AI 应用与智能体搭建、评测与部署等。每个作业通常附带说明文档、起始代码与测试，便于按周逐步动手完成。适合想系统补齐现代工程链路的学生与自学者，也适合希望把 AI 编码工具融入日常开发流程的工程师作为实战练习。",
+        "scenarios": [
+          "自学现代软件工程：按周完成作业，补齐测试、CI/CD、代码审查与部署等工程基本功",
+          "AI 应用入门实战：跟随作业搭建 LLM 驱动的小应用与智能体，理解提示工程、评测与迭代流程",
+          "教学与团队内训：作为课程或内部培训的作业模板，直接复用其说明、起始代码与测试结构"
+        ],
+        "agentInstallPrompt": "请帮我跑通这个仓库：先执行 git clone https://github.com/mihail911/modern-software-dev-assignments 并进入目录，阅读根目录 README 与各子文件夹的作业说明，整理出作业清单、依赖要求和推荐执行顺序。然后创建 Python 虚拟环境（python -m venv .venv 并激活），根据 requirements.txt 或 pyproject.toml 安装依赖；若仓库没有依赖文件，请根据代码导入情况推断并告诉我。接着选取第一个作业，按说明完成实现，运行仓库内的测试或示例脚本验证结果。最后反馈：环境搭建步骤、运行的命令、测试输出摘要、报错原因与修复建议，以及后续作业的推进计划。不要修改与当前作业无关的文件。"
+      }
+    },
+    "repo:vercel-labs/json-render": {
+      "type": "repo-insight",
+      "hash": "d8887b2acfeeba567b9de759",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-20T22:03:01.230Z",
+      "value": {
+        "summaryZh": "json-render 是 Vercel Labs 开源的生成式 UI 框架，用 TypeScript 实现。它把 React 组件注册为受约束的 JSON Schema，由大模型生成 JSON 组件树，前端实时渲染成界面，让「AI 生成 UI」变成可校验、可兜底的工程流程。模型只输出结构化数据而不写代码，渲染逻辑与安全边界由开发者掌控，并支持流式输出。适合做 AI Agent 前端界面、动态表单与低代码平台，以及关注生成式 UI 的前端与全栈工程师。",
+        "scenarios": [
+          "让 AI Agent 在对话中实时生成可交互的仪表盘、卡片或表单，由 json-render 渲染成真实 React 界面。",
+          "搭建低代码平台：用组件注册表约束 JSON 描述，业务人员或模型产出配置即可生成页面。",
+          "为内部工具生成动态表单与后台配置页，schema 变更无需重新发布前端版本。"
+        ],
+        "agentInstallPrompt": "请阅读 https://github.com/vercel-labs/json-render 的 README，弄清它的组件注册方式与 JSON schema 约定。将仓库克隆到本地，用 pnpm 安装依赖并启动示例应用，确认浏览器中能看到生成式 UI 的渲染效果。然后新建一个页面，注册 3 个自定义组件（例如标题、表格、按钮），手写一段 JSON 组件树并成功渲染。若框架支持，再接入一次 LLM 调用，让模型输出符合 schema 的 JSON 并流式渲染。最后把启动命令、目录结构、最小可运行示例整理成一份简短的 README 片段。"
+      }
     }
   }
 }
