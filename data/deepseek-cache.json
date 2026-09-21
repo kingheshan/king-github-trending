@@ -2208,17 +2208,17 @@
     },
     "repo:diegosouzapw/OmniRoute": {
       "type": "repo-insight",
-      "hash": "067f812d28f63466dfe7f73f",
+      "hash": "61cc2dced9d4939a1115b5c8",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-09T22:00:50.095Z",
+      "generatedAt": "2026-09-21T22:00:38.075Z",
       "value": {
-        "summaryZh": "OmniRoute 是一个免费开源的 MIT 协议 AI 网关，由 550+ 贡献者共同打造，旨在让开发者“永不停编码”。它通过单一端点接入 352 家提供商（其中 150+ 免费）、1200+ 模型，覆盖 Kimi、Claude、GPT、Gemini、GLM、DeepSeek、MiniMax 等主流模型。支持配额感知的自动故障转移，内置 RTK 和 Caveman 压缩技术，可节省 15-95% 的 token 用量。兼容 Claude Code、Codex、Cursor、OpenCode、Cline 及 Copilot 等主流 AI 编程工具，并支持 MCP/A2A 协议及桌面/PWA 应用。适合需要多模型汇聚、成本优化与高可用切换的 AI 应用开发者，尤其适用于工具链集成与本地部署场景。",
+        "summaryZh": "OmniRoute 是一个 MIT 许可的免费 AI 网关，用 TypeScript 编写，提供统一的 OpenAI 兼容端点，聚合 359 家服务商、150+ 免费渠道与 1200+ 模型（Kimi、Claude、GPT、Gemini、GLM、DeepSeek、MiniMax 等）。它兼容 Claude Code、Codex、Cursor、OpenCode、Cline、Copilot 等客户端，内置配额感知自动故障转移、RTK+Caveman 压缩（可省 15%-95% token）、MCP/A2A 支持，以及桌面端与 PWA 界面。适合想低成本多模型切换、又不想被单一额度中断的独立开发者与团队。",
         "scenarios": [
-          "开发者需要在一个统一 API 中调用多个 AI 提供商的模型，并希望免费或低成本访问 150+ 免费模型池，降低实验与原型开发成本。",
-          "在 CI/CD 或本地 AI 编程环境中，使用 Claude Code、Cursor、Cline 等工具时，希望对 API 请求进行智能路由、自动故障转移与 token 压缩，提升稳定性和减少费用。",
-          "构建桌面或 PWA 应用，需要通过 MCP/A2A 协议与 AI 模型交互，并利用配额感知调度实现多提供商负载均衡与高可用。"
+          "在 Claude Code、Cursor、Cline 等编码工具里把 API 地址指向 OmniRoute 本地端点，用一套密钥调用多家模型并自动切换备用渠道",
+          "做多模型对比评测或提示词调试，通过同一入口批量切换 Kimi、GPT、Gemini、DeepSeek 等模型并观察压缩前后 token 消耗",
+          "给自建 Agent 或内部工具接统一模型网关，借助配额感知回退与 MCP/A2A 能力保证长时间任务不被限流打断"
         ],
-        "agentInstallPrompt": "克隆 GitHub 仓库 https://github.com/diegosouzapw/OmniRoute 到本地，使用 pnpm 或 npm 安装依赖。请先阅读 README 了解快速开始部分，然后使用 Docker Compose 或本地命令启动网关服务。配置环境变量，至少设置一个 API 提供商的密钥（如 OpenRouter 或 DeepSeek），确保 .env 文件正确。启动后，使用 curl 向 http://localhost:8787/v1/chat/completions 发送测试请求，验证模型列表和自动故障转移功能。如果遇到问题，检查 TypeScript 编译或容器日志，并尝试切换至开发模式。"
+        "agentInstallPrompt": "请在本机帮我安装并试跑 OmniRoute：1) 执行 git clone https://github.com/diegosouzapw/OmniRoute.git 并进入目录，读取 README 确认包管理器（优先 pnpm，其次 npm）；2) 安装依赖并根据 .env.example 创建 .env，向我询问至少一个服务商的 API Key（如 DeepSeek 或 Gemini 免费额度），其余保持默认；3) 用开发模式启动服务，确认监听端口，若报错请读取日志并修复缺依赖或环境变量问题；4) 用 curl 请求其 OpenAI 兼容的 /v1/models 与一次 /v1/chat/completions 冒烟测试，输出可用模型数量与示例回复；5) 告诉我如何把 Claude Code / Cursor 的 base_url 与 api_key 指向该端点，并列出启用自动回退与 token 压缩所需的关键配置项。全程不要修改我的全局配置，改动前先说明。"
       }
     },
     "repo:alibaba/page-agent": {
@@ -5493,17 +5493,17 @@
     },
     "repo:magnitudedev/magnitude": {
       "type": "repo-insight",
-      "hash": "953848ae2306da6892a45773",
+      "hash": "98d22595a2965502f296da23",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-05T22:22:40.199Z",
+      "generatedAt": "2026-09-21T22:00:34.287Z",
       "value": {
-        "summaryZh": "Magnitude 是一个开源推理服务器，专为本地模型运行而设计，能根据你的硬件自动选择并运行最佳模型。它无缝集成到你已有的 AI 智能体中，支持 Pi、OpenCode、Hermes、OpenClaw、Codex、Claude Code 等多种主流工具。项目使用 TypeScript 编写，旨在降低本地 AI 部署门槛，让开发者无需复杂配置即可获得高性能、隐私安全的本地推理能力。适合希望摆脱云端依赖、追求数据隐私或需要离线工作的开发者和团队。",
+        "summaryZh": "Magnitude 是面向消费级硬件的开源本地大模型推理引擎，用 TypeScript 编写。它先自动探测你的机器配置（芯片、显存、内存），据此推荐最合适的模型，再一键完成下载、量化调优与运行。无论 Apple Silicon、NVIDIA、AMD，还是仅有 CPU 的普通笔记本，都能开箱即用。适合想在本地离线跑模型、重视隐私与成本的开发者和 AI 爱好者。",
         "scenarios": [
-          "在本地开发环境中为 Claude Code、Codex 等 agent 提供高速模型推理，避免 API 延迟与费用。",
-          "需要严格数据隐私的团队，使用 Magnitude 在内部服务器上运行开源模型，处理敏感代码或文档。",
-          "在树莓派等低功耗设备上运行轻量级模型，配合 OpenClaw 等实现边缘 AI 智能体应用。"
+          "在没有独显的轻薄本或办公机上离线运行小参数模型，做本地问答、翻译与文本总结，数据完全不出本机。",
+          "在 Apple Silicon Mac 上自动挑选并跑通匹配统一内存的模型，用作日常编码助手、写作或文档摘要工具。",
+          "为团队或终端用户打包本地推理能力：先探测硬件再推荐模型，免去手动匹配量化格式与推理后端的麻烦。"
         ],
-        "agentInstallPrompt": "请帮我安装并试跑 Magnitude 推理服务器。首先运行 'git clone https://github.com/magnitudedev/magnitude.git'，然后进入目录执行 'npm install' 或 'yarn'。根据 README 配置一个本地模型（如 Llama 或 Qwen），启动服务后，用 curl 或测试脚本调用 /v1/completions 接口验证是否正常工作。如果遇到依赖问题，尝试使用 Node 20+ 版本并确保已安装 Python 及 llama.cpp 相关依赖。完成后告诉我成功运行的模型名称和示例请求。"
+        "agentInstallPrompt": "请在本机克隆并试跑 magnitudedev/magnitude：先确认已安装 Node.js 20+ 与 pnpm，执行 git clone https://github.com/magnitudedev/magnitude && cd magnitude && pnpm install；然后阅读 README 与 package.json 中的脚本，运行项目的 CLI 或开发命令，完成一次机器硬件探测与模型推荐。若条件允许，下载并运行一个推荐的最小模型，输出探测到的硬件信息、所选模型、量化配置与推理耗时；最后把过程中遇到的依赖缺失或平台问题（Apple Silicon / NVIDIA / AMD / 纯 CPU）整理成一份简短报告。"
       }
     },
     "repo:nvm-sh/nvm": {
@@ -6736,6 +6736,51 @@
           "为内部工具生成动态表单与后台配置页，schema 变更无需重新发布前端版本。"
         ],
         "agentInstallPrompt": "请阅读 https://github.com/vercel-labs/json-render 的 README，弄清它的组件注册方式与 JSON schema 约定。将仓库克隆到本地，用 pnpm 安装依赖并启动示例应用，确认浏览器中能看到生成式 UI 的渲染效果。然后新建一个页面，注册 3 个自定义组件（例如标题、表格、按钮），手写一段 JSON 组件树并成功渲染。若框架支持，再接入一次 LLM 调用，让模型输出符合 schema 的 JSON 并流式渲染。最后把启动命令、目录结构、最小可运行示例整理成一份简短的 README 片段。"
+      }
+    },
+    "repo:mvt-project/mvt": {
+      "type": "repo-insight",
+      "hash": "623ce236dcd0aae0d4f47dc8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-21T22:00:14.355Z",
+      "value": {
+        "summaryZh": "MVT（Mobile Verification Toolkit）是 Amnesty International 安全实验室开源的移动端取证工具，用于检测 iOS 与 Android 设备是否被 Pegasus 等商业间谍软件入侵。它能解析 iOS 备份、Android 备份与 ADB 提取数据，比对 STIX2、MISP 等威胁情报中的 IOC 指标，并生成结构化报告。适合安全研究员、记者、维权人士与应急响应团队，在怀疑设备被监控时做快速、低侵入的取证排查。",
+        "scenarios": [
+          "记者或维权人士怀疑手机被植入间谍软件时，用 MVT 对 iOS 备份或 Android 设备做离线取证排查。",
+          "安全应急响应团队在入侵调查中批量比对 IOC 指标，确认是否存在 Pegasus 等商业监控软件痕迹。",
+          "数字取证教学与蓝队演练中，用 MVT 演示移动端痕迹提取与威胁情报匹配的完整流程。"
+        ],
+        "agentInstallPrompt": "请在本地 Python 3.9+ 环境安装 MVT：pip install mvt，并确认 mvt-ios --help 与 mvt-android --help 可正常执行。然后克隆 https://github.com/amnestytech/investigations 获取最新 STIX2 IOC 文件，对一份示例 iOS 备份运行 mvt-ios check-backup，对已连接的 Android 设备运行 mvt-android check-adb，均通过 --iocs 指定 IOC 目录，输出目录设为 ./mvt-output。最后汇总生成的 JSON 与 HTML 报告，列出所有匹配到的告警项、涉及进程或域名，并说明其可能的含义。"
+      }
+    },
+    "repo:zhouxiaoka/autoclip": {
+      "type": "repo-insight",
+      "hash": "8846b981a67b0a88da554806",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-21T22:00:20.871Z",
+      "value": {
+        "summaryZh": "AutoClip 是一款用 Python 编写的 AI 视频二创工具，可从长视频中自动识别并提取高光片段，完成智能剪辑。它一般先用语音识别把音频转写成字幕文本，再调用大语言模型判断内容的精彩程度与主题，最后借 ffmpeg 完成切片、拼接与导出，产出带字幕的短视频。适合做影视解说、游戏集锦、播客切片与直播回放二次分发的自媒体创作者和 MCN 团队，也适合想学习 AI 视频处理流水线的开发者，可本地部署并按需替换模型与提示词。",
+        "scenarios": [
+          "把两小时的直播回放、访谈或播客导入 AutoClip，自动挑出高能片段并批量生成竖屏短视频，用于抖音、B 站、视频号分发。",
+          "影视解说与游戏集锦作者批量处理素材库，先由 AI 产出带字幕的候选片段，人工只需做二次筛选与文案润色。",
+          "开发者本地部署并替换 ASR、LLM 与提示词，验证高光判定效果，或把自动切片流程集成进自己的内容生产流水线。"
+        ],
+        "agentInstallPrompt": "请把 https://github.com/zhouxiaoka/autoclip 克隆到本地，先阅读 README、依赖清单与配置文件，确认所需 Python 版本、系统依赖（如 ffmpeg）以及是否需要语音识别模型或大模型 API Key。随后创建独立虚拟环境并安装依赖，检查 ffmpeg 是否可用，按示例写好模型与密钥配置（若支持本地模型就优先用本地模型）。准备一段 1–2 分钟的本地测试视频放入输入目录，运行项目主入口或示例脚本，完整跑通一次高光提取与剪辑。最后用中文报告：实际执行的命令、依赖安装中的问题及解决办法、生成文件的路径与时长、效果不理想时的参数调整建议，并给出一个最小可用的调用示例。"
+      }
+    },
+    "repo:FlashML-org/FreeToken": {
+      "type": "repo-insight",
+      "hash": "cdff46234e67b29f8fad372a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-21T22:00:26.331Z",
+      "value": {
+        "summaryZh": "FreeToken 是 FlashML 团队开源的 Python 项目，目标是让消费级桌面设备也能跑起数据中心级别的模型推理。它通过更高效的权重调度与显存/内存管理，在本地以较低成本加载并运行体量庞大的大模型，兼顾速度与资源占用。项目处于早期阶段，适合想在个人电脑或单卡工作站上私有化部署大模型、又不愿依赖云 API 的开发者、研究者与 AI 应用工程师，也适合关注本地推理优化的性能调优爱好者。",
+        "scenarios": [
+          "在只有单张消费级显卡或统一内存的笔记本/迷你主机上，本地跑起远超显存容量的大参数量模型，做私有化对话与文档问答。",
+          "作为离线或内网环境的推理后端，替代云 API 为内部工具、Agent 应用提供低延迟、零数据外泄的模型服务。",
+          "做本地推理性能实验：对比不同量化、批大小与设备配置下的吞吐和首 token 延迟，为选型提供基准数据。"
+        ],
+        "agentInstallPrompt": "请帮我在本机安装并试跑 GitHub 项目 FlashML-org/FreeToken（https://github.com/FlashML-org/FreeToken）。步骤：1）先阅读仓库 README、requirements 或 pyproject.toml，确认支持的 Python 版本、CUDA/ROCm 或 CPU 后端要求以及安装方式；2）克隆仓库并创建独立虚拟环境（Python 3.10+，优先 uv 或 venv），按官方说明安装依赖，遇到编译或依赖冲突时给出可执行修复方案而不是跳过；3）检查 README 中的快速开始示例，用一个体量较小的模型（如 7B 级）先做最小可运行验证，命令执行后贴出完整日志；4）若示例需要下载权重或申请访问权限，先告诉我需要哪些资源和大致显存/内存占用，再继续；5）最后输出一份简短报告：安装是否成功、跑通所用命令、实测显存占用与生成速度、以及在我当前硬件上适合运行的最大模型规模建议。全程不要修改我的系统级配置，所有改动限制在项目目录和虚拟环境内。"
       }
     }
   }
