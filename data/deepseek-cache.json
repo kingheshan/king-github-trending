@@ -6782,6 +6782,81 @@
         ],
         "agentInstallPrompt": "请帮我在本机安装并试跑 GitHub 项目 FlashML-org/FreeToken（https://github.com/FlashML-org/FreeToken）。步骤：1）先阅读仓库 README、requirements 或 pyproject.toml，确认支持的 Python 版本、CUDA/ROCm 或 CPU 后端要求以及安装方式；2）克隆仓库并创建独立虚拟环境（Python 3.10+，优先 uv 或 venv），按官方说明安装依赖，遇到编译或依赖冲突时给出可执行修复方案而不是跳过；3）检查 README 中的快速开始示例，用一个体量较小的模型（如 7B 级）先做最小可运行验证，命令执行后贴出完整日志；4）若示例需要下载权重或申请访问权限，先告诉我需要哪些资源和大致显存/内存占用，再继续；5）最后输出一份简短报告：安装是否成功、跑通所用命令、实测显存占用与生成速度、以及在我当前硬件上适合运行的最大模型规模建议。全程不要修改我的系统级配置，所有改动限制在项目目录和虚拟环境内。"
       }
+    },
+    "repo:dream-num/univer": {
+      "type": "repo-insight",
+      "hash": "49dae02a3743e7cc0b82cadc",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-22T22:00:11.140Z",
+      "value": {
+        "summaryZh": "Univer 是 DreamNum 开源的 TypeScript 办公套件运行时，把电子表格、文档、幻灯片、画布、关系型数据表和 PDF 统一进同一套可嵌入框架，内置公式引擎、协同编辑与插件化架构，被称为面向 AI Agent 的 Office Harness。它适合想在 Web 应用中自建类 Excel/Word 能力的前端团队，也适合让智能体直接读写表格与文档的 AI 应用开发者。",
+        "scenarios": [
+          "在 SaaS 或内部系统中嵌入在线电子表格，支持公式计算、筛选、协同编辑与数据导入导出",
+          "为 AI Agent 提供可编程的文档与表格运行时，让模型直接生成、修改结构化数据与报表",
+          "在浏览器中构建文档、幻灯片、看板与关系型数据表一体化编辑器，替代重型 Office 控件"
+        ],
+        "agentInstallPrompt": "请帮我试跑 Univer：克隆 https://github.com/dream-num/univer，用 pnpm 安装依赖并构建核心包；找到 examples 或 playground 中的表格示例，启动本地开发服务器，确认表格可编辑、公式能正常计算。然后给我一个最小接入示例：在 React + Vite 项目里嵌入 Univer Sheets，加载一份示例数据并演示读写单元格。最后列出关键包名、版本与常见坑。"
+      }
+    },
+    "repo:davila7/claude-code-templates": {
+      "type": "repo-insight",
+      "hash": "3a0d40d7d2ca40370f002292",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-22T22:00:20.728Z",
+      "value": {
+        "summaryZh": "claude-code-templates 是面向 Claude Code 的配置与监控 CLI，内置大量现成模板：子代理、自定义命令、设置、钩子与 MCP 服务等。通过交互式命令即可浏览、安装或卸载组件，快速搭好项目级 AI 编码环境，并提供面板查看会话用量与运行状态。适合团队标准化配置的工程师与需要观测 AI 开销的技术负责人。",
+        "scenarios": [
+          "为新项目快速搭建 Claude Code 目录结构，一键安装子代理、斜杠命令、钩子与 MCP 配置。",
+          "在团队中统一 .claude 配置模板，通过 CLI 分享和复用经过验证的 AI 编码最佳实践。",
+          "监控 Claude Code 会话用量与调用记录，评估 AI 编码成本并排查异常行为。"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/davila7/claude-code-templates ，先阅读 README 确认安装方式（npm 全局安装或 Python 虚拟环境安装），完成依赖安装后运行 CLI 查看可用模板列表，浏览其中的 agents、commands、settings、hooks 与 MCP 模板。接着在一个临时目录中初始化示例项目，安装 2 到 3 个模板并检查生成的 .claude 配置文件是否符合预期。最后启用监控功能，确认能正常记录会话用量与调用情况。请逐步执行、保留命令与输出，最后汇总成简短报告，并说明遇到的问题；不要修改我现有的全局 Claude Code 配置。"
+      }
+    },
+    "repo:google/ax": {
+      "type": "repo-insight",
+      "hash": "fe42dbac713f889f25cd93af",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-22T22:00:25.779Z",
+      "value": {
+        "summaryZh": "google/ax 是 Google 开源的智能体编排运行时，使用 Go 编写，目标是把 LLM 驱动的多智能体流程落到可部署的服务里。它提供统一的运行时抽象，用于组织智能体、工具调用与任务流转，让编排逻辑与具体模型解耦，便于替换模型后端或接入自有工具。Go 带来的高并发与单二进制部署特性，适合对稳定性和资源占用敏感的线上场景。适合构建多智能体应用的后端工程师与平台团队。",
+        "scenarios": [
+          "把现有 Go 微服务改造成具备多智能体协作与工具调用能力的服务，复用已有鉴权、日志与监控体系。",
+          "在内部平台中搭建可编排的 Agent 工作流运行时，统一管理智能体注册、任务分发与执行状态。",
+          "作为多智能体架构的原型验证底座，快速对比不同模型后端在同一编排逻辑下的效果与成本。"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 google/ax 这个 Go 项目：1) 克隆 https://github.com/google/ax 到当前工作目录；2) 阅读 README 与 go.mod，确认所需 Go 版本并检查本机环境，必要时提示我升级；3) 执行 go mod download 与 go build ./... ，把报错原文贴出来并逐个修复或说明原因；4) 运行仓库中的单元测试与示例（如 go test ./... 、README 里的 demo 命令），如果示例需要 API Key 或外部模型服务，请列出所需环境变量并改用 mock 或最小可运行配置；5) 最后给我一份「能跑起来的最小示例」：一个 main 程序或配置，展示创建智能体、注册工具、发起一次任务并打印结果，并附上执行命令与预期输出。全程不要修改我未授权的文件，遇到不确定的地方先问我。"
+      }
+    },
+    "repo:superdesigndev/treg": {
+      "type": "repo-insight",
+      "hash": "458160bf4b101ab792493789",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-22T22:00:32.641Z",
+      "value": {
+        "summaryZh": "treg 是一个面向 AI Agent 的工具调用统一路由层，定位类似「工具界的 OpenRouter」：把搜索、爬取、浏览器、代码执行等分散的工具 API 收敛成一套兼容 function calling 的接口，统一鉴权、限流、计费与失败重试，开发者接入一次即可在多个工具供应商之间切换和横向对比。项目以 Python 编写，适合搭建多工具智能体的应用开发者、做工具选型的团队，以及想低成本接入生产级工具链的个人。",
+        "scenarios": [
+          "为多工具 AI Agent 搭建统一工具网关：一次接入即可调用搜索、网页抓取、代码执行等多种工具，避免为每个供应商单独写适配代码和鉴权逻辑。",
+          "在技术选型阶段横向对比多家工具 API 的效果、延迟与成本，通过同一套接口快速切换 provider 并跑基准测试。",
+          "在个人或小团队项目中低成本获得生产级工具链能力，复用统一的重试、限流、计费和密钥管理，而不必自建调度与容错层。"
+        ],
+        "agentInstallPrompt": "请帮我试跑 GitHub 上的 treg 项目（https://github.com/superdesigndev/treg）。步骤：1) 用 git clone 拉取仓库并进入目录；2) 优先阅读 README、pyproject.toml 或 requirements.txt，按官方说明创建 Python 虚拟环境并安装依赖；3) 通读 README 与 examples 目录，用三五句话总结它在「Agent 工具统一路由」上的核心抽象、支持的工具 provider 和调用方式；4) 根据 .env.example 配置所需 API Key，跑通一个最小示例（注册或调用某个工具并打印返回结果）；5) 若示例可运行，再演示如何新增或切换一个工具 provider，并对比两次调用的输出；6) 最后给我一份简明报告，包含目录结构、关键文件、实际执行的命令、报错信息与你的修复方式，不要修改无关文件。"
+      }
+    },
+    "repo:sergebulaev/linkedin-skills": {
+      "type": "repo-insight",
+      "hash": "29ed417a0f9f5912cc228fd7",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-22T22:00:41.894Z",
+      "value": {
+        "summaryZh": "linkedin-skills 是一个开源 Claude Skills 集合，提供 11 个可在 Claude Code 与 Codex 直接调用的技能：撰写口语化 LinkedIn 帖子、生成高互动评论、分析信息流趋势、规划发布节奏，全部在终端完成。由 Creative Content Crafts 做内容工程，MIT 协议，Python 实现，轻量易改。适合打造个人品牌的技术人、独立开发者与出海内容运营。",
+        "scenarios": [
+          "每天开始工作前跑一次信息流分析技能，筛出值得参与的行业热帖，并生成三条可直接发布的候选评论。",
+          "产品发布或求职季前批量起草 LinkedIn 帖子，用发布节奏技能排成两周内容日历，保持口语化风格统一。",
+          "把技能接入自己的 Python 脚本或 CI，批量改写旧帖、生成中英双语版本，沉淀团队统一的内容规范。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 sergebulaev/linkedin-skills：先把 https://github.com/sergebulaev/linkedin-skills 克隆到本地，阅读 README 和目录结构，确认每个 skill 的 SKILL.md 及依赖；创建 Python 虚拟环境并安装所需依赖。接着把仓库里的 skills 目录链接或复制到我的 Claude Code / Codex 技能目录，列出 11 个技能的名称与用途。最后挑一个「写 LinkedIn 帖子」的技能做端到端试跑，主题为“我用开源工具重构了内容工作流”，输出生成的草稿、实际执行的命令，并说明如何调整语气、长度和发布节奏。"
+      }
     }
   }
 }
