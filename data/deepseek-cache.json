@@ -7008,6 +7008,96 @@
         ],
         "agentInstallPrompt": "请帮我在本地部署并试跑 LibreChat：先将 https://github.com/LibreChat-AI/LibreChat 克隆到当前目录并进入仓库；把 .env.example 复制为 .env，至少填入 OPENAI_API_KEY，以及 CREDS_KEY、CREDS_IV、JWT_SECRET、JWT_REFRESH_SECRET 等必要密钥；然后执行 docker compose up -d 启动服务，等待健康检查通过后访问 http://localhost:3080，验证注册登录、模型切换和一次完整对话请求是否正常；最后把访问地址、启动命令、验证结果和遇到的报错一并汇总给我。"
       }
+    },
+    "repo:androoAGI/starnet": {
+      "type": "repo-insight",
+      "hash": "4c67bdcca0123b6d0ae6eaf0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-25T22:00:13.953Z",
+      "value": {
+        "summaryZh": "Starnet 是一个本地优先的桌面端 AI 智能体运行平台，用像素艺术太空站界面把多个 agent 的工作过程可视化。你自带 API Key 接入偏好模型，即可组建一支“船员”队伍，让它们在本机真实执行任务：读写文件、运行命令、协作推进，每一步都在像素站台里实时呈现。项目基于 JavaScript，适合注重隐私与可视化的开发者、独立黑客，以及想研究多智能体编排与本地 harness 架构的人。",
+        "scenarios": [
+          "本地搭建多智能体工作站：用自己的 API Key 驱动一支 agent 小队，在同一像素看板里分工完成资料调研、写代码与结果整理。",
+          "教学与演示：向团队或观众直观展示 AI agent 如何逐步调用工具、读写文件、串行协作，比纯终端日志更易理解。",
+          "隐私敏感的自动化：密钥与数据全部留在本机，用于处理公司内部文档、批量脚本任务而不必上传云端。"
+        ],
+        "agentInstallPrompt": "请帮我在本机跑起来 androoAGI/starnet。步骤：1) 先检查环境，确认已安装 Node.js 18+、git 与 npm/pnpm；2) git clone https://github.com/androoAGI/starnet 到 ~/projects/starnet 并进入目录；3) 阅读 README.md 与 package.json，判断这是 Electron 桌面应用还是纯前端项目，据此选择 npm install 或 pnpm install，若安装失败请给出报错原因和替代方案；4) 把 README 中提到的环境变量（模型 API Key、模型名称、并发上限、本地端口等）写进由 .env.example 复制出的 .env，敏感值留占位符让我自己填；5) 启动开发模式（如 npm run dev / npm start），若无 GUI 环境则说明如何用无头或浏览器方式预览；6) 最后把启动日志、窗口截图或访问地址、以及“如何新建第一个 agent crew 并跑通一个最小任务”的操作路径一起汇报给我。"
+      }
+    },
+    "repo:derv82/wifit3": {
+      "type": "repo-insight",
+      "hash": "1b52ca755e749b363bad9275",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-25T22:00:31.358Z",
+      "value": {
+        "summaryZh": "wifit3 是 Wifite 的重写版：只使用外接 USB 无线网卡，并支持跨平台运行，绕开内置网卡无法进入监听模式或注入数据包的限制。它自动扫描周边 Wi-Fi、抓取 WPA/WPA2 握手与 PMKID、尝试 WPS 等审计流程，交互式菜单上手简单。适合无线安全研究员、渗透测试与 CTF 选手，以及想在自有环境验证路由器加密强度的爱好者，仅限授权网络。",
+        "scenarios": [
+          "在获授权的渗透测试项目中，用装有兼容 USB 网卡的测试机快速枚举目标 Wi-Fi、捕获 WPA/WPA2 握手或 PMKID，评估企业无线口令强度。",
+          "在 CTF 或自建实验室里搭建靶机 AP 与客户端，练习无线抓包、握手破解和 WPS 审计等完整流程，验证自己的无线环境是否脆弱。",
+          "跨平台现场排查：在 Windows 或 macOS 笔记本上插入支持监听模式的外置网卡，替代仅限 Linux 的无线工具，快速盘点周边无线环境。"
+        ],
+        "agentInstallPrompt": "请在本机安装并试跑 derv82/wifit3：先确认系统为 Linux、macOS 或 Windows，且已插入支持监听模式与数据包注入的外接 USB 无线网卡；然后执行 git clone https://github.com/derv82/wifit3.git 并进入目录，创建并激活 Python 虚拟环境（python3 -m venv .venv && source .venv/bin/activate），按仓库 README 执行 pip install -r requirements.txt（若无该文件则 pip install -e .），若依赖安装失败请给出对应平台的驱动与工具链安装步骤（如 Linux 的 aircrack-ng、Windows 的 Npcap 及厂商网卡驱动）。完成后运行 python wifit3.py --help 确认程序可启动，再以 sudo 或管理员权限执行一次只读扫描，列出发现的 AP 列表并汇报结果与报错信息。全程只对我已拥有或已获书面授权的网络操作，不得对任何未授权目标发起攻击性测试。"
+      }
+    },
+    "repo:kelseyhightower/kubernetes-the-hard-way": {
+      "type": "repo-insight",
+      "hash": "74390fcbf5c779e799f82cd6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-25T22:00:42.725Z",
+      "value": {
+        "summaryZh": "这是 Kelsey Hightower 的经典 Kubernetes 手动搭建教程，主张不用自动化脚本，从零配置证书、etcd、控制平面、kubelet、容器运行时、网络路由与 RBAC，让学习者彻底理解各组件职责与依赖。亮点是步骤透明、可复现，贴近生产原理而非黑盒。适合想深入 K8s 内部机制、备考 CKA/CKS，或在裸机与云主机上自建集群的工程师。",
+        "scenarios": [
+          "在本地虚拟机或云主机上按教程逐台手工搭建 etcd、控制平面与工作节点，掌握组件间的证书、网络与依赖关系。",
+          "作为 CKA/CKS 备考与面试复习的实操路径，通过手工排错加深对 kubelet、容器运行时、CNI 与 RBAC 的理解。",
+          "为企业裸机或私有云设计轻量 Kubernetes 部署方案时，用作原理参考与手工验证基线。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/kelseyhightower/kubernetes-the-hard-way 到本地，阅读 README 及 docs 目录下的分步文档，先检查当前环境是否具备 VirtualBox、Vagrant 或可用的云主机与 SSH 访问能力，缺失时给出对应安装命令。随后按文档顺序生成可执行搭建计划，依次完成证书生成、etcd 集群、控制平面、负载均衡、工作节点、kubectl 配置与网络路由，逐条执行并记录输出。若遇到 Kubernetes 版本或 API 变更导致步骤失效，请说明差异并给出修正建议，最后验证集群节点与核心组件状态是否正常。"
+      }
+    },
+    "repo:shy3130/tick-stock-panel": {
+      "type": "repo-insight",
+      "hash": "c0c1c6bfe3a839f1210f849e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-25T22:00:47.475Z",
+      "value": {
+        "summaryZh": "Tick Stock Panel（TSP）是一个自托管的 A 股量化工作台，把选股、实时监控与历史回测整合到一个面板中，主打零运维部署。项目基于 Python，亮点是引入 LLM 能力：可用自然语言定制选股策略、生成个股分析与每日复盘，并允许自由接入第三方行情数据源、扩展个性化数据字段。适合有 Python 基础的量化爱好者、希望搭建私有选股与盯盘系统的个人投资者，以及想低门槛验证策略的开发者。",
+        "scenarios": [
+          "个人投资者每天收盘后运行 TSP，让 LLM 按自定条件自动筛选 A 股标的并输出复盘报告与次日关注池。",
+          "量化爱好者接入 Tushare、AkShare 等第三方数据源，用自然语言描述策略并快速回测，验证择时与选股效果。",
+          "开发者把 TSP 部署在自有服务器或 NAS 上，搭建零运维的持仓监控与异动提醒面板，并扩展自定义数据字段。"
+        ],
+        "agentInstallPrompt": "请把 https://github.com/shy3130/tick-stock-panel 克隆到本地，先完整阅读 README、依赖清单与示例配置文件，梳理其数据源接入方式和启动流程。然后用 Python 3.10+ 创建独立虚拟环境并安装依赖，复制示例配置，填入我提供的行情数据源 Token（如 Tushare/AkShare）与自选股范围，分别启动后端与前端服务，确认浏览器能正常打开面板。接着用一条最简单的策略跑通选股与回测链路，把实际执行的命令、访问地址、运行截图说明以及遇到的报错和修复方式一并汇总给我。"
+      }
+    },
+    "repo:openbao/openbao": {
+      "type": "repo-insight",
+      "hash": "97cb6fd1fd78fef86b46e4d3",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-25T22:01:00.438Z",
+      "value": {
+        "summaryZh": "OpenBao 是 HashiCorp Vault 的开源分支，由 OpenSSF 维护，采用 MPL-2.0 许可。它用 Go 编写，用于集中管理、存储与分发密钥、证书、Token 等敏感数据，提供加密即服务、动态凭据、密钥轮换与审计日志，并尽量兼容 Vault 的 API 与插件生态。适合因 Vault 改用 BUSL 而寻找开源替代的平台团队与安全工程师。",
+        "scenarios": [
+          "为 Kubernetes 与微服务自建密钥管理：动态签发数据库短期凭据、PKI 证书与静态 KV 密钥，减少明文配置文件与云厂商托管 KMS 依赖。",
+          "从 HashiCorp Vault 平滑迁移：借助兼容的 API、CLI 与插件接口，复用现有客户端与策略配置，规避 BUSL 许可带来的合规与成本风险。",
+          "构建加密即服务与合规审计：对内部系统统一提供加解密、签名与租约吊销接口，集中输出审计日志，满足等保与内控要求。"
+        ],
+        "agentInstallPrompt": "请在本机试跑 OpenBao 并给出验证报告。步骤：1) 确认已安装 Go 1.22+、make、git，执行 git clone https://github.com/openbao/openbao 并进入目录；2) 执行 make bin（或 go build -o bin/bao ./）编译出 bao 二进制；3) 用 ./bin/bao server -dev -dev-root-token-id=root 启动开发模式服务端，另开终端执行 export BAO_ADDR=http://127.0.0.1:8200 和 export BAO_TOKEN=root；4) 依次运行 bao status、bao secrets enable -path=secret kv-v2、bao kv put secret/demo password=s3cr3t、bao kv get secret/demo，确认读写成功；5) 汇总可用命令、监听端口、常见报错（如未解封、连接被拒）与清理方式，写入 README-trial.md。"
+      }
+    },
+    "repo:odoo/odoo": {
+      "type": "repo-insight",
+      "hash": "5d6064c10bce8e38e8a7327a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-25T22:01:12.779Z",
+      "value": {
+        "summaryZh": "Odoo 是基于 Python 与 PostgreSQL 的开源企业应用套件，把 CRM、销售、库存、财务、电商、项目、人事、制造等模块整合到同一 Web 平台，支持按需安装与二次开发，自带 ORM、报表引擎和低代码视图构建器。社区版完全开源，企业版另有增值功能，适合中小企业快速搭建 ERP/CRM，也适合开发者研究大型 Python 业务框架并定制行业模块。",
+        "scenarios": [
+          "中小企业用一套系统替换分散的 CRM、进销存与财务工具，统一客户、订单、库存和账务数据。",
+          "开发者在 Odoo 框架上编写自定义模块，扩展制造 BOM、门店 POS、会员体系等行业流程。",
+          "系统集成商以 Odoo 为底座对接电商平台、支付与物流 API，搭建多渠道销售与自动化后端。"
+        ],
+        "agentInstallPrompt": "请在本机搭建并试跑 Odoo 社区版：1) 执行 git clone --depth 1 https://github.com/odoo/odoo.git 并进入仓库目录；2) 确认已安装 Python 3.10+、pip 与 PostgreSQL，创建虚拟环境后执行 pip install -r requirements.txt；3) 启动 PostgreSQL，创建具备建库权限的数据库用户 odoo，密码设为 odoo；4) 在仓库根目录运行 python odoo-bin -d odoo_demo -r odoo -w odoo --addons-path=addons,odoo/addons --db_host=localhost --http-port=8069，数据库不存在时会自动初始化；5) 浏览器打开 http://localhost:8069，用 admin/admin 登录，安装 Sales 与 Inventory 模块验证功能；6) 最后汇报监听端口、日志输出路径、初始化数据库名以及遇到的所有依赖或版本报错。"
+      }
     }
   }
 }
