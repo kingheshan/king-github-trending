@@ -7098,6 +7098,111 @@
         ],
         "agentInstallPrompt": "请在本机搭建并试跑 Odoo 社区版：1) 执行 git clone --depth 1 https://github.com/odoo/odoo.git 并进入仓库目录；2) 确认已安装 Python 3.10+、pip 与 PostgreSQL，创建虚拟环境后执行 pip install -r requirements.txt；3) 启动 PostgreSQL，创建具备建库权限的数据库用户 odoo，密码设为 odoo；4) 在仓库根目录运行 python odoo-bin -d odoo_demo -r odoo -w odoo --addons-path=addons,odoo/addons --db_host=localhost --http-port=8069，数据库不存在时会自动初始化；5) 浏览器打开 http://localhost:8069，用 admin/admin 登录，安装 Sales 与 Inventory 模块验证功能；6) 最后汇报监听端口、日志输出路径、初始化数据库名以及遇到的所有依赖或版本报错。"
       }
+    },
+    "repo:tensorflow/tensorflow": {
+      "type": "repo-insight",
+      "hash": "ae2ee4f1222dbbc90c6cc57c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-26T22:00:14.681Z",
+      "value": {
+        "summaryZh": "TensorFlow 是 Google 开源的端到端机器学习框架，核心计算引擎用 C++ 编写，并提供 Python、Java、Go、JS 等多语言接口。它覆盖数据预处理、模型构建、训练、分布式推理到移动端与浏览器部署的完整链路，配套 Keras 高层 API、TensorBoard 可视化与生产级工具链，生态成熟、社区庞大。适合算法工程师、后端与移动端开发者以及科研人员，尤其适合需要从实验原型一路打通到线上服务的团队。",
+        "scenarios": [
+          "用 Keras 快速搭建并训练图像分类、目标检测或 NLP 模型，导出 SavedModel 后部署到服务器、移动端或边缘设备",
+          "在教学中演示深度学习全流程，或复现论文基线、做大规模分布式训练与超参调优",
+          "借助 TF.js、TFLite 在浏览器或端侧设备上运行推理，构建低延迟的端侧 AI 应用"
+        ],
+        "agentInstallPrompt": "请在本机搭建 TensorFlow 试跑环境：先创建 Python 3.10 虚拟环境（python -m venv .venv && source .venv/bin/activate），升级 pip 后执行 pip install tensorflow；接着运行 python -c \"import tensorflow as tf; print(tf.__version__); print(tf.config.list_physical_devices())\" 验证版本与可用 GPU；然后写一个最小示例 demo.py，用 tf.keras 在 MNIST 上训练 3 个 epoch 并打印测试集准确率，运行确认环境可用。若需从源码构建，请克隆 https://github.com/tensorflow/tensorflow 并按官方文档安装 Bazel 后再编译。"
+      }
+    },
+    "repo:microsoft/vscode": {
+      "type": "repo-insight",
+      "hash": "7ea4e42fa3688b8b70fb4469",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-26T22:00:22.569Z",
+      "value": {
+        "summaryZh": "Visual Studio Code 是微软开源的跨平台代码编辑器，基于 Electron 与 TypeScript 构建，采用扩展化架构，内置 Git、调试、IntelliSense、集成终端与远程开发能力，支持多语言语法高亮与代码重构。它启动快、占用低，拥有庞大扩展生态和活跃社区，可高度定制，覆盖 Windows、macOS、Linux 与 Web。适合前端、后端、云原生开发者日常写码，也适合想研究大型 TypeScript 工程、Electron 桌面架构与插件系统的工程师。",
+        "scenarios": [
+          "本地主力编辑器：用 VS Code 编写 TypeScript、Python、Go 等项目，配合内置终端、调试器与 Git 面板完成日常开发与提交。",
+          "远程与容器开发：通过 Remote-SSH、Dev Containers、WSL 连接服务器或容器，在本地编辑远程代码，统一团队开发环境。",
+          "二次开发与学习：基于 VS Code 源码和扩展 API 开发自有插件、定制企业内部版本，或研究大型 Electron + TypeScript 工程架构。"
+        ],
+        "agentInstallPrompt": "请帮我在本机从源码构建并试跑 microsoft/vscode：第一步检查环境，确认已安装 Git、Node.js（建议 20 及以上）、Python 以及当前平台的 C++ 构建工具，缺少则告诉我安装方式；第二步执行 git clone https://github.com/microsoft/vscode 并进入仓库目录；第三步执行 npm install 安装依赖；第四步运行 npm run watch 启动增量编译；第五步编译就绪后，在 macOS/Linux 运行 ./scripts/code.sh，在 Windows 运行 .\\scripts\\code.bat 启动开发版 VS Code。请逐步执行并检查每步报错，说明命令作用，最后告诉我如何加载自己写的扩展进行调试。"
+      }
+    },
+    "repo:anthropics/claude-code-action": {
+      "type": "repo-insight",
+      "hash": "b86e35af33a006520c1c7228",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-26T22:00:28.716Z",
+      "value": {
+        "summaryZh": "Anthropic 官方出品的 GitHub Action，把 Claude Code 直接接进 CI 与 PR 流程：在 Issue 或 PR 里 @claude，它就会读取代码库、定位并修复 bug、补测试、实现小功能或回应评审意见，然后自动提交改动。项目用 TypeScript 编写，通过 GitHub Secrets 注入 API Key，可自定义触发条件、权限范围与提示词，无需本地安装即可接入现有仓库。适合想让 AI 参与日常协作的开源维护者，以及搭建自动化研发流水线的 DevOps 与平台工程团队。",
+        "scenarios": [
+          "开源仓库收到 Issue 后直接评论 @claude 指派任务，让它自行阅读代码、定位问题并提交修复 PR。",
+          "在 PR 评审环节 @claude，让它按评审意见改代码、补充单元测试并推送新的提交。",
+          "团队 CI 自动化：用 workflow 定时或按事件触发 Claude Code 做依赖升级、文档同步、代码规范整改等重复劳动。"
+        ],
+        "agentInstallPrompt": "请帮我在当前仓库接入 anthropics/claude-code-action（https://github.com/anthropics/claude-code-action）。步骤：1) 确认这是 GitHub 托管仓库且已启用 Actions；2) 在 Anthropic Console 申请 API Key，提示我把它存为仓库 Secret，名称 ANTHROPIC_API_KEY；3) 新建 .github/workflows/claude.yml，使用 anthropics/claude-code-action（版本以官方 README 最新为准），触发事件包含 issue_comment、pull_request_review_comment、issues（opened/assigned），并配置必要权限：contents: write、pull-requests: write、issues: write、id-token: write；4) 提交并推送后，在任意 Issue 下评论“@claude 介绍一下这个仓库并给出三条改进建议”，观察 Action 是否正常运行；5) 最后把 workflow 文件内容、需要配置的 Secrets、验证结果以及失败时的排错步骤汇总给我。"
+      }
+    },
+    "repo:actions/runner-images": {
+      "type": "repo-insight",
+      "hash": "eadf5dac1e4c29856d8ae8c0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-26T22:00:38.544Z",
+      "value": {
+        "summaryZh": "actions/runner-images 是 GitHub Actions 托管运行器虚拟机镜像的源码仓库，覆盖 Ubuntu、Windows、macOS 多个版本，用 PowerShell 脚本定义预装工具链与系统配置，并维护各镜像的软件清单。可查询镜像预装内容、复刻一致 CI 环境或定制自托管 runner。适合 DevOps 工程师、CI 维护者和需要排查环境差异的开发者。",
+        "scenarios": [
+          "查询 ubuntu-22.04、windows-2022 等托管运行器镜像预装了哪些工具及其版本，用于排查本地与 CI 构建结果不一致的问题。",
+          "企业搭建自托管 GitHub Actions runner 时，参考官方镜像构建脚本复刻或裁剪出与托管环境一致的镜像。",
+          "在为工作流选择或升级 runner 标签前，对比镜像软件清单变更，评估对现有构建流水线的影响。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/actions/runner-images 仓库并阅读 README 与 images 目录结构，找出当前可用的 Ubuntu、Windows、macOS 镜像定义。然后完成三件事：1）列出目标镜像（如 ubuntu-22.04）预装的软件与版本；2）说明该仓库镜像的构建方式（Packer 模板、PowerShell 脚本与 provisioners 的关系），并给出在 Linux 本地尝试构建最小镜像所需的依赖与命令；3）如果本地不便构建，改为运行仓库中生成软件清单的脚本，输出一份环境对照表，并指出与本地开发环境的可能差异。"
+      }
+    },
+    "repo:mobile-next/mobile-mcp": {
+      "type": "repo-insight",
+      "hash": "f3fae7e460d343ac7a726ca0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-26T22:00:47.967Z",
+      "value": {
+        "summaryZh": "mobile-mcp 是基于 Model Context Protocol 的移动端自动化与抓取服务器。它把 iOS、Android 真机与模拟器/仿真器统一封装为 MCP 工具，让 AI 客户端直接截屏、点击、滑动、输入文本、读取界面层级并抓取应用数据，跨平台一致、无需为每个系统重写脚本。适合移动端测试、数据采集与 Agent 开发者。",
+        "scenarios": [
+          "让 AI 客户端在 Android 模拟器或 iOS 真机上自动完成 App 回归测试：截屏、定位元素、点击滑动并校验结果。",
+          "批量采集移动端 App 的页面内容与列表数据，用于竞品分析、监控或数据集构建。",
+          "接入 Claude、Cursor 等 MCP 客户端，用自然语言驱动移动端自动化脚本的快速原型验证。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 mobile-next/mobile-mcp：先克隆 https://github.com/mobile-next/mobile-mcp ，阅读 README，用 npm install 安装依赖并完成构建；然后给出将它注册到常见 MCP 客户端（如 Claude Desktop / Cursor）的 JSON 配置片段；接着启动一个 Android 模拟器或连接一台 iOS 真机，执行最小验证流程——列出可用设备、打开系统设置、截取一张屏幕截图、读取当前界面元素层级并做一次点击；最后把执行的命令、配置内容、遇到的问题和运行结果汇总成简报给我。"
+      }
+    },
+    "repo:vercel/next.js": {
+      "type": "repo-insight",
+      "hash": "903e01729224bfc9c29c46e6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-26T22:00:51.700Z",
+      "value": {
+        "summaryZh": "Next.js 是 Vercel 维护的 React 全栈框架，把路由、渲染与数据获取收敛到统一的文件约定中，内置服务端渲染、静态生成、增量静态再生、React Server Components、Server Actions、流式渲染、中间件、API 路由，以及图片、字体和脚本优化。新版默认启用 Turbopack，构建与热更新更快，并支持 App Router 与 Pages Router 双模式迁移。它适合需要 SEO、首屏性能与工程化规范的中大型 Web 产品团队，也适合独立开发者快速搭建 MVP 与内容站点。",
+        "scenarios": [
+          "需要 SEO 与首屏性能的企业官网、电商与内容资讯站点",
+          "用 React 全栈能力开发带鉴权、接口与数据库的 SaaS 后台或 MVP",
+          "在团队内统一路由、渲染、缓存与构建规范的工程化基建选型"
+        ],
+        "agentInstallPrompt": "请在本地试跑 vercel/next.js：先确认 Node.js 18.18 以上与 pnpm 可用，然后执行 npx create-next-app@latest my-next-app --ts --app --tailwind --eslint --src-dir --import-alias \"@/*\" 创建示例项目，进入目录运行 pnpm dev 并打开 http://localhost:3000 验证首页。接着在 src/app 下新增一个 Server Component 页面展示服务端数据获取，再新增一个 Server Action 表单演示提交，最后运行 pnpm build 与 pnpm start 确认生产构建通过，并把命令输出、访问路径与遇到的问题汇总给我。"
+      }
+    },
+    "repo:MakazhanAlpamys/Soup": {
+      "type": "repo-insight",
+      "hash": "4c5dcb7b32b4f759945c13bb",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-26T22:01:03.334Z",
+      "value": {
+        "summaryZh": "Soup 是一个 Python 轻量级 LLM 微调框架，核心卖点是「一份 YAML 跑完全流程」：数据、模型、LoRA 与训练超参都写在单个配置文件里，命令行即可启动，省去大量样板脚本。它最亮眼的是「层级流式」显存优化，按层加载与计算，让权重无需全部常驻显存，号称能在 4GB 显存的笔记本 GPU 上微调 8B 级别模型。适合显存有限的学生与个人开发者做微调实验。",
+        "scenarios": [
+          "在只有 4GB 显存的笔记本或旧显卡上，对 7B/8B 开源模型做 LoRA 指令微调实验",
+          "用一份 YAML 快速切换数据集、基座模型与超参，做多组小规模对比实验并记录 loss 曲线",
+          "把仓库当作微调脚手架，改造成自己业务数据的轻量 SFT 流程，或用于教学演示微调全链路"
+        ],
+        "agentInstallPrompt": "请帮我试跑 GitHub 项目 MakazhanAlpamys/Soup。步骤：1）克隆 https://github.com/MakazhanAlpamys/Soup 并阅读 README 与示例配置；2）创建 Python 3.10+ 虚拟环境，按项目说明安装依赖（含 PyTorch，按本机 CUDA 版本选择）；3）找到最小可用的 YAML 配置，换成小模型或小数据集，只跑 10 步左右的 LoRA 微调做冒烟测试，确认能正常启动并打印 loss；4）若出现显存不足或 CUDA 报错，尝试启用 layer streaming 层级流式相关选项、降低 batch size 或序列长度；5）最后汇总你实际执行的命令、改动的配置项与运行结果。"
+      }
     }
   }
 }
