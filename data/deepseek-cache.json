@@ -7203,6 +7203,81 @@
         ],
         "agentInstallPrompt": "请帮我试跑 GitHub 项目 MakazhanAlpamys/Soup。步骤：1）克隆 https://github.com/MakazhanAlpamys/Soup 并阅读 README 与示例配置；2）创建 Python 3.10+ 虚拟环境，按项目说明安装依赖（含 PyTorch，按本机 CUDA 版本选择）；3）找到最小可用的 YAML 配置，换成小模型或小数据集，只跑 10 步左右的 LoRA 微调做冒烟测试，确认能正常启动并打印 loss；4）若出现显存不足或 CUDA 报错，尝试启用 layer streaming 层级流式相关选项、降低 batch size 或序列长度；5）最后汇总你实际执行的命令、改动的配置项与运行结果。"
       }
+    },
+    "repo:InfinityLoop1308/PipePipe": {
+      "type": "repo-insight",
+      "hash": "d5edd39b148d363d9f899e10",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-27T22:00:11.212Z",
+      "value": {
+        "summaryZh": "PipePipe 是一款开源 Android 客户端，让你在无需 Google 服务与账号的情况下自由浏览 YouTube 等视频平台。它支持订阅、搜索、后台播放、播放列表、视频与音频下载，并能跳过赞助片段，界面轻量、注重隐私，不依赖官方 API。适合去谷歌化手机用户、隐私敏感人群、喜欢离线缓存和后台听歌的安卓玩家，以及想研究视频流提取与客户端开发的开发者。",
+        "scenarios": [
+          "在刷了去谷歌化 ROM 或没有 Play 服务的安卓手机上直接观看、搜索和订阅 YouTube 频道",
+          "通勤或听歌场景下开启后台播放与纯音频模式，把视频缓存到本地离线观看",
+          "隐私要求高时免登录浏览、无广告观看，并借助 SponsorBlock 自动跳过赞助片段"
+        ],
+        "agentInstallPrompt": "请克隆并试跑 https://github.com/InfinityLoop1308/PipePipe：先阅读 README 与 Gradle 配置，确认需求（JDK 17、Android SDK 及相关 build-tools），执行 ./gradlew assembleDebug 生成 debug APK；若构建失败，请定位缺失依赖或 SDK 版本问题并修复。随后用 adb install 安装到已连接的模拟器或真机，启动应用并验证能否搜索、播放一个 YouTube 视频及后台播放；若失败，抓取 logcat 分析网络或提取器报错，输出原因与下一步修复建议。"
+      }
+    },
+    "repo:vercel-labs/scriptc": {
+      "type": "repo-insight",
+      "hash": "4b49354528b3482b64d6300d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-27T22:00:29.574Z",
+      "value": {
+        "summaryZh": "scriptc 是 Vercel Labs 的实验性编译器，可把 TypeScript 直接编译成原生可执行文件，无需 Node 或 Bun 运行时。它走 AOT 路线，目标是缩短启动时间、降低内存占用，让 TS 项目能以独立二进制分发。目前仍是早期原型，语法与接口支持有限。适合研究编译器与原生代码生成的开发者，以及关注 CLI 与边缘计算性能的工程师。",
+        "scenarios": [
+          "把现有 Node/TypeScript 脚本或 CLI 工具尝试编译成单一原生二进制，去掉运行时依赖，方便分发到未安装 Node 的机器。",
+          "在 Serverless 或边缘函数场景中评估冷启动与内存收益，把 scriptc 产物与 Node、Bun 的启动耗时做横向对比。",
+          "作为编译器学习与实验素材，阅读其类型消解、代码生成与运行时实现，为自研 AOT 或跨语言编译项目提供参考。"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 vercel-labs/scriptc（TypeScript-to-Native Compiler）并给出结论：1) git clone https://github.com/vercel-labs/scriptc 并进入目录；2) 阅读 README.md、package.json 与仓库结构，确认包管理器（优先 pnpm，其次 npm）、Node 版本要求、构建与测试脚本；3) 安装依赖并执行构建；4) 参考仓库自带示例或测试，新建一个最小 TypeScript 文件（例如打印 hello、做一次整数加法），用 scriptc 把它编译成原生可执行文件并实际运行，记录完整命令与输出；5) 若编译失败或语法不被支持，明确列出不支持的语法特性与报错原因，并给出可替代写法；6) 最后汇总：可用命令、支持的语法范围、编译耗时、产物大小与运行结果，并说明与直接用 Node 运行相比的差异。"
+      }
+    },
+    "repo:mvschwarz/openrig": {
+      "type": "repo-insight",
+      "hash": "1b68f06487605f2ed679274d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-27T22:00:36.810Z",
+      "value": {
+        "summaryZh": "openrig 是用 TypeScript 写的多智能体编排工具，把 Claude Code 与 Codex 组合成统一系统运行。它负责调度、上下文共享与任务分发，让两个编程智能体可协作、互审或并行处理子任务，减少手动切换工具的摩擦。适合常用这两个 CLI 的开发者、要搭建多智能体流水线的 AI 工程团队，以及研究多模型协作的试验者。",
+        "scenarios": [
+          "在同一代码仓库中让 Claude Code 先实现功能，再由 Codex 审查或补测试，形成交叉验证的编码闭环。",
+          "把大型重构拆分为多个子任务，分配给两个 agent 并行修改不同模块，最后统一汇总与冲突处理。",
+          "搭建团队内部的多模型编码流水线，对比 Claude Code 与 Codex 在真实任务中的表现并沉淀最佳实践。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/mvschwarz/openrig ，阅读 README 与 package.json，确认所需的 Node/pnpm 版本并安装依赖；按文档配置 Claude Code 与 Codex 的 CLI 及必要环境变量或 API Key；用仓库提供的最小示例启动一次联合运行，验证 openrig 能正常调度两个 agent 并共享上下文；若报错，请定位原因、给出修复命令，并记录可复现的安装与试跑步骤。"
+      }
+    },
+    "repo:willfaust/Madeira": {
+      "type": "repo-insight",
+      "hash": "36edc5c02550333c8f09c8f4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-27T22:00:52.184Z",
+      "value": {
+        "summaryZh": "Madeira 是用 C 写的实验性运行层，让未越狱 iOS 跑 x86-64 Windows 游戏：FEX-Emu 做 x86-64 到 ARM64 指令翻译，Wine 提供 Windows API 兼容层，DXMT 把 Direct3D 映射到 Apple Metal。适合想在 iPhone/iPad 折腾 PC 游戏的玩家与兼容层研究者，项目尚处早期。",
+        "scenarios": [
+          "在未越狱的 iPad/iPhone 上尝试运行老式或轻量 3D 的 Windows PC 游戏，验证 FEX-Emu + Wine + DXMT 这条链路能否在沙盒内跑通。",
+          "作为移动端兼容层研究平台，对比 x86-64 翻译效率、Wine 的 Windows API 覆盖度与 DXMT 走 Metal 的渲染表现，做性能与兼容性剖析。",
+          "供 C / 底层开发者二次开发：替换图形后端、调优输入与音频、调整沙盒内文件访问方式，再打包成自签名 IPA 在真机实测。"
+        ],
+        "agentInstallPrompt": "请在 macOS 上帮我把 https://github.com/willfaust/Madeira 跑起来。步骤：1) git clone 仓库并完整阅读 README、构建脚本与子模块配置，列出所需依赖（Xcode command line tools、iOS SDK、FEX-Emu、Wine、DXMT 等的获取方式与版本要求）；2) 检查本机环境，缺什么就先装什么，并说明每步命令的作用；3) 初始化/更新子模块，按文档编译出 arm64 iOS 产物，把生成的共享库与配置正确嵌入 Xcode 工程或打包成可侧载的 IPA；4) 用个人开发者证书签名，安装到一台未越狱的 arm64 iPhone/iPad；5) 先跑一个最小 Windows 程序，再试一个简单的 Windows 游戏。请逐步执行并报告：依赖缺失项、编译报错原文与你的修复方案、设备启动后的 FEX/Wine 日志与崩溃点，最后输出一份可复现的最小步骤清单和已知限制。"
+      }
+    },
+    "repo:miuuyy/codex-chatgpt-web": {
+      "type": "repo-insight",
+      "hash": "e3679b540e6667bbd5b43f44",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-27T22:00:59.863Z",
+      "value": {
+        "summaryZh": "该项目把 ChatGPT 网页版（含 Pro 订阅）作为原生模型接入 Codex，从而绕过 Codex 自身额度消耗。基于 TypeScript 实现，支持上下文、工具调用、流式输出与图片输入，让 Codex 的 agent 能力直接运行在网页版 ChatGPT 上。适合已有 Plus/Pro 订阅、想节省 Codex 配额的开发者与重度 AI 编程用户，也方便研究模型代理与协议适配的人。",
+        "scenarios": [
+          "已有 ChatGPT Plus/Pro 订阅但 Codex 额度吃紧，仍想在 Codex CLI 或 IDE 工作流里持续做日常编码与重构。",
+          "需要多模态与工具能力：让网页版 ChatGPT 读取截图、调用工具并以流式方式返回结果，用于调试、代码评审和技术问答。",
+          "想自建本地模型代理，把网页版聊天能力接入自有 agent、自动化脚本或团队内部的编码助手链路。"
+        ],
+        "agentInstallPrompt": "请帮我在本机跑通 miuuyy/codex-chatgpt-web：1) 克隆 https://github.com/miuuyy/codex-chatgpt-web 并进入目录，先通读 README、package.json 和示例配置；2) 使用 Node.js 18+ 与仓库指定的包管理器（pnpm/npm/yarn 按 lockfile 判断）安装依赖并完成构建；3) 按 README 指引配置 ChatGPT 网页版登录凭据或本地代理端口，写入本地配置或环境变量文件，确认 .gitignore 已忽略敏感信息，绝不提交任何凭据；4) 启动服务，验证 Codex 能把它识别为一个可用模型；5) 发送一条带多轮上下文、工具调用和一张图片的测试请求，确认流式输出与图片输入正常，最后把执行的命令、遇到的报错和修复方式汇总给我。"
+      }
     }
   }
 }
