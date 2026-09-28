@@ -5493,17 +5493,17 @@
     },
     "repo:magnitudedev/magnitude": {
       "type": "repo-insight",
-      "hash": "6e5e7fed58ad71d28ead80b9",
+      "hash": "007944837f997d209b9e35f3",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-23T22:00:29.175Z",
+      "generatedAt": "2026-09-28T22:58:21.075Z",
       "value": {
-        "summaryZh": "Magnitude 是一个用 TypeScript 编写的开源本地推理引擎，目标是让现有硬件跑出最好的大模型效果。它会先探测你的机器配置（芯片、显存、内存、后端），再据此推荐最合适的开源模型，并针对具体硬件自动做量化与参数调优。最大亮点是“硬件无关”：Apple Silicon、NVIDIA、AMD 显卡都能用，甚至只有 CPU 也能跑，省去手动比对量化格式和推理后端的麻烦。适合想在本地私有化运行大模型的开发者、注重数据隐私的团队，以及手头只有普通笔记本或旧显卡、希望低成本试跑开源模型的个人用户。",
+        "summaryZh": "Magnitude 是用 Rust 编写的开源本地推理引擎，核心是让现有硬件跑出最优性能：自动分析机器配置，推荐最合适的开源模型，并针对具体硬件做量化与参数调优。支持 Apple Silicon、NVIDIA、AMD，也能纯 CPU 运行。适合想在本地离线部署模型的开发者、隐私敏感的用户，以及只有普通笔记本或旧显卡、想低成本体验开源大模型的人。",
         "scenarios": [
-          "在没有独显的笔记本上快速挑选并跑通可用的开源小模型，验证本地推理可行性",
-          "为配备 NVIDIA 或 AMD 显卡的工作站自动推荐量化版本并调优参数，搭建私有化推理服务",
-          "在 Apple Silicon Mac 上对比不同开源模型的实际吞吐与效果，作为选型与成本评估依据"
+          "在 MacBook（Apple Silicon）上离线搭建个人 AI 助手，自动匹配能流畅运行的模型与量化档位。",
+          "为只有 NVIDIA、AMD 独显或纯 CPU 的旧机器挑选可用开源模型，避免手动试错显存与性能瓶颈。",
+          "在隐私敏感的企业内网或断网环境中部署本地推理服务，多台机器可复用同一套硬件画像与调优流程。"
         ],
-        "agentInstallPrompt": "请帮我安装并试跑 magnitudedev/magnitude 这个开源本地推理引擎。步骤：1）克隆仓库 https://github.com/magnitudedev/magnitude 并阅读 README，确认包管理器（pnpm/npm）与 Node 版本要求；2）安装依赖并构建；3）运行它的硬件探测与模型推荐功能，先看它为我这台机器（请自动检测是 Apple Silicon、NVIDIA、AMD 还是纯 CPU）推荐了哪些开源模型；4）选择一个体积较小的推荐模型完成下载与一次实际推理，输出生成结果和耗时；5）若中途缺少后端依赖（如 CUDA、Metal、ROCm）或模型下载失败，请给出具体报错、原因和最小可行的替代方案，不要跳过验证步骤。"
+        "agentInstallPrompt": "请帮我在本地跑通 magnitudedev/magnitude。步骤：1）确认系统已安装 Rust 工具链，缺失则先用 rustup 安装并切到 stable；2）克隆 https://github.com/magnitudedev/magnitude 到工作目录；3）阅读仓库 README 与 Cargo.toml，确认真实的 CLI 子命令与参数，再执行 cargo build --release 编译；4）编译完成后运行它的硬件检测与模型推荐命令，把本机 CPU、GPU（Apple Silicon / NVIDIA / AMD / 纯 CPU）、内存与显存信息及推荐模型清单反馈给我；5）按推荐挑一个体积最小的模型完成一次端到端推理试跑。请原样回报你实际执行的完整命令、输出摘要、耗时与全部报错，不要编造命令，也不要擅自改动源码。"
       }
     },
     "repo:nvm-sh/nvm": {
@@ -7277,6 +7277,21 @@
           "想自建本地模型代理，把网页版聊天能力接入自有 agent、自动化脚本或团队内部的编码助手链路。"
         ],
         "agentInstallPrompt": "请帮我在本机跑通 miuuyy/codex-chatgpt-web：1) 克隆 https://github.com/miuuyy/codex-chatgpt-web 并进入目录，先通读 README、package.json 和示例配置；2) 使用 Node.js 18+ 与仓库指定的包管理器（pnpm/npm/yarn 按 lockfile 判断）安装依赖并完成构建；3) 按 README 指引配置 ChatGPT 网页版登录凭据或本地代理端口，写入本地配置或环境变量文件，确认 .gitignore 已忽略敏感信息，绝不提交任何凭据；4) 启动服务，验证 Codex 能把它识别为一个可用模型；5) 发送一条带多轮上下文、工具调用和一张图片的测试请求，确认流式输出与图片输入正常，最后把执行的命令、遇到的报错和修复方式汇总给我。"
+      }
+    },
+    "repo:byoungd/up": {
+      "type": "repo-insight",
+      "hash": "ec80b6fb493a4277f0aa71cf",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-28T22:42:10.214Z",
+      "value": {
+        "summaryZh": "byoungd/up 是韩先凯开源的个人进阶指南合集，以 JavaScript 构建文档站，把 AI 学习路线、英语学习教程、学习方法和人生进阶经验整理成可导航的体系。项目定位不是代码库，而是长期维护的知识手册，内容覆盖入门路径、工具使用与实操建议，结构清晰、更新活跃。适合想系统入门 AI 与英语、需要明确学习路线图的学生、转行者与开发者，也可作为团队内部培训或自学计划的参考底稿，支持在线浏览或本地部署后离线阅读。",
+        "scenarios": [
+          "想从零系统学习 AI，需要一份由浅入深、带路线图和资源清单的中文指南时，可直接按章节跟读。",
+          "英语基础薄弱、想找可执行的学习方法与教程步骤，用它规划每日练习与阶段目标。",
+          "作为团队或社群的学习材料，本地部署文档站后按模块拆分为 AI 专题与英语专题的共读计划。"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 byoungd/up 这个开源进阶指南项目：1) 执行 git clone https://github.com/byoungd/up.git 并进入目录；2) 查看 package.json 与 lock 文件，判断包管理器并用 npm 或 pnpm 安装依赖；3) 阅读 README 确认启动与构建命令，启动本地开发服务器后告诉我访问地址；4) 列出内容或 docs 目录的一级结构，概括 AI 学习和英语学习两大板块的章节标题；5) 如果启动失败，说明具体报错原因并给出可执行的修复方案。"
       }
     }
   }
