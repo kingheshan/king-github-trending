@@ -5313,17 +5313,17 @@
     },
     "repo:career-ops-hq/career-ops": {
       "type": "repo-insight",
-      "hash": "ed88b85eb499fa5aefaeef90",
+      "hash": "2e030e8333fbf1846b06a3c3",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-01T23:10:30.006Z",
+      "generatedAt": "2026-09-29T22:01:22.348Z",
       "value": {
-        "summaryZh": "career-ops是一个开源的AI求职助手，用JavaScript编写，可在本地AI编码CLI（如Claude Code、Codex等）中运行。它能扫描招聘门户，将职位信息整理成结构化的A-H报告，并给出1-5分的综合评分。此外，还支持定制简历、跟踪申请进度，帮助求职者高效管理求职流程。其亮点是全程本地运行，保护隐私，且能无缝集成到开发者已有的AI工作流中，适合技术背景的求职者、独立开发者以及希望自动化求职的AI工具使用者。",
+        "summaryZh": "career-ops 是开源 AI 求职代理，用 JavaScript 编写，可在 Claude Code、Codex、OpenCode、Antigravity 等 AI 编码 CLI 中本地运行。它自动扫描招聘网站职位，把岗位列表评估为结构化 A-H 报告并给出 1-5 全局评分，按目标岗位定制简历，同时跟踪投递进度，数据不出本机。适合正在密集求职、想批量筛岗并快速产出定制简历的开发者，也适合研究 AI Agent 工作流的工程师。",
         "scenarios": [
-          "在本地AI编码环境中批量扫描多个招聘网站，自动生成带评分的职位对比报告，快速筛选高匹配度机会。",
-          "针对特定职位描述，使用AI自动调整简历和求职信，突出相关技能与经验，提升申请通过率。",
-          "集中跟踪所有已投递职位的状态，通过A-H报告和1-5分评分体系，复盘优化求职策略。"
+          "求职者把多个招聘网站的岗位交给 agent，自动生成 A-H 报告与 1-5 评分，快速排除明显不匹配的职位。",
+          "针对高分岗位一键改写简历要点，让 CV 与 JD 的关键词和职责描述对齐后再投递。",
+          "用内置跟踪表管理已投递、面试、Offer 各阶段状态，避免多线求职时遗漏跟进与复盘。"
         ],
-        "agentInstallPrompt": "请先安装Node.js和npm，然后克隆仓库：git clone https://github.com/career-ops-hq/career-ops.git，进入目录并运行npm install。接着，配置必要的环境变量（如API密钥），根据README设置所需的招聘门户源。最后，运行类似 `npm start` 或 `node index.js` 的命令启动扫描，生成示例报告，并与AI编码CLI集成测试基本功能。"
+        "agentInstallPrompt": "请帮我在本地跑通 career-ops：先执行 git clone https://github.com/career-ops-hq/career-ops 并进入目录，阅读 README 确认 Node/JavaScript 环境要求与依赖安装方式，安装依赖并把示例配置复制为本地配置。然后以我提供的目标岗位链接或关键词为输入，完成一次端到端试跑：扫描职位、生成 A-H 结构化评估报告与 1-5 总分、基于我的简历模板产出定制版本，并告诉我投递跟踪记录写入哪个文件。过程中如缺少 API Key、权限或环境变量，请列出需要我补充的信息，不要擅自登录或访问外部账号。"
       }
     },
     "repo:blader/humanizer": {
@@ -7292,6 +7292,156 @@
           "作为团队或社群的学习材料，本地部署文档站后按模块拆分为 AI 专题与英语专题的共读计划。"
         ],
         "agentInstallPrompt": "请帮我在本地跑通 byoungd/up 这个开源进阶指南项目：1) 执行 git clone https://github.com/byoungd/up.git 并进入目录；2) 查看 package.json 与 lock 文件，判断包管理器并用 npm 或 pnpm 安装依赖；3) 阅读 README 确认启动与构建命令，启动本地开发服务器后告诉我访问地址；4) 列出内容或 docs 目录的一级结构，概括 AI 学习和英语学习两大板块的章节标题；5) 如果启动失败，说明具体报错原因并给出可执行的修复方案。"
+      }
+    },
+    "repo:NVIDIA/OpenShell": {
+      "type": "repo-insight",
+      "hash": "6c74faeba8c9eb31ed06ee5b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-29T22:00:16.622Z",
+      "value": {
+        "summaryZh": "OpenShell 是 NVIDIA 推出的面向自主 AI 智能体的安全、私密运行时，使用 Rust 编写，强调沙箱隔离、权限控制、可审计与本地/私有化执行。它让 agent 在受控环境中调用工具、执行代码和访问资源，降低越权与数据泄露风险，并便于集成到现有 agent 框架。适合构建 agent 平台、企业私有部署、研究智能体安全与多智能体协作的开发者、平台工程师和安全团队。",
+        "scenarios": [
+          "在本地或私有云中为自主 AI agent 提供隔离执行环境，安全调用工具、运行代码和访问文件。",
+          "企业内网构建 agent 平台时，用它做权限控制、审计与数据边界管理，防止越权操作。",
+          "研究多智能体协作、agent 安全与沙箱逃逸防护时，作为可复现的 Rust 运行时基线。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/NVIDIA/OpenShell，阅读 README、Cargo.toml 和示例目录，确认本机已安装 Rust/cargo。然后执行 cargo build 或 README 指定的构建命令；若无现成示例，请查找 src/main.rs 或二进制入口，运行最小启动命令和 cargo test。最后汇报：依赖是否齐全、构建是否成功、如何启动 demo、遇到哪些错误及修复建议。不要修改核心代码，优先按官方文档操作。"
+      }
+    },
+    "repo:t8y2/dbx": {
+      "type": "repo-insight",
+      "hash": "3732644279a1983c99533d8a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-29T22:00:20.204Z",
+      "value": {
+        "summaryZh": "dbx 是一款用 Rust 编写的轻量级跨平台数据库管理客户端，安装包约 25 MB，却支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、SQL Server、达梦等 100 多种数据源。它同时提供桌面端、CLI 与 Docker 镜像，并内置 AI 助手和 MCP Server，可被 AI Agent 直接调用完成查询、建表与运维操作。适合需要统一管理异构数据库的后端与数据工程师、运维人员，以及想把数据库能力接入 AI 工作流的开发者。",
+        "scenarios": [
+          "后端或数据工程师在同一台机器上管理 MySQL、PostgreSQL、Redis、MongoDB 等异构数据源，用统一客户端替代多个专用工具。",
+          "运维或 DBA 通过 CLI 与 Docker 镜像在服务器或 CI 环境中执行脚本化查询、巡检和日常数据库操作。",
+          "把内置 MCP Server 接入 Claude、Cursor 等 AI Agent，让模型在授权范围内直接读取表结构、生成并执行 SQL。"
+        ],
+        "agentInstallPrompt": "请帮我试用 GitHub 项目 t8y2/dbx（轻量级 Rust 跨平台数据库客户端）。步骤：1) 克隆仓库 https://github.com/t8y2/dbx 并阅读 README，确认构建与运行方式；2) 检查本机是否已安装 Rust 工具链、Node/pnpm 与 Docker，缺失则给出安装命令；3) 优先用 Docker 方式启动桌面端或 CLI 做最小验证，若需源码构建则执行 cargo build --release 并记录耗时与报错；4) 用我本地的 SQLite 或 PostgreSQL 实例连接一次，展示查询结果；5) 说明如何启用内置 AI 助手与 MCP Server，并给出在 AI 客户端中注册该 MCP 的配置示例。完成后汇报可用性、资源占用和遇到的问题。"
+      }
+    },
+    "repo:averygan/reclip": {
+      "type": "repo-insight",
+      "hash": "87614b285579cf40901e6f11",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-29T22:00:23.988Z",
+      "value": {
+        "summaryZh": "Reclip 是一个轻量级、可自托管的在线视频下载工具，提供干净简洁的网页界面，支持从 YouTube、Bilibili、Twitter 等几乎任意网站抓取视频与音频。项目以 HTML 为主，依赖少、部署门槛低，适合想搭建私有下载服务、重视隐私与数据自主的个人用户，也方便开发者二次定制界面与下载逻辑。",
+        "scenarios": [
+          "在个人 VPS 或 NAS 上自建视频下载服务，把散落在各站的收藏内容一键保存到本地磁盘。",
+          "需要批量收集课程、素材或参考资料时，通过 Web UI 粘贴链接、选择清晰度与格式后统一下载。",
+          "在家庭或团队内网共享一个下载入口，成员无需各自安装客户端，同时避免第三方在线下载站的隐私风险。"
+        ],
+        "agentInstallPrompt": "请帮我部署并试跑 reclip：先克隆 https://github.com/averygan/reclip，通读 README 与目录结构，确认运行方式与依赖（如需要 yt-dlp、ffmpeg、Python 或 Node 环境请一并安装），在本地启动服务并打开它的 Web UI，用一条公开视频链接实测下载是否成功，最后告诉我启动命令、默认端口、配置项位置以及常见报错（如解析失败、缺少 ffmpeg）的排查方法。"
+      }
+    },
+    "repo:cs341-illinois/coursebook": {
+      "type": "repo-insight",
+      "hash": "8dd07699c3049e1174d5a99f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-29T22:00:30.853Z",
+      "value": {
+        "summaryZh": "cs341-illinois/coursebook 是伊利诺伊大学 CS 341 课程的开源系统编程教材，以 LaTeX 编写，涵盖 C、汇编、内存、进程、并发与性能等底层主题。最大亮点是课程级体系化内容与可自由编译、修改的源码，适合自学者、助教和教师按需定制讲义，也方便开发者系统补课计算机系统基础。",
+        "scenarios": [
+          "自学计算机系统基础时，按章节编译 PDF 并配合课程实验理解 C 与汇编。",
+          "高校教师或助教复用 LaTeX 源码，裁剪、补充习题与讲义内容。",
+          "用 AI coding agent 自动构建教材 PDF，检查 LaTeX 错误并生成可分发版本。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/cs341-illinois/coursebook，先阅读 README、Makefile 和 latexmkrc 确定构建方式；安装 TeX Live（含 latexmk、xelatex/pdflatex 及所需宏包），在仓库根目录执行 make 或 latexmk -pdf，若报缺包用 tlmgr 安装；最后确认生成的 PDF 存在，并汇总构建命令、依赖和遇到的问题。"
+      }
+    },
+    "repo:VectifyAI/PageIndex": {
+      "type": "repo-insight",
+      "hash": "1ff094059f4204016f3810ee",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-29T22:00:36.383Z",
+      "value": {
+        "summaryZh": "PageIndex 是一个面向 RAG 的“无向量”文档索引方案：它把 PDF、Markdown 等长文档解析成带层级标题、页码与节点摘要的树状目录，检索时由大模型沿着这棵树做推理式导航，逐层定位到相关章节，而不是依赖向量相似度切片召回。亮点是可解释、可溯源（能返回具体章节与页码），对财报、法规、技术手册这类结构清晰的长文档效果更好，也避免了固定切块割裂上下文的问题。适合追求高精度与可审计检索的 RAG 开发者、企业知识库与文档问答团队。",
+        "scenarios": [
+          "为上市公司年报、招股书、研究白皮书等超长 PDF 构建可追溯问答知识库，答案能直接定位到原始章节与页码",
+          "在法规、标准、合同等条款密集文档中做推理式检索，避免向量切片造成上下文断裂与误召回",
+          "把 PageIndex 作为现有 RAG 的检索层替换或补充向量数据库，接入 Agent/MCP 实现多轮推理问答与跨文档对比"
+        ],
+        "agentInstallPrompt": "请在本地帮我跑通 VectifyAI/PageIndex：1) git clone https://github.com/VectifyAI/PageIndex 并 cd 进入，创建 Python 3.10+ 虚拟环境并激活；2) 安装依赖，优先 pip install -e .，失败则 pip install -r requirements.txt，按报错补齐缺失包；3) 通过 .env 或环境变量配置 OPENAI_API_KEY（若换用其他模型，一并配置对应 key 与 base_url）；4) 阅读 README 和 examples/ 目录，找到“生成文档树索引”与“基于索引问答”的最简示例，用我给的 PDF 跑完整流程；5) 输出生成的树状索引结构（节点标题与页码）、一次提问的遍历/检索路径与最终答案，并汇报所有报错及修复方式。不要改动我的全局 Python 环境。"
+      }
+    },
+    "repo:rakyll/hey": {
+      "type": "repo-insight",
+      "hash": "9afdd10fb1cc0bff6a7ae37c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-29T22:00:50.214Z",
+      "value": {
+        "summaryZh": "hey 是 rakyll 用 Go 编写的 HTTP 压测工具，ab 的现代替代品。支持 HTTP/2，可用 -n 请求数、-c 并发数、-z 时长控制负载，并自定义方法、请求头与 POST 体。输出含吞吐量、P50/P95/P99 延迟分位、直方图与状态码分布。单文件二进制、零依赖、跨平台，适合后端工程师与 SRE 在本地或 CI 验证接口性能与容量。",
+        "scenarios": [
+          "上线前对 REST/GraphQL 接口或网关做基准压测，用 -n/-c 组合对比不同版本或配置下的 QPS 与 P95/P99 延迟。",
+          "在 CI 流水线里作为轻量性能回归门禁，固定并发与请求数跑小规模压测，吞吐骤降或错误率上升即让流水线失败。",
+          "排查线上超时、限流或连接复用问题时，从本地或跳板机对目标服务发起受控并发请求，结合状态码分布与错误分布定位瓶颈。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 rakyll/hey 这个 HTTP 压测工具。步骤：1) 优先执行 `go install github.com/rakyll/hey@latest`，若本机没有 Go 环境则改用 `brew install hey` 或从 GitHub Releases 下载对应平台二进制并放入 PATH；2) 运行 `hey -version` 确认可用，并说明实际安装路径；3) 对我给出的目标地址（默认先测 https://example.com）执行 `hey -n 200 -c 20 https://example.com`；4) 从输出中提取 Requests/sec、平均延迟、P50/P95/P99 延迟、状态码分布和错误分布，用中文汇总一张简要表格，并给出性能结论与下一步调参建议（例如是否加大 -n/-c 或用 -z 做定长时间压测）。"
+      }
+    },
+    "repo:elastic/elasticsearch": {
+      "type": "repo-insight",
+      "hash": "af80ba1536bb3af56294b656",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-29T22:00:59.017Z",
+      "value": {
+        "summaryZh": "Elasticsearch 是基于 Apache Lucene 的免费开源分布式 RESTful 搜索引擎，用 Java 编写，支持全文检索、结构化查询、聚合分析与向量检索。它以分片和副本实现水平扩展与高可用，近实时索引，通过统一 REST API 完成写入、查询与集群管理，并可与 Kibana、Logstash、Beats 组成 ELK 可观测性栈。适合后端与搜索工程师、SRE 日志分析团队，以及需要构建 RAG 向量召回的数据平台开发者。",
+        "scenarios": [
+          "为电商或内容站点搭建全文搜索，实现关键词匹配、多维筛选、相关度排序与聚合分面，替代数据库 LIKE 查询",
+          "集中采集应用与容器日志，构建 ELK 可观测性链路，做错误检索、指标聚合、异常告警与可视化看板",
+          "作为 RAG 知识库的向量与混合检索层，为 LLM 应用提供低延迟、可水平扩展的近实时文档召回"
+        ],
+        "agentInstallPrompt": "请在本机用 Docker 快速试跑单节点 Elasticsearch 8.x，并按步骤验证后汇报。步骤：1) 执行 docker network create es-net；2) 运行 docker run -d --name es --network es-net -p 9200:9200 -e discovery.type=single-node -e xpack.security.enabled=false -e ES_JAVA_OPTS='-Xms1g -Xmx1g' docker.elastic.co/elasticsearch/elasticsearch:8.15.0；3) 轮询 curl -s http://localhost:9200 直到返回集群名与版本号；4) PUT 创建索引 books，字段含 title(text)、author(keyword)、tags(keyword)、price(float)；5) 用 _bulk 写入 3 条示例文档并加 refresh=true 立即刷新；6) 执行 match 查询验证 title 分词检索，再执行 terms 聚合统计 tags 分布；7) 输出每条命令、关键返回结果，以及若要长期使用需调整的配置项（JVM 内存、端口、安全认证开关、持久化卷）。"
+      }
+    },
+    "repo:NVIDIA/SkillSpector": {
+      "type": "repo-insight",
+      "hash": "73f613ebd80869321d5e33f6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-29T22:01:02.947Z",
+      "value": {
+        "summaryZh": "NVIDIA SkillSpector 是 NVIDIA 开源的 Python 安全扫描器，专为 AI Agent 技能与 MCP 工具打造。它可在安装前静态分析 Claude Code、Codex、MCP 等技能包，检测提示注入、恶意代码模式、数据外泄通道、供应链投毒与权限滥用等风险，并给出可读报告与风险等级。项目适合 AI 应用开发者、平台工程与安全团队使用，可在 CI 流程中把关第三方技能来源，降低引入不可信 Agent 插件的风险，是构建可信 Agent 生态的实用护栏工具。",
+        "scenarios": [
+          "在安装第三方 Claude Code、Codex 或 MCP 技能包之前，先运行 SkillSpector 扫描其目录，确认无提示注入、数据外泄或恶意脚本后再放行。",
+          "在 CI/CD 流水线中集成 SkillSpector，对仓库内新增或更新的 Agent 技能文件自动做安全门禁，发现高危模式即阻断合并。",
+          "对已有 Agent 插件做供应链安全审计，批量扫描技能清单并输出风险等级报告，辅助安全团队做准入与整改决策。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 NVIDIA SkillSpector。步骤：1) 克隆仓库 https://github.com/NVIDIA/SkillSpector 到本地；2) 阅读 README 与依赖文件，用 Python 3 创建虚拟环境并安装全部依赖；3) 准备一个待检测的 AI Agent 技能目录（如 Claude Code、Codex 或 MCP skill 文件夹），若我没有现成的，就用仓库自带示例或临时构造一个含可疑提示注入的测试样本；4) 按 README 中的命令行用法对该目录执行扫描，输出完整报告与风险等级；5) 把安装命令、实际执行的扫描命令、关键发现和可能的误报都汇总给我，并说明如何在 CI 中复用这条命令。"
+      }
+    },
+    "repo:longbridge/gpui-kit": {
+      "type": "repo-insight",
+      "hash": "3e148fc272c4b7b05514eb04",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-29T22:01:07.515Z",
+      "value": {
+        "summaryZh": "gpui-kit 是 longbridge 团队基于 GPUI 引擎开源的 Rust 跨平台桌面 UI 组件库，提供按钮、输入框、表格、弹窗、菜单、主题等常见控件，让开发者用声明式 API 快速搭建风格统一的原生桌面应用，渲染性能接近系统原生。它封装了 GPUI 的布局、事件与状态更新细节，降低自研组件成本，适合熟悉 Rust 的桌面开发者、金融与工具类客户端团队，以及希望从 Electron/Tauri 迁移或补充原生控件的工程师上手。",
+        "scenarios": [
+          "用 Rust 与 GPUI 开发行情、交易等跨平台桌面终端，直接复用现成表格、图表容器与主题组件",
+          "为内部工具快速搭建桌面客户端，统一按钮、表单、弹窗等交互风格，减少重复造轮子",
+          "作为学习 GPUI 组件拆分、状态管理与样式系统设计的参考实现，指导自研 UI 库"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 longbridge/gpui-kit：先克隆 https://github.com/longbridge/gpui-kit 并进入目录，确认 Rust 工具链为 stable（建议 1.75 以上）；执行 cargo build 检查依赖，再浏览 examples 目录，挑一个示例用 cargo run --example <示例名> 启动。macOS 需安装 Xcode Command Line Tools，Linux 需准备 Wayland/X11 相关依赖且注意 GPUI 对 Linux 支持有限。运行后请汇总编译报错、界面效果，并依据 README 给出一个最小可运行示例。"
+      }
+    },
+    "repo:ahujasid/mcp-for-blender": {
+      "type": "repo-insight",
+      "hash": "0b7c6b676642880df806bf74",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-29T22:01:16.012Z",
+      "value": {
+        "summaryZh": "mcp-for-blender 是社区维护的 Blender 插件，通过 MCP 协议把建模、材质、灯光与场景操作暴露给任意 LLM，让 Claude、GPT 等支持 MCP 的客户端用自然语言驱动 3D 创作。项目用 Python 编写，含 Blender 端插件与 MCP 服务端，安装后 AI 即可调用 Blender API 生成脚本、调整场景或批量处理资产。适合 3D 艺术家、技术美术、游戏与建筑可视化从业者，以及想把 LLM 接入 DCC 工具链的开发者。",
+        "scenarios": [
+          "用自然语言让 AI 在 Blender 中快速搭建场景原型，例如摆放基础几何体、设置相机与灯光。",
+          "让 LLM 生成并执行 Blender Python 脚本，批量重命名、重拓扑或导出资产，减少重复手工操作。",
+          "把支持 MCP 的客户端接入现有 3D 工作流，实现对话式材质调整、渲染参数配置与自动化任务编排。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 ahujasid/mcp-for-blender。步骤：1）克隆 https://github.com/ahujasid/mcp-for-blender 并阅读 README，确认要求的 Blender 与 Python 版本、依赖清单；2）创建虚拟环境并安装所需 Python 依赖，记录启动 MCP 服务端的命令与端口；3）指导我在 Blender 的 Edit > Preferences > Add-ons 中安装并启用仓库内的插件脚本，必要时修改插件里的服务端地址与端口；4）帮我把 MCP 客户端（如 Claude Desktop）配置指向该服务端，给出配置文件片段；5）做一次最小验证：让 AI 连接 Blender，新建一个立方体并返回当前场景对象列表，截图或贴出日志佐证。请逐步执行并汇报每条命令、输出结果与可能的报错及修复方式。"
       }
     }
   }
