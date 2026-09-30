@@ -7443,6 +7443,21 @@
         ],
         "agentInstallPrompt": "请帮我安装并试跑 ahujasid/mcp-for-blender。步骤：1）克隆 https://github.com/ahujasid/mcp-for-blender 并阅读 README，确认要求的 Blender 与 Python 版本、依赖清单；2）创建虚拟环境并安装所需 Python 依赖，记录启动 MCP 服务端的命令与端口；3）指导我在 Blender 的 Edit > Preferences > Add-ons 中安装并启用仓库内的插件脚本，必要时修改插件里的服务端地址与端口；4）帮我把 MCP 客户端（如 Claude Desktop）配置指向该服务端，给出配置文件片段；5）做一次最小验证：让 AI 连接 Blender，新建一个立方体并返回当前场景对象列表，截图或贴出日志佐证。请逐步执行并汇报每条命令、输出结果与可能的报错及修复方式。"
       }
+    },
+    "repo:modelcontextprotocol/servers": {
+      "type": "repo-insight",
+      "hash": "aa7b4befa3eda422b2bff6ad",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-09-30T22:37:45.832Z",
+      "value": {
+        "summaryZh": "这是 Model Context Protocol（MCP）官方参考服务器合集，由 Anthropic 团队主导维护，以 TypeScript 为主、兼有 Python 实现。它提供文件系统、Git、Fetch、Memory、顺序思考、时间等开箱即用的 MCP 服务器，把本地文件、代码仓库与外部 API 以统一协议暴露给 Claude Desktop、Cursor 等 AI 客户端，让模型在受控权限下真正读写数据、调用工具。适合为 AI 助手接入真实工具链的开发者、构建 Agent 产品的团队，以及想学习 MCP 协议规范与实现范式的人。",
+        "scenarios": [
+          "在 Claude Desktop 或 Cursor 中挂载 filesystem 服务器，让 AI 在指定目录内安全地读取、检索与修改项目文件。",
+          "为自研 Agent 接入 Git、Fetch、Memory 等官方服务器，快速获得代码仓库操作、网页抓取与长期记忆能力。",
+          "以官方仓库为模板，参照现有 server 结构用 TypeScript 编写并调试自己的 MCP 服务器，再发布给团队复用。"
+        ],
+        "agentInstallPrompt": "请帮我在本机跑通 modelcontextprotocol/servers：先克隆 https://github.com/modelcontextprotocol/servers ，阅读 README，确认需要 Node.js 与包管理器版本并安装依赖。然后挑选 src/filesystem（或 src/everything）这个 TypeScript 服务器，用 npx 或本地构建方式启动，生成可直接粘贴到 Claude Desktop / Cursor 配置文件中的 mcpServers JSON 片段（命令、参数、允许访问的目录）。最后用 MCP Inspector 或命令行做一次连通性验证：列出可用工具、调用其中一个工具并展示返回结果，把每一步命令与输出整理成简明报告。"
+      }
     }
   }
 }
