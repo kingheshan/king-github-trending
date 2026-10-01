@@ -7236,17 +7236,17 @@
     },
     "repo:mvschwarz/openrig": {
       "type": "repo-insight",
-      "hash": "1b68f06487605f2ed679274d",
+      "hash": "18e05816cbe11ffb3aa0e989",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-27T22:00:36.810Z",
+      "generatedAt": "2026-10-01T22:25:53.833Z",
       "value": {
-        "summaryZh": "openrig 是用 TypeScript 写的多智能体编排工具，把 Claude Code 与 Codex 组合成统一系统运行。它负责调度、上下文共享与任务分发，让两个编程智能体可协作、互审或并行处理子任务，减少手动切换工具的摩擦。适合常用这两个 CLI 的开发者、要搭建多智能体流水线的 AI 工程团队，以及研究多模型协作的试验者。",
+        "summaryZh": "openrig 是一个用 TypeScript 编写的多智能体编排框架，把 Claude Code、Codex、Pi 等命令行编程智能体组建成常驻团队。它的核心是角色分工、共享上下文与任务归属：每个智能体有明确职责，可读写同一份项目记忆，并认领和交付自己负责的工作，从而减少重复劳动与上下文丢失。适合需要用多个 CLI 智能体并行开发、希望协作流程可复用可观测的工程师与团队，也适合研究多智能体协作的开发者快速搭建本地实验环境。",
         "scenarios": [
-          "在同一代码仓库中让 Claude Code 先实现功能，再由 Codex 审查或补测试，形成交叉验证的编码闭环。",
-          "把大型重构拆分为多个子任务，分配给两个 agent 并行修改不同模块，最后统一汇总与冲突处理。",
-          "搭建团队内部的多模型编码流水线，对比 Claude Code 与 Codex 在真实任务中的表现并沉淀最佳实践。"
+          "让 Claude Code 负责架构设计与代码审查、Codex 负责批量实现、Pi 负责测试与文档，组成常驻小组在同一仓库并行推进任务。",
+          "为长期维护的项目建立带角色与共享记忆的智能体团队，新会话能直接继承上下文，减少反复交代背景与需求。",
+          "在多智能体协作研究中，快速复现角色分工、任务认领、上下文共享等机制，并对比不同编排策略的效果。"
         ],
-        "agentInstallPrompt": "请克隆 https://github.com/mvschwarz/openrig ，阅读 README 与 package.json，确认所需的 Node/pnpm 版本并安装依赖；按文档配置 Claude Code 与 Codex 的 CLI 及必要环境变量或 API Key；用仓库提供的最小示例启动一次联合运行，验证 openrig 能正常调度两个 agent 并共享上下文；若报错，请定位原因、给出修复命令，并记录可复现的安装与试跑步骤。"
+        "agentInstallPrompt": "请帮我安装并试跑 mvschwarz/openrig：先克隆 https://github.com/mvschwarz/openrig 到本地，确认 Node.js 版本要求，用包管理器安装依赖并完成构建。阅读 README 与示例配置，找到 CLI 入口和配置文件格式，然后创建一份最小配置，定义两个角色（例如规划者与实现者），分别绑定本机已登录的 Claude Code 和 Codex。再准备一个示例仓库作为共享上下文，运行一次完整协作流程，验证角色分工、共享上下文与任务归属是否按预期生效。过程中如遇报错请自行排查并修正，最后用中文总结安装步骤、关键命令、配置示例和踩到的坑。"
       }
     },
     "repo:willfaust/Madeira": {
@@ -7457,6 +7457,36 @@
           "以官方仓库为模板，参照现有 server 结构用 TypeScript 编写并调试自己的 MCP 服务器，再发布给团队复用。"
         ],
         "agentInstallPrompt": "请帮我在本机跑通 modelcontextprotocol/servers：先克隆 https://github.com/modelcontextprotocol/servers ，阅读 README，确认需要 Node.js 与包管理器版本并安装依赖。然后挑选 src/filesystem（或 src/everything）这个 TypeScript 服务器，用 npx 或本地构建方式启动，生成可直接粘贴到 Claude Desktop / Cursor 配置文件中的 mcpServers JSON 片段（命令、参数、允许访问的目录）。最后用 MCP Inspector 或命令行做一次连通性验证：列出可用工具、调用其中一个工具并展示返回结果，把每一步命令与输出整理成简明报告。"
+      }
+    },
+    "repo:pablostanley/yoinks": {
+      "type": "repo-insight",
+      "hash": "3e5995f67a2db9efc59147c0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-01T22:43:27.220Z",
+      "value": {
+        "summaryZh": "yoinks 是一个用 TypeScript 编写的终端视频下载工具，把「下载任意视频」放回命令行：在终端里一条命令完成解析与拉取，全程不经过弹窗广告、诱导跳转和捆绑页面。它面向习惯 CLI 的开发者、运维和内容归档用户，省掉开浏览器、复制链接、穿越广告页的繁琐流程，也便于写进脚本或定时任务做批量抓取。项目基于 Node 生态、体量轻，既能当自用下载器，也适合作为二次开发或集成到自有工具链的基础。",
+        "scenarios": [
+          "在服务器或本地终端批量下载公开视频素材，做离线归档与备份，无需打开浏览器。",
+          "把下载命令接入脚本或定时任务，定期抓取指定视频源，配合转码、上传流程做自动化。",
+          "作为学习 TypeScript CLI 项目的范例，阅读其命令解析、下载与进度展示实现并二次开发。"
+        ],
+        "agentInstallPrompt": "请帮我跑通 GitHub 项目 https://github.com/pablostanley/yoinks（TypeScript 终端视频下载工具）。步骤：1) 克隆仓库到本地并进入目录；2) 查看 README 与 package.json，确认所需 Node 版本和包管理器（npm/pnpm/yarn），安装依赖并执行构建或全局链接；3) 运行 yoinks --help（或 README 中给出的实际命令名）确认命令可用，并总结支持的参数与用法；4) 用一个公开、无版权争议的测试视频链接实际下载一次，验证文件完整可用；5) 如遇 Node 版本、依赖或构建报错，请给出最小改动的修复方案并重试；6) 最后输出一份可复制的最简使用命令清单和已知限制。"
+      }
+    },
+    "repo:alirezarezvani/claude-skills": {
+      "type": "repo-insight",
+      "hash": "c1b914f9f22c08bbdfc538eb",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-01T22:52:50.448Z",
+      "value": {
+        "summaryZh": "claude-skills 是面向 Claude Code、Codex、Gemini CLI、Cursor 等十余款编码代理的开源技能库，收录 380+ 技能、70+ 自定义命令、30+ 代理与插件，并附可定制的参考文档与脚本。覆盖工程、市场、产品、合规、高管咨询、研究、业务运营、商务财务与日常效率等方向，开箱即用且便于二次裁剪。适合想把编码代理扩展成多职能工作台的工程师、独立开发者、团队负责人，以及用 AI 搭建工作流的非技术岗位。",
+        "scenarios": [
+          "为 Claude Code 或 Cursor 批量接入工程、产品、合规技能包，让编码代理直接产出需求文档、代码评审意见和合规检查清单。",
+          "市场与商务人员复用内置代理和自定义命令，快速生成竞品调研、定价方案与销售话术，无需从零编写提示词。",
+          "按项目裁剪 references 与 scripts，建立团队统一的 AI 工作流基线，并把自有技能沉淀入库做版本管理。"
+        ],
+        "agentInstallPrompt": "请帮我试用 GitHub 项目 alirezarezvani/claude-skills：先把仓库克隆到本地（git clone https://github.com/alirezarezvani/claude-skills），通读 README 和目录结构，梳理 skills、commands、agents 三个目录的组织方式与安装说明；然后按文档把技能库接入我本机正在使用的编码代理（如 Claude Code、Codex 或 Cursor），至少完成一次最小可用安装；再挑一个与工程或产品相关的技能实际跑一遍，展示输入与输出效果。最后汇报：安装步骤、目录约定、可定制文件的位置、依赖与权限要求，以及做二次开发时的注意事项，遇到报错请给出具体修复方案。"
       }
     }
   }
