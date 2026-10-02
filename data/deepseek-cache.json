@@ -1818,17 +1818,17 @@
     },
     "repo:trycua/cua": {
       "type": "repo-insight",
-      "hash": "c3e45c2776566b6fd7cbd56f",
+      "hash": "c178f400ec41ce155f5d902d",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-19T22:01:04.305Z",
+      "generatedAt": "2026-10-02T22:56:08.074Z",
       "value": {
-        "summaryZh": "CUA是开源计算机使用（computer-use）平台，提供跨操作系统的驱动和舰队管理，支持训练、评估和数据生成的基准测试。亮点包括开源驱动、跨OS兼容性、丰富的基准测试集，适合AI研究员、自动化工程师和希望构建或评估计算机操作模型的开发者。",
+        "summaryZh": "cua 是面向 computer-use 智能体的开源基础设施，提供跨 macOS、Linux、Windows 的驱动与虚拟化沙箱，让 AI 像人一样操作完整桌面。它整合安全隔离的虚拟机、统一控制接口与批量机群调度，用于训练数据生成和能力评测。亮点是可直接接入主流视觉语言模型，自带 OSWorld 等基准，适合 GUI Agent、自动化测试团队。",
         "scenarios": [
-          "自动化跨平台软件测试与UI操作",
-          "训练AI模型执行复杂的计算机操作任务",
-          "生成大规模人机交互数据集用于模型微调"
+          "在隔离虚拟机中批量跑 GUI Agent，让模型自主完成浏览器操作、办公软件点击和系统配置等端到端任务。",
+          "为 computer-use 模型生成高质量训练与评测数据，用统一基准横向对比不同视觉语言模型的桌面操作能力。",
+          "把桌面自动化接入 CI，用于跨 macOS/Linux/Windows 的回归测试、安装流程验证与界面截图对比。"
         ],
-        "agentInstallPrompt": "首先，克隆仓库：git clone https://github.com/trycua/cua.git && cd cua。然后，根据README安装依赖并运行示例：pip install -r requirements.txt && python examples/basic_usage.py。"
+        "agentInstallPrompt": "请帮我本地跑通 trycua/cua（https://github.com/trycua/cua）：1) 克隆仓库并阅读 README 与 docs，确认 Python 版本、Docker 或 QEMU 等前置依赖；2) 用 uv 或 pip 创建虚拟环境并安装依赖，遇到编译或权限报错时给出具体修复命令；3) 启动一个最小沙箱虚拟机，验证驱动能连接、能截屏并能发送键盘鼠标事件；4) 运行仓库中的 computer-use 示例（CLI、notebook 或 SDK 脚本均可），通过环境变量配置模型 API Key，让它打开浏览器搜索一个关键词并把结果截图保存到本地；5) 最后整理一份可复现的命令清单，列出每步耗时、常见错误及解决办法。"
       }
     },
     "repo:MoonshotAI/kimi-cli": {
@@ -5313,17 +5313,17 @@
     },
     "repo:career-ops-hq/career-ops": {
       "type": "repo-insight",
-      "hash": "2e030e8333fbf1846b06a3c3",
+      "hash": "436e90cb65fe0f352889943e",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-29T22:01:22.348Z",
+      "generatedAt": "2026-10-02T22:56:12.235Z",
       "value": {
-        "summaryZh": "career-ops 是开源 AI 求职代理，用 JavaScript 编写，可在 Claude Code、Codex、OpenCode、Antigravity 等 AI 编码 CLI 中本地运行。它自动扫描招聘网站职位，把岗位列表评估为结构化 A-H 报告并给出 1-5 全局评分，按目标岗位定制简历，同时跟踪投递进度，数据不出本机。适合正在密集求职、想批量筛岗并快速产出定制简历的开发者，也适合研究 AI Agent 工作流的工程师。",
+        "summaryZh": "Career Ops 是一个开源 AI 求职代理，本地运行在 Claude Code、Codex、OpenCode 等 AI 编程 CLI 中。它自动扫描各大招聘板，用你的简历对每个岗位做 1-5 分匹配打分，帮你判断是否值得投递；通过初筛后再生成适配 ATS 的简历与求职信，并提供面试准备和投递进度追踪。所有材料由 AI 起草，最终提交仍由你手动点击。适合密集投递、想减少重复劳动的求职者。",
         "scenarios": [
-          "求职者把多个招聘网站的岗位交给 agent，自动生成 A-H 报告与 1-5 评分，快速排除明显不匹配的职位。",
-          "针对高分岗位一键改写简历要点，让 CV 与 JD 的关键词和职责描述对齐后再投递。",
-          "用内置跟踪表管理已投递、面试、Offer 各阶段状态，避免多线求职时遗漏跟进与复盘。"
+          "批量扫描招聘网站，用现有简历给岗位打分排序，快速筛掉不匹配机会",
+          "针对高分岗位自动改写简历与求职信，做成 ATS 友好的定制版本",
+          "用内置追踪器管理每家公司的投递状态，并在面试前生成针对性准备要点"
         ],
-        "agentInstallPrompt": "请帮我在本地跑通 career-ops：先执行 git clone https://github.com/career-ops-hq/career-ops 并进入目录，阅读 README 确认 Node/JavaScript 环境要求与依赖安装方式，安装依赖并把示例配置复制为本地配置。然后以我提供的目标岗位链接或关键词为输入，完成一次端到端试跑：扫描职位、生成 A-H 结构化评估报告与 1-5 总分、基于我的简历模板产出定制版本，并告诉我投递跟踪记录写入哪个文件。过程中如缺少 API Key、权限或环境变量，请列出需要我补充的信息，不要擅自登录或访问外部账号。"
+        "agentInstallPrompt": "请在本机克隆 https://github.com/career-ops-hq/career-ops，先阅读 README 确认所需 Node.js 版本、依赖和配置方式，然后完成安装并接入我当前的 AI CLI（Claude Code、Codex 或 OpenCode）。接着把我的简历放到项目指定目录，跑一次最小可用流程：扫描一个招聘板，用简历对前 5 个岗位按 1-5 分打分并给出理由，再为得分最高的岗位生成一份 ATS 友好的简历和求职信草稿。全程不要自动提交任何申请，每步执行的命令与输出结果都告诉我。"
       }
     },
     "repo:blader/humanizer": {
@@ -7487,6 +7487,21 @@
           "按项目裁剪 references 与 scripts，建立团队统一的 AI 工作流基线，并把自有技能沉淀入库做版本管理。"
         ],
         "agentInstallPrompt": "请帮我试用 GitHub 项目 alirezarezvani/claude-skills：先把仓库克隆到本地（git clone https://github.com/alirezarezvani/claude-skills），通读 README 和目录结构，梳理 skills、commands、agents 三个目录的组织方式与安装说明；然后按文档把技能库接入我本机正在使用的编码代理（如 Claude Code、Codex 或 Cursor），至少完成一次最小可用安装；再挑一个与工程或产品相关的技能实际跑一遍，展示输入与输出效果。最后汇报：安装步骤、目录约定、可定制文件的位置、依赖与权限要求，以及做二次开发时的注意事项，遇到报错请给出具体修复方案。"
+      }
+    },
+    "repo:Effect-TS/effect": {
+      "type": "repo-insight",
+      "hash": "3704cc80b5f548639d2f45c6",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-02T22:29:38.080Z",
+      "value": {
+        "summaryZh": "Effect 是面向 TypeScript 的生产级应用框架，把类型安全的副作用、依赖注入、并发调度与错误处理统一进一个可组合的 Effect 抽象。它内置结构化并发、资源安全释放、重试与超时策略、基于 Context/Layer 的依赖注入、流式处理以及可观测性，并配套 Schema、Platform、CLI、SQL、Cluster 等模块。适合构建高可靠后端服务、微服务、任务流水线与复杂异步逻辑的团队，尤其适合重视类型安全、可测试性与可维护性的中高级 TypeScript 工程师。",
+        "scenarios": [
+          "用 Effect.gen 与 Layer 编写带类型化错误和依赖注入的 Node.js 后端服务或微服务",
+          "为调用外部 API、数据库的异步流程加上重试、超时、限流、结构化并发与资源自动释放",
+          "用 Effect Schema 做边界数据校验解析，用 Stream 处理大批量日志、事件或 ETL 流水线"
+        ],
+        "agentInstallPrompt": "请在当前 Node.js（>=18）项目里安装并试跑 Effect：1) 执行 npm i effect；2) 新建 src/demo.ts，用 Effect.gen 写一个程序：从 process.env 读取 PORT 并解析为数字，解析失败时返回带类型的自定义错误，成功时打印端口；3) 用 Context.Tag + Layer 定义一个简单 Logger 服务并在程序中注入使用；4) 用 Effect.runPromise 运行，并演示一次失败分支（不设置 PORT）时的错误输出；5) 执行 npx tsx src/demo.ts 验证结果，把完整代码、命令和实际输出贴出来，如报错请说明原因并修复。"
       }
     }
   }
