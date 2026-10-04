@@ -7503,6 +7503,21 @@
         ],
         "agentInstallPrompt": "请在当前 Node.js（>=18）项目里安装并试跑 Effect：1) 执行 npm i effect；2) 新建 src/demo.ts，用 Effect.gen 写一个程序：从 process.env 读取 PORT 并解析为数字，解析失败时返回带类型的自定义错误，成功时打印端口；3) 用 Context.Tag + Layer 定义一个简单 Logger 服务并在程序中注入使用；4) 用 Effect.runPromise 运行，并演示一次失败分支（不设置 PORT）时的错误输出；5) 执行 npx tsx src/demo.ts 验证结果，把完整代码、命令和实际输出贴出来，如报错请说明原因并修复。"
       }
+    },
+    "repo:caddyserver/caddy": {
+      "type": "repo-insight",
+      "hash": "a3cde136463d5fdaaeaf7af7",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-04T22:54:07.007Z",
+      "value": {
+        "summaryZh": "Caddy 是使用 Go 编写的快速、可扩展多平台 Web 服务器，原生支持 HTTP/1.1、HTTP/2 与 HTTP/3，最大亮点是开箱即用的自动 HTTPS：自动申请与续期 Let's Encrypt 证书、自动跳转并默认启用安全配置。它通过简洁的 Caddyfile 或 JSON API 管理配置，可零依赖编译为单个二进制文件部署，并支持插件扩展反向代理、动态配置与日志能力。适合自托管爱好者、需要快速上线 TLS 站点的开发者，以及希望用统一入口管理多域名与反向代理的运维团队。",
+        "scenarios": [
+          "为个人博客或小型 SaaS 快速部署带自动 HTTPS 的静态站点与 API 服务，省去手动申请和续期证书的运维成本。",
+          "作为内网或云环境的反向代理与负载均衡入口，通过 Caddyfile 统一转发多个域名到不同后端服务。",
+          "在本地开发或 CI 环境中用单二进制文件搭建临时 HTTP/3 测试服务器，验证协议、头部与 TLS 行为。"
+        ],
+        "agentInstallPrompt": "请在本机安装并试跑 Caddy：先确认 Go 1.22+ 或已安装包管理器，然后按官方文档用包管理器安装（如 apt install caddy 或 brew install caddy），或执行 go install github.com/caddyserver/caddy/v2/cmd/caddy@latest。安装后运行 caddy version 验证，再创建最小 Caddyfile（示例：:8080 下写 respond \"Hello Caddy\"），执行 caddy fmt --overwrite Caddyfile 与 caddy validate --config Caddyfile，最后用 caddy run --config Caddyfile 启动，并用 curl -i http://localhost:8080 验证返回内容，把关键命令、输出与遇到的问题汇总给我。"
+      }
     }
   }
 }
