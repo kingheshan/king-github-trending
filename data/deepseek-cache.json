@@ -7518,6 +7518,21 @@
         ],
         "agentInstallPrompt": "请在本机安装并试跑 Caddy：先确认 Go 1.22+ 或已安装包管理器，然后按官方文档用包管理器安装（如 apt install caddy 或 brew install caddy），或执行 go install github.com/caddyserver/caddy/v2/cmd/caddy@latest。安装后运行 caddy version 验证，再创建最小 Caddyfile（示例：:8080 下写 respond \"Hello Caddy\"），执行 caddy fmt --overwrite Caddyfile 与 caddy validate --config Caddyfile，最后用 caddy run --config Caddyfile 启动，并用 curl -i http://localhost:8080 验证返回内容，把关键命令、输出与遇到的问题汇总给我。"
       }
+    },
+    "repo:boykopovar/AnyPS5": {
+      "type": "repo-insight",
+      "hash": "65f05bfdaf138efa1ff6c44f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-05T22:59:19.039Z",
+      "value": {
+        "summaryZh": "AnyPS5 是用 C++ 编写的开源工具，目标是自动把 PS5 可执行文件移植到 Linux 与 Windows。它解析 PS5 基于 FreeBSD 的 Orbis OS 二进制格式与系统调用，自动完成装载重定位、导入库映射、系统 API 翻译与图形接口转换，尽量减少手工适配。适合主机逆向爱好者、模拟器与跨平台移植开发者，以及想在 PC 上运行自有 PS5 程序的工程师。目前处于早期实验阶段，兼容性与合规性需自行评估。",
+        "scenarios": [
+          "在 Linux 或 Windows 上把自有的 PS5 可执行文件转换为可运行的本地程序，用于个人开发与研究验证",
+          "为模拟器或兼容层项目做底层适配，复用其系统调用翻译与导入库映射逻辑",
+          "分析 PS5 二进制的加载格式与依赖关系，辅助逆向工程和移植可行性评估"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 AnyPS5：先克隆 https://github.com/boykopovar/AnyPS5，按仓库说明安装 CMake、C++17 以上编译器及所需依赖；用 CMake 配置并构建 Release 版本，确认产物可执行文件生成成功；然后运行 --help 或 README 中的示例命令，用一个合法自有的 PS5 可执行文件做最小试跑，把完整命令、构建日志和报错信息整理给我，并说明当前支持的平台与已知限制。"
+      }
     }
   }
 }
