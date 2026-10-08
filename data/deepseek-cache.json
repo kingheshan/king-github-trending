@@ -1083,17 +1083,17 @@
     },
     "repo:thedotmack/claude-mem": {
       "type": "repo-insight",
-      "hash": "f51d050729671746fafa0423",
+      "hash": "368dc7d80614d9d776b44241",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-27T22:00:37.905Z",
+      "generatedAt": "2026-10-08T22:00:22.543Z",
       "value": {
-        "summaryZh": "claude-mem是为AI编码助手设计的跨会话记忆工具。它能自动捕获agent在工作会话中的全部行为，通过AI压缩提炼核心上下文，并在未来会话中智能注入，使Claude Code、Codex、Gemini等工具保持连续记忆。该项目用JavaScript实现，安装简便，适合需要长期依赖AI助手的开发者，可显著减少重复描述历史背景的工作，让AI更懂你的项目习惯与决策。它支持主流编码agent，是提升AI协作效率的实用中间层。",
+        "summaryZh": "claude-mem 是一个为各类 AI coding agent 提供跨会话持久记忆的 TypeScript 工具。它会自动捕获 agent 在会话中执行的操作与关键上下文，用 AI 压缩成精炼记忆，并在后续会话中把相关内容注入回去，从而避免重复解释项目背景、重复踩坑。项目兼容 Claude Code、Codex、Gemini、Copilot、OpenCode 等多种 agent，安装配置相对轻量，适合长期维护同一代码库、频繁切换会话的开发者，以及希望让 agent 记住架构决策与历史上下文的多 agent 工作流用户。",
         "scenarios": [
-          "长时间跨会话维护同一功能模块，自动延续此前讨论和决策",
-          "多agent协作场景下共享记忆，保持项目上下文一致",
-          "个人知识沉淀，将分散会话内容转化为可检索的项目要点"
+          "长期维护同一个仓库时，让 agent 记住架构约定、历史决策和踩过的坑，减少每次重述背景",
+          "在 Claude Code、Codex、Copilot 等多个 agent 之间切换工作时，共享同一份项目记忆与上下文",
+          "排查复杂问题时，让 agent 自动回顾此前会话中的调试过程、失败尝试和已确认结论"
         ],
-        "agentInstallPrompt": "请先通过npm全局安装claude-mem：npm install -g claude-mem。然后在项目根目录执行claude-mem init完成初始化。之后正常使用Claude Code、Codex等agent工具，claude-mem会在后台自动捕获会话并利用AI压缩记忆。你可以通过运行claude-mem命令查看已记忆的上下文，或使用claude-mem search <关键词>检索历史。若想测试效果，可先运行一个简单对话，再重新启动会话，观察是否自动注入相关记忆。"
+        "agentInstallPrompt": "请帮我在本地试用 thedotmack/claude-mem：先克隆 https://github.com/thedotmack/claude-mem 到工作目录，阅读 README 确认它当前支持的 agent 与安装方式；然后用 TypeScript 项目的标准流程安装依赖并完成构建（例如 npm install && npm run build，若脚本不同请按 README 调整）。接着把它接入我本机的 Claude Code（或我指定的 agent），配置好持久化存储与 API Key 等必要环境变量。最后在一个示例仓库里跑一轮冒烟测试：发起一次会话并留下可识别的操作，再新开一次会话，验证相关上下文是否被自动召回与注入。请把执行的命令、配置改动、遇到的问题和验证结果整理成一份简短报告。"
       }
     },
     "repo:st-tech/ppf-contact-solver": {
@@ -2958,17 +2958,17 @@
     },
     "repo:earthtojake/text-to-cad": {
       "type": "repo-insight",
-      "hash": "298f9b8ec046466bcf064f5c",
+      "hash": "536e8bbbb1e6f24d5e4da946",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-09T22:00:21.222Z",
+      "generatedAt": "2026-10-08T22:00:43.681Z",
       "value": {
-        "summaryZh": "text-to-cad 是一个面向 CAD/CAE/CAM 领域的 Python 代理技能库，将自然语言指令转化为可执行的设计与仿真操作。它封装了参数化建模、几何约束求解、网格划分及刀具路径生成等底层能力，提供统一的 Agent 工具接口，使大语言模型能直接驱动工业软件或内核。核心亮点是模块化架构，支持多后端适配，降低工程自动化门槛。适合想要基于 LLM 构建智能设计助手、需要快速验证 AI 驱动工作流的工程师或研究者，尤其适用于机械设计、增材制造及数控编程场景。项目目前处于早期阶段，接口可能变化，但思路清晰，便于二次开发。",
+        "summaryZh": "text-to-cad 是一个 Python 项目，给 AI Agent 补上 CAD 能力：用自然语言描述零件需求，由模型生成可编辑的参数化建模脚本（如 CadQuery/OpenSCAD 一类），并导出 STL/STEP 等可制造文件。它把建模、改尺寸、重导出封装成 Agent 可调用的工具链，支持多轮迭代修正，显著降低机械设计门槛。适合机械与硬件工程师、3D 打印玩家、以及想把大模型接入实体建模流程的开发者。",
         "scenarios": [
-          "将产品需求描述自动转换为参数化 CAD 模型，辅助概念设计阶段快速迭代。",
-          "在仿真环境中，通过自然语言设定边界条件并触发 CAE 求解，实现自动化分析报告生成。",
-          "为 CAM 编程提供文本驱动的刀具路径规划入口，简化从设计到制造的流程。"
+          "用自然语言让 Agent 生成一个带中心孔与四角安装孔的法兰盘模型，并自动导出 STL 供 3D 打印。",
+          "对已有零件做多轮对话式改型：调整孔径、壁厚、圆角与总长，对比版本后重新导出 STEP。",
+          "把 text-to-cad 作为工具接入自建 AI 工作流，批量生成零件脚本，构建设计自动化流水线。"
         ],
-        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/earthtojake/text-to-cad.git，然后进入目录并安装依赖：pip install -r requirements.txt。（可选）阅读 README 了解技能调用方式。接着运行 Python 解释器，尝试从 text_to_cad 导入核心模块，调用一个简单示例（如使用自然语言描述生成一个长方体模型），确认环境正常。若项目提供示例脚本，请运行 examples 中的脚本测试。注意需要安装配套的 CAD 内核（如 OpenCASCADE）或按提示配置外部服务。"
+        "agentInstallPrompt": "请克隆 https://github.com/earthtojake/text-to-cad，在 Python 3.10+ 下创建虚拟环境并安装依赖；阅读 README 找到启动方式与示例命令，然后试跑任务：生成一个 40mm 见方、中心 10mm 通孔、四角 M4 安装孔的板件并导出模型文件。最后汇报所用命令、生成文件路径、依赖或报错问题及你的修复方式。"
       }
     },
     "repo:ComposioHQ/awesome-claude-skills": {
@@ -4128,17 +4128,17 @@
     },
     "repo:cathrynlavery/diagram-design": {
       "type": "repo-insight",
-      "hash": "4401cb81fe2496ffb5dfaef7",
+      "hash": "f0c6e534b88df7e511341190",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-18T22:00:50.202Z",
+      "generatedAt": "2026-10-08T22:00:12.200Z",
       "value": {
-        "summaryZh": "diagram-design 是一套面向 Claude Code、Codex、Pi 等 AI 编码代理的编辑级图表设计规范与模板，主张用自包含的 HTML + SVG 取代 Mermaid 生成流程图、架构图与时序图。它强调排版、留白与克制的配色，明确禁用阴影等视觉噪音，产出可直接嵌入文档、幻灯片或网页的矢量图。文件零依赖、可离线渲染，便于版本管理与审阅。适合需要高质量技术配图的工程师、技术写作者、开源项目维护者，以及把 AI 代理接入文档流水线的团队。",
+        "summaryZh": "这是一个面向 AI 编程代理的「编辑级」图表设计技能包，适配 Claude Code、Codex、GitHub Copilot、Factory Droid 与 Pi 等主流编码代理。它内置 42 种图表类型，产物是自包含的 HTML + SVG 文件，无需外部依赖即可在浏览器打开；设计上刻意去阴影、去装饰，强调排版、留白与克制配色，用清晰的视觉层级替代 Mermaid 那种千篇一律的自动布局「流水线」风格，非常适合需要把架构图、流程图、时间线放进文档、博客或技术方案的开发者、技术写作者与开源维护者。",
         "scenarios": [
-          "为技术博客、README 或设计文档生成风格统一的架构图与流程图，直接输出可嵌入的自包含 HTML+SVG 文件。",
-          "在方案评审或对外汇报中，用编辑级排版替代默认 Mermaid 主题，快速产出配色克制、无阴影的清晰示意图。",
-          "把图表生成步骤接入 CI 或内部知识库流程，让 AI 代理批量生成可版本管理、可 diff 的矢量插图。"
+          "为开源项目 README 或技术博客生成编辑级架构图、数据流图与流程图，直接嵌入静态站点",
+          "在技术方案、RFC、融资材料中快速产出排版统一、风格克制的示意图，替代 Mermaid 默认样式",
+          "让 Claude Code / Copilot 等编码代理在写文档时自动按统一视觉规范输出自包含 HTML + SVG 图表"
         ],
-        "agentInstallPrompt": "请帮我试用 cathrynlavery/diagram-design 这个仓库：先把 https://github.com/cathrynlavery/diagram-design 克隆到本地（或作为子目录），通读仓库中的 README、模板与样式规范，总结它的图表结构约定（自包含 HTML + SVG、无阴影、非 Mermaid）。然后以“一个请求经过 API 网关、鉴权服务、业务服务与数据库的数据流”为主题，按该规范新建一个自包含 HTML 文件保存到 diagrams/ 目录，要求纯 SVG 绘制、内联样式、无外部依赖、可直接双击在浏览器打开。完成后告诉我文件路径、如何预览，以及如果要改成我自己的图表需要调整哪几处。"
+        "agentInstallPrompt": "请帮我安装并试跑 cathrynlavery/diagram-design 这个图表设计技能包。步骤：1) 克隆仓库 https://github.com/cathrynlavery/diagram-design 到本地，阅读 README 与技能目录结构，确认它面向 Claude Code / Codex / GitHub Copilot 等代理的接入方式；2) 把技能文件按说明安装到我的代理技能目录（如 Claude Code 的 skills 目录），必要时在配置中注册；3) 安装完成后，用其中一种图表类型（例如架构图或流程图）生成一个示例：输出自包含的 HTML + SVG 文件，不使用阴影，不使用 Mermaid，然后在浏览器打开验证效果；4) 最后列出 42 种图表类型的清单，并告诉我调用每种类型时的提示写法。"
       }
     },
     "repo:macro-inc/macro": {
@@ -7532,6 +7532,96 @@
           "分析 PS5 二进制的加载格式与依赖关系，辅助逆向工程和移植可行性评估"
         ],
         "agentInstallPrompt": "请帮我在本地跑通 AnyPS5：先克隆 https://github.com/boykopovar/AnyPS5，按仓库说明安装 CMake、C++17 以上编译器及所需依赖；用 CMake 配置并构建 Release 版本，确认产物可执行文件生成成功；然后运行 --help 或 README 中的示例命令，用一个合法自有的 PS5 可执行文件做最小试跑，把完整命令、构建日志和报错信息整理给我，并说明当前支持的平台与已知限制。"
+      }
+    },
+    "repo:tester-army/e2e": {
+      "type": "repo-insight",
+      "hash": "adefdc513b22b5504abbe601",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-07T23:10:51.032Z",
+      "value": {
+        "summaryZh": "tester-army/e2e 是一个用 TypeScript 编写的下一代端到端测试框架，目标是用一套方案同时覆盖 Web 与移动应用的自动化测试。它希望减少多端测试工具割裂，让团队以一致方式编写、组织和运行 E2E 用例，从而提升回归效率与发布信心。适合前端、移动端、QA 与 DevOps 团队，尤其是需要跨 Web/移动统一测试策略、正在寻找轻量可扩展替代方案的项目。上手前建议先阅读仓库文档与示例，确认对目标平台和 CI 的支持程度。",
+        "scenarios": [
+          "Web 应用发布前的核心链路回归，如登录、下单、支付等关键流程自动化验证",
+          "移动端 App 与 H5 复用同一套端到端测试思路，减少多端脚本重复维护",
+          "在 CI/CD 中接入端到端冒烟测试，于合并请求或 nightly 定时任务触发执行"
+        ],
+        "agentInstallPrompt": "请帮我试用 tester-army/e2e：先克隆 https://github.com/tester-army/e2e 到本地，阅读 README、文档与示例，确认推荐的 Node 包管理器、依赖安装命令和运行方式；完成依赖安装后，创建一个最小 Web 端到端测试用例并本地执行；如果仓库支持移动端，再补充一个移动端示例并运行。最后总结安装步骤、遇到的报错与修复方法，以及如何将该测试接入 CI 流程。"
+      }
+    },
+    "repo:morluto/rea": {
+      "type": "repo-insight",
+      "hash": "de5ee86ec13f265b8e2c25c9",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-08T22:00:19.759Z",
+      "value": {
+        "summaryZh": "rea 是 TypeScript 编写的 AI Agent 逆向工程框架，把“逆向任何东西”的流程自动化：从应用层行为观测一路下探到原生二进制分析。它用 Agent 串联动态追踪、静态反汇编与结果归纳，减少在多个工具间手工切换的成本，适合安全研究员、逆向工程师、CTF 选手，以及需要理解闭源软件或恶意样本行为的开发者。",
+        "scenarios": [
+          "分析闭源桌面或移动应用的网络请求、文件读写与进程行为，快速定位关键业务逻辑与协议格式",
+          "对原生二进制做初步侦察：提取字符串、符号与调用关系，生成可读报告，用于漏洞挖掘或恶意样本初判",
+          "把重复的逆向步骤编排成 Agent 流水线，用于 CTF 解题、互操作性研究或第三方 SDK 行为审计"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/morluto/rea ，阅读 README 后用 Node.js 18+ 与 pnpm 或 npm 安装依赖并完成构建，然后运行 --help 或自带示例任务确认环境可用。接着选一个最小目标（例如本地某个命令行程序的二进制文件）走通一次完整分析：记录你执行的命令、生成的产物路径、需要的外部依赖（调试器、反汇编工具、模型 API Key 等）以及报错与解决方式，最后输出一份中文快速上手说明和一个可复现的最小示例。"
+      }
+    },
+    "repo:EpicGames/raddebugger": {
+      "type": "repo-insight",
+      "hash": "7db2e8a0ccdea1197b31168c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-08T22:00:32.736Z",
+      "value": {
+        "summaryZh": "RAD Debugger 是 Epic Games 开源的 Windows 原生图形调试器，用 C 编写，主打用户态多进程调试。它自带自研 UI 与渲染层，启动快、依赖少，可同时附加多个进程，统一查看线程、调用栈、变量、寄存器与反汇编，界面接近轻量编辑器而非庞大 IDE，构建只需 MSVC 与 Windows SDK。适合游戏引擎、系统底层及 C/C++ 开发者日常替代或补充 Visual Studio 调试器，也适合研究调试器架构与自绘 UI 的实现细节。",
+        "scenarios": [
+          "在 Windows 上同时附加游戏主进程与渲染、工具等多个子进程，跨进程查看断点、线程与调用栈，排查通信和死锁问题。",
+          "加载程序与对应 PDB，复现崩溃或卡死，通过调用栈、寄存器、内存与反汇编视图快速定位缺陷。",
+          "阅读纯 C 源码进行学习或二次开发，研究其自研渲染 UI、符号加载与调试后端的组织方式，尝试扩展功能。"
+        ],
+        "agentInstallPrompt": "请在本机克隆并试跑 https://github.com/EpicGames/raddebugger：先阅读 README 与仓库根目录的构建脚本（Windows 下通常是 build.bat，类 Unix 下为 build.sh）。在 Windows 上使用 Visual Studio 的 Native Tools 开发者命令提示符（确保已安装 MSVC 与 Windows SDK）执行构建；如脚本要求参数或输出路径不同，按仓库说明自行调整。构建失败时先查看完整日志，补齐缺少的依赖或工具链后重试，不要改动无关源码。成功后请告诉我生成的可执行文件（如 raddbg.exe）的完整路径，并给出一个最小使用示例：例如启动它并附加到当前运行的某个进程，或加载一个已编译的 exe/PDB 进行调试的方法。"
+      }
+    },
+    "repo:storytold/artcraft": {
+      "type": "repo-insight",
+      "hash": "4aa4eea4e29b6a71a70b0c2d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-08T22:00:38.292Z",
+      "value": {
+        "summaryZh": "ArtCraft 是 Rust 编写的创意制作引擎，面向艺术家、设计师与影视创作者，主打“有意图”的创作流程，而非黑箱生成。它强调可编程、可控的场景与素材构建，可能集成实时渲染、节点化管线或脚本扩展，让创作者精确控制效果细节。适合技术美术、独立动画与影视预演团队，也适合希望用 Rust 自研创作工具的开发者。",
+        "scenarios": [
+          "影视前期预演与分镜：搭建可控场景，快速迭代镜头构图与视觉风格。",
+          "技术美术与独立动画/游戏制作：通过 Rust 扩展或脚本化节点生成可复用素材与特效。",
+          "自研创作工具原型：在 Rust 项目中集成 ArtCraft，验证实时渲染与创作管线。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/storytold/artcraft，阅读 README 与 Cargo.toml，安装 Rust 工具链后执行 cargo build --release；再尝试 cargo run --example 或 README 中的示例命令，若缺少图形/系统依赖请按报错安装对应库，最后总结可运行的最简 demo 与输出。"
+      }
+    },
+    "repo:DuarteSantos8/openGym": {
+      "type": "repo-insight",
+      "hash": "f6edede0f6bee2801980a0c1",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-08T22:00:56.760Z",
+      "value": {
+        "summaryZh": "openGym 是一个可自托管的健身与自重训练记录工具，支持制定训练计划、记录超级组、热身与有氧，并用肌肉热力图查看各部位处于已训练、疲劳或退化状态。它可从 FitNotes、Strong、Hevy 导入历史数据，支持 passkey 登录，所有数据保存在自己的服务器。适合注重隐私、想长期追踪力量与围度变化、愿意自部署的健身爱好者与开发者。",
+        "scenarios": [
+          "在家做自重训练或去健身房练力量时，快速记录组数、次数、重量、超级组和热身组，并自动汇总训练容量。",
+          "长期追踪胸背腿肩臂等肌群状态，识别哪些部位疲劳需要恢复、哪些已退化需加强，辅助安排下一周期计划。",
+          "从 FitNotes、Strong、Hevy 迁移历史数据后自托管部署，通过 passkey 在多设备浏览器登录，数据完全自己掌控。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/DuarteSantos8/openGym 并阅读 README，确认是 Node.js/JavaScript 项目。优先检查是否有 Dockerfile 或 docker-compose.yml，有则用 Docker 启动；否则安装依赖并运行开发或生产启动命令。启动后打开本地访问地址，注册 passkey 账号，创建一个示例训练计划并记录一组动作，再测试 FitNotes/Strong/Hevy 导入功能。遇到端口、环境变量或数据库问题时按 README 调整，最后输出访问地址、验证结果和常用操作说明。"
+      }
+    },
+    "repo:spotify/portal-ai-plugins": {
+      "type": "repo-insight",
+      "hash": "c1cdedd733ef3f78ffb027bb",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-08T22:01:18.681Z",
+      "value": {
+        "summaryZh": "Spotify 开源的 Portal AI 插件集（TypeScript），为 Portal AI 助手扩展可插拔能力：提供插件接口、示例与注册方式，演示如何把自定义工具、内部数据源或业务 API 包装成 AI 可调用的插件。亮点是来自一线流媒体公司的工程范式，类型完备、结构清晰，便于二次开发。适合 AI Agent 与工具调用平台的工程师。",
+        "scenarios": [
+          "为内部 AI 助手或 Agent 平台接入自定义工具，把工单、监控、发布等内部 API 快速包装成可调用插件。",
+          "参考 Spotify 的插件接口与注册加载机制，设计自研 AI 平台的插件规范、权限控制与生命周期管理。",
+          "在 TypeScript 工程中本地跑通示例插件，验证工具调用链路与上下文传递，再迁移到真实业务场景。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/spotify/portal-ai-plugins ，用 pnpm 或 npm 安装依赖，并阅读 README、package.json 了解目录结构与可用脚本；梳理插件接口定义、示例插件与注册入口，运行构建和测试确认能正常执行；然后参照现有示例新建一个最小插件（暴露一个简单工具方法并完成注册），编译通过后输出目录结构说明、可复现的运行命令，以及新增插件需要改动的文件清单。"
       }
     }
   }
