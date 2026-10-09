@@ -2448,17 +2448,17 @@
     },
     "repo:Robbyant/lingbot-map": {
       "type": "repo-insight",
-      "hash": "aebb7cbd254ccef125174454",
+      "hash": "cecbf0329c34acd2911427c4",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-20T22:00:34.358Z",
+      "generatedAt": "2026-10-09T22:00:17.029Z",
       "value": {
-        "summaryZh": "LingBot-Map 是一个前馈式3D基础模型，专为从流式数据（如视频流或传感器流）实时重建3D场景而设计。与传统方法需要迭代优化不同，该模型通过前馈神经网络直接预测场景几何，实现高效率和实时性。其亮点在于无需后处理即可从连续数据流中生成连贯的3D地图，特别适合动态环境。适用于机器人、自动驾驶、AR/VR等领域的开发者，以及3D计算机视觉研究者，可快速部署用于实时场景理解与建模。",
+        "summaryZh": "LingBot-Map 是面向流式三维重建的几何上下文 Transformer 开源实现，使用 Python 编写。它把连续视频帧与几何先验结合，在数据不断到来的同时增量估计相机位姿并重建稠密点云，避免传统离线 SfM/MVS 反复全局优化的延迟与内存膨胀。项目以 ECCV 2026 最佳论文候选身份发布，提供可直接复现的推理流程与模型权重，适合做 SLAM、神经渲染、机器人感知与自动驾驶的研究者和工程师，用于快速验证流式重建基线，并在此基础上替换骨干网络或接入自有数据做二次开发。",
         "scenarios": [
-          "机器人实时探索未知环境，根据传感器流即时构建3D地图以辅助导航。",
-          "自动驾驶车辆处理连续激光雷达或摄像头数据，实时重建周围道路与障碍物场景。",
-          "AR/VR应用根据用户移动设备的摄像头流，动态生成可交互的虚拟空间模型。"
+          "机器人与无人机在线导航：边飞行边用单目或 RGB-D 视频流实时重建环境点云，为避障与路径规划提供几何地图。",
+          "AR/VR 与数字孪生：对手机或头显拍摄的连续视频做增量式重建，快速生成可漫游的三维场景，无需事后离线跑 SFM。",
+          "学术研究与基线对比：复现 ECCV 论文结果，在自有数据集上评测不同几何上下文建模方式对位姿精度和重建完整度的影响。"
         ],
-        "agentInstallPrompt": "首先，git clone https://github.com/Robbyant/lingbot-map.git && cd lingbot-map。然后，创建虚拟环境（如conda create -n lingbot python=3.9 && conda activate lingbot），并安装依赖：pip install -r requirements.txt（若存在）或根据项目说明安装torch、numpy等。接着，下载预训练模型（假设项目提供，在README中查找链接）。最后，运行示例：python demo.py --input path/to/streaming_data，观察3D重建结果。具体命令请参照项目README。"
+        "agentInstallPrompt": "请帮我在本地跑通 Robbyant/lingbot-map 这个流式三维重建项目。步骤：1) git clone https://github.com/Robbyant/lingbot-map 并进入目录；2) 用 conda 创建 Python 3.10 环境，按 README 安装 requirements 与 PyTorch（有 CUDA 就用对应 cu 版本，否则 CPU）；3) 查看仓库提供的预训练权重下载脚本或 Hugging Face 链接，把权重放到 README 指定的 checkpoints 目录；4) 用示例视频或我提供的视频跑推理 demo，导出相机位姿与点云/网格结果；5) 若报错，逐条排查依赖版本、CUDA 与显存问题并给出修复命令，最后用 Open3D 或 MeshLab 打开结果截图确认重建正常。请把每一步的命令、日志关键行和最终产物路径都汇报给我。"
       }
     },
     "repo:every-app/open-seo": {
@@ -7622,6 +7622,36 @@
           "在 TypeScript 工程中本地跑通示例插件，验证工具调用链路与上下文传递，再迁移到真实业务场景。"
         ],
         "agentInstallPrompt": "请克隆 https://github.com/spotify/portal-ai-plugins ，用 pnpm 或 npm 安装依赖，并阅读 README、package.json 了解目录结构与可用脚本；梳理插件接口定义、示例插件与注册入口，运行构建和测试确认能正常执行；然后参照现有示例新建一个最小插件（暴露一个简单工具方法并完成注册），编译通过后输出目录结构说明、可复现的运行命令，以及新增插件需要改动的文件清单。"
+      }
+    },
+    "repo:BerriAI/litellm": {
+      "type": "repo-insight",
+      "hash": "ef34242ddebfcfeb78d8754d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-09T22:00:12.109Z",
+      "value": {
+        "summaryZh": "LiteLLM 是一个高性能 AI 网关，采用 Rust 核心加 Python SDK 的架构，用统一 OpenAI 兼容格式调用 100 多个大模型 API，覆盖 Bedrock、Azure、OpenAI、Anthropic、VertexAI、vLLM、Nvidia NIM 等主流服务商。项目内置成本追踪、内容护栏、负载均衡、失败重试与日志记录，让团队无需为每个厂商单独适配 SDK 即可切换和组合模型。它适合需要多模型路由、预算管控与合规审计的 AI 应用开发者、平台工程团队以及希望自建 LLM 网关的企业。",
+        "scenarios": [
+          "为内部应用搭建统一 LLM 网关，把 OpenAI、Anthropic、Bedrock 等请求收敛到一个入口，并统一做密钥管理与限流。",
+          "在多模型间做负载均衡与故障回退，当某家 API 超时或限流时自动切换到备用模型，保障服务可用性。",
+          "按团队或项目统计 token 消耗与费用，配合护栏策略拦截敏感内容，满足成本核算与合规审计需求。"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/BerriAI/litellm 并完成一次最小可运行的试跑：先确认 Python 3.9+ 与 pip 已安装，创建独立虚拟环境并安装依赖与 litellm[proxy]；然后设置一个可用的模型 API Key（如 OPENAI_API_KEY），编写一个 config.yaml 配置一个模型与一个虚拟密钥；接着用 litellm --config config.yaml --port 4000 启动代理，用 curl 调用 /v1/chat/completions 验证返回，并访问 /ui 查看成本与日志页面；最后把启动命令、验证请求和结果整理成简短说明，遇到报错时先检查依赖版本与端口占用。"
+      }
+    },
+    "repo:twostraws/SwiftUI-Agent-Skill": {
+      "type": "repo-insight",
+      "hash": "6ded575bcc493469fea9b4a2",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-09T22:00:32.422Z",
+      "value": {
+        "summaryZh": "Swift 知名作者 Paul Hudson 开源的 SwiftUI Agent Skill，把 SwiftUI 现代 API、状态管理与最佳实践整理成结构化指令，供 Claude Code、Codex 等 AI 工具加载，让生成的代码更贴近官方推荐、少用过时写法。适合借助 AI 开发 iOS/macOS 应用的 Swift 开发者，以及想统一团队编码规范的团队。",
+        "scenarios": [
+          "用 Claude Code 或 Codex 新建 SwiftUI 界面时加载该技能，让 AI 按现代写法组织视图、状态与数据流，减少 @State、@Binding、@Observable 的误用。",
+          "重构遗留 SwiftUI 代码，例如把 ObservableObject 迁移到 @Observable、拆解臃肿视图，由 AI 依据技能文件给出改造方案与示例。",
+          "团队把该技能纳入仓库或工具配置，统一成员用 AI 生成 SwiftUI 代码的风格与规范，方便代码评审与新人上手。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 twostraws/SwiftUI-Agent-Skill：1）把 https://github.com/twostraws/SwiftUI-Agent-Skill 克隆到本机，并告诉我你所用工具（Claude Code、Codex 等）对应的 skills 目录位置与正确放置方式；2）列出仓库中的技能文件及其触发条件，说明它约束了哪些 SwiftUI 写法；3）新建一个最小 SwiftUI Demo（例如带列表、状态切换和异步加载的页面），在技能生效后生成代码，并逐条说明用到了哪些现代 SwiftUI API 与状态管理方式；4）最后反馈安装路径、验证结果和任何踩坑点。"
       }
     }
   }
