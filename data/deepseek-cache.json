@@ -33,17 +33,17 @@
     },
     "repo:rohitg00/ai-engineering-from-scratch": {
       "type": "repo-insight",
-      "hash": "8f832b96822ec7d93755156f",
+      "hash": "0b1145e839e0bbaf791a412d",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-26T04:46:30.630Z",
+      "generatedAt": "2026-10-10T22:00:33.780Z",
       "value": {
-        "summaryZh": "该项目是一个从零开始学习AI工程的全流程指南，涵盖理论、实战与交付。通过循序渐进的项目式学习，用户可掌握数据预处理、模型训练、API开发、部署上线等关键技能。亮点在于强调“学习-构建-交付”闭环，提供完整可运行的Python代码与最佳实践。适合AI初学者、软件工程师转型者、希望系统化构建AI作品集的开发者。",
+        "summaryZh": "这是一个面向零基础到进阶的 AI 工程实战教程仓库，用 Python 手写实现大模型应用的核心环节：从提示词、嵌入与向量检索，到 RAG 管线、Agent 工具调用、模型微调与部署上线。它强调「学一遍、做一遍、为别人发布一遍」的闭环，每章都配有可运行代码与练习，而非只讲概念。适合想从算法理论转向工程落地的学生、后端与全栈转行者，以及需要快速补齐 LLM 应用技能、准备做个人项目的开发者。",
         "scenarios": [
-          "零基础入门AI工程，从环境搭建到模型部署的完整学习路径。",
-          "作为内部培训材料，帮助团队快速掌握AI项目开发流程。",
-          "构建个人AI作品集，参考项目模板进行二次开发与优化。"
+          "按章节顺序系统学习 LLM 应用工程，边读讲义边跑代码，把提示词、RAG、Agent 等模块逐个动手实现，形成完整知识地图。",
+          "作为教学或内训素材，讲师挑选其中一章改造成工作坊实验，让学员在两小时内搭出一个可演示的最小可用原型。",
+          "已有产品想法时，直接复用仓库里的检索、工具调用与部署脚手架，快速把 demo 推成能分享给他人使用的线上服务。"
         ],
-        "agentInstallPrompt": "请执行以下步骤：1. 打开终端，执行 `git clone https://github.com/rohitg00/ai-engineering-from-scratch.git` 克隆项目。2. 进入项目目录：`cd ai-engineering-from-scratch`。3. 创建并激活Python虚拟环境（可选但推荐）：`python -m venv venv && source venv/bin/activate`（Windows使用`venv\\Scripts\\activate`）。4. 安装依赖：`pip install -r requirements.txt`。5. 运行第一个示例：`python notebook/01_intro.py` 或根据项目README中的指令执行。"
+        "agentInstallPrompt": "请帮我从零跑通 rohitg00/ai-engineering-from-scratch 这个仓库：先克隆到本地，阅读 README 与目录结构，判断项目使用哪个 Python 版本以及用什么方式管理依赖（requirements.txt、pyproject.toml 或 uv/poetry），据此创建独立虚拟环境并安装依赖；然后找出第一章或最容易上手的示例脚本，检查它需要哪些 API Key 或环境变量，把缺失的项写进 .env.example 并告诉我需要填什么；最后实际运行一次该示例，把完整命令、报错信息和你的修复过程都汇报给我，若遇到缺少密钥导致无法运行的步骤，就用本地可离线运行的替代方案或 mock 数据跑通，并给出下一步学习路径建议。"
       }
     },
     "repo:affaan-m/ECC": {
@@ -4128,17 +4128,17 @@
     },
     "repo:cathrynlavery/diagram-design": {
       "type": "repo-insight",
-      "hash": "f0c6e534b88df7e511341190",
+      "hash": "8f0a879fe3e6376fd3c84953",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-08T22:00:12.200Z",
+      "generatedAt": "2026-10-10T22:00:13.405Z",
       "value": {
-        "summaryZh": "这是一个面向 AI 编程代理的「编辑级」图表设计技能包，适配 Claude Code、Codex、GitHub Copilot、Factory Droid 与 Pi 等主流编码代理。它内置 42 种图表类型，产物是自包含的 HTML + SVG 文件，无需外部依赖即可在浏览器打开；设计上刻意去阴影、去装饰，强调排版、留白与克制配色，用清晰的视觉层级替代 Mermaid 那种千篇一律的自动布局「流水线」风格，非常适合需要把架构图、流程图、时间线放进文档、博客或技术方案的开发者、技术写作者与开源维护者。",
+        "summaryZh": "diagram-design 是一套面向 AI 编程代理的编辑级图表设计规范，适用于 Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid 和 Pi。它内置 44 种图表类型，输出自包含的 HTML + SVG，无需任何外部依赖，并刻意去掉阴影和 Mermaid 默认风格等“AI 味”视觉。适合需要为技术文档、博客、演示快速产出统一、克制、可直接嵌入配图的开发者、技术写作者与设计师。",
         "scenarios": [
-          "为开源项目 README 或技术博客生成编辑级架构图、数据流图与流程图，直接嵌入静态站点",
-          "在技术方案、RFC、融资材料中快速产出排版统一、风格克制的示意图，替代 Mermaid 默认样式",
-          "让 Claude Code / Copilot 等编码代理在写文档时自动按统一视觉规范输出自包含 HTML + SVG 图表"
+          "技术博客或项目文档需要配图时，让 AI 代理按统一编辑风格直接生成可嵌入的 HTML+SVG 图表",
+          "把该设计规范作为技能安装到 Claude Code、Cursor 等代理中，使其回答问题时顺手产出高质量示意图",
+          "为演示文稿、架构说明或教学材料批量生成 44 种图表类型中对应风格的图片，避免 Mermaid 默认观感"
         ],
-        "agentInstallPrompt": "请帮我安装并试跑 cathrynlavery/diagram-design 这个图表设计技能包。步骤：1) 克隆仓库 https://github.com/cathrynlavery/diagram-design 到本地，阅读 README 与技能目录结构，确认它面向 Claude Code / Codex / GitHub Copilot 等代理的接入方式；2) 把技能文件按说明安装到我的代理技能目录（如 Claude Code 的 skills 目录），必要时在配置中注册；3) 安装完成后，用其中一种图表类型（例如架构图或流程图）生成一个示例：输出自包含的 HTML + SVG 文件，不使用阴影，不使用 Mermaid，然后在浏览器打开验证效果；4) 最后列出 42 种图表类型的清单，并告诉我调用每种类型时的提示写法。"
+        "agentInstallPrompt": "请在当前环境克隆 https://github.com/cathrynlavery/diagram-design，阅读 README 与 44 种图表类型的模板清单，然后把其中的设计规范和模板作为技能安装到本项目的代理技能目录（如 .claude/skills 或对应工具的 skills 路径）。安装完成后，选用流程图类型生成一个自包含的 HTML+SVG 示例文件，在浏览器中打开确认无阴影、无 Mermaid 默认样式，最后汇报安装路径、已就绪的图表类型列表和试跑结果。"
       }
     },
     "repo:macro-inc/macro": {
@@ -7652,6 +7652,21 @@
           "团队把该技能纳入仓库或工具配置，统一成员用 AI 生成 SwiftUI 代码的风格与规范，方便代码评审与新人上手。"
         ],
         "agentInstallPrompt": "请帮我安装并试跑 twostraws/SwiftUI-Agent-Skill：1）把 https://github.com/twostraws/SwiftUI-Agent-Skill 克隆到本机，并告诉我你所用工具（Claude Code、Codex 等）对应的 skills 目录位置与正确放置方式；2）列出仓库中的技能文件及其触发条件，说明它约束了哪些 SwiftUI 写法；3）新建一个最小 SwiftUI Demo（例如带列表、状态切换和异步加载的页面），在技能生效后生成代码，并逐条说明用到了哪些现代 SwiftUI API 与状态管理方式；4）最后反馈安装路径、验证结果和任何踩坑点。"
+      }
+    },
+    "repo:flutter/flutter": {
+      "type": "repo-insight",
+      "hash": "500c0a1e3e5c76f7d4a718b1",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-10T22:00:24.774Z",
+      "value": {
+        "summaryZh": "Flutter 是 Google 开源的跨平台 UI 框架，用 Dart 编写，通过自绘渲染引擎让一套代码同时运行在 iOS、Android、Web 与桌面上。亮点是毫秒级热重载、丰富的 Material/Cupertino 组件、接近原生的性能。适合独立开发者、创业团队和需要快速交付高质量跨平台界面的工程师，社区生态成熟活跃。",
+        "scenarios": [
+          "用一套 Dart 代码同时交付 iOS、Android 与 Web 端产品，减少多端重复开发与维护成本。",
+          "需要在真机或模拟器上高频调整界面时，借助热重载在毫秒级看到改动效果，快速验证交互与视觉方案。",
+          "为已有原生 App 嵌入 Flutter 模块，或开发桌面端、嵌入式设备上的定制界面与内部工具。"
+        ],
+        "agentInstallPrompt": "请在本机搭建 Flutter 开发环境并跑通示例应用：1) 克隆 https://github.com/flutter/flutter 到本地；2) 把仓库的 bin 目录加入 PATH，执行 flutter --version 确认工具链可用；3) 运行 flutter doctor -v 检查 Dart、Android/iOS 工具链与缺失依赖，并给出修复建议；4) 执行 flutter create demo_app 生成项目，进入目录后运行 flutter run 启动，若没有可用设备则改用 flutter run -d chrome 或 flutter build web 验证；5) 逐步报告每步输出与遇到的问题，若网络受限请说明国内镜像配置方式。"
       }
     }
   }
