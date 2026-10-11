@@ -7668,6 +7668,36 @@
         ],
         "agentInstallPrompt": "请在本机搭建 Flutter 开发环境并跑通示例应用：1) 克隆 https://github.com/flutter/flutter 到本地；2) 把仓库的 bin 目录加入 PATH，执行 flutter --version 确认工具链可用；3) 运行 flutter doctor -v 检查 Dart、Android/iOS 工具链与缺失依赖，并给出修复建议；4) 执行 flutter create demo_app 生成项目，进入目录后运行 flutter run 启动，若没有可用设备则改用 flutter run -d chrome 或 flutter build web 验证；5) 逐步报告每步输出与遇到的问题，若网络受限请说明国内镜像配置方式。"
       }
+    },
+    "repo:danyuchn/asd-ste100-skill": {
+      "type": "repo-insight",
+      "hash": "1b25427843c77609395d1c9f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-11T22:00:14.963Z",
+      "value": {
+        "summaryZh": "该项目把航空业通用的 ASD-STE100 简化技术英语规则整理为可复用规则集，并封装成 Claude Code Skill，用于把面向 AI Agent 的英文指令改写得更加明确、无歧义。STE100 通过限定词汇和句式，天然消除代词指代不清、被动语态和多重含义，从而降低模型误读提示词的概率。仓库使用 Python 实现，便于本地运行校验或接入流水线。适合撰写 System Prompt、维护 Agent 工具描述、编写 API 文档与规范文件的工程师，也适合希望提升提示词稳定性与跨团队一致性的团队。",
+        "scenarios": [
+          "将含糊的 System Prompt、工具函数描述或 Agent 指令改写成符合 ASD-STE100 的简明英文，减少模型误判与幻觉调用。",
+          "在本地脚本或 CI 中批量扫描提示词、README 与接口文档，标记违反 STE100 的句子并自动给出改写建议。",
+          "多语言团队协作时统一英文指令模板，降低翻译偏差，让不同母语的成员和 Agent 得到一致理解。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/danyuchn/asd-ste100-skill 到本地工作目录，先阅读 README 与目录结构，判断它是 Claude Code Skill 还是 Python 工具包。如果是 Skill，请把对应的 skill 目录复制到 ~/.claude/skills/ 下，并确认入口文件（如 SKILL.md 或同名脚本）能被 Claude Code 正确识别；如果含 Python 依赖，请创建虚拟环境并执行 pip install -e . 完成安装。随后准备一段含歧义的英文示例（例如某个 Agent 工具的描述或系统提示词），按仓库说明调用该能力改写为 ASD-STE100 风格，输出改写前后的对照结果，并简要说明如何将它接入我现有的提示词与文档工作流。"
+      }
+    },
+    "repo:ranxianglei/billion-context": {
+      "type": "repo-insight",
+      "hash": "74cf3285a1e6373e475a8849",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-11T22:00:21.005Z",
+      "value": {
+        "summaryZh": "billion-context 是一个用 TypeScript 编写的上下文压缩插件，面向大模型应用与 AI Agent。它自动压缩冗长的对话与工具调用历史，让 100K 上下文窗口就够用，token 消耗约降为原来的五分之一，并支持单会话持续数月、累计处理数十亿 token。适合需要长记忆的 Agent 开发者、对 API 成本敏感的团队，以及希望用小窗口本地模型跑长任务的工程师。",
+        "scenarios": [
+          "为 Claude Code、Cursor 等 AI 编程助手或自研编码 Agent 接入，长周期开发中持续对话不撑爆上下文窗口",
+          "给客服、陪伴、助理类长时间运行 Agent 做记忆压缩，维持数月单会话同时显著降低 token 费用",
+          "部署 32K/100K 小窗口本地模型时压缩输入，降低显存与推理成本并保留长期上下文连续性"
+        ],
+        "agentInstallPrompt": "请帮我试跑并接入 ranxianglei/billion-context：先克隆 https://github.com/ranxianglei/billion-context ，阅读 README 与 package.json，确认包管理器、构建脚本和示例入口，安装依赖并完成构建（如 tsc）。然后运行仓库自带的示例或测试，打印压缩前后的 token 数与压缩摘要，验证「省 5 倍 token」的效果。最后给出把它接入我的 Agent 对话循环的最小改动方案：压缩触发时机、需要保留的最近轮数、摘要持久化与恢复方式，并附一段可直接运行的 TypeScript 验证脚本。"
+      }
     }
   }
 }
