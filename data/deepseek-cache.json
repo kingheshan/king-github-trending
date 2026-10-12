@@ -588,17 +588,17 @@
     },
     "repo:Alishahryar1/free-claude-code": {
       "type": "repo-insight",
-      "hash": "4d17f16ed141b70deeff9040",
+      "hash": "e2a6678c49c870377f26245a",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-27T22:01:03.242Z",
+      "generatedAt": "2026-10-12T22:00:34.964Z",
       "value": {
-        "summaryZh": "free-claude-code 是一个基于 Python 的开源工具，可让开发者从终端、应用、IDE 或手机端免费使用 Claude Code、Codex、Pi、OpenCode 等多种 AI 编程助手。项目提供超过 13 亿免费 token，支持语音交互，且条款友好（ToS friendly），类似 OpenClaw 的体验。它聚合了多个顶级 AI 模型，降低了使用门槛，适合希望低成本接入 AI 编程能力、追求多端灵活操作的开发者。亮点在于免费额度大、跨平台支持、语音控制，以及无需复杂配置即可体验多种模型。",
+        "summaryZh": "free-claude-code 是一个用 Python 写的多 harness、多模型统一接入层，把 Claude Code、Codex、VSCode、Pi、OpenCode 等十余种终端、IDE、手机与浏览器客户端接到同一套免费额度来源上，宣称可提供 13 亿以上免费 token，并支持原生浏览器会话与语音交互，强调对服务条款友好。它适合想零成本体验多种 AI 编程工具的个人开发者、学生，以及需要做多模型横向对比的小团队；但免费额度的稳定性、限速与合规边界需自行验证。",
         "scenarios": [
-          "在终端中直接调用 Claude Code 或 Codex 完成代码生成、重构和调试任务，节省 API 费用。",
-          "在 IDE 或手机端通过语音指令操作 AI 编程助手，提升移动办公和远程开发的效率。",
-          "作为 OpenClaw 的替代方案，集成多种 AI 模型用于自动化脚本编写、代码解释或技术问答。"
+          "在个人电脑上一条命令跑通 Claude Code、Codex 等 harness，用免费额度完成日常补全、重构与脚本编写",
+          "在 VSCode 或 IDE 中切换不同 harness 与模型，对同一任务做输出质量与耗时对比评测",
+          "通过浏览器会话或手机端接入，用语音提问让 agent 远程处理仓库里的整理、改错与文档杂活"
         ],
-        "agentInstallPrompt": "请克隆仓库 https://github.com/Alishahryar1/free-claude-code 并进入目录，检查 Python 版本（需 3.9+），创建虚拟环境后运行 pip install -r requirements.txt 安装依赖。阅读 README 了解配置方法，根据提示设置 API 密钥或使用内置免费 token。然后运行主程序（如 python main.py 或 CLI 入口），尝试在终端中启动 Claude Code 交互，并测试语音功能。若依赖包含系统级库，请确保安装对应音频或网络包。如有问题，查看项目 issues 或运行 --help 获取帮助。"
+        "agentInstallPrompt": "请在本地帮我安装并试跑 GitHub 项目 Alishahryar1/free-claude-code：先 git clone 到 ~/tools/free-claude-code，通读 README、依赖清单与示例配置；用 Python 3.11 创建独立虚拟环境并按官方文档安装依赖；把所需的 API Key 与环境变量整理成 .env 模板，缺失项先列清单问我再填；随后跑一次最小可用流程，选定一个 harness（例如 Claude Code）完成一次真实问答或代码修改验证；最后汇报执行过的命令、报错与修复方式、免费额度的实际可用情况，以及可能存在的限速和合规风险。"
       }
     },
     "repo:ruvnet/ruflo": {
@@ -7697,6 +7697,36 @@
           "部署 32K/100K 小窗口本地模型时压缩输入，降低显存与推理成本并保留长期上下文连续性"
         ],
         "agentInstallPrompt": "请帮我试跑并接入 ranxianglei/billion-context：先克隆 https://github.com/ranxianglei/billion-context ，阅读 README 与 package.json，确认包管理器、构建脚本和示例入口，安装依赖并完成构建（如 tsc）。然后运行仓库自带的示例或测试，打印压缩前后的 token 数与压缩摘要，验证「省 5 倍 token」的效果。最后给出把它接入我的 Agent 对话循环的最小改动方案：压缩触发时机、需要保留的最近轮数、摘要持久化与恢复方式，并附一段可直接运行的 TypeScript 验证脚本。"
+      }
+    },
+    "repo:open-webui/open-webui": {
+      "type": "repo-insight",
+      "hash": "1de996ab01dc513426502cbb",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-12T22:00:21.444Z",
+      "value": {
+        "summaryZh": "Open WebUI 是可完全自托管的 AI 对话前端，兼容 Ollama、OpenAI API 等多种后端，支持离线运行、多模型切换、文档 RAG 问答、联网搜索、语音与图像生成。内置多用户与角色权限、模型访问控制，Docker 一条命令即可部署，数据留在本地，也能桥接云端模型。适合想搭建类 ChatGPT 内部平台、重视数据隐私的个人与团队。",
+        "scenarios": [
+          "在本地服务器用 Docker 部署 Open WebUI 加 Ollama，为团队提供不依赖外网的类 ChatGPT 内部问答入口，数据全部留存自有机房。",
+          "把产品手册、PDF、会议纪要等文档导入知识库，让同事用自然语言检索，由模型结合引用来源回答，替代人工找文档。",
+          "作为统一 LLM 网关接入 OpenAI、Claude 或自建 vLLM 接口，按用户与角色分配模型权限和额度，便于多模型对比评测与成本管控。"
+        ],
+        "agentInstallPrompt": "请在本机用 Docker 试跑 Open WebUI 并完成验证。步骤：1) 检查 docker 与 docker compose 是否可用，缺失则先安装；2) 若本机没有 Ollama，启动 ollama 容器并拉取一个小模型如 qwen2.5:7b 作为推理后端；3) 执行 docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main；4) 等待容器就绪，访问 http://localhost:3000，用第一个注册账号作为管理员登录，在设置里确认模型已连通；5) 新建一条测试对话，确认流式回复正常。最后汇报：访问地址、容器与后端模型状态、日志中的报错、以及后续升级和接入 OpenAI API 的方法。"
+      }
+    },
+    "repo:microsoft/BitNet": {
+      "type": "repo-insight",
+      "hash": "8a909fad9dff0843f7de4350",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-12T22:00:27.655Z",
+      "value": {
+        "summaryZh": "BitNet 是微软官方开源的 1-bit LLM 推理框架，核心面向 BitNet b1.58 这类权重为三元值（-1/0/1）的极低比特模型，用 C++ 编写，并复用 llama.cpp 的 gguf 生态。它能在普通 CPU 上以较低内存直接运行 2B 级模型，无需 GPU 也能拿到可用速度，配套提供环境安装脚本、模型量化与打包、CLI 推理等工具链。适合想在本地、边缘设备或低成本服务器上部署大模型的开发者、做低比特量化研究的学者，以及关注端侧推理成本的工程团队。",
+        "scenarios": [
+          "在一台没有独立显卡的笔记本或 NUC 上离线运行 BitNet b1.58 2B 模型，做本地知识问答与文本生成，验证端侧推理可行性。",
+          "把企业内网或边缘盒子上的推理服务从 GPU 方案迁移到 BitNet，用极低内存占用和 CPU 算力降低硬件与电费成本。",
+          "作为低比特量化研究的实验底座，自行微调或转换三元权重模型，再用该框架量化打包并对比不同配置下的速度与质量。"
+        ],
+        "agentInstallPrompt": "请在本机帮我跑通 microsoft/BitNet。步骤：1) git clone --recursive https://github.com/microsoft/BitNet 并进入目录；2) 用 conda 创建 Python 3.10 环境，执行 python setup_env.py -md models/BitNet-b1.58-2B-4T -q i2_s 完成依赖安装与模型下载量化（若下载失败，改为手动从 Hugging Face 拉取 microsoft/BitNet-b1.58-2B-4T-gguf 并放到对应目录）；3) 执行 cmake 构建生成 llama-cli 可执行文件，若报编译器版本错误请升级 gcc/clang 后重试；4) 运行 python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf -p \"解释一下什么是 1-bit LLM\" -t 4 -cnv 验证推理；5) 记录构建耗时、内存峰值和生成速度，并把完整命令、报错与解决方式整理成 README 片段给我。"
       }
     }
   }
