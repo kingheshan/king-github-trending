@@ -168,17 +168,17 @@
     },
     "repo:Leonxlnx/taste-skill": {
       "type": "repo-insight",
-      "hash": "31953ceb508c8cc389fd3ded",
+      "hash": "995e301196ff9816def888e3",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-19T22:05:47.873Z",
+      "generatedAt": "2026-10-13T22:00:54.093Z",
       "value": {
-        "summaryZh": "Taste-Skill 是一个开源 JavaScript 库，旨在通过微调 AI 模型的输出风格，避免生成平庸、模板化的内容。它利用特定算法或提示工程，让 AI 产生更具创意、有品味的文本。适合希望提升生成内容独特性和审美水平的 AI 应用开发者、内容创作者以及与 LLM 交互的团队。亮点是轻量、易集成，能显著改善 AI 的“品味”。",
+        "summaryZh": "taste-skill 是给编码 agent 补审美的技能包，用艺术指导、参考图与浏览器检查，替代千篇一律的 AI 页面。它把设计判断拆成流程：先定风格与配色，再对照参考图搭界面，最后用浏览器截图核对布局细节，不合格就重做。以 JavaScript 编写，可被 Claude Code、Cursor 等 agent 调用。适合前端与设计工程师、独立开发者和常用 agent 批量出页面的人。",
         "scenarios": [
-          "为聊天机器人添加个性化风格，避免枯燥回应",
-          "生成营销文案、故事或诗歌，提升艺术感",
-          "优化 AI 写作助手，输出更生动的文章"
+          "用 Claude Code 或 Cursor 生成产品落地页时，先让它输出风格、配色与参考图方案，再写代码，避免模板化的 AI 味页面。",
+          "重构或美化老旧后台界面：把现有截图交给 agent，对照参考图统一视觉语言，并用浏览器截图多轮验收布局与间距。",
+          "独立开发者做个人官网、作品集或营销页，一次流程内跑完设计方向、实现与自查，直接拿到接近视觉稿的可交付页面。"
         ],
-        "agentInstallPrompt": "在终端中依次执行以下命令： 1. git clone https://github.com/Leonxlnx/taste-skill 2. cd taste-skill 3. npm install 4. 根据 README 配置 API 密钥（如 OPENAI_API_KEY） 5. 运行示例：node example.js 注意：需要 Node.js 18+ 环境。"
+        "agentInstallPrompt": "请把 https://github.com/Leonxlnx/taste-skill 克隆到本地，阅读 README 弄清它提供的各项 agent skill（艺术指导、参考图、浏览器检查）以及安装与注册方式，并按其文档把技能接入我当前使用的编码 agent（如 Claude Code 或 Cursor）。接入完成后，用它为我的项目做一个简单落地页首屏：先给出风格定位、配色与参考图，再实现代码，最后用浏览器截图核对布局、间距与视觉细节，逐条修正并汇报每轮改动结果。"
       }
     },
     "repo:moeru-ai/airi": {
@@ -813,17 +813,17 @@
     },
     "repo:nexu-io/open-design": {
       "type": "repo-insight",
-      "hash": "50b4ba9dc964cd8a4fadab12",
+      "hash": "48eccdde8afe29068aa4ae2f",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-08T23:59:45.766Z",
+      "generatedAt": "2026-10-13T22:00:39.828Z",
       "value": {
-        "summaryZh": "open-design 是一个本地优先的桌面设计插件，定位为 Claude Design 的开源替代品。它让 AI 编码智能体直接驱动设计引擎，通过 BYOK 接入 Claude Code、Codex、Cursor、DeepSeek Harness 等 20 多种 CLI，快速生成真实的原型图、落地页、仪表盘、幻灯片、图片及视频等设计文件，并支持导出为 HTML、PDF、PPTX、MP4 等格式。项目基于 TypeScript 构建，适合希望用 AI 智能体实现高效设计落地的开发者、设计师及 AI 自动化团队。",
+        "summaryZh": "OpenDesign 是首个协作式 AI 设计智能体工作区，本地优先、完全开源，基于 TypeScript 构建。它把原型、网站、应用、仪表盘、演示文稿、图片和视频的创作集中在同一空间，让团队与 AI 智能体并肩编辑、分享成果、交换反馈并持续迭代。亮点是本地优先保障数据私密、开源可自托管与二次开发，且多模态产出覆盖从设计到落地全流程。适合产品经理、设计师、前后端工程师与创业团队。",
         "scenarios": [
-          "将 open-design 作为 AI 编码助手的插件，让智能体根据自然语言描述自动生成高保真网页原型并导出 HTML。",
-          "在本地桌面环境中，使用 BYOK 模式连接除 DeepSeek 外的多家大模型 CLI，统一完成从设计概念到幻灯片或视频交付的自动化流程。",
-          "开发团队通过自定义 AI Harness，将设计任务集成到 CI/CD 管道中，批量产出仪表盘、营销图片等具有真实文件格式的可交付设计资产。"
+          "产品团队把需求快速交给 AI 智能体生成可点击原型和仪表盘，在共享工作区里评审、批注并迭代版本。",
+          "设计师与前端工程师协作产出网站、应用界面及演示文稿，本地优先架构确保素材与代码不离开自有环境。",
+          "个人开发者或创业团队自托管 OpenDesign，批量生成营销图片、演示视频与产品 Demo，用于路演和内测。"
         ],
-        "agentInstallPrompt": "请安装并试跑 open-design 项目：首先使用 git clone https://github.com/nexu-io/open-design 下载仓库，然后查看 README 获取安装要求（如 Node 版本）。请执行 npm install 安装依赖，并按照文档配置一个支持 DeepSeek 或 OpenAI 协议的 BYOK 环境变量。接着运行 npm run dev 或 package 脚本启动桌面应用，使用内置示例任务（例如创建登录页或演示文稿）来验证 AI 生成设计文件的功能。若遇到依赖或版本问题，请检查 package.json 和文档中的调试建议，并在终端中记录输出。"
+        "agentInstallPrompt": "请克隆 https://github.com/nexu-io/open-design 到本地新目录，阅读 README 与 package.json，用仓库声明的包管理器（如 pnpm）安装依赖并启动开发服务器。先确认 Node 版本要求和 .env 示例文件，如涉及模型或第三方 API Key 请复制示例配置并在 .env 中填写，同时告知我需要准备哪些密钥。然后执行构建与测试脚本，把启动命令、本地访问端口、控制台报错和解决方式整理成清单；最后打开本地页面，描述首页布局与可试跑的示例流程，并给出三个能快速验证核心功能的最小操作步骤。"
       }
     },
     "repo:VoltAgent/awesome-openclaw-skills": {
@@ -1863,17 +1863,17 @@
     },
     "repo:lyogavin/airllm": {
       "type": "repo-insight",
-      "hash": "45336799df26ca07e386eb4b",
+      "hash": "8b1dadf164bfe2c7313dc477",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-19T22:01:22.925Z",
+      "generatedAt": "2026-10-13T22:00:20.544Z",
       "value": {
-        "summaryZh": "AirLLM 是一个开源项目，能够在单张4GB显存的GPU上高效运行70B参数级别的大语言模型（如Llama 2 70B）。其核心创新在于采用分层推理技术，将模型切分到CPU和GPU内存中按需加载，从而极大降低显存需求。项目基于Jupyter Notebook实现，易于理解和使用。亮点包括：无需昂贵硬件即可体验超大模型、兼容主流开源LLM、推理速度可接受。适合预算有限但希望尝试大模型推理的个人开发者、教育研究者以及需在低配设备上部署AI应用的团队。",
+        "summaryZh": "AirLLM 用分层加载推理让显存占用与参数量解耦，单张 4GB 显卡即可运行 70B 乃至千亿、万亿参数级模型，无需量化或多卡。项目以 Jupyter Notebook 演示为主，支持 Llama、Qwen、DeepSeek、Kimi 等主流架构，并提供模型压缩与层预取加速。适合显存受限的个人开发者、学生与研究者做本地推理验证、教学演示和 Agent 原型，生产高并发场景需谨慎评估速度。",
         "scenarios": [
-          "在仅有4GB显存的个人GPU（如RTX 3050）上运行Llama 2 70B进行文本生成或对话",
-          "低成本云服务器（如T4/RTX 4000系列）上部署70B大模型推理API，减少硬件开销",
-          "教学或研究环境中，无需高端GPU即可演示大模型推理原理和实验"
+          "在只有 4GB/6GB 显存的笔记本或旧显卡上本地运行 Llama、Qwen、DeepSeek 等大模型，验证对话与生成效果。",
+          "用于教学或技术分享，演示大模型分层加载、显存换带宽的原理，并做逐层推理耗时与磁盘 IO 对比实验。",
+          "为个人 Agent、RAG 原型提供离线私有推理后端，在不租用多卡云实例的前提下完成小规模端到端测试。"
         ],
-        "agentInstallPrompt": "git clone https://github.com/lyogavin/airllm.git && cd airllm && pip install -r requirements.txt && # 运行示例：在Jupyter Notebook中打开airllm_demo.ipynb，按照单元格提示下载模型权重并执行推理"
+        "agentInstallPrompt": "请在本机帮我安装并试跑 AirLLM：1) 创建 Python 3.10+ 虚拟环境并激活；2) 按本机 CUDA 版本安装 PyTorch，然后执行 pip install -U airllm accelerate safetensors；3) 新建 try_airllm.py，用 from airllm import AutoModel 加载一个较小模型（如 Qwen/Qwen2.5-7B-Instruct 或 meta-llama/Llama-3.1-8B-Instruct，需要 HF_TOKEN 时从环境变量读取），构造 tokenizer 输入后调用 model.generate 生成一段文本；4) 运行时用 torch.cuda.max_memory_allocated 打印峰值显存，验证能否在 4GB 显存下完成推理，并记录单 token 耗时；5) 若显存或速度不理想，改用 AutoModel.from_pretrained(path, compression='4bit') 或调整层预取/分片参数重跑对比；6) 最后把安装命令、脚本、报错信息和显存/速度数据整理成 README 报告，遇到缺依赖或 OOM 时给出可执行的替代方案。"
       }
     },
     "repo:Canner/WrenAI": {
@@ -7727,6 +7727,37 @@
           "作为低比特量化研究的实验底座，自行微调或转换三元权重模型，再用该框架量化打包并对比不同配置下的速度与质量。"
         ],
         "agentInstallPrompt": "请在本机帮我跑通 microsoft/BitNet。步骤：1) git clone --recursive https://github.com/microsoft/BitNet 并进入目录；2) 用 conda 创建 Python 3.10 环境，执行 python setup_env.py -md models/BitNet-b1.58-2B-4T -q i2_s 完成依赖安装与模型下载量化（若下载失败，改为手动从 Hugging Face 拉取 microsoft/BitNet-b1.58-2B-4T-gguf 并放到对应目录）；3) 执行 cmake 构建生成 llama-cli 可执行文件，若报编译器版本错误请升级 gcc/clang 后重试；4) 运行 python run_inference.py -m models/BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf -p \"解释一下什么是 1-bit LLM\" -t 4 -cnv 验证推理；5) 记录构建耗时、内存峰值和生成速度，并把完整命令、报错与解决方式整理成 README 片段给我。"
+      }
+    },
+    "repo:xtool-org/xtool": {
+      "type": "repo-insight",
+      "hash": "51ab8fb53588daa7cebbacf1",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-13T22:00:23.924Z",
+      "value": {
+        "summaryZh": "xtool 是一个跨平台的 Xcode 替代工具，让开发者用 Swift Package Manager 在 Linux、Windows 和 macOS 上构建并部署 iOS 应用，无需依赖 macOS 专属的 Xcode 与完整 Apple 工具链。它基于 SwiftPM 组织工程，支持签名、打包、安装到真机等关键流程，并复用开源工具实现设备通信。亮点是把 iOS 开发从 macOS 环境中解放出来，降低 CI 成本，也便于在 Linux 服务器上做持续构建。适合做跨平台 CI/CD 的团队、没有 Mac 的 Swift 开发者，以及想用 SwiftPM 统一管理 iOS 项目结构的工程师。",
+        "scenarios": [
+          "在 Linux CI 服务器上自动构建并签名 iOS 应用，输出 IPA 或安装到测试设备",
+          "Windows 或 Linux 开发者不借助 Mac，用 SwiftPM 编写并真机调试 iOS 应用",
+          "把现有 Xcode 项目迁移到 SwiftPM 结构，实现跨平台统一的构建流水线"
+        ],
+        "agentInstallPrompt": "请帮我在当前机器上安装并试跑 xtool：先确认系统（Linux/Windows/macOS）与 Swift 工具链版本，克隆 https://github.com/xtool-org/xtool 并按 README 完成依赖安装与编译；然后创建一个最小 SwiftPM iOS 示例工程，执行 xtool 的构建命令，验证能否生成可部署产物（如有真机或模拟目标，尝试安装并报告结果）。请逐步输出执行的命令、关键日志和遇到的问题，最后总结可用的命令清单与后续接入 CI 的建议。"
+      }
+    },
+    "repo:google/artemis": {
+      "type": "repo-insight",
+      "hash": "468d91ce3d3f4c6e0dce2960",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-13T22:00:30.168Z",
+      "value": {
+        "summaryZh": "ARTEMIS 是 Google 开源的 Android 自动化框架，可把自然语言指令转成稳定可靠的真机/模拟器操作：自动点击、输入、跨应用跳转并校验结果，同时采集日志与截图便于回溯。它在 AndroidWorld 基准上成功率达到 99% 以上，还能无缝接入 Antigravity、Codex、Claude Code 等 AI 编程助手，让 Agent 自己编写、执行并修复流程。适合 Android 测试工程师、自动化开发者，以及希望把移动端操作交给 AI Agent 的团队。",
+        "scenarios": [
+          "用自然语言编写 App 端到端回归测试，替代繁琐的 UIAutomator/Espresso 脚本维护。",
+          "让 Claude Code、Codex 等 AI 助手在模拟器上复现 Bug，并自动抓取日志与截图定位问题。",
+          "在 CI 中对多机型执行冒烟测试，失败时输出可追溯的操作轨迹与日志。",
+          "用自然语言编写 App 端到端回归测试，替代繁琐的 UIAutomator/Espresso 脚本维护。"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 google/artemis：先 git clone https://github.com/google/artemis 并进入目录，按 README 用 Python 3.11+ 创建虚拟环境并安装依赖，同时确认 Android SDK、adb 可用且已连接一台模拟器或真机；根据文档配置好模型 API Key 等环境变量。随后执行一个最小示例，用自然语言指令完成“打开系统设置并查看电池电量”，确认执行成功并保存日志与截图。若遇到报错，请定位原因并给出修复步骤，最后汇总完整运行命令与结果。"
       }
     }
   }
