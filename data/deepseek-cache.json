@@ -813,17 +813,17 @@
     },
     "repo:nexu-io/open-design": {
       "type": "repo-insight",
-      "hash": "48eccdde8afe29068aa4ae2f",
+      "hash": "65ff6de9425c17f1295ea6fd",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-13T22:00:39.828Z",
+      "generatedAt": "2026-10-14T22:01:09.065Z",
       "value": {
-        "summaryZh": "OpenDesign 是首个协作式 AI 设计智能体工作区，本地优先、完全开源，基于 TypeScript 构建。它把原型、网站、应用、仪表盘、演示文稿、图片和视频的创作集中在同一空间，让团队与 AI 智能体并肩编辑、分享成果、交换反馈并持续迭代。亮点是本地优先保障数据私密、开源可自托管与二次开发，且多模态产出覆盖从设计到落地全流程。适合产品经理、设计师、前后端工程师与创业团队。",
+        "summaryZh": "open-design 是首个协作式 AI 设计智能体工作空间，完全开源且采用本地优先（local-first）架构，基于 TypeScript 构建。它把原型、网站、应用界面、仪表盘、演示文稿、图片与视频的创作收敛到同一画布，让你与多个 AI 设计智能体并行分工，同时支持团队成员共享作品、交换反馈、持续迭代。适合独立开发者、产品与前端设计团队，以及希望把 AI 智能体嵌入设计流程、又要求数据留在本地的组织。",
         "scenarios": [
-          "产品团队把需求快速交给 AI 智能体生成可点击原型和仪表盘，在共享工作区里评审、批注并迭代版本。",
-          "设计师与前端工程师协作产出网站、应用界面及演示文稿，本地优先架构确保素材与代码不离开自有环境。",
-          "个人开发者或创业团队自托管 OpenDesign，批量生成营销图片、演示视频与产品 Demo，用于路演和内测。"
+          "团队在同一工作空间内用多个 AI 智能体并行产出高保真原型与营销落地页，评审意见直接回流到画布继续迭代",
+          "为内部工具或数据产品批量生成仪表盘界面，让智能体统一调整图表、布局与配色规范",
+          "本地部署后把演示文稿、宣传图片和短视频初稿的生成流程交给 AI，敏感素材全程不出内网"
         ],
-        "agentInstallPrompt": "请克隆 https://github.com/nexu-io/open-design 到本地新目录，阅读 README 与 package.json，用仓库声明的包管理器（如 pnpm）安装依赖并启动开发服务器。先确认 Node 版本要求和 .env 示例文件，如涉及模型或第三方 API Key 请复制示例配置并在 .env 中填写，同时告知我需要准备哪些密钥。然后执行构建与测试脚本，把启动命令、本地访问端口、控制台报错和解决方式整理成清单；最后打开本地页面，描述首页布局与可试跑的示例流程，并给出三个能快速验证核心功能的最小操作步骤。"
+        "agentInstallPrompt": "请帮我在本地跑起来 nexu-io/open-design：先执行 git clone https://github.com/nexu-io/open-design 并进入仓库目录，阅读 README 和 package.json 判断该用哪个包管理器（优先 pnpm，其次 npm/yarn），安装依赖后启动开发服务器，然后把本地访问地址、常用脚本命令和目录结构简要汇报给我；如果启动需要环境变量、模型 API Key 或本地推理服务，请列出缺失项并给出最小可用的配置示例，最后用浏览器打开首页确认能正常加载并创建空白设计项目。"
       }
     },
     "repo:VoltAgent/awesome-openclaw-skills": {
@@ -4998,17 +4998,17 @@
     },
     "repo:K-Dense-AI/scientific-agent-skills": {
       "type": "repo-insight",
-      "hash": "dd9c45cbf8b02e56241a1af2",
+      "hash": "b1ea165453bfee6230f0fb0a",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-04T22:28:35.986Z",
+      "generatedAt": "2026-10-14T22:00:23.853Z",
       "value": {
-        "summaryZh": "scientific-agent-skills 是一个面向科学研究的 Agent 技能库，旨在将通用 AI 代理转变为“AI 科学家”。它提供 165 个经过验证的即用型技能，整合了超过 100 个科学数据库，覆盖生物学、化学、医学和药物发现等领域。该库已被全球 190,000+ 科学家使用，并兼容 Cursor、Claude Code、Codex、Pi、Antigravity 等主流 AI 工具，遵循开放 Agent 技能标准。其核心亮点是“开箱即用”和跨学科覆盖，适合科研人员、医药研发人员以及希望构建科学工作流的开发者，能显著加速文献检索、实验设计、数据分析等研究环节。",
+        "summaryZh": "把通用 AI Agent 变成“AI 科学家”：内置 177 个经验证、可直接调用的 Agent Skills，并打通 100 多个覆盖生物学、化学、医学与药物发现的科学数据库。项目遵循开放的 Agent Skills 标准，兼容 Cursor、Claude Code、Codex 等主流编码代理，无需自建工具链即可让 Agent 检索文献、查询数据库并串联分析流程。适合生物医药科研人员、计算生物学与药物发现工程师，以及想为 Agent 批量扩展科研能力的开发者。",
         "scenarios": [
-          "科研人员快速检索基因、蛋白质或化合物数据库，获取结构化信息并辅助实验方案设计。",
-          "药物研发团队利用化学与医学相关技能进行分子性质预测、靶点分析或文献挖掘。",
-          "开发者将技能集成到 Cursor、Claude Code 等智能体中，构建定制化的自动化科研流水线。"
+          "生物医药研究者让 Claude Code 或 Cursor 直接调用技能，检索基因、蛋白、化合物与临床数据并生成结构化调研报告。",
+          "药物发现团队用现成技能串联靶点筛选、分子性质预测和文献溯源流程，快速完成早期可行性评估。",
+          "AI 应用开发者参考该技能库的组织方式与开放标准，为自己产品中的 Agent 搭建可复用的科学工具调用层。"
         ],
-        "agentInstallPrompt": "请克隆仓库 https://github.com/K-Dense-AI/scientific-agent-skills，并按照 README 中的说明安装依赖。在支持 Agent Skills 的编辑器（如 Cursor 或 Claude Code）中，将仓库中的 skills 目录配置为技能源，然后尝试加载一个示例技能（例如查询生物学数据库或执行化学计算）。若使用命令行，可运行仓库内提供的 Python 演示脚本，测试技能是否成功加载并返回正确结果。若环境中未预装所需 Python 包，请先执行 pip install -r requirements.txt 完成安装。"
+        "agentInstallPrompt": "请在本地克隆 https://github.com/K-Dense-AI/scientific-agent-skills ，阅读 README 确认支持的 Agent 客户端与技能目录结构，用 Python 建好虚拟环境并安装依赖。随后挑选 2 到 3 个与生物学或药物发现相关的技能，写一个最小可运行脚本或示例对话，验证技能能否被正常加载与调用（例如查询一个科学数据库并返回结果）。把安装步骤、可用技能清单和试跑命令整理成中文 README 摘要，遇到缺失依赖或 API Key 时明确列出并给出替代方案。"
       }
     },
     "repo:bookorbit/bookorbit": {
@@ -5508,17 +5508,18 @@
     },
     "repo:nvm-sh/nvm": {
       "type": "repo-insight",
-      "hash": "88f6aa2fd1b5d51c8b3ea3d9",
+      "hash": "eb01ddce93a1cb172522a1ce",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-05T22:22:43.233Z",
+      "generatedAt": "2026-10-14T22:00:15.661Z",
       "value": {
-        "summaryZh": "nvm 是一个符合 POSIX 标准的 bash 脚本，用于管理多个 Node.js 版本。它允许用户轻松安装、切换、列出和删除不同版本的 Node.js，支持按项目或 shell 会话动态选择版本，并可通过 .nvmrc 文件自动切换。项目轻量、无外部依赖，是前端和 Node.js 开发者的必备工具。适合需要频繁切换 Node 版本、测试多版本兼容性或遵循团队版本规范的开发者。",
+        "summaryZh": "nvm 是 Node Version Manager，一个符合 POSIX 规范的纯 bash 脚本，用于在同一台机器上安装、切换和管理多个 Node.js 版本。亮点是零依赖、无需 root 权限，一行 curl 脚本即可安装，并通过 PATH 隔离与 shim 机制让每个 shell 会话独立使用不同版本；支持 LTS 别名、.nvmrc 自动切换、跨 Linux、macOS 与 WSL。适合前端与 Node 后端开发者、需要在多个项目间切换 Node 版本的工程师、CI 流水线维护者，以及不想用系统包管理器安装 Node 的运维人员。",
         "scenarios": [
-          "本地开发中需要同时维护多个使用不同 Node.js 版本的项目。",
-          "CI 环境或自动化脚本中按需安装指定 Node 版本并执行测试。",
-          "跟随 Node.js 主版本更新，快速体验新功能并回滚到稳定版本。"
+          "本地同时维护多个前端或 Node 项目，老项目依赖 Node 14/16、新项目用 Node 20/22，在项目目录执行 nvm use 或读取 .nvmrc 一键切换版本。",
+          "新机器或 CI 环境快速准备运行时：通过 install.sh 装好 nvm 后执行 nvm install --lts，无需 root 权限，也不污染系统级包管理器。",
+          "排查版本兼容性问题：在不同 Node 版本下反复重装依赖并跑测试或构建，定位由运行时差异引起的报错。",
+          "为团队统一开发环境：把 Node 版本写进 .nvmrc 与文档，新成员克隆仓库后即可复现一致的 Node 版本。"
         ],
-        "agentInstallPrompt": "请先检查系统是否已安装 git、curl 和 bash。然后执行官网安装命令：curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash。安装完成后，重新加载 shell 配置（如 source ~/.bashrc），验证 nvm --version。接着使用 nvm install --lts 安装最新 LTS 版本，nvm use --lts 切换，最后运行 node -v 确认版本。如果环境是 CI，可先安装 nvm 再通过 nvm install 指定版本进行测试。"
+        "agentInstallPrompt": "请在当前 Linux/macOS/WSL 环境中安装并验证 nvm，步骤：1) 使用官方安装脚本，例如 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash（若网络受限，则 git clone https://github.com/nvm-sh/nvm.git ~/.nvm 并进入目录执行 ./install.sh）；2) 在当前 shell 中加载 source ~/.nvm/nvm.sh，并确认 shell 启动文件里已写入 nvm 初始化片段；3) 运行 nvm --version 验证安装成功；4) 执行 nvm install --lts && nvm use --lts，再用 node -v 与 npm -v 打印版本；5) 在项目根目录写入 .nvmrc（例如内容为 lts/*），执行 nvm use 检查是否能自动切换。若某步失败，请给出错误原因与替代方案，全程不要修改或替换系统自带的 Node，也不要使用 sudo 安装到系统目录。"
       }
     },
     "repo:debpalash/VoiceStudio": {
@@ -7758,6 +7759,66 @@
           "用自然语言编写 App 端到端回归测试，替代繁琐的 UIAutomator/Espresso 脚本维护。"
         ],
         "agentInstallPrompt": "请帮我在本地跑通 google/artemis：先 git clone https://github.com/google/artemis 并进入目录，按 README 用 Python 3.11+ 创建虚拟环境并安装依赖，同时确认 Android SDK、adb 可用且已连接一台模拟器或真机；根据文档配置好模型 API Key 等环境变量。随后执行一个最小示例，用自然语言指令完成“打开系统设置并查看电池电量”，确认执行成功并保存日志与截图。若遇到报错，请定位原因并给出修复步骤，最后汇总完整运行命令与结果。"
+      }
+    },
+    "repo:ifixai-ai/iFixAi": {
+      "type": "repo-insight",
+      "hash": "e7e317c307486047240a691c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-14T22:00:35.904Z",
+      "value": {
+        "summaryZh": "iFixAi 是用 Python 写的 AI Agent 独立审计工具，回答 Agent 经济里最关键的问题：Agent 是否真在做它该做的事。它可由人手动触发，也能让 Agent 自行调用完成自检，通过标准化审计流程核对目标、行为与输出是否一致，官方称 120 秒内即可给出结论。适合开发多智能体与自动化工作流的工程师，也可作为上线前检查或运行守门器。",
+        "scenarios": [
+          "在 Agent 上线前做一次独立审计，确认它是否按既定目标与边界行动，避免带病发布。",
+          "多智能体工作流运行中定期自检，让 Agent 自己调用 iFixAi 报告偏差，及时发现越权或跑偏行为。",
+          "为合规、交付或客户验收提供可复现的审计结论，快速说明 Agent 行为是否符合约定。"
+        ],
+        "agentInstallPrompt": "请帮我部署并试跑 iFixAi 这个 AI Agent 审计工具：1）克隆 https://github.com/ifixai-ai/iFixAi 到本地，阅读 README 与依赖文件确认 Python 版本和依赖，创建虚拟环境并安装；2）检查示例配置与环境变量（如模型 API Key），在 .env 中填入我提供的密钥；3）用最小示例跑通一次审计，将被审计对象替换成一个简单 demo Agent 或任务描述，记录完整命令与输出；4）若报错请定位原因、给出修复补丁并重跑；5）最后汇报安装步骤、运行命令、审计结果摘要，以及是否能在 120 秒内给出结论。不要改动与运行无关的文件。"
+      }
+    },
+    "repo:rust-lang/rust": {
+      "type": "repo-insight",
+      "hash": "37cd82dced5ffd0fd5ac8521",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-14T22:00:44.203Z",
+      "value": {
+        "summaryZh": "Rust 官方主仓库，包含 rustc 编译器、标准库、文档与自举构建系统 x.py，是 Rust 语言自身的开发基地。项目以内存安全、零成本抽象和可复现引导编译为核心卖点，支持多平台交叉编译与 nightly 特性实验。体量大、贡献流程规范，适合想深入编译器与语言设计、修复 issue、落地 RFC 或开发未稳定功能的系统程序员和开源贡献者；只写业务代码的开发者直接安装官方工具链即可。",
+        "scenarios": [
+          "为 rustc 编译器或标准库提交补丁、复现并修复 issue，参与语言演进与 RFC 落地。",
+          "从源码构建 nightly 工具链，在本地验证 feature gate 未稳定特性或调试编译期行为。",
+          "在 CI 或自定义环境中交叉编译 Rust 工具链，适配新目标平台、嵌入式与裸机架构。"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/rust-lang/rust，先确认依赖：Python 3、CMake、C++ 编译器（gcc 或 clang）、curl、pkg-config，并保证 rustup 可用。进入仓库后执行 ./x.py setup 选择 contributor 配置，再运行 ./x.py build --stage 1 library/std 完成一次自举构建；若只想快速验证，可先跑 ./x.py check。构建完成后执行 ./x.py test --stage 1 tests/ui 抽查编译器测试，并汇报工具链版本、构建耗时与失败日志摘要。注意仓库体积大，建议预留 30GB 以上磁盘和充足内存。"
+      }
+    },
+    "repo:ntdevlabs/tiny11builder": {
+      "type": "repo-insight",
+      "hash": "02c8d20dfb626be1af7cdb1a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-14T22:00:55.665Z",
+      "value": {
+        "summaryZh": "tiny11builder 是用 C# 编写的 WinUI 桌面工具，可把官方 Windows 11 ISO 精简成体积更小、组件更少的可定制镜像。它借助系统 DISM 自动移除预装应用、Teams、冗余语言包等，并可选保留或删除 Edge、系统更新等模块。开源免费、图形界面直观，无需手写脚本。适合 IT 运维与系统封装爱好者、虚拟机和老旧硬件用户，以及需要快速制作轻量测试镜像的开发者。",
+        "scenarios": [
+          "在虚拟机或老旧电脑上安装 Windows 11 前，用 tiny11builder 生成精简 ISO，降低磁盘占用与内存压力。",
+          "企业 IT 部署前定制统一镜像，移除预装应用与 Teams 等冗余组件，简化装机与后续维护。",
+          "测试或沙箱环境中快速产出轻量 Windows 11 镜像，缩短系统安装、快照和恢复时间。"
+        ],
+        "agentInstallPrompt": "请在 Windows 11 环境下克隆 https://github.com/ntdevlabs/tiny11builder，确认已安装 .NET SDK 与 Windows ADK（含 DISM）并检查管理员权限；用 dotnet build 编译解决方案，再以管理员身份启动 WinUI 应用。准备一份官方 Windows 11 ISO 或已解压的镜像目录，在界面中勾选要移除的组件（预装应用、Teams、冗余语言包等）以及是否保留 Edge 与系统更新，生成精简镜像到指定输出目录，最后汇报原始与精简后的镜像体积对比，并列出构建日志中的报错与缺失依赖。"
+      }
+    },
+    "repo:Gaurav-Gosain/tuios": {
+      "type": "repo-insight",
+      "hash": "63c39fe11c38a6656b02733c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-14T22:01:02.861Z",
+      "value": {
+        "summaryZh": "tuios 是一款用 Go 编写的终端窗口管理器，面向同时运行多个编码代理的开发者。它提供平铺窗格、工作区与可跨重启恢复的持久会话，并具备代理感知能力：能判断每个窗格里的 agent 是在思考、执行命令还是等待输入，再用统一 Inbox 汇总所有代理的待办与请求，免去在多个标签页间反复切换查状态。纯终端、键盘驱动，适合重度使用 Claude Code、Codex 等命令行 AI 代理的工程师。",
+        "scenarios": [
+          "并行运行多个 coding agent（如 Claude Code 与 Codex），用平铺窗格分屏对照，靠 Inbox 集中处理各代理抛出的提问与确认。",
+          "重构、迁移等长时间任务：启用持久会话，SSH 断开或终端崩溃后重连，恢复原有布局与仍在运行的代理进程。",
+          "按项目或模块划分工作区，在多个仓库之间快速切换，同时保持各自 agent 的上下文不中断。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 tuios（https://github.com/Gaurav-Gosain/tuios）。先阅读 README 确认最新安装方式：优先尝试 go install github.com/Gaurav-Gosain/tuios@latest，若失败则 git clone 到本地后执行 go build 生成二进制，确保 Go 环境与依赖就绪。将生成的二进制放入 PATH，运行 tuios --help 验证安装成功，并汇总可用的快捷键、配置项与持久化会话相关参数，说明如何新建工作区、打开平铺窗格以及在哪里查看 agent Inbox，最后给出三条最简上手指令。"
       }
     }
   }
