@@ -7820,6 +7820,36 @@
         ],
         "agentInstallPrompt": "请帮我安装并试跑 tuios（https://github.com/Gaurav-Gosain/tuios）。先阅读 README 确认最新安装方式：优先尝试 go install github.com/Gaurav-Gosain/tuios@latest，若失败则 git clone 到本地后执行 go build 生成二进制，确保 Go 环境与依赖就绪。将生成的二进制放入 PATH，运行 tuios --help 验证安装成功，并汇总可用的快捷键、配置项与持久化会话相关参数，说明如何新建工作区、打开平铺窗格以及在哪里查看 agent Inbox，最后给出三条最简上手指令。"
       }
+    },
+    "repo:lightseekorg/tokenspeed": {
+      "type": "repo-insight",
+      "hash": "89b890195fb3c6ab1bd74cd0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-15T22:00:15.016Z",
+      "value": {
+        "summaryZh": "TokenSpeed 是 lightseekorg 开源的 LLM 推理引擎，用 Python 编写，项目定位为“光速级”推理加速，目标是在保持输出质量的前提下显著降低单次生成延迟并提升吞吐。从公开描述看，它聚焦推理性能优化，可能涉及批处理调度、KV 缓存复用、算子与内存管理层面的加速策略。适合需要自建推理服务的后端开发者、AI 应用工程师，以及做模型部署与推理性能调优的研究者。若你关心以更低成本、更低延迟运行开源大模型，值得跟进其基准数据、支持模型列表与硬件要求。",
+        "scenarios": [
+          "自建 LLM 推理 API 服务：在单卡或多卡 GPU 上部署开源模型，用 TokenSpeed 作为推理后端以降低首 token 延迟与 P99 延迟。",
+          "高并发在线应用：为聊天机器人、代码补全、批量文档生成等场景提供连续批处理与更高吞吐。",
+          "推理性能基准对比：在本地测试每秒生成 token 数、显存占用与并发表现，评估是否值得迁移到生产环境。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/lightseekorg/tokenspeed ，先通读 README 与依赖文件（requirements.txt 或 pyproject.toml），创建 Python 虚拟环境并完成安装；随后按文档加载一个小型开源模型（如 Qwen 或 Llama 系列小参数版本）跑通最小示例，测量首 token 延迟与每秒生成 token 数。如果仓库没有现成示例，请从源码入口推理出可运行命令。最后把执行命令、报错信息、修复过程与性能数据整理成一份简要报告。"
+      }
+    },
+    "repo:xerj-org/xerj": {
+      "type": "repo-insight",
+      "hash": "57e98ccd78b18b498e363785",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-15T22:00:24.494Z",
+      "value": {
+        "summaryZh": "XERJ 是一个 Rust 写的 AI 数据搜索索引引擎，核心是 autoindex：一条命令即可索引代码、文档、日志和 PDF，供搜索、RAG、安全审计与 agent 记忆使用，比 grep 省约 40 倍 token。它兼容 Elasticsearch 接口，现有客户端无需改造即可接入。适合构建 AI Agent、代码库问答与日志分析的开发者与团队。",
+        "scenarios": [
+          "让编码 Agent 在大型代码库中按需检索符号与实现，替代反复 grep/sed 读文件，显著降低上下文与 token 消耗。",
+          "把团队文档、日志和 PDF 一次性索引，搭建企业内部 RAG 问答或运维日志检索服务。",
+          "复用已有 Elasticsearch 客户端接入 XERJ，用于代码与数据的合规/安全审计，或为 Agent 提供长期记忆库。"
+        ],
+        "agentInstallPrompt": "请克隆并构建 XERJ：git clone https://github.com/xerj-org/xerj && cd xerj && cargo build --release（缺少工具链时先装 rustup）。先读 README 与 --help，确认 CLI 名称和 autoindex 命令的真实用法，再在当前仓库执行一次索引（例如 xerj index ./ --include code,docs,logs,pdf），随后启动服务，用 curl 验证 Elasticsearch 兼容端点（如 /_cat/indices）和一次简单查询。最后汇报索引耗时、索引体积、token 节省对比和一个可复现的查询示例；参数不确定时以 README 与 --help 为准，不要臆造命令。"
+      }
     }
   }
 }
