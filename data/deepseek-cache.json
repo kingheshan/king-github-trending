@@ -7850,6 +7850,37 @@
         ],
         "agentInstallPrompt": "请克隆并构建 XERJ：git clone https://github.com/xerj-org/xerj && cd xerj && cargo build --release（缺少工具链时先装 rustup）。先读 README 与 --help，确认 CLI 名称和 autoindex 命令的真实用法，再在当前仓库执行一次索引（例如 xerj index ./ --include code,docs,logs,pdf），随后启动服务，用 curl 验证 Elasticsearch 兼容端点（如 /_cat/indices）和一次简单查询。最后汇报索引耗时、索引体积、token 节省对比和一个可复现的查询示例；参数不确定时以 README 与 --help 为准，不要臆造命令。"
       }
+    },
+    "repo:android/skills": {
+      "type": "repo-insight",
+      "hash": "e7ccc607212104fa871da9ba",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-16T22:00:19.779Z",
+      "value": {
+        "summaryZh": "android/skills 是 Google Android 团队开源的官方 Agent Skills 集合，把 Kotlin、Jetpack Compose、Gradle 配置、架构与测试等日常开发任务，沉淀为结构化技能文件，供 Claude Code 等 AI coding agent 直接读取调用。每项技能含触发条件、操作步骤与官方最佳实践，让代理按 Android 推荐方式写代码、查文档、跑构建。以 SKILL.md 形式组织，可按需挑选单项接入，无需改动现有工程结构。适合 Android 工程师、刚接触移动端的新手，以及想为内部 AI 助手补齐 Android 能力的团队。",
+        "scenarios": [
+          "用 Claude Code、Cursor 等代理新建 Android 项目时，让其按官方技能生成 Compose 界面、Gradle 配置与模块结构。",
+          "接手遗留 Kotlin 工程做重构或迁移，让代理依据技能文档逐步执行架构调整、依赖升级与测试补齐。",
+          "团队内部搭建 Android 专用 AI 助手，把该仓库技能挂载进上下文，统一代码风格、排查流程与文档查询方式。"
+        ],
+        "agentInstallPrompt": "请把 https://github.com/android/skills 克隆到本地工作区，先阅读根目录 README 与整体目录结构，列出每个技能目录及其 SKILL.md 的适用场景和触发条件；然后选取与 Kotlin/Jetpack Compose 相关的一项技能，严格按其中步骤在当前环境创建一个最小 Android 示例工程（Gradle 构建、一个 Compose 页面、一条基础单元测试），逐条执行并记录命令与输出；若缺少 JDK、Android SDK 或依赖版本不匹配，先给出对齐方案再继续，最后总结该技能实际可用的能力边界与踩坑点。"
+      }
+    },
+    "repo:hmjz100/LinkSwift": {
+      "type": "repo-insight",
+      "hash": "73b433070b7edeb39cccaa4e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-16T22:00:26.750Z",
+      "value": {
+        "summaryZh": "LinkSwift 是基于 JavaScript 的网盘直链获取工具，由【网盘直链下载助手】二次修改而来，支持百度网盘、阿里云盘、中国移动云盘、天翼云盘、迅雷云盘、夸克网盘、UC 网盘与 123 云盘八大平台。它能在网盘网页中解析出文件真实下载地址，方便交给 IDM、Aria2、Motrix 等多线程下载器直接拉取，绕开官方客户端限速。项目以浏览器脚本形式分发，安装轻量、源码可读、改造门槛低，适合经常跨网盘搬运大文件的用户、NAS 玩家，以及需要自建下载与自动化流水线的开发者。",
+        "scenarios": [
+          "在百度网盘、夸克网盘等页面获取文件直链，粘贴到 IDM 或 Aria2 实现多线程高速下载，避开客户端限速。",
+          "把解析出的下载地址接入 NAS、服务器上的 Aria2/qBittorrent 或自建脚本，搭建跨网盘的自动搬运与备份流程。",
+          "在浏览器管理器中安装并调试该脚本，按自己的网盘账号、下载器协议或界面需求二次改造源码。",
+          "对比多个网盘的直链规则，用于研究各平台分享链接、Cookie 鉴权与下载接口的技术实现。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 GitHub 项目 hmjz100/LinkSwift（一个基于 JavaScript 的多网盘直链获取脚本）。步骤：1) 执行 git clone https://github.com/hmjz100/LinkSwift 并进入目录；2) 阅读 README 与 package.json，确定脚本入口文件、构建命令和安装方式（浏览器扩展管理器如 Tampermonkey 的 @match 范围）；3) 按 README 执行依赖安装与构建，若产物是 .user.js 请在 dist 或根目录定位它；4) 用 node --check 或 eslint 对主要 js 文件做语法静态检查，报告错误；5) 可选：用 Playwright 启动 Chromium，加载该用户脚本并打开其中一个受支持网盘的分享页，截图控制台输出，确认脚本注入成功；6) 最后输出一份中文说明，包含脚本文件路径、浏览器安装步骤、支持的网盘列表，以及无法在无头环境中验证的部分和原因。"
+      }
     }
   }
 }
