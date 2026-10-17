@@ -2148,17 +2148,17 @@
     },
     "repo:stablyai/orca": {
       "type": "repo-insight",
-      "hash": "2d091db3b71a9f3ef77c59bd",
+      "hash": "e57807ce91e0f1112e265c3a",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-05T22:41:58.998Z",
+      "generatedAt": "2026-10-17T22:00:14.435Z",
       "value": {
-        "summaryZh": "Orca 是一个面向并行代理集群的代理开发环境（ADE），允许开发者通过自己的订阅运行任意编码代理，并支持桌面、移动端和远程运行时。它旨在简化多代理工作流的管理，提供统一的界面来调度、监控和协作。其亮点在于与代理无关的设计，可集成多种主流AI编码工具，并支持跨设备灵活访问。适合需要同时运行多个AI编码代理、追求高效并行任务处理的开发者或团队使用。该项目使用TypeScript编写，具备跨平台能力，是构建和编排复杂代理任务的基础设施。",
+        "summaryZh": "Orca 是一个面向多 AI 编码代理协作的开源工作台，可把 Claude Code、Grok Bot 等代理组成“代理舰队”统一调度，并支持使用你自己的订阅运行，降低额外 API 成本。它提供桌面端、移动端和远程运行时，方便随时随地查看任务、切换代理与接管执行。适合需要并行处理多个开发任务、管理多代理工作流的工程师与团队。",
         "scenarios": [
-          "同时管理多个AI编码代理，并行处理多个模块的开发或重构任务，提升效率。",
-          "在移动设备上远程监控和操作运行在服务器或云端的代理任务，实现随时随地的开发管理。",
-          "通过订阅方式集成自有的编码代理（如GitHub Copilot、Codex等），并在统一界面中切换和调度。"
+          "同时启动多个编码代理并行修复缺陷、补测试和写文档，并在桌面端统一查看进度与冲突。",
+          "在远程运行时中执行耗时代理任务，本地关机后仍可通过手机查看状态并追加指令。",
+          "团队用自有 Claude/Grok 订阅接入 Orca，统一管理代理会话、权限与任务交接，减少重复配置。"
         ],
-        "agentInstallPrompt": "克隆仓库：git clone https://github.com/stablyai/orca.git && cd orca。然后安装依赖：npm install。查看package.json中的scripts（如dev、build、start），通常开发模式运行npm run dev。若为桌面应用，可能需要执行npm run electron或类似命令。根据README中的指引启动应用，并配置所需的编码代理API密钥。若涉及远程运行时，按文档配置服务端。确保Node.js版本符合要求。"
+        "agentInstallPrompt": "请在本地克隆 https://github.com/stablyai/orca，先阅读 README、package.json 和贡献指南，确认 Node/TypeScript 环境与启动命令；安装依赖后启动开发模式，完成最小可用配置（选择一个已登录的编码代理，如 Claude Code），创建一个示例任务验证桌面端与远程运行时能否正常工作。不要修改无关代码，遇到缺失凭据或平台限制时列出步骤和替代方案，并汇报运行结果、访问地址和后续配置项。"
       }
     },
     "repo:asgeirtj/system_prompts_leaks": {
