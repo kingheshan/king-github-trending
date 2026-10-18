@@ -813,17 +813,17 @@
     },
     "repo:nexu-io/open-design": {
       "type": "repo-insight",
-      "hash": "65ff6de9425c17f1295ea6fd",
+      "hash": "47743a5f9127840a3c55dcb2",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-14T22:01:09.065Z",
+      "generatedAt": "2026-10-18T22:00:31.178Z",
       "value": {
-        "summaryZh": "open-design 是首个协作式 AI 设计智能体工作空间，完全开源且采用本地优先（local-first）架构，基于 TypeScript 构建。它把原型、网站、应用界面、仪表盘、演示文稿、图片与视频的创作收敛到同一画布，让你与多个 AI 设计智能体并行分工，同时支持团队成员共享作品、交换反馈、持续迭代。适合独立开发者、产品与前端设计团队，以及希望把 AI 智能体嵌入设计流程、又要求数据留在本地的组织。",
+        "summaryZh": "Open Design 是首个面向团队协作的开源 AI 设计智能体工作台，采用 TypeScript 构建并坚持本地优先，让数据和资产留在本机。它将动效、原型、网站、应用、仪表盘、演示文稿、图片和视频创作汇聚到同一空间，支持成员与 AI 智能体共同编辑、分享作品、交换反馈并持续迭代，适合产品设计团队、独立创作者以及希望自托管 AI 设计流程的开发者。",
         "scenarios": [
-          "团队在同一工作空间内用多个 AI 智能体并行产出高保真原型与营销落地页，评审意见直接回流到画布继续迭代",
-          "为内部工具或数据产品批量生成仪表盘界面，让智能体统一调整图表、布局与配色规范",
-          "本地部署后把演示文稿、宣传图片和短视频初稿的生成流程交给 AI，敏感素材全程不出内网"
+          "产品团队用 AI 智能体快速生成网站、应用界面和仪表盘原型，并在同一工作台收集评审意见、迭代版本。",
+          "设计与市场团队协作制作动效、演示文稿、图片和短视频，本地保存素材，降低对云端工具的依赖。",
+          "开源开发者或企业自托管 Open Design，接入自有模型与权限体系，搭建内部 AI 设计协作平台。"
         ],
-        "agentInstallPrompt": "请帮我在本地跑起来 nexu-io/open-design：先执行 git clone https://github.com/nexu-io/open-design 并进入仓库目录，阅读 README 和 package.json 判断该用哪个包管理器（优先 pnpm，其次 npm/yarn），安装依赖后启动开发服务器，然后把本地访问地址、常用脚本命令和目录结构简要汇报给我；如果启动需要环境变量、模型 API Key 或本地推理服务，请列出缺失项并给出最小可用的配置示例，最后用浏览器打开首页确认能正常加载并创建空白设计项目。"
+        "agentInstallPrompt": "请克隆 https://github.com/nexu-io/open-design，先阅读 README、package.json 和锁文件，确认所需 Node 与包管理器版本；安装依赖，检查并配置本地环境变量、模型或 API Key，启动开发服务器，验证首页加载、项目创建、AI 智能体对话、画布编辑与协作分享流程；如遇构建或类型错误，请逐项修复，并记录关键命令、端口、访问地址和已知限制。"
       }
     },
     "repo:VoltAgent/awesome-openclaw-skills": {
@@ -1818,17 +1818,17 @@
     },
     "repo:trycua/cua": {
       "type": "repo-insight",
-      "hash": "c178f400ec41ce155f5d902d",
+      "hash": "ac41e771bc6d7f3fc1c979a9",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-02T22:56:08.074Z",
+      "generatedAt": "2026-10-18T22:00:26.590Z",
       "value": {
-        "summaryZh": "cua 是面向 computer-use 智能体的开源基础设施，提供跨 macOS、Linux、Windows 的驱动与虚拟化沙箱，让 AI 像人一样操作完整桌面。它整合安全隔离的虚拟机、统一控制接口与批量机群调度，用于训练数据生成和能力评测。亮点是可直接接入主流视觉语言模型，自带 OSWorld 等基准，适合 GUI Agent、自动化测试团队。",
+        "summaryZh": "cua 是面向 computer-use 智能体的开源基础设施，提供统一驱动、跨操作系统沙箱与基准测试，覆盖训练、评测与数据生成全流程。项目用 Rust 编写，强调高性能与可扩展性，能让桌面智能体在隔离环境中安全运行，不污染本机。适合做 GUI Agent 研究、智能体产品原型验证的团队，以及需要批量生成操作轨迹数据、构建可复现评测基准的工程师。",
         "scenarios": [
-          "在隔离虚拟机中批量跑 GUI Agent，让模型自主完成浏览器操作、办公软件点击和系统配置等端到端任务。",
-          "为 computer-use 模型生成高质量训练与评测数据，用统一基准横向对比不同视觉语言模型的桌面操作能力。",
-          "把桌面自动化接入 CI，用于跨 macOS/Linux/Windows 的回归测试、安装流程验证与界面截图对比。"
+          "在 macOS、Linux、Windows 隔离沙箱中运行 GUI 智能体，安全验证点击、输入、跨应用操作流程",
+          "用统一基准批量评测不同 computer-use 模型的任务成功率与稳定性，输出可对比报告",
+          "自动化采集桌面操作轨迹与截图数据，用于智能体微调或合成训练集"
         ],
-        "agentInstallPrompt": "请帮我本地跑通 trycua/cua（https://github.com/trycua/cua）：1) 克隆仓库并阅读 README 与 docs，确认 Python 版本、Docker 或 QEMU 等前置依赖；2) 用 uv 或 pip 创建虚拟环境并安装依赖，遇到编译或权限报错时给出具体修复命令；3) 启动一个最小沙箱虚拟机，验证驱动能连接、能截屏并能发送键盘鼠标事件；4) 运行仓库中的 computer-use 示例（CLI、notebook 或 SDK 脚本均可），通过环境变量配置模型 API Key，让它打开浏览器搜索一个关键词并把结果截图保存到本地；5) 最后整理一份可复现的命令清单，列出每步耗时、常见错误及解决办法。"
+        "agentInstallPrompt": "请克隆 https://github.com/trycua/cua 到本地，先阅读 README 与 docs 确认 Rust 工具链和系统依赖（如虚拟化/沙箱权限）要求，完成构建。然后按文档启动一个最简示例：拉起一个跨操作系统沙箱实例，让示例智能体在其中完成一次打开应用并输入文本的小任务，最后输出运行的命令、关键日志与遇到的问题及解决办法，全程不要修改我的全局系统配置。"
       }
     },
     "repo:MoonshotAI/kimi-cli": {
@@ -2208,17 +2208,17 @@
     },
     "repo:diegosouzapw/OmniRoute": {
       "type": "repo-insight",
-      "hash": "61cc2dced9d4939a1115b5c8",
+      "hash": "42cb7be81b04bf0aeb5ce66d",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-21T22:00:38.075Z",
+      "generatedAt": "2026-10-18T22:00:50.533Z",
       "value": {
-        "summaryZh": "OmniRoute 是一个 MIT 许可的免费 AI 网关，用 TypeScript 编写，提供统一的 OpenAI 兼容端点，聚合 359 家服务商、150+ 免费渠道与 1200+ 模型（Kimi、Claude、GPT、Gemini、GLM、DeepSeek、MiniMax 等）。它兼容 Claude Code、Codex、Cursor、OpenCode、Cline、Copilot 等客户端，内置配额感知自动故障转移、RTK+Caveman 压缩（可省 15%-95% token）、MCP/A2A 支持，以及桌面端与 PWA 界面。适合想低成本多模型切换、又不想被单一额度中断的独立开发者与团队。",
+        "summaryZh": "OmniRoute 是一个以 MIT 协议开源的人工智能模型网关，它把三百七十五家服务商和一千四百多个模型（其中一百五十多个可免费使用）统一到一个兼容接口，能够配合 Claude Code、Cursor、Cline 等常用编码工具。亮点包括按配额自动降级、RTK+Caveman 压缩可节省 15%-95% 令牌，以及 MCP/A2A 和桌面/PWA 支持。适合希望低成本切换多模型、避免单点限流，或为团队统一管理 AI 路由的开发者。",
         "scenarios": [
-          "在 Claude Code、Cursor、Cline 等编码工具里把 API 地址指向 OmniRoute 本地端点，用一套密钥调用多家模型并自动切换备用渠道",
-          "做多模型对比评测或提示词调试，通过同一入口批量切换 Kimi、GPT、Gemini、DeepSeek 等模型并观察压缩前后 token 消耗",
-          "给自建 Agent 或内部工具接统一模型网关，借助配额感知回退与 MCP/A2A 能力保证长时间任务不被限流打断"
+          "在 Claude Code、Cursor 或 Cline 中把模型请求指向单一网关，按任务自动切换 Kimi、Claude、GPT、Gemini 等模型，额度不足时无感降级。",
+          "个人开发者或小团队用 150+ 免费模型做原型开发、代码补全和批量重构，借 token 压缩降低调用成本。",
+          "为多项目集中管理 API Key、模型路由和配额监控，并通过 MCP/A2A 接入自建 Agent 或桌面/PWA 工作台。"
         ],
-        "agentInstallPrompt": "请在本机帮我安装并试跑 OmniRoute：1) 执行 git clone https://github.com/diegosouzapw/OmniRoute.git 并进入目录，读取 README 确认包管理器（优先 pnpm，其次 npm）；2) 安装依赖并根据 .env.example 创建 .env，向我询问至少一个服务商的 API Key（如 DeepSeek 或 Gemini 免费额度），其余保持默认；3) 用开发模式启动服务，确认监听端口，若报错请读取日志并修复缺依赖或环境变量问题；4) 用 curl 请求其 OpenAI 兼容的 /v1/models 与一次 /v1/chat/completions 冒烟测试，输出可用模型数量与示例回复；5) 告诉我如何把 Claude Code / Cursor 的 base_url 与 api_key 指向该端点，并列出启用自动回退与 token 压缩所需的关键配置项。全程不要修改我的全局配置，改动前先说明。"
+        "agentInstallPrompt": "请克隆 https://github.com/diegosouzapw/OmniRoute ，阅读 README、package.json 和示例配置，确认 Node 与包管理器版本后安装依赖；按文档设置至少一个提供商的 API Key，启动服务，并用 curl 验证兼容端点能列出模型并完成一次最小聊天补全。若仓库支持 Docker，请同时跑通容器方式。最后汇报环境变量、启动命令、验证结果、报错修复，以及可直接填入 Claude Code 或 Cursor 的 baseURL 与模型名示例。"
       }
     },
     "repo:alibaba/page-agent": {
@@ -3903,17 +3903,17 @@
     },
     "repo:Comfy-Org/ComfyUI": {
       "type": "repo-insight",
-      "hash": "41b8b229c4a90eeb45bb9ef8",
+      "hash": "0e502744140fb1c491b7bc91",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-09T22:29:56.762Z",
+      "generatedAt": "2026-10-18T22:00:23.395Z",
       "value": {
-        "summaryZh": "ComfyUI 是一个基于节点/图界面的模块化扩散模型图形界面与后端，支持 API 调用。它以高度灵活的可视化工作流著称，用户可通过连接不同节点构建图像生成、视频生成等复杂流程。项目采用 Python 编写，性能优异，支持多模型并行，适合研究者、开发者及高级用户深度定制。其亮点在于模块化设计、实时预览、丰富的自定义节点生态，以及可轻松嵌入其他应用的 API 接口。无论是快速原型验证还是生产级部署，ComfyUI 都能胜任。",
+        "summaryZh": "ComfyUI 是基于节点图的扩散模型 GUI、API 与后端，模块化设计、本地推理速度快，支持 Stable Diffusion、Flux 等主流模型；可通过工作流精细编排采样、LoRA、ControlNet 等环节，并提供 HTTP/WebSocket 接口以便集成。它适合 AI 绘画爱好者、算法研究者，以及需要自建图像生成流水线的工程团队。",
         "scenarios": [
-          "研究实验：快速搭建并对比不同扩散模型、采样器与提示词策略，直观观察中间结果。",
-          "生产集成：通过其后端 API，将图像生成流水线嵌入现有应用或服务。",
-          "工作流开发：创建并分享可复用的节点工作流，实现复杂的多阶段生成任务（如图生图、修复、超分）。"
+          "在本地搭建文生图、图生图工作台，用节点式工作流复现并调试复杂的生成管线。",
+          "将 ComfyUI 作为后端服务，通过 API 接入自有产品，批量生成电商图、插画或营销素材。",
+          "在团队内对模型与 LoRA、ControlNet 效果进行对比实验，并沉淀可复用的工作流模板。"
         ],
-        "agentInstallPrompt": "在 Python 3.10+ 环境中安装 PyTorch（建议带 GPU 支持），然后克隆仓库：git clone https://github.com/Comfy-Org/ComfyUI.git。进入目录后运行 pip install -r requirements.txt。启动服务：python main.py。访问 http://127.0.0.1:8188 打开界面，可先加载默认工作流测试，或拖入示例图片生成。确保已下载合适的扩散模型（如 SDXL）并放入 models/checkpoints 目录。若需自定义节点，使用 ComfyUI Manager 安装。"
+        "agentInstallPrompt": "请在本机安装并试跑 ComfyUI：1) 执行 git clone https://github.com/Comfy-Org/ComfyUI 并进入目录；2) 创建 Python 3.10+ 虚拟环境并激活，安装 requirements.txt，若本机有 NVIDIA GPU 则按官方说明安装对应 CUDA 版本的 PyTorch；3) 下载一个较小的 SD checkpoint 放入 models/checkpoints；4) 运行 python main.py --listen 127.0.0.1 --port 8188 启动服务；5) 用 curl 请求 /system_stats 验证后端可用，并打开 http://127.0.0.1:8188 确认默认工作流能正常出图；6) 最后汇报实际执行的命令、依赖或显存相关问题，以及可复用的最小工作流。"
       }
     },
     "repo:harveyai/harvey-labs": {
@@ -7880,6 +7880,36 @@
           "对比多个网盘的直链规则，用于研究各平台分享链接、Cookie 鉴权与下载接口的技术实现。"
         ],
         "agentInstallPrompt": "请帮我安装并试跑 GitHub 项目 hmjz100/LinkSwift（一个基于 JavaScript 的多网盘直链获取脚本）。步骤：1) 执行 git clone https://github.com/hmjz100/LinkSwift 并进入目录；2) 阅读 README 与 package.json，确定脚本入口文件、构建命令和安装方式（浏览器扩展管理器如 Tampermonkey 的 @match 范围）；3) 按 README 执行依赖安装与构建，若产物是 .user.js 请在 dist 或根目录定位它；4) 用 node --check 或 eslint 对主要 js 文件做语法静态检查，报告错误；5) 可选：用 Playwright 启动 Chromium，加载该用户脚本并打开其中一个受支持网盘的分享页，截图控制台输出，确认脚本注入成功；6) 最后输出一份中文说明，包含脚本文件路径、浏览器安装步骤、支持的网盘列表，以及无法在无头环境中验证的部分和原因。"
+      }
+    },
+    "repo:mlabonne/llm-course": {
+      "type": "repo-insight",
+      "hash": "9a59daabfd1e333c4dd20f60",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-18T22:00:12.787Z",
+      "value": {
+        "summaryZh": "该项目是面向大语言模型入门的开源学习课程，提供从基础到进阶的路线图与可直接运行的 Colab 笔记本，覆盖 Transformer、微调、量化、RAG、评估与部署等主题，强调动手实践与低成本实验。适合 AI 初学者、转岗工程师、数据科学家及需要系统补齐 LLM 知识栈的开发者，也可作为团队内训与教学参考。",
+        "scenarios": [
+          "零基础或转岗开发者按路线图系统学习大语言模型基础、微调与推理优化",
+          "使用 Colab 笔记本快速复现微调、量化、RAG 和模型评估等动手实验",
+          "团队内训、高校课程或学习小组将其作为教学大纲与实验素材库"
+        ],
+        "agentInstallPrompt": "请作为我的 AI coding agent，帮我在本地试跑 GitHub 仓库 https://github.com/mlabonne/llm-course 。先克隆仓库并阅读 README、路线图和 notebooks 目录，梳理课程结构与依赖；然后创建独立 Python 虚拟环境，安装轻量依赖，优先选择不需要大模型下载或 GPU 的入门 notebook 进行试运行；如遇 Colab 专属依赖或需要 API Key，请改为静态检查并给出替代方案。最后输出：仓库结构摘要、已成功运行的 notebook、失败原因、下一步学习建议，并避免执行耗时下载或高成本训练任务。"
+      }
+    },
+    "repo:Kruk2/jasna": {
+      "type": "repo-insight",
+      "hash": "eb9c19deee5034888fec4c8f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-18T22:00:18.275Z",
+      "value": {
+        "summaryZh": "jasna 是一个基于 Python 的视频修复工具，聚焦老旧、低质或受损视频的画质恢复与预处理。项目以脚本化方式组织修复流程，便于在本地安装、调整参数并接入批量任务；适合视频修复爱好者、影视档案整理者，以及需要提升素材质量以供下游检测或分析的开发者。使用前建议先阅读 README，确认依赖、模型与输入输出格式。",
+        "scenarios": [
+          "修复家庭老录像、VHS 转录视频中的噪点、划痕与模糊问题。",
+          "为监控、行车记录仪等低照度视频做修复预处理，提升后续分析可用性。",
+          "批量整理影视档案或训练数据，把低质视频统一清洗后再进入剪辑或标注流程。"
+        ],
+        "agentInstallPrompt": "请在本机试跑 https://github.com/Kruk2/jasna：先 git clone 仓库并进入目录，阅读 README 与依赖文件；用 Python 创建虚拟环境并安装依赖，确认是否需要下载模型或系统库（如 ffmpeg）。准备一段短视频作为输入，按文档执行最小示例，记录命令、报错与输出文件位置；若失败，给出可复现的修复步骤和依赖版本建议。最后汇报项目用途、运行耗时、显存/内存占用与是否适合批量处理。"
       }
     }
   }
