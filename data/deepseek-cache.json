@@ -7941,6 +7941,21 @@
         ],
         "agentInstallPrompt": "把 https://github.com/YuJunZhiXue/dsh-purge 克隆到 ~/Code/dsh-purge。请先读取 README.md、package.json、pyproject.toml、Cargo.toml 或 go.mod 等项目入口文件，判断技术栈和安装命令。安装依赖后，跑通一个 README 中最小的示例或测试命令；如果需要 API key 或额外服务，请列出变量名、配置文件路径和最小启动步骤。"
       }
+    },
+    "repo:vllm-project/vllm": {
+      "type": "repo-insight",
+      "hash": "0afb9d81e96cb3d13650338e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-20T22:00:15.145Z",
+      "value": {
+        "summaryZh": "vLLM 是面向大语言模型的高吞吐、低显存推理与服务引擎，核心创新 PagedAttention 显著减少 KV 缓存显存浪费，并结合连续批处理、前缀缓存与张量并行，在同等 GPU 上大幅提升吞吐、降低延迟。它内置兼容 OpenAI API 的在线服务端，支持量化、多卡分布式与主流开源模型，适合自建推理服务的算法工程师、平台基础设施团队与研究者快速落地生产级部署。",
+        "scenarios": [
+          "在生产环境部署兼容 OpenAI API 的 LLM 推理服务，支撑聊天、RAG、Agent 等在线应用的高并发调用。",
+          "在单机多卡或集群上对 7B 至 70B+ 开源模型做吞吐与延迟压测，调优批处理、并行度和显存占用。",
+          "研究或评估量化（AWQ、GPTQ、FP8）、前缀缓存、投机解码等推理优化手段的实际收益。"
+        ],
+        "agentInstallPrompt": "请在本地帮我试跑 vLLM：先检查 nvidia-smi 和 Python 版本（建议 3.9+），然后 git clone https://github.com/vllm-project/vllm 并进入目录，创建虚拟环境后用 pip install -e . 安装；若显存有限，改用 pip install vllm 并选择较小模型。接着写一个离线推理脚本：加载 Qwen/Qwen2.5-0.5B-Instruct，用 LLM 与 SamplingParams 生成一段文本并打印耗时；再启动 vllm serve Qwen/Qwen2.5-0.5B-Instruct --port 8000，用 curl 调用 /v1/completions 验证 OpenAI 兼容接口。若没有 GPU，请说明 CPU 回退限制，并把命令整理成可复现的 README 步骤与排错说明。"
+      }
     }
   }
 }
