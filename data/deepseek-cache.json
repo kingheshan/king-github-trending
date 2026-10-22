@@ -7956,6 +7956,96 @@
         ],
         "agentInstallPrompt": "请在本地帮我试跑 vLLM：先检查 nvidia-smi 和 Python 版本（建议 3.9+），然后 git clone https://github.com/vllm-project/vllm 并进入目录，创建虚拟环境后用 pip install -e . 安装；若显存有限，改用 pip install vllm 并选择较小模型。接着写一个离线推理脚本：加载 Qwen/Qwen2.5-0.5B-Instruct，用 LLM 与 SamplingParams 生成一段文本并打印耗时；再启动 vllm serve Qwen/Qwen2.5-0.5B-Instruct --port 8000，用 curl 调用 /v1/completions 验证 OpenAI 兼容接口。若没有 GPU，请说明 CPU 回退限制，并把命令整理成可复现的 README 步骤与排错说明。"
       }
+    },
+    "repo:php/php-src": {
+      "type": "repo-insight",
+      "hash": "77f14254184e175d66901a11",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-22T22:00:13.974Z",
+      "value": {
+        "summaryZh": "PHP 官方解释器源码仓库，用 C 实现，包含 Zend 虚拟机、CLI、FPM、OPcache 与标准库扩展，是 PHP 语言本身。亮点是构建链成熟（buildconf/configure/make）、.phpt 测试覆盖充分、分支与 RFC 流程透明，可直接从源码定制编译选项并调试内核。适合 PHP 扩展开发者、想深入理解解释器与内存管理的工程师，以及需要自行编译、打补丁或评估版本升级的团队。",
+        "scenarios": [
+          "从源码编译指定版本的 PHP（含 CLI、FPM、OPcache），按生产或本地调试需求定制 configure 参数与编译选项。",
+          "开发或排查 C 语言 PHP 扩展，借助 Zend API 与 .phpt 测试用例验证行为、定位崩溃与内存泄漏。",
+          "阅读 Zend 引擎实现、复现 bug 并提交补丁，参与 PHP 内核贡献或评估新版本升级风险。"
+        ],
+        "agentInstallPrompt": "请在本机克隆 https://github.com/php/php-src（可用浅克隆），先安装构建依赖（Debian/Ubuntu：build-essential、autoconf、bison、re2c、pkg-config、libxml2-dev、libsqlite3-dev、libssl-dev）。然后执行 ./buildconf --force，再执行 ./configure --prefix=$HOME/php-dev --disable-all --enable-cli --enable-debug，接着 make -j$(nproc) 与 make install。用 $HOME/php-dev/bin/php -v 和 php -i 验证安装，并运行 make test TESTS=\"sapi/cli/tests\" 跑一小部分 .phpt 测试，汇报通过/失败数量。缺依赖时只列出缺失的系统包并提示安装命令，不要改动仓库源码。"
+      }
+    },
+    "repo:fastapi/fastapi": {
+      "type": "repo-insight",
+      "hash": "732435be4a088158d460f453",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-22T22:00:21.225Z",
+      "value": {
+        "summaryZh": "FastAPI 是基于 Python 类型注解的高性能 Web 框架，底层用 Starlette 处理异步路由、Pydantic 负责数据校验，代码简洁且自带交互式 Swagger 文档。它原生支持 async/await、依赖注入与自动请求校验，性能接近 Node.js 与 Go，可快速搭建生产级 REST API、微服务与模型推理接口。适合有 Python 基础的后端开发者、数据与 AI 工程师，以及想把脚本快速封装成 HTTP 服务的人。",
+        "scenarios": [
+          "把机器学习模型或算法脚本封装成推理 API：用 Pydantic 模型定义入参出参，自动完成校验并生成可调试的 Swagger 文档",
+          "搭建微服务或 BFF 聚合层：借助 async/await 与依赖注入高并发调用内部服务，并用 pytest 做接口测试",
+          "团队快速交付生产级后端：配合 SQLAlchemy、JWT 鉴权与 Docker 部署，从原型验证平滑过渡到上线"
+        ],
+        "agentInstallPrompt": "请在当前目录用 Python 3.11 创建一个 FastAPI 试跑项目：1）新建虚拟环境并激活，pip 安装 fastapi、uvicorn[standard] 与 pytest；2）创建 main.py，写一个 GET / 健康检查接口，以及一个带 Pydantic 模型的 POST /items 接口（字段 name: str、price: float，返回生成的 id 与总价），并用 Depends 注入一个简单的公共查询参数依赖；3）启动 uvicorn main:app --reload --port 8000，后台运行后依次验证：curl 请求 / 与 /items，访问 http://127.0.0.1:8000/docs 确认 OpenAPI 文档可打开，再用 curl 提交一条含非法类型的数据确认返回 422；4）为两个接口补一个 pytest + TestClient 的测试文件并运行通过；5）最后输出目录结构、关键代码片段、验证结果与遇到的问题，若端口被占用请换用空闲端口并说明。"
+      }
+    },
+    "repo:luongnv89/claude-howto": {
+      "type": "repo-insight",
+      "hash": "7aceba5afc9efab6f01f33ba",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-22T22:00:26.662Z",
+      "value": {
+        "summaryZh": "claude-howto 是一份面向 Claude Code 的可视化实战指南，从基础概念一路讲到进阶 Agent 用法，并配有可直接复制粘贴的模板与示例，克隆下来就能上手。项目以 Python 组织示例与脚本，结构清晰、循序渐进，重点是把抽象概念转化为能立刻产生价值的配置与工作流。适合刚接触 Claude Code 的开发者、想把 AI 编码助手引入团队的工程师，以及需要给新人做培训的技术负责人。",
+        "scenarios": [
+          "新成员入职时，直接用仓库里的模板配置 Claude Code，半天内跑通第一个可用工作流。",
+          "团队制定 AI 编码规范时，复用其中的 Agent 与提示词示例，改写为内部标准文档。",
+          "做技术分享或内训时按章节挑选示例现场演示，从基础命令逐步过渡到多步 Agent 编排。"
+        ],
+        "agentInstallPrompt": "请把 https://github.com/luongnv89/claude-howto 克隆到本地，先阅读 README 和目录结构，确认所需 Python 版本与依赖清单；然后创建独立虚拟环境并安装依赖。接着按文档顺序挑选一个最基础的示例完整跑通，把命令、输出和任何报错原样贴出来，报错时先分析原因再尝试修复。最后从仓库中挑出三个最适合我当前项目的模板，分别说明用途、适用环节以及需要我替换的配置项。不要改动仓库原始文件，缺少依赖或权限时先说明再动手。"
+      }
+    },
+    "repo:Meloong-Git/PCL": {
+      "type": "repo-insight",
+      "hash": "e62502b2f6b13f1b47624d04",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-22T22:00:36.899Z",
+      "value": {
+        "summaryZh": "PCL（Plain Craft Launcher）是 Windows 上的 Minecraft 启动器，基于 Visual Basic .NET 开发。它支持游戏版本与整合包下载安装、Forge/Fabric 等加载器管理、多实例隔离、账号登录和资源补全，界面友好、更新活跃。适合 Windows 玩家、整合包作者和服务器管理员，也适合研究 VB.NET 桌面启动器实现的开发者；不支持 macOS/Linux。",
+        "scenarios": [
+          "在 Windows 上安装并日常启动 Minecraft，快速切换原版、Forge、Fabric 等多个版本与实例。",
+          "整合包作者或服务器管理员用它下载游戏与模组、配置客户端并分发给玩家测试。",
+          "VB.NET/.NET 桌面开发者克隆源码，学习启动器的版本管理、下载器与 UI 架构。"
+        ],
+        "agentInstallPrompt": "请在 Windows 10/11 环境中试跑 PCL：先确认已安装 Git、Visual Studio 2022（含 .NET 桌面开发/VB.NET 工作负载）和对应 .NET Framework 开发包；克隆 https://github.com/Meloong-Git/PCL 到本地，查找 .sln 解决方案文件，用 msbuild 或 Visual Studio 还原 NuGet 并构建。若构建失败，请记录缺失的 SDK/依赖与错误日志，不要修改源码。构建成功后启动生成的 exe，验证主界面能打开；若仅想体验产品，可优先从 Releases 下载官方可执行文件。"
+      }
+    },
+    "repo:cheaper-inference/OmniRoute": {
+      "type": "repo-insight",
+      "hash": "7823f0849510c60f93c7f2e5",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-22T22:01:03.884Z",
+      "value": {
+        "summaryZh": "OmniRoute 是 MIT 开源 AI 网关，单端点聚合 375 家提供商、1400+ 模型（含免费源），覆盖 Claude、GPT、Gemini 等。兼容 Claude Code、Cursor、Cline、Copilot，提供配额感知自动回退与 token 压缩，支持 MCP/A2A 和 PWA。适合统一多模型接入、控制成本、减少配额中断的开发者与团队。",
+        "scenarios": [
+          "在 Claude Code、Cursor、Cline 等编码工具中配置单一兼容端点，按任务切换或自动回退到免费/低价模型。",
+          "为多模型应用统一网关层，集中管理 API Key、配额、限流与故障回退，降低供应商锁定。",
+          "在 token 成本敏感的长上下文或高频 Agent 工作流中启用压缩与配额感知路由，控制预算并保持可用性。"
+        ],
+        "agentInstallPrompt": "请帮我本地试跑 OmniRoute：先阅读 https://github.com/cheaper-inference/OmniRoute 的 README 与安装说明，确认 Node/TypeScript 版本和所需环境变量；克隆仓库并安装依赖，按文档启动网关或桌面/PWA 版本；用示例配置一个模型提供商并验证统一端点可调用；最后给出启动命令、配置文件位置、验证结果和常见问题。不要提交任何 API Key 或密钥。"
+      }
+    },
+    "repo:storytold/photocraft": {
+      "type": "repo-insight",
+      "hash": "99f16dc3faafc6c10fd04405",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-22T22:01:10.800Z",
+      "value": {
+        "summaryZh": "PhotoCraft 是一个从零用纯 Rust 编写的开源照片编辑器，目标是提供不依赖传统 C++ 或 Electron 技术栈的原生图像编辑方案。项目以 Rust 的内存安全和高性能为亮点，适合关注桌面图像处理、Rust GUI 与图形渲染实践的开发者阅读源码、参与贡献；也适合想学习如何从底层搭建编辑器架构的技术人员。功能完整度与平台支持需以仓库文档和实际构建结果为准。",
+        "scenarios": [
+          "在本地构建并试用纯 Rust 照片编辑器，评估其启动速度、内存占用与基础修图体验。",
+          "作为 Rust GUI、图像解码/渲染与桌面应用架构的学习样本，阅读模块设计与源码。",
+          "基于仓库进行二次开发或功能扩展，例如加入滤镜、批量处理或自定义导出流程。"
+        ],
+        "agentInstallPrompt": "请在本机试跑 PhotoCraft：先 git clone https://github.com/storytold/photocraft.git 并进入仓库，阅读 README、Cargo.toml 和构建说明，确认所需 Rust 工具链与系统依赖；安装或更新 stable Rust 后执行 cargo build，再根据文档运行可执行文件。若构建失败，请定位缺失依赖或平台限制，给出修复命令；最后汇报构建结果、启动方式、已实现的基础功能与明显问题。"
+      }
     }
   }
 }
