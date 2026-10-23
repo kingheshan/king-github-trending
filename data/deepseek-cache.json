@@ -8046,6 +8046,36 @@
         ],
         "agentInstallPrompt": "请在本机试跑 PhotoCraft：先 git clone https://github.com/storytold/photocraft.git 并进入仓库，阅读 README、Cargo.toml 和构建说明，确认所需 Rust 工具链与系统依赖；安装或更新 stable Rust 后执行 cargo build，再根据文档运行可执行文件。若构建失败，请定位缺失依赖或平台限制，给出修复命令；最后汇报构建结果、启动方式、已实现的基础功能与明显问题。"
       }
+    },
+    "repo:Renhuai123/ziwei-doushu": {
+      "type": "repo-insight",
+      "hash": "159b5098e927c16d33da7467",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-23T22:00:13.380Z",
+      "value": {
+        "summaryZh": "ziwei-doushu 是 TypeScript 编写的紫微斗数开源排盘引擎，基于倪海厦《天纪》体系实现完整安星排盘算法，覆盖十二宫、主辅星曜、四化飞星与流年推演，并内置格局知识库与古籍原文数据，便于二次开发与结果校验。相比零散脚本，它把算法、规则与文献数据分层解耦，接口清晰、可测试性强，适合命理类 App、小程序与 AI 命盘解读工具的开发者，也适合需要可复现排盘结果的研究者、教学者与内容创作者。",
+        "scenarios": [
+          "命理 App 或微信小程序接入排盘能力：传入出生时间与地点，由引擎输出十二宫星曜、四化与格局判定结果，前端只负责展示与交互。",
+          "AI 命盘解读助手：将排盘结构化结果与古籍原文、格局知识库一并作为上下文喂给大模型，生成有出处、可追溯的解读文本。",
+          "排盘算法回归测试与教学演示：针对固定生辰批量跑用例，比对不同流派规则差异，用于课程讲义、书籍校对或开源社区规则讨论。"
+        ],
+        "agentInstallPrompt": "请在本机克隆并跑通 https://github.com/Renhuai123/ziwei-doushu 这个 TypeScript 紫微斗数排盘引擎：先用 git clone 拉取仓库，阅读 README 与 package.json，用 pnpm（或 npm）安装依赖并执行已有的 build、lint、test 脚本，确认全部通过；然后找到对外暴露的排盘入口函数与类型定义，写一个最小可运行示例脚本，用一个示例出生时间（如 1990-05-12 08:30 男命）调用排盘，打印十二宫主星、四化与命宫位置，并对输出做基本断言。如果编译或测试失败，请定位是 Node 版本、依赖缺失还是类型声明问题并修复，最后把示例脚本路径、运行命令和实际输出摘要汇报给我。"
+      }
+    },
+    "repo:elie222/rakazo": {
+      "type": "repo-insight",
+      "hash": "b954551f0111be6e7ebb5f53",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-23T22:00:23.566Z",
+      "value": {
+        "summaryZh": "Rakazo 是 TypeScript 编写的开源 Grok Bot 替代方案，主打模型与沙箱均可自选：可接入不同 LLM 提供商，并把工具调用放入隔离环境执行，降低平台锁定与安全风险。项目适合想自建对话机器人、重视数据隐私和成本控制的开发者，也适合研究多模型编排的小团队。上手需准备模型 API Key 与沙箱配置，按 README 启动本地服务即可试跑。",
+        "scenarios": [
+          "自建类 Grok 的对话机器人：接入企业自有模型或第三方 API，部署在私有环境，保留数据控制权。",
+          "多模型对比与评测：在同一套 Bot 逻辑下切换不同 LLM，比较回答质量、成本与延迟。",
+          "沙箱化工具调用：让 Bot 在隔离环境中执行代码或命令，用于自动化任务并降低安全风险。"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/elie222/rakazo，阅读 README 与 .env.example，安装项目依赖（优先按仓库声明的包管理器执行）；配置所选模型提供商的 API Key 和沙箱参数，注意不要把密钥提交到仓库；启动开发服务器；用一个最小对话或工具调用示例验证模型与沙箱均可用，并汇总启动命令、必需环境变量和遇到的问题。"
+      }
     }
   }
 }
