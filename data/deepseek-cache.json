@@ -7808,17 +7808,17 @@
     },
     "repo:Gaurav-Gosain/tuios": {
       "type": "repo-insight",
-      "hash": "63c39fe11c38a6656b02733c",
+      "hash": "21ed0c9e057463a06fdaca07",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-14T22:01:02.861Z",
+      "generatedAt": "2026-10-24T22:00:38.244Z",
       "value": {
-        "summaryZh": "tuios 是一款用 Go 编写的终端窗口管理器，面向同时运行多个编码代理的开发者。它提供平铺窗格、工作区与可跨重启恢复的持久会话，并具备代理感知能力：能判断每个窗格里的 agent 是在思考、执行命令还是等待输入，再用统一 Inbox 汇总所有代理的待办与请求，免去在多个标签页间反复切换查状态。纯终端、键盘驱动，适合重度使用 Claude Code、Codex 等命令行 AI 代理的工程师。",
+        "summaryZh": "tuios 是一个用 Go 编写的终端窗口管理器，面向同时运行多个 AI 编码代理的开发者。它提供平铺窗格、工作区、可跨重启恢复的会话，并把各个编码代理的消息集中到一个 Inbox，方便查看进度、处理提问与切换任务。适合重度使用终端、需要并行管理 Claude Code、Codex 等代理的工程师与运维人员，强调本地、键盘驱动和可恢复工作流。",
         "scenarios": [
-          "并行运行多个 coding agent（如 Claude Code 与 Codex），用平铺窗格分屏对照，靠 Inbox 集中处理各代理抛出的提问与确认。",
-          "重构、迁移等长时间任务：启用持久会话，SSH 断开或终端崩溃后重连，恢复原有布局与仍在运行的代理进程。",
-          "按项目或模块划分工作区，在多个仓库之间快速切换，同时保持各自 agent 的上下文不中断。"
+          "并行运行多个编码代理时，用平铺窗格分屏监控各自输出，并通过统一 Inbox 集中处理提问与结果。",
+          "在远程服务器或本地终端中搭建可持久化工作区，断线或重启后恢复会话，继续多项目开发。",
+          "键盘驱动的日常开发：按工作区分组前端、后端、日志与测试窗格，快速切换而不依赖图形界面。"
         ],
-        "agentInstallPrompt": "请帮我安装并试跑 tuios（https://github.com/Gaurav-Gosain/tuios）。先阅读 README 确认最新安装方式：优先尝试 go install github.com/Gaurav-Gosain/tuios@latest，若失败则 git clone 到本地后执行 go build 生成二进制，确保 Go 环境与依赖就绪。将生成的二进制放入 PATH，运行 tuios --help 验证安装成功，并汇总可用的快捷键、配置项与持久化会话相关参数，说明如何新建工作区、打开平铺窗格以及在哪里查看 agent Inbox，最后给出三条最简上手指令。"
+        "agentInstallPrompt": "请在我当前机器上安装并试跑 Gaurav-Gosain/tuios。先阅读仓库 README 与 tuios.dev 的官方安装说明，确认 Go 版本和依赖；优先使用官方推荐的安装方式（如 go install），不要使用第三方来源。安装后启动 tuios，创建一个包含两个平铺窗格的工作区，运行一个简单命令验证会话与窗格管理；再说明如何配置编码代理 Inbox，并给出最小配置示例和卸载/清理步骤。"
       }
     },
     "repo:lightseekorg/tokenspeed": {
@@ -8075,6 +8075,81 @@
           "沙箱化工具调用：让 Bot 在隔离环境中执行代码或命令，用于自动化任务并降低安全风险。"
         ],
         "agentInstallPrompt": "请在本地克隆 https://github.com/elie222/rakazo，阅读 README 与 .env.example，安装项目依赖（优先按仓库声明的包管理器执行）；配置所选模型提供商的 API Key 和沙箱参数，注意不要把密钥提交到仓库；启动开发服务器；用一个最小对话或工具调用示例验证模型与沙箱均可用，并汇总启动命令、必需环境变量和遇到的问题。"
+      }
+    },
+    "repo:aws/agent-toolkit-for-aws": {
+      "type": "repo-insight",
+      "hash": "56df7032b3d7776682532f5d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-24T22:00:09.131Z",
+      "value": {
+        "summaryZh": "该项目是 AWS 官方支持的 AI Agent 工具包，提供 MCP 服务器、技能与插件，让智能体更规范地调用 AWS 服务、生成云上架构与自动化脚本。亮点是官方维护、覆盖常见 AWS 开发任务，并与主流 AI 编码工具链集成。适合使用 Cursor、Claude Code 等 Agent 的开发者、云架构师和平台团队，用于快速构建、验证与运维 AWS 应用。",
+        "scenarios": [
+          "在 AI 编码助手中接入 AWS MCP 服务器，查询资源、生成 IaC 并执行部署前检查。",
+          "为内部平台团队封装 AWS 技能与插件，统一智能体的云上操作规范。",
+          "快速试跑官方示例，评估 Agent 对 AWS 服务与最佳实践的覆盖能力。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/aws/agent-toolkit-for-aws，阅读 README 与示例配置，确认 Python 环境与依赖安装方式；选择与本机 AI 编码工具兼容的 MCP 服务器或插件进行最小化配置，使用只读或沙箱 AWS 凭证试跑一个示例，最后汇总安装步骤、所需权限、验证结果和常见问题。"
+      }
+    },
+    "repo:pollen-robotics/microduck": {
+      "type": "repo-insight",
+      "hash": "ecb23ccbcb0f8f767d1b726d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-24T22:00:13.938Z",
+      "value": {
+        "summaryZh": "microduck 是 Pollen Robotics 开源的微型双足鸭子机器人项目，控制与固件逻辑主要用 Rust 编写，强调小型化、低成本、易复现。仓库覆盖运动控制、步态生成与硬件集成思路，适合机器人爱好者、嵌入式 Rust 学习者、创客教育者快速搭建并实验双足机器人。",
+        "scenarios": [
+          "创客与教育场景：用于课堂演示、机器人社团活动或亲子造物项目，低成本搭建可动双足机器人。",
+          "嵌入式 Rust 学习：通过真实机器人固件理解 Rust 在嵌入式控制、外设驱动和实时逻辑中的应用。",
+          "双足步态算法原型：在微型平台上验证步态生成、平衡控制与运动调试方案，再迁移到更大机器人。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/pollen-robotics/microduck 到本地，先阅读 README 和硬件说明，确认所需开发板、舵机与依赖；安装 Rust 工具链及仓库要求的 target/工具，按文档编译固件并运行测试或示例。若缺少实物硬件，请整理可在仿真或主机端验证的步骤，并列出接线、烧录和常见故障排查清单。"
+      }
+    },
+    "repo:google-gemini/gemini-cli": {
+      "type": "repo-insight",
+      "hash": "805ad210724c6c22ce86b533",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-24T22:00:21.003Z",
+      "value": {
+        "summaryZh": "Gemini CLI 是 Google 开源的终端 AI 智能体，把 Gemini 模型直接带入命令行。它支持自然语言对话、代码理解与生成、文件操作和任务自动化，并可通过 MCP 扩展工具链。项目采用 TypeScript 编写，安装轻量，提供较慷慨的免费额度，适合开发者、运维人员和希望在终端中快速获得 AI 辅助的编程初学者。",
+        "scenarios": [
+          "终端内代码库问答与架构梳理：快速解释陌生项目、定位关键模块并生成修改方案。",
+          "日常开发自动化：根据自然语言指令生成脚本、批量修改文件、运行测试并修复简单错误。",
+          "通过 MCP 扩展连接内部工具：把数据库、CI、文档检索等能力接入终端智能体，构建团队工作流。"
+        ],
+        "agentInstallPrompt": "请在本机安装并试跑 Gemini CLI：先确认 Node.js 18+ 与 npm 可用；执行 npm install -g @google/gemini-cli（或 npx @google/gemini-cli）；运行 gemini 完成 Google 账号登录或配置 GEMINI_API_KEY；在当前项目目录让它总结仓库结构、解释一个核心文件，并生成一条可执行改进建议；最后记录安装步骤、鉴权方式和遇到的问题。"
+      }
+    },
+    "repo:jbiaojerry/ebook-treasure-chest": {
+      "type": "repo-insight",
+      "hash": "29576e193aa6488e292af389",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-24T22:00:25.920Z",
+      "value": {
+        "summaryZh": "ebook-treasure-chest 是一个用 Python 维护的电子书资源索引仓库，汇总帆书（原樊登读书）、微信读书、京东读书、喜马拉雅等平台的大量电子书下载链接，覆盖经典文学、经管励志、终身学习、职场创业与技术手册等分类。亮点是资源集中、按主题与平台整理，便于检索；适合爱读书、需要快速找书的自学者、职场人和技术读者，也适合做资源聚合与检索工具参考。请注意它仅作索引，使用时应遵守版权与平台规则。",
+        "scenarios": [
+          "想读帆书、微信读书等平台的某本书时，按书名或分类在仓库中快速定位下载链接。",
+          "按经典文学、经管励志、技术手册等主题批量整理个人阅读清单与本地书库。",
+          "作为资源聚合类项目的参考，学习用 Python 与 Markdown 组织、维护电子书索引。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/jbiaojerry/ebook-treasure-chest ，先阅读 README 了解目录结构与资源分类；用 Python 脚本扫描仓库中的链接与分类文件，生成一份按平台和主题归类的 CSV/JSON 索引，并统计各分类条目数；最后运行一个本地只读检索示例，按关键词返回匹配书名与链接。全程不要下载或分发受版权保护的电子书内容，仅做索引整理与检索演示。"
+      }
+    },
+    "repo:makecindy/cindy": {
+      "type": "repo-insight",
+      "hash": "486b4e1d002d3811d416aa78",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-24T22:00:32.098Z",
+      "value": {
+        "summaryZh": "Cindy 是一个用 TypeScript 编写的开源 AI Agent，主打“想到就能做到”的开箱即用体验：无需复杂编排与冗长配置，克隆下来就能拿到一个可执行任务的智能体基座。它把模型调用、工具使用与任务执行流程收拢为统一框架，便于二次开发与私有化部署。适合想快速验证 Agent 想法的独立开发者、需要内网落地的团队，以及希望通过阅读 TypeScript 源码理解 Agent 架构的工程师。",
+        "scenarios": [
+          "快速搭建面向内部团队的自动化助手，接入知识库与常用业务 API，处理日常查询与重复性流程操作。",
+          "作为 Agent 原型验证底座，替换模型与工具插件，快速对比任务规划、工具调用与多轮执行效果。",
+          "学习与教学场景：阅读 TypeScript 源码，理解 Agent 主循环、工具注册机制与提示词组织方式。"
+        ],
+        "agentInstallPrompt": "请在本机安装并试跑 GitHub 仓库 https://github.com/makecindy/cindy （TypeScript 项目）。步骤：1) 克隆仓库并阅读 README、package.json、示例配置与 .env.example，确认包管理器与 Node 版本要求；2) 安装依赖并复制示例环境变量文件，不要把我提供的密钥写入任何会提交到 Git 的文件；3) 若需要模型 API Key 而我没有提供，请明确列出所需变量名并暂停等待我填写；4) 启动本地开发服务或 CLI，跑通一个最小示例任务；5) 把安装过程中实际执行的命令、遇到的报错与修复方式、以及最终验证结果整理成一份简短中文报告，并指出项目中可优先替换或扩展的配置项与工具入口。"
       }
     }
   }
