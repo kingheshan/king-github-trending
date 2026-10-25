@@ -8151,6 +8151,51 @@
         ],
         "agentInstallPrompt": "请在本机安装并试跑 GitHub 仓库 https://github.com/makecindy/cindy （TypeScript 项目）。步骤：1) 克隆仓库并阅读 README、package.json、示例配置与 .env.example，确认包管理器与 Node 版本要求；2) 安装依赖并复制示例环境变量文件，不要把我提供的密钥写入任何会提交到 Git 的文件；3) 若需要模型 API Key 而我没有提供，请明确列出所需变量名并暂停等待我填写；4) 启动本地开发服务或 CLI，跑通一个最小示例任务；5) 把安装过程中实际执行的命令、遇到的报错与修复方式、以及最终验证结果整理成一份简短中文报告，并指出项目中可优先替换或扩展的配置项与工具入口。"
       }
+    },
+    "repo:JetBrains/thinkrail": {
+      "type": "repo-insight",
+      "hash": "e3bd134ac8405f87abd12322",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-25T22:03:43.151Z",
+      "value": {
+        "summaryZh": "Thinkrail 是 JetBrains 开源的轻量级真实 IDE，面向“vibe coding”场景，将 pi 智能编程助手融入编辑器，并强调按个人工作方式自适应定制。项目采用 TypeScript 实现，适合想体验 JetBrains 新交互、需要轻量开发环境与 AI 协作的开发者，也适合研究 IDE 可定制化与智能体集成的工程师。",
+        "scenarios": [
+          "在轻量 IDE 中与 pi 进行对话式编码、补全和重构，快速验证想法。",
+          "按个人或团队习惯定制界面、快捷键与工作流，打造专属开发环境。",
+          "研究 JetBrains 开源 IDE 架构、TypeScript 实现及 AI 编程助手集成方式。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/JetBrains/thinkrail，先阅读 README 和 package.json，确认 Node 与包管理器版本及启动脚本；安装依赖并尝试运行开发模式或测试。若失败，请说明错误原因并给出最小修复方案。不要修改全局配置，不要提交代码；完成后汇总启动命令、访问方式、已验证功能和可继续试用的 vibe coding 流程。"
+      }
+    },
+    "repo:coollabsio/coolify": {
+      "type": "repo-insight",
+      "hash": "76b71eed882426f7b2088e4c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-25T22:03:49.322Z",
+      "value": {
+        "summaryZh": "Coolify 是一个开源、可自托管的 PaaS 平台，定位为 Vercel、Heroku、Netlify 的替代方案。它让你在自己的服务器上部署静态站点、数据库、全栈应用，并提供 360+ 一键服务模板。基于 PHP 构建，支持 Git 集成、自动构建与 HTTPS、备份与监控，界面友好。适合想摆脱云平台锁定、控制成本、注重数据隐私的独立开发者、小团队与运维人员。",
+        "scenarios": [
+          "用一台 VPS 搭建私有部署平台，把多个前端静态站与后端 API 统一托管，替代 Vercel、Netlify 的付费方案，降低长期成本。",
+          "在内部项目中快速上线 Postgres、Redis、MinIO 等 360+ 一键服务，几分钟搭好开发、测试或演示环境。",
+          "面向数据合规要求，把应用与数据库完全放在自有服务器上，并配置自动 HTTPS、定时备份与资源监控。"
+        ],
+        "agentInstallPrompt": "请在我提供的 Ubuntu 22.04 服务器（已有 sudo 权限与 SSH 访问）上安装并试跑 Coolify：先执行官方一键脚本 curl -fsSL https://cdn.coollabs.io/coolify/install.sh | sudo bash，安装完成后访问 http://<服务器IP>:8000 完成初始化并创建管理员账号；接着新建一个 Project，用一个公开的 GitHub 静态站点仓库创建 Application，构建方式选 Nixpacks，触发部署并确认能通过自动生成的域名或 IP 端口正常访问；最后请把每一步执行的命令、遇到的报错与解决办法整理成中文步骤记录，并给出安全加固建议（修改默认端口、配置防火墙、启用 HTTPS 与定期备份）。"
+      }
+    },
+    "repo:AgriciDaniel/claude-seo": {
+      "type": "repo-insight",
+      "hash": "0e2eb9d032ffab93d0909f09",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-25T22:03:52.761Z",
+      "value": {
+        "summaryZh": "claude-seo 是面向 Claude Code 的通用 SEO 技能包，将 SEO 工作拆分为 26 个子技能和 19 个子代理，覆盖技术 SEO、E-E-A-T、结构化数据、GEO/AEO、智能体可读性（Lighthouse Agentic Browsing、WebMCP、llms.txt）、外链、本地 SEO、电商、国际 SEO，以及 Google API 接入与 PDF/Excel 报告输出。项目以 Python 实现，并提供 9 个可选扩展以接入实时 SEO 数据。适合 SEO 顾问、增长与内容团队、独立开发者，以及希望把审计与优化流程自动化的技术营销人员，让 Claude Code 直接承担从诊断、生成方案到产出报告的完整链路。",
+        "scenarios": [
+          "对网站做技术 SEO 全量审计：抓取页面结构、检查索引与规范化、发现 404/重定向链、生成优先级修复清单与 PDF 报告。",
+          "为内容页批量生成并校验 E-E-A-T 与结构化数据方案，同时优化 GEO/AEO 表现，让页面更易被 AI 搜索与智能体引用。",
+          "新站点或跨境独立站上线前检查：配置 llms.txt、WebMCP 与智能体可读性，结合本地 SEO、电商与国际 SEO 子技能输出上线检查表。"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/AgriciDaniel/claude-seo 并完成试跑：先阅读 README，确认 Python 版本与依赖，创建独立虚拟环境并安装依赖；将该技能包按文档接入 Claude Code（配置 skills 与 sub-agents 目录）；只启用必要扩展，避免泄露 API Key，密钥通过环境变量注入。随后用一个小型公开站点跑一次只读技术 SEO 审计，输出发现的问题分级清单，并说明每个子技能/子代理的调用方式与可复用命令，全程不要修改目标站点。"
+      }
     }
   }
 }
