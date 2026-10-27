@@ -2958,17 +2958,17 @@
     },
     "repo:earthtojake/text-to-cad": {
       "type": "repo-insight",
-      "hash": "536e8bbbb1e6f24d5e4da946",
+      "hash": "185ff0c71fe7b02de577a31f",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-08T22:00:43.681Z",
+      "generatedAt": "2026-10-27T22:00:33.999Z",
       "value": {
-        "summaryZh": "text-to-cad 是一个 Python 项目，给 AI Agent 补上 CAD 能力：用自然语言描述零件需求，由模型生成可编辑的参数化建模脚本（如 CadQuery/OpenSCAD 一类），并导出 STL/STEP 等可制造文件。它把建模、改尺寸、重导出封装成 Agent 可调用的工具链，支持多轮迭代修正，显著降低机械设计门槛。适合机械与硬件工程师、3D 打印玩家、以及想把大模型接入实体建模流程的开发者。",
+        "summaryZh": "text-to-cad 是一个用自然语言生成 CAD 模型的 Python 项目：描述想要的零件或结构，它调用大模型产出可执行的参数化建模代码（CadQuery/OpenSCAD 一类），再渲染为可预览、可导出的三维模型。亮点是产物为代码而非黑盒网格，便于改参数、做版本管理和批量变体。适合硬件创客、机械工程师、工业设计学生，以及想把 LLM 接入设计流程的开发者快速验证想法。",
         "scenarios": [
-          "用自然语言让 Agent 生成一个带中心孔与四角安装孔的法兰盘模型，并自动导出 STL 供 3D 打印。",
-          "对已有零件做多轮对话式改型：调整孔径、壁厚、圆角与总长，对比版本后重新导出 STEP。",
-          "把 text-to-cad 作为工具接入自建 AI 工作流，批量生成零件脚本，构建设计自动化流水线。"
+          "硬件创客用一句话描述外壳或支架需求，几分钟内拿到可编辑的参数化 CAD 初稿，再手工微调尺寸。",
+          "机械/工业设计团队把 LLM 生成建模代码的流程接进内部工具，批量产出同族零件的不同规格变体。",
+          "教学或 demo 场景中，让学生直观看到自然语言如何转成可执行建模脚本，理解参数化设计逻辑。"
         ],
-        "agentInstallPrompt": "请克隆 https://github.com/earthtojake/text-to-cad，在 Python 3.10+ 下创建虚拟环境并安装依赖；阅读 README 找到启动方式与示例命令，然后试跑任务：生成一个 40mm 见方、中心 10mm 通孔、四角 M4 安装孔的板件并导出模型文件。最后汇报所用命令、生成文件路径、依赖或报错问题及你的修复方式。"
+        "agentInstallPrompt": "请帮我跑通 earthtojake/text-to-cad 这个项目：1) git clone https://github.com/earthtojake/text-to-cad 并创建 Python 3.10+ 虚拟环境，读取 README 与 requirements/pyproject 安装依赖，如涉及 CadQuery、OpenSCAD 等建模依赖请一并装好并验证 import；2) 检查是否需要配置大模型 API Key（环境变量名以 README 为准），提示我填入；3) 用仓库自带示例或最小用例执行一次文本到 CAD 的完整流程，确认能生成建模脚本并导出/渲染出三维文件，把命令、输出路径和报错原样贴给我；4) 若失败，定位是依赖、模型接口还是渲染后端问题，给出最小修复方案并重跑验证。全程不要修改我的全局环境，命令逐条列出。"
       }
     },
     "repo:ComposioHQ/awesome-claude-skills": {
@@ -8195,6 +8195,66 @@
           "新站点或跨境独立站上线前检查：配置 llms.txt、WebMCP 与智能体可读性，结合本地 SEO、电商与国际 SEO 子技能输出上线检查表。"
         ],
         "agentInstallPrompt": "请在本地克隆 https://github.com/AgriciDaniel/claude-seo 并完成试跑：先阅读 README，确认 Python 版本与依赖，创建独立虚拟环境并安装依赖；将该技能包按文档接入 Claude Code（配置 skills 与 sub-agents 目录）；只启用必要扩展，避免泄露 API Key，密钥通过环境变量注入。随后用一个小型公开站点跑一次只读技术 SEO 审计，输出发现的问题分级清单，并说明每个子技能/子代理的调用方式与可复用命令，全程不要修改目标站点。"
+      }
+    },
+    "repo:elayadesign/ai-design-skills": {
+      "type": "repo-insight",
+      "hash": "6e269189f166163a3c33c530",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-27T22:00:11.941Z",
+      "value": {
+        "summaryZh": "该仓库以「AI 设计技能」为主题，从命名与结构看，是一组面向 AI 编程助手的设计类技能文件或提示词集合，把界面设计、组件规范、视觉走查等能力整理成可复用的技能，供 agent 在生成前端代码时按需加载。亮点是把设计流程模块化、可版本化管理，避免每次重复粘贴零散提示词。仓库未提供描述且主语言未标注，实际覆盖范围需克隆后查看目录确认。适合前端工程师、独立开发者、设计工程师，以及想给自家 agent 补齐设计审美与规范落地能力的人。",
+        "scenarios": [
+          "为 Claude Code、Cursor 等 AI 编程助手补充 UI 设计技能，让生成的界面更符合视觉规范，而不只是功能可用",
+          "团队把设计规范、组件样式约定写成技能文件，统一多人协作时 agent 的输出风格",
+          "快速做界面走查与改版：让 agent 按技能里的清单逐项检查间距、层级、配色与响应式表现"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 elayadesign/ai-design-skills 这个仓库：先 git clone https://github.com/elayadesign/ai-design-skills 并列出完整目录树，阅读 README 和所有技能文件，判断它的技能格式（如 SKILL.md、提示词模板或插件清单）以及适用的 agent 客户端。然后把技能安装或链接到当前项目对应的配置目录（例如 .claude/skills 或 agent 的 skills 路径），必要时在项目根目录新建配置并说明改动。最后用一个小的示例页面做端到端试跑：调用其中至少一个设计技能生成或评审一个按钮加卡片区块，输出改动后的文件与截图说明。全程不要修改与技能无关的源码，遇到格式不明确的地方先汇报再动手。"
+      }
+    },
+    "repo:nightly-labs/openbot": {
+      "type": "repo-insight",
+      "hash": "fb1e3c9b37f6e54c8b5e54b4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-27T22:00:17.956Z",
+      "value": {
+        "summaryZh": "Openbot 是一个本地优先的桌面工作台，让 Codex、Claude、Grok 等多个 AI 代理作为长期在线的“队友”常驻运行。它为每个代理分配独立工作区，并提供任务队列、文件共享、浏览器控制以及代理之间的互相协作与消息传递能力，数据与凭据默认留在本机。适合需要多模型并行推进长周期任务的开发者、独立创业者和小型自动化团队，用来替代零散的终端会话、手工复制粘贴与多窗口切换。",
+        "scenarios": [
+          "多模型并行处理同一项目的不同子任务：让 Claude 写文档与评审、Codex 改代码、Grok 做资料调研，通过共享文件与任务队列汇总产出。",
+          "长期在线的自动化值守代理：监控仓库 issue 与 CI 状态、定时抓取网页信息并生成日报，借助浏览器控制完成登录与页面操作。",
+          "隐私敏感或内网环境下的协作流程：代码与数据不出本机，在桌面工作台内跑多代理协作链，避免把敏感上下文上传到第三方托管服务。"
+        ],
+        "agentInstallPrompt": "请帮我在这台机器上安装并试跑 nightly-labs/openbot。步骤：1）克隆 https://github.com/nightly-labs/openbot 到本地目录；2）阅读 README、package.json 与锁文件，确认所需 Node 版本与包管理器（pnpm/yarn/npm），据此安装依赖；3）判断它是 Electron 还是 Tauri 桌面应用，说明本地启动命令与所需系统依赖，然后启动开发模式；4）启动后配置一个 Codex 或 Claude 工作区，创建一个测试任务，验证任务队列、文件共享与浏览器控制是否真的可用；5）把实际执行的命令、遇到的报错与修复方式整理成一段简短的安装笔记。遇到缺失的环境变量或 API Key 时先列出清单问我，不要自行编造。"
+      }
+    },
+    "repo:gitroomhq/postiz-app": {
+      "type": "repo-insight",
+      "hash": "2aa0c24d58083d6982a0535b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-27T22:00:21.748Z",
+      "value": {
+        "summaryZh": "Postiz 是开源的一体化社交媒体排程与协作平台，支持多平台内容发布、定时排期、素材管理与数据分析，并引入 AI Agent 辅助生成和优化帖子。项目以 TypeScript/Next.js 构建，可自托管，适合内容团队、独立创作者和开发者搭建可控的社媒运营工作流。",
+        "scenarios": [
+          "内容团队统一管理多平台账号，批量排期并审阅发布计划。",
+          "独立创作者用 AI Agent 生成、改写和优化社媒文案后定时发布。",
+          "开发者自托管 Postiz，接入内部审批流与数据分析看板。"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/gitroomhq/postiz-app ，阅读 README 与 .env.example，使用 Docker Compose 启动依赖和服务；安装依赖并完成数据库迁移，配置至少一个社交平台 OAuth 凭据；运行开发环境，创建一条测试排期并验证发布流程。记录所需环境变量、启动命令和遇到的问题。"
+      }
+    },
+    "repo:togg53192-cmd/jailbreaks": {
+      "type": "repo-insight",
+      "hash": "306047d3a2d99bc5b69d5628",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-27T22:00:27.091Z",
+      "value": {
+        "summaryZh": "该项目是一个个人整理的越狱提示词（jailbreak prompts）合集，主要用于观察大模型在对抗性输入下的表现，帮助安全研究者、红队和提示词工程师开展鲁棒性测试与防护评估。仓库以清单形式组织，语言与结构未标注，适合用于教学演示、模型安全评测和提示注入防御研究，使用时需遵守平台政策与伦理规范。",
+        "scenarios": [
+          "大模型安全评测：将合集作为对抗样本库，测试模型对越狱提示的拒答率与稳定性。",
+          "红队演练与防护验证：用于内部红队演练，评估内容过滤、系统提示和护栏策略的有效性。",
+          "提示词工程教学：在合规环境中分析对抗性提示的结构与防御思路，用于课程或研究演示。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/togg53192-cmd/jailbreaks 到本地，先列出目录与文件类型，统计条目数量和分类（若无可自动归纳），生成 README 摘要与索引；不要执行或传播任何可能有害的提示内容，仅做结构化整理和安全研究用途。若仓库为空或缺少说明，请给出缺失信息清单和下一步建议。"
       }
     }
   }
