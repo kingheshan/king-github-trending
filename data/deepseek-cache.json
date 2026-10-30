@@ -2898,17 +2898,17 @@
     },
     "repo:pbakaus/impeccable": {
       "type": "repo-insight",
-      "hash": "58eb28d9b2272322d8235374",
+      "hash": "e02afba6e5b0815b77638267",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-19T22:00:27.676Z",
+      "generatedAt": "2026-10-30T22:04:39.537Z",
       "value": {
-        "summaryZh": "impeccable 是一套面向 AI 编程代理的界面设计语言与配套 Rust 工具，通过设计规则、设计令牌和可执行检查，把模糊的“好看”转化为代理可遵循的布局、排版、色彩、动效与交互约束。它适合用 Claude Code、Codex、Cursor 等生成前端页面的开发者与设计工程师，让 AI 从脚手架阶段就产出更一致、更可维护的 UI，并减少反复返工与审美漂移。",
+        "summaryZh": "impeccable 是一套面向编码智能体的设计词汇与审查工具，用 Rust 编写。它把“更精致”“更大胆”这类模糊审美诉求转成可执行的设计指令，并通过 critique、audit 等命令检查 AI 生成界面的常见问题，比如配色单调、间距混乱、堆砌渐变、无障碍缺失等“AI slop”，让问题在上线前被发现。适合用 Claude Code、Cursor 等智能体做前端或全栈开发的人、独立开发者和小团队：既希望快速生成 UI，又不想页面一眼看上去像 AI 模板。",
         "scenarios": [
-          "让 Claude Code、Codex 或 Cursor 在生成 React、Vue 页面前加载 impeccable 设计规则，统一间距、字体、配色和组件层级。",
-          "为现有前端项目接入设计令牌与检查命令，在 AI 修改 UI 时自动发现对比度、排版层级和响应式布局问题。",
-          "团队把 impeccable 作为 AI 代理的 UI 规范层，用于快速原型、设计系统落地以及代码评审前的界面自检。"
+          "用 AI 智能体生成落地页或后台界面时，调用它做设计审查，定位间距、层级、配色和无障碍问题。",
+          "在已有前端项目里跑 audit，把 AI slop 式样式整理成统一设计规范，再交给智能体批量重构。",
+          "产品上线前做一次设计质量检查，生成可读报告，帮助非设计师判断页面能否发布。"
         ],
-        "agentInstallPrompt": "请帮我安装并试跑 pbakaus/impeccable：先克隆 https://github.com/pbakaus/impeccable 到临时目录，阅读 README 与示例，确认 Rust 工具链和官方安装方式；按说明构建或安装 CLI，并在一个最小前端示例中运行初始化或检查流程，把生成的设计规则、代理配置或技能文件接入当前项目；最后总结可用命令、改动文件和验证结果，不要修改无关代码。"
+        "agentInstallPrompt": "请克隆 https://github.com/pbakaus/impeccable 并阅读 README，确认 Rust 工具链版本和安装方式（cargo install 或本地构建）。在我当前前端项目中完成安装，然后先对一个页面运行 critique 与 audit，汇总发现的问题，并按严重程度列出修改建议。执行任何写操作前先给我一份计划，经我确认后再改代码。"
       }
     },
     "repo:Pumpkin-MC/Pumpkin": {
@@ -8255,6 +8255,36 @@
           "提示词工程教学：在合规环境中分析对抗性提示的结构与防御思路，用于课程或研究演示。"
         ],
         "agentInstallPrompt": "请克隆 https://github.com/togg53192-cmd/jailbreaks 到本地，先列出目录与文件类型，统计条目数量和分类（若无可自动归纳），生成 README 摘要与索引；不要执行或传播任何可能有害的提示内容，仅做结构化整理和安全研究用途。若仓库为空或缺少说明，请给出缺失信息清单和下一步建议。"
+      }
+    },
+    "repo:milind-soni/OpenMausBot": {
+      "type": "repo-insight",
+      "hash": "0de0fa0cc73db946f294ee9a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-30T22:04:36.371Z",
+      "value": {
+        "summaryZh": "OpenMausBot 是一个用 TypeScript 开发的开源 Grok Bot 替代方案，核心是为机器人提供可调用的虚拟机环境，让智能体能在隔离沙箱中执行命令、运行工具和完成多步骤任务。项目适合想自建可执行型 AI Bot 的开发者、自动化团队和研究者，便于在可控环境中试验代理能力并扩展自己的工具链。",
+        "scenarios": [
+          "为需要执行命令或操作文件的 AI 智能体搭建隔离虚拟机沙箱，降低宿主机风险。",
+          "快速复现 Grok Bot 类可执行机器人原型，验证多步骤任务编排与工具调用。",
+          "在 TypeScript 项目中集成可扩展 Bot 运行时，用于自动化运维、数据采集或研发辅助。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/milind-soni/OpenMausBot，阅读 README 和 package.json，确认 Node/TypeScript 版本与依赖；安装依赖并配置所需环境变量；尝试启动示例 Bot 或最小 demo，验证虚拟机沙箱是否可用；如遇错误请给出修复步骤，最后汇总启动命令、配置项和试跑结果。"
+      }
+    },
+    "repo:CopilotKit/OpenBot": {
+      "type": "repo-insight",
+      "hash": "7a6e89323e5f5cc6e68ebeb9",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-10-30T22:04:45.090Z",
+      "value": {
+        "summaryZh": "OpenBot 是 CopilotKit 开源的 AI 同事框架，用 TypeScript 编写。它为每个 AI 员工分配一台独立“电脑”——浏览器、文件系统与工具权限，并且每个动作执行前先给出决策计划、执行后完整留痕，形成可审计的操作链路。项目兼容 AG-UI 协议，可接入任意 AG-UI agent，无需绑定特定模型或框架。适合需要可控合规的自动化团队，以及快速搭建浏览器/文件操作 agent 的开发者。",
+        "scenarios": [
+          "为运营或研究团队部署多个各自拥有浏览器与文件目录的 AI 同事，让它们分头查资料、整理文档并互不干扰。",
+          "在需要合规留痕的企业流程中，让 AI 先提交动作计划待人工确认，执行后自动生成可审计的操作记录。",
+          "把已有的 AG-UI agent 接入 OpenBot，快速补齐沙箱环境、工具调用与行为回放能力，做端到端演示或内部试点。"
+        ],
+        "agentInstallPrompt": "请帮我本地跑通 https://github.com/CopilotKit/OpenBot（TypeScript 项目）：1）克隆仓库并阅读 README、package.json 与目录结构，列出所需 Node/pnpm 版本和环境变量；2）安装依赖并启动开发服务器，把实际访问地址和启动命令告诉我；3）说明如何接入一个已有的 AG-UI agent（需要哪些 endpoint 或配置项，给出最小配置示例）；4）创建一个演示任务，验证它能使用浏览器和文件工具，并展示“执行前决策、执行后记录”的日志输出；5）遇到报错先自行排查修复，最后汇总改动过的文件、命令清单和后续可扩展点。"
       }
     }
   }
