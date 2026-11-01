@@ -8286,6 +8286,81 @@
         ],
         "agentInstallPrompt": "请帮我本地跑通 https://github.com/CopilotKit/OpenBot（TypeScript 项目）：1）克隆仓库并阅读 README、package.json 与目录结构，列出所需 Node/pnpm 版本和环境变量；2）安装依赖并启动开发服务器，把实际访问地址和启动命令告诉我；3）说明如何接入一个已有的 AG-UI agent（需要哪些 endpoint 或配置项，给出最小配置示例）；4）创建一个演示任务，验证它能使用浏览器和文件工具，并展示“执行前决策、执行后记录”的日志输出；5）遇到报错先自行排查修复，最后汇总改动过的文件、命令清单和后续可扩展点。"
       }
+    },
+    "repo:Donchitos/Claude-Code-Game-Studios": {
+      "type": "repo-insight",
+      "hash": "75a4b3c9adba1dd6b77db1e4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-01T22:24:21.522Z",
+      "value": {
+        "summaryZh": "该项目通过 Shell 脚本与配置，把 Claude Code 扩展成一套模拟真实游戏工作室层级的协作环境：内置 49 个 AI 角色代理、72 个工作流技能，以及任务分派、评审与跨角色协调机制，让单人也能按策划、程序、美术、测试、制作人等流程推进游戏开发。适合独立开发者、小型团队、Game Jam 参赛者，以及想用 AI 代理搭建结构化开发流水线的技术负责人。",
+        "scenarios": [
+          "独立开发者从零搭建游戏原型，按工作室角色拆分策划、程序、美术与测试任务。",
+          "小型团队用 Claude Code 建立需求评审、任务分派和跨代理协作流程。",
+          "Game Jam 或教学演示中快速模拟完整游戏工作室的分工与迭代。"
+        ],
+        "agentInstallPrompt": "请帮我在本地安装并试跑 Donchitos/Claude-Code-Game-Studios：先克隆仓库并阅读 README 与安装脚本，确认依赖和接入方式；将 49 个代理与 72 个工作流技能按项目说明接入 Claude Code，避免覆盖我现有配置；安装后列出可用代理和技能，并创建一个最小游戏原型任务做冒烟测试，记录执行命令、配置改动和结果，遇到破坏性操作先询问我。"
+      }
+    },
+    "repo:kornia/kornia": {
+      "type": "repo-insight",
+      "hash": "ea2accf95f1e59a7c276f7a9",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-01T22:24:31.275Z",
+      "value": {
+        "summaryZh": "Kornia 是基于 PyTorch 的可微几何计算机视觉库，把图像滤波、特征检测、描述子匹配、单应矩阵、对极几何等经典几何视觉算子实现为可微张量模块，支持 CPU/GPU 批量运算与端到端反向传播。纯 Python 实现，无额外 C++ 依赖，可直接嵌入现有深度学习管线，适合 SLAM、三维重建、AR、机器人视觉方向的研究者与工程师，也适合想把几何优化写进神经网络的学生与算法团队。",
+        "scenarios": [
+          "在 SLAM 或视觉里程计中，用 Kornia 的可微特征检测、描述子匹配与对极几何模块搭建端到端可训练的前端，并借助 GPU 批处理加速。",
+          "做图像配准与拼接：调用单应估计、RANSAC、光流与 warp 相关 API，快速完成两张图像的对齐、变换与可视化验证。",
+          "训练数据增强与预处理：在 PyTorch 管线中使用可微的几何变换、颜色空间转换、模糊与噪声增强，保持梯度可导并避免额外依赖。"
+        ],
+        "agentInstallPrompt": "请在当前 Python 3.9+ 环境（建议已装 PyTorch，CPU 即可）中安装并试跑 kornia：1) 执行 pip install kornia，并记录安装到的版本号；2) 新建 demo.py，随机生成或读取一张图像张量 (1,3,64,64)，用 kornia.color 转灰度、用 kornia.filters.gaussian_blur2d 做高斯模糊、用 kornia.feature 中的 harris_response 或 GFTTDetector 检测角点，打印响应图形状与关键点数量；3) 用 kornia.geometry.transform 对图像做旋转与仿射 warp，并在输入 requires_grad=True 时反向传播，确认梯度非零；4) 若 CUDA 不可用则自动回退 CPU，若版本冲突则降级 torch 并说明原因；最后输出执行的命令、关键输出摘要与遇到的问题。"
+      }
+    },
+    "repo:beenuar/AiSOC": {
+      "type": "repo-insight",
+      "hash": "fd51b27c8350e2878cd41da8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-01T22:24:37.133Z",
+      "value": {
+        "summaryZh": "AiSOC 是一个开源的 AI 安全运营中心，用 Python 编写，把多源告警融合、LLM 代理分诊（由大模型代理完成告警处置）和 MITRE ATT&CK 调查与可回放决策账本整合成自托管平台。亮点是无需 API Key 即可运行，代理每一步决策都可审计复现，并自带面向 Claude、Cursor、Continue 的 MCP 服务器。适合安全工程师、SOC 团队和想把 AI 代理引入告警处置的开发者做原型验证与内部落地。",
+        "scenarios": [
+          "中小型 SOC 团队自托管告警分诊平台，把防火墙、EDR、SIEM 告警融合降噪，并由 LLM 代理给出优先级和处置建议。",
+          "安全工程师搭建 MITRE ATT&CK 映射与调查复盘实验环境，用可回放决策账本审计每一步 AI 判断。",
+          "在 Claude、Cursor 或 Continue 中通过 MCP 服务器接入 AiSOC，让 AI 助手直接查询告警、发起调查并生成事件报告。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/beenuar/AiSOC 到本地，先阅读 README 和依赖文件，确认 Python 版本与启动方式；创建虚拟环境并安装依赖，在没有任何 API Key 的情况下按文档启动 AiSOC 本地服务，导入示例告警验证告警融合与 LLM 代理分诊流程；随后启动其 MCP 服务器，检查 Claude、Cursor、Continue 的接入配置示例，并跑通一次 MITRE ATT&CK 调查；最后把启动命令、端口、验证步骤和遇到的问题整理成简短报告，不要修改核心代码。"
+      }
+    },
+    "repo:anomalyco/hex": {
+      "type": "repo-insight",
+      "hash": "8785198080457b641cb562ad",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-01T22:24:43.051Z",
+      "value": {
+        "summaryZh": "Hex 是一个用 Rust 编写的本地语音听写工具，支持 macOS、Windows 和 Linux。它把语音识别放在本机运行，强调隐私与低延迟，适合不想把录音上传云端、又需要跨平台语音输入的用户。项目依赖 Rust 工具链，开发者可自行编译、改造并接入日常写作、编程和会议记录流程，也便于做二次集成。",
+        "scenarios": [
+          "在离线或隐私敏感环境中，用本机麦克风进行会议记录和口述笔记，避免录音上传云端。",
+          "开发者在写代码、提交说明或文档时，用语音快速输入中英文，减少键盘切换。",
+          "跨 macOS、Windows、Linux 团队统一语音输入方案，按 README 编译后分发试用。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/anomalyco/hex，阅读 README 和构建说明，确认当前系统（macOS/Windows/Linux）的前置依赖；安装 Rust 工具链后用 cargo 构建并运行。首次启动时协助我开启麦克风、辅助功能/输入监控等系统权限，做一次短语音听写冒烟测试；若失败，收集日志、复现步骤和修复建议，不要修改无关代码。"
+      }
+    },
+    "repo:hyprwm/Hyprland": {
+      "type": "repo-insight",
+      "hash": "ada38b78da64f85a5acdc524",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-01T22:41:19.547Z",
+      "value": {
+        "summaryZh": "Hyprland 是一个独立的动态平铺式 Wayland 合成器，使用 C++ 编写，不依赖 GNOME 或 KDE 等桌面环境。它在保持流畅动画、圆角、模糊和透明等现代视觉效果的同时，提供高度可自定义的窗口管理体验：支持动态平铺布局、工作区、多显示器与插件扩展，配置通过文本文件完成，可深度定制键位、规则与外观。适合追求效率与美学的 Linux 高级用户、开发者、键盘流操作爱好者，以及希望摆脱传统桌面、自己搭建工作流的 Wayland 用户。",
+        "scenarios": [
+          "在 Linux 桌面上替换传统窗口管理器，用键盘驱动的动态平铺布局高效管理多个终端、编辑器和浏览器窗口",
+          "为多显示器开发环境定制工作区切换、窗口规则与快捷键，打造符合个人习惯的编码工作流",
+          "基于其插件与配置系统做外观和交互深度定制，制作截图分享用的高颜值桌面或进行合成器相关开发调试"
+        ],
+        "agentInstallPrompt": "请帮我在这台 Linux 机器上安装并试跑 Hyprland。先检查发行版、是否已启用 Wayland 会话、显卡驱动与必要依赖（如 wlroots 相关组件、xwayland、kitty、wofi 等）。根据发行版给出对应安装命令（例如 Arch 用 pacman -S hyprland，其他发行版参考官方 Wiki 或源码编译），不要直接执行破坏性操作，先列出计划让我确认。安装完成后生成一份最小可用的 ~/.config/hypr/hyprland.conf，包含基础快捷键、终端启动、退出方式和简单窗口规则，并说明如何从登录管理器或 TTY 启动 Hyprland 以及首次进入后如何验证运行正常。"
+      }
     }
   }
 }
