@@ -78,17 +78,17 @@
     },
     "repo:colbymchenry/codegraph": {
       "type": "repo-insight",
-      "hash": "0e179686d1803ad189028288",
+      "hash": "cb48e23cb3d2a11b0bf9b28d",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-27T22:01:14.353Z",
+      "generatedAt": "2026-11-02T22:01:20.449Z",
       "value": {
-        "summaryZh": "Codegraph 是一个用 C 语言实现的预索引代码知识图谱工具，能够自动同步代码变更，为 Claude Code、Codex、Gemini、Cursor 等主流 AI 编程助手提供本地化、高效的代码上下文。它通过构建知识图谱大幅减少 AI 工具在理解代码时所需的 token 数量和工具调用次数，显著提升响应速度和准确性。所有索引均在本地完成，保障代码安全与隐私。适合需要深度理解大型代码库、追求开发效率与成本控制的开发者和团队。",
+        "summaryZh": "codegraph 是一个用 TypeScript 编写的本地代码知识图谱工具，把仓库预索引成可查询的图结构，并在代码变更时自动增量同步。它以上下文层形式接入 Claude Code、Codex、Cursor、Gemini 等主流 AI 编码代理，用图谱检索替代反复全文件扫描，减少 token 消耗与工具调用次数，且全程 100% 本地运行。适合重度使用 AI 代理开发中大型项目、在意成本与隐私的工程师。",
         "scenarios": [
-          "在大型项目中，为 Claude Code 等 AI 助手提供快速、精准的代码语义索引，减少上下文窗口占用。",
-          "作为本地开发环境中的代码知识库，支撑多款 AI 编程工具的统一代码理解接口。",
-          "在敏感代码环境中，利用 100% 本地索引，避免代码外传，同时保证 AI 辅助的响应速度。"
+          "在大型 monorepo 中让 AI 代理快速定位跨模块调用链、符号定义与依赖关系，避免无谓的全仓文件扫描。",
+          "日常迭代提交代码后图谱自动同步，AI 代理无需重新读取源码即可获得最新上下文，降低重复工具调用。",
+          "在隐私敏感或内网隔离环境中，为本地或离线部署的 AI 编码代理提供不外传代码的索引上下文。"
         ],
-        "agentInstallPrompt": "请先安装 Codegraph 工具。推荐使用 Homebrew 安装：打开终端执行 `brew install colbymchenry/codegraph/codegraph` 或参考仓库 README 从源码编译（需要 CMake 和 C 编译器）。安装后，在代码仓库根目录运行 `codegraph index` 生成初始知识图谱，然后运行 `codegraph watch` 开启自动同步。之后将 Codegraph 的 MCP 服务器地址（如 `http://localhost:9100`）配置到 Claude Code 或 Codex 等工具的 MCP 设置中，即可开始使用。"
+        "agentInstallPrompt": "请帮我安装并试跑 codegraph：先克隆 https://github.com/colbymchenry/codegraph，阅读 README，用合适的包管理器安装依赖并完成构建；然后在当前项目根目录初始化索引，确认生成的代码知识图谱文件可被查询；接着按文档把 MCP 或代理配置接入我正在使用的编码助手（Claude Code / Cursor 等），重启后运行一次示例查询（例如查找某个函数的定义与调用方）验证返回结果正确。全程不要修改业务代码，最后把执行的命令、改动的配置文件位置和验证结论简要汇报。"
       }
     },
     "repo:manaflow-ai/cmux": {
@@ -1203,17 +1203,17 @@
     },
     "repo:p-e-w/heretic": {
       "type": "repo-insight",
-      "hash": "b4e8f4272639d7989cf060b5",
+      "hash": "0a145a6070ad077d7ade6c0d",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-05-27T22:00:13.769Z",
+      "generatedAt": "2026-11-02T22:00:42.694Z",
       "value": {
-        "summaryZh": "Heretic 是一个完全自动化的开源工具，用于移除语言模型中的审查机制。它通过分析模型输出并应用对抗性技术，自动生成绕过内容过滤的提示。亮点在于无需手动干预，即可实现模型的无审查响应。适合 AI 安全研究员、内容创作者和开发者，用于评估模型审查机制的强度或获取未经过滤的输出。",
+        "summaryZh": "Heretic 是面向开源大模型的无训练改造工具：它通过分析模型内部激活与权重方向，自动搜索干预参数，减少审查性拒答、废话套话和谄媚表达，并尽量保留通用能力。亮点是无需微调、流程自动化、可直接产出修改后的本地模型。适合模型研究者、开源模型玩家及对齐/红队实验者做行为对比与风格调优。",
         "scenarios": [
-          "研究人员评估大语言模型内容过滤策略的鲁棒性",
-          "内容创作者在合规前提下获取创意灵感（如虚构故事）",
-          "开发者测试模型对对抗性输入的防御能力"
+          "在获得授权的本地开源模型上做去审查/减少拒答研究，对比干预前后行为。",
+          "压缩冗长套话与谄媚表达，调优个人助手的回答风格。",
+          "用于对齐、红队与可解释性实验，量化干预对通用能力的影响。"
         ],
-        "agentInstallPrompt": "请先确保已安装 Python 3.8+ 和 pip。然后执行：git clone https://github.com/p-e-w/heretic.git && cd heretic && pip install -r requirements.txt。运行：python heretic.py --model '模型名称' --prompt '你的提示语'。注意：默认使用 Hugging Face 模型，需提前安装 transformers 库并登录（如需要）。"
+        "agentInstallPrompt": "请在当前环境克隆 https://github.com/p-e-w/heretic，先阅读 README 和依赖说明；用 Python 创建独立虚拟环境并安装依赖，不要污染全局环境。选择一个小型开源模型按官方示例跑通一次无训练改造流程，记录所用命令、显存/内存需求和输出路径；如无 GPU 则改用 CPU 或更小模型。最后汇报安装步骤、试跑结果、常见报错及修复建议。"
       }
     },
     "repo:byoungd/English-level-up-tips": {
@@ -5313,17 +5313,17 @@
     },
     "repo:career-ops-hq/career-ops": {
       "type": "repo-insight",
-      "hash": "436e90cb65fe0f352889943e",
+      "hash": "cd7941b576fc087191bca0e8",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-02T22:56:12.235Z",
+      "generatedAt": "2026-11-02T22:01:13.080Z",
       "value": {
-        "summaryZh": "Career Ops 是一个开源 AI 求职代理，本地运行在 Claude Code、Codex、OpenCode 等 AI 编程 CLI 中。它自动扫描各大招聘板，用你的简历对每个岗位做 1-5 分匹配打分，帮你判断是否值得投递；通过初筛后再生成适配 ATS 的简历与求职信，并提供面试准备和投递进度追踪。所有材料由 AI 起草，最终提交仍由你手动点击。适合密集投递、想减少重复劳动的求职者。",
+        "summaryZh": "career-ops 是开源 AI 求职代理：自动扫描招聘站点，先用你的简历给每个岗位打 1-5 分匹配分，再为高分岗位定制 ATS 友好简历与求职信，并提供面试准备和投递跟踪表。它只负责填好每份申请，提交按钮始终由你按下。可在本地 Codex、OpenCode 等 AI CLI 中运行，也能作为 Claude Code 插件使用，适合重视隐私、想批量投递又不愿盲投的开发者、应届生与转岗者。",
         "scenarios": [
-          "批量扫描招聘网站，用现有简历给岗位打分排序，快速筛掉不匹配机会",
-          "针对高分岗位自动改写简历与求职信，做成 ATS 友好的定制版本",
-          "用内置追踪器管理每家公司的投递状态，并在面试前生成针对性准备要点"
+          "求职初期：批量扫描多个招聘网站，用 1-5 分匹配度筛出真正值得投的岗位，减少无效海投。",
+          "投递阶段：针对单个 JD 自动改写简历关键词、生成 ATS 友好的求职信，并把申请记录写入跟踪表。",
+          "面试前：根据岗位要求与自身简历的差距生成针对性面试题和准备要点，面试后回填投递状态。"
         ],
-        "agentInstallPrompt": "请在本机克隆 https://github.com/career-ops-hq/career-ops，先阅读 README 确认所需 Node.js 版本、依赖和配置方式，然后完成安装并接入我当前的 AI CLI（Claude Code、Codex 或 OpenCode）。接着把我的简历放到项目指定目录，跑一次最小可用流程：扫描一个招聘板，用简历对前 5 个岗位按 1-5 分打分并给出理由，再为得分最高的岗位生成一份 ATS 友好的简历和求职信草稿。全程不要自动提交任何申请，每步执行的命令与输出结果都告诉我。"
+        "agentInstallPrompt": "请在本地克隆 https://github.com/career-ops-hq/career-ops，根据 lockfile 判断使用 npm 或 pnpm 安装依赖，阅读 README 与 package.json 确认启动命令、支持的 AI CLI（Codex / OpenCode / Claude Code 插件）和所需环境变量；把示例配置复制为本地配置，填入我的简历文件路径和目标岗位关键词，先以只读或 dry-run 模式跑一次岗位扫描，输出匹配度最高的前 5 个岗位及各岗 1-5 分打分理由与简历改写建议，全程不要自动提交任何申请。最后给我一份清单：运行步骤、我必须手动填写的配置项，以及常见报错的排查方法。"
       }
     },
     "repo:blader/humanizer": {
@@ -5809,17 +5809,17 @@
     },
     "repo:mksglu/context-mode": {
       "type": "repo-insight",
-      "hash": "bc2467926306d683c533ab47",
+      "hash": "de37ea54fe36a68bf2126405",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-09T22:00:35.819Z",
+      "generatedAt": "2026-11-02T22:01:06.319Z",
       "value": {
-        "summaryZh": "context-mode 是一个面向 AI 编程代理的上下文窗口优化工具，通过沙箱化工具输出（平均减少 98% 的上下文占用）、持久化会话记忆，并借助 MCP 与钩子机制在 17 个平台间强制路由，从而大幅提升代理处理复杂任务的效率。该项目采用 TypeScript 编写，适合使用 AI 编程助手（如 Claude、Copilot 等）的开发者、团队或平台维护者，尤其适合需要在多个平台间切换、长对话或工具调用频繁的场景。通过集中管理上下文，它能减少令牌浪费，增强代理的连续性和准确性。",
+        "summaryZh": "context-mode 是一个免费本地插件，用于把工具输出隔离在编码 Agent 的上下文窗口之外：工具输出先写入沙箱和 SQLite FTS5 索引，需要时再检索，官方称可减少约 99% 的上下文占用。它兼容 Claude Code、Codex、Gemini CLI、Copilot CLI 等十余种 Agent，零遥测、纯本地运行。适合经常因长日志、测试输出和大文件搜索而占满上下文窗口的开发者，也适合关注隐私与 token 成本的团队。",
         "scenarios": [
-          "在长时间运行的 AI 编码任务中，减少工具输出对上下文的污染，保持对话连贯性。",
-          "团队统一使用 MCP 服务，跨 17 个平台（如 GitHub、Jira 等）执行上下文路由与策略控制。",
-          "开发或调试 AI 代理时，需要持久化会话记忆，以便在重启或切换智能体时恢复状态。"
+          "调试时运行测试或构建，产生上千行日志，Agent 只从 FTS5 索引中检索关键片段，不再把整段输出放入上下文。",
+          "让 Agent 在大型仓库中批量搜索、读取文件时，用沙箱隔离原始输出，使主对话上下文保持精简，回复更快更稳定。",
+          "在 Claude Code、Codex、Gemini CLI 等多个编码 Agent 之间切换时，用同一套本地插件统一管理工具输出；零遥测也满足企业隐私合规要求。"
         ],
-        "agentInstallPrompt": "请先克隆仓库 https://github.com/mksglu/context-mode 并安装依赖（pnpm install 或 npm install）。然后阅读 README 了解配置要求。运行 pnpm build 构建项目，并按文档在 MCP 配置文件中添加该服务。最后，通过 pnpm test 验证示例用例，或启动示例脚本（如 examples/ 目录下的 demo）查看上下文压缩效果。确保环境中已配置 Node.js 18+ 及 MCP 客户端。"
+        "agentInstallPrompt": "请帮我在本地安装并试跑 mksglu/context-mode：先将 https://github.com/mksglu/context-mode 克隆到 ~/tools/context-mode，再阅读 README 确认当前推荐的安装方式（使用 npm 或 pnpm 安装，或作为插件注册），并按照说明把它接入我正在使用的 Claude Code；如果检测不到该 Agent，就先提示我选择其他 Agent。安装完成后，启动沙箱与 SQLite FTS5 索引，并跑一个验证用例：执行一次会产生大量输出的命令（例如测试或构建），确认原始输出被写入沙箱，上下文中只出现检索摘要和少量字节。最后请汇总安装命令、配置改动、验证结果与回滚方法；未经我同意，不要修改我的全局配置。"
       }
     },
     "repo:petergyang/no-ai-slop": {
@@ -7687,17 +7687,17 @@
     },
     "repo:ranxianglei/billion-context": {
       "type": "repo-insight",
-      "hash": "74cf3285a1e6373e475a8849",
+      "hash": "982d5b5add6a135c9784c9a4",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-11T22:00:21.005Z",
+      "generatedAt": "2026-11-02T22:00:51.907Z",
       "value": {
-        "summaryZh": "billion-context 是一个用 TypeScript 编写的上下文压缩插件，面向大模型应用与 AI Agent。它自动压缩冗长的对话与工具调用历史，让 100K 上下文窗口就够用，token 消耗约降为原来的五分之一，并支持单会话持续数月、累计处理数十亿 token。适合需要长记忆的 Agent 开发者、对 API 成本敏感的团队，以及希望用小窗口本地模型跑长任务的工程师。",
+        "summaryZh": "billion-context 是一个用 TypeScript 编写的上下文压缩插件，目标是把超长对话记录压缩到有限窗口中：它宣称可支撑月级单会话、累计数十亿 token，实际只需约 100K 上下文，并节省约 5 倍 token。项目适合搭建长时运行 AI 助手、Agent 记忆与上下文管理、以及成本敏感型应用的开发者，尤其适合希望在现有模型上减少上下文溢出与调用费用的团队。",
         "scenarios": [
-          "为 Claude Code、Cursor 等 AI 编程助手或自研编码 Agent 接入，长周期开发中持续对话不撑爆上下文窗口",
-          "给客服、陪伴、助理类长时间运行 Agent 做记忆压缩，维持数月单会话同时显著降低 token 费用",
-          "部署 32K/100K 小窗口本地模型时压缩输入，降低显存与推理成本并保留长期上下文连续性"
+          "长驻 AI 助手或客服会话：把持续数周的聊天历史压缩成精简上下文，避免窗口溢出并降低 token 成本。",
+          "编码 Agent 的跨天长任务：保留项目决策、待办与关键代码线索，丢弃冗余对话，让 Agent 在多次续跑中保持连贯。",
+          "小窗口模型的降本改造：在 100K 上下文模型上运行原本需要超大窗口才能完成的长文档、长会话任务。"
         ],
-        "agentInstallPrompt": "请帮我试跑并接入 ranxianglei/billion-context：先克隆 https://github.com/ranxianglei/billion-context ，阅读 README 与 package.json，确认包管理器、构建脚本和示例入口，安装依赖并完成构建（如 tsc）。然后运行仓库自带的示例或测试，打印压缩前后的 token 数与压缩摘要，验证「省 5 倍 token」的效果。最后给出把它接入我的 Agent 对话循环的最小改动方案：压缩触发时机、需要保留的最近轮数、摘要持久化与恢复方式，并附一段可直接运行的 TypeScript 验证脚本。"
+        "agentInstallPrompt": "请帮我试跑 GitHub 仓库 ranxianglei/billion-context（TypeScript 上下文压缩插件）。步骤：1) git clone 到本地并进入目录；2) 先完整阅读 README、package.json 与源码入口，确认实际安装方式、对外 API 和示例用法，不要臆造接口；3) 按仓库说明安装依赖并构建，运行已有测试或示例；4) 用一段模拟的长对话数据做最小验证，记录压缩前后 token 数量与压缩比；5) 若缺少示例或文档不清，请指出具体缺口并给出可运行的最小调用代码。最后汇报环境要求、执行命令、测试结果、遇到的问题与结论，全程不要修改无关文件。"
       }
     },
     "repo:open-webui/open-webui": {
@@ -8360,6 +8360,81 @@
           "基于其插件与配置系统做外观和交互深度定制，制作截图分享用的高颜值桌面或进行合成器相关开发调试"
         ],
         "agentInstallPrompt": "请帮我在这台 Linux 机器上安装并试跑 Hyprland。先检查发行版、是否已启用 Wayland 会话、显卡驱动与必要依赖（如 wlroots 相关组件、xwayland、kitty、wofi 等）。根据发行版给出对应安装命令（例如 Arch 用 pacman -S hyprland，其他发行版参考官方 Wiki 或源码编译），不要直接执行破坏性操作，先列出计划让我确认。安装完成后生成一份最小可用的 ~/.config/hypr/hyprland.conf，包含基础快捷键、终端启动、退出方式和简单窗口规则，并说明如何从登录管理器或 TTY 启动 Hyprland 以及首次进入后如何验证运行正常。"
+      }
+    },
+    "repo:vercel-labs/agent-desktop": {
+      "type": "repo-insight",
+      "hash": "c1dbd29d8f2ed15ad83b0f03",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-02T22:00:23.589Z",
+      "value": {
+        "summaryZh": "agent-desktop 是 Vercel Labs 开源的计算机使用命令行工具，用 Rust 编写，让 AI 智能体通过 CLI 操作桌面：截屏、移动鼠标、点击、键盘输入，把图形界面变成可编排命令。它适合构建 computer-use 智能体的开发者、做桌面自动化与 GUI 测试的工程师，也便于在本地验证智能体操作真实应用的能力，轻量易集成。",
+        "scenarios": [
+          "为自研 computer-use 智能体提供桌面执行层，通过 CLI 完成截屏、点击、键入并回传操作结果。",
+          "桌面 GUI 自动化回归测试：让智能体按脚本操作应用界面，结合截图断言验证关键业务流程。",
+          "本地快速原型与评测：在真实桌面环境中试跑打开应用、填写表单、导出文件等多步骤任务。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/vercel-labs/agent-desktop，检查并准备 Rust stable 工具链，阅读 README 与 Cargo.toml，执行 cargo build --release，并运行 --help 了解可用子命令。根据仓库说明授予终端所需的屏幕录制与辅助功能权限，然后写一个最小试跑：截屏保存到 /tmp、移动鼠标并点击指定坐标、输入一段文本，最后输出执行的命令和结果日志；遇到依赖或权限问题请给出具体修复步骤。"
+      }
+    },
+    "repo:D4Vinci/Scrapling": {
+      "type": "repo-insight",
+      "hash": "9ff14f01606aa8bb2d29ca39",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-02T22:00:29.762Z",
+      "value": {
+        "summaryZh": "Scrapling 是一个用 Python 编写的自适应网页抓取框架，覆盖从单次请求到规模化爬虫的完整需求。核心亮点是自适应元素定位：网站改版后仍能自动重新匹配已选节点，大幅减少选择器维护成本；同时提供高性能解析、异步并发抓取和反检测请求能力，并附带 CLI 与 MCP 接口，便于接入 AI 工作流。适合数据采集工程师、爬虫开发者，以及需要为 AI Agent 补充网页数据能力的团队。",
+        "scenarios": [
+          "长期监控电商商品价格与库存，页面结构小改动后无需重写选择器即可继续采集。",
+          "为 RAG 或 Agent 批量抓取文档站点、论坛内容，清洗后入库作为知识来源。",
+          "本地快速试跑并发爬虫，评估目标站点的反爬强度与抓取可行性再决定架构。"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 Scrapling：1) 创建 Python 3.10+ 虚拟环境，执行 pip install scrapling，并按官方文档运行 scrapling install 安装浏览器依赖；2) 写一个最小示例，用 Fetcher 抓取 https://quotes.toscrape.com/ 首页，解析出全部名言文本与作者并打印；3) 再写一个自适应示例，先用 css 选择器定位元素并保存，然后修改页面结构模拟改版，验证 adaptive 定位仍能命中；4) 最后输出完整运行命令、依赖版本、目录结构和常见报错处理，若安装或运行失败请给出替代方案并说明原因。"
+      }
+    },
+    "repo:karpathy/nanochat": {
+      "type": "repo-insight",
+      "hash": "a2ef45ead45449f66c7f7644",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-02T22:00:35.910Z",
+      "value": {
+        "summaryZh": "nanochat 是 Andrej Karpathy 开源的最小化 ChatGPT 全栈实现：从分词器训练、预训练、监督微调、强化学习到推理服务与网页聊天界面，一套脚本即可端到端跑通，代码刻意保持精简易读。亮点是提供可复现的“百美元速通”成本基准与公开排行榜，方便对比不同算力与训练时长下的效果。适合想亲手复现大模型全流程的开发者、教学者与研究者，也适合作为小模型实验的干净基线。",
+        "scenarios": [
+          "教学与自学：在 CPU 或 Mac MPS 上跑最小配置，完整理解分词、预训练、SFT、推理与 Web UI 各环节如何衔接。",
+          "复现与对标：在 8×H100 等 GPU 环境按 speedrun 脚本完整训练，把结果与官方排行榜对比，验证成本与效果的关系。",
+          "二次开发：替换数据集或分词器做领域微调，复用其推理服务与聊天前端，快速搭出私有小模型 Demo。"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 karpathy/nanochat。步骤：1) git clone https://github.com/karpathy/nanochat 并进入目录；2) 用 uv 或 python -m venv 创建隔离环境，安装 README 中列出的依赖，注意 PyTorch 版本与 CUDA/MPS 的匹配；3) 先不训练完整模型，而是按文档跑最小/CPU 或 MPS 可用的 tiny 配置，确认数据下载、分词器训练与训练脚本能正常结束；4) 训练一个极短步数的 checkpoint 后，启动其推理与 Web 聊天服务，在浏览器验证能对话；5) 全程记录每条命令、报错与修复方式，最后汇总一份可复现的运行笔记，并说明若要用 GPU 跑完整 speedrun 需要哪些硬件与预估耗时。"
+      }
+    },
+    "repo:ghostty-org/ghostty": {
+      "type": "repo-insight",
+      "hash": "68276bfbfc1b0b5a32f81174",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-02T22:00:46.594Z",
+      "value": {
+        "summaryZh": "Ghostty 是一个用 Zig 编写的高性能跨平台终端模拟器，主打原生平台 UI 与 GPU 加速渲染，在 macOS 上使用 SwiftUI/AppKit，在 Linux 上使用 GTK，力求兼顾速度、低延迟与系统一致的交互体验。它支持多窗口、分屏、标签页、主题与字体连字等常见特性，同时保持配置简洁、默认体验良好。相比 Electron 或 Web 技术栈终端，Ghostty 更轻量、更贴近系统原生行为，适合追求流畅输入响应与稳定渲染的开发者、运维工程师，以及愿意尝试 Zig 生态和开源终端替代方案的技术爱好者。",
+        "scenarios": [
+          "日常开发中替代系统默认终端，获得 GPU 加速的低延迟输入与平滑滚动体验",
+          "在多标签、多分屏场景下同时管理本地 shell、日志输出与长时间运行的构建任务",
+          "作为跨 macOS 与 Linux 的统一终端配置方案，保持一致的字体、主题与快捷键习惯"
+        ],
+        "agentInstallPrompt": "请在你的运行环境中安装并试跑 Ghostty 终端模拟器：1) 先确认当前操作系统与架构（macOS 或 Linux x86_64/aarch64）；2) 克隆仓库 https://github.com/ghostty-org/ghostty 并阅读 README 与构建说明；3) 按官方文档安装依赖（macOS 需 Xcode 与 Zig，Linux 需 GTK4/libadwaita 等开发包）并执行构建；4) 构建成功后启动 Ghostty，验证窗口能正常打开、能运行 shell 命令、GPU 渲染无明显异常；5) 尝试加载一份最小配置文件（设置字体与主题）确认配置生效；6) 汇总构建中遇到的问题、所需依赖版本与启动方式，输出一份可复现的安装笔记。若当前环境无图形界面，则改为完成构建并说明无法进行 GUI 验证。"
+      }
+    },
+    "repo:michael-denyer/pstack-claude": {
+      "type": "repo-insight",
+      "hash": "bdfebb47121d41121e922e74",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-02T22:00:57.571Z",
+      "value": {
+        "summaryZh": "pstack-claude 将 Poteto 的 pstack 智能体工作流从 Cursor 原语（rules、commands、hooks 等）移植到 Claude Code、Codex、Copilot、Pi、OpenCode、Muse、Gemini、Prime Agent 等多种编码代理框架，并用 TypeScript 统一生成各家配置与提示词模板。核心价值是一套更严格的研发流程可跨工具复用，避免更换代理就重写规则；适合同时使用多个 AI 编码工具、希望统一团队协作规范并可直接安装试跑的工程师与平台维护者。",
+        "scenarios": [
+          "在 Claude Code、Codex、Copilot 之间共享同一套任务拆解、实现与代码审查流程。",
+          "把团队已有的 Cursor rules 和 commands 迁移到新工具链，统一 AI 编程规范。",
+          "为新引入的编码代理（Gemini、OpenCode 等）快速生成可用工作流脚手架并做对比评估。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/michael-denyer/pstack-claude 到本地，先阅读 README 和目录结构，确认支持哪些代理框架（Claude Code / Codex / Copilot / Gemini 等）、生成脚本入口和所需 Node 与 TypeScript 版本；然后用 pnpm 或 npm 安装依赖并执行构建与测试。接着找到为 Claude Code 生成配置的命令，把它安装到一个新建的临时测试项目中，不要改动我现有的全局配置和家目录文件。完成后请列出生成的文件清单及每个文件的作用，并给出在一个小型真实任务上试跑该工作流的步骤、预期输出和需要注意的坑。"
       }
     }
   }
