@@ -2148,17 +2148,17 @@
     },
     "repo:stablyai/orca": {
       "type": "repo-insight",
-      "hash": "e57807ce91e0f1112e265c3a",
+      "hash": "4a57ae5ad5c5b64e5ad045bd",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-17T22:00:14.435Z",
+      "generatedAt": "2026-11-04T22:16:29.012Z",
       "value": {
-        "summaryZh": "Orca 是一个面向多 AI 编码代理协作的开源工作台，可把 Claude Code、Grok Bot 等代理组成“代理舰队”统一调度，并支持使用你自己的订阅运行，降低额外 API 成本。它提供桌面端、移动端和远程运行时，方便随时随地查看任务、切换代理与接管执行。适合需要并行处理多个开发任务、管理多代理工作流的工程师与团队。",
+        "summaryZh": "Orca 是面向“编码智能体舰队”的编排工作台：把 Claude Code、Codex 等代理集中到同一界面，用你自己的订阅启动、并行管理和切换任务，并覆盖桌面端、移动端与远程运行时。亮点是跨设备统一调度、无需更换模型账号，适合需要同时跑多个代理的独立开发者、小团队和远程协作场景，也便于观察任务进度与结果。",
         "scenarios": [
-          "同时启动多个编码代理并行修复缺陷、补测试和写文档，并在桌面端统一查看进度与冲突。",
-          "在远程运行时中执行耗时代理任务，本地关机后仍可通过手机查看状态并追加指令。",
-          "团队用自有 Claude/Grok 订阅接入 Orca，统一管理代理会话、权限与任务交接，减少重复配置。"
+          "同时运行多个 Claude Code 或 Codex 任务，例如修 Bug、补测试和重构，在一个面板中跟踪进度与输出。",
+          "在远程开发机或服务器上托管代理运行时，用桌面端或手机查看任务状态并接管执行。",
+          "团队使用自有订阅接入不同编码代理，并行探索方案、对比结果，减少账号切换和工具碎片化。"
         ],
-        "agentInstallPrompt": "请在本地克隆 https://github.com/stablyai/orca，先阅读 README、package.json 和贡献指南，确认 Node/TypeScript 环境与启动命令；安装依赖后启动开发模式，完成最小可用配置（选择一个已登录的编码代理，如 Claude Code），创建一个示例任务验证桌面端与远程运行时能否正常工作。不要修改无关代码，遇到缺失凭据或平台限制时列出步骤和替代方案，并汇报运行结果、访问地址和后续配置项。"
+        "agentInstallPrompt": "请帮我试跑 GitHub 项目 stablyai/orca（TypeScript）。先克隆仓库并阅读 README、package.json 和配置文件，确认启动方式；使用合适的包管理器安装依赖，启动开发环境并验证桌面端或网页端能否打开。若需要外部服务或登录，先列出所需环境变量和步骤，不要写入真实密钥；最后汇总安装命令、运行结果、遇到的问题和后续建议。"
       }
     },
     "repo:asgeirtj/system_prompts_leaks": {
@@ -5809,17 +5809,17 @@
     },
     "repo:mksglu/context-mode": {
       "type": "repo-insight",
-      "hash": "de37ea54fe36a68bf2126405",
+      "hash": "246e8b0aa339fae5f12c146f",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-11-02T22:01:06.319Z",
+      "generatedAt": "2026-11-04T22:16:23.518Z",
       "value": {
-        "summaryZh": "context-mode 是一个免费本地插件，用于把工具输出隔离在编码 Agent 的上下文窗口之外：工具输出先写入沙箱和 SQLite FTS5 索引，需要时再检索，官方称可减少约 99% 的上下文占用。它兼容 Claude Code、Codex、Gemini CLI、Copilot CLI 等十余种 Agent，零遥测、纯本地运行。适合经常因长日志、测试输出和大文件搜索而占满上下文窗口的开发者，也适合关注隐私与 token 成本的团队。",
+        "summaryZh": "context-mode 是一个免费、纯本地的插件，用来把工具输出挡在 AI 编码代理的上下文窗口之外。它通过沙箱执行与 SQLite FTS5 全文索引，把冗长的命令输出和日志压缩检索后再交给模型，官方称可减少约 99% 的上下文字节占用。支持 Claude Code、Codex、Pi、OpenCode、Gemini CLI、Copilot CLI 等十余种代理，零遥测、数据不出本机。适合经常让代理跑测试、查日志、处理大仓库，又苦于上下文爆满、费用高、结果被截断的开发者与团队。",
         "scenarios": [
-          "调试时运行测试或构建，产生上千行日志，Agent 只从 FTS5 索引中检索关键片段，不再把整段输出放入上下文。",
-          "让 Agent 在大型仓库中批量搜索、读取文件时，用沙箱隔离原始输出，使主对话上下文保持精简，回复更快更稳定。",
-          "在 Claude Code、Codex、Gemini CLI 等多个编码 Agent 之间切换时，用同一套本地插件统一管理工具输出；零遥测也满足企业隐私合规要求。"
+          "让编码代理运行大型测试套件或构建命令时，把海量输出留在本地沙箱，只把关键片段送回上下文",
+          "在大型仓库中检索日志、依赖或历史记录，用 SQLite FTS5 做全文搜索而非把整份文件塞进提示词",
+          "多代理并行开发时统一管理工具输出，降低 token 成本并避免上下文被截断导致任务失败"
         ],
-        "agentInstallPrompt": "请帮我在本地安装并试跑 mksglu/context-mode：先将 https://github.com/mksglu/context-mode 克隆到 ~/tools/context-mode，再阅读 README 确认当前推荐的安装方式（使用 npm 或 pnpm 安装，或作为插件注册），并按照说明把它接入我正在使用的 Claude Code；如果检测不到该 Agent，就先提示我选择其他 Agent。安装完成后，启动沙箱与 SQLite FTS5 索引，并跑一个验证用例：执行一次会产生大量输出的命令（例如测试或构建），确认原始输出被写入沙箱，上下文中只出现检索摘要和少量字节。最后请汇总安装命令、配置改动、验证结果与回滚方法；未经我同意，不要修改我的全局配置。"
+        "agentInstallPrompt": "请在本地克隆 https://github.com/mksglu/context-mode 并阅读 README，确认它支持的代理（如 Claude Code、Codex、Gemini CLI）中哪一个与我当前环境匹配；按文档以本地方式安装该插件并完成初始化（不启用任何遥测、不联网上报）。然后在一个测试项目里实际试跑：执行一条会产生大量输出的命令（如运行测试或列目录树），对比启用前后进入上下文的字节数与检索效果，把安装步骤、关键配置和我需要手动确认的项列成简短清单反馈给我。"
       }
     },
     "repo:petergyang/no-ai-slop": {
@@ -6034,18 +6034,17 @@
     },
     "repo:github/spec-kit": {
       "type": "repo-insight",
-      "hash": "df484d93609a2c623a0c789a",
+      "hash": "2826d95ecce0a169806194d8",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-11T22:01:06.704Z",
+      "generatedAt": "2026-11-04T22:00:20.894Z",
       "value": {
-        "summaryZh": "Spec Kit 是 GitHub 官方的规范驱动开发工具包。它提供 specify CLI，可在 Claude Code、Copilot、Cursor 等 AI 助手中初始化模板与 /specify、/plan、/tasks 等命令：先写清规格、技术方案和原子任务，再交由 AI 实现，减少跑偏与返工。适合想把 AI 编码纳入工程化流程的团队和个人开发者。",
+        "summaryZh": "Spec Kit 是 GitHub 的规范驱动开发（SDD）工具包，提供 specify CLI、模板和斜杠命令，引导你先写清规格，再生成技术方案、任务清单并驱动 AI 编码代理实现。它兼容 Claude Code、Copilot、Cursor、Gemini 等代理，强调分阶段、可追溯和可审查。适合想把 AI 编码从随口生成升级为工程化协作的团队和个人开发者。",
         "scenarios": [
-          "新功能从零启动：先用 /specify 写清需求规格，再用 /plan 确定技术方案，最后用 /tasks 拆成原子任务交给 AI 逐条实现。",
-          "团队统一 AI 编码流程：在仓库中初始化同一套模板与斜杠命令，成员按规格协作，需求评审与实现验收都有据可依。",
-          "接手遗留项目或重构：把现有行为整理成规格文档，再驱动 AI 做小步、可验证的安全改造，避免大范围改坏。",
-          "技术方案预演：在动代码前生成计划与任务清单，用于可行性评估、工时估算和评审材料准备。"
+          "新功能从零开发：先用 /specify 写需求规格，再让 AI 代理生成计划、任务和代码，减少返工。",
+          "团队统一 AI 编码流程：通过 constitution 与模板固化规范、评审和验收标准，便于多人协作。",
+          "遗留项目改造：先补规格和关键决策文档，再分阶段让代理实现迁移或重构任务。"
         ],
-        "agentInstallPrompt": "请帮我在当前项目试用 GitHub Spec Kit。先确认环境：Python 3.11+ 与 uv 是否可用，缺失则给出安装命令并说明。随后执行 `uvx --from git+https://github.com/github/spec-kit.git specify init --here`（若当前为空目录可省略 --here）完成初始化，初始化过程中如询问 AI 助手类型请根据本机已装工具选择。完成后检查生成的文件结构（如 .specify/、模板目录以及对应助手的命令文件），逐条说明 /specify、/plan、/tasks 等斜杠命令的作用，并以本仓库 README 为例演示一个最小工作流：写一条规格 → 生成技术方案 → 拆成任务清单。最后把执行过的命令、遇到的报错与解决办法整理成简短报告，不要修改我的业务代码。"
+        "agentInstallPrompt": "请在本地克隆并试跑 github/spec-kit：先确认已安装 Python 3.11+、Git 与 uv，然后执行 `uv tool install specify-cli --from git+https://github.com/github/spec-kit.git`，或用 `uvx --from git+https://github.com/github/spec-kit.git specify init` 初始化一个示例项目；进入项目后运行 `specify check` 验证环境，查看生成的 `.specify/` 模板和 slash 命令，针对我选择的 AI 代理（Claude Code、Copilot、Cursor 等）完成配置，并用一个最小需求走通 /constitution、/specify、/plan、/tasks、/implement 流程；最后汇总安装步骤、生成文件、可用命令和遇到的问题。"
       }
     },
     "repo:humanlayer/skills": {
@@ -8465,6 +8464,96 @@
           "开发者本地部署并二次开发，学习 Playwright 页面采集、任务调度、AI 分析与后台管理 UI 的完整实现"
         ],
         "agentInstallPrompt": "请克隆 Usagi-org/ai-goofish-monitor 仓库并阅读 README 与示例配置，使用 Python 虚拟环境安装依赖，初始化 Playwright 浏览器；根据文档创建 .env 或配置文件，填入闲鱼登录态、AI 服务密钥和通知渠道等必要参数，启动后台服务与 Web UI。随后用一个低风险测试关键词创建短时监控任务，验证采集、AI 分析和通知链路是否正常，并输出启动命令、访问地址和排错记录。不要提交任何密钥或 Cookie，控制请求频率并遵守平台规则。"
+      }
+    },
+    "repo:NVIDIA/auto-ontology": {
+      "type": "repo-insight",
+      "hash": "3a5af3129cb788a31d3241ca",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-04T22:00:09.512Z",
+      "value": {
+        "summaryZh": "NVIDIA/auto-ontology 是一个用 Python 编写的本体框架，用于在数据之上构建语义化、图结构的推理层。它把业务数据组织成可推理的知识图谱，让大模型和智能体在检索、生成查询时保持确定性，减少随机幻觉，并让结论可追溯、可解释。项目由 NVIDIA 开源，适合做 RAG 与知识工程的数据团队、需要为 Agent 提供可靠上下文的平台开发者，以及关注可解释 AI 的企业架构师，尤其适合已有结构化数据、希望升级为语义层的场景。",
+        "scenarios": [
+          "为企业数据库和指标定义构建本体层，让 LLM 通过确定性图查询取数，而不是猜测 SQL",
+          "在 RAG 流程中用本体增强上下文检索，为智能体提供带语义关系和约束的高质量上下文",
+          "面向合规与审计场景，把数据访问和推理路径输出为可解释的知识图谱证据链"
+        ],
+        "agentInstallPrompt": "请在本机安装并试跑 NVIDIA/auto-ontology：先克隆 https://github.com/NVIDIA/auto-ontology 并创建 Python 虚拟环境，用 pip 安装仓库中的依赖（优先读取 pyproject.toml 或 requirements.txt 和 README）。然后阅读 README 与示例目录，找到最小可运行示例，构造一个包含两三个实体（如公司、产品、供应商）的小型本体，从示例数据生成图结构并跑通一次确定性查询，打印生成的查询语句与返回结果。最后用 markdown 输出：安装步骤、遇到的报错及修复方式、示例代码路径、你的运行结论。"
+      }
+    },
+    "repo:The-PR-Agent/pr-agent": {
+      "type": "repo-insight",
+      "hash": "9f215018770fb3cbd823afbf",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-04T22:00:26.592Z",
+      "value": {
+        "summaryZh": "PR-Agent 是开源的 AI 代码评审助手，用 Python 编写，可自动为 Pull Request 生成描述、逐行审查、提出改进建议并支持交互式问答。它可接入 GitHub、GitLab、Bitbucket 等平台，通过 CLI 或 CI 工作流调用，兼容多种大模型，配置灵活、可自托管。适合需要把代码审查自动化、又在意数据隐私和成本控制的研发团队与个人开发者。",
+        "scenarios": [
+          "研发团队在 GitHub 或 GitLab 上为每个 PR 自动生成变更摘要、风险提示与审查意见，减轻人工 reviewer 负担。",
+          "个人开发者本地通过 CLI 对未合并分支做提交前自查，获取改进建议和更清晰的 PR 描述。",
+          "在 CI 流水线中集成 PR-Agent，对新建或更新的 PR 自动评论，并支持 /review、/improve 等命令统一审查规范。"
+        ],
+        "agentInstallPrompt": "请在当前环境克隆 https://github.com/The-PR-Agent/pr-agent 并进入仓库，创建 Python 虚拟环境安装依赖，阅读 README 完成模型 API Key 与代码托管平台 Token 的环境变量配置，不要将密钥写入仓库。随后运行 CLI 帮助命令确认安装成功，并选择一个测试 PR 执行一次 describe 和 review，汇总输出结果、配置步骤与遇到的问题。"
+      }
+    },
+    "repo:FareedKhan-dev/kimi-k3-in-c": {
+      "type": "repo-insight",
+      "hash": "da68dad6a2e14d23f34f3e31",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-04T22:00:31.622Z",
+      "value": {
+        "summaryZh": "该项目用纯 C99 从零实现 Kimi K3（2.78 万亿参数 MoE 模型）的单机 CPU 推理，宣称仅占用 8.24 GB 内存，且不依赖 BLAS、深度学习框架或 GPU。其思路是用 mmap 按需从磁盘流式加载被稀疏激活的专家权重，以 IO 换内存，绕过内存墙，并自带张量格式与量化解码。适合想研究大模型底层推理、内存与 IO 优化的 C 系统程序员，以及嵌入式、无 GPU 受限环境下的实验者，也可作 MoE 与量化格式的极简教学样本；但实际速度与效果建议以本机实测为准。",
+        "scenarios": [
+          "在没有 GPU 的服务器或笔记本上离线跑通大模型推理，验证 CPU + 磁盘流式加载方案的可行性与吞吐",
+          "作为学习素材，阅读并改造 C 代码以理解 MoE 稀疏激活、mmap 权重加载与量化反量化的实现细节",
+          "在嵌入式、容器或受限内存环境中评估把超大模型降级到单机 CPU 部署的工程取舍"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/FareedKhan-dev/kimi-k3-in-c，先阅读 README 与 Makefile，确认编译依赖（仅需 C99 编译器与 make）和所需模型的下载方式及磁盘占用。然后用 make 编译，检查是否生成可执行文件；如报错请修复编译问题但不要改动核心推理逻辑。接着准备最小测试输入（短 prompt 或仓库自带样例），运行一次推理，记录峰值内存、加载耗时、生成速度与输出质量，并把命令、日志和实测数据整理成简短报告；若内存或磁盘不足，说明瓶颈所在及可行的裁剪参数。"
+      }
+    },
+    "repo:MichaelCade/90DaysOfDevOps": {
+      "type": "repo-insight",
+      "hash": "8b700a5c326018da1cd7e21f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-04T22:16:08.578Z",
+      "value": {
+        "summaryZh": "90DaysOfDevOps 是一个面向 DevOps 学习者的开源结构化学习地图，由社区多年迭代而成，涵盖 DevOps 原则、流程、工具链与真实用例。项目以 Shell 辅助脚本和文档为主，按天组织学习路径，帮助初学者从零建立完整知识框架，也方便有经验者查漏补缺。亮点在于内容公开协作、持续更新、覆盖面广，从 Linux、容器、CI/CD 到云原生与可观测性均有涉及。适合转行 DevOps 的新人、在校学生、需要系统梳理知识栈的运维与开发工程师，以及想组织团队共学的技术负责人。",
+        "scenarios": [
+          "零基础或转行者按 90 天计划逐日学习 DevOps 核心概念与工具",
+          "团队组织共学打卡，用仓库内容做内部分享与练习大纲",
+          "工程师快速检索特定主题（容器、CI/CD、云原生）的知识要点与参考链接"
+        ],
+        "agentInstallPrompt": "请帮我在本地试用 MichaelCade/90DaysOfDevOps 这个学习仓库：先克隆 https://github.com/MichaelCade/90DaysOfDevOps ，浏览顶层目录结构，识别出按天或按主题组织的学习模块，然后为我生成一份精简要约的阅读路线：列出前两周的每日学习主题、每个主题对应的仓库内文件路径，以及需要提前安装的工具（如 git、Docker、kubectl 等）。不要修改仓库内容，只做只读分析并输出一份 Markdown 学习计划给我。"
+      }
+    },
+    "repo:Thysrael/Horizon": {
+      "type": "repo-insight",
+      "hash": "a14977425e9bda5d80418dc1",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-04T22:16:12.983Z",
+      "value": {
+        "summaryZh": "Horizon 是一个用 Python 编写的开源 AI 新闻雷达，帮助你把分散的信息源聚合成每日简报，并支持中英文双语输出。核心思路是自动抓取、筛选与摘要，让个人也能搭建专属的资讯监控与推送流程。它适合关注行业动态的开发者、独立研究者、内容创作者和需要跟踪多源信息的团队，也适合想学习 AI 信息聚合与简报生成实践的读者。",
+        "scenarios": [
+          "每日行业资讯简报：配置关注的主题与来源，自动生成中英文摘要，便于早晨快速浏览。",
+          "竞品与开源生态监控：跟踪 GitHub Trending、技术博客和新闻站点，汇总新项目与版本动态。",
+          "个人知识库与团队周报：把抓取结果沉淀为可检索简报，用于内容选题、研究整理或团队分享。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/Thysrael/Horizon，阅读 README 与依赖文件，创建 Python 虚拟环境并安装依赖；配置一个最小可用的新闻源与中英文输出，运行一次简报生成流程，最后告诉我启动命令、配置文件位置和常见报错。"
+      }
+    },
+    "repo:scenario-labs/skills": {
+      "type": "repo-insight",
+      "hash": "c3451a73cd1baf9c1d18188e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-04T22:16:20.268Z",
+      "value": {
+        "summaryZh": "scenario-labs/skills 是面向 AI Agent 的多媒体生产技能库，用 Python 封装图像、视频、音频与 3D 生成能力。它通过 Scenario MCP 自动选择合适模型、先估价再执行，并保持角色与品牌风格一致；还提供专家团队式工作流，驱动 Blender、Maya、ZBrush、Unreal、Unity 等工具。适合需要批量产出素材的创意团队、游戏与影视管线开发者，以及想为 Agent 增加稳定多模态生产能力的工程师。",
+        "scenarios": [
+          "游戏与影视前期：让 Agent 批量生成角色概念图、分镜视频和音效，并保持角色设定一致。",
+          "品牌营销：按品牌风格生成海报、短视频与 3D 产品展示，生成前先估算成本。",
+          "3D 管线自动化：通过技能调用 Blender、Maya、Unreal、Unity，完成建模、场景搭建与资产导入。"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/scenario-labs/skills，阅读 README 与示例，配置 Python 环境和 Scenario MCP 凭据；安装依赖后运行一个最小示例，先用图像生成验证模型选择与成本预估，再试跑 Blender 或 Unity 技能并汇报结果。"
       }
     }
   }
