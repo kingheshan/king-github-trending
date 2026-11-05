@@ -4968,17 +4968,17 @@
     },
     "repo:ConardLi/garden-skills": {
       "type": "repo-insight",
-      "hash": "709a606527d69e15c64ce201",
+      "hash": "ca44e5d47a59afe7db12c1fa",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-26T22:00:14.150Z",
+      "generatedAt": "2026-11-05T22:20:41.798Z",
       "value": {
-        "summaryZh": "garden-skills 是 ConardLi 维护的开源技能集合，以 CSS 为核心语言，整合了网页设计、知识检索、图像生成等多种实用技能。该项目将日常开发中可复用的能力模块化，便于开发者或 AI 代理直接调用，从而提升效率。亮点在于其结构化定义和跨场景覆盖，适合前端开发者、全栈工程师、AI 应用设计者以及希望将智能体技能落地到实际项目的技术爱好者。通过简单的配置，即可快速体验这些技能，并将其集成到自己的工作流中。",
+        "summaryZh": "garden-skills 是 ConardLi 开源的一组 AI Agent 技能集合，用 JavaScript 编写，把网页设计、知识检索、图像生成等常见能力封装成可直接调用的模块化技能。项目结构清晰、开箱即用，能减少从零搭建提示词与工具链的重复工作，适合独立开发者、前端工程师和内容创作团队快速为自己的智能体补齐实用能力。",
         "scenarios": [
-          "前端开发时，利用其中的网页设计技能快速生成页面布局与视觉风格，缩短 UI 迭代周期。",
-          "在开发文档或知识库检索中，借助知识检索技能精准定位所需信息，提高查询效率。",
-          "需要生成创意图像或素材时，调用图像生成技能，快速产出适合项目使用的视觉内容。"
+          "为 Claude Code 等编码助手加装网页设计技能，直接产出落地页与组件样式。",
+          "给内部知识库问答机器人接入知识检索技能，省去自研检索链路的时间成本。",
+          "在内容生产流程中调用图像生成技能，批量为文章产出配图与封面草稿。"
         ],
-        "agentInstallPrompt": "请先克隆仓库：git clone https://github.com/ConardLi/garden-skills.git，然后进入项目目录 garden-skills，阅读 README 文件了解技能定义与用法。根据项目文档安装必要的依赖（如无特殊说明则无需安装），并尝试运行示例或测试命令，验证技能是否可用。若项目包含配置文件，请根据实际需求进行调整，最后启动一个简单的演示以确认环境正常。"
+        "agentInstallPrompt": "请把 https://github.com/ConardLi/garden-skills 克隆到本地，先阅读 README 和目录结构，列出仓库中所有可用技能、各自用途与依赖；然后用 Node.js 安装依赖并跑通一个最小示例（优先网页设计技能），把运行命令、所需环境变量、示例输入输出整理成一份简报；如果发现文档缺失或示例跑不通，请标注具体位置并给出补全或修复建议。"
       }
     },
     "repo:browser-use/browser-use": {
@@ -8554,6 +8554,21 @@
           "3D 管线自动化：通过技能调用 Blender、Maya、Unreal、Unity，完成建模、场景搭建与资产导入。"
         ],
         "agentInstallPrompt": "请在本地克隆 https://github.com/scenario-labs/skills，阅读 README 与示例，配置 Python 环境和 Scenario MCP 凭据；安装依赖后运行一个最小示例，先用图像生成验证模型选择与成本预估，再试跑 Blender 或 Unity 技能并汇报结果。"
+      }
+    },
+    "repo:JiaFeiMiao-K-Cat/DiscImageStudio": {
+      "type": "repo-insight",
+      "hash": "e911b4f39427ad724c5da3d0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-05T22:20:47.164Z",
+      "value": {
+        "summaryZh": "DiscImageStudio 是一个用 C# 开发的 disc image（光盘镜像）处理项目，从命名看面向镜像制作、浏览、提取或转换等桌面场景，提供图形化 Studio 式操作体验。它适合需要整理游戏盘、系统盘或资料盘的 Windows 用户，也适合 .NET 开发者研究镜像格式与桌面工具实现。仓库暂无描述，建议先阅读源码与 Release 确认功能边界。",
+        "scenarios": [
+          "整理与归档光盘镜像：浏览、提取或转换收藏的游戏盘、系统盘或资料盘。",
+          "Windows 桌面端快速查看镜像内容，减少手工挂载与命令行操作。",
+          ".NET/C# 开发者参考其镜像格式解析、文件系统访问与 GUI 架构实现。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio，检查 README、解决方案文件和 Release；确认 .NET SDK 版本后用 dotnet build 构建并运行，若为 WinForms/WPF 请在 Windows 环境试跑；记录依赖、启动方式、核心功能入口和可能缺失的文档，最后给出可复现的安装与试跑步骤。"
       }
     }
   }
