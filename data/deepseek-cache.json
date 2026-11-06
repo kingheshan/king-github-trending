@@ -8570,6 +8570,171 @@
         ],
         "agentInstallPrompt": "请克隆 https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio，检查 README、解决方案文件和 Release；确认 .NET SDK 版本后用 dotnet build 构建并运行，若为 WinForms/WPF 请在 Windows 环境试跑；记录依赖、启动方式、核心功能入口和可能缺失的文档，最后给出可复现的安装与试跑步骤。"
       }
+    },
+    "repo:rails/rails": {
+      "type": "repo-insight",
+      "hash": "fc9586eec2fc865c886c3b3d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-06T22:25:29.087Z",
+      "value": {
+        "summaryZh": "Ruby on Rails 是采用 MVC 架构的全栈 Web 框架，奉行“约定优于配置”，内置 Active Record ORM、路由、视图层、后台任务、缓存与 WebSocket 等组件，配合 Hotwire/Turbo 可少写前端代码。新版强化多数据库、Solid Queue/Cache/Cable、Propshaft 与 Kamal 部署，做到开箱即用、快速迭代。它适合初创团队、独立开发者与需要快速交付 CRUD 及 API 服务的后端工程师，也适合想学习成熟工程范式的Ruby 学习者。",
+        "scenarios": [
+          "从零搭建带用户认证、数据库 CRUD 与后台管理的 SaaS 原型或 MVP，用脚手架在数小时内上线可用版本",
+          "为已有业务快速开发 REST/JSON API 后端，配合 Active Record 迁移管理数据库结构与多库读写分离",
+          "用 Hotwire/Turbo 构建服务端渲染的交互式页面，替代重型前端框架，降低团队前后端协作成本"
+        ],
+        "agentInstallPrompt": "请在我的机器上试跑 Ruby on Rails：先确认已安装 Ruby 3.2+ 与 Bundler（缺则用 rbenv 安装），执行 gem install rails 并检查 rails -v；然后在临时目录运行 rails new demo_rails --database=sqlite3 --css=tailwind，进入目录执行 bin/rails db:prepare，用 rails generate scaffold Post title:string body:text 生成示例，再 bin/rails db:migrate；最后后台启动 bin/rails server -p 3000，用 curl 访问 http://localhost:3000/posts 验证返回 200，并把关键命令、版本号与遇到的报错汇总给我。"
+      }
+    },
+    "repo:mpv-player/mpv": {
+      "type": "repo-insight",
+      "hash": "a888f67a60d8c2ba94483a7d",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-06T22:25:36.577Z",
+      "value": {
+        "summaryZh": "mpv 是一款开源的命令行媒体播放器，用 C 编写，解码基于 FFmpeg，渲染基于 GPU，可运行于 Linux、macOS、Windows。它没有图形界面，却能以极低开销实现硬件解码、高质量缩放、字幕与音轨切换、网络流播放，并支持 Lua/JS 脚本、配置文件与 JSON IPC 控制，可深度定制。适合追求轻量与自动化的开发者、HTPC 用户，以及需要嵌入播放内核的软件作者。",
+        "scenarios": [
+          "在无桌面环境的服务器或树莓派上，通过命令行播放本地与网络流媒体，并启用硬件解码以节省 CPU 占用",
+          "作为播放内核嵌入自研播放器或 HTPC 界面，通过 JSON IPC 与 Lua 脚本控制播放进度、字幕、音轨与快捷键",
+          "批量自动化处理素材：脚本调用 mpv 逐条预览视频，做截帧、音轨与字幕校验以及播放性能对比测试"
+        ],
+        "agentInstallPrompt": "请在本机安装并试跑 mpv：先执行 git clone https://github.com/mpv-player/mpv && cd mpv，阅读 README 与 docs 中的构建说明，用 meson 编译（Linux 需先安装 ffmpeg、libplacebo、mesa、xorg 等依赖；macOS 可直接 brew install mpv 或按文档自行编译）。完成后运行 ./build/mpv --version 确认版本，再用 ./build/mpv --no-config --vo=null --ao=null 播放一个本地视频与一个 https 网络流，验证解码是否正常。最后输出完整依赖清单、实际执行的编译命令、验证结果与遇到的问题。"
+      }
+    },
+    "repo:react/react": {
+      "type": "repo-insight",
+      "hash": "62908b5278dbb0fc9a473858",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-06T22:25:41.651Z",
+      "value": {
+        "summaryZh": "React 是用于构建 Web 与原生用户界面的声明式 JavaScript 库，以组件化和单向数据流为核心，借助虚拟 DOM 与并发渲染实现高效更新。它提供 Hooks、服务端组件、Suspense、过渡动画等现代能力，可与 Next.js、React Native 及庞大生态配合，社区活跃、文档完善、长期维护稳定。适合前端开发者、全栈工程师、跨端应用团队，以及需要构建复杂交互界面的产品研发者作为基础技术选型。",
+        "scenarios": [
+          "构建中后台管理系统中复杂的表单、数据表格与状态联动交互界面",
+          "使用 React Native 复用组件化开发思路，同时交付 iOS 与 Android 跨端应用",
+          "配合 Next.js 与服务端组件搭建 SEO 友好的服务端渲染站点或内容型产品"
+        ],
+        "agentInstallPrompt": "请在我的工作区创建一个最小 React 试跑项目：执行 npm create vite@latest react-demo -- --template react，进入目录后安装依赖并启动开发服务器；然后把 src/App.jsx 改写成计数器组件，用 useState 管理计数、用 useEffect 在挂载和计数变化时输出日志，并在页面上展示当前 React 版本号；最后执行 npm run build 确认构建通过，向我汇报本地访问地址、构建产物路径和可能出现的报错及修复方式。"
+      }
+    },
+    "repo:angular/angular": {
+      "type": "repo-insight",
+      "hash": "e5b8a8803d861551ec314588",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-06T22:25:47.147Z",
+      "value": {
+        "summaryZh": "Angular 是 Google 维护的 TypeScript 前端框架，用于构建可扩展的单页 Web 应用。它提供组件化开发、依赖注入、路由、表单、HTTP、SSR 与 hydration、信号响应式以及完整测试工具链，并通过 Angular CLI 统一完成生成、构建和升级。适合中大型企业团队、长期维护项目和需要强工程规范的开发者高质量交付应用。",
+        "scenarios": [
+          "企业级后台管理系统与数据看板的前端开发",
+          "需要路由、表单、权限和国际化的单页应用",
+          "使用 TypeScript 与 CLI 进行长期维护和团队协作的 Web 产品"
+        ],
+        "agentInstallPrompt": "请在当前空目录使用 Angular CLI 创建并试跑一个 Angular 应用：先确认 Node.js 与 npm 版本满足官方要求，然后执行 npx @angular/cli@latest new angular-demo --style=css --routing=true --ssr=false，进入项目目录运行 npm start，打开本地地址检查首页是否正常渲染；再生成一个组件并接入路由，最后运行 npm test -- --watch=false 与 npm run build 验证测试和构建通过。若命令因版本或网络失败，请说明原因并给出可执行的修复步骤。"
+      }
+    },
+    "repo:symfony/symfony": {
+      "type": "repo-insight",
+      "hash": "e108531f8bc31da53560f36f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-06T22:25:52.295Z",
+      "value": {
+        "summaryZh": "Symfony 是成熟的 PHP 全栈 Web 框架与可复用组件库，用于构建 Web 应用、API、微服务和命令行工具。它提供依赖注入、路由、表单、安全、缓存、事件调度等模块，组件可单独使用，也被 Laravel、Drupal 等广泛采用。版本遵循长期支持策略，文档完善、生态稳定，适合中大型团队和需要可维护架构的 PHP 开发者。",
+        "scenarios": [
+          "构建企业级后台管理系统，以及需要多角色权限和复杂表单的 Web 应用",
+          "开发 REST 或 GraphQL API 与微服务，按需复用组件组装业务架构",
+          "为现有 PHP 项目引入依赖注入、事件调度、缓存或消息队列等独立组件"
+        ],
+        "agentInstallPrompt": "在本机创建一个 Symfony 试跑项目：先确认已安装 PHP 8.2 及以上版本和 Composer，执行 composer create-project symfony/skeleton my-app，进入 my-app 后执行 composer require webapp，用 php -S localhost:8000 -t public 启动本地服务，访问首页确认欢迎页正常，再新增一个 /hello/{name} 路由并返回简单文本，最后汇报 PHP 与 Composer 版本、启动命令和验证结果。"
+      }
+    },
+    "repo:prometheus/prometheus": {
+      "type": "repo-insight",
+      "hash": "52c021c434245be62ef66e69",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-06T22:25:57.420Z",
+      "value": {
+        "summaryZh": "Prometheus 是云原生监控系统与时序数据库的核心项目，使用 Go 编写。它采用拉取（pull）模式采集指标，内置多维标签数据模型与 PromQL 查询语言，支持服务发现、告警规则、本地时序存储和远程写入，并与 Grafana、Alertmanager、Kubernetes 生态深度集成。作为 CNCF 毕业项目，它已成为指标监控的事实标准。适合 SRE、运维与平台工程师，以及需要自建可观测性体系的开发团队。",
+        "scenarios": [
+          "为 Kubernetes 集群和微服务采集 CPU、内存、请求延迟、错误率等指标，搭建统一监控大盘与告警链路。",
+          "使用 PromQL 对时序数据做多维下钻、聚合分析与容量趋势预测，快速定位性能瓶颈和异常波动。",
+          "作为自建可观测性平台的数据底座，配合各类 Exporter、Grafana 可视化与 Alertmanager 告警分发组合使用。"
+        ],
+        "agentInstallPrompt": "请帮我试用 prometheus/prometheus：先克隆仓库 https://github.com/prometheus/prometheus，确认本机已安装 Go 1.21 及以上版本，然后在仓库根目录执行 make build 或 go build ./cmd/prometheus 生成二进制文件。接着用仓库自带的 prometheus.yml 配置启动本地实例（监听 9090 端口），访问 http://localhost:9090 验证 Web UI 可打开，并在 Graph 页面执行一次 up 查询确认能抓到自身指标。最后简要说明默认配置的抓取目标、数据存储路径，以及如何添加一个新的 scrape job。"
+      }
+    },
+    "repo:lz4/lz4": {
+      "type": "repo-insight",
+      "hash": "26ebdb852656d33365e53bcb",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-06T22:26:02.467Z",
+      "value": {
+        "summaryZh": "lz4/lz4 是极快无损压缩算法的官方实现，以超高吞吐和低延迟著称，提供 C 库及 lz4 命令行工具，支持流式与帧格式，解压速度尤其突出。它适合需要高速日志、缓存、传输或存储压缩的开发者，也适合嵌入式、数据库和备份系统集成；接口简洁、跨平台，便于快速嵌入现有 C/C++ 项目。",
+        "scenarios": [
+          "为日志采集与传输链路增加低 CPU 开销的实时压缩，降低带宽和存储占用。",
+          "在数据库、缓存或消息队列中压缩大块数据，减少 I/O 并保持低延迟。",
+          "为备份、容器镜像或嵌入式固件打包流程集成高速无损压缩与解压。"
+        ],
+        "agentInstallPrompt": "请在当前环境中试跑 lz4/lz4：克隆 https://github.com/lz4/lz4.git，进入目录后执行 make 构建，并运行 make check 验证；用 lz4 命令压缩与解压一个示例文件，确认压缩比和耗时，同时给出在 C 项目中链接 liblz4 的最小示例与注意事项。"
+      }
+    },
+    "repo:nushell/nushell": {
+      "type": "repo-insight",
+      "hash": "e4c7801b6a156d90d0ee67e2",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-06T22:26:07.694Z",
+      "value": {
+        "summaryZh": "Nushell 是用 Rust 编写的跨平台新型 Shell，把命令输出统一为结构化表格而非纯文本，支持管道筛选、排序、聚合与格式转换，兼具交互补全、类型检查和脚本能力。它兼容常见系统命令，也可替代 Bash/Zsh/PowerShell 处理数据密集型任务。适合开发者、运维和数据工程师提升命令行效率与可读性。",
+        "scenarios": [
+          "将 JSON、CSV、YAML 等数据在终端中直接筛选、排序和聚合，快速完成探索性分析",
+          "在 macOS、Linux、Windows 上统一日常 Shell 操作与脚本编写，减少跨平台差异",
+          "作为 Bash、Zsh、PowerShell 的补充，构建可读性更高的运维自动化与数据处理流水线"
+        ],
+        "agentInstallPrompt": "请帮我安装并试跑 Nushell：先根据当前操作系统选择官方安装方式（macOS 用 Homebrew，Linux 用包管理器或官方安装脚本，Windows 用 winget），安装后运行 nu --version 验证；然后启动 nu，执行 ls | where size > 1kb | sort-by modified 展示结构化管道，并创建一个简单 .nu 脚本读取 JSON 文件、筛选字段并输出表格；最后总结安装步骤、遇到的问题和常用命令示例。"
+      }
+    },
+    "repo:etcd-io/etcd": {
+      "type": "repo-insight",
+      "hash": "c5022180e4e84231014185a2",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-06T22:26:11.887Z",
+      "value": {
+        "summaryZh": "etcd 是用 Go 编写的分布式可靠键值存储，基于 Raft 共识算法保证强一致与高可用，是 Kubernetes 等云原生系统的核心数据底座。它提供键值读写、监听订阅、租约与分布式锁、事务 CAS 等原语，支持集群多节点容错、快照备份与在线成员变更。项目由 CNCF 孵化并毕业，社区成熟、文档完善。适合构建控制平面、服务发现与配置中心的平台工程师，以及需要强一致协调能力的基础架构与 SRE 团队。",
+        "scenarios": [
+          "作为 Kubernetes 集群的唯一数据存储，保存集群状态、对象配置与选主信息",
+          "为微服务提供高可用服务注册发现与动态配置中心，配合监听机制实时推送变更",
+          "利用租约、事务与分布式锁实现选主、任务互斥、限流计数等分布式协调逻辑"
+        ],
+        "agentInstallPrompt": "请在本机搭建并试跑 etcd：1）确认已安装 Go 1.21+，用 git clone https://github.com/etcd-io/etcd 拉取源码，进入目录执行 ./build.sh 或 make build 编译出 bin/etcd 与 bin/etcdctl；2）用 bin/etcd 单节点启动，监听 127.0.0.1:2379；3）用 etcdctl put /foo bar 写入、get /foo 读取、watch /foo 验证监听；4）再尝试用 etcdctl lease grant 60 创建租约并绑定键，验证过期自动删除；5）最后写一个最小 Go 客户端示例（go.etcd.io/etcd/client/v3），演示 Put/Get/Watch 并运行通过，输出每一步命令与结果。"
+      }
+    },
+    "repo:openssl/openssl": {
+      "type": "repo-insight",
+      "hash": "199740add2d9638f9e5c5067",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-06T22:26:18.488Z",
+      "value": {
+        "summaryZh": "OpenSSL 是通用开源 TLS/SSL 与密码学工具包，用 C 实现，包含 libssl、libcrypto 两个核心库和 openssl 命令行工具，覆盖证书签发、密钥管理、对称与非对称加密、哈希、安全随机数及 TLS 1.3 握手等能力，是互联网加密通信领域事实上的标准基础库。项目跨平台、社区与文档成熟，被大量 Web 服务器、语言运行时和嵌入式设备依赖。适合后端与安全工程师、运维人员、系统及嵌入式开发者，以及需要自建 CA、调试握手或加固传输层协议的团队。",
+        "scenarios": [
+          "为 Web 服务、数据库或消息中间件配置 TLS 证书与 TLS 1.3 握手，排查握手失败、证书链不完整、协议版本或加密套件不兼容等问题。",
+          "使用 openssl 命令行自建 CA，签发与校验证书、生成 CSR、在 PEM/DER/PKCS#12 之间转换格式，并做密钥与证书的合规检查。",
+          "在 C/C++ 应用中集成 libcrypto，实现对称加密、签名验签、摘要哈希、安全随机数与密钥派生，替换不安全的自研加密代码。"
+        ],
+        "agentInstallPrompt": "请在本地克隆并构建 openssl/openssl 以验证可用性：执行 git clone https://github.com/openssl/openssl.git && cd openssl，切到最新的稳定分支标签（如 openssl-3.x 系列），运行 ./Configure 并 make -j$(nproc)，随后 make test 确认自测通过。然后执行 ./apps/openssl version -a 与 ./apps/openssl list -cipher-algorithms 验证构建产物。接着做一次最小试跑：用 openssl req -x509 -newkey rsa:2048 -nodes 生成自签名证书与私钥，启动 ./apps/openssl s_server -accept 4433 -cert -key 并在另一终端用 s_client 完成一次 TLS 1.3 握手，最后输出构建摘要、测试结果与握手协议版本。若缺少 perl、make、gcc 等依赖请先提示我安装，不要修改系统已装的 OpenSSL。"
+      }
+    },
+    "repo:astral-sh/ruff": {
+      "type": "repo-insight",
+      "hash": "ef9933211416a99362997715",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-06T22:26:23.459Z",
+      "value": {
+        "summaryZh": "Ruff 是用 Rust 编写的高性能 Python linter 和代码格式化工具，兼容 Flake8、Black 等常用规则与风格，单文件即可替代多种工具，运行速度极快，支持 pyproject.toml 配置、自动修复和编辑器/CI 集成。适合 Python 开发者、团队及大型代码库做静态检查与统一格式。",
+        "scenarios": [
+          "在本地开发或 CI 中替代 Flake8、isort、Black 等工具，统一执行 Python 代码检查与格式化。",
+          "为大型 Python 单体或多包仓库提供快速全量 lint、增量检查和 pre-commit 校验，降低等待时间。",
+          "在编辑器中配置保存时自动修复与格式化，帮助团队统一代码风格并减少评审中的格式噪音。"
+        ],
+        "agentInstallPrompt": "请在当前 Python 项目中安装并试跑 Ruff：优先使用 uv 或 pip 安装 ruff，检查 pyproject.toml 是否已有 tool.ruff 配置；运行 ruff check . 和 ruff format --check . 查看问题，再用 ruff check --fix . 与 ruff format . 应用修复；最后汇总修改文件、剩余告警，并给出接入 pre-commit 或 CI 的最小配置建议。"
+      }
     }
   }
 }
