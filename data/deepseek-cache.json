@@ -2148,17 +2148,17 @@
     },
     "repo:stablyai/orca": {
       "type": "repo-insight",
-      "hash": "4a57ae5ad5c5b64e5ad045bd",
+      "hash": "21f9f347f8223da3fcf380ec",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-11-04T22:16:29.012Z",
+      "generatedAt": "2026-11-07T22:52:32.379Z",
       "value": {
-        "summaryZh": "Orca 是面向“编码智能体舰队”的编排工作台：把 Claude Code、Codex 等代理集中到同一界面，用你自己的订阅启动、并行管理和切换任务，并覆盖桌面端、移动端与远程运行时。亮点是跨设备统一调度、无需更换模型账号，适合需要同时跑多个代理的独立开发者、小团队和远程协作场景，也便于观察任务进度与结果。",
+        "summaryZh": "Orca 是一个用 TypeScript 构建的多编码代理编排工具，让你用自己的 Claude Code、Codex 等订阅，同时运行和管理一支代理舰队，并覆盖桌面端、移动端与远程运行时。它把任务分发、会话调度和远程执行集中到统一入口，减少多代理并行开发时的切换成本。适合已订阅编码代理、需要批量处理开发任务或搭建远程协作工作流的个人开发者与小团队。",
         "scenarios": [
-          "同时运行多个 Claude Code 或 Codex 任务，例如修 Bug、补测试和重构，在一个面板中跟踪进度与输出。",
-          "在远程开发机或服务器上托管代理运行时，用桌面端或手机查看任务状态并接管执行。",
-          "团队使用自有订阅接入不同编码代理，并行探索方案、对比结果，减少账号切换和工具碎片化。"
+          "并行处理多个仓库的 issue、PR 和测试任务：把修复、补测、文档更新分发给多个 Claude Code/Codex 会话，在统一界面查看进度与结果。",
+          "移动端远程指挥：外出时通过手机查看桌面端或远程 runtime 上的代理状态，追加指令、审批操作或调整任务优先级。",
+          "团队复用自有订阅：成员用各自订阅接入 Orca，集中管理任务队列与运行环境，减少重复购买席位和工具切换。"
         ],
-        "agentInstallPrompt": "请帮我试跑 GitHub 项目 stablyai/orca（TypeScript）。先克隆仓库并阅读 README、package.json 和配置文件，确认启动方式；使用合适的包管理器安装依赖，启动开发环境并验证桌面端或网页端能否打开。若需要外部服务或登录，先列出所需环境变量和步骤，不要写入真实密钥；最后汇总安装命令、运行结果、遇到的问题和后续建议。"
+        "agentInstallPrompt": "请帮我本地试跑 GitHub 项目 stablyai/orca。先克隆仓库并阅读 README、package.json、锁文件与配置示例，确认 Node/pnpm 版本、桌面端依赖及是否需要远程 runtime；然后在隔离环境中安装依赖并启动开发模式或桌面端，记录实际启动命令、必需环境变量（如订阅登录、远程运行时配置）和遇到的报错。执行全局安装或修改系统配置前先询问我，不要提交代码，最后给出安装步骤、验证结果和后续使用建议。"
       }
     },
     "repo:asgeirtj/system_prompts_leaks": {
@@ -8734,6 +8734,36 @@
           "在编辑器中配置保存时自动修复与格式化，帮助团队统一代码风格并减少评审中的格式噪音。"
         ],
         "agentInstallPrompt": "请在当前 Python 项目中安装并试跑 Ruff：优先使用 uv 或 pip 安装 ruff，检查 pyproject.toml 是否已有 tool.ruff 配置；运行 ruff check . 和 ruff format --check . 查看问题，再用 ruff check --fix . 与 ruff format . 应用修复；最后汇总修改文件、剩余告警，并给出接入 pre-commit 或 CI 的最小配置建议。"
+      }
+    },
+    "repo:meta/astryx": {
+      "type": "repo-insight",
+      "hash": "b3c73060eb5b3cb0e0695118",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-07T22:04:05.885Z",
+      "value": {
+        "summaryZh": "Astryx 是 Meta 开源的 TypeScript 设计系统，主打完全可定制与面向 AI Agent 就绪。它提供可复用的组件、设计令牌和主题能力，帮助团队统一多产品界面，并让编码代理在明确约束下生成更一致的代码。适合前端团队、设计系统维护者，以及希望在 Agent 工作流中落地组件规范与界面标准的项目。",
+        "scenarios": [
+          "为多产品线搭建统一且可换肤的 TypeScript 前端组件库",
+          "把设计令牌与组件约束接入 AI coding agent，规范生成界面代码",
+          "评估或二次开发 Meta 开源设计系统，快速搭建内部工具原型"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/meta/astryx，阅读 README、包管理与构建配置，安装依赖并启动官方示例或开发预览（若存在）；运行类型检查和测试，列出可用组件、主题定制入口与关键目录。随后用 Astryx 创建一个最小页面验证安装，最后总结执行过的命令、改动文件和遇到的问题。"
+      }
+    },
+    "repo:dsx-ai-factory/nvke": {
+      "type": "repo-insight",
+      "hash": "f98982ef26e7a951a8beef20",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-07T22:52:24.989Z",
+      "value": {
+        "summaryZh": "NVKE（NVIDIA Kubernetes Engine）是一个用 Go 编写的裸金属 GPU Kubernetes 管理平面，目标是在自有服务器上统一管理 GPU 节点与集群，降低 NVIDIA GPU 集群的部署和运维门槛。它适合自建 GPU 算力平台的平台工程、SRE 和 AI 基础设施团队，用于评估裸金属 GPU 集群管理方案；仓库信息较精简，建议先读 README 与示例确认成熟度。",
+        "scenarios": [
+          "在自有裸金属服务器上搭建 GPU Kubernetes 集群，统一纳管 GPU 节点与集群生命周期。",
+          "为 AI 训练或推理平台准备底层 GPU 算力环境，评估 NVKE 与 NVIDIA 软件栈的集成方式。",
+          "平台团队开展 PoC：克隆仓库、阅读文档、构建 Go 服务并在测试集群验证管理面功能。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/dsx-ai-factory/nvke ，先阅读 README、docs 和示例，确认 Go 版本、依赖、构建方式以及裸金属 GPU 环境的前置条件（NVIDIA 驱动、容器运行时、kubectl 测试集群等）。请梳理项目架构与启动步骤，在本地或隔离测试环境执行 go build ./... 和 go test ./...；如仓库提供 Makefile 或部署清单，按文档进行最小化试跑。不要操作生产集群，最后输出执行过的命令、结果、失败原因与后续验证建议。"
       }
     }
   }
