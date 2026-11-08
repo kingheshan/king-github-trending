@@ -8765,6 +8765,51 @@
         ],
         "agentInstallPrompt": "请克隆 https://github.com/dsx-ai-factory/nvke ，先阅读 README、docs 和示例，确认 Go 版本、依赖、构建方式以及裸金属 GPU 环境的前置条件（NVIDIA 驱动、容器运行时、kubectl 测试集群等）。请梳理项目架构与启动步骤，在本地或隔离测试环境执行 go build ./... 和 go test ./...；如仓库提供 Makefile 或部署清单，按文档进行最小化试跑。不要操作生产集群，最后输出执行过的命令、结果、失败原因与后续验证建议。"
       }
+    },
+    "repo:sherlock-project/sherlock": {
+      "type": "repo-insight",
+      "hash": "8349790c5cf24dadbca3c4af",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-08T22:08:54.635Z",
+      "value": {
+        "summaryZh": "Sherlock 是一个用 Python 编写的开源用户名侦查工具，可在数百个社交网络与网站中批量检索同一用户名，快速判断目标账号是否存在。它支持命令行调用、结果导出与自定义站点列表，安装轻量、无需 API Key，适合安全研究人员、OSINT 分析师、渗透测试人员及需要做账号归属核验的开发者。使用时请遵守平台条款与隐私法规。",
+        "scenarios": [
+          "OSINT 调查：根据公开用户名批量核查其在 GitHub、Reddit、Twitter 等平台的账号存在情况，辅助信息关联分析。",
+          "品牌与账号保护：检查品牌名或昵称是否被他人注册到多个社交平台，及时发现仿冒账号与抢注风险。",
+          "安全评估与教学演示：在授权范围内演示用户名枚举原理，帮助团队理解数字足迹与隐私暴露风险。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/sherlock-project/sherlock 到本地，使用 Python 3 创建虚拟环境并安装依赖，运行 sherlock --help 验证安装；然后用用户名 johndoe 试跑 sherlock johndoe --site GitHub --timeout 10，将结果保存到 result.txt，并汇报安装问题、可用参数和合规注意事项。"
+      }
+    },
+    "repo:anthropics/claude-quickstarts": {
+      "type": "repo-insight",
+      "hash": "393a803861bef4dddefebda2",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-08T22:09:05.345Z",
+      "value": {
+        "summaryZh": "Anthropic 官方维护的 Claude API 快速入门示例合集，包含客服代理、金融数据分析、计算机使用、浏览器操作等多个可部署项目，演示工具调用、多轮对话、视觉理解与代理工作流等核心能力。代码结构清晰，附带环境配置和运行说明，适合想基于 Claude 构建生产级应用的 Python 与全栈开发者，也可作为技术选型和原型验证的参考模板。",
+        "scenarios": [
+          "快速搭建 Claude 客服代理或知识库问答原型，验证多轮对话、工具调用与外部系统集成。",
+          "学习并复现计算机使用、浏览器自动化等 Agent 工作流，用于内部流程自动化可行性评估。",
+          "作为企业 AI 应用选型与部署模板，改造金融数据分析、文档处理等业务场景。"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/anthropics/claude-quickstarts，先阅读 README 并选择一个适合的示例（如 computer-use-demo 或 financial-data-analyst），创建 Python 虚拟环境、安装依赖并配置 ANTHROPIC_API_KEY，然后按项目说明启动最小可运行示例，验证 Claude API 连通性，最后总结目录结构、关键依赖、启动命令和可复用模块。"
+      }
+    },
+    "repo:OpenMontageInc/OpenMontage": {
+      "type": "repo-insight",
+      "hash": "a922cb9f4a4ad8c6e6b68367",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-08T22:25:42.296Z",
+      "value": {
+        "summaryZh": "OpenMontage 是面向 AI 编程助手的开源智能视频制作系统，内置 12 条制作流水线、100 多个工具及 700 多份 agent 技能与制作知识文件，可将编码助手扩展为完整视频工作室。它强调代理化编排，覆盖脚本、素材、剪辑与输出等环节，适合内容创作者、视频团队和希望用 AI 自动化视频生产的开发者快速试验与二次开发。",
+        "scenarios": [
+          "自媒体团队用 AI 助手批量生成短视频初稿与多平台版本",
+          "企业市场部将产品资料转为脚本、分镜和成片",
+          "开发者基于现有流水线与技能文件定制垂直视频生产 agent"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/OpenMontageInc/OpenMontage ，阅读 README 和依赖配置，创建 Python 虚拟环境并安装依赖；检查 12 条流水线与示例入口，选择最小示例试跑，记录所需 API key、外部工具和失败原因，最后给出可复现的安装步骤与试跑结果。"
+      }
     }
   }
 }
