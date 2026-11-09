@@ -873,17 +873,17 @@
     },
     "repo:ZhuLinsen/daily_stock_analysis": {
       "type": "repo-insight",
-      "hash": "159f16ab8fd5511f34796da3",
+      "hash": "e4a8d0c61e21b6f86f1da862",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-19T22:06:09.429Z",
+      "generatedAt": "2026-11-09T22:31:56.970Z",
       "value": {
-        "summaryZh": "这是一个基于大语言模型（LLM）的多市场股票智能分析系统。它整合了多源行情数据、实时新闻和决策看板，并支持自动推送通知。亮点在于零成本定时运行，适合个人投资者快速获取市场洞察。项目使用Python实现，通过LLM对股票数据进行智能解读和趋势分析，帮助用户做出更明智的投资决策。适合有一定编程基础的股票投资者或量化分析爱好者。",
+        "summaryZh": "该项目是 LLM 驱动的多市场股票智能分析系统，用 Python 编写。它聚合多源行情数据与实时新闻，借助大模型生成个股与大盘解读，并提供可视化决策看板、定时任务与自动推送（邮件、IM 等）。核心亮点是零成本定时运行，可部署在 GitHub Actions 或轻量服务器上，配置灵活、开箱即用。适合个人投资者、量化与 AI 投研爱好者、需要每日盘后简报的投顾及内容创作者，也适合作为 LLM 金融分析应用的二次开发原型。",
         "scenarios": [
-          "每日开盘前自动获取多市场行情数据，结合新闻进行智能分析并生成投资摘要推送到用户终端。",
-          "在个人服务器或云函数上定时执行，无需付费API，实现持续监控指定股票池并输出分析报告。",
-          "作为量化策略的辅助工具，通过LLM解读技术指标和新闻情绪，辅助人工决策或触发自动化交易信号。"
+          "个人投资者每日盘后自动生成持仓与自选股的 AI 分析简报，并推送到邮箱或即时通讯工具",
+          "量化/AI 爱好者以低成本在 GitHub Actions 上跑通多市场行情聚合与 LLM 解读流水线，作为策略研究原型",
+          "金融内容创作者或投研团队快速搭建可视化决策看板，汇总行情、新闻与模型观点用于选题与内部晨会"
         ],
-        "agentInstallPrompt": "克隆仓库并安装依赖：git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis && pip install -r requirements.txt。配置环境变量（如API密钥、股票名单等），编辑config.py或.env文件。运行主程序：python main.py。如需定时执行，可设置cron或使用GitHub Actions的workflow文件。注意免费API可能有请求限制，请合理设置频率。"
+        "agentInstallPrompt": "请帮我在本地跑通 ZhuLinsen/daily_stock_analysis 这个项目：1）克隆仓库并阅读 README，确认 Python 版本要求，用 venv 创建虚拟环境并安装依赖；2）梳理需要配置的环境变量/配置文件（行情数据源、LLM API Key、推送渠道等），生成一份 .env.example 说明每一项用途，并提示哪些可以留空；3）先用最小配置（自选少量股票、不开启推送）跑一次单次分析任务，验证数据抓取与 LLM 调用链路是否正常；4）若报错，逐步定位并修复依赖或配置问题，把改动记录在 NOTES.md；5）最后给出如何开启定时运行（如 GitHub Actions 或 cron）与推送通知的简要步骤说明。全程不要提交任何真实密钥。"
       }
     },
     "repo:sickn33/antigravity-awesome-skills": {
@@ -8033,17 +8033,17 @@
     },
     "repo:storytold/photocraft": {
       "type": "repo-insight",
-      "hash": "99f16dc3faafc6c10fd04405",
+      "hash": "0e2b56ad3a983071add36222",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-22T22:01:10.800Z",
+      "generatedAt": "2026-11-09T22:32:15.073Z",
       "value": {
-        "summaryZh": "PhotoCraft 是一个从零用纯 Rust 编写的开源照片编辑器，目标是提供不依赖传统 C++ 或 Electron 技术栈的原生图像编辑方案。项目以 Rust 的内存安全和高性能为亮点，适合关注桌面图像处理、Rust GUI 与图形渲染实践的开发者阅读源码、参与贡献；也适合想学习如何从底层搭建编辑器架构的技术人员。功能完整度与平台支持需以仓库文档和实际构建结果为准。",
+        "summaryZh": "PhotoCraft 是一个用纯 Rust 从零编写的开源照片编辑器，目标是在本地提供原生、跨平台的修图体验。项目以 Rust 生态实现图像处理与界面逻辑，强调内存安全、性能与可维护性，代码结构适合研究桌面 GUI、图像管线与编辑器架构。它适合 Rust 开发者、摄影爱好者，以及需要轻量本地编辑工具或二次开发基础的技术团队。",
         "scenarios": [
-          "在本地构建并试用纯 Rust 照片编辑器，评估其启动速度、内存占用与基础修图体验。",
-          "作为 Rust GUI、图像解码/渲染与桌面应用架构的学习样本，阅读模块设计与源码。",
-          "基于仓库进行二次开发或功能扩展，例如加入滤镜、批量处理或自定义导出流程。"
+          "本地照片处理：在桌面端打开照片，完成基础调整与导出，作为轻量修图工具试用。",
+          "Rust 桌面开发学习：阅读其 GUI、图像处理与渲染相关代码，作为从零构建编辑器的参考。",
+          "二次开发与集成：基于项目架构改造界面、扩展滤镜或批处理能力，嵌入自有工作流。"
         ],
-        "agentInstallPrompt": "请在本机试跑 PhotoCraft：先 git clone https://github.com/storytold/photocraft.git 并进入仓库，阅读 README、Cargo.toml 和构建说明，确认所需 Rust 工具链与系统依赖；安装或更新 stable Rust 后执行 cargo build，再根据文档运行可执行文件。若构建失败，请定位缺失依赖或平台限制，给出修复命令；最后汇报构建结果、启动方式、已实现的基础功能与明显问题。"
+        "agentInstallPrompt": "请在当前环境克隆 https://github.com/storytold/photocraft，先阅读 README、Cargo.toml 和构建说明，确认所需 Rust 工具链及系统依赖；安装缺失依赖后执行 cargo build，若构建成功则运行项目并记录启动命令；若失败，请定位原因并给出最小修复建议。不要修改源码，最后汇报环境、命令、结果和可复现步骤。"
       }
     },
     "repo:Renhuai123/ziwei-doushu": {
@@ -8809,6 +8809,37 @@
           "开发者基于现有流水线与技能文件定制垂直视频生产 agent"
         ],
         "agentInstallPrompt": "请在本地克隆 https://github.com/OpenMontageInc/OpenMontage ，阅读 README 和依赖配置，创建 Python 虚拟环境并安装依赖；检查 12 条流水线与示例入口，选择最小示例试跑，记录所需 API key、外部工具和失败原因，最后给出可复现的安装步骤与试跑结果。"
+      }
+    },
+    "repo:google-deepmind/mujoco": {
+      "type": "repo-insight",
+      "hash": "c0df25ac5cb926af23c1077a",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-09T22:15:27.301Z",
+      "value": {
+        "summaryZh": "MuJoCo（Multi-Joint dynamics with Contact）是 DeepMind 维护的开源通用物理仿真引擎，专注于多关节动力学与接触计算，在刚体、关节约束、摩擦与碰撞场景中兼顾速度与数值稳定性。核心用 C++ 编写，提供 Python、C 等官方绑定与 MJCF 模型格式，支持渲染、可视化与并行仿真，采用 Apache 2.0 许可。它适合强化学习与机器人控制研究者、需要设计真机前验证控制算法的仿真工程师，以及生物力学、最优控制方向的教学科研团队。",
+        "scenarios": [
+          "搭建强化学习训练环境：通过 Python 绑定加载 MuJoCo 自带模型（如 humanoid、ant），构造连续控制任务并进行大规模并行采样。",
+          "机器人控制算法验证：用 MJCF 建立多关节机器人模型，在上真机之前测试 MPC、全身控制等算法在接触、摩擦与碰撞下的稳定性。",
+          "教学与科研复现：重现经典 benchmark，或使用 mujoco.viewer 交互式检查模型结构、接触力与仿真轨迹。"
+        ],
+        "agentInstallPrompt": "请在本机安装并试跑 MuJoCo：1）创建 Python 3.11 虚拟环境，执行 pip install mujoco numpy mediapy；2）运行 python -c 「import mujoco; print(mujoco.__version__)」验证安装成功；3）加载内置或官方示例模型（如 humanoid.xml），执行 1000 步仿真，打印最终 qpos 前几项与接触数量；4）若为无显示器环境，设置 MUJOCO_GL=egl 做离屏渲染并保存一张 PNG；5）汇报版本号、依赖冲突、单步耗时，并把可复现命令整理进 README。"
+      }
+    },
+    "repo:homeassistant-ai/ha-mcp": {
+      "type": "repo-insight",
+      "hash": "e3d22b4550e6081c24d286fb",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-09T22:32:05.698Z",
+      "value": {
+        "summaryZh": "ha-mcp 是把 Home Assistant 接入 AI 助手的 MCP 服务器，用 Python 实现，向 Claude、ChatGPT 等客户端暴露实体查询、服务调用、自动化与脚本编辑、模板调试等工具，让模型直接读写智能家居配置，不必手动操作界面。亮点在于打通了从设备控制到 YAML 级配置修改的完整链路。适合自建 HA 的重度玩家，以及想把家居自动化交给对话式 AI 的开发者。",
+        "scenarios": [
+          "用一句话让 Claude 查出客厅所有传感器状态，并批量调用服务调整灯光和温度，省去在 HA 界面逐项点击。",
+          "在对话里创建或修改自动化与脚本，由 AI 校验 YAML、解释报错原因，明显缩短调试时间。",
+          "排查家庭自动化故障：读取日志与实体历史，定位某个自动化为什么没有触发。",
+          "把日常家居控制接入自建的 AI 助手或本地 Agent，做成自己的语音或聊天控制入口。"
+        ],
+        "agentInstallPrompt": "请在本机安装并试跑 homeassistant-ai/ha-mcp：先 git clone 该仓库，阅读 README 与 pyproject.toml，确认运行方式（是否用 uv/uvx 启动）和所需环境变量；用 uv 创建虚拟环境并安装依赖。然后准备 Home Assistant 实例地址和长期访问令牌（在 HA 个人资料页底部创建），通过环境变量传入，变量名以 README 为准。启动 MCP 服务器，确认进程无报错并能列出可用工具；若以 stdio 方式运行，请给出 Claude Desktop 或 Claude Code 的 MCP 配置片段。最后做一次连通性测试（例如查询实体列表或某个实体状态），并用简短报告说明加载的工具数量、测试结果和遇到的问题。"
       }
     }
   }
