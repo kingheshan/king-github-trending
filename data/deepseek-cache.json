@@ -588,17 +588,17 @@
     },
     "repo:Alishahryar1/free-claude-code": {
       "type": "repo-insight",
-      "hash": "e2a6678c49c870377f26245a",
+      "hash": "a2c3f7bbd1836fe308982873",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-12T22:00:34.964Z",
+      "generatedAt": "2026-11-12T22:43:17.934Z",
       "value": {
-        "summaryZh": "free-claude-code 是一个用 Python 写的多 harness、多模型统一接入层，把 Claude Code、Codex、VSCode、Pi、OpenCode 等十余种终端、IDE、手机与浏览器客户端接到同一套免费额度来源上，宣称可提供 13 亿以上免费 token，并支持原生浏览器会话与语音交互，强调对服务条款友好。它适合想零成本体验多种 AI 编程工具的个人开发者、学生，以及需要做多模型横向对比的小团队；但免费额度的稳定性、限速与合规边界需自行验证。",
+        "summaryZh": "free-claude-code 是 Python 编写的 harness 统一接入层，把 Claude Code、Codex、Antigravity、VSCode、Pi、OpenCode 等十余种编码代理聚合到同一入口，宣称可用 1.3B+ 免费 token。它支持终端、桌面、IDE、手机与浏览器原生会话，可多模型混用，并带语音交互。适合想低成本横向试用各家编码代理的开发者，以及做多模型对比评测的团队；免费额度依赖上游策略，接入前需自行确认合规与稳定性。",
         "scenarios": [
-          "在个人电脑上一条命令跑通 Claude Code、Codex 等 harness，用免费额度完成日常补全、重构与脚本编写",
-          "在 VSCode 或 IDE 中切换不同 harness 与模型，对同一任务做输出质量与耗时对比评测",
-          "通过浏览器会话或手机端接入，用语音提问让 agent 远程处理仓库里的整理、改错与文档杂活"
+          "个人开发者想零成本体验 Claude Code、Codex 等多家编码代理，用统一 CLI 在终端快速切换并对比输出质量。",
+          "团队做多模型编码效果评测，用同一套 harness 配置接入不同模型，记录任务完成率、延迟与额度消耗。",
+          "外出时在手机或浏览器远程接入家里的开发机，用原生浏览器会话加语音交代改代码、跑测试等任务。"
         ],
-        "agentInstallPrompt": "请在本地帮我安装并试跑 GitHub 项目 Alishahryar1/free-claude-code：先 git clone 到 ~/tools/free-claude-code，通读 README、依赖清单与示例配置；用 Python 3.11 创建独立虚拟环境并按官方文档安装依赖；把所需的 API Key 与环境变量整理成 .env 模板，缺失项先列清单问我再填；随后跑一次最小可用流程，选定一个 harness（例如 Claude Code）完成一次真实问答或代码修改验证；最后汇报执行过的命令、报错与修复方式、免费额度的实际可用情况，以及可能存在的限速和合规风险。"
+        "agentInstallPrompt": "请在本机安装并试跑 GitHub 项目 Alishahryar1/free-claude-code：1) 执行 git clone https://github.com/Alishahryar1/free-claude-code 并进入目录；2) 识别它是 Python 项目，优先用 uv 或 python -m venv 创建隔离环境，按 README 声明的依赖安装；3) 通读 README 与示例配置，列出支持的 harness 清单、各 provider 的鉴权方式与免费额度限制，把所需环境变量写入 .env.example 的本地副本，严禁提交或外泄任何密钥；4) 选一个最小可用 harness 跑通冒烟测试（回答一个问题或修改一个示例文件），记录命令、输出与失败原因；5) 不要修改系统级配置，不要执行 README 之外的未知脚本；6) 最后输出中文报告：安装步骤、验证结果、免费额度实际可用性、ToS 与合规风险点、推荐后续试用路径。"
       }
     },
     "repo:ruvnet/ruflo": {
@@ -2853,17 +2853,17 @@
     },
     "repo:pingdotgg/t3code": {
       "type": "repo-insight",
-      "hash": "4c10109b01d80efe8e40e35f",
+      "hash": "15a131c52c4729336c81b367",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-07-26T22:00:21.557Z",
+      "generatedAt": "2026-11-12T22:43:31.186Z",
       "value": {
-        "summaryZh": "T3Code 是一个基于 T3 Stack（TypeScript、Tailwind CSS、tRPC、Prisma）的在线代码编辑器与快速原型工具。它提供实时预览、AI 辅助编码和一键部署功能，支持 Next.js 全栈开发。适合希望快速验证想法、学习 T3 技术栈或进行团队协作的全栈开发者。亮点在于零配置启动、丰富的模板库和高效的开发体验。",
+        "summaryZh": "t3code 是 pingdotgg 开源的远程控制层，用 TypeScript 编写，把本机运行的 Claude Code、Codex 等编码智能体接入浏览器界面，让你从任意电脑或手机查看会话、下发指令。亮点是自托管、多智能体统一入口、移动端友好，不绑定单一模型厂商。适合常在外却想让家里机器持续跑任务的开发者，以及频繁切换设备的 CLI 重度用户。",
         "scenarios": [
-          "快速搭建 SaaS 应用原型",
-          "学习 T3 Stack 全栈开发",
-          "团队协作进行前端/后端代码编写与调试"
+          "通勤或外出时用手机查看家中工作站上 Claude Code 的实时进度，随时补充需求或中断任务。",
+          "在台式机与笔记本之间无缝接管同一个编码智能体会话，不必重开终端或复制上下文。",
+          "把团队的 Codex、Claude Code 统一接入自托管入口，集中观察多个并行任务的执行状态。"
         ],
-        "agentInstallPrompt": "使用以下命令安装 T3Code 并创建项目：首先全局安装 `npm install -g t3code`，然后运行 `t3code init my-app` 创建一个新项目，接着进入目录 `cd my-app`，执行 `npm install` 安装依赖，最后运行 `npm run dev` 启动开发服务器。打开浏览器访问 http://localhost:3000 即可查看实时预览。"
+        "agentInstallPrompt": "请把 https://github.com/pingdotgg/t3code 克隆到本地，先完整阅读 README、package.json 和 .env.example，确认所需的 Node 与包管理器版本、启动脚本和全部环境变量；然后安装依赖并启动开发服务器，将本机已登录的 Claude Code 或 Codex CLI 接入；接着在浏览器中新建一个会话，下发一条简单指令，确认能看到流式输出并能中断任务；最后输出一份简短报告，写清实际执行的命令、配置项改动、遇到的问题及最小可复现验证步骤。"
       }
     },
     "repo:yorukot/superfile": {
@@ -8840,6 +8840,66 @@
           "把日常家居控制接入自建的 AI 助手或本地 Agent，做成自己的语音或聊天控制入口。"
         ],
         "agentInstallPrompt": "请在本机安装并试跑 homeassistant-ai/ha-mcp：先 git clone 该仓库，阅读 README 与 pyproject.toml，确认运行方式（是否用 uv/uvx 启动）和所需环境变量；用 uv 创建虚拟环境并安装依赖。然后准备 Home Assistant 实例地址和长期访问令牌（在 HA 个人资料页底部创建），通过环境变量传入，变量名以 README 为准。启动 MCP 服务器，确认进程无报错并能列出可用工具；若以 stdio 方式运行，请给出 Claude Desktop 或 Claude Code 的 MCP 配置片段。最后做一次连通性测试（例如查询实体列表或某个实体状态），并用简短报告说明加载的工具数量、测试结果和遇到的问题。"
+      }
+    },
+    "repo:GoogleChrome/modern-web-guidance-src": {
+      "type": "repo-insight",
+      "hash": "20c1018ef93bd014e64fffc4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-12T22:10:08.690Z",
+      "value": {
+        "summaryZh": "该项目是 Chrome 团队维护的 Modern Web Guidance 源码仓库，用 TypeScript 组织面向 AI 编码代理的现代 Web 最佳实践知识，帮助代理及时掌握最新的 HTML、CSS、JavaScript 与浏览器能力。适合前端开发者、技术文档维护者以及构建编码助手或规则库的团队，用来减少过时建议并提升生成代码的现代性与兼容性判断。",
+        "scenarios": [
+          "为 AI 编码代理补充或更新现代 Web 平台最佳实践规则",
+          "前端团队在代码生成、评审和迁移中查询最新浏览器能力与推荐写法",
+          "维护内部编码规范、知识库或 Agent 提示词时参考 Chrome 团队资料"
+        ],
+        "agentInstallPrompt": "请克隆并检查 https://github.com/GoogleChrome/modern-web-guidance-src 仓库：先阅读 README、package.json 和目录结构，确认项目用途与可用脚本；使用仓库声明的包管理器安装依赖，并运行类型检查、构建或测试（若存在）。不要随意改动源码，先总结该仓库如何为 AI 编码代理提供现代 Web 最佳实践、关键数据结构与使用方式，再给出一个最小可行的本地试跑与集成建议。"
+      }
+    },
+    "repo:openai/codex-security": {
+      "type": "repo-insight",
+      "hash": "a8ce9043d943524f7fcc42f0",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-12T22:10:11.849Z",
+      "value": {
+        "summaryZh": "openai/codex-security 是 OpenAI 推出的安全扫描 CLI 与 TypeScript SDK，用于发现、验证并修复代码中的安全漏洞。项目以 TypeScript 实现，可通过 npm 包 @openai/codex-security 安装，提供命令行工具和可编程接口两种使用方式：既能在终端快速对仓库做安全体检，也能把漏洞检测能力嵌入自建平台、CI 流水线或 Agent 工作流中。它强调对漏洞的验证与修复闭环，而非只输出告警列表，适合安全工程师、DevSecOps 团队、平台开发者以及希望在提交前拦截风险的 TypeScript/Node 开发者。",
+        "scenarios": [
+          "在 CI/CD 流水线中接入 CLI，对每次 Pull Request 自动执行漏洞扫描与验证，阻断高风险变更合入。",
+          "安全团队对存量仓库做批量体检，导出漏洞清单并借助修复能力快速生成补丁建议。",
+          "平台开发者通过 TypeScript SDK 把安全检测与修复能力集成进内部研发平台或自建 AI Agent 工作流。"
+        ],
+        "agentInstallPrompt": "请帮我试跑 openai/codex-security：先确认本机 Node.js 与 npm 版本满足要求，然后在临时目录执行 npm install @openai/codex-security，查看该包提供的 CLI 命令与帮助信息，并阅读 README 了解鉴权方式（如需 OpenAI API Key 请提示我配置环境变量）。接着克隆 https://github.com/openai/codex-security 到本地，挑一个示例目录或小型 TypeScript 项目执行一次完整的安全扫描，汇总发现的漏洞、验证结果与修复建议；同时给出一段最小可运行的 TypeScript SDK 调用示例。全程不要修改我的现有仓库，所有操作在临时目录完成，遇到需要付费或联网鉴权的步骤先停下来向我确认。"
+      }
+    },
+    "repo:we-promise/sure": {
+      "type": "repo-insight",
+      "hash": "eec020a1a9a5798f588b26c3",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-12T22:26:29.468Z",
+      "value": {
+        "summaryZh": "Sure 是一款开源、可自托管的个人财务应用，用于集中管理账户、交易、净资产与预算，帮助用户看清现金流和资产变化。项目基于 Ruby on Rails，强调社区共建和人人可用，适合注重隐私、希望自己掌控财务数据，或想替代商业记账服务的个人与家庭，也适合开发者二次开发和部署。",
+        "scenarios": [
+          "个人或家庭自建财务数据中心，统一记录多账户余额、收支和净资产变化。",
+          "注重隐私的用户在自有服务器部署，避免把敏感财务数据交给第三方 SaaS。",
+          "开发者基于 Ruby on Rails 代码库做二次开发、功能扩展或学习开源财务系统架构。"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/we-promise/sure，先阅读 README 和部署文档，确认 Ruby、Rails、PostgreSQL/Redis 等依赖及环境变量；用项目推荐方式（Docker Compose 或本地）启动，初始化数据库并创建管理员账号；运行测试或健康检查，最后告诉我访问地址、默认配置和常见排错步骤。不要修改业务代码，先完成可运行试跑。"
+      }
+    },
+    "repo:zed-industries/zed": {
+      "type": "repo-insight",
+      "hash": "8e553b970c25d54ff28c298c",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-12T22:43:21.585Z",
+      "value": {
+        "summaryZh": "Zed 是由 Atom 与 Tree-sitter 作者打造的高性能、多人协作代码编辑器，使用 Rust 与自研 GPU 渲染框架实现低延迟编辑和流畅大文件处理。它内置 AI 编程、多人实时协作、远程开发与丰富语言支持，启动快、界面简洁，适合追求极致响应速度的开发者、开源团队及需要结对编程的工程组织。",
+        "scenarios": [
+          "团队远程结对编程与实时协作编辑，共享光标、终端和项目上下文。",
+          "个人开发者日常编写 Rust、TypeScript、Python 等代码，追求快速启动与低输入延迟。",
+          "开源项目维护者在本地或远程环境中进行代码审查、重构与 AI 辅助开发。"
+        ],
+        "agentInstallPrompt": "请协助我在本机安装并试跑 zed-industries/zed。先识别操作系统与架构，阅读仓库 README 和构建文档，列出所需依赖；优先使用官方安装方式，若需源码构建则按文档执行并解决依赖问题。完成后启动 Zed，创建一个临时 Rust 或 Markdown 文件验证编辑、保存和基本 AI/协作入口，最后汇报安装步骤、遇到的问题和验证结果。"
       }
     }
   }
