@@ -8901,6 +8901,66 @@
         ],
         "agentInstallPrompt": "请协助我在本机安装并试跑 zed-industries/zed。先识别操作系统与架构，阅读仓库 README 和构建文档，列出所需依赖；优先使用官方安装方式，若需源码构建则按文档执行并解决依赖问题。完成后启动 Zed，创建一个临时 Rust 或 Markdown 文件验证编辑、保存和基本 AI/协作入口，最后汇报安装步骤、遇到的问题和验证结果。"
       }
+    },
+    "repo:backnotprop/plannotator": {
+      "type": "repo-insight",
+      "hash": "ba37e202ebb8e60a9b93bbef",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-13T22:08:24.885Z",
+      "value": {
+        "summaryZh": "Plannotator 是用 TypeScript 构建的开源协作工作台，让开发者始终掌握 AI 编码 agent 的工作状态。它把计划梳理、决策记录、代码标注与评审、团队共享集中到同一个界面，agent 的执行过程因此可视化；亮点是所有批注与意见都能一键回传给 agent，不用在聊天窗口反复复制粘贴，反馈过程中也不会丢失上下文。它适合重度使用 Claude Code、Cursor 等编码代理的个人开发者，以及需要多人评审、留下记录的小团队。",
+        "scenarios": [
+          "让 agent 先产出实现计划，在 Plannotator 里逐条批注和删改，确认后再批准执行，避免错误实现",
+          "agent 提交代码 diff 后，在界面上以行内方式标注问题并一键回传，让 agent 按批注直接返工",
+          "把计划或评审页面分享给同事收集多方意见，合并成一份反馈统一发给 agent，减少反复沟通"
+        ],
+        "agentInstallPrompt": "请帮我试跑 Plannotator：先克隆 https://github.com/backnotprop/plannotator 并阅读 README，确认使用的包管理器和启动脚本，然后安装依赖并在本地启动开发服务，记录访问端口。接着按文档完成与我的编码 agent（如 Claude Code 或 Cursor）的集成配置，说明需要改哪些配置文件。最后用一个小的 TypeScript 示例仓库跑通完整闭环：让 agent 生成实现计划，在 Plannotator 界面中批注修改意见，再一键把反馈回传给 agent 并确认它按批注执行。完成后汇总启动命令、端口、配置项和遇到的所有问题。"
+      }
+    },
+    "repo:tradermonty/claude-trading-skills": {
+      "type": "repo-insight",
+      "hash": "a8d95e49811aef12121bc636",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-13T22:25:15.162Z",
+      "value": {
+        "summaryZh": "该项目为股票投资者与交易员提供一组 Claude Code 技能，覆盖行情分析、技术图表、经济日历、选股筛选器与交易策略开发，以 Python 实现，可把常用投研流程封装成可复用的智能体指令。亮点是把数据获取、指标计算与策略迭代串成自然语言工作流，降低脚本编排成本。适合已使用 Claude Code、希望快速搭建半自动化投研与策略原型的个人交易者、量化爱好者和小型研究团队。",
+        "scenarios": [
+          "盘前复盘：让 Claude Code 汇总指数与个股行情、关键技术指标和当日经济日历，生成结构化交易计划。",
+          "选股筛选：按市值、动量、波动率等条件运行 screener，输出候选清单并附图表与入选理由。",
+          "策略原型：用自然语言描述入场和出场规则，让智能体生成 Python 回测脚本，并迭代参数与风险控制。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/tradermonty/claude-trading-skills ，阅读 README 了解 Claude Code skills 的安装方式，创建 Python 虚拟环境并安装依赖；然后选择一个技能（如技术图表或选股筛选），用示例数据跑通，输出运行命令、依赖问题和一份最小试跑报告。不要接入真实券商，也不要提交任何交易指令。"
+      }
+    },
+    "repo:google/elephant-goldfish-model": {
+      "type": "repo-insight",
+      "hash": "13b991cb4dc133ceebb9ae04",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-13T22:40:47.326Z",
+      "value": {
+        "summaryZh": "Elephant Goldfish Model 是 Google 开源的 Python 插件，用于「让智能体参与软件设计与评审」。它把需求澄清、方案设计、代码与设计评审编排成可复用的 agent 工作流，让多个 AI agent 在同一套结构化模板下产出内容并相互检查，从而减少人工反复沟通的成本。项目以插件形式提供，便于嵌入现有研发流程。适合正在引入 AI 编码助手的研发团队、架构师与 Tech Lead，以及希望沉淀评审规范、快速做方案原型验证的独立开发者。",
+        "scenarios": [
+          "在需求评审前，让 agent 生成结构化设计方案与风险清单，供团队会上讨论",
+          "把现有 PR 或架构文档交给插件中的评审 agent，得到一致性、可维护性方面的改进建议",
+          "为新项目快速搭建「设计—评审—修订」的 agent 流水线，并作为团队规范模板沉淀"
+        ],
+        "agentInstallPrompt": "请帮我试跑 google/elephant-goldfish-model 这个项目：1）克隆 https://github.com/google/elephant-goldfish-model 到本地；2）用 Python 创建独立虚拟环境并安装依赖，优先依据仓库中的 README、pyproject.toml 或 requirements 文件；3）阅读文档，说明它作为「设计与评审插件」的接入方式、支持哪些 agent 角色以及所需的模型或 API 配置；4）不配置真实密钥的前提下，用仓库自带示例或最小自造样例跑一次设计评审流程，把命令、输出摘要和报错贴出来；5）最后给出目录结构解读、可复用的最小工作流示例，以及在我现有项目中接入需要改动的地方。遇到失败请先自行排查依赖版本问题，不要跳过步骤。"
+      }
+    },
+    "repo:lobehub/lobehub": {
+      "type": "repo-insight",
+      "hash": "681af0fc90b3aa4fe92509e3",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-13T22:40:51.915Z",
+      "value": {
+        "summaryZh": "LobeHub 是面向团队的开源 AI 超级代理平台，使用 TypeScript 构建，可将能自主工作的超级代理接入团队日常聊天工具。代理能独立承接任务并持续迭代进化，支持多模型、插件与知识库，适合希望用 AI 提升协作效率的产品、研发与运营团队。",
+        "scenarios": [
+          "团队在 Slack、飞书或钉钉群聊中 @ 超级代理，自动拆解并执行会议纪要、需求整理与跟进提醒等任务。",
+          "研发团队让代理接入代码仓库与文档，自动生成变更说明、排查问题并沉淀团队知识库。",
+          "运营与市场团队用代理批量生成内容、分析数据报表，并按周迭代提示词与工作流。"
+        ],
+        "agentInstallPrompt": "请在本地帮我试跑 lobehub/lobehub：先克隆仓库并阅读 README 与 package.json，确认 Node 与 pnpm 版本；安装依赖并复制 .env.example 为 .env，按注释填写模型 API Key 与数据库配置；启动开发服务，打开本地页面完成初始化，创建一个最小可用代理并验证对话。若遇到依赖或环境错误，请给出具体修复命令和最小改动方案。"
+      }
     }
   }
 }
