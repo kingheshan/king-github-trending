@@ -6785,17 +6785,17 @@
     },
     "repo:dream-num/univer": {
       "type": "repo-insight",
-      "hash": "49dae02a3743e7cc0b82cadc",
+      "hash": "162821a015f9d90cd7a915f2",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-22T22:00:11.140Z",
+      "generatedAt": "2026-11-15T22:15:00.208Z",
       "value": {
-        "summaryZh": "Univer 是 DreamNum 开源的 TypeScript 办公套件运行时，把电子表格、文档、幻灯片、画布、关系型数据表和 PDF 统一进同一套可嵌入框架，内置公式引擎、协同编辑与插件化架构，被称为面向 AI Agent 的 Office Harness。它适合想在 Web 应用中自建类 Excel/Word 能力的前端团队，也适合让智能体直接读写表格与文档的 AI 应用开发者。",
+        "summaryZh": "Univer 是一个基于 TypeScript 的开源办公套件 SDK，将电子表格、文档、演示等编辑能力、公式计算、协同与文件处理封装为可嵌入的组件，帮助开发者在自有产品中快速搭建类似 Excel/Office 的在线编辑体验。其核心亮点是可扩展的插件化架构，支持自定义功能与渲染，并面向 AI Agent 提供操作接口。适合 SaaS 厂商、低代码平台、企业内部系统开发者，以及希望在产品中加入表格协作能力的前端与全栈团队。",
         "scenarios": [
-          "在 SaaS 或内部系统中嵌入在线电子表格，支持公式计算、筛选、协同编辑与数据导入导出",
-          "为 AI Agent 提供可编程的文档与表格运行时，让模型直接生成、修改结构化数据与报表",
-          "在浏览器中构建文档、幻灯片、看板与关系型数据表一体化编辑器，替代重型 Office 控件"
+          "在 SaaS 产品中嵌入在线电子表格，支持公式计算、数据填报与多人在线协同编辑",
+          "为企业内部管理系统（如报表、预算、项目管理）快速集成文档与表格编辑能力",
+          "构建面向 AI Agent 的办公自动化平台，让智能体读写并处理表格与文件数据"
         ],
-        "agentInstallPrompt": "请帮我试跑 Univer：克隆 https://github.com/dream-num/univer，用 pnpm 安装依赖并构建核心包；找到 examples 或 playground 中的表格示例，启动本地开发服务器，确认表格可编辑、公式能正常计算。然后给我一个最小接入示例：在 React + Vite 项目里嵌入 Univer Sheets，加载一份示例数据并演示读写单元格。最后列出关键包名、版本与常见坑。"
+        "agentInstallPrompt": "请在本地克隆并试跑 Univer：1) 执行 git clone https://github.com/dream-num/univer 并进入目录；2) 阅读 README 与 package.json，确认 Node 与 pnpm 版本要求，安装依赖并启动官方示例（如 examples 或 playground 中的 React 示例）；3) 在浏览器打开本地地址，验证表格渲染、公式计算和基础编辑是否正常；4) 用最小代码在一个空白页面中嵌入 Univer 表格组件并成功渲染。请逐步说明每个命令的作用，遇到依赖或构建错误时给出修复方案，最后汇总启动方式与目录结构要点。"
       }
     },
     "repo:davila7/claude-code-templates": {
@@ -8960,6 +8960,96 @@
           "运营与市场团队用代理批量生成内容、分析数据报表，并按周迭代提示词与工作流。"
         ],
         "agentInstallPrompt": "请在本地帮我试跑 lobehub/lobehub：先克隆仓库并阅读 README 与 package.json，确认 Node 与 pnpm 版本；安装依赖并复制 .env.example 为 .env，按注释填写模型 API Key 与数据库配置；启动开发服务，打开本地页面完成初始化，创建一个最小可用代理并验证对话。若遇到依赖或环境错误，请给出具体修复命令和最小改动方案。"
+      }
+    },
+    "repo:ag-ui-protocol/ag-ui": {
+      "type": "repo-insight",
+      "hash": "ef0330496179b688e1159396",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-15T22:15:03.697Z",
+      "value": {
+        "summaryZh": "AG-UI 是面向 Agent 与前端应用交互的开放协议，用统一事件流连接 Agent 后端与 TypeScript/React 前端，覆盖消息、状态、工具调用与实时更新，便于构建可交互的智能体界面。亮点是协议标准化、跨框架集成、流式体验友好。适合 AI 应用前端开发者、Agent 平台与框架作者，以及需要把智能体能力嵌入现有产品的团队。",
+        "scenarios": [
+          "在 React/Next.js 应用中接入不同 Agent 后端，统一处理流式回复、状态同步和工具调用事件。",
+          "为自研 Agent 平台增加标准前端 SDK 与可视化调试面板，降低客户集成成本。",
+          "构建可交互的 AI Copilot，让智能体实时更新界面、展示执行步骤并接收用户操作反馈。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/ag-ui-protocol/ag-ui 并阅读 README 与示例，确认 TypeScript 包管理方式；安装依赖并运行最小示例，验证 Agent 事件能流式传到前端。请记录启动命令、环境变量、示例入口和遇到的错误，最后给出一个可复现的本地试跑步骤。"
+      }
+    },
+    "repo:Tencent/LoopForge": {
+      "type": "repo-insight",
+      "hash": "61f55be056ea5a8891ff2d87",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-15T22:32:34.715Z",
+      "value": {
+        "summaryZh": "LoopForge 是腾讯开源的自托管工作流引擎，用 Go 编写，面向编码智能体的交付编排。它可通过脚本串联 CodeBuddy、Codex 与 Claude Code，并加入人工审批门禁，同时提供面向本地编码助手的 Local 工作流。适合需要把多智能体协作、权限控制与可审计交付流程部署到自有基础设施的研发团队和平台工程师。",
+        "scenarios": [
+          "在自有服务器上编排 CodeBuddy、Codex、Claude Code 等多智能体，完成需求开发、代码审查与合并前审批。",
+          "为本地编码助手搭建可复用的 Local 工作流，统一任务分发、执行记录与人工确认节点。",
+          "企业研发平台集成脚本化交付流水线，在关键步骤设置审批门禁，实现可审计的智能体交付。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/Tencent/LoopForge 到本地，先阅读 README、示例配置和 Go 版本要求，确认依赖后执行 go build ./... 与 go test ./...；再按文档启动一个最小 Local 工作流，串联一个编码助手并设置人工审批节点。请记录启动命令、配置文件位置和验证结果，不要修改业务代码，不要提交任何密钥。"
+      }
+    },
+    "repo:ggml-org/ggml": {
+      "type": "repo-insight",
+      "hash": "b8726f9eda93734bc64ee3ea",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-15T22:32:42.301Z",
+      "value": {
+        "summaryZh": "ggml 是用 C/C++ 编写的轻量级张量库，为机器学习推理提供底层张量运算与内存管理；最大的亮点是原生支持 int4/int5/int8 等量化格式，几乎不依赖第三方库，可在 x86、ARM、Apple Silicon 以及 Metal、CUDA、Vulkan 等后端高效运行。它是 llama.cpp、whisper.cpp 等项目的底层库，适合在端侧和嵌入式设备上做低内存本地推理的开发者，也适合想深入理解量化推理底层实现的学习者。",
+        "scenarios": [
+          "在笔记本、手机、树莓派等端侧设备上量化部署 LLM 或语音识别模型，用极低内存完成本地推理",
+          "为自研推理框架或 AI 应用提供跨平台张量计算后端，一套代码跑通 x86、ARM、Metal、CUDA、Vulkan",
+          "学习与验证 int4/int8 量化、算子实现、内存分配等推理底层细节，作为教学与实验的底层库"
+        ],
+        "agentInstallPrompt": "请帮我在本机安装并试跑 ggml：1) 克隆 https://github.com/ggml-org/ggml 到本地工作目录；2) 检查 cmake（建议 ≥3.14）与 C++ 编译器是否就绪，缺失时提示我安装；3) 用 cmake -B build 配置并 cmake --build build -j 构建，把关键输出贴给我；4) 运行 ctest 或 build/bin 下的测试程序，验证构建成功；5) 写一个最小示例 demo.c，创建两个小矩阵做乘法并打印结果，编译链接 libggml 后运行，确认数值正确；6) 最后给我一份简短说明：如何开启 Metal、CUDA 或 Vulkan 后端，如何关闭测试以加快编译。每条命令请说明作用，遇到报错先分析原因再修复。"
+      }
+    },
+    "repo:elementalsouls/Claude-BugHunter": {
+      "type": "repo-insight",
+      "hash": "63df6877a08c2d2b08ab45be",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-15T22:32:47.604Z",
+      "value": {
+        "summaryZh": "Claude-BugHunter 是面向 Claude Code 的技能包集合，它把漏洞挖掘与外部红队工作拆解为 82 个可复用技能、15 条斜杠命令，并整理了 24 类核心漏洞的 681 条公开披露报告模式，同时附有企业身份与基础设施攻击矩阵。它适合在授权范围内开展工作的安全测试人员、渗透测试学习者和红队工程师，使 Claude 在资产侦察、漏洞假设、复现验证与报告撰写环节都能遵循结构化方法论，减少临场随意发挥。",
+        "scenarios": [
+          "在获得书面授权的众测或 SRC 项目中，用斜杠命令快速梳理目标资产面，并按漏洞类别生成测试清单与验证假设。",
+          "复盘公开披露报告时，对照 681 条报告模式检查自身发现，补全复现步骤、影响范围与修复建议，产出规范的漏洞报告。",
+          "红队演练中参考企业身份与基础设施攻击矩阵，规划权限提升与横向移动的检查项，仅限客户授权的演练环境。"
+        ],
+        "agentInstallPrompt": "请帮我在本地安装并试跑 Claude-BugHunter 这个 Claude Code 技能包：先把 https://github.com/elementalsouls/Claude-BugHunter 克隆到工作区的临时目录，阅读 README 和目录结构，确认 skills、commands 等目录的实际布局与依赖；然后把技能目录复制到 ~/.claude/skills（或当前项目的 .claude/skills），把斜杠命令复制到 ~/.claude/commands，若已存在同名文件则先备份再覆盖；接着运行脚本或静态检查，确认文件完整，并列出已安装的技能名与斜杠命令清单；最后挑选一个偏侦察类的技能做一次离线 dry-run，只校验它能被正确加载与解析，不要对任何真实域名或 IP 发起扫描或请求。过程中请报告每一步的命令、输出和遇到的问题。"
+      }
+    },
+    "repo:NVIDIA/SkillEvaluator": {
+      "type": "repo-insight",
+      "hash": "35421ac62c6738532c842807",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-15T22:32:51.707Z",
+      "value": {
+        "summaryZh": "SkillEvaluator 是 NVIDIA 开源的 AI Agent 技能评估框架，采用分层质量门禁机制，能在技能入库前校验其结构与描述质量，并通过语义重叠检测识别重复或相互冲突的技能。它还支持自动生成合成评测数据集，并对运行中的 Agent 做在线评估，量化技能对 Agent 行为的实际影响。项目采用 Python 实现，适合维护大规模技能库的团队、Agent 平台开发者，以及需要为技能变更做回归验证的工程师。",
+        "scenarios": [
+          "技能市场上架前执行自动化质量门禁与重复技能审核，拦截低质或冲突条目",
+          "为已有 Agent 技能搭建回归评测集，量化技能增删改对 Agent 行为的影响",
+          "团队技能库快速扩张时做语义重叠检测，维护技能体系的边界与一致性"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/NVIDIA/SkillEvaluator ，用 Python 3.10+ 创建并激活虚拟环境，按 README 安装依赖（如 pip install -e . 或 requirements.txt）。装好后运行仓库自带测试或示例（如 pytest）确认环境可用；再构造一个最小技能目录，实际跑一遍质量门禁与语义重叠检测，并尝试生成一份小规模合成评测数据集。最后向我汇总安装步骤、遇到的依赖问题及解决方法、执行过的命令和关键输出，过程中不要改动仓库核心代码。"
+      }
+    },
+    "repo:Vincentwei1021/video-shotcraft": {
+      "type": "repo-insight",
+      "hash": "cf09f20eab02c078c855b76b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-15T22:32:55.526Z",
+      "value": {
+        "summaryZh": "该项目是面向 Claude Code 与 Codex 的 AI 视频技能包，基于 Remotion 生成电影感、可二次编辑的产品宣传片。内置 124 张镜头配方卡与 150 个动效预览，支持节拍同步、声音设计和 Motion Workbench，并可导出剪映（CapCut 中国版）工程。适合用 AI 编码代理做营销视频的开发者、独立创作者和小型品牌团队，快速产出可改可控的短视频。",
+        "scenarios": [
+          "独立开发者用 Claude Code 按镜头配方卡快速生成 App 或 SaaS 产品发布短片，并导出剪映做二次剪辑",
+          "品牌与运营团队为新品上线批量产出多版本竖屏或横屏广告，利用节拍同步对齐背景音乐卡点",
+          "技术内容创作者把开源项目介绍转成带动效与声音设计的产品演示视频，作为 README 或社交平台素材"
+        ],
+        "agentInstallPrompt": "请帮我试跑这个项目：https://github.com/Vincentwei1021/video-shotcraft 。先克隆仓库并阅读 README，确认它是 Claude Code / Codex 的技能包还是可直接运行的 Remotion 工程；然后安装依赖（TypeScript 项目，优先 npm 或 pnpm），检查 package.json 中的脚本并启动 Remotion 预览。接着用内置的 124 张镜头配方卡挑一个产品宣传片模板，替换成一段示例文案与占位素材，生成 10 到 15 秒的短视频，验证节拍同步、声音设计和剪映导出流程。最后把执行的命令、遇到的问题和最小可用改动清单告诉我。"
       }
     }
   }
