@@ -9051,6 +9051,81 @@
         ],
         "agentInstallPrompt": "请帮我试跑这个项目：https://github.com/Vincentwei1021/video-shotcraft 。先克隆仓库并阅读 README，确认它是 Claude Code / Codex 的技能包还是可直接运行的 Remotion 工程；然后安装依赖（TypeScript 项目，优先 npm 或 pnpm），检查 package.json 中的脚本并启动 Remotion 预览。接着用内置的 124 张镜头配方卡挑一个产品宣传片模板，替换成一段示例文案与占位素材，生成 10 到 15 秒的短视频，验证节拍同步、声音设计和剪映导出流程。最后把执行的命令、遇到的问题和最小可用改动清单告诉我。"
       }
+    },
+    "repo:DeanChensj/jiangshan-map": {
+      "type": "repo-insight",
+      "hash": "4293b6a7878c95821195bbad",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-16T22:21:47.027Z",
+      "value": {
+        "summaryZh": "江山时序是一个用 JavaScript 构建的中国历史交互地图时间轴，覆盖公元前403年至今，内置18个朝代、198个疆域快照，并串联古今地名沿革与古典诗词路线。它以可视化方式呈现疆域变迁、地名演化和文学地理，交互直观、信息密度高。适合历史爱好者、教师与学生备课学习，也适合数据可视化与前端开发者参考地图时间轴实现。",
+        "scenarios": [
+          "历史课堂演示朝代疆域变迁与地名沿革",
+          "历史爱好者按时间轴探索古今地点与诗词路线",
+          "前端与可视化开发者参考交互地图和时间轴实现"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/DeanChensj/jiangshan-map ，检查 Node.js 环境，按 README 安装依赖并启动开发服务器；打开页面后验证时间轴、朝代切换、疆域图层、地名沿革和诗词路线是否正常，最后记录运行命令、访问地址与遇到的问题。"
+      }
+    },
+    "repo:google-labs-code/stitch-skills": {
+      "type": "repo-insight",
+      "hash": "37ef9d503644654dd110d3e4",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-16T22:21:51.407Z",
+      "value": {
+        "summaryZh": "stitch-skills 是 Google Labs 推出的 Agent Skills 集合，面向 Stitch MCP 服务器，用 TypeScript 实现。每个技能遵循 Agent Skills 开放标准，可被 Antigravity、Gemini CLI、Claude Code、Cursor 等编码智能体直接加载，把 Stitch 的设计与代码生成能力封装成可复用技能。项目亮点是标准化、跨代理兼容、开箱即用。适合希望把 UI 设计快速落地为代码的开发者、需要扩展编码代理能力的前端团队，以及研究 Agent Skills 生态的技术人员。",
+        "scenarios": [
+          "在 Claude Code 或 Cursor 中安装 Stitch 技能，让代理根据设计描述直接生成前端页面代码。",
+          "用 Gemini CLI 连接 Stitch MCP 服务，快速搭建设计系统或组件库原型。",
+          "团队基于 Agent Skills 开放标准编写自定义技能，统一多款编码代理的 Stitch 工作流。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/google-labs-code/stitch-skills，阅读 README 和各技能目录，确认 Stitch MCP 服务的配置方式；在当前项目中安装一个最基础的 Stitch 技能，完成 MCP 连接与依赖安装，并用一个简单页面需求做试跑，最后输出安装步骤、修改的文件和试跑结果。"
+      }
+    },
+    "repo:google-research/paper-orchestra": {
+      "type": "repo-insight",
+      "hash": "a0eac13e783125d93f799d08",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-16T22:37:42.360Z",
+      "value": {
+        "summaryZh": "PaperOrchestra 是 Google Research 开源的多智能体框架，用 Python 实现，目标是把 AI 研究论文的写作流程自动化：多个角色化 agent 分工协作，依次完成素材梳理、章节撰写与稿件整合。亮点在于把「写论文」拆解成可编排的 agent 流水线，模型可替换、协作策略可调整、研究上下文可复用，并提供了可参考的研究级工程结构。适合从事 AI 科研工具与自动写作的研究者、需要批量产出论文草稿或实验报告的技术团队，以及想学习多智能体编排范式的开发者。",
+        "scenarios": [
+          "研究者搭建自动化论文初稿流水线，快速生成结构完整的章节草稿后再人工精修",
+          "团队把实验记录、方法与结果整理成可复用的 agent 输入，批量产出技术报告或投稿草稿",
+          "开发者以该项目为模板，替换底层大模型与提示词，研究多智能体协作与写作质量评估"
+        ],
+        "agentInstallPrompt": "请在本地克隆并试跑 https://github.com/google-research/paper-orchestra ：先创建 Python 虚拟环境并用 requirements 或 pyproject 安装依赖，然后通读 README 与示例配置，找出运行所需的环境变量与模型 API Key，列出默认入口脚本和最小可运行命令；若仓库提供示例数据，跑一次最小规模的端到端生成，把日志、报错和产出的中间文件路径汇报给我。不要提交任何密钥，遇到缺失文档时先记录假设再继续，不要擅自修改源码逻辑，最后给出安装步骤、依赖版本与常见坑的简要说明。"
+      }
+    },
+    "repo:kajisho5/ffmpeg-skill": {
+      "type": "repo-insight",
+      "hash": "873b59b4ccc57e529885abf7",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-16T22:55:33.347Z",
+      "value": {
+        "summaryZh": "ffmpeg-skill 是面向编程智能体的本地视频编辑工具集，把 FFmpeg 封装成 42 个带有机器可读接口约定的工具，并提供 MCP 服务器，可直接接入 Claude Code、Cursor、Codex。它支持剪切、字幕、改画幅、响度标准化以及各平台导出，全程在本地运行，无需云服务与 API 密钥。适合希望让 AI 代理自动化完成视频处理的开发者、内容创作者与剪辑自动化团队。",
+        "scenarios": [
+          "让 Claude Code 或 Cursor 读取本地素材，按时间码自动剪切片段，并批量导出为竖屏短视频。",
+          "为口播或教程视频自动生成字幕、统一响度，并压制到 B 站、YouTube、抖音等平台规定的规格。",
+          "在没有网络或不便使用云端服务的 CI 与本地环境中，通过 MCP 工具链批量处理视频，免去密钥管理与上传成本。"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/kajisho5/ffmpeg-skill ，用 Python 虚拟环境安装依赖，并确认系统已安装 ffmpeg；然后按仓库的 MCP 配置说明把它接入当前编辑器（Claude Code、Cursor 或 Codex），列出可用的 42 个工具及其参数约定；接着用一个测试视频执行：截取 00:00:10 到 00:00:25 的片段、生成字幕、输出 1080x1920 竖屏版本到 ./out 目录，最后汇报执行过的命令、产物路径和遇到的问题。"
+      }
+    },
+    "repo:QwenLM/qwen-code": {
+      "type": "repo-insight",
+      "hash": "41f12c30aaf6ca24fbd63c1e",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-16T22:55:39.917Z",
+      "value": {
+        "summaryZh": "Qwen Code 是通义千问团队开源、用 TypeScript 编写的终端 AI 编码代理；它驻留在命令行中，能读写代码库、执行命令并完成多步开发任务。它适配 Qwen 系列模型，兼容 OpenAI 风格接口，支持工具调用与大上下文；安装轻量，能与现有终端工作流无缝衔接。它适合习惯命令行的开发者、想低成本接入国产模型的全栈工程师，以及需要在服务器或 CI 环境自动运行编码代理的团队。",
+        "scenarios": [
+          "在本机终端中让代理通读整个仓库，完成跨文件重构、批量重命名与依赖升级，并自动运行测试，验证改动是否正确。",
+          "在无图形界面的开发机或服务器上，通过 SSH 启动代理排查构建失败、分析日志，并直接给出修复补丁。",
+          "接入私有部署的 Qwen 或 OpenAI 兼容模型端点，作为企业内网的低成本编码助手，并用来做脚本与自动化任务。"
+        ],
+        "agentInstallPrompt": "请在本机安装并试跑 QwenLM/qwen-code：先确认 Node.js 版本满足要求（建议 20 及以上）且 npm 可用；然后 git clone https://github.com/QwenLM/qwen-code 并进入目录，按 README 执行依赖安装与构建（如 npm install && npm run build），再把 qwen 命令链接到 PATH 或全局安装。接着配置环境变量 OPENAI_API_KEY、OPENAI_BASE_URL（指向 DashScope 兼容模式或自建端点）与 OPENAI_MODEL（如 qwen3-coder-plus）。完成后运行 qwen --version 验证，并在一个临时 demo 目录中让它读取 README、生成一个 hello world 脚本并执行；最后汇报每一步执行的命令、关键输出与遇到的问题。"
+      }
     }
   }
 }
