@@ -738,17 +738,17 @@
     },
     "repo:JuliusBrussee/caveman": {
       "type": "repo-insight",
-      "hash": "62e1c7ac1efc3a648a3be3b5",
+      "hash": "70510acdb7f9402c27b70ba7",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-15T22:00:47.536Z",
+      "generatedAt": "2026-11-17T22:12:03.488Z",
       "value": {
-        "summaryZh": "caveman 是一个用 Go 编写的「原始人语」压缩层，核心哲学是 why use many token when few token do trick：让编码 agent 用断句式极简表达回答，输出 token 可削减约 65%，直接降低费用与延迟。它同时提供技能（skill）和本地代理（proxy）两种接入方式，可架在现有 agent 工作流前，把冗长解释压成短句，同时保留代码、命令与关键结论。适合重度使用 Claude Code、Cursor 等编码 agent 的开发者、关注 token 成本与响应速度的团队，以及想研究提示压缩、代理拦截与输出规范的工程师。",
+        "summaryZh": "caveman 是 Go 编写的本地代理与技能组合，为编码智能体压缩 token：在请求链路中缩短模型回答和工具输出，降低上下文长度与 API 成本，同时保留可还原的原始内容，避免关键信息丢失。项目轻量、易接入，适合高频使用 Claude Code、Cursor、Cline 等 agent 且关注账单与上下文窗口的开发者。",
         "scenarios": [
-          "在 Claude Code、Cursor 等编码 agent 前挂本地代理，压缩日常问答与代码解释的输出 token，降低 API 账单和等待时间。",
-          "把 caveman 作为团队统一技能，约束 agent 用极简断句汇报改动、报错和 diff 摘要，提升多人协作时的信息密度。",
-          "作为提示压缩与代理拦截的实验样本，对比开启前后 token 消耗、回答准确率与可读性的差异，再决定是否纳入生产流程。"
+          "在 Claude Code、Cline 等编码 agent 前接入本地代理，压缩工具输出和长日志，显著降低 token 消耗。",
+          "调试大型仓库时，让 agent 读取构建日志、测试报告等冗长内容，代理自动缩短，同时可按需还原原文。",
+          "团队统一使用本地 LLM 网关，对多模型调用做可逆压缩，控制 API 成本并保留审计所需原始内容。"
         ],
-        "agentInstallPrompt": "请在本地克隆并试跑 GitHub 仓库 JuliusBrussee/caveman（Go 项目）。步骤：1) 先阅读 README，确认它提供了哪几种接入形态（技能 / 代理）以及推荐用法；2) 检查本机是否已安装 Go（go version），未安装则提示我安装；3) 在仓库目录执行 go build ./... 完成编译，若有依赖缺失先 go mod tidy；4) 按 README 说明启动本地代理服务或安装技能到我的编码 agent 配置中，说明需要我手动确认的步骤；5) 用一条普通编程问题做对比测试：分别在未启用和启用 caveman 的情况下提问，记录输出 token 量、响应耗时与答案可读性，把结果整理成简短表格；6) 最后告诉我如何关闭或卸载它，并指出可能影响代码正确性或可读性的风险点。全程不要修改仓库源码，除构建产物外不要写入其他文件。"
+        "agentInstallPrompt": "请克隆 https://github.com/JuliusBrussee/caveman，阅读 README，确认本机 Go 版本满足要求；按文档构建并启动本地代理，然后把编码 agent 的 API base URL 指向该代理，运行一个小任务验证工具输出被压缩且原始内容可还原；最后汇报启动端口、配置方式、验证结果和注意事项。"
       }
     },
     "repo:koala73/worldmonitor": {
@@ -9125,6 +9125,36 @@
           "接入私有部署的 Qwen 或 OpenAI 兼容模型端点，作为企业内网的低成本编码助手，并用来做脚本与自动化任务。"
         ],
         "agentInstallPrompt": "请在本机安装并试跑 QwenLM/qwen-code：先确认 Node.js 版本满足要求（建议 20 及以上）且 npm 可用；然后 git clone https://github.com/QwenLM/qwen-code 并进入目录，按 README 执行依赖安装与构建（如 npm install && npm run build），再把 qwen 命令链接到 PATH 或全局安装。接着配置环境变量 OPENAI_API_KEY、OPENAI_BASE_URL（指向 DashScope 兼容模式或自建端点）与 OPENAI_MODEL（如 qwen3-coder-plus）。完成后运行 qwen --version 验证，并在一个临时 demo 目录中让它读取 README、生成一个 hello world 脚本并执行；最后汇报每一步执行的命令、关键输出与遇到的问题。"
+      }
+    },
+    "repo:getarcaneapp/arcane": {
+      "type": "repo-insight",
+      "hash": "35e98be77e46fb358602524f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-17T22:11:49.480Z",
+      "value": {
+        "summaryZh": "Arcane 是一款用 Go 编写的现代化 Docker 管理面板，定位为「人人可用的容器管理工具」，被视为 Portainer 的轻量替代品。它提供简洁的 Web 界面，可集中查看容器、镜像、网络、卷与 Compose 堆栈，支持启停、日志、终端与资源监控，部署只需一条 Docker 命令，开箱即用、资源占用低。适合自建 Homelab 的爱好者、需要可视化运维的中小团队，以及想降低 Docker 上手门槛的开发者。",
+        "scenarios": [
+          "在个人 NAS 或 Homelab 上替代 Portainer，用网页统一管理容器、镜像与 Compose 堆栈",
+          "给不熟悉命令行的团队成员提供可视化入口，查看日志、进入终端、重启服务",
+          "把多台 Docker 主机的日常巡检与资源占用监控收敛到一个轻量面板中"
+        ],
+        "agentInstallPrompt": "请帮我本地试跑 getarcaneapp/arcane 这个 Docker 管理面板：先确认本机已安装 Docker 与 docker compose，然后克隆 https://github.com/getarcaneapp/arcane 并阅读 README，按官方推荐方式（优先使用项目提供的 docker compose 或单条 docker run 命令）启动服务，映射到未被占用的端口；启动后用 curl 或浏览器确认 Web 界面可访问，给出访问地址、初始账号密码的获取方式，以及如何添加一台 Docker 主机。过程中如遇端口冲突或权限问题（如需要挂载 /var/run/docker.sock），请说明原因并给出修复步骤，最后总结启停与卸载命令。"
+      }
+    },
+    "repo:sveltejs/svelte": {
+      "type": "repo-insight",
+      "hash": "291a03bf0901a1f63c99678f",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-17T22:11:54.942Z",
+      "value": {
+        "summaryZh": "Svelte 是编译型前端 UI 框架，组件在构建时被编译为高效原生 JavaScript，运行时无需虚拟 DOM，通过响应式赋值和简洁语法减少样板代码。核心亮点是产物体积小、性能好、学习曲线平缓，并可结合 SvelteKit 构建全栈 Web 应用。适合追求性能与开发体验的前端开发者、初创团队，以及希望快速上手现代框架的学习者。",
+        "scenarios": [
+          "构建对首屏体积和运行性能敏感的营销页、后台系统与内容型网站。",
+          "用 SvelteKit 快速搭建包含路由、SSR/SSG 和 API 的全栈 Web 应用。",
+          "在团队内以低样板代码开发可维护的交互组件与设计系统。"
+        ],
+        "agentInstallPrompt": "请在当前工作区用官方脚手架试跑 Svelte：执行 npx sv create svelte-demo，选择 minimal 模板和 JavaScript（或按项目偏好选 TypeScript），进入目录安装依赖并启动开发服务器；随后新增一个计数器组件，验证响应式更新、样式作用域和构建产物，最后汇报启动命令、访问地址与验证结果。"
       }
     }
   }
