@@ -5734,17 +5734,17 @@
     },
     "repo:heygen-com/hyperframes": {
       "type": "repo-insight",
-      "hash": "be9ab4e7d07223a8058e8ffd",
+      "hash": "1b2e52a98184cc70dc4f801d",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-08T22:01:42.464Z",
+      "generatedAt": "2026-11-18T22:01:19.685Z",
       "value": {
-        "summaryZh": "HyperFrames 是一个面向 AI 代理的轻量级工具，它允许代理通过编写 HTML 来生成视频。该项目基于 TypeScript 构建，旨在简化从网页内容到动态视频的转换流程。其核心亮点是让开发者或 AI 系统无需复杂视频编辑知识，仅通过标准的 HTML/CSS/JS 技术栈即可创建动态视觉内容。适合需要自动化生成屏幕录制、演示视频或数据可视化动画的开发者，尤其适合集成到大语言模型代理的工作流中，以实现动态视频输出的自动化。",
+        "summaryZh": "HyperFrames 是 HeyGen 开源的免费 AI 视频编辑器，用自然语言描述即可生成可逐帧编辑的真实视频工程，而非不可修改的成片。它基于 TypeScript 构建，把 AI 生成与时间线编辑结合，支持对画面、图层与关键帧做细粒度调整。适合内容创作者、产品营销团队、独立开发者与需要快速产出并精修视频的团队，也适合研究 AI 视频工作流的前端工程师。",
         "scenarios": [
-          "AI 代理根据用户指令自动生成产品演示或教学视频，通过 HTML 模板实时渲染。",
-          "在数据分析流水线中，将可视化图表以 HTML 片段形式动态合成解说视频。",
-          "为社交媒体自动生成动态广告或宣传短片，利用代码控制动画与交互效果。"
+          "营销团队用一句话生成产品宣传片初稿，再在时间线上逐帧调整字幕、转场与品牌元素，快速交付多版本。",
+          "内容创作者把播客或口播脚本转成可编辑视频工程，精细修改画面节奏、图层与关键帧，避免重生成整段。",
+          "前端或全栈开发者本地部署 HyperFrames，接入自有模型或素材库，验证 AI 视频生成与可编辑时间线的工作流。"
         ],
-        "agentInstallPrompt": "请帮我安装并试跑 heygen-com/hyperframes 项目。首先克隆仓库 https://github.com/heygen-com/hyperframes，然后使用 npm 安装依赖（建议 Node.js 18+）。阅读 README 了解如何使用 API。请创建一个简单的示例：编写一个包含基本动画的 HTML 文件，然后调用 hyperframes 命令将其渲染为一段短视频（mp4 格式）。最后在终端展示渲染结果，并说明如何集成到智能代理中。"
+        "agentInstallPrompt": "请在本地试跑 GitHub 项目 heygen-com/hyperframes：先克隆仓库并阅读 README、package.json 与锁文件，确认所需 Node 版本和包管理器；安装依赖后启动开发服务器，记录访问地址与必要环境变量（如模型或 API Key）。然后用一句话描述生成一个 5 秒示例视频，检查是否能进入逐帧编辑界面，并汇总安装步骤、报错与最小可运行配置。"
       }
     },
     "repo:omacom/omarchy": {
@@ -9024,17 +9024,17 @@
     },
     "repo:NVIDIA/SkillEvaluator": {
       "type": "repo-insight",
-      "hash": "35421ac62c6738532c842807",
+      "hash": "25369761c65537b4cb46545e",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-11-15T22:32:51.707Z",
+      "generatedAt": "2026-11-18T22:00:09.110Z",
       "value": {
-        "summaryZh": "SkillEvaluator 是 NVIDIA 开源的 AI Agent 技能评估框架，采用分层质量门禁机制，能在技能入库前校验其结构与描述质量，并通过语义重叠检测识别重复或相互冲突的技能。它还支持自动生成合成评测数据集，并对运行中的 Agent 做在线评估，量化技能对 Agent 行为的实际影响。项目采用 Python 实现，适合维护大规模技能库的团队、Agent 平台开发者，以及需要为技能变更做回归验证的工程师。",
+        "summaryZh": "SkillEvaluator 是 NVIDIA 开源的 AI Agent 技能与插件评估框架，通过多层级质量门禁、语义重叠检测、合成评估数据集生成，以及对真实 Agent 的在线评测，量化技能如何影响 Agent 行为。它把“技能是否值得安装、是否与已有技能重复、装上后行为是否变好”变成可自动化的流程，适合构建技能市场、插件生态或内部 Agent 平台的团队，也适合需要回归测试 Agent 技能质量的开发者。",
         "scenarios": [
-          "技能市场上架前执行自动化质量门禁与重复技能审核，拦截低质或冲突条目",
-          "为已有 Agent 技能搭建回归评测集，量化技能增删改对 Agent 行为的影响",
-          "团队技能库快速扩张时做语义重叠检测，维护技能体系的边界与一致性"
+          "在 Agent 技能市场或插件仓库上线前，用质量门禁和语义重叠检测筛掉低质、重复的技能条目。",
+          "为内部 Agent 平台搭建技能回归测试流水线，比较技能安装前后 Agent 行为与任务完成率的变化。",
+          "缺乏真实标注数据时，用合成评估数据集快速冷启动技能评测，并持续扩充测试集。"
         ],
-        "agentInstallPrompt": "请在本地克隆 https://github.com/NVIDIA/SkillEvaluator ，用 Python 3.10+ 创建并激活虚拟环境，按 README 安装依赖（如 pip install -e . 或 requirements.txt）。装好后运行仓库自带测试或示例（如 pytest）确认环境可用；再构造一个最小技能目录，实际跑一遍质量门禁与语义重叠检测，并尝试生成一份小规模合成评测数据集。最后向我汇总安装步骤、遇到的依赖问题及解决方法、执行过的命令和关键输出，过程中不要改动仓库核心代码。"
+        "agentInstallPrompt": "请帮我在本地安装并试跑 NVIDIA/SkillEvaluator。步骤：1) 克隆 https://github.com/NVIDIA/SkillEvaluator 并阅读 README，确认 Python 版本、依赖与安装方式（优先创建独立虚拟环境）；2) 安装依赖并运行仓库自带的示例或测试，验证框架可正常执行；3) 准备一个最小示例技能（含技能描述与实现），用它跑一遍质量门禁与语义重叠检测，输出检查结果；4) 生成一份小型合成评估数据集，并对该技能做一次在线 Agent 评测，汇总技能对 Agent 行为的影响指标。请记录每步命令、报错与修复方式，最后给出可复现的运行说明和结果摘要。"
       }
     },
     "repo:Vincentwei1021/video-shotcraft": {
@@ -9155,6 +9155,81 @@
           "在团队内以低样板代码开发可维护的交互组件与设计系统。"
         ],
         "agentInstallPrompt": "请在当前工作区用官方脚手架试跑 Svelte：执行 npx sv create svelte-demo，选择 minimal 模板和 JavaScript（或按项目偏好选 TypeScript），进入目录安装依赖并启动开发服务器；随后新增一个计数器组件，验证响应式更新、样式作用域和构建产物，最后汇报启动命令、访问地址与验证结果。"
+      }
+    },
+    "repo:astral-sh/uv": {
+      "type": "repo-insight",
+      "hash": "661126db3ebcb91bdc013661",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-18T22:00:20.994Z",
+      "value": {
+        "summaryZh": "uv 是用 Rust 编写的超高速 Python 包与项目管理器，一个二进制即可替代 pip、pipx、poetry、virtualenv、pyenv。全局缓存与硬链接让依赖解析和安装通常比 pip 快十倍以上，支持 lockfile 可复现安装、内联脚本依赖、Python 版本管理与工具运行，兼容 pyproject.toml 和 requirements.txt。适合频繁搭建环境的后端、数据科学与 CI 团队，以及希望统一本地和流水线工具链的开发者。",
+        "scenarios": [
+          "新项目初始化：用 uv init 建工程、uv add 装依赖并生成 uv.lock，团队成员和 CI 用 uv sync 得到完全一致的虚拟环境。",
+          "替换现有 pip/requirements.txt 流水线：在 CI 中改用 uv pip install 或 uv sync，缓存目录复用后显著缩短构建时间。",
+          "单文件脚本与命令行工具：用内联元数据声明依赖，uv run 直接执行脚本，或用 uv tool install/uvx 临时运行 ruff、pytest 等工具而无需污染全局环境。"
+        ],
+        "agentInstallPrompt": "请在我的机器上安装并试跑 uv：1) 优先用官方独立安装脚本 curl -LsSf https://astral.sh/uv/install.sh | sh（macOS/Linux），Windows 用 PowerShell 对应脚本，或 brew install uv；2) 执行 uv --version 与 uv python list 确认可用；3) 在临时目录运行 uv init demo && cd demo && uv add requests && uv run python -c \"import requests; print(requests.__version__)\"，再执行 uv lock 与 uv sync 验证锁定安装；4) 额外演示 uvx ruff check --version 验证工具运行能力；5) 汇报版本号、耗时对比以及是否需要配置 UV_CACHE_DIR 或镜像源，全程不要修改我现有项目的依赖文件。"
+      }
+    },
+    "repo:jquery/jquery": {
+      "type": "repo-insight",
+      "hash": "8bf1ccf93def2614a1ffb1f3",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-18T22:00:31.828Z",
+      "value": {
+        "summaryZh": "jQuery 是一个轻量、快速且功能丰富的 JavaScript 库，它通过简洁一致的 API 封装 DOM 选择与操作、事件处理、Ajax 请求与动画效果，并消除浏览器差异。它支持链式调用、模块化源码组织和大量现成插件，可通过 npm 安装或 CDN 直接引入。适合需要快速实现页面交互的中小型站点、维护历史前端项目的开发者，以及想学习经典库设计思路的前端新手。",
+        "scenarios": [
+          "为中小型官网、活动页快速添加轮播、折叠菜单、表单校验、滚动加载等交互，无需构建工具，用 script 标签引入即可运行。",
+          "维护或改造存量 jQuery 项目，进行版本升级（如 3.x 到 4.x）、插件兼容性排查与旧代码重构。",
+          "在 Django、Rails、Thymeleaf 等服务端渲染模板中做渐进增强，用 Ajax 局部刷新配合 DOM 操作补齐交互。"
+        ],
+        "agentInstallPrompt": "请在当前项目目录试跑 jQuery：1) 执行 npm init -y 并 npm install jquery；2) 新建 index.html，用 <script src=\"node_modules/jquery/dist/jquery.min.js\"></script> 引入，或改用 CDN https://code.jquery.com/jquery-3.7.1.min.js；3) 写一个 demo 页面：点击按钮后用 $.ajax 请求 https://jsonplaceholder.typicode.com/todos/1，把返回的 title 渲染到列表并加淡入动画；4) 用 npx serve 或 python3 -m http.server 启动本地服务，在浏览器验证效果；5) 把安装步骤、启动命令和验证结果写入 README.md。"
+      }
+    },
+    "repo:appwrite/appwrite": {
+      "type": "repo-insight",
+      "hash": "433585b2702d22d00a12bf73",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-18T22:00:50.473Z",
+      "value": {
+        "summaryZh": "Appwrite 是开源的一体化后端云平台，常被视为可自托管的 Firebase 替代品。它集成了用户认证、数据库、文件存储、云函数、消息推送、静态托管、实时订阅和 WAF 等能力，提供多语言 SDK 与可视化控制台，并支持 Docker 私有化部署。适合希望快速搭建 MVP 的全栈开发者、重视数据自主可控的团队，以及需要为 AI Agent 提供后端服务的工程师。",
+        "scenarios": [
+          "独立开发者或小团队在数小时内搭建带注册登录、数据库和文件上传的 MVP，无需从零自建后端。",
+          "企业在内网或合规场景下用 Docker 自托管 Appwrite，统一管理认证、权限、存储与实时数据。",
+          "为 AI Agent 或自动化流程提供可编程后端：用 Functions 执行业务逻辑，用 Realtime 推送状态，用 Messaging 发送通知。"
+        ],
+        "agentInstallPrompt": "请在本机帮我试跑 Appwrite：先检查 Docker 是否可用；若可用，在临时目录执行官方自托管安装命令 docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v $PWD/appwrite:/usr/src/code/appwrite:rw --entrypoint=install appwrite/appwrite:latest，按默认配置等待服务启动；随后访问 http://localhost 创建管理员账号，并用 Appwrite CLI 或 REST API 创建一个测试数据库、集合和记录，验证读写与权限；最后汇总访问地址、管理员邮箱、容器状态和验证结果。若 Docker 不可用，请说明原因并给出替代方案。不要改动我现有项目文件。"
+      }
+    },
+    "repo:openvinotoolkit/openvino": {
+      "type": "repo-insight",
+      "hash": "62182821a2bb96fe8efe21b9",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-18T22:00:59.073Z",
+      "value": {
+        "summaryZh": "OpenVINO 是英特尔主导的开源 AI 推理优化与部署工具包，提供模型转换、图优化、量化压缩和跨 CPU、GPU、NPU 的统一运行时，支持 ONNX、PyTorch、TensorFlow 等模型接入。亮点是推理性能优化、异构硬件调度和较完善的示例工具链。适合需要在边缘或服务器上落地计算机视觉、生成式 AI 推理的 C++/Python 开发者与 MLOps 团队。",
+        "scenarios": [
+          "在 x86/ARM 边缘设备上部署计算机视觉模型，并利用 CPU、GPU、NPU 进行低延迟推理。",
+          "将 PyTorch、ONNX、TensorFlow 模型转换为 OpenVINO IR，做量化压缩、性能调优与吞吐测试。",
+          "为 C++ 或 Python 推理服务集成统一运行时，支持多硬件后端切换和产线化部署。"
+        ],
+        "agentInstallPrompt": "请在本机安装并试跑 OpenVINO：先检测操作系统、CPU 架构、CMake、Python 和编译器版本；克隆 https://github.com/openvinotoolkit/openvino，按官方文档安装依赖并以 Release 模式用 CMake 构建，开启 Python 绑定；构建完成后运行自带 hello 示例和 benchmark_app，下载一个 ONNX 或 OpenVINO IR 模型完成推理，记录硬件、执行命令、耗时和报错。"
+      }
+    },
+    "repo:solidjs/solid": {
+      "type": "repo-insight",
+      "hash": "5dcb2a3b6ffa15fa469a2458",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-18T22:01:08.766Z",
+      "value": {
+        "summaryZh": "Solid 是一个基于细粒度响应式的声明式 JavaScript UI 库，用 TypeScript 编写，通过 JSX 编译成真实 DOM 操作，没有虚拟 DOM，因此更新开销小、运行时体积轻、性能接近原生。它用 Signal 自动追踪依赖，组件只执行一次，状态推导直观可预测；同时支持 SSR、流式渲染与 SolidStart 全栈方案。适合追求极致性能的前端团队、希望从 React 迁移的开发者，以及想深入理解响应式原理的进阶学习者。",
+        "scenarios": [
+          "构建对首屏加载与交互性能敏感的中后台系统或内容站点，用细粒度更新替代虚拟 DOM diff",
+          "在低端移动设备、嵌入式仪表盘等资源受限环境中发布体积极小的前端应用",
+          "作为 React 团队的技术预研对象，用相近的 JSX 心智模型验证 Signals 方案与 SolidStart 全栈落地"
+        ],
+        "agentInstallPrompt": "请在本机搭一个 Solid 试跑环境：1）执行 npm create vite@latest solid-demo -- --template solid-ts 创建 TypeScript 项目，进入目录后运行 npm install；2）在 src/App.tsx 中用 createSignal 实现一个计数器，包含加一、减一、重置按钮，并用 createMemo 派生「当前是否为偶数」的文案；3）运行 npm run dev，打开 http://localhost:5173 确认渲染正常、点击即时响应且控制台无报错；4）运行 npm run build，汇报产物的 gzip 体积，并说明若要接入 SSR（solid-js/web 的 renderToString）需要改动哪些入口文件。"
       }
     }
   }
