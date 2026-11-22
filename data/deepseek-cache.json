@@ -4023,17 +4023,17 @@
     },
     "repo:firecrawl/firecrawl": {
       "type": "repo-insight",
-      "hash": "a3cf9a9239b52de0a31a51a1",
+      "hash": "48f0221ccef781b7a938f89c",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-08-10T22:00:40.041Z",
+      "generatedAt": "2026-11-22T22:23:05.071Z",
       "value": {
-        "summaryZh": "Firecrawl 是一个用 TypeScript 构建的开源网页抓取与搜索 API，专为大规模数据采集设计。它将网页抓取、内容提取和搜索功能整合为一个统一接口，支持将网页转换为干净的 Markdown 或结构化数据，方便 LLM 和 AI 应用使用。其亮点在于抗爬虫处理、动态渲染、批量抓取和强大的 API 设计，能高效处理复杂网页。适合需要构建数据管道、训练模型或开发 AI 洞察工具的开发者。",
+        "summaryZh": "Firecrawl 是面向 AI Agent 的知识基础设施，通过统一 API 提供网页搜索、抓取与内容提取，可将页面转换为干净的 Markdown 或结构化数据，并应对动态渲染等复杂场景。项目以 TypeScript 实现，强调开箱即用与可扩展，适合构建 RAG、研究助手、竞品监控和自动化采集流程的开发者、数据团队与 AI 应用团队。",
         "scenarios": [
-          "构建大规模知识库或训练数据集，需要从多个网站批量抓取并清洗内容。",
-          "为 RAG 应用提供高质量网页内容，快速将网页转为 Markdown 供 LLM 检索。",
-          "监控网页变化或收集特定信息，通过 API 定期抓取并提取结构化字段。"
+          "为 RAG 或企业知识库批量抓取网站内容并转为 Markdown，清洗后入库。",
+          "为 AI Agent 增加实时网页搜索与页面读取能力，用于研究分析、问答和事实核查。",
+          "定时监控竞品、价格或公告页面，抓取结构化数据并触发告警或生成报表。"
         ],
-        "agentInstallPrompt": "请帮我安装并试跑 firecrawl。首先，克隆仓库：git clone https://github.com/firecrawl/firecrawl.git，然后进入目录。安装依赖：npm install 或 pnpm install（根据项目配置选择）。由于项目可能依赖外部服务（如 Playwright 或 Redis），请先阅读 README 或 docker-compose.yml 来启动必要的依赖（推荐使用 docker compose up）。之后，设置环境变量（如 OPENAI_API_KEY）或使用本地模式。运行 API 服务：npm run dev 或类似命令。最后，使用 curl 向 /v1/scrape 端点发送 POST 请求，传入测试 URL（例如 https://example.com），验证能否返回 Markdown 内容。若遇到问题，请检查日志并调整环境配置。"
+        "agentInstallPrompt": "请在当前项目环境中安装并试跑 Firecrawl：先克隆 https://github.com/firecrawl/firecrawl，阅读 README 和示例，确认 Node/TypeScript 版本与依赖要求；安装依赖并配置 FIRECRAWL_API_KEY，优先使用官方云端 API 跑通最小示例。写一个脚本：搜索一个关键词，抓取其中一个 URL，输出页面 Markdown 前 500 字；最后给出运行命令、环境变量说明和常见报错排查。不要修改无关文件。"
       }
     },
     "repo:vitali87/code-graph-rag": {
@@ -6755,17 +6755,17 @@
     },
     "repo:zhouxiaoka/autoclip": {
       "type": "repo-insight",
-      "hash": "8846b981a67b0a88da554806",
+      "hash": "29971a79cc35f5ec076d14c3",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-21T22:00:20.871Z",
+      "generatedAt": "2026-11-21T23:59:02.230Z",
       "value": {
-        "summaryZh": "AutoClip 是一款用 Python 编写的 AI 视频二创工具，可从长视频中自动识别并提取高光片段，完成智能剪辑。它一般先用语音识别把音频转写成字幕文本，再调用大语言模型判断内容的精彩程度与主题，最后借 ffmpeg 完成切片、拼接与导出，产出带字幕的短视频。适合做影视解说、游戏集锦、播客切片与直播回放二次分发的自媒体创作者和 MCN 团队，也适合想学习 AI 视频处理流水线的开发者，可本地部署并按需替换模型与提示词。",
+        "summaryZh": "AutoClip 是一款开源 AI 视频剪辑桌面工具，主打“一个链接，一键出片”：输入播客、访谈、课程等长视频，自动识别高光片段并剪成竖屏短视频，同时生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。适合内容创作者、播客主、课程讲师和社媒运营，以较低成本完成长内容二次分发与矩阵化发布。",
         "scenarios": [
-          "把两小时的直播回放、访谈或播客导入 AutoClip，自动挑出高能片段并批量生成竖屏短视频，用于抖音、B 站、视频号分发。",
-          "影视解说与游戏集锦作者批量处理素材库，先由 AI 产出带字幕的候选片段，人工只需做二次筛选与文案润色。",
-          "开发者本地部署并替换 ASR、LLM 与提示词，验证高光判定效果，或把自动切片流程集成进自己的内容生产流水线。"
+          "播客或访谈长视频拆条：自动定位高光观点并生成竖屏短视频，减少人工拉片和粗剪时间。",
+          "课程与直播回放二次分发：把长内容切成知识点短片，配套字幕、封面和文案，用于引流与复盘。",
+          "跨境社媒矩阵运营：同一素材快速适配抖音、小红书、TikTok、Reels 和 YouTube Shorts 的发布形态。"
         ],
-        "agentInstallPrompt": "请把 https://github.com/zhouxiaoka/autoclip 克隆到本地，先阅读 README、依赖清单与配置文件，确认所需 Python 版本、系统依赖（如 ffmpeg）以及是否需要语音识别模型或大模型 API Key。随后创建独立虚拟环境并安装依赖，检查 ffmpeg 是否可用，按示例写好模型与密钥配置（若支持本地模型就优先用本地模型）。准备一段 1–2 分钟的本地测试视频放入输入目录，运行项目主入口或示例脚本，完整跑通一次高光提取与剪辑。最后用中文报告：实际执行的命令、依赖安装中的问题及解决办法、生成文件的路径与时长、效果不理想时的参数调整建议，并给出一个最小可用的调用示例。"
+        "agentInstallPrompt": "请克隆 https://github.com/zhouxiaoka/autoclip 到本地，先阅读 README、依赖文件和启动脚本，确认 Python 版本、安装方式及是否需要 FFmpeg、模型权重或 API Key。创建虚拟环境并安装依赖，按文档启动桌面应用；若安装说明不完整，请先梳理目录结构和入口文件，给出最小可执行试跑步骤，再用一个本地短视频或公开链接做端到端测试，记录剪辑、字幕、封面和发布文案的输出结果与报错。"
       }
     },
     "repo:FlashML-org/FreeToken": {
@@ -9230,6 +9230,66 @@
           "作为 React 团队的技术预研对象，用相近的 JSX 心智模型验证 Signals 方案与 SolidStart 全栈落地"
         ],
         "agentInstallPrompt": "请在本机搭一个 Solid 试跑环境：1）执行 npm create vite@latest solid-demo -- --template solid-ts 创建 TypeScript 项目，进入目录后运行 npm install；2）在 src/App.tsx 中用 createSignal 实现一个计数器，包含加一、减一、重置按钮，并用 createMemo 派生「当前是否为偶数」的文案；3）运行 npm run dev，打开 http://localhost:5173 确认渲染正常、点击即时响应且控制台无报错；4）运行 npm run build，汇报产物的 gzip 体积，并说明若要接入 SSR（solid-js/web 的 renderToString）需要改动哪些入口文件。"
+      }
+    },
+    "repo:toeverything/AFFiNE": {
+      "type": "repo-insight",
+      "hash": "17c763dba2c9188bcc544017",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-21T23:56:15.017Z",
+      "value": {
+        "summaryZh": "AFFiNE 是一个把文档、白板与数据库整合在同一工作空间的开源知识库，被称为 Notion 与 Miro 的合体替代方案。它支持在同一页面内自由切换文档模式与无边画布，让写作、头脑风暴、任务规划与信息整理不再分散在多个工具中。项目以 TypeScript 构建，强调隐私优先、本地优先与高度可定制，提供自托管部署与客户端下载，社区活跃、迭代迅速。适合注重数据主权与隐私的个人知识管理者、需要协作白板的远程团队，以及希望二次开发或私有化部署的工程团队与中小企业。",
+        "scenarios": [
+          "团队用 AFFiNE 搭建私有化知识库，将会议纪要、项目规划文档与白板脑图统一管理，并自托管保障数据不出内网。",
+          "产品与设计团队在无边画布上进行需求梳理、用户旅程绘制和原型讨论，同时在同一空间撰写 PRD 与结论文档。",
+          "个人用户用它替代 Notion 与 Miro 的组合，构建笔记、任务清单与灵感看板，并通过本地优先模式离线使用。"
+        ],
+        "agentInstallPrompt": "请帮我试跑 AFFiNE 项目：先克隆 https://github.com/toeverything/AFFiNE 仓库并阅读 README 与 package.json，确认推荐的 Node 与包管理器版本；优先选择用 Docker 方式启动本地实例，若不可行再走源码开发模式（安装依赖、构建并启动开发服务器）。完成后告诉我本地访问地址、默认端口和初始化管理员账号的方式，并列出启动过程中遇到的报错及你的解决步骤。"
+      }
+    },
+    "repo:Jakeschincariol/instagram-agent-skill": {
+      "type": "repo-insight",
+      "hash": "24351723998999a54ec2cde2",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-22T00:16:37.720Z",
+      "value": {
+        "summaryZh": "该项目把运营 Instagram 账号的流程拆成 13 个 Claude 技能：用 26 条带评分的钩子公式产出 Reels 脚本，配有爆款选题调研、caption 文案检查器和去 AI 味的 humanizer。全部免费、MIT 协议、Python 实现，可作为技能包接入 Claude 或自有 agent 工作流。适合独立创作者、社媒运营，以及想做内容自动化的开发者，用来快速搭出一条可复用的选题、脚本、文案、改写发帖流水线。",
+        "scenarios": [
+          "独立创作者批量产出 Reels：按 26 条评分钩子公式生成并筛选开头，再自动写脚本与 caption。",
+          "社媒运营做爆款调研：用 viral research 技能拆解对标账号的高播放内容，沉淀选题库。",
+          "内容团队质量检查：发布前用 caption linter 检查文案，再用 humanizer 去掉 AI 味，统一账号语气。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/Jakeschincariol/instagram-agent-skill 到本地，阅读 README 与 skills 目录，列出这 13 个技能的用途和调用方式；用 Python 建好虚拟环境并安装依赖，然后以一个美妆账号为例，跑通「爆款选题调研 → 26 条钩子打分选优 → 生成 Reels 脚本 → caption 检查 → humanizer 改写」的完整流程，把每步输出写入 demo 目录，最后汇总一份可复用的使用说明。"
+      }
+    },
+    "repo:Ebony-Vinyl/dsh-our-free-model": {
+      "type": "repo-insight",
+      "hash": "d8d9a040720d6ba0cf1453ae",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-22T00:32:14.314Z",
+      "value": {
+        "summaryZh": "这是一个面向 dsh 的 JavaScript 插件。项目宣称，安装后无需登录、注册或填写 API Key，即可直接调用 DeepSeek V4.1 Flash、Kimi K3 等前沿模型，而且完全免费、不限量。它的亮点是零配置接入和零成本试用，适合想快速对比多家大模型效果、或做原型验证的开发者与个人爱好者。需要注意：这类“免密钥、不限量”服务的模型来源、合规性与长期稳定性都存疑；生产环境使用前，应先核实数据隐私和调用链路。",
+        "scenarios": [
+          "个人开发者在本地 dsh 环境中零配置接入 DeepSeek、Kimi 等模型，快速做提示词与效果对比实验。",
+          "原型阶段或黑客松场景下，用免费额度验证 AI 功能可行性，避免前期申请 API Key 与付费流程。",
+          "教学与演示场景中，为学员统一提供可即装即用的模型调用入口，降低环境配置成本。"
+        ],
+        "agentInstallPrompt": "请在本地克隆 https://github.com/Ebony-Vinyl/dsh-our-free-model，阅读 README 与 package.json，确认它作为 dsh 插件的安装方式与依赖要求。然后在我已安装好的 dsh 环境中完成安装，并写一个最小可运行示例，依次调用 DeepSeek V4.1 Flash 与 Kimi K3 各一次，输出实际返回内容与耗时。若过程中需要登录、API Key 或出现报错，请如实报告，不要伪造结果；同时说明该插件把请求发往哪个域名、是否会记录或上传我的输入，给出是否建议在生产环境使用的判断。"
+      }
+    },
+    "repo:mjmirza/app-store-compliance": {
+      "type": "repo-insight",
+      "hash": "d39280f090d9464f72d23c52",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-22T22:56:58.408Z",
+      "value": {
+        "summaryZh": "这是一个开源的应用商店合规操作手册与提交前守卫工具，帮助开发者避开 App Store 与 Google Play 常见拒审。它整理了 124 条有记录的拒审模式及对应修复方案，内置 iOS 隐私清单与 Google Play Data safety 表单核查，并追踪 EU AI Act、DSA、COPPA、年龄相关法律等 112 个法规截止日期，还提供可交给 AI coding agent 使用的 skill。适合独立开发者、移动端团队与发布负责人，在提审前做系统性自查。",
+        "scenarios": [
+          "上架前逐条比对 124 个拒审模式，生成问题清单与修复建议，减少被拒和反复提审",
+          "核对 iOS Privacy Manifest 与 Google Play Data safety 声明，检查第三方 SDK 与数据收集是否一致",
+          "跟踪 EU AI Act、DSA、COPPA 与各州年龄法律的 112 个截止日期，提前规划版本迭代与合规改造"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/mjmirza/app-store-compliance 到本地，阅读仓库中的合规 playbook 与 skill 说明，然后把该 skill 接入当前项目。接着扫描本项目：识别 iOS/Android 配置、隐私清单、第三方 SDK、数据收集点和目标市场，逐条对照 124 个拒审模式与隐私/Data safety 检查项，输出一份中文报告，包含风险等级、涉及文件、修复步骤，以及与 112 个法规截止日期相关的待办事项，最后给出提审前 checklist。"
       }
     }
   }
