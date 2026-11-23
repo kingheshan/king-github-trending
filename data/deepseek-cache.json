@@ -2148,17 +2148,17 @@
     },
     "repo:stablyai/orca": {
       "type": "repo-insight",
-      "hash": "21f9f347f8223da3fcf380ec",
+      "hash": "0c9b93426e84d780646ddceb",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-11-07T22:52:32.379Z",
+      "generatedAt": "2026-11-22T23:20:10.920Z",
       "value": {
-        "summaryZh": "Orca 是一个用 TypeScript 构建的多编码代理编排工具，让你用自己的 Claude Code、Codex 等订阅，同时运行和管理一支代理舰队，并覆盖桌面端、移动端与远程运行时。它把任务分发、会话调度和远程执行集中到统一入口，减少多代理并行开发时的切换成本。适合已订阅编码代理、需要批量处理开发任务或搭建远程协作工作流的个人开发者与小团队。",
+        "summaryZh": "Orca 是一个用自备订阅驱动多智能体集群的开源控制台：把 Claude Code、Codex、Grok 等编码 Agent 接入统一调度，可在桌面端、手机端或远程 runtime 上并行运行成队的 bot，共享任务队列与会话管理。项目以 TypeScript 编写，强调自带密钥、不额外收取模型费用，适合已订阅多个编码助手、希望把重复开发任务批量分发的个人开发者与小型团队。",
         "scenarios": [
-          "并行处理多个仓库的 issue、PR 和测试任务：把修复、补测、文档更新分发给多个 Claude Code/Codex 会话，在统一界面查看进度与结果。",
-          "移动端远程指挥：外出时通过手机查看桌面端或远程 runtime 上的代理状态，追加指令、审批操作或调整任务优先级。",
-          "团队复用自有订阅：成员用各自订阅接入 Orca，集中管理任务队列与运行环境，减少重复购买席位和工具切换。"
+          "在同一仓库并行处理多条 issue 或 PR：一个 bot 修 bug、一个补测试、一个写文档，在桌面端统一查看各会话进度与产出。",
+          "在手机端远程派发与盯盘，借助远程 runtime 让 bot 在服务器上持续跑长时间的重构、迁移或批量脚本任务。",
+          "已有 Claude Code、Codex、Grok 订阅的开发者复用现有额度做多方案对比试跑，避免额外 API 计费。"
         ],
-        "agentInstallPrompt": "请帮我本地试跑 GitHub 项目 stablyai/orca。先克隆仓库并阅读 README、package.json、锁文件与配置示例，确认 Node/pnpm 版本、桌面端依赖及是否需要远程 runtime；然后在隔离环境中安装依赖并启动开发模式或桌面端，记录实际启动命令、必需环境变量（如订阅登录、远程运行时配置）和遇到的报错。执行全局安装或修改系统配置前先询问我，不要提交代码，最后给出安装步骤、验证结果和后续使用建议。"
+        "agentInstallPrompt": "请帮我本地试跑 stablyai/orca：先 git clone https://github.com/stablyai/orca 并进入目录，阅读 README 与 package.json，判断应使用 pnpm/yarn/npm 中的哪一个，完成依赖安装与构建；再检查需要配置哪些 Agent 凭证（Claude Code、Codex、Grok 等的登录态或 API Key）与环境变量，逐条列出必须由我手动提供的密钥；随后启动开发模式，验证本地 runtime 能注册至少一个 bot 并跑通一个最小任务；最后把启动命令、配置文件位置和可能遇到的报错整理成简短说明。"
       }
     },
     "repo:asgeirtj/system_prompts_leaks": {
@@ -4128,17 +4128,17 @@
     },
     "repo:cathrynlavery/diagram-design": {
       "type": "repo-insight",
-      "hash": "8f0a879fe3e6376fd3c84953",
+      "hash": "0fed304787ff630b3d19569d",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-10T22:00:13.405Z",
+      "generatedAt": "2026-11-23T22:17:32.820Z",
       "value": {
-        "summaryZh": "diagram-design 是一套面向 AI 编程代理的编辑级图表设计规范，适用于 Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid 和 Pi。它内置 44 种图表类型，输出自包含的 HTML + SVG，无需任何外部依赖，并刻意去掉阴影和 Mermaid 默认风格等“AI 味”视觉。适合需要为技术文档、博客、演示快速产出统一、克制、可直接嵌入配图的开发者、技术写作者与设计师。",
+        "summaryZh": "这是一个面向 AI 编码工具编辑图表排版技能包，支持 Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid、Qoder 与 Pi。它提供 52 种图表类型，输出自包含 HTML + SVG，可直接在浏览器打开或嵌入文档，无需外部依赖。设计风格强调编辑级排版：克制配色、清晰层级、无阴影、拒绝 Mermaid 式粗糙自动图。适合技术写作者、产品经理、架构师和需要频繁产出高质量示意图的开发者，尤其适合已在 AI 编程助手里工作、希望一句话生成可交付图表的人。",
         "scenarios": [
-          "技术博客或项目文档需要配图时，让 AI 代理按统一编辑风格直接生成可嵌入的 HTML+SVG 图表",
-          "把该设计规范作为技能安装到 Claude Code、Cursor 等代理中，使其回答问题时顺手产出高质量示意图",
-          "为演示文稿、架构说明或教学材料批量生成 44 种图表类型中对应风格的图片，避免 Mermaid 默认观感"
+          "为技术博客或架构文档快速生成风格统一的流程图、时序图和系统拓扑图",
+          "在 Claude Code 或 Cursor 中让 AI 根据需求直接产出可交付的 HTML/SVG 图表并嵌入项目文档",
+          "产品经理整理需求说明时批量生成结构清晰、排版克制的业务流程图与关系图"
         ],
-        "agentInstallPrompt": "请在当前环境克隆 https://github.com/cathrynlavery/diagram-design，阅读 README 与 44 种图表类型的模板清单，然后把其中的设计规范和模板作为技能安装到本项目的代理技能目录（如 .claude/skills 或对应工具的 skills 路径）。安装完成后，选用流程图类型生成一个自包含的 HTML+SVG 示例文件，在浏览器中打开确认无阴影、无 Mermaid 默认样式，最后汇报安装路径、已就绪的图表类型列表和试跑结果。"
+        "agentInstallPrompt": "请在当前工作区安装并试跑 cathrynlavery/diagram-design：先克隆 https://github.com/cathrynlavery/diagram-design 到临时目录，阅读 README，确认它作为技能/提示包如何接入当前 AI 编码工具（如 Claude Code、Cursor 或 Copilot）。然后按文档把技能文件放入正确位置，保持原有目录结构。接着用它生成一个示例：一张展示“客户端 → API 网关 → 服务 → 数据库”的系统架构图，输出为自包含 HTML + SVG，风格遵循项目规范（编辑级排版、无阴影、不使用 Mermaid）。最后在浏览器打开验证渲染效果，并向我汇报安装路径、改动文件和示例文件位置。"
       }
     },
     "repo:macro-inc/macro": {
@@ -5268,17 +5268,17 @@
     },
     "repo:jingyaogong/minimind": {
       "type": "repo-insight",
-      "hash": "274248a51af5a23941936341",
+      "hash": "1c880ff49d2cfc70a8c52d34",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-09-01T22:02:34.518Z",
+      "generatedAt": "2026-11-23T22:00:24.445Z",
       "value": {
-        "summaryZh": "MiniMind 是一个极简主义的大语言模型（LLM）训练项目，旨在让开发者仅用2小时就能从零训练一个6400万参数（64M）的模型。它基于Python实现，提供了完整的数据处理、模型构建、训练和推理流程，代码精简且高度可读。该项目的亮点在于打破了LLM训练的高门槛，使普通开发者也能在消费级GPU上快速上手，深入理解Transformer架构和语言模型训练的本质。适合希望快速入门LLM训练、教学演示或进行轻量级实验的研究者、学生和工程师。",
+        "summaryZh": "MiniMind 是一个面向学习与低成本实验的开源大模型训练项目，用 Python 实现从零预训练、SFT、LoRA、DPO 到蒸馏的完整流程，可在约两小时内训练出 64M 参数的小型语言模型。它代码精简、依赖清晰、显存门槛低，强调可复现与端到端动手实践，适合想理解 LLM 原理的学生、算法工程师和独立开发者作为教学与原型验证起点。",
         "scenarios": [
-          "教育学习：在课程或工作坊中，通过实际训练一个小型LLM来直观理解Transformer、注意力机制和训练流程。",
-          "快速原型验证：在有限算力下，快速测试新的数据预处理、模型结构或训练技巧，避免大型模型的漫长迭代。",
-          "个人技术探索：在个人电脑或云GPU上，用2小时从零构建一个可对话的迷你聊天机器人，体验从数据到模型的完整过程。"
+          "教学与自学复现：按项目流程从数据准备、预训练到指令微调，完整理解小语言模型的训练链路。",
+          "低成本原型验证：在单卡或低显存环境快速训练 64M 级模型，用于对话 demo、垂直任务可行性验证。",
+          "算法对比实验：基于同一代码库测试 SFT、LoRA、DPO、蒸馏等策略，观察小模型的效果与资源开销。"
         ],
-        "agentInstallPrompt": "请帮我克隆仓库 jingyaogong/minimind 到本地，并按照README指引安装依赖（如torch、transformers等）。然后运行一个最小示例，例如执行训练脚本训练一个极小模型（如1M参数）以验证环境，并生成一段示例对话。注意使用CPU或单GPU，调整批量大小以适应内存。最后输出训练日志和推理结果。"
+        "agentInstallPrompt": "请在本机克隆 https://github.com/jingyaogong/minimind ，先阅读 README、requirements 与训练脚本，确认 Python、PyTorch、CUDA 环境及显存要求；创建独立虚拟环境并安装依赖，优先使用仓库提供的小规模数据或示例配置跑通一次最小预训练与推理，记录实际命令、耗时、显存占用和报错；不要擅自下载超大数据集或长时间训练，完成后汇总可复现步骤与后续 SFT/LoRA 试跑建议。"
       }
     },
     "repo:browser-use/video-use": {
@@ -5734,17 +5734,17 @@
     },
     "repo:heygen-com/hyperframes": {
       "type": "repo-insight",
-      "hash": "1b2e52a98184cc70dc4f801d",
+      "hash": "6a0c114de00df12e020713da",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-11-18T22:01:19.685Z",
+      "generatedAt": "2026-11-23T22:17:51.887Z",
       "value": {
-        "summaryZh": "HyperFrames 是 HeyGen 开源的免费 AI 视频编辑器，用自然语言描述即可生成可逐帧编辑的真实视频工程，而非不可修改的成片。它基于 TypeScript 构建，把 AI 生成与时间线编辑结合，支持对画面、图层与关键帧做细粒度调整。适合内容创作者、产品营销团队、独立开发者与需要快速产出并精修视频的团队，也适合研究 AI 视频工作流的前端工程师。",
+        "summaryZh": "Hyperframes 是 HeyGen 开源的 AI 视频编辑器，使用 TypeScript 编写。它把视频工程抽象成 HTML：你写 HTML 描述画面与动画，再渲染成 MP4；既能剪辑自有素材，也能借助 Claude Code、Codex 或免费 Studio 应用生成和重制任意视频。亮点是纯代码化、可版本管理、可被 AI Agent 直接改写。适合前端与创意开发者、自动化内容团队，以及想把视频生产流水线搬进代码仓库的人。",
         "scenarios": [
-          "营销团队用一句话生成产品宣传片初稿，再在时间线上逐帧调整字幕、转场与品牌元素，快速交付多版本。",
-          "内容创作者把播客或口播脚本转成可编辑视频工程，精细修改画面节奏、图层与关键帧，避免重生成整段。",
-          "前端或全栈开发者本地部署 HyperFrames，接入自有模型或素材库，验证 AI 视频生成与可编辑时间线的工作流。"
+          "把产品更新日志、数据报表写成 HTML 模板，批量渲染成可直接发布的短视频。",
+          "用 Claude Code 或 Codex 对已有视频做脚本级重制，快速产出多语言、多风格版本。",
+          "在 CI 或内容流水线中自动生成演示视频与社媒素材，无需人工打开剪辑软件。"
         ],
-        "agentInstallPrompt": "请在本地试跑 GitHub 项目 heygen-com/hyperframes：先克隆仓库并阅读 README、package.json 与锁文件，确认所需 Node 版本和包管理器；安装依赖后启动开发服务器，记录访问地址与必要环境变量（如模型或 API Key）。然后用一句话描述生成一个 5 秒示例视频，检查是否能进入逐帧编辑界面，并汇总安装步骤、报错与最小可运行配置。"
+        "agentInstallPrompt": "请在本地克隆并试跑 heygen-com/hyperframes：先阅读 README 与 package.json，确认 Node 与包管理器版本，安装依赖并启动免费 Studio 应用；然后新建一个最小示例，用 HTML 写一段 5 秒带文字的动画，渲染输出 MP4，最后告诉我执行的命令、产物路径和遇到的问题。"
       }
     },
     "repo:omacom/omarchy": {
@@ -9290,6 +9290,66 @@
           "跟踪 EU AI Act、DSA、COPPA 与各州年龄法律的 112 个截止日期，提前规划版本迭代与合规改造"
         ],
         "agentInstallPrompt": "请克隆 https://github.com/mjmirza/app-store-compliance 到本地，阅读仓库中的合规 playbook 与 skill 说明，然后把该 skill 接入当前项目。接着扫描本项目：识别 iOS/Android 配置、隐私清单、第三方 SDK、数据收集点和目标市场，逐条对照 124 个拒审模式与隐私/Data safety 检查项，输出一份中文报告，包含风险等级、涉及文件、修复步骤，以及与 112 个法规截止日期相关的待办事项，最后给出提审前 checklist。"
+      }
+    },
+    "repo:XiaoYouChR/Ghost-Downloader-3": {
+      "type": "repo-insight",
+      "hash": "1e3c9833e102a17a17f03859",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-22T23:02:50.250Z",
+      "value": {
+        "summaryZh": "Ghost-Downloader-3 是一款用 Python 编写的跨平台桌面下载器，主打“一个就够”：它以现代界面整合多协议、多线程下载、任务队列和浏览器下载接管等能力，延续 Ghost Downloader 系列对高颜值 UI 与易用性的追求。它适合经常下载大文件、希望用统一工具替代多种零散下载软件的用户，也适合想研究 Python 桌面下载器架构与实现方式的开发者。",
+        "scenarios": [
+          "下载大型安装包、镜像或视频资源时，用多线程和任务队列提升速度并统一管理进度。",
+          "在浏览器中接管下载链接，把分散的下载任务集中到一个桌面客户端处理。",
+          "作为 Python 桌面应用与下载引擎案例，用于学习界面设计、任务调度和二次开发。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/XiaoYouChR/Ghost-Downloader-3 ，先阅读 README、pyproject.toml 或 requirements.txt，确认所需 Python 版本、依赖和启动入口；创建独立虚拟环境并安装依赖，若 GUI 相关系统库缺失，按文档补齐。随后运行主程序做冒烟测试：新建一个 HTTP 下载任务，验证开始、暂停、恢复和删除流程，并记录实际命令、报错与修复步骤。"
+      }
+    },
+    "repo:Tracer-Cloud/opensre": {
+      "type": "repo-insight",
+      "hash": "807a90ff1ba3ef7e1593b8ee",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-23T22:17:36.630Z",
+      "value": {
+        "summaryZh": "opensre 是面向 CI/CD 可靠性的开源智能体，基于 Python 构建，目标是在持续集成与交付流程中自动分析流水线状态、定位失败原因并辅助修复。它适合平台工程、DevOps、SRE 与测试团队，用于降低构建不稳定和发布阻塞带来的排查成本。项目强调开源可扩展，便于结合自有 CI 系统、日志与通知渠道进行二次集成。",
+        "scenarios": [
+          "CI 流水线频繁失败时，自动汇总失败任务、日志与上下文，帮助工程师快速定位根因。",
+          "发布前对关键流水线做健康检查，识别不稳定测试、超时和配置问题，降低发布风险。",
+          "将智能体接入内部 DevOps 工具链，辅助生成修复建议、通知值班人员并沉淀故障复盘。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/Tracer-Cloud/opensre，阅读 README 与示例配置，使用 Python 创建虚拟环境并安装依赖；先运行项目提供的测试或示例，确认基础功能可用。然后根据我的 CI 系统（如 GitHub Actions、GitLab CI 或 Jenkins）准备最小只读令牌与一条最近失败的流水线信息，配置 opensre 进行一次诊断试跑，输出失败原因、证据和下一步修复建议，不要修改生产配置。"
+      }
+    },
+    "repo:pookjw/HermesEnabler": {
+      "type": "repo-insight",
+      "hash": "9925a0ebf9b8146c6b866e7b",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-23T22:17:44.004Z",
+      "value": {
+        "summaryZh": "HermesEnabler 是一个 Objective-C 开源小工具，用于在非 Hermès 版 Apple Watch 上启用 Hermès 专属表盘。它通过非官方方式修改 watchOS 表盘资源与私有接口，适合熟悉 Xcode、越狱或侧载调试的进阶用户尝鲜。项目非苹果官方方案，存在版本兼容、稳定性与保修风险，不建议普通用户在主设备上使用。",
+        "scenarios": [
+          "在越狱或可侧载的旧款 Apple Watch 上测试启用 Hermès 表盘，验证显示与动画效果。",
+          "watchOS 表盘开发者研究 Hermès 表盘的资源结构、私有接口调用与注入方式。",
+          "技术爱好者搭建隔离测试环境，评估不同 watchOS 版本的兼容性与回滚方案。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/pookjw/HermesEnabler，先阅读 README 与工程文件，确认所需 macOS/Xcode 版本、目标 watchOS 版本及是否依赖越狱或侧载工具。为我整理安装步骤与风险清单；在隔离测试设备上备份后，按仓库说明构建并安装，启用 Hermès 表盘并截图验证。若缺少依赖或签名配置，先列出缺失项和替代方案，不要修改系统关键文件，不要在主设备上操作。"
+      }
+    },
+    "repo:yetone/magpie": {
+      "type": "repo-insight",
+      "hash": "754c98f076a0fd738efc8102",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-23T22:17:48.353Z",
+      "value": {
+        "summaryZh": "Magpie 是一个常驻 macOS 菜单栏的模型路由工具，用 Go 编写。它把各家大模型的 API 统一到一个入口，让 Codex、Claude Code 等编码 agent 能自由切换到 DeepSeek、Kimi 等第三方模型，无需改代码或配置环境变量。亮点是菜单栏一键切换、按 agent 分流模型、集中管理密钥。适合想让多个 AI 编码工具共用同一套模型额度、追求低成本或多模型对比的开发者。",
+        "scenarios": [
+          "在 Claude Code 中接入 Kimi 处理长上下文重构任务以降低成本，同时保留原生 Claude 作为高质量备用模型随时切换。",
+          "为 Codex CLI 指向 DeepSeek，在菜单栏快速换模型，对比不同模型在同一代码库上的补全与 bug 修复效果。",
+          "团队集中管理多家模型 API Key，按 agent 分配不同供应商，避免在每个项目里重复写环境变量和代理配置。"
+        ],
+        "agentInstallPrompt": "请克隆 https://github.com/yetone/magpie 到本地，先阅读 README 确认 macOS 版本与 Go 环境要求，然后执行 go build 编译并启动菜单栏应用。接着帮我新增一个名为 codex 的 agent 配置，把它的模型指向 DeepSeek，base URL 和 API Key 从环境变量 DEEPSEEK_BASE_URL、DEEPSEEK_API_KEY 读取；完成后做一次连通性测试，并汇报配置文件路径、启动命令和测试结果。"
       }
     }
   }
