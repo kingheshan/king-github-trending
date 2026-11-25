@@ -2598,17 +2598,17 @@
     },
     "repo:tt-a1i/archify": {
       "type": "repo-insight",
-      "hash": "a982caf23455758156503884",
+      "hash": "9db065a02f1ce26cb3d7fc6d",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-10-06T00:00:15.177Z",
+      "generatedAt": "2026-11-25T22:16:03.950Z",
       "value": {
-        "summaryZh": "archify 是一个把任意想法、方案或代码库转成美观可交互架构图的 Agent 技能，支持 Claude Code、Codex 等主流编码代理。它用 JavaScript 实现，通过自然语言描述自动生成分层、可缩放、可点击的交互式图表，省去手动画图的成本。适合需要快速梳理系统架构的开发者、写技术方案的产品与架构师，以及做技术分享的工程师。",
+        "summaryZh": "archify 是面向 AI 编码代理的 Agent Skill，能把任意想法、方案或代码仓库转换成可交互图表或一页式答案。它内置 10 种图表类型，支持架构诊断、故事化视频与 PR 走查，帮助开发者快速理解复杂系统与变更影响。适合需要做架构评审、代码接手与技术分享的工程师和团队，在 Claude Code、Codex、Cursor 等工具中安装即用。",
         "scenarios": [
-          "接手陌生开源项目时，让编码代理扫描代码库并生成交互式架构图，快速定位模块划分、依赖与调用关系。",
-          "写技术方案或评审需求前，用一句话描述设想，直接产出可点击演示的架构图，替代手绘草图与静态截图。",
-          "技术分享、README 或内部文档中嵌入可交互图表，读者可缩放钻取细节，显著提升讲解与沟通效率。"
+          "接手陌生代码库时，让代理扫描仓库并生成交互式架构图，快速定位模块边界、调用关系与关键依赖。",
+          "提交 PR 前生成变更走查图或故事化视频，向评审者直观说明改动动机、影响范围与风险点。",
+          "技术方案讨论阶段，把口头想法或设计草稿转成一页式图表答案，用于架构诊断和团队对齐。"
         ],
-        "agentInstallPrompt": "请帮我在本地安装并试跑 tt-a1i/archify：先 git clone https://github.com/tt-a1i/archify 到当前工作目录，阅读 README 确认它是 Agent 技能；若是 Claude Code 技能，把技能目录复制到 ~/.claude/skills/ 下，若是 Codex 或其他代理，按 README 指引放入对应的技能或提示词目录，并安装所需依赖（如 npm install）。安装完成后做一次端到端验证：用一句话描述「设计一个带 Redis 缓存的订单服务」，以及扫描当前仓库代码库两种方式各生成一张交互式架构图，导出 HTML 文件并在浏览器打开，最后告诉我生成文件的路径与效果截图。"
+        "agentInstallPrompt": "请帮我安装并试跑 GitHub 项目 tt-a1i/archify（https://github.com/tt-a1i/archify）。先克隆仓库并通读 README，确认它作为 Agent Skill 的安装方式，将其注册到当前环境（如 Claude Code、Codex 或 Cursor 的 skills 目录或配置文件）。安装完成后，对我当前项目的核心目录做一次演示：生成一张可交互架构图和一份一页式说明，并告诉我产物文件位置与打开方式。若缺少依赖、网络或写权限，请列出具体命令，等我确认后再执行。"
       }
     },
     "repo:anthropics/cwc-workshops": {
@@ -9279,17 +9279,17 @@
     },
     "repo:mjmirza/app-store-compliance": {
       "type": "repo-insight",
-      "hash": "d39280f090d9464f72d23c52",
+      "hash": "20c4a483e3b5a1703448e203",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-11-22T22:56:58.408Z",
+      "generatedAt": "2026-11-25T22:15:53.385Z",
       "value": {
-        "summaryZh": "这是一个开源的应用商店合规操作手册与提交前守卫工具，帮助开发者避开 App Store 与 Google Play 常见拒审。它整理了 124 条有记录的拒审模式及对应修复方案，内置 iOS 隐私清单与 Google Play Data safety 表单核查，并追踪 EU AI Act、DSA、COPPA、年龄相关法律等 112 个法规截止日期，还提供可交给 AI coding agent 使用的 skill。适合独立开发者、移动端团队与发布负责人，在提审前做系统性自查。",
+        "summaryZh": "这是一个面向移动应用上架合规的开源剧本与预提交守卫工具，帮助开发者避开 App Store 与 Google Play 的常见拒审。项目汇总 124 条有据可查的拒审模式及对应修复，覆盖隐私清单、Data safety 表单等关键检查；同时追踪 114 项合规截止日期，涉及欧盟 AI 法案、DSA、COPPA 与各年龄段法律。它还提供可供 AI coding agent 调用的 skill，便于在编码阶段提前发现风险。适合独立开发者、小团队以及负责上架与合规的工程师使用。",
         "scenarios": [
-          "上架前逐条比对 124 个拒审模式，生成问题清单与修复建议，减少被拒和反复提审",
-          "核对 iOS Privacy Manifest 与 Google Play Data safety 声明，检查第三方 SDK 与数据收集是否一致",
-          "跟踪 EU AI Act、DSA、COPPA 与各州年龄法律的 112 个截止日期，提前规划版本迭代与合规改造"
+          "独立开发者在提交 iOS/Android 应用前，用预提交守卫逐项排查拒审风险并修正",
+          "团队在接入第三方 SDK 或收集用户数据时，核验隐私清单与 Data safety 声明是否一致",
+          "面向欧盟等市场发布产品时，按清单核对 AI 法案、DSA、COPPA 等截止日期与义务"
         ],
-        "agentInstallPrompt": "请克隆 https://github.com/mjmirza/app-store-compliance 到本地，阅读仓库中的合规 playbook 与 skill 说明，然后把该 skill 接入当前项目。接着扫描本项目：识别 iOS/Android 配置、隐私清单、第三方 SDK、数据收集点和目标市场，逐条对照 124 个拒审模式与隐私/Data safety 检查项，输出一份中文报告，包含风险等级、涉及文件、修复步骤，以及与 112 个法规截止日期相关的待办事项，最后给出提审前 checklist。"
+        "agentInstallPrompt": "请克隆 https://github.com/mjmirza/app-store-compliance ，阅读 README 和 skill 说明，在当前移动应用仓库中安装并试跑预提交守卫：先列出本项目适用的拒审模式与隐私/Data safety 检查项，再对现有代码与配置逐项扫描，输出问题清单、修复建议和优先级；同时检查与欧盟 AI 法案、DSA、COPPA 相关的截止日期是否临近，最后给出可执行的修改步骤。"
       }
     },
     "repo:XiaoYouChR/Ghost-Downloader-3": {
@@ -9350,6 +9350,36 @@
           "团队集中管理多家模型 API Key，按 agent 分配不同供应商，避免在每个项目里重复写环境变量和代理配置。"
         ],
         "agentInstallPrompt": "请克隆 https://github.com/yetone/magpie 到本地，先阅读 README 确认 macOS 版本与 Go 环境要求，然后执行 go build 编译并启动菜单栏应用。接着帮我新增一个名为 codex 的 agent 配置，把它的模型指向 DeepSeek，base URL 和 API Key 从环境变量 DEEPSEEK_BASE_URL、DEEPSEEK_API_KEY 读取；完成后做一次连通性测试，并汇报配置文件路径、启动命令和测试结果。"
+      }
+    },
+    "repo:nginx/nginx": {
+      "type": "repo-insight",
+      "hash": "0590240c7e42bd294e75eef8",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-25T22:15:51.018Z",
+      "value": {
+        "summaryZh": "NGINX 官方开源仓库，用 C 编写的高性能 HTTP 服务器、反向代理及邮件代理。以事件驱动、非阻塞架构著称，占用极低内存即可承载高并发连接，支持静态资源服务、TLS 终止、七层负载均衡、缓存、限流与 gzip 压缩，并可通过模块机制扩展功能。代码结构清晰，是学习高性能网络编程的经典范本。适合运维、后端与 SRE 搭建生产级 Web 入口或 API 网关。",
+        "scenarios": [
+          "搭建静态站点或前端 SPA 托管，配合 TLS 证书、压缩与缓存头做生产级 Web 入口。",
+          "作为反向代理与七层负载均衡，把流量分发到多个后端实例，并配置限流、健康检查与灰度分流。",
+          "本地源码编译调试，验证自定义模块与配置指令，或复现线上连接数、超时与性能问题。"
+        ],
+        "agentInstallPrompt": "请在本机克隆并源码编译运行 NGINX：1) 执行 git clone https://github.com/nginx/nginx.git 并进入目录；2) 安装依赖，Debian/Ubuntu 用 build-essential libpcre2-dev zlib1g-dev libssl-dev，macOS 用 brew install pcre2 zlib openssl；3) 执行 ./auto/configure --prefix=$PWD/_install --with-http_ssl_module，再 make -j 与 make install；4) 写一份最简 nginx.conf，监听 8080，root 指向临时目录并放一个 index.html；5) 用绝对路径执行 ./_install/sbin/nginx -c <配置绝对路径> 启动，curl -I http://127.0.0.1:8080 验证返回 200，最后 nginx -s stop 关闭。每步输出执行的命令与关键日志，失败时给出具体修复建议。"
+      }
+    },
+    "repo:n8n-io/nod": {
+      "type": "repo-insight",
+      "hash": "61641536a757179eebb8c1fe",
+      "model": "deepseek-v4-flash",
+      "generatedAt": "2026-11-25T22:15:58.668Z",
+      "value": {
+        "summaryZh": "nod 是 n8n 团队用 TypeScript 开源的个人 AI 代理，核心思路是给代理一台自己的电脑：它可以像人一样操作真实浏览器，追催发票、在通话前整理资料、在订阅网站上取消试用，并在执行关键动作前先向你确认。它运行在你本机，模型可自由选择，凭据与数据不必外传，强调可控与可审计。适合注重隐私的独立开发者、自动化爱好者，以及想让重复网页事务自动跑起来的小团队。",
+        "scenarios": [
+          "发票催收与跟进：自动登录账单或邮箱系统排查逾期发票，起草催款邮件，经你确认后再发送并记录跟进状态。",
+          "通话前资料准备：会议开始前抓取相关邮件、工单与文档，汇总成一页客户背景、通话要点与待办清单。",
+          "订阅与试用管理：到期前登录各家 SaaS 站点取消试用或降级套餐，每一步真实操作前逐条向你请求确认。"
+        ],
+        "agentInstallPrompt": "请帮我在本地跑通 n8n-io/nod：先 git clone 仓库并进入目录，按 README 用 pnpm（或 npm）安装依赖，复制 .env.example 为 .env；然后询问我用哪家模型，由我自己填写 API Key，不要把密钥贴进对话。接着启动开发服务器并打开本地界面，创建第一个任务「检查一封逾期发票并起草催款邮件」。全程只生成草稿，遇到发送邮件、取消订阅、付款等真实操作必须先停下来让我确认。最后把启动命令、配置文件位置和踩到的坑写成简短的 README 备注。"
       }
     }
   }
