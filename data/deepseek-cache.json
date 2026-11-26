@@ -6755,17 +6755,17 @@
     },
     "repo:zhouxiaoka/autoclip": {
       "type": "repo-insight",
-      "hash": "29971a79cc35f5ec076d14c3",
+      "hash": "b9f6f60cfe35183dfbcf0204",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-11-21T23:59:02.230Z",
+      "generatedAt": "2026-11-26T22:22:22.972Z",
       "value": {
-        "summaryZh": "AutoClip 是一款开源 AI 视频剪辑桌面工具，主打“一个链接，一键出片”：输入播客、访谈、课程等长视频，自动识别高光片段并剪成竖屏短视频，同时生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。适合内容创作者、播客主、课程讲师和社媒运营，以较低成本完成长内容二次分发与矩阵化发布。",
+        "summaryZh": "AutoClip 是开源的 OpusClip 替代品，本地优先的 AI 剪辑工具与 MCP 服务端，零订阅。粘贴一个链接，即可把播客、访谈、课程等长视频自动切成高光短视频，并生成字幕、封面与发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。适合内容创作者、自媒体团队，以及希望低成本批量做切片分发的开发者。",
         "scenarios": [
-          "播客或访谈长视频拆条：自动定位高光观点并生成竖屏短视频，减少人工拉片和粗剪时间。",
-          "课程与直播回放二次分发：把长内容切成知识点短片，配套字幕、封面和文案，用于引流与复盘。",
-          "跨境社媒矩阵运营：同一素材快速适配抖音、小红书、TikTok、Reels 和 YouTube Shorts 的发布形态。"
+          "播客、访谈类长视频一键切片，批量产出抖音、小红书竖屏短视频，并自动配好字幕与封面。",
+          "课程、直播回放的二次分发，快速提取高光片段作为引流与投放素材。",
+          "开发者通过 MCP server 把自动剪辑能力接入自有工作流或 AI Agent，在本地零订阅批量处理。"
         ],
-        "agentInstallPrompt": "请克隆 https://github.com/zhouxiaoka/autoclip 到本地，先阅读 README、依赖文件和启动脚本，确认 Python 版本、安装方式及是否需要 FFmpeg、模型权重或 API Key。创建虚拟环境并安装依赖，按文档启动桌面应用；若安装说明不完整，请先梳理目录结构和入口文件，给出最小可执行试跑步骤，再用一个本地短视频或公开链接做端到端测试，记录剪辑、字幕、封面和发布文案的输出结果与报错。"
+        "agentInstallPrompt": "请在本地克隆 https://github.com/zhouxiaoka/autoclip ，用 Python 3.10+ 创建虚拟环境并安装依赖，先通读 README 确认启动方式（桌面端或 MCP server），补齐 ffmpeg 等系统级组件并配置所需的模型或 API Key 环境变量。然后跑通一次最小流程：输入一个视频链接或本地长视频，产出切片、字幕与封面，最后汇报启动命令、目录结构和验证结果。"
       }
     },
     "repo:FlashML-org/FreeToken": {
@@ -9279,17 +9279,17 @@
     },
     "repo:mjmirza/app-store-compliance": {
       "type": "repo-insight",
-      "hash": "20c4a483e3b5a1703448e203",
+      "hash": "e744f8996356687982086345",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-11-25T22:15:53.385Z",
+      "generatedAt": "2026-11-26T22:22:18.978Z",
       "value": {
-        "summaryZh": "这是一个面向移动应用上架合规的开源剧本与预提交守卫工具，帮助开发者避开 App Store 与 Google Play 的常见拒审。项目汇总 124 条有据可查的拒审模式及对应修复，覆盖隐私清单、Data safety 表单等关键检查；同时追踪 114 项合规截止日期，涉及欧盟 AI 法案、DSA、COPPA 与各年龄段法律。它还提供可供 AI coding agent 调用的 skill，便于在编码阶段提前发现风险。适合独立开发者、小团队以及负责上架与合规的工程师使用。",
+        "summaryZh": "面向移动应用上架合规的开源作战手册与提交前守卫。收录125种已记录的App Store与Google Play拒审模式及修复方法，覆盖隐私清单、Data safety检查，并跟踪117项监管截止日期（欧盟AI法案、DSA、COPPA、年龄法规等）。配套AI编码代理技能，可自动检查项目。适合独立开发者、移动团队与合规负责人，在提交前规避常见拒审风险。",
         "scenarios": [
-          "独立开发者在提交 iOS/Android 应用前，用预提交守卫逐项排查拒审风险并修正",
-          "团队在接入第三方 SDK 或收集用户数据时，核验隐私清单与 Data safety 声明是否一致",
-          "面向欧盟等市场发布产品时，按清单核对 AI 法案、DSA、COPPA 等截止日期与义务"
+          "独立开发者在提交iOS或Android应用前，用守卫脚本扫描隐私清单、权限声明与元数据，提前修复常见拒审项。",
+          "移动团队将合规检查接入CI，在每次发版前自动核对125种拒审模式与117项法规截止日期。",
+          "合规负责人借助AI编码代理技能，快速生成Data safety表单与欧盟AI法案、COPPA等适用性评估。"
         ],
-        "agentInstallPrompt": "请克隆 https://github.com/mjmirza/app-store-compliance ，阅读 README 和 skill 说明，在当前移动应用仓库中安装并试跑预提交守卫：先列出本项目适用的拒审模式与隐私/Data safety 检查项，再对现有代码与配置逐项扫描，输出问题清单、修复建议和优先级；同时检查与欧盟 AI 法案、DSA、COPPA 相关的截止日期是否临近，最后给出可执行的修改步骤。"
+        "agentInstallPrompt": "请在当前项目根目录执行：克隆 https://github.com/mjmirza/app-store-compliance 到临时目录，阅读其README与playbook，识别本项目是iOS、Android还是跨平台；然后按仓库提供的守卫流程逐项检查隐私清单、权限用途描述、Data safety声明与元数据，列出命中的拒审模式、对应修复建议和涉及的监管截止日期；最后生成一份提交前合规报告，不要修改业务代码，所有改动先以补丁形式展示。"
       }
     },
     "repo:XiaoYouChR/Ghost-Downloader-3": {
@@ -9339,17 +9339,17 @@
     },
     "repo:yetone/magpie": {
       "type": "repo-insight",
-      "hash": "754c98f076a0fd738efc8102",
+      "hash": "3e3b1da21ac017294df8f9c4",
       "model": "deepseek-v4-flash",
-      "generatedAt": "2026-11-23T22:17:48.353Z",
+      "generatedAt": "2026-11-26T22:38:31.682Z",
       "value": {
-        "summaryZh": "Magpie 是一个常驻 macOS 菜单栏的模型路由工具，用 Go 编写。它把各家大模型的 API 统一到一个入口，让 Codex、Claude Code 等编码 agent 能自由切换到 DeepSeek、Kimi 等第三方模型，无需改代码或配置环境变量。亮点是菜单栏一键切换、按 agent 分流模型、集中管理密钥。适合想让多个 AI 编码工具共用同一套模型额度、追求低成本或多模型对比的开发者。",
+        "summaryZh": "Magpie 是一个用 Go 编写的 AI 订阅额度聚合与故障转移网关，把 Claude、ChatGPT、Copilot、GLM Coding Plan、Kimi Code 等你已付费的多家模型套餐汇入统一入口，再以兼容接口供给 Claude Code、Codex、Claude Desktop 等各类 agent 使用。当某个套餐额度耗尽或不可用时，它会自动切换到下一个可用账号或供应商，减少手动改配置与中断。适合同时订阅多个 AI 编程服务、需要统一管理与自动兜底的开发者、小团队和重度 agent 用户。",
         "scenarios": [
-          "在 Claude Code 中接入 Kimi 处理长上下文重构任务以降低成本，同时保留原生 Claude 作为高质量备用模型随时切换。",
-          "为 Codex CLI 指向 DeepSeek，在菜单栏快速换模型，对比不同模型在同一代码库上的补全与 bug 修复效果。",
-          "团队集中管理多家模型 API Key，按 agent 分配不同供应商，避免在每个项目里重复写环境变量和代理配置。"
+          "同时持有 Claude、Copilot、Kimi 等多个编程套餐，希望在一个入口统一调用，并在额度耗尽时自动切换",
+          "在 Claude Code、Codex、Claude Desktop 等多个 agent 客户端之间复用同一套已付费账号与密钥配置",
+          "团队共享订阅资源时，集中管理多个供应商凭据、做额度分配与故障转移，避免单账号限流影响开发"
         ],
-        "agentInstallPrompt": "请克隆 https://github.com/yetone/magpie 到本地，先阅读 README 确认 macOS 版本与 Go 环境要求，然后执行 go build 编译并启动菜单栏应用。接着帮我新增一个名为 codex 的 agent 配置，把它的模型指向 DeepSeek，base URL 和 API Key 从环境变量 DEEPSEEK_BASE_URL、DEEPSEEK_API_KEY 读取；完成后做一次连通性测试，并汇报配置文件路径、启动命令和测试结果。"
+        "agentInstallPrompt": "请帮我本地试跑 yetone/magpie 这个项目：先克隆仓库并阅读 README，确认 Go 版本要求和启动方式；然后用 go build 编译，按文档准备配置文件，添加至少一个已付费供应商的 API Key 或账号（先用占位环境变量，不要写入版本库）；启动服务后，查看健康检查和可用模型列表接口，并用 curl 通过它的兼容端点发起一次最小对话请求；最后说明如何把 Claude Code 或 Codex 的 base URL 指向该服务以启用自动切换，并把遇到的报错和对应修复步骤整理出来。"
       }
     },
     "repo:nginx/nginx": {
